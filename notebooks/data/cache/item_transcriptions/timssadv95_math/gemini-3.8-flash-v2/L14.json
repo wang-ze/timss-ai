@@ -1,0 +1,57 @@
+{
+  "item_id": "L14",
+  "stem": "One thousand people selected at random were questioned about smoking and drinking. The results of this survey are summarized in the table below. Calculate the probability that a randomly selected respondent drinks and smokes.\n\n| | Smokers | Non-smokers |\n| :--- | :---: | :---: |\n| Drinkers | 320 | 530 |\n| Non-drinkers | 20 | 130 |",
+  "options": [],
+  "scoring_guide": [
+    {
+      "category": "Correct Response",
+      "codes": [
+        {
+          "code": 10,
+          "response": "0.32 or any numerical equivalent such as 320/1000 or 32%. If probability is correct, disregard rounding errors."
+        }
+      ]
+    },
+    {
+      "category": "Incorrect Responses",
+      "codes": [
+        {
+          "code": 70,
+          "response": "0.032 or similar answers involving place value error."
+        },
+        {
+          "code": 71,
+          "response": "320"
+        },
+        {
+          "code": 72,
+          "response": "850/1000 or 340/1000"
+        },
+        {
+          "code": 73,
+          "response": "1/320 or 1000/320"
+        },
+        {
+          "code": 79,
+          "response": "Other incorrect responses."
+        }
+      ]
+    },
+    {
+      "category": "Nonresponse",
+      "codes": [
+        {
+          "code": 90,
+          "response": "Crossed-out, illegible, or impossible to interpret."
+        },
+        {
+          "code": 99,
+          "response": "BLANK"
+        }
+      ]
+    }
+  ],
+  "scoring_notes": null,
+  "has_figure": false,
+  "figure_description": null
+}

@@ -1,0 +1,99 @@
+{
+  "item_id": "L16",
+  "stem": "Find all real values of x which satisfy the following equation:\n\nsqrt(x) - 2/sqrt(x) = 1\n\nShow all your work.",
+  "options": [],
+  "scoring_guide": [
+    {
+      "category": "Correct Response",
+      "codes": [
+        {
+          "code": 30,
+          "response": "x = 4. Method:\n1. Original equation transformed to quadratic equation, x^2 - 5x + 4 = 0.\n2. Two roots, x=4 and x=1 found and checked in original equation.\n3. x=1 is rejected as a solution of the original equation; x=4 is accepted.\nNote: Since the original equation is squared, it is necessary to check both roots in the original equation."
+        },
+        {
+          "code": 31,
+          "response": "x = 4. Method:\n1. Substitution (e.g., sqrt(x) = a) used and the original equation transformed, without squaring, into the quadratic equation a^2 - a - 2 = 0.\n2. Two roots found, a = 2 and a = -1.\n3. a = -1 rejected since a = -1 ≠ sqrt(x) , sqrt(x) ≥ 0 .\n4. By substitution reversed.a = 2 implies sqrt(x) = 2, thus x = 4. Checking in original equation is not necessary."
+        },
+        {
+          "code": 32,
+          "response": "x = 4. Method:\n1. Graphs y = sqrt(x) - 2/sqrt(x) - 1 for x > 0 correctly.\n2. x-coordinate of y-intercept is found to be 4.\n3. Justifies that graph is increasing and thus x = 4 is an unique solution.\n4. x = 4 is checked in original equation."
+        },
+        {
+          "code": 39,
+          "response": "Other completely correct solutions."
+        }
+      ]
+    },
+    {
+      "category": "Partial Response",
+      "codes": [
+        {
+          "code": 20,
+          "response": "Uses code 30 to find x = 4 and x = 1 and states both are roots."
+        },
+        {
+          "code": 21,
+          "response": "Uses code 31 to find a = 2 and a = -1 and then either goes no further or makes an incorrect statement such as 4 and 1 or 2 and 1 are roots of the original equation."
+        },
+        {
+          "code": 22,
+          "response": "Uses code 32 showing graph, states x = 4 is a root and x = 4 is checked in the original equation."
+        },
+        {
+          "code": 29,
+          "response": "Other solutions with correct overall method but with minor error(s)."
+        }
+      ]
+    },
+    {
+      "category": "Minimal Response",
+      "codes": [
+        {
+          "code": 10,
+          "response": "x = 4. No work shown or some work shown, such as checking x = 4 in original equation but no argument given for why there are no other roots."
+        },
+        {
+          "code": 11,
+          "response": "Solution as in codes 30 or 31: Original equation is transformed correctly into a quadratic equation, by any method, but quadratic equation either is not solved or incorrectly solved."
+        },
+        {
+          "code": 12,
+          "response": "Solution as in code 22 (graphical) except that except that x = 4 is NOT checked in original equation."
+        },
+        {
+          "code": 19,
+          "response": "Other minimally correct or incomplete solutions such as a simplification of the equation to x - 2 = sqrt(x) ."
+        }
+      ]
+    },
+    {
+      "category": "Incorrect Response",
+      "codes": [
+        {
+          "code": 70,
+          "response": "Solution as in codes 30 or 31 except original equation is transformed into an incorrect quadratic equation or to a non-quadratic equation."
+        },
+        {
+          "code": 79,
+          "response": "Other incorrect responses."
+        }
+      ]
+    },
+    {
+      "category": "Nonresponse",
+      "codes": [
+        {
+          "code": 90,
+          "response": "Crossed-out, illegible, or impossible to interpret."
+        },
+        {
+          "code": 99,
+          "response": "BLANK"
+        }
+      ]
+    }
+  ],
+  "scoring_notes": null,
+  "has_figure": false,
+  "figure_description": null
+}

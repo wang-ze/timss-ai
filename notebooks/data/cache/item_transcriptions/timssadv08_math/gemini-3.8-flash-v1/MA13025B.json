@@ -1,0 +1,50 @@
+{
+  "item_id": "MA13025B",
+  "stem": "The function y = f(x), -3 ≤ x ≤ 3, is defined in the following graph\n\n[Image: Graph of y = f(x)]\n\nB. For what value(s) of x in the interval -3 < x < 3 is the function f NOT differentiable?",
+  "options": [],
+  "scoring_guide_item_id": "MA13025B",
+  "scoring_guide": [
+    {
+      "category": "Correct Response",
+      "codes": [
+        {
+          "code": 10,
+          "response": "Correct answer: for x = -1 and for x = 0 and for x = 2\nNote: Accept answers that also include x = -3 and/or x = 3. Accept answers shown as points in the plane instead of values of x (e.g., language such as \"point (-1, 0)\" instead of x = -1)."
+        }
+      ]
+    },
+    {
+      "category": "Incorrect Response",
+      "codes": [
+        {
+          "code": 70,
+          "response": "For x = 0"
+        },
+        {
+          "code": 71,
+          "response": "Any of the following answers:\nFor x = -1 OR For x = 2 OR For x = -1 and x = 2"
+        },
+        {
+          "code": 72,
+          "response": "For all values of x in the interval -1 ≤ x ≤ 0 and 2 ≤ x ≤ 3 (Misconception: \"where f is flat, it has no derivative.\")"
+        },
+        {
+          "code": 79,
+          "response": "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)\nExamples:\n1. For NO values of x (i.e., the function is differentiable for all x in the interval -3 < x < 3)\n2. For ALL values of x in the interval -3 < x < 3 (i.e., the function is nondifferentiable for every value of x).\n3. For ALL values of x in the interval -1 ≤ x ≤ 0 or in the interval 2 ≤ x ≤ 3\n4. The question cannot be answered because we do not know the function f' or any similar expression."
+        }
+      ]
+    },
+    {
+      "category": "Nonresponse",
+      "codes": [
+        {
+          "code": 99,
+          "response": "Blank"
+        }
+      ]
+    }
+  ],
+  "scoring_notes": null,
+  "has_figure": true,
+  "figure_description": "A Cartesian coordinate system with horizontal axis x and vertical axis y. The x-axis is marked with ticks and labels at -3, -2, -1, 0, 1, 2, 3. The y-axis is marked with ticks and labels at -2, -1, 1, 2, and 0 at the origin. The graph of y = f(x) consists of:\n- A line segment from a solid dot at (-3, -2) to (-1, 0).\n- A horizontal segment along the x-axis from (-1, 0) to an open circle at (0, 0).\n- A solid dot at (0, 2).\n- A line segment from (0, 2) down to (2, 0).\n- A horizontal segment along the x-axis from (2, 0) to a solid dot at (3, 0)."
+}

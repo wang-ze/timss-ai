@@ -1,0 +1,90 @@
+{
+  "item_id": "K14",
+  "stem": "A string is wound symmetrically around a circular rod. The string goes exactly 4 times around the rod. The circumference of the rod is 4 cm and its length is 12 cm.\n\n[Image: A cylinder with a string wound around it 4 times]\n\nFind the length of the string. Show all your work.",
+  "options": [],
+  "scoring_guide": [
+    {
+      "category": "Correct Response",
+      "codes": [
+        {
+          "code": 20,
+          "response": "Length of string = 20 cm. Method:\n• The surface of the rod is represented as a rectangle 4 cm by 12 cm.\n• Four parallel congruent segments are drawn in the rectangle indicating the position of the string.\n• Length of one segment is calculated using Pythagorean theorem\nsqrt(3^2 + 4^2) = 5. Total length of string = 4 x 5 cm = 20 cm."
+        },
+        {
+          "code": 21,
+          "response": "Length of string = 20 cm. Method:\n• Half of surface of rod represented as rectangle 2 cm by 12 cm.\n• Eight congruent segments drawn in the rectangle indicating position of string.\n• Length of one segment calculated using Pythagorean theorem\nsqrt(2^2 + 1.5^2) = 2.5. Total length of string = 8 x 2.5 cm = 20 cm."
+        },
+        {
+          "code": 22,
+          "response": "Length of string = 20 cm. Method used:\n• Situation represented either by rectangle 16 x 12 with string as its diagonal OR by right triangle with sides 16 and 12 and string as its hypotenuse.\nPythagorean theorem used to calculate length of string sqrt(16^2 + 12^2) = 20 cm."
+        },
+        {
+          "code": 29,
+          "response": "All other fully correct solutions."
+        }
+      ]
+    },
+    {
+      "category": "Partial Response",
+      "codes": [
+        {
+          "code": 10,
+          "response": "Length of string = 20 cm. No work shown."
+        },
+        {
+          "code": 11,
+          "response": "Surface of rod represented by rectangle with correct dimensions and position of string correctly indicated, but numerical error in the calculation of the length of string."
+        },
+        {
+          "code": 19,
+          "response": "All other partially correct solutions with correct method and minor error."
+        }
+      ]
+    },
+    {
+      "category": "Incorrect Response",
+      "codes": [
+        {
+          "code": 70,
+          "response": "Incorrect answer. No work shown."
+        },
+        {
+          "code": 71,
+          "response": "Length of string = 16 cm. Argument: It is the same as 4 circles."
+        },
+        {
+          "code": 72,
+          "response": "Length of string = 28 cm. Argument: \"If the string were wound 4 times around the same place, its length would be 4 x 4. But since it \"moves\" along the rod which is 12 cm long, we must add these 12 cm to the length of the string.\""
+        },
+        {
+          "code": 73,
+          "response": "Estimation methods:\nLength of 1 revolution estimated or stated but not calculated; then it is multiplied by 4.\nExamples: 1 revolution is approx. 6 cm long, length of string is 4 x 6 = 24 cm.\n1 revolution is (4 + 1.5) cm long, length of string is 4 x 5.5 = 22 cm.\nLength of string must be greater than 16 cm (it would be 16 cm if it were 4 circles) and/or\nLength of string must be less than 16 + 12 = 28 cm.\n16 cm < L < 28 cm)"
+        },
+        {
+          "code": 74,
+          "response": "String is represented by a curve, e.g. parts of a circle or an ellipse."
+        },
+        {
+          "code": 79,
+          "response": "All other incorrect attempts with some work shown."
+        }
+      ]
+    },
+    {
+      "category": "Nonresponse",
+      "codes": [
+        {
+          "code": 90,
+          "response": "Crossed-out, illegible, or impossible to interpret."
+        },
+        {
+          "code": 99,
+          "response": "BLANK"
+        }
+      ]
+    }
+  ],
+  "scoring_notes": null,
+  "has_figure": true,
+  "figure_description": "A side-view illustration of a horizontal cylindrical rod. A thick, dark line representing a string begins near the top-left edge, winds around the rod symmetrically making 4 complete helical turns from left to right, and terminates near the top-right edge."
+}

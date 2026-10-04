@@ -1,0 +1,55 @@
+{
+  "item_id": "M032755",
+  "stem": "The total cost of the journey for all the students must be 500 zeds or less.\nThere are 30 students in the class.\n\nHere are the costs for visiting each town:\n\n| Visiting Acton or Camford | Visiting Burley or Darley |\n| --- | --- |\n| Student Rate | Student Rate |\n| Round-trip ticket: 25 zeds | Round-trip ticket: 20 zeds |\n| 1/3 off for groups of 25 or more students | 10% off for groups of 15 or more students |\n\nWhich towns can they afford to visit? Show your work.",
+  "options": [],
+  "scoring_guide_item_id": "M032755",
+  "scoring_guide": [
+    {
+      "category": "Correct Response",
+      "codes": [
+        {
+          "code": 20,
+          "response": "Show costs of 500 zeds for Acton and Camford; 540 zeds for Burley and Darley; Indicates Acton and Camford"
+        }
+      ]
+    },
+    {
+      "category": "Partial Response",
+      "codes": [
+        {
+          "code": 10,
+          "response": "Shows 500 zeds for Acton and Camford; 540 zeds for Burley and Darley; does not indicate Acton and Camford"
+        },
+        {
+          "code": 11,
+          "response": "Finds correct cost for visiting Acton and Camford (500 zeds) or Burley and Darley (540 zeds) but not both"
+        }
+      ]
+    },
+    {
+      "category": "Incorrect Response",
+      "codes": [
+        {
+          "code": 70,
+          "response": "Indicates Acton and Camford but no calculations or incorrect calculations shown"
+        },
+        {
+          "code": 79,
+          "response": "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+        }
+      ]
+    },
+    {
+      "category": "Nonresponse",
+      "codes": [
+        {
+          "code": 99,
+          "response": "Blank"
+        }
+      ]
+    }
+  ],
+  "scoring_notes": null,
+  "has_figure": false,
+  "figure_description": null
+}

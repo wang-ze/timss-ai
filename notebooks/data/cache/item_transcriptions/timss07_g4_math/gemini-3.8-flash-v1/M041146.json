@@ -1,0 +1,38 @@
+{
+  "item_id": "M041146",
+  "stem": "Here are two sides of a rectangle. Draw the other two sides.\n\n[Image: Two sides of a rectangle drawn on a grid]",
+  "options": [],
+  "scoring_guide_item_id": "M041146",
+  "scoring_guide": [
+    {
+      "category": "Correct Response",
+      "codes": [
+        {
+          "code": 10,
+          "response": "Correct rectangle drawn with the fourth vertex lying within the circle, as shown below.\nNote: The center of the circle is the correct position for the vertex. The radius of the circle is half the length of a square on the grid.\n[Image: A grid showing the completed rectangle with the missing sides dashed, and an enlarged inset showing a circle centered on the correct fourth vertex]"
+        }
+      ]
+    },
+    {
+      "category": "Incorrect Response",
+      "codes": [
+        {
+          "code": 79,
+          "response": "Incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+        }
+      ]
+    },
+    {
+      "category": "Nonresponse",
+      "codes": [
+        {
+          "code": 99,
+          "response": "Blank"
+        }
+      ]
+    }
+  ],
+  "scoring_notes": null,
+  "has_figure": true,
+  "figure_description": "A 10 by 10 grid of identical square units. Two line segments forming a 90° angle are drawn on the grid:\n- The corner vertex shared by both segments is at grid intersection (2, 5), counting from the bottom-left corner at (0, 0).\n- The shorter segment extends diagonally up and right across 2 squares, ending at grid intersection (4, 7).\n- The longer segment extends diagonally down and right across 4 squares, ending at grid intersection (6, 1)."
+}

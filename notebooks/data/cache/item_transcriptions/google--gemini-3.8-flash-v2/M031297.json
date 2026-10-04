@@ -1,0 +1,24 @@
+{
+  "stem": "[Image: a shaded area overlaying a grid made up by small squares with each side of the square measured at 1 cm.]\n\nThe squares in the grid above are 1 cm by 1 cm.\nWhat is the shaded area in square centimeters?\n\nAnswer: ____ square centimeters",
+  "options": [],
+  "answer_key": null,
+  "scoring_guide": [
+    {
+      "category": "Correct Response",
+      "descriptors": [
+        "7"
+      ]
+    },
+    {
+      "category": "Incorrect Response",
+      "descriptors": [
+        "6",
+        "8",
+        "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+      ]
+    }
+  ],
+  "scoring_notes": null,
+  "has_figure": true,
+  "figure_description": "A grid of 9 columns and 5 rows of 1 cm by 1 cm squares containing a shaded polygon. Outside the bottom-right corner of the grid, dimension arrows indicate that a single square is 1 cm wide and 1 cm high.\n\nDefining grid coordinates from the top-left corner (0, 0) to the bottom-right corner (9, 5):\n- The shaded polygon has vertices at (3, 1), (5, 1), (6, 2), (5, 3), (5, 4), and (3, 4).\n- The left side is a vertical line from (3, 1) down to (3, 4), spanning 3 units.\n- The bottom side runs horizontally from (3, 4) to (5, 4), spanning 2 units.\n- The right side goes vertically up from (5, 4) to (5, 3), 1 unit.\n- From (5, 3), a diagonal side goes up and to the right to grid intersection (6, 2).\n- From (6, 2), a diagonal side goes up and to the left to grid intersection (5, 1).\n- The top side runs horizontally from (5, 1) left to (3, 1), spanning 2 units."
+}

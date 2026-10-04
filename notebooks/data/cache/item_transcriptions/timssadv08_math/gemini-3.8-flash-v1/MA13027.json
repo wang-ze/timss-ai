@@ -1,0 +1,59 @@
+{
+  "item_id": "MA13027",
+  "stem": "A regular polygon of n sides is inscribed in a circle of radius 1.\n\nWhat is the value of the limit of the perimeter of the polygon as the number of sides n increases to infinity?",
+  "options": [],
+  "scoring_guide_item_id": "MA13027",
+  "scoring_guide": [
+    {
+      "category": "Correct Response",
+      "codes": [
+        {
+          "code": 20,
+          "response": "Any of 2 pi, 2π , 6.28, 6.3, or 2π = 6.28"
+        }
+      ]
+    },
+    {
+      "category": "Partial Response",
+      "codes": [
+        {
+          "code": 10,
+          "response": "lim_(n->∞) 2n sin(π/n)\n\nNote: Accept also lim_(n->∞) 2n sin(180/n)"
+        },
+        {
+          "code": 11,
+          "response": "2 pi r or 2πr or makes a statement such as \"The value of the limit is equal to the circumference of the circle.\""
+        }
+      ]
+    },
+    {
+      "category": "Incorrect Response",
+      "codes": [
+        {
+          "code": 70,
+          "response": "π or pi or 3.14"
+        },
+        {
+          "code": 71,
+          "response": "∞ or \"infinity\" or \"the limit does not exist\" or equivalent statement"
+        },
+        {
+          "code": 79,
+          "response": "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)\nExamples:\n1. lim_(n->∞) 2n sin(2π/n) or lim_(n->∞) 2n cos(π/n) or similar formula containing error\n2. 1\n3. \"Almost a circle\"or similar answers in words, not numerical values, stating that the shape of the polygon will become very close to that of a circle."
+        }
+      ]
+    },
+    {
+      "category": "Nonresponse",
+      "codes": [
+        {
+          "code": 99,
+          "response": "Blank"
+        }
+      ]
+    }
+  ],
+  "scoring_notes": null,
+  "has_figure": false,
+  "figure_description": null
+}

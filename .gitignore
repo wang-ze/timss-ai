@@ -1,0 +1,17 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+.venv/
+
+# Large TIMSS downloads (up to 158 MB each); recreate with `uv run timss2011-convert`
+/notebooks/data/raw/
+/data/raw/
+
+# macOS folder metadata and Office lock files
+.DS_Store
+~$*
+
+# Lock files of local Qdrant storage
+/notebooks/data/qdrant*/.lock

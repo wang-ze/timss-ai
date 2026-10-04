@@ -1,0 +1,46 @@
+{
+  "item_id": "M031274",
+  "stem": "On the grid below, draw the reflection of the shape in the dotted line of symmetry.\n\n[Image: Grid with a polygon and a dashed line of symmetry]",
+  "options": [],
+  "scoring_guide_item_id": "M031274",
+  "scoring_guide": [
+    {
+      "category": "Correct Response",
+      "codes": [
+        {
+          "code": 10,
+          "response": "Image correctly drawn"
+        }
+      ]
+    },
+    {
+      "category": "Incorrect Response",
+      "codes": [
+        {
+          "code": 70,
+          "response": "One or more of image lines drawn correctly, but image not completely correct"
+        },
+        {
+          "code": 71,
+          "response": "Attempt to sketch an image under a transformation other than reflection (e.g., translation of image)"
+        },
+        {
+          "code": 79,
+          "response": "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+        }
+      ]
+    },
+    {
+      "category": "Nonresponse",
+      "codes": [
+        {
+          "code": 99,
+          "response": "Blank"
+        }
+      ]
+    }
+  ],
+  "scoring_notes": null,
+  "has_figure": true,
+  "figure_description": "An 8 by 8 grid of square cells with a vertical dashed line of symmetry running along the central vertical grid line (between the 4th and 5th columns from the left).\nTo the right of the dashed line is a six-sided polygon with vertices at grid intersections (with column lines 0 to 8 from left to right, and row lines 0 to 8 from top to bottom):\n- (column 4, row 3) on the dashed line\n- (column 5, row 2)\n- (column 6, row 4)\n- (column 7, row 4)\n- (column 7, row 6)\n- (column 4, row 5) on the dashed line\n\nThe edges of the polygon connect these vertices in sequence:\n- A straight segment from (4, 3) up and right to (5, 2)\n- A segment from (5, 2) down and right to (6, 4)\n- A horizontal segment from (6, 4) to (7, 4)\n- A vertical segment from (7, 4) down to (7, 6)\n- A slanted segment from (7, 6) up and left to (4, 5)\n- A vertical segment of length 2 along the dashed line from (4, 5) up to (4, 3)"
+}

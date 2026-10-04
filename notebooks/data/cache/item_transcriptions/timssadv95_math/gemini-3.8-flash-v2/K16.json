@@ -1,0 +1,99 @@
+{
+  "item_id": "K16",
+  "stem": "The ride with the cable car from station A to station B at the top of Mt. Glacier takes 16 minutes. The average speed of the cable car is 2 meters per second and it moves in a straight line forming a 25° angle with the horizontal.\n\n[Image: Cable car route up Mt. Glacier]\n\nFind the height of Mt. Glacier (measured from the level of station A) to the nearest meter. Show all your work.",
+  "options": [],
+  "scoring_guide": [
+    {
+      "category": "Correct Response",
+      "codes": [
+        {
+          "code": 30,
+          "response": "811 m or 0.811 km. Method: AB = 16 x 60 s (2m/s) = 1920m; height = 1920 sin 25° m = 8.114270625 m. Then rounds correctly to 811 m, or 0.811 km."
+        },
+        {
+          "code": 31,
+          "response": "811 m or 0.811 km. Method: First AB calculated, then cos 25° used to determine AC and then the Pythagorean theorem used to find CB as sqrt(AB^2 - AC^2) .\nNote: C denotes the point vertically beneath station B at the level of A.\nHeight = sqrt((1920)^2 - (1920Cos25°)^2 = 811.4270625 m. Then rounds correctly to 811 m, or 0.811 km."
+        },
+        {
+          "code": 39,
+          "response": "Other complete correct responses."
+        }
+      ]
+    },
+    {
+      "category": "Partial Response",
+      "codes": [
+        {
+          "code": 20,
+          "response": "As code 30, but numerical result is not rounded."
+        },
+        {
+          "code": 21,
+          "response": "1920 sin 25°as in code 30, but numerical value of expression is either not given or is calculated incorrectly."
+        },
+        {
+          "code": 22,
+          "response": "As code 31, but numerical result is not rounded correctly."
+        },
+        {
+          "code": 23,
+          "response": "Distance AB calculated incorrectly due to wrong method and/or numerical error in code 30 or code 31; the rest is correct."
+        },
+        {
+          "code": 24,
+          "response": "As code 31, but value given is incorrect due to numerical error(s), other than in calculation of AB (code 21)."
+        },
+        {
+          "code": 29,
+          "response": "Other nearly complete solutions with a numerical error."
+        }
+      ]
+    },
+    {
+      "category": "Minimal Response",
+      "codes": [
+        {
+          "code": 10,
+          "response": "Distance AB found to be 1920 m, height calculated as 1920/sin 25 (leads to 4543 m) or 1920.cos 25 (leads to 1740 m) or 1920.tg 25 (leads to 895m). Numerical answer is given correctly or incorrectly or is not given at all."
+        },
+        {
+          "code": 11,
+          "response": "Distance AB found to be 1920 m. Other work incorrect EXCEPT as stated in code 10 or impossible to interpret."
+        },
+        {
+          "code": 19,
+          "response": "Other minimally correct solutions with not more than a total of two algebraic or trigonometric errors."
+        }
+      ]
+    },
+    {
+      "category": "Incorrect Response",
+      "codes": [
+        {
+          "code": 70,
+          "response": "Distance AB incorrectly calculated and wrong method(s) used to find height."
+        },
+        {
+          "code": 79,
+          "response": "Other incorrect attempts."
+        }
+      ]
+    },
+    {
+      "category": "Nonresponse",
+      "codes": [
+        {
+          "code": 90,
+          "response": "Crossed-out, illegible, or impossible to interpret."
+        },
+        {
+          "code": 99,
+          "response": "BLANK"
+        }
+      ]
+    }
+  ],
+  "scoring_notes": null,
+  "has_figure": true,
+  "figure_description": "A line drawing showing a profile view of a mountain (shaded gray) resting on a horizontal ground line. Station A is marked as a point on the ground line to the left of the mountain. A straight line labeled \"Cable\" extends up and to the right from station A to station B at the top of the mountain, forming an angle labeled 25° with the horizontal ground line. A dot on the line between A and B is labeled \"Cable\". The mountain slope begins to rise to the right of station A, curving upward to summit station B, which is at the left edge of a small flat top, followed by a straight downward slope to the right."
+}

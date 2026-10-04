@@ -1,0 +1,82 @@
+{
+  "item_id": "K15",
+  "stem": "Determine all complex numbers z that satisfy the equation\n\nz + 2 z̄ = 3 + i\n\nwhere z̄ denotes the conjugate of z .",
+  "options": [],
+  "scoring_guide": [
+    {
+      "category": "Correct Response",
+      "codes": [
+        {
+          "code": 20,
+          "response": "z = 1 - i. No work shown"
+        },
+        {
+          "code": 21,
+          "response": "z = 1 - i. Method: Let z = a + bi.\nThe given equation is then equivalent to 3a - ib = 3 + i OR 3(a-1) - i (b + 1) = 0.\nThis equation correctly solved, finding a = 1, b = -1."
+        },
+        {
+          "code": 29,
+          "response": "z = 1 - i, obtained by any other correct method."
+        }
+      ]
+    },
+    {
+      "category": "Partial Response",
+      "codes": [
+        {
+          "code": 10,
+          "response": "Equation for a,b is derived correctly, but either left unsolved or solution contains numerical or single algebraic error."
+        },
+        {
+          "code": 11,
+          "response": "Due to numerical error an incorrect equation for a,b has been derived and solved, either correctly or incorrectly."
+        },
+        {
+          "code": 19,
+          "response": "Other partially correct solutions with correct method but contains a numerical or single algebraic error."
+        }
+      ]
+    },
+    {
+      "category": "Incorrect Response",
+      "codes": [
+        {
+          "code": 70,
+          "response": "Incorrect answer. No work shown."
+        },
+        {
+          "code": 71,
+          "response": "Attempts using b - ai as the conjugate of z, which leads to\nz = -3 - i."
+        },
+        {
+          "code": 72,
+          "response": "Attempts using -z as the conjugate of z which leads to\nz = -1/3 + 5/3i."
+        },
+        {
+          "code": 73,
+          "response": "Attempts using 1/z as the conjugate of z."
+        },
+        {
+          "code": 79,
+          "response": "Other incorrect responses."
+        }
+      ]
+    },
+    {
+      "category": "Nonresponse",
+      "codes": [
+        {
+          "code": 90,
+          "response": "Crossed-out, illegible, or impossible to interpret"
+        },
+        {
+          "code": 99,
+          "response": "BLANK"
+        }
+      ]
+    }
+  ],
+  "scoring_notes": null,
+  "has_figure": false,
+  "figure_description": null
+}

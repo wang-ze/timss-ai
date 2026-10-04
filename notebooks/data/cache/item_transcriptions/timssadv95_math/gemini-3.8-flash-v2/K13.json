@@ -1,0 +1,73 @@
+{
+  "item_id": "K13",
+  "stem": "The number of bacteria in a colony was growing exponentially. At 1 pm yesterday the number of bacteria was 1000 and at 3 pm yesterday it was 4000.\n\nHow many bacteria were there in the colony at 6 pm yesterday?",
+  "options": [],
+  "scoring_guide": [
+    {
+      "category": "Correct Response",
+      "codes": [
+        {
+          "code": 10,
+          "response": "32 000. No work shown."
+        },
+        {
+          "code": 11,
+          "response": "32 000. States explicitly that the number of bacteria doubles every hour or shows sequence (pattern) of numbers of bacteria in 1 hour intervals: 1 000, 2 000, 4 000, 8 000, 16 000, 32 000."
+        },
+        {
+          "code": 12,
+          "response": "32 000. States that the numbers form a geometric series with common ratio r = 2 OR uses S_n = ar^(n-1) for r = 2 OR uses an exponential equation in the general form of y = A(a^k) with A = 1000, a = 2, and K = 5."
+        },
+        {
+          "code": 13,
+          "response": "32 000. Uses an exponential equation involving e such as y = 1000 (e^(kt)), k = 0.6931, t = 5."
+        },
+        {
+          "code": 19,
+          "response": "Other correct responses."
+        }
+      ]
+    },
+    {
+      "category": "Incorrect Response",
+      "codes": [
+        {
+          "code": 70,
+          "response": "Answers other than 16 000 and 64 000. No work shown."
+        },
+        {
+          "code": 71,
+          "response": "16 000 or 64 000. Exponential equation or pattern has been recognized correctly but there is a numerical error."
+        },
+        {
+          "code": 72,
+          "response": "Responses other than 16 000 and 64 000 where a correct exponential has been used but there is a numerical or algebraic error.\nExamples: s_n = ar^(n-1)\ny = A (a^k)"
+        },
+        {
+          "code": 73,
+          "response": "Responses where the exponential function of the form y = A(e^x) has been used but a numerical or algebraic error is made."
+        },
+        {
+          "code": 79,
+          "response": "Other incorrect responses."
+        }
+      ]
+    },
+    {
+      "category": "Nonresponse",
+      "codes": [
+        {
+          "code": 90,
+          "response": "Crossed-out, illegible, or impossible to interpret."
+        },
+        {
+          "code": 99,
+          "response": "BLANK"
+        }
+      ]
+    }
+  ],
+  "scoring_notes": null,
+  "has_figure": false,
+  "figure_description": null
+}

@@ -1,0 +1,69 @@
+{
+  "item_id": "K12",
+  "stem": "A translation maps A (2,−3) onto A' (−3,−5). Under the same translation, find the coordinates of B' , the image of B (1,4).",
+  "options": [],
+  "scoring_guide": [
+    {
+      "category": "Correct Response",
+      "codes": [
+        {
+          "code": 10,
+          "response": "(-4, 2). No work shown, or only points are shown in a diagram such that method cannot be determined."
+        },
+        {
+          "code": 11,
+          "response": "(-4, 2). Method: A diagram that shows more than points is drawn showing the geometrical method used such as mid-point, slope, or change in x- and y-direction."
+        },
+        {
+          "code": 12,
+          "response": "(-4, 2). Method: The coordinates of the translation vector are (-5, -2); the translation vector (-5, -2) is added to B (1,4) to obtain B' (-4, 2).\nNote: If diagram is shown and the translation vector is indicated, also use code 12."
+        },
+        {
+          "code": 19,
+          "response": "Other correct responses with method are shown."
+        }
+      ]
+    },
+    {
+      "category": "Incorrect Response",
+      "codes": [
+        {
+          "code": 70,
+          "response": "Response incorrect. No work shown."
+        },
+        {
+          "code": 71,
+          "response": "(6, 6). Method as in code 12 but uses incorrect translation vector, (5, 2)."
+        },
+        {
+          "code": 72,
+          "response": "Method as in code 12 with correct translation vectors (-5, -2) but with error in subtraction of negative numbers."
+        },
+        {
+          "code": 73,
+          "response": "Method as in code 11 with an understandable diagram consisting of more than just points. At least one coordinate of B' is incorrect."
+        },
+        {
+          "code": 79,
+          "response": "Other incorrect responses with method shown. (If no method/work shown, code 70.)"
+        }
+      ]
+    },
+    {
+      "category": "Nonresponse",
+      "codes": [
+        {
+          "code": 90,
+          "response": "Crossed-out, illegible, or impossible to interpret."
+        },
+        {
+          "code": 99,
+          "response": "BLANK"
+        }
+      ]
+    }
+  ],
+  "scoring_notes": null,
+  "has_figure": false,
+  "figure_description": null
+}

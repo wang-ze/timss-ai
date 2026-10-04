@@ -1,0 +1,42 @@
+{
+  "item_id": "M042130",
+  "stem": "Using the marked points, draw a triangle having an area TWICE that of the rectangle ABCD.\n\n[Image: Grid with rectangle ABCD and marked points]",
+  "options": [],
+  "scoring_guide_item_id": "M042130",
+  "scoring_guide": [
+    {
+      "category": "Correct Response",
+      "codes": [
+        {
+          "code": 10,
+          "response": "Using marked points, draw a triangle with area 24 square units. For example, AZW, ZWX, XAW, XZA, AYW, BZX, and XWD."
+        }
+      ]
+    },
+    {
+      "category": "Incorrect Response",
+      "codes": [
+        {
+          "code": 70,
+          "response": "Triangle with area 12 square units drawn"
+        },
+        {
+          "code": 79,
+          "response": "Other Incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+        }
+      ]
+    },
+    {
+      "category": "Nonresponse",
+      "codes": [
+        {
+          "code": 99,
+          "response": "Blank"
+        }
+      ]
+    }
+  ],
+  "scoring_notes": null,
+  "has_figure": true,
+  "figure_description": "An 11 by 11 square grid containing eight marked points labeled with black dots and letters:\n- Vertex A is at grid coordinate (2, 1) relative to the bottom-left corner of the grid (0, 0).\n- Vertex B is at (5, 1).\n- Vertex C is at (5, 5).\n- Vertex D is at (2, 5).\n- Vertices A, B, C, and D are connected by dashed lines to form rectangle ABCD, which is 3 units wide and 4 units high.\n- Four additional points are marked with black dots and labeled:\n  - Point W is at (8, 1).\n  - Point Z is at (2, 9).\n  - Point Y is at (5, 9).\n  - Point X is at (8, 9)."
+}

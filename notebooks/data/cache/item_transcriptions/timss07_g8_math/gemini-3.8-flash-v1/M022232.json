@@ -1,0 +1,87 @@
+{
+  "item_id": "M022232",
+  "stem": "Katy made a table to keep track of how long it took water in a beaker to cool from 95°C to 70°C. She measured the time it took the water to cool in 5°C intervals.\n\n| Interval Readings | Amount of Cooling Time |\n| :--- | :--- |\n| 95°C – 90°C | 2 minutes 10 seconds |\n| 90°C – 85°C | 3 minutes 19 seconds |\n| 85°C – 80°C | 4 minutes 48 seconds |\n| 80°C – 75°C | 6 minutes 55 seconds |\n| 75°C – 70°C | 9 minutes 43 seconds |\n\nEstimate to the nearest minute the total time taken for the temperature of the water in the beaker to cool from 95°C to 70°C, and explain how your estimate was made.\n\nEstimate: ____\n\nExplain:",
+  "options": [],
+  "scoring_guide_item_id": "M022232",
+  "scoring_guide": [
+    {
+      "category": "Correct Response",
+      "codes": [
+        {
+          "code": 20,
+          "response": "27 minutes, each amount of time is correctly rounded to whole minutes before adding (e.g., 2 + 3 + 5 + 7 + 10)"
+        },
+        {
+          "code": 21,
+          "response": "27 minutes, each amount of time is correctly rounded to the nearest 5, 10, 15, or 30 seconds"
+        },
+        {
+          "code": 22,
+          "response": "27 minutes, add minutes to equal 24 and uses some approach to estimate seconds to 3 minutes"
+        },
+        {
+          "code": 23,
+          "response": "27 minutes, adds correctly and then rounds off from 26 minutes 55 seconds"
+        },
+        {
+          "code": 24,
+          "response": "27 minutes. No calculations shown. Statements might include \"rounded off to the nearest minute\", \"rounded the numbers up and down\" or similar expressions"
+        },
+        {
+          "code": 29,
+          "response": "Other fully correct"
+        }
+      ]
+    },
+    {
+      "category": "Partial Response",
+      "codes": [
+        {
+          "code": 10,
+          "response": "Method includes each amount of time correctly rounded to whole minutes before adding but answer is incorrect"
+        },
+        {
+          "code": 11,
+          "response": "Method includes each amount of time correctly rounded to the nearest 5, 10, 15, or 30 seconds but answer is incorrect"
+        },
+        {
+          "code": 19,
+          "response": "Other partially correct including 27 minutes with no explanation or method shown."
+        }
+      ]
+    },
+    {
+      "category": "Incorrect Response",
+      "codes": [
+        {
+          "code": 70,
+          "response": "Each amount of time is rounded off, but one or more rounding is incorrect"
+        },
+        {
+          "code": 71,
+          "response": "26 minutes 55 seconds, no rounding"
+        },
+        {
+          "code": 72,
+          "response": "25 minutes 75 seconds, 25.75 minutes; or rounds off from 25.75 minutes (or equivalent)"
+        },
+        {
+          "code": 79,
+          "response": "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+        }
+      ]
+    },
+    {
+      "category": "Nonresponse",
+      "codes": [
+        {
+          "code": 99,
+          "response": "Blank"
+        }
+      ]
+    }
+  ],
+  "scoring_notes": "Note: There is no distinction made between responses with or without units.",
+  "has_figure": false,
+  "figure_description": null
+}

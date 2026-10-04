@@ -1,0 +1,95 @@
+{
+  "item_id": "K17",
+  "stem": "The graph of the function g passes through the point (1,2). The slope of the tangent to the graph at any point (x, y) is given by g'(x) = 6x − 12. What is g(x)? Show all your work.",
+  "options": [],
+  "scoring_guide": [
+    {
+      "category": "Correct Response",
+      "codes": [
+        {
+          "code": 30,
+          "response": "g(x) = 3x^2 - 12x + 11. Method: First the function g is determined to be of the form g(x) = 3x^2 - 12 x + c. Then c is found to be 11 by solving the equation g(1) = 2, i.e. 3 - 12 + c = 2."
+        },
+        {
+          "code": 39,
+          "response": "g(x) = 3x^2 - 12x + 11. Other correct method used."
+        }
+      ]
+    },
+    {
+      "category": "Partial Response",
+      "codes": [
+        {
+          "code": 20,
+          "response": "g(x) = 3x^2 - 12 x + 11. No work shown."
+        },
+        {
+          "code": 21,
+          "response": "Answer of the form g(x) = 3 x^2 - 12 x + c, where c is a numerical value other than 11. Method correct; the value of c given incorrectly due to error in solving the equation g(1) = 2. If c = 13, check to determine if 13 results from an error in solving g(1) = 2[code 21] or from solving correctly the \"reversed\" equation, g(2) = 1 [code 22]."
+        },
+        {
+          "code": 22,
+          "response": "Method: Solves the \"reversed\" equation g(2) = 1 and determines the value of c to be 13. If an error is made in solving the reversed equation; c determined to be a number other than 13, use code 11."
+        },
+        {
+          "code": 23,
+          "response": "Answers of the form g(x) = 3x^2 -12x + c, where the value of c is NOT determined by solving either g(1) = 2 or g(2) = 1."
+        },
+        {
+          "code": 29,
+          "response": "Other nearly complete solutions with a minor error."
+        }
+      ]
+    },
+    {
+      "category": "Minimal Response",
+      "codes": [
+        {
+          "code": 10,
+          "response": "Answer of the form g(x) = 3x^2 - 12 x + c, where a numerical value of c is NOT found."
+        },
+        {
+          "code": 11,
+          "response": "Method: Incorrectly solves \"reversed\" equation g(2) = 1, finds c to be a number other than 13."
+        },
+        {
+          "code": 19,
+          "response": "Other minimally correct solutions"
+        }
+      ]
+    },
+    {
+      "category": "Incorrect Response",
+      "codes": [
+        {
+          "code": 70,
+          "response": "g(x) = 3x^2 - 12x and no work shown."
+        },
+        {
+          "code": 71,
+          "response": "Answers of the form g(x) = 6x^2 - ... or other integration error."
+        },
+        {
+          "code": 79,
+          "response": "Other incorrect attempts."
+        }
+      ]
+    },
+    {
+      "category": "Nonresponse",
+      "codes": [
+        {
+          "code": 90,
+          "response": "Crossed-out, illegible, or impossible to interpret."
+        },
+        {
+          "code": 99,
+          "response": "BLANK"
+        }
+      ]
+    }
+  ],
+  "scoring_notes": null,
+  "has_figure": false,
+  "figure_description": null
+}

@@ -1,0 +1,66 @@
+{
+  "item_id": "MA23141",
+  "stem": "[Image: Graph of a parabola f(x) on a Cartesian coordinate plane]\n\nThe graph of the function f is shown above. The equation of the function f is given by f(x) = ax^2 + bx + c. Find the values of a, b, and c.\n\nShow your work.",
+  "options": [],
+  "scoring_guide_item_id": "MA23141",
+  "scoring_guide": [
+    {
+      "category": "Correct Response",
+      "codes": [
+        {
+          "code": 10,
+          "response": "All values correct: a = 2, b = -2, c = -4, or equivalently giving the full function\nMethod used: factorization"
+        },
+        {
+          "code": 11,
+          "response": "All values correct: a = 2, b = -2, c = -4, or equivalently giving the full function\nMethod used: solving three simultaneous equations"
+        },
+        {
+          "code": 12,
+          "response": "All values correct: a = 2, b = -2, c = -4, or equivalently giving the full function\nMethod used: solving three simultaneous equations by calculator"
+        },
+        {
+          "code": 13,
+          "response": "All values correct: a = 2, b = -2, c = -4, or equivalently giving the full function\nMethod used: quadratic regression by calculator"
+        },
+        {
+          "code": 19,
+          "response": "All values correct: a = 2, b = -2, c = -4, or equivalently giving the full function\nOther correct method used"
+        }
+      ]
+    },
+    {
+      "category": "Incorrect Response",
+      "codes": [
+        {
+          "code": 70,
+          "response": "Calculator used—answer incorrect or explanation inadequate (e.g., trial or error method)"
+        },
+        {
+          "code": 71,
+          "response": "All values correct: a= 2, b = -2, c = -4, or equivalently giving the full function. No correct method shown."
+        },
+        {
+          "code": 72,
+          "response": "c = -4 with values of a and b either missing or incorrect."
+        },
+        {
+          "code": 79,
+          "response": "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+        }
+      ]
+    },
+    {
+      "category": "Nonresponse",
+      "codes": [
+        {
+          "code": 99,
+          "response": "Blank"
+        }
+      ]
+    }
+  ],
+  "scoring_notes": null,
+  "has_figure": true,
+  "figure_description": "A Cartesian coordinate system with a horizontal axis labeled x and a vertical axis labeled f(x). The origin is labeled O. The axes have evenly spaced tick marks representing 1 unit each. An upward-opening parabola is drawn on the plane. Three points on the parabola are marked with an '×' and labeled with coordinates: the x-intercepts (-1, 0) and (2, 0), and the y-intercept (0, -4). The vertex of the parabola is located in the fourth quadrant below (0, -4)."
+}

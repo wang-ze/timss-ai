@@ -1,0 +1,50 @@
+{
+  "item_id": "MA23198",
+  "stem": "[Image: Graph of y = x + cos x]\n\nSophia is studying the graph of the function y = x + cos x shown above. She says that the slope at point A is the same as the slope at point B. Explain why she is correct.",
+  "options": [],
+  "scoring_guide_item_id": "MA23198",
+  "scoring_guide": [
+    {
+      "category": "Correct Response",
+      "codes": [
+        {
+          "code": 10,
+          "response": "Explanation involving differentiating and showing the gradient is the same at x = π and x = 2π; or using the nature of the cosine function to establish that the gradient is the same at x = π and x = 2π"
+        },
+        {
+          "code": 11,
+          "response": "Correct answer using calculator with adequate explanation"
+        }
+      ]
+    },
+    {
+      "category": "Incorrect Response",
+      "codes": [
+        {
+          "code": 70,
+          "response": "Calculator used—answer incorrect or explanation inadequate"
+        },
+        {
+          "code": 71,
+          "response": "Differentiates correctly but does not give adequate explanation of why slopes are equal"
+        },
+        {
+          "code": 79,
+          "response": "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+        }
+      ]
+    },
+    {
+      "category": "Nonresponse",
+      "codes": [
+        {
+          "code": 99,
+          "response": "Blank"
+        }
+      ]
+    }
+  ],
+  "scoring_notes": null,
+  "has_figure": true,
+  "figure_description": "A Cartesian coordinate plane with horizontal axis labeled x and vertical axis labeled y, intersecting at the origin labeled O. The grid lines correspond to labels on the axes. The x-axis is labeled at -π, O (0), π, 2π, and 3π. The y-axis is labeled at -4, 4, and 8. The graph of the curve y = x + cos x is shown passing through the grid from x < -π to x > 3π. Two points on the curve are marked with solid black dots and labeled: point A at x = π and point B at x = 2π."
+}

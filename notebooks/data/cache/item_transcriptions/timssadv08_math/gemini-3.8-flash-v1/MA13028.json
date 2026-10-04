@@ -1,0 +1,50 @@
+{
+  "item_id": "MA13028",
+  "stem": "For every natural number n, 1^2 + 3^2 + ... + (2n - 1)^2 = (n(4n^2 - 1))/3\n\nTo prove this by MATHEMATICAL INDUCTION, what are the essential steps that will need to be carried out? (Do not do the actual proof.)",
+  "options": [],
+  "scoring_guide_item_id": "MA13028",
+  "scoring_guide": [
+    {
+      "category": "Correct Response",
+      "codes": [
+        {
+          "code": 10,
+          "response": "Correct description of the two steps involved in the proof (i.e., verbal or symbolic statements) equivalent to:\nStep 1: Prove that the statement is true for n = 1.\nStep 2: Prove if the statement is true for any natural number n = k, then it also is true for n = k + 1."
+        }
+      ]
+    },
+    {
+      "category": "Incorrect Response",
+      "codes": [
+        {
+          "code": 70,
+          "response": "Describes Step 2 correctly but omits Step 1 or describes it incorrectly (e.g., \"prove for n = 0\", or \"we must prove it for some small number\")"
+        },
+        {
+          "code": 71,
+          "response": "Gives correct proof of statement by induction with or without general statement of the induction method, or performs Step 2 correctly but omits Step 1, or describes Step 1 incorrrectly"
+        },
+        {
+          "code": 72,
+          "response": "Describes Step 2: Prove that if the statement is true for any natural number n = k, where k is greater than 1, then it also is true for n = k - 1 with an appropriate Step 1."
+        },
+        {
+          "code": 79,
+          "response": "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+        }
+      ]
+    },
+    {
+      "category": "Nonresponse",
+      "codes": [
+        {
+          "code": 99,
+          "response": "Blank"
+        }
+      ]
+    }
+  ],
+  "scoring_notes": null,
+  "has_figure": false,
+  "figure_description": null
+}

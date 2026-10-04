@@ -1,0 +1,58 @@
+{
+  "item_id": "MA23159",
+  "stem": "Find f'(x), when f(x) = (3x + 2)/(x - 1).\n\nShow your work.",
+  "options": [],
+  "scoring_guide_item_id": "MA23159",
+  "scoring_guide": [
+    {
+      "category": "Correct Response",
+      "codes": [
+        {
+          "code": 10,
+          "response": "Using quotient rule (u/v)' = (u'v - uv')/v^2 or, product rule (uv)' = u'v + uv' , obtains\nf'(x) = -5/(x - 1)^2"
+        },
+        {
+          "code": 11,
+          "response": "Correct expression using calculator"
+        }
+      ]
+    },
+    {
+      "category": "Incorrect Response",
+      "codes": [
+        {
+          "code": 70,
+          "response": "Calculator used—answer incorrect or explanation inadequate"
+        },
+        {
+          "code": 71,
+          "response": "Correct answer but no method shown"
+        },
+        {
+          "code": 72,
+          "response": "Using quotient rule but not completing with correct answer"
+        },
+        {
+          "code": 73,
+          "response": "Using product rule but not completing with correct answer"
+        },
+        {
+          "code": 79,
+          "response": "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+        }
+      ]
+    },
+    {
+      "category": "Nonresponse",
+      "codes": [
+        {
+          "code": 99,
+          "response": "Blank"
+        }
+      ]
+    }
+  ],
+  "scoring_notes": null,
+  "has_figure": false,
+  "figure_description": null
+}

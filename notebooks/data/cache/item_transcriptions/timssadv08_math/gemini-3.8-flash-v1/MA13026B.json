@@ -1,0 +1,50 @@
+{
+  "item_id": "MA13026B",
+  "stem": "B. Triangle ABC is rotated through 90° anti-clockwise, centre O. On the diagram, draw and label triangle A\"B\"C\", the image of triangle ABC under this rotation.\n\n[Image: Coordinate grid with triangle ABC]",
+  "options": [],
+  "scoring_guide_item_id": "MA13026B",
+  "scoring_guide": [
+    {
+      "category": "Correct Response",
+      "codes": [
+        {
+          "code": 10,
+          "response": "Correct answer: (x, y) -> (-y, x) A\" (1, -4) B\" (4, -1) C\" (4, -3)"
+        }
+      ]
+    },
+    {
+      "category": "Incorrect Response",
+      "codes": [
+        {
+          "code": 70,
+          "response": "A\"B\"C\" is the correct image of triangle A'B'C' (NOT ABC ), as shown in response to Part A, under the rotation 90° counterclockwise with center O."
+        },
+        {
+          "code": 71,
+          "response": "A\"B\"C\" is the image of triangle ABC under a clockwise 90° rotation with center O.\nA\" (-1, 4) B\" (-4, 1) C\" (-4, 3)"
+        },
+        {
+          "code": 72,
+          "response": "Image A\"B\"C\" has correct shape and position but is incorrectly labeled"
+        },
+        {
+          "code": 79,
+          "response": "Other incorrect (including sides of a triangle not drawn or vertices not labeled, crossed out, erased, stray marks, illegible, or off task)\nExamples:\n1. A\"B\"C\" is the image of triangle ABC under reflection in the x-axis.\nA\" (-4, 1) B\" (-1, 4) C\" (-3, 4)\n2. A\"B\"C\" is the image of triangle ABC under the central symmetry with center O; OR, equivalently, under the rotation of 180° around O.\nA\" (4, 1) B\" (1, 4) C\" (3, 4)"
+        }
+      ]
+    },
+    {
+      "category": "Nonresponse",
+      "codes": [
+        {
+          "code": 99,
+          "response": "Blank"
+        }
+      ]
+    }
+  ],
+  "scoring_notes": null,
+  "has_figure": true,
+  "figure_description": "A Cartesian coordinate grid showing the x-axis and y-axis intersecting at the origin labeled O. The grid extends 5 units to the left, 10 units to the right, 5 units up, and 8 units down. Each grid square represents 1 unit by 1 unit. In the third quadrant, a triangle ABC is drawn with vertices at A(-4, -1), B(-1, -4), and C(-3, -4)."
+}

@@ -1,0 +1,82 @@
+{
+  "item_id": "L18",
+  "stem": "Two circles with centres A and B as shown below have radii of 7 cm and 10 cm respectively. If the length of the common chord PQ is 8 cm, what is the length of AB? Show all your work.\n\n[Image: Two intersecting circles with centers A and B]",
+  "options": [],
+  "scoring_guide": [
+    {
+      "category": "Correct Response",
+      "codes": [
+        {
+          "code": 20,
+          "response": "14.9 or sqrt(84) + sqrt(33) . Method: Pythagorean theorem applied in triangles APS and BPS (S is the midpoint of PQ)."
+        },
+        {
+          "code": 21,
+          "response": "14.9. Method: Trigonometry functions (ratios) used correctly to determine lengths of sides of triangles OR size of angles of triangle that results in determining the length of AB. Note: Most frequently used trigonometric functions are sine and cosine."
+        },
+        {
+          "code": 29,
+          "response": "Other complete and correct solutions."
+        }
+      ]
+    },
+    {
+      "category": "Partial Response",
+      "codes": [
+        {
+          "code": 10,
+          "response": "Method as in 20 but solution contains a (minor) error in method, or numerical or rounding error."
+        },
+        {
+          "code": 11,
+          "response": "Method as in 21 but solution contains a (minor) error in method, or numerical or rounding error."
+        },
+        {
+          "code": 12,
+          "response": "sqrt(84) + sqrt(33) . No work shown."
+        },
+        {
+          "code": 19,
+          "response": "Other partially correct solutions, with minor error."
+        }
+      ]
+    },
+    {
+      "category": "Incorrect Response",
+      "codes": [
+        {
+          "code": 70,
+          "response": "Method: Pythagorean theorem applied to ΔAPB which is not a right triangle."
+        },
+        {
+          "code": 71,
+          "response": "Incorrect use of the Pythagorean theorem in a right triangle."
+        },
+        {
+          "code": 72,
+          "response": "Figure in booklet has been considered accurate and lengths of segments and/or measures of angles have been determined from the diagram."
+        },
+        {
+          "code": 79,
+          "response": "All other incorrect responses."
+        }
+      ]
+    },
+    {
+      "category": "Nonresponse",
+      "codes": [
+        {
+          "code": 90,
+          "response": "Crossed-out, illegible, or impossible to interpret"
+        },
+        {
+          "code": 99,
+          "response": "BLANK"
+        }
+      ]
+    }
+  ],
+  "scoring_notes": "Note: 1. Since the expected precision is not indicated, every result obtained by a correct method and reasonable and correct rounding should be accepted.\n2. If student gives at some stage the correct answer but continues and later makes a numerical (not conceptual) error, ignore this error.",
+  "has_figure": true,
+  "figure_description": "Two intersecting circles are shown. The smaller circle on the left has its center labeled A, and the larger circle on the right has its center labeled B. A horizontal line segment connects center A and center B. The two circles intersect at two points labeled P (top) and Q (bottom). A vertical line segment connects P and Q, intersecting line segment AB. Line segment AP is drawn and labeled \"7 cm\", and line segment BP is drawn and labeled \"10 cm\"."
+}

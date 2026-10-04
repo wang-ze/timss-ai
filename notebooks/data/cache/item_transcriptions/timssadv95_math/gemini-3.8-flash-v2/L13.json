@@ -1,0 +1,73 @@
+{
+  "item_id": "L13",
+  "stem": "Two vectors vector a and vector b (vector a, vector b ≠ vector 0) are related by: |vector a + vector b| = |vector a - vector b|.\n\nWhat is the measure of the angle between vector a and vector b?",
+  "options": [],
+  "scoring_guide": [
+    {
+      "category": "Correct Response",
+      "codes": [
+        {
+          "code": 10,
+          "response": "90° OR ± π/2 OR \"Given vectors are perpendicular.\" No work shown."
+        },
+        {
+          "code": 11,
+          "response": "90° OR ± π/2 OR \"Given vectors are perpendicular.\" And results derived correctly from equality given and from definition of |a|, that is, |a+b| = |a-b| => |a+b|^2 =\n|a-b|^2 => (a+b) (a+b) => (a-b) (a-b) => a^2+ 2ab + b^2 = a^2 - 2ab+b^2 => 2ab = -2ab => 4ab = 0 => vectors a,b are perpendicular.\nNote: If error(s) in derivation, code 19."
+        },
+        {
+          "code": 12,
+          "response": "90° OR ± π/2 OR \"Given vectors are perpendicular.\" Situation is represented correctly geometrically, that is, vectors a+b and a-b represented as diagonals of a parallelogram. Conclusion stated that the given equality holds only if vectors a,b are perpendicular to each other. Note: If error(s) in method, code 19."
+        },
+        {
+          "code": 13,
+          "response": "90° OR ± π/2 OR \"Given vectors are perpendicular.\" Only presents a drawing; no explanation in words."
+        },
+        {
+          "code": 19,
+          "response": "90° OR ±π/2 OR \"Given vectors are perpendicular.\" Some work shown. Method may be complete and correct, or incomplete and correct, or incorrect."
+        }
+      ]
+    },
+    {
+      "category": "Incorrect Response",
+      "codes": [
+        {
+          "code": 70,
+          "response": "0° or 180° with or without work shown."
+        },
+        {
+          "code": 71,
+          "response": "Method as in code 11, but no statement of measurement."
+        },
+        {
+          "code": 72,
+          "response": "Method as in code 12, but no statement of measurement."
+        },
+        {
+          "code": 73,
+          "response": "Unsuccessful atttempts to use the formula: ab cos α = | a | · | b | ."
+        },
+        {
+          "code": 79,
+          "response": "All other incorrect responses."
+        }
+      ]
+    },
+    {
+      "category": "Nonresponse",
+      "codes": [
+        {
+          "code": 90,
+          "response": "Crossed-out, illegible, or impossible to interpret."
+        },
+        {
+          "code": 99,
+          "response": "BLANK"
+        }
+      ]
+    }
+  ],
+  "scoring_notes": null,
+  "has_figure": false,
+  "figure_description": null
+}

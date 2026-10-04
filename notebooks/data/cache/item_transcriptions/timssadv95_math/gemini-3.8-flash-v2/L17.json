@@ -1,0 +1,86 @@
+{
+  "item_id": "L17",
+  "stem": "For what real value of k will the equation below describe a circle with radius 3?\n\nx^2 + y^2 + 2x - 4y + k = 0\n\nShow all your work.",
+  "options": [],
+  "scoring_guide": [
+    {
+      "category": "Correct Response",
+      "codes": [
+        {
+          "code": 20,
+          "response": "K = -4. Method used:\n• Because of the quadratic and linear terms, the equation must be of the general form (x+1)^2 + (y-2)^2 . From that we get the equation\n• (x+1)^2 + (y-2)^2 -5 + k = 0\n• (x+1)^2 +(y-2)^2 = 5 - k\n• If the radius is 3, right hand side must equal 9 (= r^2)\n• Hence 5 - k = 9 and k = -4 is the only solution."
+        },
+        {
+          "code": 21,
+          "response": "k = -4. Method used:\n• All circles with radius 3 have same general form: x^2 + y^2 - 2ax - 2by + a^2 + b^2 - 9 = 0.\n• From that: 2 = -2a; -4 = -2b; k = a^2+b^2 -9;\n• Hence a = -1, b = 2, k = -4."
+        },
+        {
+          "code": 29,
+          "response": "Any other fully correct solution."
+        }
+      ]
+    },
+    {
+      "category": "Partial Response",
+      "codes": [
+        {
+          "code": 10,
+          "response": "k = -4. No work shown."
+        },
+        {
+          "code": 11,
+          "response": "Method as in code 20 but with numerical error(s) only."
+        },
+        {
+          "code": 12,
+          "response": "Method as in code 21 but with numerical error(s) only."
+        },
+        {
+          "code": 19,
+          "response": "All other partially correct solutions."
+        }
+      ]
+    },
+    {
+      "category": "Incorrect Response",
+      "codes": [
+        {
+          "code": 70,
+          "response": "Incorrect answer. No work shown."
+        },
+        {
+          "code": 71,
+          "response": "k = -12 with or without work shown.\n[This answer can be obtained by the misconception that point (3,3) is on the circle, hence x = 3 and y = 3 are put into the equation.]"
+        },
+        {
+          "code": 72,
+          "response": "k = 3 OR k = 9 OR k = -9 with or without work shown.\n[This answer can be obtained by the miscoknception that the parameter k represents the radius or square of radius of the circle.]"
+        },
+        {
+          "code": 73,
+          "response": "k = 8 or k = 2 or k = 14 with or without work shown.\n[This answer can be obtained by the misconception that -5 + k = 3 OR 5 - k = 3 OR -5 + k = 9.]"
+        },
+        {
+          "code": 79,
+          "response": "All other incorrect responses with some work shown."
+        }
+      ]
+    },
+    {
+      "category": "Nonresponse",
+      "codes": [
+        {
+          "code": 90,
+          "response": "Crossed-out, illegible, or impossible to interpret."
+        },
+        {
+          "code": 99,
+          "response": "BLANK"
+        }
+      ]
+    }
+  ],
+  "scoring_notes": null,
+  "has_figure": false,
+  "figure_description": null
+}
