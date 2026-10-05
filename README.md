@@ -60,3 +60,71 @@ The LLM, prompted as an expert in testing the item's grade, content domain, and 
 To check the method, the notebook predicts each of the 722 calibrated items as if it were new, with the item's other parts (and the other items of its task) left out of its context.
 It exports one row per item, with the reference items, the LLM's reasoning, the predicted and calibrated parameters, and their errors, plus error summaries by grade and assessment, to `notebooks/data/timss_math_predicted_item_parameters.xlsx`.
 Each prediction is saved in `notebooks/data/cache/parameter_predictions/timss_math/`, so a rerun requests only missing or changed predictions.
+
+### FastEmbed and Ollama
+
+`notebooks/predict_item_parameters_FastEmbed.ipynb` does the same without any API, by importing the Python modules below.
+FastEmbed, Qdrant's embedding library, embeds the items on this computer with its default model, `BAAI/bge-small-en-v1.5` (384 dimensions), and a local Qdrant collection stores them, `timss_math_items` in `notebooks/data/qdrant_timss_math_items_fastembed/`.
+The LLM is `llama3.2` in a local Ollama server; `LLM_PROVIDER` and `PARAMETER_LLM_MODEL` select another Ollama model, or a model of OpenRouter, OpenAI, or the Gemini API.
+Keyword search is the same as in `predict_item_parameters.ipynb`, so only semantic and hybrid search, and the LLM, differ.
+
+FastEmbed embeds each text on its own, because in a batch a text's vector depends slightly on the other texts of the batch.
+The model reads at most 512 tokens, so the three parts of the TIMSS 2007 grade 8 class trip task (M032753A to M032753C), about 900 tokens each, are cut there.
+The item embeddings are cached in `notebooks/data/cache/item_embeddings/`, the predictions in `notebooks/data/cache/parameter_predictions/timss_math/ollama/llama3.2/`, and the predictions and their errors are exported to `notebooks/data/timss_math_predicted_item_parameters_fastembed.xlsx`.
+`llama3.2` predicts an item in about 10 seconds here, so the notebook requests at most `LOO_MAX_REQUESTS` (10) predictions in a run; `None` requests all 722, which take hours.
+
+### Python modules
+
+`src/timss_1/parameter_prediction/` holds the notebook's code as modules.
+Every setting is a parameter, and its default is the notebook's value.
+
+| Module | Contents |
+| --- | --- |
+| `items` | `ItemBank` (the released items, their chunks, calibrated parameters, and parts) and `TimssItem`, a new item. |
+| `embeddings` | `EmbeddingSettings`: provider (`gemini`, `openai`, `openrouter`, `ollama`, or `fastembed`), model, dimension, Gemini task types or query and document prefixes, and quota. |
+| `index` | `ItemIndex`, the Qdrant collection, with `search(text, method)` by `keyword`, `semantic`, or `hybrid` search, and `IndexSettings` (in memory by default, or a local path or server URL; hybrid candidates; BM25 `k1` and `b`). |
+| `predictor` | `ParameterPredictor` (search method, `n_similar`, `n_same_model`) and `LLMSettings` (provider `openrouter`, `openai`, `gemini`, or `ollama`; model; reasoning effort; output cap). |
+| `evaluation` | `LeaveOneOut` and `PredictionResults`: predict every calibrated item as if it were new, compute the errors and baselines, summarize them, and export them to Excel. |
+| `plots` | Graphs of the errors: predicted against calibrated values, error distributions, mean absolute error against the baselines, bias by assessment, and a comparison of runs. |
+
+```python
+from timss_1.parameter_prediction import (
+    EmbeddingSettings, ItemIndex, LeaveOneOut, LLMSettings, ParameterPredictor, TimssItem, plots
+)
+
+index = ItemIndex.build(
+    EmbeddingSettings(provider="ollama", model="nomic-embed-text", document_prefix="search_document: ",
+                      query_prefix="search_query: ")
+)
+index.search("fraction of a shape that is shaded", method="keyword")
+predictor = ParameterPredictor(index, LLMSettings(provider="ollama", model="gpt-oss:20b"), search_method="semantic")
+prediction = predictor.predict(TimssItem(...))
+
+loo = LeaveOneOut(predictor)
+loo.request(max_requests=1)  # LLM requests cost money; None requests every missing prediction
+results = loo.results()
+results.summary("grade")
+plots.mae_vs_baselines(results.errors)
+```
+
+The same from the command line, which writes `predictions.xlsx` (with a `settings` sheet) and `plots/` to `notebooks/data/parameter_prediction_runs/<settings>/`:
+
+```sh
+uv run timss-predict-loo                                   # the notebook's settings; reuses its predictions
+uv run timss-predict-loo --search-method semantic --llm-provider ollama --llm-model gpt-oss:20b --max-requests all
+uv run timss-predict-loo --embedding-provider fastembed --llm-provider ollama --llm-model llama3.2 \
+  --reasoning-effort omit --max-tokens 4096 --workers 1 --max-requests 10  # the FastEmbed notebook's settings
+uv run timss-plot-errors notebooks/data/timss_math_predicted_item_parameters.xlsx
+uv run timss-plot-errors run_a/predictions.xlsx run_b/predictions.xlsx --names hybrid semantic  # compare runs
+```
+
+`timss-predict-loo` sends no LLM requests unless `--max-requests` is given (`all` for every missing prediction).
+Run it with `--help` for every setting.
+
+The index is rebuilt in memory by default, which takes a second and never conflicts with the lock that a notebook kernel holds on a local Qdrant store.
+Item embeddings are cached per embedding setting: the notebook's settings use its `notebooks/data/timss_math_item_embeddings.npz`, and other settings a file in `notebooks/data/cache/item_embeddings/`.
+`--embedding-provider fastembed` defaults to FastEmbed's `BAAI/bge-small-en-v1.5` at its own size; FastEmbed downloads the model (67 MB) on first use into `FASTEMBED_CACHE_PATH`, else into the system temp directory.
+Predictions are saved in `notebooks/data/cache/parameter_predictions/timss_math/<provider>/<model>/`, one file per item, named by a hash of the LLM, reasoning effort, and prompts, so runs with different settings never overwrite each other's predictions.
+Predictions that the notebook saved are reused when their prompts match, so the default settings reproduce the notebook's 722 predictions and error summaries without any request.
+
+Ollama is called through its native API: the reasoning effort becomes `think` (pass `reasoning_effort=None` for models that cannot think, such as `llama3.2`), and `ollama_num_ctx` (32,768 tokens by default) must hold the prompts, about 6,000 tokens, and the output.

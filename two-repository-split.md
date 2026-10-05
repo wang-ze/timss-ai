@@ -68,9 +68,6 @@ git commit -m "Work in progress: building feature component"
 # 3. Safely push to your private repository
 # The '-u' flag links this local branch to 'origin' for future shortcuts
 git push -u origin feature-wip
-
-# 4. Or do this without the '-u'
-git push origin feature-wip
 ```
 *Your work is now securely backed up on GitHub, but completely hidden from the public.*
 
