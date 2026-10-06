@@ -5,9 +5,13 @@
 __pycache__/
 .venv/
 
-# Large TIMSS downloads (up to 158 MB each); recreate with `uv run timss2011-convert`
+# Large TIMSS downloads (up to 158 MB each); recreate with notebooks/scratch/get_data.ipynb or notebooks/scratch/timss2011.py
 /notebooks/data/raw/
-/data/raw/
+
+# Local working notebooks and scripts
+/notebooks/scratch/
+CLAUDE.md
+two-repository-split.md
 
 # macOS folder metadata and Office lock files
 .DS_Store
@@ -15,3 +19,6 @@ __pycache__/
 
 # Lock files of local Qdrant storage
 /notebooks/data/qdrant*/.lock
+
+# Lock files of the OpenRouter batch manifests
+/notebooks/data/cache/parameter_predictions/**/batches/.lock

@@ -1,7 +1,8 @@
 # TIMSS released mathematics items and their IRT parameters
 
-This note documents how `notebooks/get_data.ipynb` turns every mathematics set on the NCES page [TIMSS released assessment questions](https://nces.ed.gov/timss/released-questions.asp) into item-level JSONL files with one shared schema, combines them, and finds the official IRT item parameters of every item.
-Paths are relative to `notebooks/`.
+This note documents how `notebooks/scratch/get_data.ipynb` turns every mathematics set on the NCES page [TIMSS released assessment questions](https://nces.ed.gov/timss/released-questions.asp) into item-level JSONL files with one shared schema, combines them, and finds the official IRT item parameters of every item.
+The notebook is kept locally and is not in the repository; its helpers, imported as `ri`, are in `src/released_items.py`.
+Paths are relative to `notebooks/`, the parent of the notebook's working directory, `notebooks/scratch/`.
 Facts are as of 2026-10-03.
 
 ## Outputs
@@ -14,6 +15,7 @@ Facts are as of 2026-10-03.
 | `data/timss_g4_math_released_items.jsonl` | The grade 4 items alone, as before the other grades were added. |
 | `data/timss_math_released_item_parameters.xlsx` | IRT parameters of every item, with their sources (sheets `item_parameters`, `sources`, `crosswalk_1995_g4`, `crosswalk_1999_g8`). |
 | `data/timss_g4_math_released_item_parameters.xlsx` | The grade 4 rows of the same workbook. |
+| `../src/timss_math/item_parameter_prediction/data/` | Copies of `timss_math_released_items.jsonl` and of the `item_parameters` sheet as `timss_math_released_item_parameters.csv`, the inputs of the `timss_math.item_parameter_prediction` package. |
 
 ## The sets
 
@@ -42,7 +44,7 @@ For every set with a text layer, the printed words of each item were compared wi
 
 ## Record schema
 
-Every JSONL file has these fields, in this order (`ri.RECORD_FIELDS` in `src/timss_1/released_items.py`, the fields of the first file, `timss11_g4_math_released_items.jsonl`):
+Every JSONL file has these fields, in this order (`ri.RECORD_FIELDS` in `../src/released_items.py`, the fields of the first file, `timss11_g4_math_released_items.jsonl`):
 
 | Field | Meaning |
 | --- | --- |

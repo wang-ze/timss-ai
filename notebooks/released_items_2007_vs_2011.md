@@ -1,7 +1,8 @@
 # TIMSS 2007 vs. 2011 grade 4 mathematics released items: data structure differences
 
-This note compares the two released-item sources behind `notebooks/get_data.ipynb` and the JSONL files built from them.
-Facts come from parsing both PDFs and from `data/timss11_g4_math_item_parameters.xlsx` on 2026-10-02.
+This note compares the two released-item sources behind `notebooks/scratch/get_data.ipynb` (a local notebook, not in the repository) and the JSONL files built from them.
+Facts come from parsing both PDFs and from the TIMSS 2011 grade 4 item parameters (sheet `MAT` of `T11_G4_ItemParameters.xlsx`) on 2026-10-02.
+Since 2026-10-03 the 2007 JSONL also has item labels, topic areas, and percent correct from other sources (sections 6 and 8).
 All 74 TIMSS 2007 items are transcribed, but this note covers structure, not transcribed wording.
 
 | | TIMSS 2011 | TIMSS 2007 |
@@ -89,8 +90,9 @@ Both files have the same 25 fields in the same order; the 2007 notebook cell ass
 
 | Field | 2011 value | 2007 value |
 | --- | --- | --- |
-| `item_label`, `main_topic`, `accessibility_text` | From the PDF | `null` |
-| `pct_correct_intl_avg`, `pct_correct_usa`, `pct_correct` | From the PDF | `null` |
+| `item_label`, `main_topic` | From the PDF | From `T07_G4_ItemInformation.xls` in `T07_Items.zip` |
+| `accessibility_text` | From the PDF | `null` |
+| `pct_correct_intl_avg`, `pct_correct_usa`, `pct_correct` | From the PDF | From the NCES item statistics workbooks, which compare results with the U.S. average, so `vs_intl_avg` is `null` |
 | `max_points` | Inferred from the scoring categories | Printed in the PDF |
 | `scoring_guide` | Categories as printed | Categories as printed, except that "Partially Correct Response" is written "Partial Response" so all three 2-point items match (the transcription prompt asks for this); "Nonresponse" appears; descriptors without their score codes |
 | `has_figure`, `figure_description` | Model output, guided by the official accessibility text | Model output from the image alone |
@@ -109,9 +111,7 @@ So the 2007 items can join the 2011 items as calibrated reference items for para
 
 ## 8. What this means when combining the two sets
 
-- Analyses or filters by `main_topic`, `item_label`, or percent correct cover only the 2011 items; for example, the 2011 crosstab of content domain by main topic would drop every 2007 row.
+- `main_topic` follows each assessment's own framework: the two share seven topic areas, but 2007 has "Lines and Angles" and "Location and Movement" where 2011 has "Points, Lines, and Angles".
 - Comparisons of scoring categories need a mapping: "Partial Response" (2007) means "Partially Correct Response" (2011), and "Nonresponse" exists only in 2007.
-- The parameter-prediction prompt shows the percent correct of similar items; 2007 items would appear without it.
 - Stem wording for figures differs in origin: official NCES descriptions for 2011, model-written descriptions for 2007.
-- The item labels and topic areas missing from the 2007 PDF are in `T07_G4_ItemInformation.xls` (in `T07_Items.zip` from the TIMSS 2007 international database), and `data/timss07_g4_math_released_items_analysis.xlsx` fills `item_label` and `main_topic` from it; the 2007 JSONL itself keeps them null.
-- Percent correct for 2007 items would need yet another source, such as the TIMSS 2007 achievement almanacs.
+- Significance markers (`vs_intl_avg`) exist only for 2011, because the 2007 statistics compare with the U.S. average instead.

@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this package or its datasets, please cite it as below."
+type: software
+title: "timss-math: Item-level datasets of the released TIMSS mathematics items and LLM predictions of their IRT parameters"
+abstract: >-
+  Item-level datasets built from every TIMSS released mathematics set
+  (1995 to 2011, grades 4 and 8, and TIMSS Advanced), with the official IRT
+  item parameters attached, and LLM predictions of the IRT parameters of new
+  items grounded in the most similar calibrated items.
+authors:
+  - family-names: Wang
+    given-names: Ze
+version: 0.1.0
+license: MIT
+repository-code: "https://github.com/wang-ze/timss-ai"
+keywords:
+  - TIMSS
+  - mathematics assessment
+  - item response theory
+  - item parameter prediction
+  - large language models
+  - retrieval-augmented generation

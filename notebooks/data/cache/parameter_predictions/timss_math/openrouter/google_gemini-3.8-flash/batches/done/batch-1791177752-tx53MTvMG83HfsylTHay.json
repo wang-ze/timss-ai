@@ -1,0 +1,71 @@
+{
+  "batch_id": "batch-1791177752-tx53MTvMG83HfsylTHay",
+  "model": "google/gemini-3.8-flash",
+  "submitted_at": "2026-10-05T05:22:31+00:00",
+  "collected_at": "2026-10-05T07:51:35+00:00",
+  "status": "completed",
+  "finalized_at": 1791186687,
+  "request_counts": {
+    "total": 12,
+    "completed": 12,
+    "failed": 0
+  },
+  "usage": {
+    "prompt_tokens": 93862,
+    "completion_tokens": 38663,
+    "total_tokens": 132525,
+    "cost": 0.107691375,
+    "is_byok": false
+  },
+  "error": null,
+  "requests": {
+    "TIMSS_1995_grade_4_Mathematics_V4A_268516ed2febd535": {
+      "item_key": "TIMSS 1995/grade 4/Mathematics/V4A",
+      "outcome": "saved"
+    },
+    "TIMSS_1995_grade_4_Mathematics_S3_4e550b16802d4313": {
+      "item_key": "TIMSS 1995/grade 4/Mathematics/S3",
+      "outcome": "saved"
+    },
+    "TIMSS_1995_grade_4_Mathematics_V1_d8955710d257f78e": {
+      "item_key": "TIMSS 1995/grade 4/Mathematics/V1",
+      "outcome": "saved"
+    },
+    "TIMSS_1995_grade_4_Mathematics_U1_1d98c96210ee6376": {
+      "item_key": "TIMSS 1995/grade 4/Mathematics/U1",
+      "outcome": "saved"
+    },
+    "TIMSS_1995_grade_4_Mathematics_S1_ee16a948adf2b968": {
+      "item_key": "TIMSS 1995/grade 4/Mathematics/S1",
+      "outcome": "saved"
+    },
+    "TIMSS_1995_grade_4_Mathematics_T1B_3b2131db74458e3e": {
+      "item_key": "TIMSS 1995/grade 4/Mathematics/T1B",
+      "outcome": "saved"
+    },
+    "TIMSS_Advanced_1995_grade_12_Advanced_Mathematics_K15_622fb628fae3f1d3": {
+      "item_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K15",
+      "outcome": "saved"
+    },
+    "TIMSS_Advanced_1995_grade_12_Advanced_Mathematics_K18_426efe35983b3e2f": {
+      "item_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K18",
+      "outcome": "saved"
+    },
+    "TIMSS_Advanced_1995_grade_12_Advanced_Mathematics_L17_90f692514902d678": {
+      "item_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L17",
+      "outcome": "saved"
+    },
+    "TIMSS_1999_grade_8_Mathematics_T01_ff5408430809c9e0": {
+      "item_key": "TIMSS 1999/grade 8/Mathematics/T01",
+      "outcome": "saved"
+    },
+    "TIMSS_1999_grade_8_Mathematics_V04C_698bd089eb984fc3": {
+      "item_key": "TIMSS 1999/grade 8/Mathematics/V04C",
+      "outcome": "saved"
+    },
+    "TIMSS_1999_grade_8_Mathematics_V02_a62fabd1e2c977e5": {
+      "item_key": "TIMSS 1999/grade 8/Mathematics/V02",
+      "outcome": "saved"
+    }
+  }
+}

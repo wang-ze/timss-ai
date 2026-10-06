@@ -1,14 +1,13 @@
 [project]
-name = "timss-1"
+name = "timss-math"
 version = "0.1.0"
-description = "Add your description here"
+description = "Item-level datasets of the released TIMSS mathematics items and LLM predictions of their IRT parameters"
 readme = "README.md"
 authors = [
     { name = "Ze Wang", email = "zewang@gmail.com" }
 ]
 requires-python = ">=3.13"
 dependencies = [
-    "asyncio>=4.0.0",
     "ipykernel>=7.3.0",
     "ipython>=9.17.1",
     "irw>=0.3.1",
@@ -27,14 +26,28 @@ dependencies = [
     "matplotlib>=3.11.2",
     "fastembed>=0.8.1",
     "ipywidgets>=8.1.9",
+    "httpx2>=2.13.1",
+    "scipy>=1.18.1",
+    "filelock>=4.0.10",
 ]
 
 [project.scripts]
-timss-1 = "timss_1:main"
-timss2011-convert = "timss_1.timss2011:main"
-timss-predict-loo = "timss_1.parameter_prediction.evaluation:main"
-timss-plot-errors = "timss_1.parameter_prediction.plots:main"
+timss-predict-loo = "timss_math.item_parameter_prediction.evaluation:main"
+timss-plot-errors = "timss_math.item_parameter_prediction.plots:main"
 
 [build-system]
 requires = ["uv_build>=0.12.19,<0.13.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.16.10",
+]
+
+[tool.ruff.lint.flake8-bugbear]
+# Frozen dataclasses of immutable fields, so one default instance can be shared (B008).
+extend-immutable-calls = [
+    "timss_math.item_parameter_prediction.embeddings.EmbeddingSettings",
+    "timss_math.item_parameter_prediction.index.IndexSettings",
+    "timss_math.item_parameter_prediction.predictor.LLMSettings",
+]
