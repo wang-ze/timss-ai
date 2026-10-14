@@ -319,14 +319,14 @@ The tests make no API calls.
 If you use this package or its datasets, please cite it.
 `CITATION.cff` holds the same metadata, from which GitHub's "Cite this repository" offers APA and BibTeX; keep its `version` equal to `pyproject.toml`'s.
 
-> Wang, Z. (2026). *timss-math: Item-level datasets of the released TIMSS mathematics items, and predictions of their IRT parameters by LLMs and Jev* (Version 0.1.0) [Computer software]. https://github.com/wang-ze/timss-ai
+> Wang, Z. (2026). *timss-math: Item-level datasets of the released TIMSS mathematics items, and predictions of their IRT parameters by LLMs and Jev* (Version 0.2.0) [Computer software]. https://github.com/wang-ze/timss-ai
 
 ```bibtex
 @software{wang_2026_timss_math,
   author  = {Wang, Ze},
   title   = {{timss-math}: Item-Level Datasets of the Released {TIMSS} Mathematics Items, and Predictions of Their {IRT} Parameters by {LLMs} and {Jev}},
   year    = {2026},
-  version = {0.1.0},
+  version = {0.2.0},
   url     = {https://github.com/wang-ze/timss-ai},
   license = {MIT}
 }
