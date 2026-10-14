@@ -2,10 +2,11 @@
 
 Jev (TypeSafe's ``typesafe/jev-1.13``, through OpenRouter or TypeSafe's own API, with ``typesafe-sdk``) answers
 questions about a state, a JSON object, instead of following a prompt. A score question offers an ordered rubric of
-criteria, and Jev answers it with a probability for each criterion; it never writes a number. So each parameter is
-asked on a value scale (``ValueScale``), one criterion per value, such as ``-2.0 (very easy item)``, ``-1.0``, ...,
-``2.0 (very hard item)`` for the location, and Jev's probabilities over the values are a discrete distribution of the
-parameter (``posterior``). Its point prediction is one of:
+at most 10 criteria, and Jev answers it with a probability for each criterion and a score, the probability-weighted
+mean of the criteria's positions (0, 1, ...). So each parameter is asked on a value scale (``ValueScale``), one
+criterion per value, such as ``-2.0 (very easy item)``, ``-1.0``, ..., ``2.0 (very hard item)`` for the location, and
+Jev's probabilities over the values are a discrete distribution of the parameter (``posterior``). Jev's score is not a
+prediction of the parameter, because the values need not be evenly spaced. The point prediction is one of:
 
 - ``eap``: the probability-weighted mean of the values (expected a posteriori), which minimizes the expected squared
   error. The default.
@@ -57,6 +58,8 @@ API_KEY_VARIABLES = {"openrouter": "OPENROUTER_API_KEY", "typesafe": "TYPESAFE_A
 COST_SOURCES = {"openrouter": "OpenRouter response", "typesafe": "TypeSafe response"}
 # Jev rounds its probabilities to two decimals, so they sum to about 1.
 PROBABILITY_SUM_TOLERANCE = 0.05
+MAX_SCORE_LEVELS = 10
+"""The most criteria that Jev accepts in a score question."""
 
 
 @dataclass(frozen=True)
@@ -98,8 +101,8 @@ class ValueScale:
 
     def __post_init__(self):
         criteria = tuple(self.criteria)
-        if len(criteria) < 2:
-            raise ValueError(f"A value scale needs at least two criteria, not {criteria}")
+        if not 2 <= len(criteria) <= MAX_SCORE_LEVELS:
+            raise ValueError(f"A value scale needs 2 to {MAX_SCORE_LEVELS} criteria, not {len(criteria)}: {criteria}")
         try:
             values = tuple(float(criterion.split()[0]) for criterion in criteria)
         except (ValueError, IndexError) as error:

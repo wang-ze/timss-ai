@@ -128,7 +128,7 @@ The datasets were built by a notebook that is not in this repository, with the h
    For a new item, the 10 most similar calibrated items of its grade (hybrid search by default), plus up to 5 of the most similar items with its IRT model and points, become its reference items.
 3. **Prediction**, by one of two predictors that share the steps before it:
    - **An LLM**, prompted as an expert in testing the item's grade, content domain, and cognitive domain and as an IRT measurement expert, gets the reference items with their full text, percent correct, and parameters, and returns its reasoning and the item's parameters on the scale of the calibration of the item's assessment.
-   - **Jev** (TypeSafe's `typesafe/jev-1.13`) answers questions about a JSON state with a probability for each criterion of a rubric, never with a number.
+   - **Jev** (TypeSafe's `typesafe/jev-1.13`) answers questions about a JSON state, such as a score question with an ordered rubric of at most 10 criteria, with a probability for each criterion and a score, the probability-weighted mean of the criteria's positions.
      So each parameter is asked on a value scale, one criterion per value (such as `-2.0 (very easy item)`, `-1.0`, ..., `2.0 (very hard item)` for the location), about the item alone or the item and its reference items.
      Its probabilities over the values are a distribution of the parameter, and its point prediction is their probability-weighted mean (EAP), their median, or the most likely value (MAP).
 4. **Leave-one-out evaluation.**

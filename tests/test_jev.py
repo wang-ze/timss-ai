@@ -30,6 +30,7 @@ from timss_math.item_parameter_prediction import (
 from timss_math.item_parameter_prediction.batch import BatchManifests
 from timss_math.item_parameter_prediction.evaluation import parse_args
 from timss_math.item_parameter_prediction.jev import (
+    MAX_SCORE_LEVELS,
     REFERENCE_NOTE,
     answer_problems,
     posterior,
@@ -50,7 +51,8 @@ class ValueScaleTest(unittest.TestCase):
         np.testing.assert_array_equal(positions, [4, np.nan, 9, 0])
 
     def test_rejects_bad_scales(self):
-        for criteria in (("1",), ("1", "1"), ("2", "1"), ("low", "high"), ("1", "")):
+        too_many = tuple(str(value) for value in range(MAX_SCORE_LEVELS + 1))
+        for criteria in (("1",), ("1", "1"), ("2", "1"), ("low", "high"), ("1", ""), too_many):
             with self.subTest(criteria=criteria), self.assertRaises(ValueError):
                 ValueScale(criteria)
 
