@@ -1,0 +1,294 @@
+{
+  "item_id": "V4A",
+  "assessment": "TIMSS 1995",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Whole Numbers",
+  "main_topic": null,
+  "cognitive_domain": "Solving Problems",
+  "item_type": "constructed_response",
+  "max_points": 2,
+  "scaled_points": 2,
+  "irt_model": "GPCM",
+  "target_calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/V4A",
+    "TIMSS 1995/grade 4/Mathematics/V4B"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 1995",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Whole Numbers",
+      "cognitive_domain": "Solving Problems",
+      "item_type": "constructed_response",
+      "max_points": 2,
+      "scaled_points": 2,
+      "stem": "In a game, Mysong and Naoki are making problems. They each have four cards like these.\n\n[1] [2] [3] [4]\n\nThe winner of the game is the person who can make the problem with the largest answer.\n\nMysong placed the cards like this.\n\n[Image: Mysong's card placement]\n\nNaoki placed the cards like this.\n\n[Image: Naoki's card placement]\n\nWho won this game? ____\nHow do you know? ____\n____",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "Mysong. 64 and 55 are shown (or 9, which is the difference between 64 and 55) with a correct verbal explanation."
+          ]
+        },
+        {
+          "category": "Partially Correct",
+          "descriptors": [
+            "Mysong. 64 and 55 are shown (or 43 − 31 > 24 − 21) with an unsatisfactory explanation.",
+            "Mysong. 64 and 55 are shown (or 43 − 31 > 24 − 21) without any further explanation.",
+            "Mysong. The response given is a verbal explanation. Either 64 or 55 is shown but not both.",
+            "Mysong. The response gives no verbal or numeric explanation.",
+            "Other responses containing Mysong. For example, “because Mysong had the largest answer.”"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "Neither Mysong nor Naoki win.",
+            "Naoki. There may or may not be an explanation.",
+            "Other incorrect, including “both won.”"
+          ]
+        }
+      ],
+      "figure_description": "Four square cards are shown in a row labeled with the digits 1, 2, 3, and 4.\nBelow are two vertical addition problems:\nUnder the heading \"Mysong placed the cards like this.\", two rows of two square cards form a vertical addition problem: top row has cards [4] and [3]; bottom row has cards [2] and [1], with a plus sign '+' to the left of the bottom row and a horizontal addition line underneath.\nUnder the heading \"Naoki placed the cards like this.\", two rows of two square cards form a vertical addition problem: top row has cards [3] and [1]; bottom row has cards [2] and [4], with a plus sign '+' to the left of the bottom row and a horizontal addition line underneath.",
+      "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 2-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 2-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "step1": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 2-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's step 1 parameter d1? In the GPCM, b - d1 is the ability at which earning the first point becomes more likely than earning no point, so a higher d1 means that this point is earned at a lower ability; the steps sum to 0. Choose the value closest to it.",
+      "criteria": [
+        "-3",
+        "-2",
+        "-1.5",
+        "-1",
+        "-0.5",
+        "0",
+        "1",
+        "2"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.85,
+      "confidence": 0.29,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.06,
+        "2": 0.12,
+        "3": 0.22,
+        "4": 0.2,
+        "5": 0.17,
+        "6": 0.11,
+        "7": 0.05,
+        "8": 0.03
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 3.34,
+      "confidence": 0.29,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.05,
+        "1": 0.14,
+        "2": 0.2,
+        "3": 0.2,
+        "4": 0.13,
+        "5": 0.13,
+        "6": 0.08,
+        "7": 0.05,
+        "8": 0.02,
+        "9": 0.0
+      }
+    },
+    "step1": {
+      "type": "score",
+      "score": 3.43,
+      "confidence": 0.35,
+      "legend": {
+        "0": "-3",
+        "1": "-2",
+        "2": "-1.5",
+        "3": "-1",
+        "4": "-0.5",
+        "5": "0",
+        "6": "1",
+        "7": "2"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.08,
+        "2": 0.17,
+        "3": 0.26,
+        "4": 0.2,
+        "5": 0.14,
+        "6": 0.07,
+        "7": 0.04
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1559,
+  "output_tokens": 45,
+  "cost_usd": 6.5478e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791989161-U6fF6rwJ42HRPI1zNTsu",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.85,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.06,
+          "2": 0.12,
+          "3": 0.22,
+          "4": 0.2,
+          "5": 0.17,
+          "6": 0.11,
+          "7": 0.05,
+          "8": 0.03
+        },
+        "confidence": 0.29
+      },
+      "location": {
+        "type": "score",
+        "score": 3.34,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.14,
+          "2": 0.2,
+          "3": 0.2,
+          "4": 0.13,
+          "5": 0.13,
+          "6": 0.08,
+          "7": 0.05,
+          "8": 0.02,
+          "9": 0
+        },
+        "confidence": 0.29
+      },
+      "step1": {
+        "type": "score",
+        "score": 3.43,
+        "legend": {
+          "0": "-3",
+          "1": "-2",
+          "2": "-1.5",
+          "3": "-1",
+          "4": "-0.5",
+          "5": "0",
+          "6": "1",
+          "7": "2"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.08,
+          "2": 0.17,
+          "3": 0.26,
+          "4": 0.2,
+          "5": 0.14,
+          "6": 0.07,
+          "7": 0.04
+        },
+        "confidence": 0.35
+      }
+    },
+    "usage": {
+      "input_tokens": 1559,
+      "output_tokens": 45,
+      "cost": 6.5478e-05
+    },
+    "id": "gen-dec-1791989161-U6fF6rwJ42HRPI1zNTsu",
+    "provider": "TypeSafe"
+  },
+  "seconds": 0.403,
+  "requested_at": "2026-10-14T14:46:01+00:00"
+}

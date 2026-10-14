@@ -1,0 +1,842 @@
+{
+  "item_id": "L4",
+  "assessment": "TIMSS 1995",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Patterns, Relations, and Functions",
+  "main_topic": null,
+  "cognitive_domain": "Knowing",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/L4"
+  ],
+  "similar_items": [
+    {
+      "rank": 1,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M031159",
+      "item_id": "M031159",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8811,
+      "pct_correct_intl_avg": 64,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.99374,
+      "location": -0.40127,
+      "guessing": 0.20124
+    },
+    {
+      "rank": 2,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M041284",
+      "item_id": "M041284",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8192,
+      "pct_correct_intl_avg": 15,
+      "irt_model": "GPCM",
+      "scaled_points": 2,
+      "slope": 0.68887,
+      "location": 0.64336,
+      "step1": 0.49486,
+      "step2": -0.49486
+    },
+    {
+      "rank": 3,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/K6",
+      "item_id": "K6",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.8775,
+      "pct_correct_intl_avg": 63,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.753,
+      "location": -0.253,
+      "guessing": 0.198
+    },
+    {
+      "rank": 4,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M011005",
+      "item_id": "M011005",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8445,
+      "pct_correct_intl_avg": 78,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.474,
+      "location": -1.508,
+      "guessing": 0.349
+    },
+    {
+      "rank": 5,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M031252",
+      "item_id": "M031252",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.845,
+      "pct_correct_intl_avg": 62,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.91399,
+      "location": -0.40191,
+      "guessing": 0.17455
+    },
+    {
+      "rank": 6,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M041258A",
+      "item_id": "M041258A",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8506,
+      "pct_correct_intl_avg": 49.1,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.932,
+      "location": -0.22672
+    },
+    {
+      "rank": 7,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M011016",
+      "item_id": "M011016",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8691,
+      "pct_correct_intl_avg": 55,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.009,
+      "location": 0.339,
+      "guessing": 0.241
+    },
+    {
+      "rank": 8,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M031098",
+      "item_id": "M031098",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.858,
+      "pct_correct_intl_avg": 47.7,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.33503,
+      "location": 0.30171,
+      "guessing": 0.17429
+    },
+    {
+      "rank": 9,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M011014",
+      "item_id": "M011014",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8538,
+      "pct_correct_intl_avg": 85,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.646,
+      "location": -2.047,
+      "guessing": 0.119
+    },
+    {
+      "rank": 10,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M041258B",
+      "item_id": "M041258B",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8474,
+      "pct_correct_intl_avg": 35.8,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.74182,
+      "location": 0.28228
+    }
+  ],
+  "context": "item+references",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 1995",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Patterns, Relations, and Functions",
+      "cognitive_domain": "Knowing",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "These shapes are arranged in a pattern.\n\n[Image: Pattern of shapes]\n\nWhich set of shapes is arranged in the same pattern?",
+      "options": [
+        {
+          "label": "A",
+          "text": "★ □ ★ □ ★ ★ □ □ ★ ★ □ □"
+        },
+        {
+          "label": "B",
+          "text": "□ ★ □ □ ★ □ □ □ ★ □ □ □ □"
+        },
+        {
+          "label": "C",
+          "text": "★ □ ★ ★ □ □ ★ ★ ★ □ □ □"
+        },
+        {
+          "label": "D",
+          "text": "□ □ ★ ★ □ ★ □ □ ★ ★ □ ★"
+        }
+      ],
+      "correct_option": "C",
+      "figure_description": "In the stem, a horizontal sequence of shapes shows: 1 open circle, 1 open triangle, 2 open circles, 2 open triangles, 3 open circles, 3 open triangles.\nOption A shows a horizontal sequence: 1 solid star, 1 open square, 1 solid star, 1 open square, 2 solid stars, 2 open squares, 2 solid stars, 2 open squares.\nOption B shows a horizontal sequence: 1 open square, 1 solid star, 2 open squares, 1 solid star, 3 open squares, 1 solid star, 4 open squares.\nOption C shows a horizontal sequence: 1 solid star, 1 open square, 2 solid stars, 2 open squares, 3 solid stars, 3 open squares.\nOption D shows a horizontal sequence: 2 open squares, 2 solid stars, 1 open square, 1 solid star, 2 open squares, 2 solid stars, 1 open square, 1 solid star.",
+      "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data."
+    },
+    "reference_items": [
+      {
+        "rank": 1,
+        "cosine_similarity": 0.881,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometric Shapes and Measures",
+        "main_topic": "Two- and Three-dimensional Shapes",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "A pattern rule says “Rotate the shape [Image: a circle with a dot in the middle connected by a straight line to the arc pointing up] 1/4 turn clockwise each time.”\nWhat will the pattern look like?",
+        "options": [
+          {
+            "label": "A",
+            "text": "[Image: First circle pointing up, second circle pointing right, third circle pointing down, fourth circle pointing left.]"
+          },
+          {
+            "label": "B",
+            "text": "[Image: First circle pointing up, second circle pointing down, third circle pointing up, fourth circle pointing down.]"
+          },
+          {
+            "label": "C",
+            "text": "[Image: First circle pointing up, second circle pointing left, third circle pointing down, fourth circle pointing right.]"
+          },
+          {
+            "label": "D",
+            "text": "[Image: First circle pointing up, second circle pointing right, third circle pointing left, fourth circle pointing down.]"
+          }
+        ],
+        "correct_option": "A",
+        "figure_description": "In the stem, a circle has a central dot with a line segment extending straight up to the top edge (12 o'clock position).\n\nFour response options each show a row of four circles showing different orientations of the line segment:\n- Option A: First circle points straight up (12 o'clock); second points right (3 o'clock); third points straight down (6 o'clock); fourth points left (9 o'clock).\n- Option B: First circle points straight up (12 o'clock); second points straight down (6 o'clock); third points straight up (12 o'clock); fourth points straight down (6 o'clock).\n- Option C: First circle points straight up (12 o'clock); second points left (9 o'clock); third points straight down (6 o'clock); fourth points right (3 o'clock).\n- Option D: First circle points straight up (12 o'clock); second points right (3 o'clock); third points left (9 o'clock); fourth points straight down (6 o'clock).",
+        "pct_correct_intl_avg": 64,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.99374,
+          "location": -0.40127,
+          "guessing": 0.20124
+        }
+      },
+      {
+        "rank": 2,
+        "cosine_similarity": 0.819,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometric Shapes and Measures",
+        "main_topic": "Two- and Three-dimensional Shapes",
+        "cognitive_domain": "Reasoning",
+        "item_type": "constructed_response",
+        "max_points": 2,
+        "scaled_points": 2,
+        "stem": "[Image: various shapes labeled A, B, C, D, E, and F overlaying on grid. A is a square; B is an irregular rectangle; C is a rectangle; D is cross shape; E is a trapezoid; F is a diamond shape.]\n\nSean used the table to sort these shapes.\nPut the letter of each shape in the space where it belongs.\nShape A has been done for you.\n\n| | Has 4 Sides | Does Not Have 4 Sides |\n| :--- | :--- | :--- |\n| All sides are the same length | A | |\n| All sides are NOT the same length | | |",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "5 correct\n[Image: table with two columns and two rows. In the upper left box is (A)F. In the upper right box is D. In the lower left box is C E. In the lower right box is B.]"
+            ]
+          },
+          {
+            "category": "Partially Correct Response",
+            "descriptors": [
+              "3 or 4 correct"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "figure_description": "A square grid containing six outlined shapes labeled A through F:\n- Shape A: A square measuring 3 units by 3 units.\n- Shape B: An irregular stepped polygon with horizontal and vertical edges of varying lengths (not 4 sides, sides of different lengths).\n- Shape C: A vertical rectangle measuring 2 units wide and 5 units tall.\n- Shape D: A symmetrical 12-sided cross (plus sign) shape composed of five 2-by-2 square sections; every side is 2 units long.\n- Shape E: An isosceles trapezoid with a horizontal top base of 4 units, a horizontal bottom base of 6 units, and a height of 4 units.\n- Shape F: A square oriented as a rhombus/diamond with horizontal and vertical diagonals measuring 4 units; all 4 sides are of equal length.",
+        "pct_correct_intl_avg": 15,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "GPCM",
+        "calibrated_parameters": {
+          "slope": 0.68887,
+          "location": 0.64336,
+          "step1": 0.49486,
+          "step2": -0.49486
+        }
+      },
+      {
+        "rank": 3,
+        "cosine_similarity": 0.877,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Patterns, Relations, and Functions",
+        "cognitive_domain": "Solving Problems",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Here is the beginning of a pattern of tiles.\n\n[Image: Pattern of tiles]\n\nIf the pattern continues, how many tiles will be in Figure 6?",
+        "options": [
+          {
+            "label": "A",
+            "text": "12"
+          },
+          {
+            "label": "B",
+            "text": "15"
+          },
+          {
+            "label": "C",
+            "text": "18"
+          },
+          {
+            "label": "D",
+            "text": "21"
+          }
+        ],
+        "correct_option": "C",
+        "figure_description": "Three rectangular grid figures made of square tiles, arranged horizontally:\n- Figure 1: a grid of 1 row and 3 columns, containing 3 tiles.\n- Figure 2: a grid of 2 rows and 3 columns, containing 6 tiles.\n- Figure 3: a grid of 3 rows and 3 columns, containing 9 tiles.",
+        "pct_correct_intl_avg": 63,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.753,
+          "location": -0.253,
+          "guessing": 0.198
+        }
+      },
+      {
+        "rank": 4,
+        "cosine_similarity": 0.844,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Measurement",
+        "main_topic": "Attributes and Units",
+        "cognitive_domain": "Reasoning",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Which of these figures has the largest area?",
+        "options": [
+          {
+            "label": "A",
+            "text": "[Image: 2 by 3 grid of squares]"
+          },
+          {
+            "label": "B",
+            "text": "[Image: 1 by 6 row of squares]"
+          },
+          {
+            "label": "C",
+            "text": "[Image: 2 by 4 grid of squares]"
+          },
+          {
+            "label": "D",
+            "text": "[Image: 6 squares arranged in two offset rows of 3]"
+          }
+        ],
+        "correct_option": "C",
+        "figure_description": "Four shapes composed of identical square units are shown:\n- Option A: A rectangle consisting of a grid with 2 rows and 3 columns (6 square units in total).\n- Option B: A horizontal bar consisting of a single row of 6 square units (6 square units in total).\n- Option C: A rectangle consisting of a grid with 2 rows and 4 columns (8 square units in total).\n- Option D: A figure consisting of 6 square units arranged in two rows of 3 squares: a top row of 3 adjacent squares, and a bottom row of 3 adjacent squares shifted to the right so that its leftmost square is directly beneath the rightmost square of the top row (6 square units in total).",
+        "pct_correct_intl_avg": 78,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.474,
+          "location": -1.508,
+          "guessing": 0.349
+        }
+      },
+      {
+        "rank": 5,
+        "cosine_similarity": 0.845,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Patterns and Relationships",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "If the pattern 3, 6, 9, 12 was continued, which of these numbers would be one of the numbers in the pattern?",
+        "options": [
+          {
+            "label": "A",
+            "text": "26"
+          },
+          {
+            "label": "B",
+            "text": "27"
+          },
+          {
+            "label": "C",
+            "text": "28"
+          },
+          {
+            "label": "D",
+            "text": "29"
+          }
+        ],
+        "correct_option": "B",
+        "pct_correct_intl_avg": 62,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.91399,
+          "location": -0.40191,
+          "guessing": 0.17455
+        }
+      },
+      {
+        "rank": 6,
+        "cosine_similarity": 0.851,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometric Shapes and Measures",
+        "main_topic": "Two- and Three-dimensional Shapes",
+        "cognitive_domain": "Reasoning",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Two shapes are shown below. Describe one way they are the same and one way they are different.\n\n[Image: Two triangles, labeled Shape P and Shape Q]\n\nA. Same",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Both are triangles/ both have 3 sides/ both have same number of sides/ both have 3 angles/ both have 3 corners or equivalent statements"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "They are the same shape.",
+              "Both have straight sides.",
+              "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          },
+          {
+            "category": "Nonresponse",
+            "descriptors": [
+              "Blank"
+            ]
+          }
+        ],
+        "figure_description": "Two geometric shapes side by side: on the left is \"Shape P\", a right-angled triangle with a vertical left side, a horizontal bottom side, and a hypotenuse sloping down and to the right. On the right is \"Shape Q\", an acute isosceles triangle with a horizontal base and two equal-length sloping sides meeting at a top vertex.",
+        "pct_correct_intl_avg": 49.1,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.932,
+          "location": -0.22672
+        }
+      },
+      {
+        "rank": 7,
+        "cosine_similarity": 0.869,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Fractions and Decimals",
+        "cognitive_domain": "Using Concepts",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "In this diagram, 2 out of every 3 squares are shaded.\n\n[Image: A rectangle divided into 6 squares]\n\nWhich diagram has 3 out of every 4 squares shaded?",
+        "options": [
+          {
+            "label": "A",
+            "text": "[Image: A row of 3 squares]"
+          },
+          {
+            "label": "B",
+            "text": "[Image: A row of 4 squares]"
+          },
+          {
+            "label": "C",
+            "text": "[Image: An array of 8 squares]"
+          },
+          {
+            "label": "D",
+            "text": "[Image: A row of 6 squares]"
+          }
+        ],
+        "correct_option": "C",
+        "figure_description": "The stem includes a diagram of a rectangle divided into 2 rows of 3 equal squares (6 squares total). The 4 squares in the first two columns are shaded grey, and the 2 squares in the third column are unshaded (white).\n\nThe response options show four diagrams composed of squares:\n- Option A: A horizontal row of 3 equal squares, all 3 shaded grey.\n- Option B: A horizontal row of 4 equal squares; the first 3 squares are unshaded and the 4th square is shaded grey.\n- Option C: A vertical rectangle divided into 4 rows of 2 equal squares (8 squares total). The top 6 squares (3 rows) are shaded grey, and the bottom 2 squares (1 row) are unshaded.\n- Option D: A horizontal row of 6 equal squares; the first 3 squares are shaded grey and the last 3 squares are unshaded.",
+        "pct_correct_intl_avg": 55,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.009,
+          "location": 0.339,
+          "guessing": 0.241
+        }
+      },
+      {
+        "rank": 8,
+        "cosine_similarity": 0.858,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Patterns and Relationships",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "The first four terms in a number pattern are shown below.\n\n2, 4, 8, 16, ...\n\nWhat is the next number in the pattern?",
+        "options": [
+          {
+            "label": "A",
+            "text": "24"
+          },
+          {
+            "label": "B",
+            "text": "30"
+          },
+          {
+            "label": "C",
+            "text": "32"
+          },
+          {
+            "label": "D",
+            "text": "64"
+          }
+        ],
+        "correct_option": "C",
+        "pct_correct_intl_avg": 47.7,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.33503,
+          "location": 0.30171,
+          "guessing": 0.17429
+        }
+      },
+      {
+        "rank": 9,
+        "cosine_similarity": 0.854,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Congruence and Similarity",
+        "cognitive_domain": "Knowing Facts and Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Figures that are the same size and shape are called congruent figures.\n\n[Image: Four figures labeled 1, 2, 3, and 4]\n\nWhich two figures are congruent?",
+        "options": [
+          {
+            "label": "A",
+            "text": "1 and 2"
+          },
+          {
+            "label": "B",
+            "text": "1 and 3"
+          },
+          {
+            "label": "C",
+            "text": "1 and 4"
+          },
+          {
+            "label": "D",
+            "text": "3 and 4"
+          }
+        ],
+        "correct_option": "C",
+        "figure_description": "Four rectilinear figures labeled 1, 2, 3, and 4:\n- Figure 1: An L-shaped polygon with a horizontal top arm extending to the right and a vertical arm on the left extending downwards.\n- Figure 2: A large rectangular/square shape with a small rectangular tab extending out to the upper right.\n- Figure 3: An L-shaped polygon with a tall vertical left arm and a shorter horizontal bottom arm extending to the right.\n- Figure 4: An L-shaped polygon with a horizontal bottom arm extending to the left and a vertical arm on the right extending upwards, having the same arm lengths and thickness as Figure 1 rotated 180 degrees.",
+        "pct_correct_intl_avg": 85,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.646,
+          "location": -2.047,
+          "guessing": 0.119
+        }
+      },
+      {
+        "rank": 10,
+        "cosine_similarity": 0.847,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometric Shapes and Measures",
+        "main_topic": "Two- and Three-dimensional Shapes",
+        "cognitive_domain": "Reasoning",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Two shapes are shown below. Describe one way they are the same and one way they are different.\n\n[Image: Two triangles, labeled Shape P and Shape Q]\n\nB. Different",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "One has a right angle, one does not.",
+              "One has 2 sides/ angles the same size/is isoceles/has a line of symmetry (the other does not)",
+              "One is bigger/longer/wider/has a larger area than the other or equivalent statement about size."
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "They are different shapes/ they are not the same shape.",
+              "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          },
+          {
+            "category": "Nonresponse",
+            "descriptors": [
+              "Blank"
+            ]
+          }
+        ],
+        "figure_description": "Two geometric shapes side by side: on the left is \"Shape P\", a right-angled triangle with a vertical left side, a horizontal bottom side, and a hypotenuse sloping down and to the right. On the right is \"Shape Q\", an acute isosceles triangle with a horizontal base and two equal-length sloping sides meeting at a top vertex.",
+        "pct_correct_intl_avg": 35.8,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.74182,
+          "location": 0.28228
+        }
+      }
+    ]
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 2.32,
+      "confidence": 0.72,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.03,
+        "1": 0.08,
+        "2": 0.59,
+        "3": 0.22,
+        "4": 0.03,
+        "5": 0.02,
+        "6": 0.01,
+        "7": 0.01,
+        "8": 0.01
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 2.63,
+      "confidence": 0.64,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.08,
+        "2": 0.53,
+        "3": 0.17,
+        "4": 0.1,
+        "5": 0.05,
+        "6": 0.02,
+        "7": 0.01,
+        "8": 0.01,
+        "9": 0.01
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 3.19,
+      "confidence": 0.74,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.02,
+        "2": 0.04,
+        "3": 0.65,
+        "4": 0.28,
+        "5": 0.0
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 6655,
+  "output_tokens": 45,
+  "cost_usd": 0.00027951,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791918361-7Iz61Wrtgw8MPLTI7LsT",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 2.32,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.08,
+          "2": 0.59,
+          "3": 0.22,
+          "4": 0.03,
+          "5": 0.02,
+          "6": 0.01,
+          "7": 0.01,
+          "8": 0.01
+        },
+        "confidence": 0.72
+      },
+      "location": {
+        "type": "score",
+        "score": 2.63,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.08,
+          "2": 0.53,
+          "3": 0.17,
+          "4": 0.1,
+          "5": 0.05,
+          "6": 0.02,
+          "7": 0.01,
+          "8": 0.01,
+          "9": 0.01
+        },
+        "confidence": 0.64
+      },
+      "guessing": {
+        "type": "score",
+        "score": 3.19,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.02,
+          "2": 0.04,
+          "3": 0.65,
+          "4": 0.28,
+          "5": 0
+        },
+        "confidence": 0.74
+      }
+    },
+    "usage": {
+      "input_tokens": 6655,
+      "output_tokens": 45,
+      "cost": 0.00027951
+    },
+    "id": "gen-dec-1791918361-7Iz61Wrtgw8MPLTI7LsT",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T19:06:01+00:00",
+  "seconds": null
+}

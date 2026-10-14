@@ -1,0 +1,277 @@
+{
+  "item_id": "M041158",
+  "assessment": "TIMSS 2011",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Geometric Shapes and Measures",
+  "main_topic": "Two- and Three-dimensional Shapes",
+  "cognitive_domain": "Applying",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M041158"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2011",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Geometric Shapes and Measures",
+      "main_topic": "Two- and Three-dimensional Shapes",
+      "cognitive_domain": "Applying",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "[Image: a stack of square boxes in the corner of a room.]\n\nAnn stacks these boxes in the corner of the room. All the boxes are the same size.\nHow many boxes does she use?",
+      "options": [
+        {
+          "label": "A",
+          "text": "25"
+        },
+        {
+          "label": "B",
+          "text": "19"
+        },
+        {
+          "label": "C",
+          "text": "18"
+        },
+        {
+          "label": "D",
+          "text": "13"
+        }
+      ],
+      "correct_option": "C",
+      "figure_description": "An isometric drawing shows a stack of identical cube-shaped boxes resting in the corner of a room. Three line segments represent the room's edges meeting at the corner behind the stack: a vertical line extends straight up from the top-back corner of the stack, a line extends down and to the left from the bottom-left of the stack along the floor, and a line extends to the right from the bottom-right of the stack along the floor.\n\nThe stack rests on the floor against both walls. The base layer is completely filled, measuring 3 cubes deep along the left wall and 4 cubes wide along the back wall (a 3 by 4 grid of cubes).\n\nA second layer of cubes is stacked on top against the corner in a stepped pattern:\n- Along the back wall (row 1, closest to the back wall), the first 3 columns from the left are 2 cubes high, and the 4th column is 1 cube high.\n- In the middle row (row 2), the first 2 columns from the left are 2 cubes high, and the remaining 2 columns are 1 cube high.\n- In the front row (row 3), the first column on the left is 2 cubes high, and the remaining 3 columns are 1 cube high.",
+      "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.71,
+      "confidence": 0.28,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.05,
+        "1": 0.07,
+        "2": 0.14,
+        "3": 0.22,
+        "4": 0.17,
+        "5": 0.16,
+        "6": 0.11,
+        "7": 0.05,
+        "8": 0.03
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 4.2,
+      "confidence": 0.29,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.06,
+        "2": 0.13,
+        "3": 0.2,
+        "4": 0.15,
+        "5": 0.19,
+        "6": 0.14,
+        "7": 0.07,
+        "8": 0.04,
+        "9": 0.01
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 3.77,
+      "confidence": 0.85,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.01,
+        "2": 0.02,
+        "3": 0.07,
+        "4": 0.87,
+        "5": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1373,
+  "output_tokens": 45,
+  "cost_usd": 5.7666e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914768-Fbn9gPhoySfWrIOp7c2r",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.71,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.07,
+          "2": 0.14,
+          "3": 0.22,
+          "4": 0.17,
+          "5": 0.16,
+          "6": 0.11,
+          "7": 0.05,
+          "8": 0.03
+        },
+        "confidence": 0.28
+      },
+      "location": {
+        "type": "score",
+        "score": 4.2,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.06,
+          "2": 0.13,
+          "3": 0.2,
+          "4": 0.15,
+          "5": 0.19,
+          "6": 0.14,
+          "7": 0.07,
+          "8": 0.04,
+          "9": 0.01
+        },
+        "confidence": 0.29
+      },
+      "guessing": {
+        "type": "score",
+        "score": 3.77,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.01,
+          "2": 0.02,
+          "3": 0.07,
+          "4": 0.87,
+          "5": 0.01
+        },
+        "confidence": 0.85
+      }
+    },
+    "usage": {
+      "input_tokens": 1373,
+      "output_tokens": 45,
+      "cost": 5.7666e-05
+    },
+    "id": "gen-dec-1791914768-Fbn9gPhoySfWrIOp7c2r",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:08+00:00",
+  "seconds": null
+}

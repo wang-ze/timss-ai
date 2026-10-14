@@ -1,0 +1,277 @@
+{
+  "item_id": "M032419",
+  "assessment": "TIMSS 2011",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Algebra",
+  "main_topic": "Algebraic Expressions",
+  "cognitive_domain": "Knowing",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M032419"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2011",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Algebra",
+      "main_topic": "Algebraic Expressions",
+      "cognitive_domain": "Knowing",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "Which of these could represent the expression 2x + 3x?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The length of this segment: [Image: X and 5 are segment lengths on a number line, and the segment length of 5 is slightly larger than the segment length of x.]"
+        },
+        {
+          "label": "B",
+          "text": "The length of this segment: [Image: 2, 3, and x are segment lengths on a number line. The segment length of 2 is the smallest. The segment length of 3 is around twice the length of 2, and the segment length of x is almost three times the length of 2.]"
+        },
+        {
+          "label": "C",
+          "text": "The area of this figure: [Image: A rectangle, where one side of the rectangle is labeled “x” and the other side is divided, with the smaller part labeled 2, and the larger part other labeled 3.]"
+        },
+        {
+          "label": "D",
+          "text": "The area of this figure: [Image: A rectangle, with one side is labeled 5 and the other side is divided in two equal parts, with each part labeled with “x”.]"
+        }
+      ],
+      "correct_option": "C",
+      "figure_description": "Four options showing visual representations:\n- Option A shows a horizontal line segment with vertical tick marks at its ends, divided into two segments by an interior vertical tick mark. The segment on the left is labeled x above, and the segment on the right is labeled 5 above.\n- Option B shows a horizontal line segment with vertical tick marks at its ends, divided into three segments by two interior vertical tick marks. From left to right, the segments are labeled 2, 3, and x above.\n- Option C shows a rectangle with its left vertical side labeled x. A vertical dotted line extends through the rectangle, dividing the top horizontal side into two parts, labeled 2 on the left and 3 on the right.\n- Option D shows a rectangle with its left vertical side labeled 5. A vertical dotted line extends through the rectangle, dividing the top horizontal side into two equal parts, each labeled x above.",
+      "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.54,
+      "confidence": 0.32,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.05,
+        "1": 0.08,
+        "2": 0.16,
+        "3": 0.25,
+        "4": 0.16,
+        "5": 0.13,
+        "6": 0.09,
+        "7": 0.05,
+        "8": 0.03
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 1.93,
+      "confidence": 0.51,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.17,
+        "1": 0.27,
+        "2": 0.26,
+        "3": 0.17,
+        "4": 0.06,
+        "5": 0.04,
+        "6": 0.01,
+        "7": 0.01,
+        "8": 0.0,
+        "9": 0.0
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 3.72,
+      "confidence": 0.81,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.01,
+        "2": 0.03,
+        "3": 0.1,
+        "4": 0.83,
+        "5": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1442,
+  "output_tokens": 45,
+  "cost_usd": 6.0564e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914769-LTEzGeO2nEAwoPGsif9p",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.54,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.08,
+          "2": 0.16,
+          "3": 0.25,
+          "4": 0.16,
+          "5": 0.13,
+          "6": 0.09,
+          "7": 0.05,
+          "8": 0.03
+        },
+        "confidence": 0.32
+      },
+      "location": {
+        "type": "score",
+        "score": 1.93,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.17,
+          "1": 0.27,
+          "2": 0.26,
+          "3": 0.17,
+          "4": 0.06,
+          "5": 0.04,
+          "6": 0.01,
+          "7": 0.01,
+          "8": 0,
+          "9": 0
+        },
+        "confidence": 0.51
+      },
+      "guessing": {
+        "type": "score",
+        "score": 3.72,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.01,
+          "2": 0.03,
+          "3": 0.1,
+          "4": 0.83,
+          "5": 0.01
+        },
+        "confidence": 0.81
+      }
+    },
+    "usage": {
+      "input_tokens": 1442,
+      "output_tokens": 45,
+      "cost": 6.0564e-05
+    },
+    "id": "gen-dec-1791914769-LTEzGeO2nEAwoPGsif9p",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:09+00:00",
+  "seconds": null
+}

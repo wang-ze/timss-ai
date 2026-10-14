@@ -1,0 +1,218 @@
+{
+  "item_id": "M052362",
+  "assessment": "TIMSS 2011",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Geometry",
+  "main_topic": "Geometric Shapes",
+  "cognitive_domain": "Reasoning",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M052362"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2011",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Geometry",
+      "main_topic": "Geometric Shapes",
+      "cognitive_domain": "Reasoning",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "[Image: An isosceles triangle. The left angle is labeled \"A\", the top angle is labeled \"C\", and the right angle is labeled \"B\". AC and CB are equal in length. AB is the base. A line is drawn from \"C\" to a point \"X\" on the base of the triangle. The line forms a right angle with the base.]\n\nIn this triangle:\n\nAC = BC\n\nAB is twice as long as CX.\n\nWhat is the size of angle B?\n\nAnswer: ____ °",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "45"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "Incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+          ]
+        }
+      ],
+      "figure_description": "An isosceles triangle ABC with horizontal base AB and apex vertex C above it. Side AC and side BC appear equal in length. A vertical line segment CX is drawn from vertex C perpendicular to the base AB at point X, indicated by a square right-angle mark on the right side of segment CX at point X.",
+      "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.96,
+      "confidence": 0.28,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.03,
+        "1": 0.05,
+        "2": 0.11,
+        "3": 0.22,
+        "4": 0.2,
+        "5": 0.19,
+        "6": 0.12,
+        "7": 0.05,
+        "8": 0.03
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 4.4,
+      "confidence": 0.24,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.06,
+        "2": 0.11,
+        "3": 0.2,
+        "4": 0.13,
+        "5": 0.18,
+        "6": 0.15,
+        "7": 0.1,
+        "8": 0.05,
+        "9": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1057,
+  "output_tokens": 31,
+  "cost_usd": 4.4394e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914770-7fF03Lb349Rspo4QfTM6",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.96,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.05,
+          "2": 0.11,
+          "3": 0.22,
+          "4": 0.2,
+          "5": 0.19,
+          "6": 0.12,
+          "7": 0.05,
+          "8": 0.03
+        },
+        "confidence": 0.28
+      },
+      "location": {
+        "type": "score",
+        "score": 4.4,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.06,
+          "2": 0.11,
+          "3": 0.2,
+          "4": 0.13,
+          "5": 0.18,
+          "6": 0.15,
+          "7": 0.1,
+          "8": 0.05,
+          "9": 0.01
+        },
+        "confidence": 0.24
+      }
+    },
+    "usage": {
+      "input_tokens": 1057,
+      "output_tokens": 31,
+      "cost": 4.4394e-05
+    },
+    "id": "gen-dec-1791914770-7fF03Lb349Rspo4QfTM6",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:10+00:00",
+  "seconds": null
+}

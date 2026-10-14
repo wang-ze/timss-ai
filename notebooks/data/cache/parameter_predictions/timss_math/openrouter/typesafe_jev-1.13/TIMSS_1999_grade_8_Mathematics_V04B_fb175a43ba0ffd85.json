@@ -1,0 +1,775 @@
+{
+  "item_id": "V04B",
+  "assessment": "TIMSS 1999",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Algebra",
+  "main_topic": null,
+  "cognitive_domain": "Investigating and Solving Problems",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 1999/grade 8/Mathematics/V04A",
+    "TIMSS 1999/grade 8/Mathematics/V04B",
+    "TIMSS 1999/grade 8/Mathematics/V04C"
+  ],
+  "similar_items": [
+    {
+      "rank": 1,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M022261B",
+      "item_id": "M022261B",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.9185,
+      "pct_correct_intl_avg": 22,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.175,
+      "location": 0.717
+    },
+    {
+      "rank": 2,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M022261A",
+      "item_id": "M022261A",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8729,
+      "pct_correct_intl_avg": 36,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.105,
+      "location": 0.222
+    },
+    {
+      "rank": 3,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M022261C",
+      "item_id": "M022261C",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.861,
+      "pct_correct_intl_avg": 14,
+      "irt_model": "GPCM",
+      "scaled_points": 2,
+      "slope": 0.706,
+      "location": 1.001,
+      "step1": -2.048,
+      "step2": 2.048
+    },
+    {
+      "rank": 4,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M032640",
+      "item_id": "M032640",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8604,
+      "pct_correct_intl_avg": 8.7,
+      "irt_model": "GPCM",
+      "scaled_points": 2,
+      "slope": 0.60659,
+      "location": 1.39441,
+      "step1": -0.75168,
+      "step2": 0.75168
+    },
+    {
+      "rank": 5,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M012017",
+      "item_id": "M012017",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8534,
+      "pct_correct_intl_avg": 48,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.733,
+      "location": 0.077,
+      "guessing": 0.127
+    },
+    {
+      "rank": 6,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M022008",
+      "item_id": "M022008",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8302,
+      "pct_correct_intl_avg": 31,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.531,
+      "location": 0.756
+    },
+    {
+      "rank": 7,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M032760C",
+      "item_id": "M032760C",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8411,
+      "pct_correct_intl_avg": 15,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.90424,
+      "location": 1.15031
+    },
+    {
+      "rank": 8,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M032100",
+      "item_id": "M032100",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.7752,
+      "pct_correct_intl_avg": 47,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.03935,
+      "location": 0.32241,
+      "guessing": 0.12723
+    },
+    {
+      "rank": 9,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M032760A",
+      "item_id": "M032760A",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8412,
+      "pct_correct_intl_avg": 27,
+      "irt_model": "GPCM",
+      "scaled_points": 2,
+      "slope": 0.99873,
+      "location": 0.59048,
+      "step1": -1.12213,
+      "step2": 1.12213
+    },
+    {
+      "rank": 10,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M032760B",
+      "item_id": "M032760B",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8465,
+      "pct_correct_intl_avg": 20,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.68057,
+      "location": 0.91631
+    }
+  ],
+  "context": "item+references",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 1999",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Algebra",
+      "cognitive_domain": "Investigating and Solving Problems",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "The figures show four sets consisting of circles.\n\n[Image: Four figures made of circles]\n\nb) The sequence of figures is extended to the 7th figure. How many circles would be needed for Figure 7?\n\nAnswer: ____",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "28"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "21",
+            "22",
+            "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+          ]
+        }
+      ],
+      "figure_description": "Four figures labeled Figure 1, Figure 2, Figure 3, and Figure 4, each composed of identical circles arranged in triangular arrays:\n- Figure 1: 1 circle.\n- Figure 2: 3 circles arranged in two rows (1 on top, 2 on the bottom).\n- Figure 3: 6 circles arranged in three rows (1 on top, 2 in the middle, 3 on the bottom).\n- Figure 4: 10 circles arranged in four rows (1 in the top row, 2 in the second, 3 in the third, 4 on the bottom).",
+      "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data."
+    },
+    "reference_items": [
+      {
+        "rank": 1,
+        "cosine_similarity": 0.918,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Algebra",
+        "main_topic": "Patterns",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "The three figures below are divided into small congruent triangles.\n\n[Image: Three figures divided into small triangles]\n\nB. The sequence of figures is extended to the 7th figure. How many small triangles would be needed for Figure 7?\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "98"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "49 [Multiplies 7 x 7]",
+              "58 [Series is 2, 8, 18, 28, 38...7th term is 58]",
+              "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)."
+            ]
+          }
+        ],
+        "figure_description": "Three geometric figures composed of small congruent right triangles:\n- Figure 1: A single square with a diagonal line from the bottom-left corner to the top-right corner, dividing it into two right triangles labeled '1' (top-left) and '2' (bottom-right). Below the square is the label 'Figure 1'.\n- Figure 2: A square divided into a 2-by-2 grid of 4 smaller squares. Each smaller square has a diagonal from bottom-left to top-right, creating 8 congruent triangles numbered 1 through 8: top-left square has 1 (upper) and 2 (lower); top-right square has 3 (upper) and 4 (lower); bottom-left square has 5 (upper) and 6 (lower); bottom-right square has 7 (upper) and 8 (lower). Below is the label 'Figure 2'.\n- Figure 3: A square divided into a 3-by-3 grid of 9 smaller squares. Each smaller square has a diagonal from bottom-left to top-right, creating 18 congruent triangles. None of the triangles are numbered. Below is the label 'Figure 3'.",
+        "pct_correct_intl_avg": 22,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.175,
+          "location": 0.717
+        }
+      },
+      {
+        "rank": 2,
+        "cosine_similarity": 0.873,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Algebra",
+        "main_topic": "Patterns",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "The three figures below are divided into small congruent triangles.\n\n[Image: Three figures divided into small triangles]\n\nA. Complete the table below. First, fill in how many small triangles make up Figure 3. Then, find the number of small triangles that would be needed for the 4th figure if the sequence of figures is extended.\n\n| Figure | Number of Small Triangles |\n| :--- | :--- |\n| 1 | 2 |\n| 2 | 8 |\n| 3 | |\n| 4 | |",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "18 AND 32"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "18 and any number other than 32.",
+              "18 and no numerical response for the 4th figure.",
+              "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)."
+            ]
+          }
+        ],
+        "figure_description": "Three geometric figures composed of small congruent right triangles:\n- Figure 1: A single square with a diagonal line from the bottom-left corner to the top-right corner, dividing it into two right triangles labeled '1' (top-left) and '2' (bottom-right). Below the square is the label 'Figure 1'.\n- Figure 2: A square divided into a 2-by-2 grid of 4 smaller squares. Each smaller square has a diagonal from bottom-left to top-right, creating 8 congruent triangles numbered 1 through 8: top-left square has 1 (upper) and 2 (lower); top-right square has 3 (upper) and 4 (lower); bottom-left square has 5 (upper) and 6 (lower); bottom-right square has 7 (upper) and 8 (lower). Below is the label 'Figure 2'.\n- Figure 3: A square divided into a 3-by-3 grid of 9 smaller squares. Each smaller square has a diagonal from bottom-left to top-right, creating 18 congruent triangles. None of the triangles are numbered. Below is the label 'Figure 3'.",
+        "pct_correct_intl_avg": 36,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.105,
+          "location": 0.222
+        }
+      },
+      {
+        "rank": 3,
+        "cosine_similarity": 0.861,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Algebra",
+        "main_topic": "Patterns",
+        "cognitive_domain": "Reasoning",
+        "item_type": "constructed_response",
+        "max_points": 2,
+        "scaled_points": 2,
+        "stem": "The three figures below are divided into small congruent triangles.\n\n[Image: Three figures divided into small triangles]\n\nC. The sequence of figures is extended to the 50th figure. Explain a way to find the number of small triangles in the 50th figure that does not involve drawing it and counting the number of triangles.",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Correct general (i.e., literal) expression, e.g., 2n2 , or equivalent expressed in words.",
+              "2 x 502 OR 2 x 50 x 50 OR 100 x 50 OR (50 + 50) x 50 OR equivalent expressed in words (disregard errors in computation)."
+            ]
+          },
+          {
+            "category": "Partial Response",
+            "descriptors": [
+              "Derives answer (5000) without showing work.",
+              "Other partially correct."
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "50 x 2 OR 100",
+              "50 x 50 OR 2,500",
+              "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)."
+            ]
+          }
+        ],
+        "figure_description": "Three geometric figures composed of small congruent right triangles:\n- Figure 1: A single square with a diagonal line from the bottom-left corner to the top-right corner, dividing it into two right triangles labeled '1' (top-left) and '2' (bottom-right). Below the square is the label 'Figure 1'.\n- Figure 2: A square divided into a 2-by-2 grid of 4 smaller squares. Each smaller square has a diagonal from bottom-left to top-right, creating 8 congruent triangles numbered 1 through 8: top-left square has 1 (upper) and 2 (lower); top-right square has 3 (upper) and 4 (lower); bottom-left square has 5 (upper) and 6 (lower); bottom-right square has 7 (upper) and 8 (lower). Below is the label 'Figure 2'.\n- Figure 3: A square divided into a 3-by-3 grid of 9 smaller squares. Each smaller square has a diagonal from bottom-left to top-right, creating 18 congruent triangles. None of the triangles are numbered. Below is the label 'Figure 3'.",
+        "pct_correct_intl_avg": 14,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "GPCM",
+        "calibrated_parameters": {
+          "slope": 0.706,
+          "location": 1.001,
+          "step1": -2.048,
+          "step2": 2.048
+        }
+      },
+      {
+        "rank": 4,
+        "cosine_similarity": 0.86,
+        "assessment": "TIMSS 2007",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Algebra",
+        "main_topic": "Patterns",
+        "cognitive_domain": "Reasoning",
+        "item_type": "constructed_response",
+        "max_points": 2,
+        "scaled_points": 2,
+        "stem": "[Image: Row of 4 squares made of matches]\n\nIn the figure, 13 matches were used to make 4 squares in a row. What is the number of squares in a row that can be made in this way using 73 matches? Show the calculations that lead to your answer.\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "24 with calculations"
+            ]
+          },
+          {
+            "category": "Partial Response",
+            "descriptors": [
+              "24 with no calculations or no relevant calculations (includes only drawing and counting squares)"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Incorrect (including crossed out/erased, stray marks, illegible or off task)"
+            ]
+          },
+          {
+            "category": "Nonresponse",
+            "descriptors": [
+              "Blank"
+            ]
+          }
+        ],
+        "figure_description": "Four squares connected in a single horizontal row, sharing common vertical sides, constructed from 13 matchsticks: 4 horizontal matchsticks along the top (heads pointing right), 4 horizontal matchsticks along the bottom (heads pointing left), and 5 vertical matchsticks dividing and enclosing the squares (heads pointing up).",
+        "pct_correct_intl_avg": 8.7,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+        "irt_model": "GPCM",
+        "calibrated_parameters": {
+          "slope": 0.60659,
+          "location": 1.39441,
+          "step1": -0.75168,
+          "step2": 0.75168
+        }
+      },
+      {
+        "rank": 5,
+        "cosine_similarity": 0.853,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Algebra",
+        "main_topic": "Patterns",
+        "cognitive_domain": "Reasoning",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Matchsticks are arranged as shown in the figures.\n\n[Image: Matchstick patterns labeled Figure 1, Figure 2, and Figure 3]\n\nIf the pattern is continued, how many matchsticks would be used to make Figure 10?",
+        "options": [
+          {
+            "label": "A",
+            "text": "30"
+          },
+          {
+            "label": "B",
+            "text": "33"
+          },
+          {
+            "label": "C",
+            "text": "36"
+          },
+          {
+            "label": "D",
+            "text": "39"
+          },
+          {
+            "label": "E",
+            "text": "42"
+          }
+        ],
+        "correct_option": "B",
+        "figure_description": "Three figures formed by matchsticks arranged horizontally in a line, each ending with a triangular point pointing to the right:\n- Figure 1: 1 square (4 matchsticks) with a triangle pointing right attached to the square's right vertical side (2 matchsticks), totaling 6 matchsticks.\n- Figure 2: A row of 2 adjacent squares sharing an interior vertical matchstick (7 matchsticks) plus a triangle pointing right attached to the right side (2 matchsticks), totaling 9 matchsticks.\n- Figure 3: A row of 3 adjacent squares sharing interior vertical matchsticks (10 matchsticks) plus a triangle pointing right attached to the right side (2 matchsticks), totaling 12 matchsticks.",
+        "pct_correct_intl_avg": 48,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.733,
+          "location": 0.077,
+          "guessing": 0.127
+        }
+      },
+      {
+        "rank": 6,
+        "cosine_similarity": 0.83,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Algebra",
+        "main_topic": "Patterns",
+        "cognitive_domain": "Reasoning",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "The numbers in the sequence 7, 11, 15, 19, 23, ... increase by four. The numbers in the sequence 1, 10, 19, 28, 37, ... increase by nine. The number 19 is in both sequences. If the two sequences are continued, what is the next number that is in BOTH the first and the second sequences?\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct",
+            "descriptors": [
+              "55"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "27 AND 46 [23 + 4 and 37 + 9]",
+              "Either 27 OR 46",
+              "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)."
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 31,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.531,
+          "location": 0.756
+        }
+      },
+      {
+        "rank": 7,
+        "cosine_similarity": 0.841,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Algebra",
+        "main_topic": "Patterns",
+        "cognitive_domain": "Reasoning",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Red and Black Tiles (Continued)\n\nUse the patterns in the previous table to answer the following questions.\n\nC. Next, Pat made a shape using 44 of the red tiles. How many black tiles would Pat need to complete the black part of the shape?\n\nAnswer: ____ black tiles",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "100"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 15,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.90424,
+          "location": 1.15031
+        }
+      },
+      {
+        "rank": 8,
+        "cosine_similarity": 0.775,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Geometric Measurement",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: A rectangular prism, with a length of 5 blocks, width of 4 blocks, and height of 3 blocks. There is a hole shown on the top of the rectangular prism. The hole is 2 blocks by 3 blocks and goes all the way through the shape.]\n\nThe figure above shows a shape made up of cubes that are all the same size. There is a hole all the way through the shape. How many cubes would be needed to fill the hole?",
+        "options": [
+          {
+            "label": "A",
+            "text": "6"
+          },
+          {
+            "label": "B",
+            "text": "12"
+          },
+          {
+            "label": "C",
+            "text": "15"
+          },
+          {
+            "label": "D",
+            "text": "18"
+          }
+        ],
+        "correct_option": "D",
+        "figure_description": "An isometric drawing of a 3D block shape constructed from identical unit cubes. The overall block is 5 cubes wide along the front, 4 cubes deep along the right side, and 3 cubes tall. In the center of the top face, there is a rectangular rectangular hole measuring 3 cubes wide by 2 cubes deep, bordered by a rim that is 1 cube wide on all four sides. The hole extends vertically straight down through the entire height of 3 cubes.",
+        "pct_correct_intl_avg": 47,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.03935,
+          "location": 0.32241,
+          "guessing": 0.12723
+        }
+      },
+      {
+        "rank": 9,
+        "cosine_similarity": 0.841,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Algebra",
+        "main_topic": "Patterns",
+        "cognitive_domain": "Reasoning",
+        "item_type": "constructed_response",
+        "max_points": 2,
+        "scaled_points": 2,
+        "stem": "Red and Black Tiles (Continued)\n\nUse the patterns in the previous table to answer the following questions.\n\nA. Pat made a shape with a total of 64 tiles. How many were black and how many were red?\n\nAnswer: ____ black tiles ____ red tiles",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "36 black and 28 red"
+            ]
+          },
+          {
+            "category": "Partially Correct Response",
+            "descriptors": [
+              "36 black, red incorrect",
+              "28 red, black incorrect"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 27,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "GPCM",
+        "calibrated_parameters": {
+          "slope": 0.99873,
+          "location": 0.59048,
+          "step1": -1.12213,
+          "step2": 1.12213
+        }
+      },
+      {
+        "rank": 10,
+        "cosine_similarity": 0.847,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Algebra",
+        "main_topic": "Patterns",
+        "cognitive_domain": "Reasoning",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Red and Black Tiles (Continued)\n\nUse the patterns in the previous table to answer the following questions.\n\nB. Pat made a shape that used 49 black tiles.\nHow many red tiles did Pat use in that shape?\n\nAnswer: ____ red tiles",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "32"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 20,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.68057,
+          "location": 0.91631
+        }
+      }
+    ]
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.61,
+      "confidence": 0.69,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.04,
+        "2": 0.08,
+        "3": 0.18,
+        "4": 0.59,
+        "5": 0.05,
+        "6": 0.02,
+        "7": 0.01,
+        "8": 0.01
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 4.64,
+      "confidence": 0.38,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.04,
+        "2": 0.07,
+        "3": 0.13,
+        "4": 0.14,
+        "5": 0.23,
+        "6": 0.31,
+        "7": 0.05,
+        "8": 0.01,
+        "9": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 6339,
+  "output_tokens": 31,
+  "cost_usd": 0.000266238,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791918364-UhS9Vf4wzfwuQ6pQI5Bs",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.61,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.04,
+          "2": 0.08,
+          "3": 0.18,
+          "4": 0.59,
+          "5": 0.05,
+          "6": 0.02,
+          "7": 0.01,
+          "8": 0.01
+        },
+        "confidence": 0.69
+      },
+      "location": {
+        "type": "score",
+        "score": 4.64,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.04,
+          "2": 0.07,
+          "3": 0.13,
+          "4": 0.14,
+          "5": 0.23,
+          "6": 0.31,
+          "7": 0.05,
+          "8": 0.01,
+          "9": 0.01
+        },
+        "confidence": 0.38
+      }
+    },
+    "usage": {
+      "input_tokens": 6339,
+      "output_tokens": 31,
+      "cost": 0.000266238
+    },
+    "id": "gen-dec-1791918364-UhS9Vf4wzfwuQ6pQI5Bs",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T19:06:04+00:00",
+  "seconds": null
+}

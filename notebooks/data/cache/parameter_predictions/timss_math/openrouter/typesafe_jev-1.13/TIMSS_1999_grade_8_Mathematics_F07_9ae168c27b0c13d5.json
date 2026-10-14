@@ -1,0 +1,817 @@
+{
+  "item_id": "F07",
+  "assessment": "TIMSS 1999",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Fractions and Number Sense",
+  "main_topic": null,
+  "cognitive_domain": "Investigating and Solving Problems",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 1999/grade 8/Mathematics/F07"
+  ],
+  "similar_items": [
+    {
+      "rank": 1,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1999/grade 8/Mathematics/P14",
+      "item_id": "P14",
+      "assessment": "TIMSS 1999",
+      "cosine_similarity": 0.8514,
+      "pct_correct_intl_avg": 56,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.999,
+      "location": 0.155,
+      "guessing": 0.219
+    },
+    {
+      "rank": 2,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M032649A",
+      "item_id": "M032649A",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8326,
+      "pct_correct_intl_avg": 35,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.949,
+      "location": 0.258
+    },
+    {
+      "rank": 3,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M032649B",
+      "item_id": "M032649B",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8306,
+      "pct_correct_intl_avg": 18,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.174,
+      "location": 1.009
+    },
+    {
+      "rank": 4,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M042041",
+      "item_id": "M042041",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8177,
+      "pct_correct_intl_avg": 70,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.4012,
+      "location": -0.22221,
+      "guessing": 0.32508
+    },
+    {
+      "rank": 5,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M022010",
+      "item_id": "M022010",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8133,
+      "pct_correct_intl_avg": 61,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.79,
+      "location": -0.596,
+      "guessing": 0.118
+    },
+    {
+      "rank": 6,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M032704",
+      "item_id": "M032704",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.825,
+      "pct_correct_intl_avg": 59.5,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.19001,
+      "location": -0.23458,
+      "guessing": 0.18669
+    },
+    {
+      "rank": 7,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M012004",
+      "item_id": "M012004",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8283,
+      "pct_correct_intl_avg": 47,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.139,
+      "location": 0.643,
+      "guessing": 0.319
+    },
+    {
+      "rank": 8,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M022188",
+      "item_id": "M022188",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.822,
+      "pct_correct_intl_avg": 43,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.755,
+      "location": 0.83,
+      "guessing": 0.241
+    },
+    {
+      "rank": 9,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M042304C",
+      "item_id": "M042304C",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8085,
+      "pct_correct_intl_avg": 21.6,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.41362,
+      "location": 0.72311
+    },
+    {
+      "rank": 10,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M032097",
+      "item_id": "M032097",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.7821,
+      "pct_correct_intl_avg": 28.4,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.27298,
+      "location": 1.36089,
+      "guessing": 0.18935
+    }
+  ],
+  "context": "item+references",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 1999",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Fractions and Number Sense",
+      "cognitive_domain": "Investigating and Solving Problems",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "A runner ran 3000 m in exactly 8 minutes. What was his average speed in meters per second?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3.75"
+        },
+        {
+          "label": "B",
+          "text": "6.25"
+        },
+        {
+          "label": "C",
+          "text": "16.0"
+        },
+        {
+          "label": "D",
+          "text": "37.5"
+        },
+        {
+          "label": "E",
+          "text": "62.5"
+        }
+      ],
+      "correct_option": "B",
+      "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data."
+    },
+    "reference_items": [
+      {
+        "rank": 1,
+        "cosine_similarity": 0.851,
+        "assessment": "TIMSS 1999",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Fractions and Number Sense",
+        "cognitive_domain": "Investigating and Solving Problems",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Sound travels at approximately 330 meters per second. The sound of an explosion took 28 seconds to reach a person. Which of these is the closest estimate of how far away the person was from the explosion?",
+        "options": [
+          {
+            "label": "A",
+            "text": "12,000 m"
+          },
+          {
+            "label": "B",
+            "text": "9,000 m"
+          },
+          {
+            "label": "C",
+            "text": "8,000 m"
+          },
+          {
+            "label": "D",
+            "text": "6,000 m"
+          }
+        ],
+        "correct_option": "B",
+        "pct_correct_intl_avg": 56,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.999,
+          "location": 0.155,
+          "guessing": 0.219
+        }
+      },
+      {
+        "rank": 2,
+        "cosine_similarity": 0.833,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Measurement",
+        "main_topic": "Tools, Techniques, and Formulas",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "In a car rally two checkpoints are 160 km apart. Drivers must travel from one checkpoint to the other in exactly 2.5 hours to earn maximum points.\n\nA. What must the average speed be to travel the 160 km in this time?\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "64 kph or 64 or equivalent."
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Incorrect (including crossed out/erased, stray marks, illegible or off task)."
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 35,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.949,
+          "location": 0.258
+        }
+      },
+      {
+        "rank": 3,
+        "cosine_similarity": 0.831,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Measurement",
+        "main_topic": "Tools, Techniques, and Formulas",
+        "cognitive_domain": "Reasoning",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "In a car rally two checkpoints are 160 km apart. Drivers must travel from one checkpoint to the other in exactly 2.5 hours to earn maximum points.\n\nB. A driver took 1 hour to travel through a 40 km hilly section at the beginning of the course.\n\nWhat must the average speed, in kilometers per hour, be for the remaining 120 km if the total time between checkpoints is to be 2.5 hours?\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "80 kph or 80"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "5, 2, 120 or 48 shown.",
+              "Other incorrect (including crossed out/erased, stray marks, illegible or off task)."
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 18,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.174,
+          "location": 1.009
+        }
+      },
+      {
+        "rank": 4,
+        "cosine_similarity": 0.818,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Fractions and Decimals",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "A workman cut off 1/5 of a pipe. The piece he cut off was 3 meters long.\n\nHow many meters long was the original pipe?",
+        "options": [
+          {
+            "label": "A",
+            "text": "8 m"
+          },
+          {
+            "label": "B",
+            "text": "12 m"
+          },
+          {
+            "label": "C",
+            "text": "15 m"
+          },
+          {
+            "label": "D",
+            "text": "18 m"
+          }
+        ],
+        "correct_option": "C",
+        "pct_correct_intl_avg": 70,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.4012,
+          "location": -0.22221,
+          "guessing": 0.32508
+        }
+      },
+      {
+        "rank": 5,
+        "cosine_similarity": 0.813,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Fractions and Decimals",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Alice ran a race in 49.86 seconds. Betty ran the same race in 52.30 seconds. How much longer did it take Betty to run the race than Alice?",
+        "options": [
+          {
+            "label": "A",
+            "text": "2.44 seconds"
+          },
+          {
+            "label": "B",
+            "text": "2.54 seconds"
+          },
+          {
+            "label": "C",
+            "text": "3.56 seconds"
+          },
+          {
+            "label": "D",
+            "text": "3.76 seconds"
+          }
+        ],
+        "correct_option": "A",
+        "pct_correct_intl_avg": 61,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.79,
+          "location": -0.596,
+          "guessing": 0.118
+        }
+      },
+      {
+        "rank": 6,
+        "cosine_similarity": 0.825,
+        "assessment": "TIMSS 2007",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Ratio, Proportion, and Percent",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "A bus travels at a constant speed so that the distance traveled is directly proportional to the time spent traveling. If the bus travels 120 km in 5 hours, how many kilometers does it travel in 8 hours?",
+        "options": [
+          {
+            "label": "A",
+            "text": "168"
+          },
+          {
+            "label": "B",
+            "text": "192"
+          },
+          {
+            "label": "C",
+            "text": "200"
+          },
+          {
+            "label": "D",
+            "text": "245"
+          }
+        ],
+        "correct_option": "B",
+        "pct_correct_intl_avg": 59.5,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.19001,
+          "location": -0.23458,
+          "guessing": 0.18669
+        }
+      },
+      {
+        "rank": 7,
+        "cosine_similarity": 0.828,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Ratio, Proportions, and Percent",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Alice can run 4 laps around a track in the same time that Carol can run 3 laps. When Carol has run 12 laps, how many laps has Alice run?",
+        "options": [
+          {
+            "label": "A",
+            "text": "9"
+          },
+          {
+            "label": "B",
+            "text": "11"
+          },
+          {
+            "label": "C",
+            "text": "13"
+          },
+          {
+            "label": "D",
+            "text": "16"
+          }
+        ],
+        "correct_option": "D",
+        "pct_correct_intl_avg": 47,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.139,
+          "location": 0.643,
+          "guessing": 0.319
+        }
+      },
+      {
+        "rank": 8,
+        "cosine_similarity": 0.822,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Measurement",
+        "main_topic": "Attributes and Units",
+        "cognitive_domain": "Knowing Facts and Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Which of these is the LEAST amount of time?",
+        "options": [
+          {
+            "label": "A",
+            "text": "1 day"
+          },
+          {
+            "label": "B",
+            "text": "20 hours"
+          },
+          {
+            "label": "C",
+            "text": "1,800 minutes"
+          },
+          {
+            "label": "D",
+            "text": "90,000 seconds"
+          }
+        ],
+        "correct_option": "B",
+        "pct_correct_intl_avg": 43,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.755,
+          "location": 0.83,
+          "guessing": 0.241
+        }
+      },
+      {
+        "rank": 9,
+        "cosine_similarity": 0.808,
+        "assessment": "TIMSS 2007",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Ratio, Proportion, and Percent",
+        "cognitive_domain": "Applying",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Triathlon\n\nA triathlon is a race in which athletes swim, then cycle, then run set distances. The first person to complete the whole course is the winner.\n\nKathy, Barbara, and Sue competed with each other in a triathalon. The course they covered consisted of a 1 kilometer swim, followed by a 40 kilometer cycle ride, and then a 15 kilometer run.\n\nC. Sue was the fastest runner. She averaged 7.5 km per hour for the 15 km run. Barbara took 10 minutes more than Sue, and Kathy took 5 minutes more than Barbara.\n\nUse this information to complete the table for running:\n\n| Running | Kathy | Barbara | Sue |\n| --- | --- | --- | --- |\n| Time taken (minutes) | | | |",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Kathy 135, Barbara 130, Sue 120 (accept time given in hours and minutes)"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          },
+          {
+            "category": "Nonresponse",
+            "descriptors": [
+              "Blank"
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 21.6,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.41362,
+          "location": 0.72311
+        }
+      },
+      {
+        "rank": 10,
+        "cosine_similarity": 0.782,
+        "assessment": "TIMSS 2007",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Geometric Measurement",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "A circular pond has a radius of 10 meters. There is an average of 2 frogs per square meter in the pond. Approximately how many frogs are in the pond?\n\nπ is approximately 3.14",
+        "options": [
+          {
+            "label": "A",
+            "text": "120"
+          },
+          {
+            "label": "B",
+            "text": "300"
+          },
+          {
+            "label": "C",
+            "text": "600"
+          },
+          {
+            "label": "D",
+            "text": "2400"
+          }
+        ],
+        "correct_option": "C",
+        "pct_correct_intl_avg": 28.4,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.27298,
+          "location": 1.36089,
+          "guessing": 0.18935
+        }
+      }
+    ]
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 2.97,
+      "confidence": 0.87,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.02,
+        "2": 0.09,
+        "3": 0.79,
+        "4": 0.06,
+        "5": 0.02,
+        "6": 0.01,
+        "7": 0.0,
+        "8": 0.0
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 3.88,
+      "confidence": 0.71,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.0,
+        "1": 0.02,
+        "2": 0.08,
+        "3": 0.21,
+        "4": 0.51,
+        "5": 0.11,
+        "6": 0.04,
+        "7": 0.02,
+        "8": 0.01,
+        "9": 0.0
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 2.87,
+      "confidence": 0.79,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.03,
+        "1": 0.03,
+        "2": 0.08,
+        "3": 0.77,
+        "4": 0.09,
+        "5": 0.0
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 5036,
+  "output_tokens": 45,
+  "cost_usd": 0.000211512,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791918362-CVzowrUvqthNxE5afbqC",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 2.97,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.02,
+          "2": 0.09,
+          "3": 0.79,
+          "4": 0.06,
+          "5": 0.02,
+          "6": 0.01,
+          "7": 0,
+          "8": 0
+        },
+        "confidence": 0.87
+      },
+      "location": {
+        "type": "score",
+        "score": 3.88,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0,
+          "1": 0.02,
+          "2": 0.08,
+          "3": 0.21,
+          "4": 0.51,
+          "5": 0.11,
+          "6": 0.04,
+          "7": 0.02,
+          "8": 0.01,
+          "9": 0
+        },
+        "confidence": 0.71
+      },
+      "guessing": {
+        "type": "score",
+        "score": 2.87,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.03,
+          "2": 0.08,
+          "3": 0.77,
+          "4": 0.09,
+          "5": 0
+        },
+        "confidence": 0.79
+      }
+    },
+    "usage": {
+      "input_tokens": 5036,
+      "output_tokens": 45,
+      "cost": 0.000211512
+    },
+    "id": "gen-dec-1791918362-CVzowrUvqthNxE5afbqC",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T19:06:03+00:00",
+  "seconds": null
+}

@@ -1,0 +1,756 @@
+{
+  "item_id": "M031285",
+  "assessment": "TIMSS 2007",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Number",
+  "main_topic": "Whole Numbers",
+  "cognitive_domain": "Reasoning",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+  "excluded_item_keys": [
+    "TIMSS 2007/grade 4/Mathematics/M031285"
+  ],
+  "similar_items": [
+    {
+      "rank": 1,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M031108",
+      "item_id": "M031108",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8619,
+      "pct_correct_intl_avg": 49,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.11,
+      "location": 0.333,
+      "guessing": 0.116
+    },
+    {
+      "rank": 2,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/T4B",
+      "item_id": "T4B",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.8077,
+      "pct_correct_intl_avg": 15,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.229,
+      "location": 1.232
+    },
+    {
+      "rank": 3,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/U3A",
+      "item_id": "U3A",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.8544,
+      "pct_correct_intl_avg": 61,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.014,
+      "location": -0.454
+    },
+    {
+      "rank": 4,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/T4A",
+      "item_id": "T4A",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.8117,
+      "pct_correct_intl_avg": 21,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.838,
+      "location": 1.114
+    },
+    {
+      "rank": 5,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/U3B",
+      "item_id": "U3B",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.854,
+      "pct_correct_intl_avg": 45,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.183,
+      "location": 0.143
+    },
+    {
+      "rank": 6,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M051305",
+      "item_id": "M051305",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8016,
+      "pct_correct_intl_avg": 60,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.8336,
+      "location": -0.25318,
+      "guessing": 0.17995
+    },
+    {
+      "rank": 7,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M031346B",
+      "item_id": "M031346B",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8218,
+      "pct_correct_intl_avg": 31,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.69011,
+      "location": 0.42089
+    },
+    {
+      "rank": 8,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M031346C",
+      "item_id": "M031346C",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8053,
+      "pct_correct_intl_avg": 24,
+      "irt_model": "GPCM",
+      "scaled_points": 2,
+      "slope": 1.31278,
+      "location": 0.1474,
+      "step1": 0.47389,
+      "step2": -0.47389
+    },
+    {
+      "rank": 9,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M031380",
+      "item_id": "M031380",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8358,
+      "pct_correct_intl_avg": 18,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.07672,
+      "location": 1.0844
+    },
+    {
+      "rank": 10,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M031185",
+      "item_id": "M031185",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8314,
+      "pct_correct_intl_avg": 54,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.3751,
+      "location": 0.0876,
+      "guessing": 0.22218
+    }
+  ],
+  "context": "item+references",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2007",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Number",
+      "main_topic": "Whole Numbers",
+      "cognitive_domain": "Reasoning",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "Two boys went running. For every 2 km that Fred ran, Alan ran 3 km. Fred ran 6 km. How far did Alan run?\n\nAnswer: ____ km",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "9"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "7",
+            "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+          ]
+        },
+        {
+          "category": "Nonresponse",
+          "descriptors": [
+            "Blank"
+          ]
+        }
+      ],
+      "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics)."
+    },
+    "reference_items": [
+      {
+        "rank": 1,
+        "cosine_similarity": 0.862,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Ratio, Proportions, and Percent",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "For every soft drink bottle that Fred collected, Maria collected 3.\nFred collected a total of 9 soft drink bottles. How many did Maria collect?",
+        "options": [
+          {
+            "label": "A",
+            "text": "3"
+          },
+          {
+            "label": "B",
+            "text": "12"
+          },
+          {
+            "label": "C",
+            "text": "13"
+          },
+          {
+            "label": "D",
+            "text": "27"
+          }
+        ],
+        "correct_option": "D",
+        "pct_correct_intl_avg": 49,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.11,
+          "location": 0.333,
+          "guessing": 0.116
+        }
+      },
+      {
+        "rank": 2,
+        "cosine_similarity": 0.808,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Fractions and Proportionality",
+        "cognitive_domain": "Solving Problems",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "There are 10 girls and 20 boys in Juanita's class. Juanita said that there is one girl for every two boys. Her friend Amanda said that means 1/2 of all the students in the class are girls.\n\nHow many students are there in Juanita's class?\nAnswer: ____\n\nIs Amanda right? Answer: ____\nUse words and pictures to explain why.",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "NO. The response expresses verbally, symbolically or pictorially that 10 is not half of 30.",
+              "Other correct. (Includes satisfactory explanations when neither a \"yes\" or \"no\" answer is given)."
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "YES. An explanation is given but is not satisfactory.",
+              "YES. No explanation is given.",
+              "NO. An explanation is given but is not satisfactory.",
+              "NO. No explanation is given.",
+              "Other incorrect."
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 15,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.229,
+          "location": 1.232
+        }
+      },
+      {
+        "rank": 3,
+        "cosine_similarity": 0.854,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Fractions and Proportionality",
+        "cognitive_domain": "Solving Problems",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Maria and her sister Louisa leave home at the same time and ride their bicycles to school 9 kilometers away.\n\nMaria rides at a rate of 3 kilometers in 10 minutes. How long will it take her to get to school?\n\nAnswer: ____ minutes",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "30"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "10",
+              "Other incorrect."
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 61,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.014,
+          "location": -0.454
+        }
+      },
+      {
+        "rank": 4,
+        "cosine_similarity": 0.812,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Fractions and Proportionality",
+        "cognitive_domain": "Solving Problems",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "There are 10 girls and 20 boys in Juanita's class. Juanita said that there is one girl for every two boys. Her friend Amanda said that means 1/2 of all the students in the class are girls.\n\nHow many students are there in Juanita's class?\nAnswer: ____\n\nIs Juanita right? Answer: ____\nUse words or pictures to explain why.",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "YES. The response expresses verbally, symbolically or pictorially that 20 is twice as much as 10, or that 10 is half of 20.",
+              "Other correct. (Includes satisfactory explanations when neither a \"yes\" or \"no\" answer is given)."
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "NO. An explanation is given but is not satisfactory.",
+              "NO. No explanation is given.",
+              "YES. An explanation is given but is not satisfactory.",
+              "YES. No explanation is given.",
+              "Other incorrect."
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 21,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.838,
+          "location": 1.114
+        }
+      },
+      {
+        "rank": 5,
+        "cosine_similarity": 0.854,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Fractions and Proportionality",
+        "cognitive_domain": "Solving Problems",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Maria and her sister Louisa leave home at the same time and ride their bicycles to school 9 kilometers away.\n\nLouisa rides at a rate of 1 kilometer in 3 minutes. How long will it take her to get to school?\n\nAnswer: ____ minutes",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "27"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Any other multiple of 3.",
+              "Other incorrect."
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 45,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.183,
+          "location": 0.143
+        }
+      },
+      {
+        "rank": 6,
+        "cosine_similarity": 0.802,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Fractions and Decimals",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Duncan first traveled 4.8 km in a car and then he traveled 1.5 km in a bus.\n\nHow far did Duncan travel?",
+        "options": [
+          {
+            "label": "A",
+            "text": "6.3 km"
+          },
+          {
+            "label": "B",
+            "text": "5.8 km"
+          },
+          {
+            "label": "C",
+            "text": "5.13 km"
+          },
+          {
+            "label": "D",
+            "text": "4.95 km"
+          }
+        ],
+        "correct_option": "A",
+        "pct_correct_intl_avg": 60,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.8336,
+          "location": -0.25318,
+          "guessing": 0.17995
+        }
+      },
+      {
+        "rank": 7,
+        "cosine_similarity": 0.822,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Reasoning",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "The town fair had a booth where people could trade cards.\n\n[Image: one animal card, an equal sign, and two cartoon cards.]\n\n1 animal card is worth 2 cartoon cards.\n\n[Image: two animal cards, an equal sign, and three sports cards.]\n\n2 animal cards are worth 3 sports cards.\n\nSome children went to the booth to trade cards.\n\nTrading Animal Cards\n\nB. Jim had 8 animal cards to trade for sports cards. How many sports cards would he get?\n\nAnswer: ____ sports cards",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "12"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "16",
+              "24",
+              "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "figure_description": "Two trade equations are illustrated with rectangular cards:\n1. Top equation: 1 card depicting a bear is on the left, an equals sign (=) is in the middle, and 2 identical cards depicting an oval cartoon face are on the right.\n2. Bottom equation: 2 identical cards depicting a bear are on the left, an equals sign (=) is in the middle, and 3 identical cards depicting a sports player kicking a ball are on the right.",
+        "pct_correct_intl_avg": 31,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.69011,
+          "location": 0.42089
+        }
+      },
+      {
+        "rank": 8,
+        "cosine_similarity": 0.805,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Reasoning",
+        "item_type": "constructed_response",
+        "max_points": 2,
+        "scaled_points": 2,
+        "stem": "The town fair had a booth where people could trade cards.\n\n[Image: one animal card, an equal sign, and two cartoon cards]\n\n1 animal card is worth 2 cartoon cards.\n\n[Image: two animal cards, an equal sign, and three sports cards]\n\n2 animal cards are worth 3 sports cards.\n\nSome children went to the booth to trade cards.\n\nTrading Animal Cards\n\nC. Katrina had 6 animal cards. She wanted to trade them for as many cards as possible.\n\nHow many cartoon cards would she get? ____\n\nHow many sports cards would she get? ____\n\nShould she trade for cartoon cards or trade for sport cards?\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Numbers of cartoon cards (12) AND sports cards (9) correct AND choice (cartoon cards) correct"
+            ]
+          },
+          {
+            "category": "Partially Correct Response",
+            "descriptors": [
+              "Number of cartoon cards only correct",
+              "Number of sports cards only correct",
+              "Numbers of cartoon cards and sports cards correct but choice not shown or incorrect"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Choice of cartoon cards or sports cards with no numbers shown",
+              "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "figure_description": "Two pictorial trading equations are displayed:\n1. A single card showing a drawing of a standing bear, an equals sign (=), and two identical cards each showing an oval cartoon face with large eyes. The text below states: \"1 animal card is worth 2 cartoon cards.\"\n2. Two identical cards showing a drawing of a standing bear, an equals sign (=), and three identical cards each showing a soccer player kicking a soccer ball. The text below states: \"2 animal cards are worth 3 sports cards.\"",
+        "pct_correct_intl_avg": 24,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "GPCM",
+        "calibrated_parameters": {
+          "slope": 1.31278,
+          "location": 0.1474,
+          "step1": 0.47389,
+          "step2": -0.47389
+        }
+      },
+      {
+        "rank": 9,
+        "cosine_similarity": 0.836,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Reasoning",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Trading Cartoon Cards\n\nBrad had 8 cartoon cards to trade for sports cards. How many sports cards would he get?\n\nAnswer: ____ sports cards",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "6"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "4",
+              "12",
+              "24",
+              "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 18,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.07672,
+          "location": 1.0844
+        }
+      },
+      {
+        "rank": 10,
+        "cosine_similarity": 0.831,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Reasoning",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "The scale on a map indicates that 1 centimeter on the map represents 4 kilometers on the land. The distance between two towns on the map is 8 centimeters. How many kilometers apart are the two towns?",
+        "options": [
+          {
+            "label": "A",
+            "text": "2"
+          },
+          {
+            "label": "B",
+            "text": "8"
+          },
+          {
+            "label": "C",
+            "text": "16"
+          },
+          {
+            "label": "D",
+            "text": "32"
+          }
+        ],
+        "correct_option": "D",
+        "pct_correct_intl_avg": 54,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.3751,
+          "location": 0.0876,
+          "guessing": 0.22218
+        }
+      }
+    ]
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics)\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics)\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.92,
+      "confidence": 0.61,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.01,
+        "2": 0.05,
+        "3": 0.29,
+        "4": 0.38,
+        "5": 0.16,
+        "6": 0.07,
+        "7": 0.02,
+        "8": 0.01
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 3.32,
+      "confidence": 0.41,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.08,
+        "2": 0.26,
+        "3": 0.2,
+        "4": 0.22,
+        "5": 0.18,
+        "6": 0.03,
+        "7": 0.01,
+        "8": 0.0,
+        "9": 0.0
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 5136,
+  "output_tokens": 31,
+  "cost_usd": 0.000215712,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791918370-OyI3Iz3YhtdIAled3hhz",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.92,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.05,
+          "3": 0.29,
+          "4": 0.38,
+          "5": 0.16,
+          "6": 0.07,
+          "7": 0.02,
+          "8": 0.01
+        },
+        "confidence": 0.61
+      },
+      "location": {
+        "type": "score",
+        "score": 3.32,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.08,
+          "2": 0.26,
+          "3": 0.2,
+          "4": 0.22,
+          "5": 0.18,
+          "6": 0.03,
+          "7": 0.01,
+          "8": 0,
+          "9": 0
+        },
+        "confidence": 0.41
+      }
+    },
+    "usage": {
+      "input_tokens": 5136,
+      "output_tokens": 31,
+      "cost": 0.000215712
+    },
+    "id": "gen-dec-1791918370-OyI3Iz3YhtdIAled3hhz",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T19:06:10+00:00",
+  "seconds": null
+}

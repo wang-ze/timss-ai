@@ -1,0 +1,277 @@
+{
+  "item_id": "M031088",
+  "assessment": "TIMSS 2011",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Geometric Shapes and Measures",
+  "main_topic": "Points, Lines, and Angles",
+  "cognitive_domain": "Applying",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M031088"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2011",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Geometric Shapes and Measures",
+      "main_topic": "Points, Lines, and Angles",
+      "cognitive_domain": "Applying",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "[Image: a large square divided into smaller squares with the x-axis labeled A through H from left to right and the y-axis labeled 1 through 8 from down to up.]\n\nJamie is playing a board game. His counter is on square D5. Which of these moves would put his counter on square G7?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2 squares to the right and 3 squares up"
+        },
+        {
+          "label": "B",
+          "text": "2 squares to the left and 3 squares up"
+        },
+        {
+          "label": "C",
+          "text": "3 squares to the right and 2 squares up"
+        },
+        {
+          "label": "D",
+          "text": "3 squares to the left and 2 squares up"
+        }
+      ],
+      "correct_option": "C",
+      "figure_description": "An 8 by 8 grid of square spaces. The columns are labeled along the bottom from left to right with the letters A, B, C, D, E, F, G, and H. The rows are labeled along the left side from bottom to top with the numbers 1, 2, 3, 4, 5, 6, 7, and 8. A solid black circle representing a counter is located in the square at column D, row 5.",
+      "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.92,
+      "confidence": 0.32,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.03,
+        "1": 0.05,
+        "2": 0.12,
+        "3": 0.26,
+        "4": 0.18,
+        "5": 0.17,
+        "6": 0.11,
+        "7": 0.05,
+        "8": 0.03
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 2.52,
+      "confidence": 0.53,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.07,
+        "1": 0.21,
+        "2": 0.27,
+        "3": 0.23,
+        "4": 0.11,
+        "5": 0.07,
+        "6": 0.03,
+        "7": 0.01,
+        "8": 0.0,
+        "9": 0.0
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 3.88,
+      "confidence": 0.93,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.0,
+        "2": 0.01,
+        "3": 0.04,
+        "4": 0.93,
+        "5": 0.0
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1266,
+  "output_tokens": 45,
+  "cost_usd": 5.3172e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914768-LJnKxvnfpFz6H8eN9jhX",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.92,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.05,
+          "2": 0.12,
+          "3": 0.26,
+          "4": 0.18,
+          "5": 0.17,
+          "6": 0.11,
+          "7": 0.05,
+          "8": 0.03
+        },
+        "confidence": 0.32
+      },
+      "location": {
+        "type": "score",
+        "score": 2.52,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.21,
+          "2": 0.27,
+          "3": 0.23,
+          "4": 0.11,
+          "5": 0.07,
+          "6": 0.03,
+          "7": 0.01,
+          "8": 0,
+          "9": 0
+        },
+        "confidence": 0.53
+      },
+      "guessing": {
+        "type": "score",
+        "score": 3.88,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.04,
+          "4": 0.93,
+          "5": 0
+        },
+        "confidence": 0.93
+      }
+    },
+    "usage": {
+      "input_tokens": 1266,
+      "output_tokens": 45,
+      "cost": 5.3172e-05
+    },
+    "id": "gen-dec-1791914768-LJnKxvnfpFz6H8eN9jhX",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:08+00:00",
+  "seconds": null
+}

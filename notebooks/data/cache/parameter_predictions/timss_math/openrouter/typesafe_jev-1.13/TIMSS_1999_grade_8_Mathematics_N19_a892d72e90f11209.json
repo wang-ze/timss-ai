@@ -1,0 +1,222 @@
+{
+  "item_id": "N19",
+  "assessment": "TIMSS 1999",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Fractions and Number Sense",
+  "main_topic": null,
+  "cognitive_domain": "Knowing",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 1999/grade 8/Mathematics/N19"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 1999",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Fractions and Number Sense",
+      "cognitive_domain": "Knowing",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "Shade in 3/8 of the unit squares in the grid.\n\n[Image: Grid of unit squares]",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "9 squares are shaded (regardless of which squares)",
+            "Other correct (e.g., 6 full squares and 6 half squares shaded or other equivalent of nine squares)"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "3 squares shaded",
+            "8 squares shaded",
+            "11 or 13 squares shaded",
+            "3 squares shaded and 8 more squares shaded (areas are shaded separately)",
+            "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+          ]
+        }
+      ],
+      "figure_description": "A rectangular grid divided into 4 rows and 6 columns of identical, unshaded unit squares, totaling 24 squares.",
+      "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.38,
+      "confidence": 0.33,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.06,
+        "1": 0.1,
+        "2": 0.17,
+        "3": 0.24,
+        "4": 0.15,
+        "5": 0.13,
+        "6": 0.09,
+        "7": 0.04,
+        "8": 0.02
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 3.07,
+      "confidence": 0.31,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.06,
+        "1": 0.18,
+        "2": 0.21,
+        "3": 0.18,
+        "4": 0.11,
+        "5": 0.12,
+        "6": 0.07,
+        "7": 0.04,
+        "8": 0.02,
+        "9": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1002,
+  "output_tokens": 31,
+  "cost_usd": 4.2084e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914757-xv2Haj2NqUywrcZw6OZh",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.38,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.06,
+          "1": 0.1,
+          "2": 0.17,
+          "3": 0.24,
+          "4": 0.15,
+          "5": 0.13,
+          "6": 0.09,
+          "7": 0.04,
+          "8": 0.02
+        },
+        "confidence": 0.33
+      },
+      "location": {
+        "type": "score",
+        "score": 3.07,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.06,
+          "1": 0.18,
+          "2": 0.21,
+          "3": 0.18,
+          "4": 0.11,
+          "5": 0.12,
+          "6": 0.07,
+          "7": 0.04,
+          "8": 0.02,
+          "9": 0.01
+        },
+        "confidence": 0.31
+      }
+    },
+    "usage": {
+      "input_tokens": 1002,
+      "output_tokens": 31,
+      "cost": 4.2084e-05
+    },
+    "id": "gen-dec-1791914757-xv2Haj2NqUywrcZw6OZh",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:05:57+00:00",
+  "seconds": null
+}

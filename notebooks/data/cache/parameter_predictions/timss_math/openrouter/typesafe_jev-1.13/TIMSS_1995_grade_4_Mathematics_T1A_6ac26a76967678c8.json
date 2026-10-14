@@ -1,0 +1,868 @@
+{
+  "item_id": "T1A",
+  "assessment": "TIMSS 1995",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Data Representation, Analysis, and Probability",
+  "main_topic": null,
+  "cognitive_domain": "Solving Problems",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/T1A",
+    "TIMSS 1995/grade 4/Mathematics/T1B"
+  ],
+  "similar_items": [
+    {
+      "rank": 1,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M041186",
+      "item_id": "M041186",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8709,
+      "pct_correct_intl_avg": 49.7,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.97287,
+      "location": -0.03362,
+      "guessing": 0.09158
+    },
+    {
+      "rank": 2,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M011009",
+      "item_id": "M011009",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8839,
+      "pct_correct_intl_avg": 83,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.046,
+      "location": -1.431,
+      "guessing": 0.146
+    },
+    {
+      "rank": 3,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M011012",
+      "item_id": "M011012",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8712,
+      "pct_correct_intl_avg": 78,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.761,
+      "location": -1.452,
+      "guessing": 0.083
+    },
+    {
+      "rank": 4,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M031333",
+      "item_id": "M031333",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.843,
+      "pct_correct_intl_avg": 42,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.897,
+      "location": 0.562,
+      "guessing": 0.123
+    },
+    {
+      "rank": 5,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M031265",
+      "item_id": "M031265",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8591,
+      "pct_correct_intl_avg": 39,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.584,
+      "location": -0.217
+    },
+    {
+      "rank": 6,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M051117",
+      "item_id": "M051117",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8593,
+      "pct_correct_intl_avg": 54,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.01373,
+      "location": 0.28451,
+      "guessing": 0.30311
+    },
+    {
+      "rank": 7,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M031155",
+      "item_id": "M031155",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8634,
+      "pct_correct_intl_avg": 55,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.20851,
+      "location": 0.18718,
+      "guessing": 0.2351
+    },
+    {
+      "rank": 8,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/M2",
+      "item_id": "M2",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.8109,
+      "pct_correct_intl_avg": 55,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.688,
+      "location": -0.205
+    },
+    {
+      "rank": 9,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M041203",
+      "item_id": "M041203",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8492,
+      "pct_correct_intl_avg": 37.8,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.86545,
+      "location": 0.04122
+    },
+    {
+      "rank": 10,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M012126",
+      "item_id": "M012126",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8617,
+      "pct_correct_intl_avg": 67,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.711,
+      "location": -0.592,
+      "guessing": 0.115
+    },
+    {
+      "rank": 11,
+      "found_by": "same model",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M031264",
+      "item_id": "M031264",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8588,
+      "pct_correct_intl_avg": 73,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.029,
+      "location": -1.239
+    },
+    {
+      "rank": 12,
+      "found_by": "same model",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/L1",
+      "item_id": "L1",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.8504,
+      "pct_correct_intl_avg": 49,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.203,
+      "location": -0.063
+    }
+  ],
+  "context": "item+references",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 1995",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Data Representation, Analysis, and Probability",
+      "cognitive_domain": "Solving Problems",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "The graph shows the number of cartons of milk sold each day of a week at a school.\n\n[Image: Bar graph]\n\nHow many cartons of milk did the school sell on Monday?\n\nAnswer: ____",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "25"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "5",
+            "Other incorrect."
+          ]
+        }
+      ],
+      "figure_description": "A vertical bar graph with the vertical axis labeled \"Number Sold\" with major grid lines and labels at 10, 20, 30, and 40. The horizontal axis is labeled \"Day\" with five days labeled: \"Mon.\", \"Tues.\", \"Wed.\", \"Thurs.\", \"Fri.\". All bars are shaded grey. The bar heights are:\n- Mon.: halfway between 20 and 30 (height 25)\n- Tues.: level with 20\n- Wed.: level with 30\n- Thurs.: halfway between 10 and 20 (height 15)\n- Fri.: halfway between 30 and 40 (height 35)",
+      "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data."
+    },
+    "reference_items": [
+      {
+        "rank": 1,
+        "cosine_similarity": 0.871,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Data Display",
+        "main_topic": "Reading and Interpreting",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "The graph shows the number of apples John picked each day.\n\neach [Image: apple icon] stands for 10 apples\n\n[Image: Pictograph of apples picked each day]\n\nOn which day did John pick 5 apples?",
+        "options": [
+          {
+            "label": "A",
+            "text": "Monday"
+          },
+          {
+            "label": "B",
+            "text": "Tuesday"
+          },
+          {
+            "label": "C",
+            "text": "Wednesday"
+          },
+          {
+            "label": "D",
+            "text": "Thursday"
+          }
+        ],
+        "correct_option": "D",
+        "figure_description": "A pictograph with a key stating: \"each [apple icon] stands for 10 apples\". A table contains four rows corresponding to days of the week:\n- Monday: 7 full apple symbols and 1 half-apple symbol (right half).\n- Tuesday: 5 full apple symbols.\n- Wednesday: 1 full apple symbol.\n- Thursday: 1 half-apple symbol (left half).",
+        "pct_correct_intl_avg": 49.7,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.97287,
+          "location": -0.03362,
+          "guessing": 0.09158
+        }
+      },
+      {
+        "rank": 2,
+        "cosine_similarity": 0.884,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Data",
+        "main_topic": "Data Representation",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Central School had a bottle collection. Children in each class brought empty bottles to school. The principal made a bar graph of the number of bottles from five classes.\n\n[Image: Bar graph of number of bottles collected by five classes]\n\nWhich class collected 45 bottles?",
+        "options": [
+          {
+            "label": "A",
+            "text": "Miss Barber’s class"
+          },
+          {
+            "label": "B",
+            "text": "Mr. Chyn’s class"
+          },
+          {
+            "label": "C",
+            "text": "Mrs. Friedman’s class"
+          },
+          {
+            "label": "D",
+            "text": "Mr. Mack’s class"
+          }
+        ],
+        "correct_option": "B",
+        "figure_description": "A vertical bar graph with the vertical axis labeled \"Number of Bottles\" marked from 0 to 100 with horizontal grid lines every 20 units (0, 20, 40, 60, 80, 100). The horizontal axis shows five classes:\n- \"Miss Barber’s Class\": bar reaches 80.\n- \"Mr. Chyn’s Class\": bar reaches approximately 45 (just above 40, a quarter of the way to 60).\n- \"Mrs. Friedman’s Class\": bar reaches 80.\n- \"Miss Gonzalez’s Class\": bar reaches approximately 87.\n- \"Mr. Mack’s Class\": bar reaches approximately 70 (halfway between 60 and 80).",
+        "pct_correct_intl_avg": 83,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.046,
+          "location": -1.431,
+          "guessing": 0.146
+        }
+      },
+      {
+        "rank": 3,
+        "cosine_similarity": 0.871,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Data",
+        "main_topic": "Data Representation",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Central School had a bottle collection. Children in each class brought empty bottles to school. The principal made a bar graph of the number of bottles from five classes.\n\n[Image: Bar graph of number of bottles collected by five classes]\n\nWhich two classes collected exactly 80 bottles?",
+        "options": [
+          {
+            "label": "A",
+            "text": "Miss Barber’s and Mrs. Friedman’s classes"
+          },
+          {
+            "label": "B",
+            "text": "Miss Barber’s and Mr. Mack’s classes"
+          },
+          {
+            "label": "C",
+            "text": "Mrs. Friedman’s and Miss Gonzalez’s classes"
+          },
+          {
+            "label": "D",
+            "text": "Miss Gonzalez’s and Mr. Mack’s classes"
+          }
+        ],
+        "correct_option": "A",
+        "figure_description": "A vertical bar graph with the vertical axis labeled \"Number of Bottles\" marked from 0 to 100 with horizontal grid lines every 20 units (0, 20, 40, 60, 80, 100). The horizontal axis shows five classes:\n- \"Miss Barber’s Class\": bar reaches 80.\n- \"Mr. Chyn’s Class\": bar reaches approximately 45.\n- \"Mrs. Friedman’s Class\": bar reaches 80.\n- \"Miss Gonzalez’s Class\": bar reaches approximately 87.\n- \"Mr. Mack’s Class\": bar reaches approximately 70.",
+        "pct_correct_intl_avg": 78,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.761,
+          "location": -1.452,
+          "guessing": 0.083
+        }
+      },
+      {
+        "rank": 4,
+        "cosine_similarity": 0.843,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Data",
+        "main_topic": "Data Interpretation",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: Temperature for Week graph]\n\nThe graph above shows the daily high and low temperatures for a week.\n\nOn which day is the difference between the high and low temperatures the greatest?",
+        "options": [
+          {
+            "label": "A",
+            "text": "Monday"
+          },
+          {
+            "label": "B",
+            "text": "Thursday"
+          },
+          {
+            "label": "C",
+            "text": "Friday"
+          },
+          {
+            "label": "D",
+            "text": "Saturday"
+          }
+        ],
+        "correct_option": "A",
+        "figure_description": "A plot titled \"Temperature for Week\". The vertical axis is labeled \"Temperature\" with grid lines marked at 20°, 25°, 30°, 35°, 40°, and 45°. The horizontal axis is labeled \"Day\" with vertical grid lines marked at Sun., Mon., Tues., Wed., Thu., Fri., and Sat.\nA legend on the right shows a filled black circle labeled \"High Temp.\" and an open circle labeled \"Low Temp.\"\nThe points plotted for each day are:\n- Sun.: High Temp. at 39°, Low Temp. at 25°\n- Mon.: High Temp. at 42°, Low Temp. at 24°\n- Tues.: High Temp. at ~34°, Low Temp. at ~28°\n- Wed.: High Temp. at 30°, Low Temp. at 20°\n- Thu.: High Temp. at 26°, Low Temp. at ~23°\n- Fri.: High Temp. at ~36°, Low Temp. at 25°\n- Sat.: High Temp. at 45°, Low Temp. at 30°",
+        "pct_correct_intl_avg": 42,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.897,
+          "location": 0.562,
+          "guessing": 0.123
+        }
+      },
+      {
+        "rank": 5,
+        "cosine_similarity": 0.859,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Data",
+        "main_topic": "Data Representation",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "A store owner decided to check how many pens, pencils, erasers, and rulers were sold on the day school opened. He made the tally chart below.\n\n[Image: Tally chart]\n\nHow many more pencils than rulers were sold?\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "2 more pencils than rulers"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "1 more pencil than rulers",
+              "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "figure_description": "A tally chart with 4 columns titled \"Pens\", \"Pencils\", \"Erasers\", and \"Rulers\":\n- Under \"Pens\", there are 4 groups of 5 tally marks and 2 single tally marks (total 22).\n- Under \"Pencils\", there are 5 groups of 5 tally marks and 1 single tally mark (total 26).\n- Under \"Erasers\", there are 2 groups of 5 tally marks and 2 single tally marks (total 12).\n- Under \"Rulers\", there are 4 groups of 5 tally marks and 4 single tally marks (total 24).",
+        "pct_correct_intl_avg": 39,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.584,
+          "location": -0.217
+        }
+      },
+      {
+        "rank": 6,
+        "cosine_similarity": 0.859,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Data Display",
+        "main_topic": "Reading and Interpreting",
+        "cognitive_domain": "Reasoning",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "The graph shows the number of students at each grade in the Pine School.\n\n[Image: Bar graph titled Pine School shows 6 columns labeled 1, 2, 3, 4, 5, and 6. X-axis is labeled Grade. Y-axis is labeled Number of Students with values from 0 to 35 and increments at every 5 units.\n• Grade 1: value of 20.\n• Grade 2: value of 25.\n• Grade 3: value of 20.\n• Grade 4: value of 25.\n• Grade 5: value of 30.\n• Grade 6: value of 25.]\n\nIn the Pine School there is room in each grade for 30 students. How many more students could be in the school?",
+        "options": [
+          {
+            "label": "A",
+            "text": "20"
+          },
+          {
+            "label": "B",
+            "text": "25"
+          },
+          {
+            "label": "C",
+            "text": "30"
+          },
+          {
+            "label": "D",
+            "text": "35"
+          }
+        ],
+        "correct_option": "D",
+        "figure_description": "A vertical bar graph titled \"Pine School\". The vertical axis is labeled \"Number of Students\" and is marked with grid lines from 0 to 35 in increments of 5 (0, 5, 10, 15, 20, 25, 30, 35). The horizontal axis is labeled \"Grade\" and has tick marks labeled 1, 2, 3, 4, 5, 6. The shaded gray bars have the following heights:\n- Grade 1: height 20\n- Grade 2: height 25\n- Grade 3: height 20\n- Grade 4: height 25\n- Grade 5: height 30\n- Grade 6: height 25",
+        "pct_correct_intl_avg": 54,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.01373,
+          "location": 0.28451,
+          "guessing": 0.30311
+        }
+      },
+      {
+        "rank": 7,
+        "cosine_similarity": 0.863,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Data Display",
+        "main_topic": "Reading and Interpreting",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: Bar graph with titled Teacher’s Pens and 3 columns labeled blue, red, and black on the y-axis. X-axis labeled Number of Pens with values from 0 to 20 and increments at every 4 units. Y-axis is labeled Color of Pens.]\n\nThe graph shows the number of blue, red, and black pens the teacher has in his desk. How many more red pens are there than black pens?",
+        "options": [
+          {
+            "label": "A",
+            "text": "2 more"
+          },
+          {
+            "label": "B",
+            "text": "4 more"
+          },
+          {
+            "label": "C",
+            "text": "6 more"
+          },
+          {
+            "label": "D",
+            "text": "8 more"
+          }
+        ],
+        "correct_option": "D",
+        "figure_description": "A horizontal bar graph titled \"Teacher's Pens\". The vertical axis is labeled \"Color of Pens\" and lists three colors: \"blue\", \"red\", and \"black\". The horizontal axis is labeled \"Number of Pens\" with grid lines spaced at increments of 2, and numbers marked at 4, 8, 12, 16, and 20. The horizontal shaded bar for \"blue\" extends to 10 (the vertical line between 8 and 12). The bar for \"red\" extends to 16. The bar for \"black\" extends to 8.",
+        "pct_correct_intl_avg": 55,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.20851,
+          "location": 0.18718,
+          "guessing": 0.2351
+        }
+      },
+      {
+        "rank": 8,
+        "cosine_similarity": 0.811,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Data Representation, Analysis, and Probability",
+        "cognitive_domain": "Using Complex Procedures",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "A team is selling raffle tickets. The table shows how many tickets they have sold so far.\n\n| Player's Name | Number of Tickets Sold |\n| :--- | :--- |\n| Carlos | 4 |\n| Maria | 7 |\n| Bill | 3 |\n| Ted | 7 |\n| Faye | 6 |\n| Abby | 9 |\n\nThey need to sell 60 tickets altogether. How many more tickets must they sell?\n\nAnswer:____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "24"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "30",
+              "34",
+              "36",
+              "Other incorrect."
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 55,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.688,
+          "location": -0.205
+        }
+      },
+      {
+        "rank": 9,
+        "cosine_similarity": 0.849,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Data Display",
+        "main_topic": "Organizing and Representing",
+        "cognitive_domain": "Reasoning",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "This graph shows the points obtained by 4 drivers in the car racing championship. Montoya is in first place. Alonso is in third place. Draw a bar which shows how many points Alonso has scored.\n\n[Image: Bar graph]",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Bar at 86"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Bar between 85-87 exclusive but not at 86",
+              "Other Incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          },
+          {
+            "category": "Nonresponse",
+            "descriptors": [
+              "Blank"
+            ]
+          }
+        ],
+        "figure_description": "A horizontal bar graph with a grid. The vertical axis lists four driver names from top to bottom: \"Raikkonen\", \"Schumacher\", \"Alonso\", and \"Montoya\". The horizontal axis is labeled \"Points Scored\" below tick marks numbered 82, 83, 84, 85, 86, 87, 88, 89, 90, 91 at increments of 1, with vertical grid lines extending up from each number. Grey horizontal bars are drawn for:\n- Raikkonen: extending from 82 to 87\n- Schumacher: extending from 82 to 85\n- Alonso: no bar is drawn (blank row)\n- Montoya: extending from 82 to 90",
+        "pct_correct_intl_avg": 37.8,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.86545,
+          "location": 0.04122
+        }
+      },
+      {
+        "rank": 10,
+        "cosine_similarity": 0.862,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Data",
+        "main_topic": "Data Interpretation",
+        "cognitive_domain": "Reasoning",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "The graph shows the heights of four girls.\n\n[Image: Bar graph showing heights of four girls]\n\nThe names are missing from the graph. Debbie is the tallest. Amy is the shortest. Dawn is taller than Sarah. How tall is Sarah?",
+        "options": [
+          {
+            "label": "A",
+            "text": "75 cm"
+          },
+          {
+            "label": "B",
+            "text": "100 cm"
+          },
+          {
+            "label": "C",
+            "text": "125 cm"
+          },
+          {
+            "label": "D",
+            "text": "150 cm"
+          }
+        ],
+        "correct_option": "B",
+        "figure_description": "A vertical bar graph titled \"Names of Girls\" along the horizontal axis, and labeled \"Height (Centimeters)\" along the vertical axis.\nThe vertical axis has tick marks from 0 to 150 in increments of 25 (0, 25, 50, 75, 100, 125, 150).\nThere are four unlabeled shaded bars from left to right:\n- The first bar has a height of 100.\n- The second bar has a height of 150.\n- The third bar has a height of 125.\n- The fourth bar has a height of 75.",
+        "pct_correct_intl_avg": 67,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.711,
+          "location": -0.592,
+          "guessing": 0.115
+        }
+      },
+      {
+        "rank": 11,
+        "cosine_similarity": 0.859,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Data",
+        "main_topic": "Data Representation",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "In a class of 30 students, 10 have black hair, 15 have blonde hair, and the rest have brown hair. Complete the graph below to show the number of students with brown hair.\n\n[Image: Incomplete bar graph titled \"Color of Hair\"]",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Bar for brown hair drawn to the horizontal line at 5"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "figure_description": "An incomplete bar graph titled \"Color of Hair\". The vertical axis is labeled \"Number of Students\" with horizontal grid lines marked at intervals of 5 from 5 up to 25 (5, 10, 15, 20, 25). The horizontal axis is labeled \"Hair Color\" with three categories: \"Black\", \"Blonde\", and \"Brown\". A black bar is drawn above \"Black\" reaching 10, a shaded gray bar is drawn above \"Blonde\" reaching 15, and the space above \"Brown\" is left blank for the student to draw a bar.",
+        "pct_correct_intl_avg": 73,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.029,
+          "location": -1.239
+        }
+      },
+      {
+        "rank": 12,
+        "cosine_similarity": 0.85,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Data Representation, Analysis, and Probability",
+        "cognitive_domain": "Knowing",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "The graph shows 500 cedar trees and 150 hemlock trees.\n\n[Image: Pictograph of trees]\n\nHow many trees does each [Image: Tree] represent?\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "100."
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "One of the following: 1, 5, 6, 6 1/2, 7, or 650.",
+              "Other incorrect."
+            ]
+          }
+        ],
+        "figure_description": "A pictograph table with two rows and two columns:\n- Top row: labeled \"Cedar\" on the left; on the right are 5 identical full evergreen tree symbols in a horizontal line.\n- Bottom row: labeled \"Hemlock\" on the left; on the right is 1 full evergreen tree symbol followed by half of an evergreen tree symbol (vertically cut, showing only the left half).\nBelow the table, the question includes an inline image of a single full evergreen tree symbol between the words \"each\" and \"represent?\".",
+        "pct_correct_intl_avg": 49,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.203,
+          "location": -0.063
+        }
+      }
+    ]
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 2.93,
+      "confidence": 0.57,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.12,
+        "2": 0.16,
+        "3": 0.4,
+        "4": 0.2,
+        "5": 0.04,
+        "6": 0.02,
+        "7": 0.01,
+        "8": 0.01
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 1.11,
+      "confidence": 0.6,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.39,
+        "1": 0.34,
+        "2": 0.18,
+        "3": 0.07,
+        "4": 0.01,
+        "5": 0.01,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 7383,
+  "output_tokens": 31,
+  "cost_usd": 0.000310086,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791918361-6HPf67YruDBbCmArGmqk",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 2.93,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.12,
+          "2": 0.16,
+          "3": 0.4,
+          "4": 0.2,
+          "5": 0.04,
+          "6": 0.02,
+          "7": 0.01,
+          "8": 0.01
+        },
+        "confidence": 0.57
+      },
+      "location": {
+        "type": "score",
+        "score": 1.11,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.39,
+          "1": 0.34,
+          "2": 0.18,
+          "3": 0.07,
+          "4": 0.01,
+          "5": 0.01,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0
+        },
+        "confidence": 0.6
+      }
+    },
+    "usage": {
+      "input_tokens": 7383,
+      "output_tokens": 31,
+      "cost": 0.000310086
+    },
+    "id": "gen-dec-1791918361-6HPf67YruDBbCmArGmqk",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T19:06:01+00:00",
+  "seconds": null
+}

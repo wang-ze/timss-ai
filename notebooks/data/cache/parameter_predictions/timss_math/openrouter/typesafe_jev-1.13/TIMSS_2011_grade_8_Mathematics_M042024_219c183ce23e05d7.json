@@ -1,0 +1,277 @@
+{
+  "item_id": "M042024",
+  "assessment": "TIMSS 2011",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Number",
+  "main_topic": "Fractions and Decimals",
+  "cognitive_domain": "Knowing",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M042024"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2011",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Number",
+      "main_topic": "Fractions and Decimals",
+      "cognitive_domain": "Knowing",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "[Image: A numbered axis from 26 to 28. There are four marks in between 26 to 27, as well as in between 27 to 28. K is marked underneath the last mark between 27 and 28.]\n\nWhich number does K represent on this number line?",
+      "options": [
+        {
+          "label": "A",
+          "text": "27.4"
+        },
+        {
+          "label": "B",
+          "text": "27.8"
+        },
+        {
+          "label": "C",
+          "text": "27.9"
+        },
+        {
+          "label": "D",
+          "text": "28.2"
+        }
+      ],
+      "correct_option": "B",
+      "figure_description": "A horizontal number line with arrowheads at both ends. There are evenly spaced vertical tick marks. The first labeled tick mark is labeled 26 below the line. Between 26 and 27, there are 4 evenly spaced tick marks dividing the interval into 5 equal parts. The tick mark for 27 is labeled below the line. Between 27 and 28, there are 4 evenly spaced tick marks, with the fourth tick mark labeled with the letter K below the line. The next tick mark is labeled 28 below the line. The line extends slightly past 26 to the left and past 28 to the right.",
+      "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.77,
+      "confidence": 0.29,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.08,
+        "2": 0.14,
+        "3": 0.23,
+        "4": 0.17,
+        "5": 0.15,
+        "6": 0.1,
+        "7": 0.06,
+        "8": 0.03
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 2.23,
+      "confidence": 0.39,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.14,
+        "1": 0.25,
+        "2": 0.24,
+        "3": 0.16,
+        "4": 0.09,
+        "5": 0.07,
+        "6": 0.03,
+        "7": 0.01,
+        "8": 0.01,
+        "9": 0.0
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 3.85,
+      "confidence": 0.89,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.01,
+        "2": 0.01,
+        "3": 0.06,
+        "4": 0.9,
+        "5": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1273,
+  "output_tokens": 45,
+  "cost_usd": 5.3466e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914769-Zc2DfFpiXXcYa1yzXbHL",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.77,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.08,
+          "2": 0.14,
+          "3": 0.23,
+          "4": 0.17,
+          "5": 0.15,
+          "6": 0.1,
+          "7": 0.06,
+          "8": 0.03
+        },
+        "confidence": 0.29
+      },
+      "location": {
+        "type": "score",
+        "score": 2.23,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.14,
+          "1": 0.25,
+          "2": 0.24,
+          "3": 0.16,
+          "4": 0.09,
+          "5": 0.07,
+          "6": 0.03,
+          "7": 0.01,
+          "8": 0.01,
+          "9": 0
+        },
+        "confidence": 0.39
+      },
+      "guessing": {
+        "type": "score",
+        "score": 3.85,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.01,
+          "3": 0.06,
+          "4": 0.9,
+          "5": 0.01
+        },
+        "confidence": 0.89
+      }
+    },
+    "usage": {
+      "input_tokens": 1273,
+      "output_tokens": 45,
+      "cost": 5.3466e-05
+    },
+    "id": "gen-dec-1791914769-Zc2DfFpiXXcYa1yzXbHL",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:09+00:00",
+  "seconds": null
+}

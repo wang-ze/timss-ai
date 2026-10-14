@@ -1,0 +1,775 @@
+{
+  "item_id": "M031345B",
+  "assessment": "TIMSS 2003",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Number",
+  "main_topic": "Whole Numbers",
+  "cognitive_domain": "Solving Routine Problems",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 2003/grade 4/Mathematics/M031344A",
+    "TIMSS 2003/grade 4/Mathematics/M031344B",
+    "TIMSS 2003/grade 4/Mathematics/M031344C",
+    "TIMSS 2003/grade 4/Mathematics/M031345A",
+    "TIMSS 2003/grade 4/Mathematics/M031345B",
+    "TIMSS 2003/grade 4/Mathematics/M031345C"
+  ],
+  "similar_items": [
+    {
+      "rank": 1,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/V4B",
+      "item_id": "V4B",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.8653,
+      "pct_correct_intl_avg": 48,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.929,
+      "location": -0.087
+    },
+    {
+      "rank": 2,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/V4A",
+      "item_id": "V4A",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.8351,
+      "pct_correct_intl_avg": 24,
+      "irt_model": "GPCM",
+      "scaled_points": 2,
+      "slope": 0.357,
+      "location": -0.012,
+      "step1": 1.964,
+      "step2": -1.964
+    },
+    {
+      "rank": 3,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M041300D",
+      "item_id": "M041300D",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8165,
+      "pct_correct_intl_avg": 25.8,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.12699,
+      "location": 0.63228
+    },
+    {
+      "rank": 4,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M041003",
+      "item_id": "M041003",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.846,
+      "pct_correct_intl_avg": 48,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.71479,
+      "location": -0.11189
+    },
+    {
+      "rank": 5,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M041300B",
+      "item_id": "M041300B",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8126,
+      "pct_correct_intl_avg": 41.0,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.15376,
+      "location": 0.06483
+    },
+    {
+      "rank": 6,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/T2",
+      "item_id": "T2",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.8282,
+      "pct_correct_intl_avg": 43,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.608,
+      "location": 0.093
+    },
+    {
+      "rank": 7,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M041300C",
+      "item_id": "M041300C",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8105,
+      "pct_correct_intl_avg": 30.6,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.0229,
+      "location": 0.44691
+    },
+    {
+      "rank": 8,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M031106",
+      "item_id": "M031106",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8256,
+      "pct_correct_intl_avg": 42.0,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.99232,
+      "location": 0.10924
+    },
+    {
+      "rank": 9,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M041300A",
+      "item_id": "M041300A",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8107,
+      "pct_correct_intl_avg": 39.7,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.05473,
+      "location": 0.1229
+    },
+    {
+      "rank": 10,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M031347B",
+      "item_id": "M031347B",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8127,
+      "pct_correct_intl_avg": 42,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.571,
+      "location": 0.234
+    }
+  ],
+  "context": "item+references",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2003",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Number",
+      "main_topic": "Whole Numbers",
+      "cognitive_domain": "Solving Routine Problems",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "Using the number tiles, Joan and Herbert played a new game.\nThey placed the numbers to make the largest answer.\n\nB. Use the tiles [2], [3], and [7]. Write the numbers on the tiles in the boxes below to make the largest answer when you subtract.\n\n[Image: Vertical subtraction layout with boxes]",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "73 − 2"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "72 − 3",
+            "Any other arrangement of the digits 2, 3, and 7",
+            "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+          ]
+        }
+      ],
+      "figure_description": "A vertical subtraction problem setup with two rows above a horizontal line. The top row has two square boxes side by side. The bottom row has a minus sign (−) on the left and a single square box aligned under the right box of the top row.",
+      "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data."
+    },
+    "reference_items": [
+      {
+        "rank": 1,
+        "cosine_similarity": 0.865,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Whole Numbers",
+        "cognitive_domain": "Solving Problems",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "In a game, Mysong and Naoki are making problems. They each have four cards like these.\n\n[1] [2] [3] [4]\n\nThe winner of the game is the person who can make the problem with the largest answer.\n\nMysong placed the cards like this.\n\n[Image: Mysong's card placement]\n\nNaoki placed the cards like this.\n\n[Image: Naoki's card placement]\n\nWrite numbers in the squares below to show how you would place the cards to beat both Mysong and Naoki.\n\n[Image: Blank addition grid]",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "One of the following: 42+31; 41+32; 31+42; or 32+41"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Combinations of the numbers 1, 2, 3 and 4. Every number is used only once.",
+              "Combinations of the numbers 1, 2, 3 and 4. One or more numbers are used more than once.",
+              "Combinations containing one or more numbers other than 1, 2, 3 and 4",
+              "Other incorrect"
+            ]
+          }
+        ],
+        "figure_description": "Four square cards are shown in a row labeled with the digits 1, 2, 3, and 4.\nBelow are two vertical addition problems:\nUnder the heading \"Mysong placed the cards like this.\", two rows of two square cards form a vertical addition problem: top row has cards [4] and [3]; bottom row has cards [2] and [1], with a plus sign '+' to the left of the bottom row and a horizontal addition line underneath.\nUnder the heading \"Naoki placed the cards like this.\", two rows of two square cards form a vertical addition problem: top row has cards [3] and [1]; bottom row has cards [2] and [4], with a plus sign '+' to the left of the bottom row and a horizontal addition line underneath.\nAt the bottom of the item is an empty addition grid consisting of four blank squares arranged in two rows of two, with a plus sign '+' to the left of the bottom row and a horizontal addition line underneath.",
+        "pct_correct_intl_avg": 48,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.929,
+          "location": -0.087
+        }
+      },
+      {
+        "rank": 2,
+        "cosine_similarity": 0.835,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Whole Numbers",
+        "cognitive_domain": "Solving Problems",
+        "item_type": "constructed_response",
+        "max_points": 2,
+        "scaled_points": 2,
+        "stem": "In a game, Mysong and Naoki are making problems. They each have four cards like these.\n\n[1] [2] [3] [4]\n\nThe winner of the game is the person who can make the problem with the largest answer.\n\nMysong placed the cards like this.\n\n[Image: Mysong's card placement]\n\nNaoki placed the cards like this.\n\n[Image: Naoki's card placement]\n\nWho won this game? ____\nHow do you know? ____\n____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Mysong. 64 and 55 are shown (or 9, which is the difference between 64 and 55) with a correct verbal explanation."
+            ]
+          },
+          {
+            "category": "Partially Correct",
+            "descriptors": [
+              "Mysong. 64 and 55 are shown (or 43 − 31 > 24 − 21) with an unsatisfactory explanation.",
+              "Mysong. 64 and 55 are shown (or 43 − 31 > 24 − 21) without any further explanation.",
+              "Mysong. The response given is a verbal explanation. Either 64 or 55 is shown but not both.",
+              "Mysong. The response gives no verbal or numeric explanation.",
+              "Other responses containing Mysong. For example, “because Mysong had the largest answer.”"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Neither Mysong nor Naoki win.",
+              "Naoki. There may or may not be an explanation.",
+              "Other incorrect, including “both won.”"
+            ]
+          }
+        ],
+        "figure_description": "Four square cards are shown in a row labeled with the digits 1, 2, 3, and 4.\nBelow are two vertical addition problems:\nUnder the heading \"Mysong placed the cards like this.\", two rows of two square cards form a vertical addition problem: top row has cards [4] and [3]; bottom row has cards [2] and [1], with a plus sign '+' to the left of the bottom row and a horizontal addition line underneath.\nUnder the heading \"Naoki placed the cards like this.\", two rows of two square cards form a vertical addition problem: top row has cards [3] and [1]; bottom row has cards [2] and [4], with a plus sign '+' to the left of the bottom row and a horizontal addition line underneath.",
+        "pct_correct_intl_avg": 24,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "GPCM",
+        "calibrated_parameters": {
+          "slope": 0.357,
+          "location": -0.012,
+          "step1": 1.964,
+          "step2": -1.964
+        }
+      },
+      {
+        "rank": 3,
+        "cosine_similarity": 0.817,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometric Shapes and Measures",
+        "main_topic": "Two- and Three-dimensional Shapes",
+        "cognitive_domain": "Reasoning",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Geometry Tiles\nInstruction:\n\nFor this item, you have been given a piece of cardboard with 6 tiles like the ones shown below. Take the piece of cardboard, and punch out the 6 tiles.\n\nIf you do not have the piece of cardboard, raise your hand.\n\n4 Triangle Tiles\n[Image: Four triangle tiles]\n\n2 Trapezoid Tiles\n[Image: Two trapezoid tiles]\n\nThese tiles can be used to make new figures. One problem has been done for you\n\nUSE: 3 Triangle Tiles\nMAKE: A trapezoid\nSHOW: Draw it on the grid.\n[Image: Example showing a trapezoid drawn on the grid]\n\nNow try these problems.\n\nD.\n\nUSE: 2 Triangle Tiles and\n1 Trapezoid Tile\nMAKE: A 7-sided figure\nSHOW: Draw it on the grid.\n\n[Image: Triangular grid]",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Makes a correct 7-sided figure, e.g., one of those shown below (in any orientation).\n[Image: Eight sample 7-sided figures each made from two triangle tiles and one trapezoid tile]"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          },
+          {
+            "category": "Nonresponse",
+            "descriptors": [
+              "Blank"
+            ]
+          }
+        ],
+        "figure_description": "The stem includes four diagrams:\n1. '4 Triangle Tiles': Four identical equilateral triangles of unit side length, arranged in a row pointing alternately up, down, up, and down.\n2. '2 Trapezoid Tiles': Two identical isosceles trapezoids each composed of three equilateral triangle units (bottom base 2 units, top base 1 unit, legs 1 unit for the first one; and inverted with top base 2 units, bottom base 1 unit for the second one).\n3. Worked example grid: An isometric grid forming a parallelogram with horizontal top and bottom sides of 3 units each and slanted sides of 2 units each, divided by dashed lines into 2 rows of 6 equilateral triangles. In the top-right portion, a trapezoid made of 3 triangle units (top side 1 unit, bottom side 2 units, slanted sides 1 unit) is outlined in bold solid lines.\n4. Part D response grid: A larger parallelogram-shaped isometric grid with horizontal top and bottom edges of 3 units each and slanted side edges of 3 units each, divided by dashed lines into 3 rows of equilateral triangle units (each row containing 3 upward-pointing and 3 downward-pointing triangles).",
+        "pct_correct_intl_avg": 25.8,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.12699,
+          "location": 0.63228
+        }
+      },
+      {
+        "rank": 4,
+        "cosine_similarity": 0.846,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Knowing",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Anna has these cards with numbers on them.\n\n[Image: five cards labeled with 1, 8, 6, 5, and 2 from left to right]\n\nWhat is the smallest three-digit number she can show with the cards?\n\nShe may use each card only once.\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "125"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "figure_description": "Five rectangular cards in a horizontal row, labeled from left to right with the numbers 1, 8, 6, 5, and 2.",
+        "pct_correct_intl_avg": 48,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.71479,
+          "location": -0.11189
+        }
+      },
+      {
+        "rank": 5,
+        "cosine_similarity": 0.813,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometric Shapes and Measures",
+        "main_topic": "Two- and Three-dimensional Shapes",
+        "cognitive_domain": "Applying",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Geometry Tiles\nInstruction:\n\nFor this item, you have been given a piece of cardboard with 6 tiles like the ones shown below. Take the piece of cardboard, and punch out the 6 tiles.\n\nIf you do not have the piece of cardboard, raise your hand.\n\n4 Triangle Tiles\n[Image: Four triangle tiles]\n\n2 Trapezoid Tiles\n[Image: Two trapezoid tiles]\n\nThese tiles can be used to make new figures. One problem has been done for you\n\nUSE: 3 Triangle Tiles\nMAKE: A trapezoid\nSHOW: Draw it on the grid.\n[Image: Example showing a trapezoid drawn on the grid]\n\nNow try these problems.\n\nB.\n\nUSE: 2 Trapezoid Tiles\nMAKE: A 6-sided figure\nSHOW: Draw it on the grid.\n\n[Image: Triangular grid]",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Makes a correct 6-sided figure, e.g., one of those shown below (in any orientation).\n[Image: Five sample 6-sided figures each made from two trapezoid tiles: a regular hexagon joined at the long bases; an hourglass shape joined at the short bases; an L-shaped figure joined along legs; an offset hexagon joined partially along long bases; and another 6-sided figure joined along legs]"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          },
+          {
+            "category": "Nonresponse",
+            "descriptors": [
+              "Blank"
+            ]
+          }
+        ],
+        "figure_description": "The stem includes four diagrams:\n1. '4 Triangle Tiles': Four identical equilateral triangles of unit side length, arranged in a row pointing alternately up, down, up, and down.\n2. '2 Trapezoid Tiles': Two identical isosceles trapezoids each composed of three equilateral triangle units (bottom base 2 units, top base 1 unit, legs 1 unit for the first one; and inverted with top base 2 units, bottom base 1 unit for the second one).\n3. Worked example grid: An isometric grid forming a parallelogram with horizontal top and bottom sides of 3 units each and slanted sides of 2 units each, divided by dashed lines into 2 rows of 6 equilateral triangles. In the top-right portion, a trapezoid made of 3 triangle units (top side 1 unit, bottom side 2 units, slanted sides 1 unit) is outlined in bold solid lines.\n4. Part B response grid: An identical empty parallelogram-shaped isometric grid with top and bottom edges of 3 units, slanted sides of 2 units, divided into 2 rows of 6 equilateral triangle units by dashed lines.",
+        "pct_correct_intl_avg": 41.0,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.15376,
+          "location": 0.06483
+        }
+      },
+      {
+        "rank": 6,
+        "cosine_similarity": 0.828,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Whole Numbers",
+        "cognitive_domain": "Solving Problems",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "What is the smallest whole number that you can make using the digits 4, 3, 9 and 1? Use each digit only once.\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "1,349"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "1,3,4,9",
+              "1",
+              "4",
+              "17",
+              "Any four-digit number with digits 4,3,9 and 1, other than 1,349",
+              "13 OR \"1 and 3\" OR \"3 and 1\"",
+              "Other incorrect."
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 43,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.608,
+          "location": 0.093
+        }
+      },
+      {
+        "rank": 7,
+        "cosine_similarity": 0.811,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometric Shapes and Measures",
+        "main_topic": "Two- and Three-dimensional Shapes",
+        "cognitive_domain": "Reasoning",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Geometry Tiles\nInstruction:\n\nFor this item, you have been given a piece of cardboard with 6 tiles like the ones shown below. Take the piece of cardboard, and punch out the 6 tiles.\n\nIf you do not have the piece of cardboard, raise your hand.\n\n4 Triangle Tiles\n[Image: Four triangle tiles]\n\n2 Trapezoid Tiles\n[Image: Two trapezoid tiles]\n\nThese tiles can be used to make new figures. One problem has been done for you\n\nUSE: 3 Triangle Tiles\nMAKE: A trapezoid\nSHOW: Draw it on the grid.\n[Image: Example showing a trapezoid drawn on the grid]\n\nNow try these problems.\n\nC.\n\nUSE: 2 Trapezoid Tiles\nMAKE: A 6-sided figure that is not the same shape as the one you made in Part B\nSHOW: Draw it on the grid.\n\n[Image: Triangular grid]",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Any of four figures (6-sided) that was not used in part B."
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Repeats a correct figure already given in part B",
+              "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          },
+          {
+            "category": "Nonresponse",
+            "descriptors": [
+              "Blank"
+            ]
+          }
+        ],
+        "figure_description": "The stem includes four diagrams:\n1. '4 Triangle Tiles': Four identical equilateral triangles of unit side length, arranged in a row pointing alternately up, down, up, and down.\n2. '2 Trapezoid Tiles': Two identical isosceles trapezoids each composed of three equilateral triangle units (bottom base 2 units, top base 1 unit, legs 1 unit for the first one; and inverted with top base 2 units, bottom base 1 unit for the second one).\n3. Worked example grid: An isometric grid forming a parallelogram with horizontal top and bottom sides of 3 units each and slanted sides of 2 units each, divided by dashed lines into 2 rows of 6 equilateral triangles. In the top-right portion, a trapezoid made of 3 triangle units (top side 1 unit, bottom side 2 units, slanted sides 1 unit) is outlined in bold solid lines.\n4. Part C response grid: An identical empty parallelogram-shaped isometric grid with top and bottom edges of 3 units, slanted sides of 2 units, divided into 2 rows of 6 equilateral triangle units by dashed lines.",
+        "pct_correct_intl_avg": 30.6,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.0229,
+          "location": 0.44691
+        }
+      },
+      {
+        "rank": 8,
+        "cosine_similarity": 0.826,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Reasoning",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: Vertical subtraction problem with a blot covering a digit]\n\nMano did the subtraction problem above for homework but spilled some of his drink on it. One digit could not be read. His answer of 415 was correct. What is the missing digit?\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "2",
+              "527"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "3 OR 537",
+              "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+            ]
+          },
+          {
+            "category": "Nonresponse",
+            "descriptors": [
+              "Blank"
+            ]
+          }
+        ],
+        "figure_description": "A vertical subtraction problem is displayed:\n  942\n− 5[blot]7\n______\n  415\nThe top number is 942. The bottom number being subtracted starts with the digit 5 in the hundreds place, has a dark liquid stain or blot covering the tens digit, and ends with the digit 7 in the units place. A horizontal line separates the subtraction from the result, 415.",
+        "pct_correct_intl_avg": 42.0,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.99232,
+          "location": 0.10924
+        }
+      },
+      {
+        "rank": 9,
+        "cosine_similarity": 0.811,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometric Shapes and Measures",
+        "main_topic": "Two- and Three-dimensional Shapes",
+        "cognitive_domain": "Applying",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Geometry Tiles\nInstruction:\n\nFor this item, you have been given a piece of cardboard with 6 tiles like the ones shown below. Take the piece of cardboard, and punch out the 6 tiles.\n\nIf you do not have the piece of cardboard, raise your hand.\n\n4 Triangle Tiles\n[Image: Four triangle tiles]\n\n2 Trapezoid Tiles\n[Image: Two trapezoid tiles]\n\nThese tiles can be used to make new figures. One problem has been done for you\n\nUSE: 3 Triangle Tiles\nMAKE: A trapezoid\nSHOW: Draw it on the grid.\n[Image: Example showing a trapezoid drawn on the grid]\n\nNow try these problems.\n\nA.\n\nUSE: 1 Triangle Tile and\n1 Trapezoid Tile\nMAKE: A 4-sided figure\nSHOW: Draw it on the grid.\n\n[Image: Triangular grid]",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Correct 4-sided figure turned in any position\n[Image: A parallelogram composed of one trapezoid tile and one triangle tile]"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Makes a larger triangle",
+              "Makes a 4-sided figure, but not using the specified tiles, e.g., a larger parallelogram.",
+              "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          },
+          {
+            "category": "Nonresponse",
+            "descriptors": [
+              "Blank"
+            ]
+          }
+        ],
+        "figure_description": "The stem includes four diagrams:\n1. '4 Triangle Tiles': Four identical equilateral triangles of unit side length, arranged in a row pointing alternately up, down, up, and down.\n2. '2 Trapezoid Tiles': Two identical isosceles trapezoids each composed of three equilateral triangle units (bottom base 2 units, top base 1 unit, legs 1 unit for the first one; and inverted with top base 2 units, bottom base 1 unit for the second one).\n3. Worked example grid: An isometric grid forming a parallelogram with horizontal top and bottom sides of 3 units each and slanted sides of 2 units each, divided by dashed lines into 2 rows of 6 equilateral triangles. In the top-right portion, a trapezoid made of 3 triangle units (top side 1 unit, bottom side 2 units, slanted sides 1 unit) is outlined in bold solid lines.\n4. Part A response grid: An identical empty parallelogram-shaped isometric grid with top and bottom edges of 3 units, slanted sides of 2 units, divided into 2 rows of 6 equilateral triangle units by dashed lines.",
+        "pct_correct_intl_avg": 39.7,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.05473,
+          "location": 0.1229
+        }
+      },
+      {
+        "rank": 10,
+        "cosine_similarity": 0.813,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Two- and Three-Dimensional Shapes",
+        "cognitive_domain": "Knowing Facts and Procedures",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "B. Use all 4 triangle tiles to make a black square. Then show what you did with your tiles by shading in your square below.\n\nShade in Your\nSquare Here\n\n[Image: 2 by 2 grid of squares divided into triangles]",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "[Image: A 2 by 2 grid of squares with the four triangles meeting at the center point shaded black to form a square]"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Used four triangle tiles but did not create a black square",
+              "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "figure_description": "A large square divided into a 2 by 2 grid of 4 smaller squares by solid lines. Each of the 4 smaller squares contains two dotted diagonal lines connecting opposite corners, dividing each square into 4 congruent right isosceles triangles, for a total of 16 small triangles.",
+        "pct_correct_intl_avg": 42,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.571,
+          "location": 0.234
+        }
+      }
+    ]
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 2.62,
+      "confidence": 0.7,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.03,
+        "1": 0.05,
+        "2": 0.31,
+        "3": 0.54,
+        "4": 0.03,
+        "5": 0.01,
+        "6": 0.01,
+        "7": 0.01,
+        "8": 0.01
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 2.79,
+      "confidence": 0.7,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.11,
+        "2": 0.23,
+        "3": 0.47000000000000003,
+        "4": 0.13,
+        "5": 0.02,
+        "6": 0.01,
+        "7": 0.01,
+        "8": 0.0,
+        "9": 0.0
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 7730,
+  "output_tokens": 31,
+  "cost_usd": 0.00032466,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791918367-UEt4iEIr2lw2BLImR390",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 2.62,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.05,
+          "2": 0.31,
+          "3": 0.54,
+          "4": 0.03,
+          "5": 0.01,
+          "6": 0.01,
+          "7": 0.01,
+          "8": 0.01
+        },
+        "confidence": 0.7
+      },
+      "location": {
+        "type": "score",
+        "score": 2.79,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.11,
+          "2": 0.23,
+          "3": 0.47000000000000003,
+          "4": 0.13,
+          "5": 0.02,
+          "6": 0.01,
+          "7": 0.01,
+          "8": 0,
+          "9": 0
+        },
+        "confidence": 0.7
+      }
+    },
+    "usage": {
+      "input_tokens": 7730,
+      "output_tokens": 31,
+      "cost": 0.00032466
+    },
+    "id": "gen-dec-1791918367-UEt4iEIr2lw2BLImR390",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T19:06:07+00:00",
+  "seconds": null
+}

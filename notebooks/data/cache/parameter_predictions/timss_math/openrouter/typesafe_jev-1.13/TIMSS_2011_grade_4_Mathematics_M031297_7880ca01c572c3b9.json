@@ -1,0 +1,926 @@
+{
+  "item_id": "M031297",
+  "assessment": "TIMSS 2011",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Geometric Shapes and Measures",
+  "main_topic": "Two- and Three-dimensional Shapes",
+  "cognitive_domain": "Applying",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M031297"
+  ],
+  "similar_items": [
+    {
+      "rank": 1,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M031298",
+      "item_id": "M031298",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.9207,
+      "pct_correct_intl_avg": 29,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.833,
+      "location": 0.845
+    },
+    {
+      "rank": 2,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M031083",
+      "item_id": "M031083",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8214,
+      "pct_correct_intl_avg": 69,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.88438,
+      "location": -0.56598,
+      "guessing": 0.21206
+    },
+    {
+      "rank": 3,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M011005",
+      "item_id": "M011005",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8774,
+      "pct_correct_intl_avg": 78,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.474,
+      "location": -1.508,
+      "guessing": 0.349
+    },
+    {
+      "rank": 4,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M041006",
+      "item_id": "M041006",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8648,
+      "pct_correct_intl_avg": 40.8,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.10671,
+      "location": 0.35087,
+      "guessing": 0.12689
+    },
+    {
+      "rank": 5,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M011004",
+      "item_id": "M011004",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8459,
+      "pct_correct_intl_avg": 75,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.725,
+      "location": -1.152,
+      "guessing": 0.298
+    },
+    {
+      "rank": 6,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/J7",
+      "item_id": "J7",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.8602,
+      "pct_correct_intl_avg": 61,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.437,
+      "location": 0.15,
+      "guessing": 0.337
+    },
+    {
+      "rank": 7,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M041265",
+      "item_id": "M041265",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.7727,
+      "pct_correct_intl_avg": 37,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.77222,
+      "location": 0.65662,
+      "guessing": 0.10214
+    },
+    {
+      "rank": 8,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M041152",
+      "item_id": "M041152",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8487,
+      "pct_correct_intl_avg": 42.4,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.09004,
+      "location": 0.51096,
+      "guessing": 0.17707
+    },
+    {
+      "rank": 9,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M031085",
+      "item_id": "M031085",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8362,
+      "pct_correct_intl_avg": 46.9,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.92771,
+      "location": 0.68461,
+      "guessing": 0.23443
+    },
+    {
+      "rank": 10,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M031041",
+      "item_id": "M031041",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8644,
+      "pct_correct_intl_avg": 39.7,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.9498,
+      "location": 0.09871
+    },
+    {
+      "rank": 11,
+      "found_by": "same model",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M051601",
+      "item_id": "M051601",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8261,
+      "pct_correct_intl_avg": 54,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.88856,
+      "location": -0.3847
+    },
+    {
+      "rank": 12,
+      "found_by": "same model",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M041115B",
+      "item_id": "M041115B",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8473,
+      "pct_correct_intl_avg": 45,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.08208,
+      "location": 0.03961
+    },
+    {
+      "rank": 13,
+      "found_by": "same model",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M031348A",
+      "item_id": "M031348A",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8471,
+      "pct_correct_intl_avg": 33,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.66,
+      "location": 0.585
+    }
+  ],
+  "context": "item+references",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2011",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Geometric Shapes and Measures",
+      "main_topic": "Two- and Three-dimensional Shapes",
+      "cognitive_domain": "Applying",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "[Image: a shaded area overlaying a grid made up by small squares with each side of the square measured at 1 cm.]\n\nThe squares in the grid above are 1 cm by 1 cm.\nWhat is the shaded area in square centimeters?\n\nAnswer: ____ square centimeters",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "7"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "6",
+            "8",
+            "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+          ]
+        }
+      ],
+      "figure_description": "A grid of 9 columns and 5 rows of 1 cm by 1 cm squares containing a shaded polygon. Outside the bottom-right corner of the grid, dimension arrows indicate that a single square is 1 cm wide and 1 cm high.\n\nDefining grid coordinates from the top-left corner (0, 0) to the bottom-right corner (9, 5):\n- The shaded polygon has vertices at (3, 1), (5, 1), (6, 2), (5, 3), (5, 4), and (3, 4).\n- The left side is a vertical line from (3, 1) down to (3, 4), spanning 3 units.\n- The bottom side runs horizontally from (3, 4) to (5, 4), spanning 2 units.\n- The right side goes vertically up from (5, 4) to (5, 3), 1 unit.\n- From (5, 3), a diagonal side goes up and to the right to grid intersection (6, 2).\n- From (6, 2), a diagonal side goes up and to the left to grid intersection (5, 1).\n- The top side runs horizontally from (5, 1) left to (3, 1), spanning 2 units.",
+      "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data."
+    },
+    "reference_items": [
+      {
+        "rank": 1,
+        "cosine_similarity": 0.921,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Measurement",
+        "main_topic": "Tools, Techniques, and Formulas",
+        "cognitive_domain": "Reasoning",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: Incomplete figure on a grid]\n\nThe squares in the grid above have areas of 1 square centimeter. Draw lines to complete the figure so that it has an area of 13 square centimeters.",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Lines drawn to give area of 13 square cm"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Error due to counting half squares as full square centimeters",
+              "One line drawn to close given figure",
+              "Symmetrical figure drawn",
+              "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "figure_description": "A grid measuring 8 squares wide and 6 squares high. At the bottom right of the grid, a single square cell is indicated with dimension arrows showing a width of '1 cm' and a height of '1 cm'. An incomplete polygon is drawn with heavy black lines on the grid intersections:\n- A horizontal segment 4 units long on the 1st horizontal line from the top, extending from column 1 to column 5 (where grid lines are numbered 0 to 8 horizontally, and 0 to 6 vertically).\n- From the point (1, 1), a diagonal segment runs down and right 2 units horizontally and 2 units vertically to (3, 3).\n- From (3, 3), a vertical segment runs down 2 units to (3, 5).\n- From (3, 5), a horizontal segment runs right 2 units to (5, 5).\nThe points (5, 1) and (5, 5) are currently open endpoints.",
+        "pct_correct_intl_avg": 29,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.833,
+          "location": 0.845
+        }
+      },
+      {
+        "rank": 2,
+        "cosine_similarity": 0.821,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometric Shapes and Measures",
+        "main_topic": "Two- and Three-dimensional Shapes",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: six pieces of cardboard with length of the sides labeled in cm. Two of the pieces are square shaped with each side measured at 1 cm. Four of the pieces are rectangular shaped with two sides measured at 1 cm and two other sides measured at 2 cm.]\n\nSusan has the 6 pieces of cardboard shown above. Which of the following shapes could Susan make using all 6 of these pieces without cutting them?",
+        "options": [
+          {
+            "label": "A",
+            "text": "[Image: Cube.]"
+          },
+          {
+            "label": "B",
+            "text": "[Image: Triangular prism.]"
+          },
+          {
+            "label": "C",
+            "text": "[Image: Truncated (or trapezoid) pyramid.]"
+          },
+          {
+            "label": "D",
+            "text": "[Image: Rectangular prism.]"
+          }
+        ],
+        "correct_option": "D",
+        "figure_description": "At the top of the item, six gray-shaded flat cardboard shapes are shown. Two are identical squares, each labeled '1 cm' on all four sides (top, bottom, left, and right). Four are identical horizontal rectangles, each labeled '2 cm' on the top and bottom sides and '1 cm' on the left and right sides.\n\nThe response options show line drawings of four 3D geometric solids with dashed lines representing hidden edges:\n- Option A: A cube.\n- Option B: A triangular prism resting on one of its rectangular faces.\n- Option C: A truncated pyramid with a square or rectangular base and top.\n- Option D: A tall right rectangular prism standing on a square base.",
+        "pct_correct_intl_avg": 69,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.88438,
+          "location": -0.56598,
+          "guessing": 0.21206
+        }
+      },
+      {
+        "rank": 3,
+        "cosine_similarity": 0.877,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Measurement",
+        "main_topic": "Attributes and Units",
+        "cognitive_domain": "Reasoning",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Which of these figures has the largest area?",
+        "options": [
+          {
+            "label": "A",
+            "text": "[Image: 2 by 3 grid of squares]"
+          },
+          {
+            "label": "B",
+            "text": "[Image: 1 by 6 row of squares]"
+          },
+          {
+            "label": "C",
+            "text": "[Image: 2 by 4 grid of squares]"
+          },
+          {
+            "label": "D",
+            "text": "[Image: 6 squares arranged in two offset rows of 3]"
+          }
+        ],
+        "correct_option": "C",
+        "figure_description": "Four shapes composed of identical square units are shown:\n- Option A: A rectangle consisting of a grid with 2 rows and 3 columns (6 square units in total).\n- Option B: A horizontal bar consisting of a single row of 6 square units (6 square units in total).\n- Option C: A rectangle consisting of a grid with 2 rows and 4 columns (8 square units in total).\n- Option D: A figure consisting of 6 square units arranged in two rows of 3 squares: a top row of 3 adjacent squares, and a bottom row of 3 adjacent squares shifted to the right so that its leftmost square is directly beneath the rightmost square of the top row (6 square units in total).",
+        "pct_correct_intl_avg": 78,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.474,
+          "location": -1.508,
+          "guessing": 0.349
+        }
+      },
+      {
+        "rank": 4,
+        "cosine_similarity": 0.865,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Fractions and Decimals",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "What fraction of this rectangle is shaded?\n\n[Image: A grid rectangle with shaded sections]",
+        "options": [
+          {
+            "label": "A",
+            "text": "1/4"
+          },
+          {
+            "label": "B",
+            "text": "1/3"
+          },
+          {
+            "label": "C",
+            "text": "6/12"
+          },
+          {
+            "label": "D",
+            "text": "2/3"
+          }
+        ],
+        "correct_option": "B",
+        "figure_description": "A large rectangle divided into a grid of 3 rows and 6 columns, forming 18 identical smaller rectangles or squares. All 6 squares in the top row are shaded gray, while the 12 squares in the middle and bottom rows are unshaded white.",
+        "pct_correct_intl_avg": 40.8,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.10671,
+          "location": 0.35087,
+          "guessing": 0.12689
+        }
+      },
+      {
+        "rank": 5,
+        "cosine_similarity": 0.846,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Using Concepts",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Each small square ( □ ) is equal to 1. There are 10 small squares in each strip. There are 100 small squares in each large square.\n\n[Image: Base-ten blocks showing units, hundreds, and tens]\n\nWhat number is shown?",
+        "options": [
+          {
+            "label": "A",
+            "text": "16"
+          },
+          {
+            "label": "B",
+            "text": "358"
+          },
+          {
+            "label": "C",
+            "text": "538"
+          },
+          {
+            "label": "D",
+            "text": "835"
+          }
+        ],
+        "correct_option": "B",
+        "figure_description": "On the left are 8 individual small squares arranged in two columns of 4. In the middle are 3 large 10 × 10 squares representing hundreds, overlapping diagonally from front-left to back-right. On the right are 5 vertical strips, each made up of 10 small squares stacked vertically.",
+        "pct_correct_intl_avg": 75,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.725,
+          "location": -1.152,
+          "guessing": 0.298
+        }
+      },
+      {
+        "rank": 6,
+        "cosine_similarity": 0.86,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Fractions and Proportionality",
+        "cognitive_domain": "Solving Problems",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Part of the figure is shaded.\n\n[Image: A 3x3 grid with shaded squares]\n\nWhat fraction of the figure is shaded?",
+        "options": [
+          {
+            "label": "A",
+            "text": "5/4"
+          },
+          {
+            "label": "B",
+            "text": "4/5"
+          },
+          {
+            "label": "C",
+            "text": "6/9"
+          },
+          {
+            "label": "D",
+            "text": "5/9"
+          }
+        ],
+        "correct_option": "D",
+        "figure_description": "A square divided into a 3-by-3 grid of 9 congruent smaller squares. The 5 squares forming a cross or plus sign (top middle, left middle, center, right middle, and bottom middle) are shaded grey, while the 4 corner squares are white.",
+        "pct_correct_intl_avg": 61,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.437,
+          "location": 0.15,
+          "guessing": 0.337
+        }
+      },
+      {
+        "rank": 7,
+        "cosine_similarity": 0.773,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometric Shapes and Measures",
+        "main_topic": "Two- and Three-dimensional Shapes",
+        "cognitive_domain": "Reasoning",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Ariana found the following patterns to make containers. Which pattern actually makes the container shown beside it?",
+        "options": [
+          {
+            "label": "A",
+            "text": "[Image: a pattern made up by squares and a cube to the right of the pattern]"
+          },
+          {
+            "label": "B",
+            "text": "[Image: a pattern made up by two circles on the ends of a rectangular shape and a cylinder to the right of the pattern]"
+          },
+          {
+            "label": "C",
+            "text": "[Image: a pattern made up by square and two triangles coming out of two sides of the square and a square base pyramid to the right of the pattern]"
+          },
+          {
+            "label": "D",
+            "text": "[Image: a pattern made up by two large rectangles and four small rectangles with two of the smaller rectangles coming out of the opposite shorter sides of the large rectangles and a rectangular prism]"
+          }
+        ],
+        "correct_option": "D",
+        "figure_description": "Four multiple-choice options, each showing a 2D net (with dashed interior fold lines) beside a 3D container (with dashed hidden edges):\n- Option A: A net of 5 congruent squares arranged in an inverted U-shape (a row of 3 squares across the top, and 1 square hanging down from each of the left and right squares, leaving the middle space empty). Beside it is a line drawing of a cube.\n- Option B: A net consisting of a horizontal rectangle with a circle attached to each of its two shorter vertical ends. Beside it is a line drawing of a vertical cylinder.\n- Option C: A net consisting of a square with two triangles attached to adjacent sides: one extending down from the bottom side and one extending to the right from the right side. Beside it is a line drawing of an inverted square-based pyramid pointing downward.\n- Option D: A net consisting of a horizontal row of four rectangles alternating in width (narrow, wide, narrow, wide), with a narrow rectangle attached to the top of the first wide rectangle and a narrow rectangle attached to the bottom of the second wide rectangle. Beside it is a line drawing of a matching upright rectangular prism.",
+        "pct_correct_intl_avg": 37,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.77222,
+          "location": 0.65662,
+          "guessing": 0.10214
+        }
+      },
+      {
+        "rank": 8,
+        "cosine_similarity": 0.849,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometric Shapes and Measures",
+        "main_topic": "Two- and Three-dimensional Shapes",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: A fence with dimensions 4 m by 3 m]\n\nPatrick is painting one side of a fence. The fence is 4 meters long and 3 meters high. What is the area that Patrick has to paint?",
+        "options": [
+          {
+            "label": "A",
+            "text": "4 square meters"
+          },
+          {
+            "label": "B",
+            "text": "7 square meters"
+          },
+          {
+            "label": "C",
+            "text": "12 square meters"
+          },
+          {
+            "label": "D",
+            "text": "14 square meters"
+          }
+        ],
+        "correct_option": "C",
+        "figure_description": "A rectangular section of a wooden fence composed of 7 vertical slats. A horizontal dimension line above the fence is labeled \"4 m\". A vertical dimension line to the left of the fence is labeled \"3 m\".",
+        "pct_correct_intl_avg": 42.4,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.09004,
+          "location": 0.51096,
+          "guessing": 0.17707
+        }
+      },
+      {
+        "rank": 9,
+        "cosine_similarity": 0.836,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometric Shapes and Measures",
+        "main_topic": "Two- and Three-dimensional Shapes",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: A triangle on top of a rectangle]\n\nThe figure above is made from a rectangle and a triangle with three equal sides.\nWhat is the length, in centimeters, of side AB ?",
+        "options": [
+          {
+            "label": "A",
+            "text": "8"
+          },
+          {
+            "label": "B",
+            "text": "9"
+          },
+          {
+            "label": "C",
+            "text": "10"
+          },
+          {
+            "label": "D",
+            "text": "11"
+          }
+        ],
+        "correct_option": "A",
+        "figure_description": "A composite figure composed of a rectangle at the bottom and a triangle on top sharing the rectangle's top edge as its base. The rectangle's bottom horizontal side is labeled \"8 cm\", and its right vertical side is labeled \"3 cm\". The triangle's top vertex is labeled A, and its bottom-right vertex (which is also the top-right corner of the rectangle) is labeled B.",
+        "pct_correct_intl_avg": 46.9,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.92771,
+          "location": 0.68461,
+          "guessing": 0.23443
+        }
+      },
+      {
+        "rank": 10,
+        "cosine_similarity": 0.864,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometric Shapes and Measures",
+        "main_topic": "Two- and Three-dimensional Shapes",
+        "cognitive_domain": "Applying",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: A shaded equilateral triangle]\n\nHow many triangular tiles like this are needed to cover the figure below?\n\n[Image: A seven-sided polygon]\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "5"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "6",
+              "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+            ]
+          },
+          {
+            "category": "Nonresponse",
+            "descriptors": [
+              "Blank"
+            ]
+          }
+        ],
+        "figure_description": "At the top of the item is a solid black equilateral triangle with a horizontal base and its apex pointing directly upward. Below the question is an outline of a concave seven-sided polygon (heptagon) composed of five contiguous equilateral triangles of the same size as the tile above. The polygon has a horizontal bottom edge. From each end of the bottom edge, a side edge angles upward and outward at 60 degrees. From these two outer vertices, two edges angle upward and inward at 60 degrees to form two top peaks. From each top peak, an edge angles downward at 60 degrees toward the center, meeting in an interior V-shaped notch located at the center of what would otherwise be a regular hexagon.",
+        "pct_correct_intl_avg": 39.7,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.9498,
+          "location": 0.09871
+        }
+      },
+      {
+        "rank": 11,
+        "cosine_similarity": 0.826,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Patterns and Relationships",
+        "cognitive_domain": "Applying",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Cooney has to form figures 1 to 4 with matches.\n\nFigures 1, 2, and 3 are shown below.\n\nHe needs four matches to form figure 1, seven matches to form figure 2, and ten matches to form figure 3.\n\nHe uses the same rule each time to make the next figure in the pattern.\n\n[Image: that figure 1 forms a square with four matches, figure 2 forms two squares side by side with seven matches, and figure 3 forms three squares side by side with ten matches.]\n\nHow many matches will he need to form figure 4?\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "13"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "[Image: four squares side by side formed with 13 matches.]",
+              "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "figure_description": "Three figures made of matches arranged in a horizontal row, labeled below with numbers 1, 2, and 3:\n- Figure 1: 4 matches arranged to form a single square (one match on each of the four sides).\n- Figure 2: 7 matches arranged to form a row of two attached squares side by side, sharing one vertical match in the middle (2 top, 2 bottom, and 3 vertical matches).\n- Figure 3: 10 matches arranged to form a row of three attached squares side by side, each adjacent pair sharing a vertical match (3 top, 3 bottom, and 4 vertical matches).",
+        "pct_correct_intl_avg": 54,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.88856,
+          "location": -0.3847
+        }
+      },
+      {
+        "rank": 12,
+        "cosine_similarity": 0.847,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Patterns and Relationships",
+        "cognitive_domain": "Reasoning",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Bill is arranging squares in the following way:\n\n[Image: Figure 1 with one column of two squares, Figure 2 with two columns of two squares for each column, and Figure 3 with three columns of two squares for each column.]\n\nB. How many squares would Bill need to make Figure 16?\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "32/ twice 16/ or equivalent"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "figure_description": "Three figures made of identical square tiles arranged in a grid: Figure 1 consists of 1 column of 2 squares stacked vertically, labeled \"Figure 1\". Figure 2 consists of 2 columns of 2 squares each (a 2-by-2 square), labeled \"Figure 2\". Figure 3 consists of 3 columns of 2 squares each (a 3-by-2 rectangle), labeled \"Figure 3\".",
+        "pct_correct_intl_avg": 45,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.08208,
+          "location": 0.03961
+        }
+      },
+      {
+        "rank": 13,
+        "cosine_similarity": 0.847,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Fractions and Decimals",
+        "cognitive_domain": "Knowing Facts and Procedures",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "A. WITHOUT using any triangle tiles, place 4 tiles so that 1/2 of a square shape is black. Then shade in the square below to show what you did with your tiles.\n\nShade in Here\n\n[Image: Square grid]",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Draws a pattern made up of 2 black tiles and two white tiles. See examples below.\n[Image: 2 by 2 grid with the bottom two squares shaded black] [Image: 2 by 2 grid with the top-right and bottom-left squares shaded black]"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "figure_description": "Under the heading \"Shade in Here\", a large square is divided into a 2 by 2 grid of 4 smaller congruent squares. Each of the 4 smaller squares has dotted diagonal lines connecting opposite corners, dividing each square into 4 congruent triangles.",
+        "pct_correct_intl_avg": 33,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.66,
+          "location": 0.585
+        }
+      }
+    ]
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 2.44,
+      "confidence": 0.72,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.03,
+        "2": 0.59,
+        "3": 0.27,
+        "4": 0.04,
+        "5": 0.02,
+        "6": 0.01,
+        "7": 0.01,
+        "8": 0.01
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 4.78,
+      "confidence": 0.36,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.03,
+        "2": 0.07,
+        "3": 0.16,
+        "4": 0.13,
+        "5": 0.19,
+        "6": 0.29,
+        "7": 0.08,
+        "8": 0.03,
+        "9": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 7906,
+  "output_tokens": 31,
+  "cost_usd": 0.000332052,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791918377-ajKhxVCCQAQs1jtJXoPc",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 2.44,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.03,
+          "2": 0.59,
+          "3": 0.27,
+          "4": 0.04,
+          "5": 0.02,
+          "6": 0.01,
+          "7": 0.01,
+          "8": 0.01
+        },
+        "confidence": 0.72
+      },
+      "location": {
+        "type": "score",
+        "score": 4.78,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.03,
+          "2": 0.07,
+          "3": 0.16,
+          "4": 0.13,
+          "5": 0.19,
+          "6": 0.29,
+          "7": 0.08,
+          "8": 0.03,
+          "9": 0.01
+        },
+        "confidence": 0.36
+      }
+    },
+    "usage": {
+      "input_tokens": 7906,
+      "output_tokens": 31,
+      "cost": 0.000332052
+    },
+    "id": "gen-dec-1791918377-ajKhxVCCQAQs1jtJXoPc",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T19:06:17+00:00",
+  "seconds": null
+}

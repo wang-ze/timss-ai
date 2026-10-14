@@ -1,0 +1,218 @@
+{
+  "item_id": "M4",
+  "assessment": "TIMSS 1995",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Geometry",
+  "main_topic": null,
+  "cognitive_domain": "Solving Problems",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/M4"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 1995",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Geometry",
+      "cognitive_domain": "Solving Problems",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "On this grid, find the dot with the circle around it. We can describe where this dot is by saying it is at First Number 1, Second Number 3\n\n[Image: Coordinate grid]\n\nNow find the dot with the triangle around it. Describe where the dot is on the grid in the same way. Fill in the numbers we would use:\n\nFirst Number ____ Second Number ____",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "3 and 2, in this order."
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "2 and 3, in this order.",
+            "Other incorrect."
+          ]
+        }
+      ],
+      "figure_description": "A coordinate grid with a horizontal axis labeled \"First Number\" and a vertical axis labeled \"Second Number\". The horizontal axis has tick marks and dots numbered 0, 1, 2, 3, 4 with an arrow pointing right. The vertical axis has tick marks and dots numbered 1, 2, 3, 4 with an arrow pointing up, meeting at 0 at the origin. Grid lines form a square grid with dots at each grid intersection from 0 to 4 horizontally and 0 to 4 vertically. A circle is drawn around the dot at First Number 1, Second Number 3. An equilateral triangle is drawn around the dot at First Number 3, Second Number 2.",
+      "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.68,
+      "confidence": 0.33,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.07,
+        "2": 0.14,
+        "3": 0.24,
+        "4": 0.18,
+        "5": 0.16,
+        "6": 0.1,
+        "7": 0.05,
+        "8": 0.02
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 2.89,
+      "confidence": 0.4,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.07,
+        "1": 0.18,
+        "2": 0.23,
+        "3": 0.2,
+        "4": 0.12,
+        "5": 0.11,
+        "6": 0.06,
+        "7": 0.02,
+        "8": 0.01,
+        "9": 0.0
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1102,
+  "output_tokens": 31,
+  "cost_usd": 4.6284e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914755-owIstSR8UfsBixHrg4OJ",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.68,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.07,
+          "2": 0.14,
+          "3": 0.24,
+          "4": 0.18,
+          "5": 0.16,
+          "6": 0.1,
+          "7": 0.05,
+          "8": 0.02
+        },
+        "confidence": 0.33
+      },
+      "location": {
+        "type": "score",
+        "score": 2.89,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.18,
+          "2": 0.23,
+          "3": 0.2,
+          "4": 0.12,
+          "5": 0.11,
+          "6": 0.06,
+          "7": 0.02,
+          "8": 0.01,
+          "9": 0
+        },
+        "confidence": 0.4
+      }
+    },
+    "usage": {
+      "input_tokens": 1102,
+      "output_tokens": 31,
+      "cost": 4.6284e-05
+    },
+    "id": "gen-dec-1791914755-owIstSR8UfsBixHrg4OJ",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:05:55+00:00",
+  "seconds": null
+}

@@ -1,0 +1,276 @@
+{
+  "item_id": "J9",
+  "assessment": "TIMSS 1995",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Whole Numbers",
+  "main_topic": null,
+  "cognitive_domain": "Performing Routine Procedures",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/J9"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 1995",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Whole Numbers",
+      "cognitive_domain": "Performing Routine Procedures",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "Here is part of a wall chart that lists numbers from 1 to 100.\n\n[Image: Part of a 1 to 100 wall chart]\n\nBelow is part of the same wall chart. What number should be in the box with the question mark inside?\n\n[Image: Three boxes containing 43, 53, and ?]",
+      "options": [
+        {
+          "label": "A",
+          "text": "34"
+        },
+        {
+          "label": "B",
+          "text": "44"
+        },
+        {
+          "label": "C",
+          "text": "54"
+        },
+        {
+          "label": "D",
+          "text": "64"
+        }
+      ],
+      "correct_option": "D",
+      "figure_description": "The first image shows the top section of a 100-number wall chart organized in 10 columns:\n- Row 1 shows numbers 1 through 10 from left to right.\n- Row 2 shows numbers 11 through 20 from left to right.\n- Row 3 shows numbers 21 through 25 in the first five columns, with the remainder of the chart cut off.\n\nThe second image shows three individual square boxes from the chart arranged in a step-down pattern from top-left to bottom-right:\n- The top-left box contains the number 43.\n- The middle box contains the number 53, shifted down and to the right.\n- The third box contains a question mark (?), positioned directly below and adjacent to the right side of the box with 53, sharing its top-left corner with the bottom-right corner of the 53 box.",
+      "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.94,
+      "confidence": 0.24,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.06,
+        "2": 0.13,
+        "3": 0.21,
+        "4": 0.17,
+        "5": 0.17,
+        "6": 0.12,
+        "7": 0.06,
+        "8": 0.04
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 1.97,
+      "confidence": 0.45,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.2,
+        "1": 0.26,
+        "2": 0.23,
+        "3": 0.15,
+        "4": 0.07,
+        "5": 0.05,
+        "6": 0.02,
+        "7": 0.01,
+        "8": 0.01,
+        "9": 0.0
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 3.81,
+      "confidence": 0.85,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.01,
+        "2": 0.02,
+        "3": 0.06,
+        "4": 0.88,
+        "5": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1312,
+  "output_tokens": 45,
+  "cost_usd": 5.5104e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914753-V1AJnqfWT57gCjhrzxjP",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.94,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.06,
+          "2": 0.13,
+          "3": 0.21,
+          "4": 0.17,
+          "5": 0.17,
+          "6": 0.12,
+          "7": 0.06,
+          "8": 0.04
+        },
+        "confidence": 0.24
+      },
+      "location": {
+        "type": "score",
+        "score": 1.97,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.2,
+          "1": 0.26,
+          "2": 0.23,
+          "3": 0.15,
+          "4": 0.07,
+          "5": 0.05,
+          "6": 0.02,
+          "7": 0.01,
+          "8": 0.01,
+          "9": 0
+        },
+        "confidence": 0.45
+      },
+      "guessing": {
+        "type": "score",
+        "score": 3.81,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.01,
+          "2": 0.02,
+          "3": 0.06,
+          "4": 0.88,
+          "5": 0.01
+        },
+        "confidence": 0.85
+      }
+    },
+    "usage": {
+      "input_tokens": 1312,
+      "output_tokens": 45,
+      "cost": 5.5104e-05
+    },
+    "id": "gen-dec-1791914753-V1AJnqfWT57gCjhrzxjP",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:05:53+00:00",
+  "seconds": null
+}

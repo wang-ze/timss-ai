@@ -1,0 +1,219 @@
+{
+  "item_id": "M051015",
+  "assessment": "TIMSS 2011",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Geometric Shapes and Measures",
+  "main_topic": "Two- and Three-dimensional Shapes",
+  "cognitive_domain": "Applying",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M051015"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2011",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Geometric Shapes and Measures",
+      "main_topic": "Two- and Three-dimensional Shapes",
+      "cognitive_domain": "Applying",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "Jay has to draw a shape.\n- It must have 5 sides.\n- It must have one line of symmetry.\nJay has started to draw the shape.\nComplete Jay’s shape.\n\n[Image: an incomplete shape with three sides forming a rectangle on a grid.]",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "Correct shape drawn which has 5 sides and 1 line of symmetry. The new vertex must be within ±2 mm of the line of symmetry (accept the new vertex anywhere on the line of symmetry, provided there are 5 sides).\n[Image: figure drawn on grid with three lines forming an incomplete rectangle on the bottom. Two lines drawn on top to close the figure and form a convex interior angle.] OR\n[Image: figure drawn on grid with three lines forming an incomplete rectangle on the bottom. Two lines sloping inwards are drawn on top to close the figure and form a convex interior angle.]"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "[Image: figure drawn on grid with three lines forming an incomplete rectangle on the bottom. The rectangle is completed with a fourth line and then two additional lines are drawn on top to close the figure and form a convex interior angle.]",
+            "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+          ]
+        }
+      ],
+      "figure_description": "A 10 by 10 square grid. A three-sided incomplete shape is drawn with thick black lines along the grid lines: a horizontal bottom segment 6 units long (leaving 2 units of margin on the left and 2 units on the right along the bottom edge of the grid), and two vertical segments each 4 units tall rising upward from the two ends of the bottom segment (leaving 6 units of grid space above them). The top of the shape is open.",
+      "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.51,
+      "confidence": 0.37,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.05,
+        "1": 0.07,
+        "2": 0.16,
+        "3": 0.26,
+        "4": 0.18,
+        "5": 0.15,
+        "6": 0.08,
+        "7": 0.03,
+        "8": 0.02
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 3.88,
+      "confidence": 0.38,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.09,
+        "2": 0.15,
+        "3": 0.23,
+        "4": 0.14,
+        "5": 0.18,
+        "6": 0.11,
+        "7": 0.06,
+        "8": 0.02,
+        "9": 0.0
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1216,
+  "output_tokens": 31,
+  "cost_usd": 5.1072e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914768-F364zmSE7IzSE8VJEVNY",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.51,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.07,
+          "2": 0.16,
+          "3": 0.26,
+          "4": 0.18,
+          "5": 0.15,
+          "6": 0.08,
+          "7": 0.03,
+          "8": 0.02
+        },
+        "confidence": 0.37
+      },
+      "location": {
+        "type": "score",
+        "score": 3.88,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.09,
+          "2": 0.15,
+          "3": 0.23,
+          "4": 0.14,
+          "5": 0.18,
+          "6": 0.11,
+          "7": 0.06,
+          "8": 0.02,
+          "9": 0
+        },
+        "confidence": 0.38
+      }
+    },
+    "usage": {
+      "input_tokens": 1216,
+      "output_tokens": 31,
+      "cost": 5.1072e-05
+    },
+    "id": "gen-dec-1791914768-F364zmSE7IzSE8VJEVNY",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:08+00:00",
+  "seconds": null
+}

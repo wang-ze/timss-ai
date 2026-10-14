@@ -1,0 +1,280 @@
+{
+  "item_id": "MA13006",
+  "assessment": "TIMSS Advanced 2008",
+  "grade": 12,
+  "subject": "Advanced Mathematics",
+  "content_domain": "Calculus",
+  "main_topic": "Differentiation",
+  "cognitive_domain": "Knowing",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13006"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS Advanced 2008",
+      "grade": 12,
+      "subject": "Advanced Mathematics",
+      "content_domain": "Calculus",
+      "main_topic": "Differentiation",
+      "cognitive_domain": "Knowing",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "The derivative with respect to x of 4/sqrt(3x - 4) is",
+      "options": [
+        {
+          "label": "A",
+          "text": "12sqrt(3x - 4)"
+        },
+        {
+          "label": "B",
+          "text": "4/sqrt(3)"
+        },
+        {
+          "label": "C",
+          "text": "-2/(3x - 4)^(3/2)"
+        },
+        {
+          "label": "D",
+          "text": "-6/(3x - 4)^(3/2)"
+        },
+        {
+          "label": "E",
+          "text": "6sqrt(3x - 4)"
+        }
+      ],
+      "correct_option": "D",
+      "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 4.03,
+      "confidence": 0.24,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.05,
+        "2": 0.11,
+        "3": 0.21,
+        "4": 0.19,
+        "5": 0.17,
+        "6": 0.13,
+        "7": 0.06,
+        "8": 0.04
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 4.5,
+      "confidence": 0.19,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.06,
+        "2": 0.09,
+        "3": 0.2,
+        "4": 0.13,
+        "5": 0.17,
+        "6": 0.15,
+        "7": 0.11,
+        "8": 0.06,
+        "9": 0.02
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 2.97,
+      "confidence": 0.94,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.01,
+        "2": 0.02,
+        "3": 0.94,
+        "4": 0.02,
+        "5": 0.0
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1131,
+  "output_tokens": 45,
+  "cost_usd": 4.7502e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914766-ci9i8JmEuhP7C8wm1CEI",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 4.03,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.05,
+          "2": 0.11,
+          "3": 0.21,
+          "4": 0.19,
+          "5": 0.17,
+          "6": 0.13,
+          "7": 0.06,
+          "8": 0.04
+        },
+        "confidence": 0.24
+      },
+      "location": {
+        "type": "score",
+        "score": 4.5,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.06,
+          "2": 0.09,
+          "3": 0.2,
+          "4": 0.13,
+          "5": 0.17,
+          "6": 0.15,
+          "7": 0.11,
+          "8": 0.06,
+          "9": 0.02
+        },
+        "confidence": 0.19
+      },
+      "guessing": {
+        "type": "score",
+        "score": 2.97,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.02,
+          "3": 0.94,
+          "4": 0.02,
+          "5": 0
+        },
+        "confidence": 0.94
+      }
+    },
+    "usage": {
+      "input_tokens": 1131,
+      "output_tokens": 45,
+      "cost": 4.7502e-05
+    },
+    "id": "gen-dec-1791914766-ci9i8JmEuhP7C8wm1CEI",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:06+00:00",
+  "seconds": null
+}

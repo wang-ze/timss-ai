@@ -1,0 +1,277 @@
+{
+  "item_id": "MA23208",
+  "assessment": "TIMSS Advanced 2008",
+  "grade": 12,
+  "subject": "Advanced Mathematics",
+  "content_domain": "Algebra",
+  "main_topic": "Representation of Functions",
+  "cognitive_domain": "Reasoning",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23208"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS Advanced 2008",
+      "grade": 12,
+      "subject": "Advanced Mathematics",
+      "content_domain": "Algebra",
+      "main_topic": "Representation of Functions",
+      "cognitive_domain": "Reasoning",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "A spherical balloon is blown up. Which graph shows the volume V as a function of the diameter d?",
+      "options": [
+        {
+          "label": "A",
+          "text": "[Image: Graph A]"
+        },
+        {
+          "label": "B",
+          "text": "[Image: Graph B]"
+        },
+        {
+          "label": "C",
+          "text": "[Image: Graph C]"
+        },
+        {
+          "label": "D",
+          "text": "[Image: Graph D]"
+        }
+      ],
+      "correct_option": "A",
+      "figure_description": "Each option shows a Cartesian coordinate system with a vertical axis labeled V, a horizontal axis labeled d, and origin labeled O.\n- Option A: In the first quadrant, a smooth curve starts at the origin O and increases with increasing slope (concave upward).\n- Option B: In the first quadrant, a smooth curve starts at the origin O and increases with decreasing slope (concave downward).\n- Option C: A smooth curve passing through the origin O from the third quadrant to the first quadrant, concave downward for d < 0 and concave upward for d > 0, resembling the graph of y = x^3.\n- Option D: In the first quadrant, a straight line with a constant positive slope starts at the origin O.",
+      "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 4.06,
+      "confidence": 0.24,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.03,
+        "1": 0.05,
+        "2": 0.11,
+        "3": 0.21,
+        "4": 0.18,
+        "5": 0.19,
+        "6": 0.13,
+        "7": 0.06,
+        "8": 0.04
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 4.25,
+      "confidence": 0.25,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.07,
+        "2": 0.11,
+        "3": 0.21,
+        "4": 0.13,
+        "5": 0.18,
+        "6": 0.13,
+        "7": 0.08,
+        "8": 0.05,
+        "9": 0.02
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 3.85,
+      "confidence": 0.88,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.01,
+        "2": 0.01,
+        "3": 0.05,
+        "4": 0.91,
+        "5": 0.0
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1251,
+  "output_tokens": 45,
+  "cost_usd": 5.2542e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914766-R1p95yx55qJlDgH2MvCq",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 4.06,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.05,
+          "2": 0.11,
+          "3": 0.21,
+          "4": 0.18,
+          "5": 0.19,
+          "6": 0.13,
+          "7": 0.06,
+          "8": 0.04
+        },
+        "confidence": 0.24
+      },
+      "location": {
+        "type": "score",
+        "score": 4.25,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.07,
+          "2": 0.11,
+          "3": 0.21,
+          "4": 0.13,
+          "5": 0.18,
+          "6": 0.13,
+          "7": 0.08,
+          "8": 0.05,
+          "9": 0.02
+        },
+        "confidence": 0.25
+      },
+      "guessing": {
+        "type": "score",
+        "score": 3.85,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.01,
+          "2": 0.01,
+          "3": 0.05,
+          "4": 0.91,
+          "5": 0
+        },
+        "confidence": 0.88
+      }
+    },
+    "usage": {
+      "input_tokens": 1251,
+      "output_tokens": 45,
+      "cost": 5.2542e-05
+    },
+    "id": "gen-dec-1791914766-R1p95yx55qJlDgH2MvCq",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:07+00:00",
+  "seconds": null
+}

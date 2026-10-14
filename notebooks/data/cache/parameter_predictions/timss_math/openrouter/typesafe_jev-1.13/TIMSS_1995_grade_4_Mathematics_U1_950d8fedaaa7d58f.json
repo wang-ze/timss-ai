@@ -1,0 +1,290 @@
+{
+  "item_id": "U1",
+  "assessment": "TIMSS 1995",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Measurement, Estimation, and Number Sense",
+  "main_topic": null,
+  "cognitive_domain": "Solving Problems",
+  "item_type": "constructed_response",
+  "max_points": 2,
+  "scaled_points": 2,
+  "irt_model": "GPCM",
+  "target_calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/U1"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 1995",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Measurement, Estimation, and Number Sense",
+      "cognitive_domain": "Solving Problems",
+      "item_type": "constructed_response",
+      "max_points": 2,
+      "scaled_points": 2,
+      "stem": "The triangle represents one tile in the shape of a triangle.\n\n[Image: An equilateral triangle labeled \"tile\"]\n\nHow many tiles will it take to cover the figure below?\n\n[Image: A polygon drawn on an isometric dot grid]\n\nNumber of tiles: ____\n\nUse the figure above to show how you worked out your answer.",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "14. Figure is correctly partitioned."
+          ]
+        },
+        {
+          "category": "Partial Response",
+          "descriptors": [
+            "14. Partition includes errors.",
+            "14. Partition is not shown.",
+            "The figure is correctly partitioned. Triangles are miscounted. (Count does not equal 14.)"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "Neither partition nor number of triangles is correct.",
+            "Other incorrect."
+          ]
+        }
+      ],
+      "figure_description": "At the top is an equilateral triangle with dots at each of its three vertices, labeled \"tile\" to the right of its right edge.\n\nBelow is an irregular polygon drawn on an isometric (triangular) dot grid, with dots marking vertices along its boundary and in its interior:\n- Top edge: a horizontal segment 3 units long, with 4 dots evenly spaced (including endpoints).\n- Left boundary: from the top-left dot, a line goes down and right by 1 unit to an indented vertex dot; from there, a line goes down and left by 1 unit to the bottom-left corner dot.\n- Bottom edge: a horizontal segment 4 units long, with 5 dots evenly spaced (including endpoints).\n- Right boundary: from the top-right dot, a line goes down and right by 1 unit to a vertex dot at the middle horizontal level; from that dot, a horizontal line extends right by 1 unit to another vertex dot; from that dot, a line goes down and left by 1 unit to the bottom-right corner dot.\n- Interior: 2 dots are spaced along the middle horizontal level between the left indented vertex and the right boundary.",
+      "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 2-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 2-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "step1": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 2-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's step 1 parameter d1? In the GPCM, b - d1 is the ability at which earning the first point becomes more likely than earning no point, so a higher d1 means that this point is earned at a lower ability; the steps sum to 0. Choose the value closest to it.",
+      "criteria": [
+        "-3",
+        "-2",
+        "-1.5",
+        "-1",
+        "-0.5",
+        "0",
+        "1",
+        "2"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.65,
+      "confidence": 0.36,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.06,
+        "2": 0.15,
+        "3": 0.25,
+        "4": 0.19,
+        "5": 0.16,
+        "6": 0.09,
+        "7": 0.04,
+        "8": 0.02
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 4.54,
+      "confidence": 0.39,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.04,
+        "2": 0.09,
+        "3": 0.19,
+        "4": 0.14,
+        "5": 0.22,
+        "6": 0.16,
+        "7": 0.09,
+        "8": 0.05,
+        "9": 0.01
+      }
+    },
+    "step1": {
+      "type": "score",
+      "score": 3.48,
+      "confidence": 0.34,
+      "legend": {
+        "0": "-3",
+        "1": "-2",
+        "2": "-1.5",
+        "3": "-1",
+        "4": "-0.5",
+        "5": "0",
+        "6": "1",
+        "7": "2"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.08,
+        "2": 0.15,
+        "3": 0.26,
+        "4": 0.2,
+        "5": 0.16,
+        "6": 0.07,
+        "7": 0.04
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1469,
+  "output_tokens": 45,
+  "cost_usd": 6.1698e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791989184-NJRAfcdO7TRPxpzn875B",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.65,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.06,
+          "2": 0.15,
+          "3": 0.25,
+          "4": 0.19,
+          "5": 0.16,
+          "6": 0.09,
+          "7": 0.04,
+          "8": 0.02
+        },
+        "confidence": 0.36
+      },
+      "location": {
+        "type": "score",
+        "score": 4.54,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.04,
+          "2": 0.09,
+          "3": 0.19,
+          "4": 0.14,
+          "5": 0.22,
+          "6": 0.16,
+          "7": 0.09,
+          "8": 0.05,
+          "9": 0.01
+        },
+        "confidence": 0.39
+      },
+      "step1": {
+        "type": "score",
+        "score": 3.48,
+        "legend": {
+          "0": "-3",
+          "1": "-2",
+          "2": "-1.5",
+          "3": "-1",
+          "4": "-0.5",
+          "5": "0",
+          "6": "1",
+          "7": "2"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.08,
+          "2": 0.15,
+          "3": 0.26,
+          "4": 0.2,
+          "5": 0.16,
+          "6": 0.07,
+          "7": 0.04
+        },
+        "confidence": 0.34
+      }
+    },
+    "usage": {
+      "input_tokens": 1469,
+      "output_tokens": 45,
+      "cost": 6.1698e-05
+    },
+    "id": "gen-dec-1791989184-NJRAfcdO7TRPxpzn875B",
+    "provider": "TypeSafe"
+  },
+  "seconds": 0.257,
+  "requested_at": "2026-10-14T14:46:24+00:00"
+}

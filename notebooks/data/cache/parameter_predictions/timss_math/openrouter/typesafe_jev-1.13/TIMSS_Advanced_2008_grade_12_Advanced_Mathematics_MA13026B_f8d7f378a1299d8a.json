@@ -1,0 +1,228 @@
+{
+  "item_id": "MA13026B",
+  "assessment": "TIMSS Advanced 2008",
+  "grade": 12,
+  "subject": "Advanced Mathematics",
+  "content_domain": "Geometry",
+  "main_topic": "Properties of Geometric Figures",
+  "cognitive_domain": "Applying",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13026A",
+    "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13026B"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS Advanced 2008",
+      "grade": 12,
+      "subject": "Advanced Mathematics",
+      "content_domain": "Geometry",
+      "main_topic": "Properties of Geometric Figures",
+      "cognitive_domain": "Applying",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "B. Triangle ABC is rotated through 90° anti-clockwise, centre O. On the diagram, draw and label triangle A\"B\"C\", the image of triangle ABC under this rotation.\n\n[Image: Coordinate grid with triangle ABC]",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "Correct answer: (x, y) -> (-y, x) A\" (1, -4) B\" (4, -1) C\" (4, -3)"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "A\"B\"C\" is the correct image of triangle A'B'C' (NOT ABC ), as shown in response to Part A, under the rotation 90° counterclockwise with center O.",
+            "A\"B\"C\" is the image of triangle ABC under a clockwise 90° rotation with center O.\nA\" (-1, 4) B\" (-4, 1) C\" (-4, 3)",
+            "Image A\"B\"C\" has correct shape and position but is incorrectly labeled",
+            "Other incorrect (including sides of a triangle not drawn or vertices not labeled, crossed out, erased, stray marks, illegible, or off task)\nExamples:\n1. A\"B\"C\" is the image of triangle ABC under reflection in the x-axis.\nA\" (-4, 1) B\" (-1, 4) C\" (-3, 4)\n2. A\"B\"C\" is the image of triangle ABC under the central symmetry with center O; OR, equivalently, under the rotation of 180° around O.\nA\" (4, 1) B\" (1, 4) C\" (3, 4)"
+          ]
+        },
+        {
+          "category": "Nonresponse",
+          "descriptors": [
+            "Blank"
+          ]
+        }
+      ],
+      "figure_description": "A Cartesian coordinate grid showing the x-axis and y-axis intersecting at the origin labeled O. The grid extends 5 units to the left, 10 units to the right, 5 units up, and 8 units down. Each grid square represents 1 unit by 1 unit. In the third quadrant, a triangle ABC is drawn with vertices at A(-4, -1), B(-1, -4), and C(-3, -4).",
+      "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.91,
+      "confidence": 0.31,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.05,
+        "2": 0.11,
+        "3": 0.24,
+        "4": 0.18,
+        "5": 0.2,
+        "6": 0.11,
+        "7": 0.05,
+        "8": 0.02
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 4.64,
+      "confidence": 0.39,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.04,
+        "2": 0.08,
+        "3": 0.18,
+        "4": 0.13,
+        "5": 0.22,
+        "6": 0.17,
+        "7": 0.11,
+        "8": 0.05,
+        "9": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1322,
+  "output_tokens": 31,
+  "cost_usd": 5.5524e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914766-YliLB0e22Yu5MAkKSELm",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.91,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.05,
+          "2": 0.11,
+          "3": 0.24,
+          "4": 0.18,
+          "5": 0.2,
+          "6": 0.11,
+          "7": 0.05,
+          "8": 0.02
+        },
+        "confidence": 0.31
+      },
+      "location": {
+        "type": "score",
+        "score": 4.64,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.04,
+          "2": 0.08,
+          "3": 0.18,
+          "4": 0.13,
+          "5": 0.22,
+          "6": 0.17,
+          "7": 0.11,
+          "8": 0.05,
+          "9": 0.01
+        },
+        "confidence": 0.39
+      }
+    },
+    "usage": {
+      "input_tokens": 1322,
+      "output_tokens": 31,
+      "cost": 5.5524e-05
+    },
+    "id": "gen-dec-1791914766-YliLB0e22Yu5MAkKSELm",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:06+00:00",
+  "seconds": null
+}

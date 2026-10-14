@@ -1,0 +1,221 @@
+{
+  "item_id": "M032743",
+  "assessment": "TIMSS 2003",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Geometry",
+  "main_topic": "Symmetry and Transformations",
+  "cognitive_domain": "Using Concepts",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 2003/grade 8/Mathematics/M032743",
+    "TIMSS 2003/grade 8/Mathematics/M032744",
+    "TIMSS 2003/grade 8/Mathematics/M032745"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2003",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Geometry",
+      "main_topic": "Symmetry and Transformations",
+      "cognitive_domain": "Using Concepts",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "There are several ways of arranging the tiles so that they form patterns. The grid below has been shaded to show how tiles can be placed on some of the squares. The pattern can be continued so that AB and CD are lines of symmetry.\n\n[Image: A 4 by 4 grid with symmetry axes AB and CD]\n\nShade in all the remaining squares on the grid so that the resulting pattern is symmetrical about line AB, and also is symmetrical about line CD.",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "Both quadrants correctly shaded (pattern shaded or demarcated in some way making symmetrical pattern about both axes, AB and CD)."
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "One of the two quadrants correctly shaded.",
+            "Incorrect (including crossed out/erased, stray marks, illegible, or off task)."
+          ]
+        }
+      ],
+      "figure_description": "A 4-by-4 square grid of 16 unit squares, divided into four 2-by-2 quadrants by a vertical line AB (with A at the top, B at the bottom) and a horizontal line CD (with C at the left, D at the right).\nTwo quadrants are shaded with tile patterns:\n- Top-right 2-by-2 quadrant (rows 1-2, columns 3-4):\n  - Row 1, column 3: small black square in the top-left corner.\n  - Row 1, column 4: small black square in the top-right corner.\n  - Row 2, column 3: small black square in the bottom-left corner.\n  - Row 2, column 4: small black square in the bottom-right corner.\n  - In the center of this 2-by-2 quadrant (where the four squares meet), a large black diamond (rotated square) is formed across the inner corners of all four squares.\n- Bottom-left 2-by-2 quadrant (rows 3-4, columns 1-2):\n  - Shaded with the exact same pattern: four small black corner squares at the outer corners of the 2-by-2 quadrant, and a large black diamond centered where the four squares meet.\nThe top-left 2-by-2 quadrant and bottom-right 2-by-2 quadrant are entirely blank (unshaded).",
+      "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.72,
+      "confidence": 0.31,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.07,
+        "2": 0.14,
+        "3": 0.23,
+        "4": 0.18,
+        "5": 0.16,
+        "6": 0.11,
+        "7": 0.05,
+        "8": 0.02
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 4.17,
+      "confidence": 0.29,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.07,
+        "2": 0.13,
+        "3": 0.22,
+        "4": 0.13,
+        "5": 0.17,
+        "6": 0.14,
+        "7": 0.08,
+        "8": 0.04,
+        "9": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1321,
+  "output_tokens": 31,
+  "cost_usd": 5.5482e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914761-LjpDrN314BNw9A8iFw4M",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.72,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.07,
+          "2": 0.14,
+          "3": 0.23,
+          "4": 0.18,
+          "5": 0.16,
+          "6": 0.11,
+          "7": 0.05,
+          "8": 0.02
+        },
+        "confidence": 0.31
+      },
+      "location": {
+        "type": "score",
+        "score": 4.17,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.07,
+          "2": 0.13,
+          "3": 0.22,
+          "4": 0.13,
+          "5": 0.17,
+          "6": 0.14,
+          "7": 0.08,
+          "8": 0.04,
+          "9": 0.01
+        },
+        "confidence": 0.29
+      }
+    },
+    "usage": {
+      "input_tokens": 1321,
+      "output_tokens": 31,
+      "cost": 5.5482e-05
+    },
+    "id": "gen-dec-1791914761-LjpDrN314BNw9A8iFw4M",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:01+00:00",
+  "seconds": null
+}

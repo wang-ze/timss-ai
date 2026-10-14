@@ -39,7 +39,7 @@ from .items import PARAMETER_NAMES
 
 ITEM_COLUMNS = ["item_key", "assessment", "grade", "item_id", "irt_model"]
 # Long texts that the saved prediction files hold in full; the workbook names the file of each prediction instead.
-SAVED_FILE_COLUMNS = ["system_prompt", "user_prompt", "similar_items"]
+SAVED_FILE_COLUMNS = ["system_prompt", "user_prompt", "state", "questions", "similar_items"]
 BASELINE_COLUMN = "calibration-summary mean"
 EFFECT_COLUMNS = [
     "parameter", "effect", "comparison", "items", "estimate", "se", "t", "df", "p_value", "ci_low", "ci_high"
@@ -67,7 +67,7 @@ class FactorialResults:
                 f"not a condition: {sorted(set(self.runs) - conditions)}"
             )
         # The conditions predict the same calibrated items, so the calibrated values, and the calibration-summary
-        # baseline, which involves no retrieval or LLM, must agree.
+        # baseline, which involves no retrieval or prediction, must agree.
         values = self.errors.groupby(["item_key", "parameter"], observed=True)[["calibrated", "calibration_mean"]]
         disagreeing = values.nunique(dropna=False).max(axis=1) > 1
         if disagreeing.any():
@@ -119,7 +119,8 @@ class FactorialResults:
     @functools.cached_property
     def predictions(self) -> pd.DataFrame:
         """One row per condition and item: the runs' ``predictions`` (each parameter predicted and calibrated with its
-        error, and the LLM's reasoning and usage) without the prompts and the JSON of the reference items."""
+        error, and the predictor's output) without the prompts, Jev's states and questions, and the JSON of the
+        reference items."""
         frames = []
         for condition in self.conditions:
             predictions = self.runs[condition].predictions.drop(columns=SAVED_FILE_COLUMNS, errors="ignore")
@@ -238,7 +239,7 @@ class FactorialResults:
         return effects.sort_values("parameter", kind="stable").reset_index(drop=True)
 
     def settings(self) -> pd.DataFrame:
-        """Every setting of each condition's run (embedding, index, retrieval, LLM, and evaluation), as JSON, one
+        """Every setting of each condition's run (embedding, index, retrieval, LLM or Jev, and evaluation), as JSON, one
         column per condition."""
         names = list(dict.fromkeys(name for run in self.runs.values() for name in run.settings))
         return pd.DataFrame(

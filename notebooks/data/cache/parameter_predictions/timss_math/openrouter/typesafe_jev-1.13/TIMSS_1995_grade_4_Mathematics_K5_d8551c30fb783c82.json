@@ -1,0 +1,837 @@
+{
+  "item_id": "K5",
+  "assessment": "TIMSS 1995",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Measurement, Estimation, and Number Sense",
+  "main_topic": null,
+  "cognitive_domain": "Using Complex Procedures",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/K5"
+  ],
+  "similar_items": [
+    {
+      "rank": 1,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M041330",
+      "item_id": "M041330",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8498,
+      "pct_correct_intl_avg": 51.2,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.79171,
+      "location": 0.06918,
+      "guessing": 0.13863
+    },
+    {
+      "rank": 2,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/S5",
+      "item_id": "S5",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.8982,
+      "pct_correct_intl_avg": 48,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.514,
+      "location": -0.111
+    },
+    {
+      "rank": 3,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M041131",
+      "item_id": "M041131",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8968,
+      "pct_correct_intl_avg": 30.5,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.63095,
+      "location": 1.55336,
+      "guessing": 0.16734
+    },
+    {
+      "rank": 4,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M031004",
+      "item_id": "M031004",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8847,
+      "pct_correct_intl_avg": 29,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.87167,
+      "location": 0.99709,
+      "guessing": 0.10297
+    },
+    {
+      "rank": 5,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M031254",
+      "item_id": "M031254",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.7783,
+      "pct_correct_intl_avg": 50.7,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.21262,
+      "location": 0.18623,
+      "guessing": 0.18081
+    },
+    {
+      "rank": 6,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M041184",
+      "item_id": "M041184",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.7558,
+      "pct_correct_intl_avg": 71,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.91669,
+      "location": -0.7915,
+      "guessing": 0.1641
+    },
+    {
+      "rank": 7,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/L5",
+      "item_id": "L5",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.8407,
+      "pct_correct_intl_avg": 40,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.654,
+      "location": 0.924,
+      "guessing": 0.155
+    },
+    {
+      "rank": 8,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M031173",
+      "item_id": "M031173",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.7997,
+      "pct_correct_intl_avg": 57.6,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.55926,
+      "location": -0.1457,
+      "guessing": 0.12482
+    },
+    {
+      "rank": 9,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M031276",
+      "item_id": "M031276",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8531,
+      "pct_correct_intl_avg": 52.8,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.35838,
+      "location": 0.19377,
+      "guessing": 0.22658
+    },
+    {
+      "rank": 10,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/J3",
+      "item_id": "J3",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.76,
+      "pct_correct_intl_avg": 75,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.962,
+      "location": -0.815,
+      "guessing": 0.137
+    }
+  ],
+  "context": "item+references",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 1995",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Measurement, Estimation, and Number Sense",
+      "cognitive_domain": "Using Complex Procedures",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "About how long is this picture of a pencil?\n\n[Image: A pencil]",
+      "options": [
+        {
+          "label": "A",
+          "text": "5 cm"
+        },
+        {
+          "label": "B",
+          "text": "10 cm"
+        },
+        {
+          "label": "C",
+          "text": "20 cm"
+        },
+        {
+          "label": "D",
+          "text": "30 cm"
+        }
+      ],
+      "correct_option": "B",
+      "figure_description": "A line drawing of a wooden pencil oriented horizontally, with the sharpened point and black lead on the left and the flat end on the right.",
+      "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data."
+    },
+    "reference_items": [
+      {
+        "rank": 1,
+        "cosine_similarity": 0.85,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometric Shapes and Measures",
+        "main_topic": "Two- and Three-dimensional Shapes",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: Rectangle with dimensions]\n\nWhat is the perimeter of this rectangle?",
+        "options": [
+          {
+            "label": "A",
+            "text": "7 cm"
+          },
+          {
+            "label": "B",
+            "text": "10 cm"
+          },
+          {
+            "label": "C",
+            "text": "20 cm"
+          },
+          {
+            "label": "D",
+            "text": "21 cm"
+          }
+        ],
+        "correct_option": "C",
+        "figure_description": "A rectangle oriented horizontally. To the left of its vertical side is a measurement bracket labeled \"3 cm\". Below its horizontal base is a measurement bracket labeled \"7 cm\".",
+        "pct_correct_intl_avg": 51.2,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.79171,
+          "location": 0.06918,
+          "guessing": 0.13863
+        }
+      },
+      {
+        "rank": 2,
+        "cosine_similarity": 0.898,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Measurement, Estimation, and Number Sense",
+        "cognitive_domain": "Using Complex Procedures",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Here is a paper clip. [Image: Paper clip]\n\nAbout how many lengths of the paper clip is the same as the length of this line?\n\n[Image: Horizontal line]\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "4.",
+              "5.",
+              "Within the interval 4<X<5.5."
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Less than 3.",
+              "Within the interval 3<X<4.",
+              "Within the interval 5.5<X<6.5.",
+              "Within the interval 6.5<X<8.",
+              "Other incorrect."
+            ]
+          }
+        ],
+        "figure_description": "At the top right, a drawing of a horizontal paper clip with a label beneath it showing a left arrow, the word 'Length', and a right arrow (← Length →). Below the question is a thick horizontal black line segment whose length is approximately 4.75 times the length of the paper clip.",
+        "pct_correct_intl_avg": 48,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.514,
+          "location": -0.111
+        }
+      },
+      {
+        "rank": 3,
+        "cosine_similarity": 0.897,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometric Shapes and Measures",
+        "main_topic": "Lines and Angles",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: A tall tree and a person standing beside it]\n\nThe man in the picture is 2 meters tall. Estimate the height of the tree.",
+        "options": [
+          {
+            "label": "A",
+            "text": "4 meters"
+          },
+          {
+            "label": "B",
+            "text": "6 meters"
+          },
+          {
+            "label": "C",
+            "text": "8 meters"
+          },
+          {
+            "label": "D",
+            "text": "10 meters"
+          }
+        ],
+        "correct_option": "C",
+        "figure_description": "A line drawing showing a tall leafy tree on the left and a standing man to the right of the lower part of its trunk. The tree's height from base to top is roughly 4 to 5 times the height of the man.",
+        "pct_correct_intl_avg": 30.5,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.63095,
+          "location": 1.55336,
+          "guessing": 0.16734
+        }
+      },
+      {
+        "rank": 4,
+        "cosine_similarity": 0.885,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometric Shapes and Measures",
+        "main_topic": "Points, Lines, and Angles",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: a piece of string curved both ends and a rule in cm with value from 1 to 10.]\n\nIf the string in the diagram above is pulled straight, which of these is closest to its length?",
+        "options": [
+          {
+            "label": "A",
+            "text": "5 cm"
+          },
+          {
+            "label": "B",
+            "text": "7 cm"
+          },
+          {
+            "label": "C",
+            "text": "8 cm"
+          },
+          {
+            "label": "D",
+            "text": "9 cm"
+          }
+        ],
+        "correct_option": "B",
+        "figure_description": "A metric ruler and a folded piece of string above it. The ruler has major tick marks labeled from 1 to 10 with \"cm\" before the 1, and intermediate half-centimeter tick marks between each number.\n\nThe string is laid horizontally above the ruler with both ends folded back:\n- The bottom-left end starts at the 4 cm mark and extends left to the 3 cm mark, where it loops around 180 degrees.\n- The middle section runs continuously to the right from the 3 cm mark to approximately the 8 cm mark.\n- At approximately the 8 cm mark, it loops around 180 degrees upward and extends back to the left, ending at approximately the 6.5 cm mark.",
+        "pct_correct_intl_avg": 29,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.87167,
+          "location": 0.99709,
+          "guessing": 0.10297
+        }
+      },
+      {
+        "rank": 5,
+        "cosine_similarity": 0.778,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Number Sentences with Whole Numbers",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "A shelf is 240 cm long. Chris is putting boxes on the shelf. Each box takes up 20 cm of shelf space. Which of these number sentences shows how many boxes Chris can fit on the shelf? The number of boxes is shown as ▲.",
+        "options": [
+          {
+            "label": "A",
+            "text": "240 − 20 = ▲"
+          },
+          {
+            "label": "B",
+            "text": "240 ÷ 20 = ▲"
+          },
+          {
+            "label": "C",
+            "text": "240 + 20 = ▲"
+          },
+          {
+            "label": "D",
+            "text": "240 × 20 = ▲"
+          }
+        ],
+        "correct_option": "B",
+        "pct_correct_intl_avg": 50.7,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.21262,
+          "location": 0.18623,
+          "guessing": 0.18081
+        }
+      },
+      {
+        "rank": 6,
+        "cosine_similarity": 0.756,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Data Display",
+        "main_topic": "Organizing and Representing",
+        "cognitive_domain": "Reasoning",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Mr. Johnson asked the students in his school about their favorite subject.\n\nThis pie chart shows how many students liked each of 5 subjects.\n\n[Image: Pie chart titled Favorite Subject, divided into various sizes and labeled with Math about one-third, Science about one-fourth, History about one-fifth, Gym less than one-fifth, and Music less than one-eighth.]\n\nWhich graph shows the same information as the pie chart?",
+        "options": [
+          {
+            "label": "A",
+            "text": "[Image: Bar graph with y-axis labeled number of students and values from 0 to 25; x-axis with 5 columns, Math value of 30, Science value of 25, History value of 20, Gym value of 17, Music value of 8.]"
+          },
+          {
+            "label": "B",
+            "text": "[Image: Bar graph with y-axis labeled number of students and values from 0 to 25; x-axis with 5 columns, Math value of 30, Science value of 15, History value of 15, Gym value of 15, Music value of 14.]"
+          },
+          {
+            "label": "C",
+            "text": "[Image: Bar graph with y-axis labeled number of students and values from 0 to 25; x-axis with 5 columns, Math value of 20, Science value of 25, History value of 30, Gym value of 17, Music value of 8.]"
+          },
+          {
+            "label": "D",
+            "text": "[Image: Bar graph with y-axis labeled number of students and values from 0 to 25; x-axis with 5 columns, Math value of 25, Science value of 30, History value of 20, Gym value of 8, Music value of 12.]"
+          }
+        ],
+        "correct_option": "A",
+        "figure_description": "A pie chart titled \"Favorite Subject\" is divided into five sectors: Math (the largest sector, about one-third of the circle), Science (the second largest, about one-fourth of the circle), History (about one-fifth of the circle), Gym (smaller than History), and Music (the smallest sector, less than one-eighth of the circle). In order of sector size from largest to smallest: Math, Science, History, Gym, Music.\n\nEach of the four response options shows a vertical bar graph with the vertical axis labeled \"Number of Students\" ranging from 0 to 35 with grid lines every 5 units, and the horizontal axis showing five subjects: Math, Science, History, Gym, Music.\n- Graph A: Math = 30, Science = 25, History = 20, Gym = 17, Music = 8.\n- Graph B: Math = 30, Science = 15, History = 15, Gym = 15, Music = 14.\n- Graph C: Math = 20, Science = 25, History = 30, Gym = 17, Music = 8.\n- Graph D: Math = 25, Science = 30, History = 20, Gym = 8, Music = 16.",
+        "pct_correct_intl_avg": 71,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.91669,
+          "location": -0.7915,
+          "guessing": 0.1641
+        }
+      },
+      {
+        "rank": 7,
+        "cosine_similarity": 0.841,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "This picture shows a cube with one edge marked. How many edges does the cube have altogether?\n\n[Image: Cube with one edge marked]",
+        "options": [
+          {
+            "label": "A",
+            "text": "6"
+          },
+          {
+            "label": "B",
+            "text": "8"
+          },
+          {
+            "label": "C",
+            "text": "12"
+          },
+          {
+            "label": "D",
+            "text": "24"
+          }
+        ],
+        "correct_option": "C",
+        "figure_description": "An isometric drawing of a shaded cube showing its top, front, and right faces. The top-back horizontal edge is indicated with the label 'edge' printed directly above it.",
+        "pct_correct_intl_avg": 40,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.654,
+          "location": 0.924,
+          "guessing": 0.155
+        }
+      },
+      {
+        "rank": 8,
+        "cosine_similarity": 0.8,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Maria has 6 red boxes. Each red box has 4 pencils inside. She also has 3 blue boxes. Each blue box has 2 pencils inside. How many pencils does Maria have altogether?",
+        "options": [
+          {
+            "label": "A",
+            "text": "6"
+          },
+          {
+            "label": "B",
+            "text": "15"
+          },
+          {
+            "label": "C",
+            "text": "24"
+          },
+          {
+            "label": "D",
+            "text": "30"
+          }
+        ],
+        "correct_option": "D",
+        "pct_correct_intl_avg": 57.6,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.55926,
+          "location": -0.1457,
+          "guessing": 0.12482
+        }
+      },
+      {
+        "rank": 9,
+        "cosine_similarity": 0.853,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: A scale with a pointer]\n\nOn the scale above, what number does the pointer indicate?",
+        "options": [
+          {
+            "label": "A",
+            "text": "302"
+          },
+          {
+            "label": "B",
+            "text": "310"
+          },
+          {
+            "label": "C",
+            "text": "320"
+          },
+          {
+            "label": "D",
+            "text": "340"
+          }
+        ],
+        "correct_option": "D",
+        "figure_description": "A scale shaped as a circular sector with a curved arc at the top and straight sides meeting at a bottom vertex. Along the curved arc, there are evenly spaced tick marks:\n- An unlabeled tick mark near the left end\n- A tick mark labeled 300\n- An unlabeled tick mark\n- A tick mark to which a pointer arrow (originating from the bottom vertex) points\n- Two unlabeled tick marks\n- A tick mark labeled 400\n- An unlabeled tick mark near the right end",
+        "pct_correct_intl_avg": 52.8,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.35838,
+          "location": 0.19377,
+          "guessing": 0.22658
+        }
+      },
+      {
+        "rank": 10,
+        "cosine_similarity": 0.76,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Data Representation, Analysis, and Probability",
+        "cognitive_domain": "Using Complex Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "The figure shows how Mary spent her time one day.\n\n[Image: Pie chart showing how Mary spent her time]\n\nWhat percent of time altogether did she spend playing and doing homework?",
+        "options": [
+          {
+            "label": "A",
+            "text": "10%"
+          },
+          {
+            "label": "B",
+            "text": "15%"
+          },
+          {
+            "label": "C",
+            "text": "20%"
+          },
+          {
+            "label": "D",
+            "text": "25%"
+          },
+          {
+            "label": "E",
+            "text": "30%"
+          }
+        ],
+        "correct_option": "D",
+        "figure_description": "A pie chart showing how Mary spent her time one day, divided into five labeled sectors:\n- \"Homework 10%\": from the 12 o'clock vertical radius clockwise to roughly 1 o'clock.\n- \"Sleeping & Resting 40%\": from roughly 1 o'clock clockwise to the 6 o'clock vertical radius.\n- \"Going to School 25%\": from the 6 o'clock vertical radius clockwise to the 9 o'clock horizontal radius.\n- \"Eating 10%\": from the 9 o'clock horizontal radius clockwise to roughly 10 o'clock.\n- \"Playing 15%\": from roughly 10 o'clock clockwise to the 12 o'clock vertical radius.",
+        "pct_correct_intl_avg": 75,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.962,
+          "location": -0.815,
+          "guessing": 0.137
+        }
+      }
+    ]
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 1.75,
+      "confidence": 0.53,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.12,
+        "1": 0.39999999999999997,
+        "2": 0.27,
+        "3": 0.09,
+        "4": 0.06,
+        "5": 0.03,
+        "6": 0.01,
+        "7": 0.01,
+        "8": 0.01
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 2.91,
+      "confidence": 0.39,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.06,
+        "1": 0.18,
+        "2": 0.22,
+        "3": 0.22,
+        "4": 0.13,
+        "5": 0.09,
+        "6": 0.05,
+        "7": 0.03,
+        "8": 0.01,
+        "9": 0.01
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 2.82,
+      "confidence": 0.2,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.05,
+        "1": 0.08,
+        "2": 0.33,
+        "3": 0.09,
+        "4": 0.44,
+        "5": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 6126,
+  "output_tokens": 45,
+  "cost_usd": 0.000257292,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791918360-IzDua5RAAI5PifZEIKNi",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 1.75,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.12,
+          "1": 0.39999999999999997,
+          "2": 0.27,
+          "3": 0.09,
+          "4": 0.06,
+          "5": 0.03,
+          "6": 0.01,
+          "7": 0.01,
+          "8": 0.01
+        },
+        "confidence": 0.53
+      },
+      "location": {
+        "type": "score",
+        "score": 2.91,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.06,
+          "1": 0.18,
+          "2": 0.22,
+          "3": 0.22,
+          "4": 0.13,
+          "5": 0.09,
+          "6": 0.05,
+          "7": 0.03,
+          "8": 0.01,
+          "9": 0.01
+        },
+        "confidence": 0.39
+      },
+      "guessing": {
+        "type": "score",
+        "score": 2.82,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.08,
+          "2": 0.33,
+          "3": 0.09,
+          "4": 0.44,
+          "5": 0.01
+        },
+        "confidence": 0.2
+      }
+    },
+    "usage": {
+      "input_tokens": 6126,
+      "output_tokens": 45,
+      "cost": 0.000257292
+    },
+    "id": "gen-dec-1791918360-IzDua5RAAI5PifZEIKNi",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T19:06:00+00:00",
+  "seconds": null
+}

@@ -1,0 +1,229 @@
+{
+  "item_id": "M041300A",
+  "assessment": "TIMSS 2007",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Geometric Shapes and Measures",
+  "main_topic": "Two- and Three-dimensional Shapes",
+  "cognitive_domain": "Applying",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+  "excluded_item_keys": [
+    "TIMSS 2007/grade 4/Mathematics/M041300A",
+    "TIMSS 2007/grade 4/Mathematics/M041300B",
+    "TIMSS 2007/grade 4/Mathematics/M041300C",
+    "TIMSS 2007/grade 4/Mathematics/M041300D"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2007",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Geometric Shapes and Measures",
+      "main_topic": "Two- and Three-dimensional Shapes",
+      "cognitive_domain": "Applying",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "Geometry Tiles\nInstruction:\n\nFor this item, you have been given a piece of cardboard with 6 tiles like the ones shown below. Take the piece of cardboard, and punch out the 6 tiles.\n\nIf you do not have the piece of cardboard, raise your hand.\n\n4 Triangle Tiles\n[Image: Four triangle tiles]\n\n2 Trapezoid Tiles\n[Image: Two trapezoid tiles]\n\nThese tiles can be used to make new figures. One problem has been done for you\n\nUSE: 3 Triangle Tiles\nMAKE: A trapezoid\nSHOW: Draw it on the grid.\n[Image: Example showing a trapezoid drawn on the grid]\n\nNow try these problems.\n\nA.\n\nUSE: 1 Triangle Tile and\n1 Trapezoid Tile\nMAKE: A 4-sided figure\nSHOW: Draw it on the grid.\n\n[Image: Triangular grid]",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "Correct 4-sided figure turned in any position\n[Image: A parallelogram composed of one trapezoid tile and one triangle tile]"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "Makes a larger triangle",
+            "Makes a 4-sided figure, but not using the specified tiles, e.g., a larger parallelogram.",
+            "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+          ]
+        },
+        {
+          "category": "Nonresponse",
+          "descriptors": [
+            "Blank"
+          ]
+        }
+      ],
+      "figure_description": "The stem includes four diagrams:\n1. '4 Triangle Tiles': Four identical equilateral triangles of unit side length, arranged in a row pointing alternately up, down, up, and down.\n2. '2 Trapezoid Tiles': Two identical isosceles trapezoids each composed of three equilateral triangle units (bottom base 2 units, top base 1 unit, legs 1 unit for the first one; and inverted with top base 2 units, bottom base 1 unit for the second one).\n3. Worked example grid: An isometric grid forming a parallelogram with horizontal top and bottom sides of 3 units each and slanted sides of 2 units each, divided by dashed lines into 2 rows of 6 equilateral triangles. In the top-right portion, a trapezoid made of 3 triangle units (top side 1 unit, bottom side 2 units, slanted sides 1 unit) is outlined in bold solid lines.\n4. Part A response grid: An identical empty parallelogram-shaped isometric grid with top and bottom edges of 3 units, slanted sides of 2 units, divided into 2 rows of 6 equilateral triangle units by dashed lines.",
+      "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics)."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics)\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics)\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.63,
+      "confidence": 0.33,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.07,
+        "2": 0.15,
+        "3": 0.24,
+        "4": 0.16999999999999998,
+        "5": 0.17,
+        "6": 0.1,
+        "7": 0.04,
+        "8": 0.02
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 3.21,
+      "confidence": 0.36,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.14,
+        "2": 0.22,
+        "3": 0.21,
+        "4": 0.14,
+        "5": 0.15,
+        "6": 0.06,
+        "7": 0.03,
+        "8": 0.01,
+        "9": 0.0
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1480,
+  "output_tokens": 31,
+  "cost_usd": 6.216e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914762-F7487JXZXruSJh2aehRu",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.63,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.07,
+          "2": 0.15,
+          "3": 0.24,
+          "4": 0.16999999999999998,
+          "5": 0.17,
+          "6": 0.1,
+          "7": 0.04,
+          "8": 0.02
+        },
+        "confidence": 0.33
+      },
+      "location": {
+        "type": "score",
+        "score": 3.21,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.14,
+          "2": 0.22,
+          "3": 0.21,
+          "4": 0.14,
+          "5": 0.15,
+          "6": 0.06,
+          "7": 0.03,
+          "8": 0.01,
+          "9": 0
+        },
+        "confidence": 0.36
+      }
+    },
+    "usage": {
+      "input_tokens": 1480,
+      "output_tokens": 31,
+      "cost": 6.216e-05
+    },
+    "id": "gen-dec-1791914762-F7487JXZXruSJh2aehRu",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:03+00:00",
+  "seconds": null
+}

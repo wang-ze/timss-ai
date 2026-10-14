@@ -1,0 +1,836 @@
+{
+  "item_id": "H09",
+  "assessment": "TIMSS 1999",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Fractions and Number Sense",
+  "main_topic": null,
+  "cognitive_domain": "Using Complex Procedures",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 1999/grade 8/Mathematics/H09"
+  ],
+  "similar_items": [
+    {
+      "rank": 1,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M032609",
+      "item_id": "M032609",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.889,
+      "pct_correct_intl_avg": 61,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.799,
+      "location": -0.707,
+      "guessing": 0.114
+    },
+    {
+      "rank": 2,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M022057",
+      "item_id": "M022057",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.775,
+      "pct_correct_intl_avg": 59.5,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.45243,
+      "location": -0.32094,
+      "guessing": 0.1653
+    },
+    {
+      "rank": 3,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1999/grade 8/Mathematics/P13",
+      "item_id": "P13",
+      "assessment": "TIMSS 1999",
+      "cosine_similarity": 0.8703,
+      "pct_correct_intl_avg": 65,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.871,
+      "location": -0.295,
+      "guessing": 0.218
+    },
+    {
+      "rank": 4,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1999/grade 8/Mathematics/B08",
+      "item_id": "B08",
+      "assessment": "TIMSS 1999",
+      "cosine_similarity": 0.7777,
+      "pct_correct_intl_avg": 69,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.493,
+      "location": -0.945,
+      "guessing": 0.137
+    },
+    {
+      "rank": 5,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M032670",
+      "item_id": "M032670",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8512,
+      "pct_correct_intl_avg": 76,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.75,
+      "location": -1.667,
+      "guessing": 0.13
+    },
+    {
+      "rank": 6,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M032097",
+      "item_id": "M032097",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.7942,
+      "pct_correct_intl_avg": 28.4,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.27298,
+      "location": 1.36089,
+      "guessing": 0.18935
+    },
+    {
+      "rank": 7,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M032166",
+      "item_id": "M032166",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8589,
+      "pct_correct_intl_avg": 57,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.0667,
+      "location": 0.02037,
+      "guessing": 0.18766
+    },
+    {
+      "rank": 8,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1999/grade 8/Mathematics/H11",
+      "item_id": "H11",
+      "assessment": "TIMSS 1999",
+      "cosine_similarity": 0.759,
+      "pct_correct_intl_avg": 62,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.16,
+      "location": 0.074,
+      "guessing": 0.278
+    },
+    {
+      "rank": 9,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1999/grade 8/Mathematics/N11",
+      "item_id": "N11",
+      "assessment": "TIMSS 1999",
+      "cosine_similarity": 0.8543,
+      "pct_correct_intl_avg": 74,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.758,
+      "location": -0.813,
+      "guessing": 0.137
+    },
+    {
+      "rank": 10,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1999/grade 8/Mathematics/P12",
+      "item_id": "P12",
+      "assessment": "TIMSS 1999",
+      "cosine_similarity": 0.786,
+      "pct_correct_intl_avg": 41,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.62,
+      "location": 0.734,
+      "guessing": 0.125
+    }
+  ],
+  "context": "item+references",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 1999",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Fractions and Number Sense",
+      "cognitive_domain": "Using Complex Procedures",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "The sum 691 + 208 is closest to the sum",
+      "options": [
+        {
+          "label": "A",
+          "text": "600 + 200"
+        },
+        {
+          "label": "B",
+          "text": "700 + 200"
+        },
+        {
+          "label": "C",
+          "text": "700 + 300"
+        },
+        {
+          "label": "D",
+          "text": "900 + 200"
+        }
+      ],
+      "correct_option": "B",
+      "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data."
+    },
+    "reference_items": [
+      {
+        "rank": 1,
+        "cosine_similarity": 0.889,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Knowing Facts and Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Which of these is closest to 11^2 + 9^2?",
+        "options": [
+          {
+            "label": "A",
+            "text": "20 + 20"
+          },
+          {
+            "label": "B",
+            "text": "20 + 80"
+          },
+          {
+            "label": "C",
+            "text": "120 + 20"
+          },
+          {
+            "label": "D",
+            "text": "120 + 80"
+          }
+        ],
+        "correct_option": "D",
+        "pct_correct_intl_avg": 61,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.799,
+          "location": -0.707,
+          "guessing": 0.114
+        }
+      },
+      {
+        "rank": 2,
+        "cosine_similarity": 0.775,
+        "assessment": "TIMSS 2007",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Ratio, Proportion, and Percent",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "One year a company reported selling 1426 tons of fertilizer. The following year the company sold 15 percent less fertilizer. Which is the closest approximation to the number of tons of fertilizer sold in the second year?",
+        "options": [
+          {
+            "label": "A",
+            "text": "200"
+          },
+          {
+            "label": "B",
+            "text": "300"
+          },
+          {
+            "label": "C",
+            "text": "1200"
+          },
+          {
+            "label": "D",
+            "text": "1600"
+          },
+          {
+            "label": "E",
+            "text": "1700"
+          }
+        ],
+        "correct_option": "C",
+        "pct_correct_intl_avg": 59.5,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.45243,
+          "location": -0.32094,
+          "guessing": 0.1653
+        }
+      },
+      {
+        "rank": 3,
+        "cosine_similarity": 0.87,
+        "assessment": "TIMSS 1999",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Fractions and Number Sense",
+        "cognitive_domain": "Using Complex Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "There are 68 rows of cars in a parking lot. Each row has 92 cars. Which of these would give the closest estimate of the total number of cars in the parking lot?",
+        "options": [
+          {
+            "label": "A",
+            "text": "60 × 90 = 5400"
+          },
+          {
+            "label": "B",
+            "text": "60 × 100 = 6000"
+          },
+          {
+            "label": "C",
+            "text": "70 × 90 = 6300"
+          },
+          {
+            "label": "D",
+            "text": "70 × 100 = 7000"
+          }
+        ],
+        "correct_option": "C",
+        "pct_correct_intl_avg": 65,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.871,
+          "location": -0.295,
+          "guessing": 0.218
+        }
+      },
+      {
+        "rank": 4,
+        "cosine_similarity": 0.778,
+        "assessment": "TIMSS 1999",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Fractions and Number Sense",
+        "cognitive_domain": "Investigating and Solving Problems",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "If there are 300 calories in 100 g of a certain food, how many calories are there in a 30 g portion of this food?",
+        "options": [
+          {
+            "label": "A",
+            "text": "90"
+          },
+          {
+            "label": "B",
+            "text": "100"
+          },
+          {
+            "label": "C",
+            "text": "900"
+          },
+          {
+            "label": "D",
+            "text": "1000"
+          },
+          {
+            "label": "E",
+            "text": "9000"
+          }
+        ],
+        "correct_option": "A",
+        "pct_correct_intl_avg": 69,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.493,
+          "location": -0.945,
+          "guessing": 0.137
+        }
+      },
+      {
+        "rank": 5,
+        "cosine_similarity": 0.851,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Fractions and Decimals",
+        "cognitive_domain": "Using Concepts",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Which of these numbers is closest to 10?",
+        "options": [
+          {
+            "label": "A",
+            "text": "0.10"
+          },
+          {
+            "label": "B",
+            "text": "9.99"
+          },
+          {
+            "label": "C",
+            "text": "10.10"
+          },
+          {
+            "label": "D",
+            "text": "10.90"
+          }
+        ],
+        "correct_option": "B",
+        "pct_correct_intl_avg": 76,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.75,
+          "location": -1.667,
+          "guessing": 0.13
+        }
+      },
+      {
+        "rank": 6,
+        "cosine_similarity": 0.794,
+        "assessment": "TIMSS 2007",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Geometric Measurement",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "A circular pond has a radius of 10 meters. There is an average of 2 frogs per square meter in the pond. Approximately how many frogs are in the pond?\n\nπ is approximately 3.14",
+        "options": [
+          {
+            "label": "A",
+            "text": "120"
+          },
+          {
+            "label": "B",
+            "text": "300"
+          },
+          {
+            "label": "C",
+            "text": "600"
+          },
+          {
+            "label": "D",
+            "text": "2400"
+          }
+        ],
+        "correct_option": "C",
+        "pct_correct_intl_avg": 28.4,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.27298,
+          "location": 1.36089,
+          "guessing": 0.18935
+        }
+      },
+      {
+        "rank": 7,
+        "cosine_similarity": 0.859,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Fractions and Decimals",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Which of these is the BEST estimate of (7.21 × 3.86)/10.09 ?",
+        "options": [
+          {
+            "label": "A",
+            "text": "(7 × 3)/10"
+          },
+          {
+            "label": "B",
+            "text": "(7 × 4)/10"
+          },
+          {
+            "label": "C",
+            "text": "(7 × 3)/11"
+          },
+          {
+            "label": "D",
+            "text": "(7 × 4)/11"
+          }
+        ],
+        "correct_option": "B",
+        "pct_correct_intl_avg": 57,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.0667,
+          "location": 0.02037,
+          "guessing": 0.18766
+        }
+      },
+      {
+        "rank": 8,
+        "cosine_similarity": 0.759,
+        "assessment": "TIMSS 1999",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Data Representation, Analysis, and Probability",
+        "cognitive_domain": "Investigating and Solving Problems",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "From a batch of 3,000 light bulbs, 100 were selected at random and tested. If 5 of the light bulbs in the sample were found to be defective, about how many defective light bulbs would be expected in the entire batch?",
+        "options": [
+          {
+            "label": "A",
+            "text": "15"
+          },
+          {
+            "label": "B",
+            "text": "60"
+          },
+          {
+            "label": "C",
+            "text": "150"
+          },
+          {
+            "label": "D",
+            "text": "300"
+          },
+          {
+            "label": "E",
+            "text": "600"
+          }
+        ],
+        "correct_option": "C",
+        "pct_correct_intl_avg": 62,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.16,
+          "location": 0.074,
+          "guessing": 0.278
+        }
+      },
+      {
+        "rank": 9,
+        "cosine_similarity": 0.854,
+        "assessment": "TIMSS 1999",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Fractions and Number Sense",
+        "cognitive_domain": "Using Routine Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "A company produced 17,175 cars in 1996. For a report, this\nnumber was rounded to the nearest hundred. Which was the\nnumber of cars given in the report?",
+        "options": [
+          {
+            "label": "A",
+            "text": "17,000"
+          },
+          {
+            "label": "B",
+            "text": "17,100"
+          },
+          {
+            "label": "C",
+            "text": "17,200"
+          },
+          {
+            "label": "D",
+            "text": "17,270"
+          }
+        ],
+        "correct_option": "C",
+        "pct_correct_intl_avg": 74,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.758,
+          "location": -0.813,
+          "guessing": 0.137
+        }
+      },
+      {
+        "rank": 10,
+        "cosine_similarity": 0.786,
+        "assessment": "TIMSS 1999",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Measurement",
+        "cognitive_domain": "Using Complex Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: A ruler with a wavy string above it]\n\nIf the string in the diagram is pulled straight, which of these is closest to its length?",
+        "options": [
+          {
+            "label": "A",
+            "text": "5 cm"
+          },
+          {
+            "label": "B",
+            "text": "6 cm"
+          },
+          {
+            "label": "C",
+            "text": "7 cm"
+          },
+          {
+            "label": "D",
+            "text": "8 cm"
+          }
+        ],
+        "correct_option": "C",
+        "figure_description": "A metric ruler marked from 0 to 11 cm, with ticks at every centimeter and half-centimeter, labeled 'cm' at the left end and with numbers 1 through 11. Above the ruler, a curved line labeled 'string' begins at the 3 cm mark, extends horizontally to approximately 5.5 cm, loops back leftward to about 4.7 cm, and then extends horizontally rightward, ending near the 7 cm mark.",
+        "pct_correct_intl_avg": 41,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.62,
+          "location": 0.734,
+          "guessing": 0.125
+        }
+      }
+    ]
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 2.11,
+      "confidence": 0.88,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.06,
+        "2": 0.8,
+        "3": 0.09,
+        "4": 0.02,
+        "5": 0.01,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 1.99,
+      "confidence": 0.69,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.06,
+        "1": 0.32,
+        "2": 0.43,
+        "3": 0.11,
+        "4": 0.04,
+        "5": 0.02,
+        "6": 0.01,
+        "7": 0.01,
+        "8": 0.0,
+        "9": 0.0
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 3.06,
+      "confidence": 0.38,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.09,
+        "2": 0.14,
+        "3": 0.34,
+        "4": 0.42,
+        "5": 0.0
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 4956,
+  "output_tokens": 45,
+  "cost_usd": 0.000208152,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791918363-gLsrTJ8UVaDvImtXzfxS",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 2.11,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.06,
+          "2": 0.8,
+          "3": 0.09,
+          "4": 0.02,
+          "5": 0.01,
+          "6": 0,
+          "7": 0,
+          "8": 0
+        },
+        "confidence": 0.88
+      },
+      "location": {
+        "type": "score",
+        "score": 1.99,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.06,
+          "1": 0.32,
+          "2": 0.43,
+          "3": 0.11,
+          "4": 0.04,
+          "5": 0.02,
+          "6": 0.01,
+          "7": 0.01,
+          "8": 0,
+          "9": 0
+        },
+        "confidence": 0.69
+      },
+      "guessing": {
+        "type": "score",
+        "score": 3.06,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.09,
+          "2": 0.14,
+          "3": 0.34,
+          "4": 0.42,
+          "5": 0
+        },
+        "confidence": 0.38
+      }
+    },
+    "usage": {
+      "input_tokens": 4956,
+      "output_tokens": 45,
+      "cost": 0.000208152
+    },
+    "id": "gen-dec-1791918363-gLsrTJ8UVaDvImtXzfxS",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T19:06:03+00:00",
+  "seconds": null
+}

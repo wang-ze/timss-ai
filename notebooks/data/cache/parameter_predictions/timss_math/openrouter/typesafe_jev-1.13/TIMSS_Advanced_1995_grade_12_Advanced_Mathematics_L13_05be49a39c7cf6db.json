@@ -1,0 +1,231 @@
+{
+  "item_id": "L13",
+  "assessment": "TIMSS Advanced 1995",
+  "grade": 12,
+  "subject": "Advanced Mathematics",
+  "content_domain": "Geometry",
+  "main_topic": null,
+  "cognitive_domain": "Complex Procedures",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L13"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS Advanced 1995",
+      "grade": 12,
+      "subject": "Advanced Mathematics",
+      "content_domain": "Geometry",
+      "cognitive_domain": "Complex Procedures",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "Two vectors vector a and vector b (vector a, vector b ≠ vector 0) are related by: |vector a + vector b| = |vector a - vector b|.\n\nWhat is the measure of the angle between vector a and vector b?",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "90° OR ± π/2 OR \"Given vectors are perpendicular.\" No work shown.",
+            "90° OR ± π/2 OR \"Given vectors are perpendicular.\" And results derived correctly from equality given and from definition of |a|, that is, |a+b| = |a-b| => |a+b|^2 =\n|a-b|^2 => (a+b) (a+b) => (a-b) (a-b) => a^2+ 2ab + b^2 = a^2 - 2ab+b^2 => 2ab = -2ab => 4ab = 0 => vectors a,b are perpendicular.\nNote: If error(s) in derivation, code 19.",
+            "90° OR ± π/2 OR \"Given vectors are perpendicular.\" Situation is represented correctly geometrically, that is, vectors a+b and a-b represented as diagonals of a parallelogram. Conclusion stated that the given equality holds only if vectors a,b are perpendicular to each other. Note: If error(s) in method, code 19.",
+            "90° OR ± π/2 OR \"Given vectors are perpendicular.\" Only presents a drawing; no explanation in words.",
+            "90° OR ±π/2 OR \"Given vectors are perpendicular.\" Some work shown. Method may be complete and correct, or incomplete and correct, or incorrect."
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "0° or 180° with or without work shown.",
+            "Method as in code 11, but no statement of measurement.",
+            "Method as in code 12, but no statement of measurement.",
+            "Unsuccessful atttempts to use the formula: ab cos α = | a | · | b | .",
+            "All other incorrect responses."
+          ]
+        },
+        {
+          "category": "Nonresponse",
+          "descriptors": [
+            "Crossed-out, illegible, or impossible to interpret.",
+            "BLANK"
+          ]
+        }
+      ],
+      "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 4.24,
+      "confidence": 0.17,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.05,
+        "2": 0.09,
+        "3": 0.2,
+        "4": 0.16,
+        "5": 0.19,
+        "6": 0.14,
+        "7": 0.07,
+        "8": 0.06
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 4.52,
+      "confidence": 0.24,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.05,
+        "2": 0.08,
+        "3": 0.22,
+        "4": 0.14,
+        "5": 0.18,
+        "6": 0.16,
+        "7": 0.1,
+        "8": 0.05,
+        "9": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1321,
+  "output_tokens": 31,
+  "cost_usd": 5.5482e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914756-VO17L7AW9oBhLVdn9mDA",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 4.24,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.05,
+          "2": 0.09,
+          "3": 0.2,
+          "4": 0.16,
+          "5": 0.19,
+          "6": 0.14,
+          "7": 0.07,
+          "8": 0.06
+        },
+        "confidence": 0.17
+      },
+      "location": {
+        "type": "score",
+        "score": 4.52,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.05,
+          "2": 0.08,
+          "3": 0.22,
+          "4": 0.14,
+          "5": 0.18,
+          "6": 0.16,
+          "7": 0.1,
+          "8": 0.05,
+          "9": 0.01
+        },
+        "confidence": 0.24
+      }
+    },
+    "usage": {
+      "input_tokens": 1321,
+      "output_tokens": 31,
+      "cost": 5.5482e-05
+    },
+    "id": "gen-dec-1791914756-VO17L7AW9oBhLVdn9mDA",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:05:56+00:00",
+  "seconds": null
+}

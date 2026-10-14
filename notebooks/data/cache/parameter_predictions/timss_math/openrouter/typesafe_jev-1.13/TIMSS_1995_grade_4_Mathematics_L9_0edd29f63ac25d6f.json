@@ -1,0 +1,840 @@
+{
+  "item_id": "L9",
+  "assessment": "TIMSS 1995",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Patterns, Relations, and Functions",
+  "main_topic": null,
+  "cognitive_domain": "Knowing",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/L9"
+  ],
+  "similar_items": [
+    {
+      "rank": 1,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M011026",
+      "item_id": "M011026",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.827,
+      "pct_correct_intl_avg": 66,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.605,
+      "location": -0.303,
+      "guessing": 0.247
+    },
+    {
+      "rank": 2,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M041148",
+      "item_id": "M041148",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.7408,
+      "pct_correct_intl_avg": 32,
+      "irt_model": "GPCM",
+      "scaled_points": 2,
+      "slope": 0.3786,
+      "location": -0.11518,
+      "step1": 0.36586,
+      "step2": -0.36586
+    },
+    {
+      "rank": 3,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M031219",
+      "item_id": "M031219",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.7829,
+      "pct_correct_intl_avg": 47.2,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.50703,
+      "location": 0.59719,
+      "guessing": 0.16738
+    },
+    {
+      "rank": 4,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/M8",
+      "item_id": "M8",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.8193,
+      "pct_correct_intl_avg": 86,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.82,
+      "location": -1.707,
+      "guessing": 0.22
+    },
+    {
+      "rank": 5,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M031038",
+      "item_id": "M031038",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.7938,
+      "pct_correct_intl_avg": 67.1,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.84379,
+      "location": -0.62571,
+      "guessing": 0.14403
+    },
+    {
+      "rank": 6,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M041014",
+      "item_id": "M041014",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8177,
+      "pct_correct_intl_avg": 69.6,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.79538,
+      "location": -0.93587,
+      "guessing": 0.11965
+    },
+    {
+      "rank": 7,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M031210",
+      "item_id": "M031210",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8168,
+      "pct_correct_intl_avg": 46,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.5403,
+      "location": 0.74604,
+      "guessing": 0.28412
+    },
+    {
+      "rank": 8,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M011022",
+      "item_id": "M011022",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.7804,
+      "pct_correct_intl_avg": 71,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.393,
+      "location": -1.29,
+      "guessing": 0.117
+    },
+    {
+      "rank": 9,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M012126",
+      "item_id": "M012126",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8105,
+      "pct_correct_intl_avg": 67,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.711,
+      "location": -0.592,
+      "guessing": 0.115
+    },
+    {
+      "rank": 10,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/S1",
+      "item_id": "S1",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.7263,
+      "pct_correct_intl_avg": 41,
+      "irt_model": "GPCM",
+      "scaled_points": 2,
+      "slope": 0.64,
+      "location": 0.018,
+      "step1": -0.722,
+      "step2": 0.722
+    }
+  ],
+  "context": "item+references",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 1995",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Patterns, Relations, and Functions",
+      "cognitive_domain": "Knowing",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "Henry is older than Bill, and Bill is older than Peter. Which statement must be true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Henry is older than Peter."
+        },
+        {
+          "label": "B",
+          "text": "Henry is younger than Peter."
+        },
+        {
+          "label": "C",
+          "text": "Henry is the same age as Peter."
+        },
+        {
+          "label": "D",
+          "text": "We cannot tell who is oldest from the information."
+        }
+      ],
+      "correct_option": "A",
+      "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data."
+    },
+    "reference_items": [
+      {
+        "rank": 1,
+        "cosine_similarity": 0.827,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Using Concepts",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Which number sentence is true?",
+        "options": [
+          {
+            "label": "A",
+            "text": "968 < 698"
+          },
+          {
+            "label": "B",
+            "text": "968 < 689"
+          },
+          {
+            "label": "C",
+            "text": "968 > 689"
+          },
+          {
+            "label": "D",
+            "text": "968 = 689"
+          }
+        ],
+        "correct_option": "C",
+        "pct_correct_intl_avg": 66,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.605,
+          "location": -0.303,
+          "guessing": 0.247
+        }
+      },
+      {
+        "rank": 2,
+        "cosine_similarity": 0.741,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometric Shapes and Measures",
+        "main_topic": "Two- and Three-dimensional Shapes",
+        "cognitive_domain": "Knowing",
+        "item_type": "constructed_response",
+        "max_points": 2,
+        "scaled_points": 2,
+        "stem": "[Image: a cube for Figure A and a square-base pyramid for Figure B.]\nHere are some statements about Figure A and Figure B. Put an X to show whether each statement is true or false.\n\n| Statement | True | False |\n| --- | --- | --- |\n| A and B both have a square face. | X | |\n| A and B both have the same number of faces. | | |\n| All the angles in A are right angles. | | |\n| B has more edges than A. | | |\n| Some of the edges in B are curved. | | |",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Puts the X's in the correct column as shown below.\n[Image: table with two columns and five rows. Columns are “True” and “False”. First row is an x, printed in, under true. Second row is an x, drawn in, under false. Third row is an x, drawn in under true. Fourth and fifth rows are an x, drawn in, under false.]"
+            ]
+          },
+          {
+            "category": "Partially Correct Response",
+            "descriptors": [
+              "Any three correct"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "figure_description": "Two 3-D geometric figures are shown side by side, with hidden edges represented by dashed lines. On the left, labeled 'Figure A', is a cube. On the right, labeled 'Figure B', is a square-based pyramid standing on its square base with four triangular faces meeting at a top vertex.",
+        "pct_correct_intl_avg": 32,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "GPCM",
+        "calibrated_parameters": {
+          "slope": 0.3786,
+          "location": -0.11518,
+          "step1": 0.36586,
+          "step2": -0.36586
+        }
+      },
+      {
+        "rank": 3,
+        "cosine_similarity": 0.783,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometric Shapes and Measures",
+        "main_topic": "Two- and Three-dimensional Shapes",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Jill had a rectangular piece of paper.\n\n[Image: A rectangle divided horizontally into two equal halves by a dotted line]\n\nShe cut her paper along the dotted line and made an L shape like this.\n\n[Image: An L-shaped figure made of two rectangular strips]\n\nWhich of these statements is true?",
+        "options": [
+          {
+            "label": "A",
+            "text": "The area of the L shape is greater than the area of the rectangle."
+          },
+          {
+            "label": "B",
+            "text": "The area of the L shape is equal to the area of the rectangle."
+          },
+          {
+            "label": "C",
+            "text": "The area of the L shape is less than the area of the rectangle."
+          },
+          {
+            "label": "D",
+            "text": "You cannot work out which area is greater without measuring."
+          }
+        ],
+        "correct_option": "B",
+        "figure_description": "The first figure shows a horizontal rectangle with a dashed horizontal line dividing it into two equal top and bottom halves.\n\nThe second figure shows an L shape made from the two halves: one vertical rectangular strip on the left and one horizontal rectangular strip at the bottom right, joined along part of their edges at a right angle.",
+        "pct_correct_intl_avg": 47.2,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.50703,
+          "location": 0.59719,
+          "guessing": 0.16738
+        }
+      },
+      {
+        "rank": 4,
+        "cosine_similarity": 0.819,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Whole Numbers",
+        "cognitive_domain": "Using Complex Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Which of these is the largest number?",
+        "options": [
+          {
+            "label": "A",
+            "text": "2,735"
+          },
+          {
+            "label": "B",
+            "text": "2,537"
+          },
+          {
+            "label": "C",
+            "text": "2,573"
+          },
+          {
+            "label": "D",
+            "text": "2,753"
+          }
+        ],
+        "correct_option": "D",
+        "pct_correct_intl_avg": 86,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.82,
+          "location": -1.707,
+          "guessing": 0.22
+        }
+      },
+      {
+        "rank": 5,
+        "cosine_similarity": 0.794,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometric Shapes and Measures",
+        "main_topic": "Two- and Three-dimensional Shapes",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: Three arrangements of 3 tiles labeled Rita, Ina, and Lana]\n\nRita, Ina, and Lana take turns arranging 3 tiles. Each arranges the tiles in a different shape as shown above. Which of the following is true about the area of the shapes?",
+        "options": [
+          {
+            "label": "A",
+            "text": "Rita’s shape has a greater area than the others."
+          },
+          {
+            "label": "B",
+            "text": "Ina’s shape has a greater area than the others."
+          },
+          {
+            "label": "C",
+            "text": "Lana’s shape has a greater area than the others."
+          },
+          {
+            "label": "D",
+            "text": "All of the shapes have the same area."
+          }
+        ],
+        "correct_option": "D",
+        "figure_description": "Three arrangements of three tiles each, labeled \"Rita\", \"Ina\", and \"Lana\":\n- Rita: Two squares are placed side by side horizontally, sharing a vertical edge. A triangle sits on top of the left square, with its base along the top edge of that square and its apex pointing upward.\n- Ina: A square sits at the top with horizontal top and bottom edges. Attached below it is a triangle sharing the square's bottom horizontal edge and pointing downward. Attached to the lower-right edge of the triangle is a second square, tilted diagonally downward and to the right.\n- Lana: Two squares are placed side by side horizontally, sharing a vertical edge. Attached to the right vertical edge of the right square is a triangle pointing to the right.",
+        "pct_correct_intl_avg": 67.1,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.84379,
+          "location": -0.62571,
+          "guessing": 0.14403
+        }
+      },
+      {
+        "rank": 6,
+        "cosine_similarity": 0.818,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "In which of the following are the numbers arranged from LARGEST to SMALLEST?",
+        "options": [
+          {
+            "label": "A",
+            "text": "36, 43, 66, 87"
+          },
+          {
+            "label": "B",
+            "text": "66, 43, 36, 87"
+          },
+          {
+            "label": "C",
+            "text": "87, 66, 36, 43"
+          },
+          {
+            "label": "D",
+            "text": "87, 66, 43, 36"
+          }
+        ],
+        "correct_option": "D",
+        "pct_correct_intl_avg": 69.6,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.79538,
+          "location": -0.93587,
+          "guessing": 0.11965
+        }
+      },
+      {
+        "rank": 7,
+        "cosine_similarity": 0.817,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Fractions and Decimals",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Which of these fractions is larger than 1/2?",
+        "options": [
+          {
+            "label": "A",
+            "text": "3/5"
+          },
+          {
+            "label": "B",
+            "text": "3/6"
+          },
+          {
+            "label": "C",
+            "text": "3/8"
+          },
+          {
+            "label": "D",
+            "text": "3/10"
+          }
+        ],
+        "correct_option": "A",
+        "pct_correct_intl_avg": 46,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.5403,
+          "location": 0.74604,
+          "guessing": 0.28412
+        }
+      },
+      {
+        "rank": 8,
+        "cosine_similarity": 0.78,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Two- and Three-Dimensional Shapes",
+        "cognitive_domain": "Knowing Facts and Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "All of the pupils in a class cut out paper shapes. The teacher picked one out and said, “This shape is a triangle.” Which of these statements MUST be correct?",
+        "options": [
+          {
+            "label": "A",
+            "text": "The shape has three sides."
+          },
+          {
+            "label": "B",
+            "text": "The shape has a right angle."
+          },
+          {
+            "label": "C",
+            "text": "The shape has equal sides."
+          },
+          {
+            "label": "D",
+            "text": "The shape has equal angles."
+          }
+        ],
+        "correct_option": "A",
+        "pct_correct_intl_avg": 71,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.393,
+          "location": -1.29,
+          "guessing": 0.117
+        }
+      },
+      {
+        "rank": 9,
+        "cosine_similarity": 0.81,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Data",
+        "main_topic": "Data Interpretation",
+        "cognitive_domain": "Reasoning",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "The graph shows the heights of four girls.\n\n[Image: Bar graph showing heights of four girls]\n\nThe names are missing from the graph. Debbie is the tallest. Amy is the shortest. Dawn is taller than Sarah. How tall is Sarah?",
+        "options": [
+          {
+            "label": "A",
+            "text": "75 cm"
+          },
+          {
+            "label": "B",
+            "text": "100 cm"
+          },
+          {
+            "label": "C",
+            "text": "125 cm"
+          },
+          {
+            "label": "D",
+            "text": "150 cm"
+          }
+        ],
+        "correct_option": "B",
+        "figure_description": "A vertical bar graph titled \"Names of Girls\" along the horizontal axis, and labeled \"Height (Centimeters)\" along the vertical axis.\nThe vertical axis has tick marks from 0 to 150 in increments of 25 (0, 25, 50, 75, 100, 125, 150).\nThere are four unlabeled shaded bars from left to right:\n- The first bar has a height of 100.\n- The second bar has a height of 150.\n- The third bar has a height of 125.\n- The fourth bar has a height of 75.",
+        "pct_correct_intl_avg": 67,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.711,
+          "location": -0.592,
+          "guessing": 0.115
+        }
+      },
+      {
+        "rank": 10,
+        "cosine_similarity": 0.726,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Data Representation, Analysis, and Probability",
+        "cognitive_domain": "Using Complex Procedures",
+        "item_type": "constructed_response",
+        "max_points": 2,
+        "scaled_points": 2,
+        "stem": "This table shows the ages of the girls and boys in a club.\n\n| Age | Number of Girls | Number of Boys |\n| :--- | :--- | :--- |\n| 8 | 4 | 6 |\n| 9 | 8 | 4 |\n| 10 | 6 | 10 |\n\nUse the information in the table to complete the graph for ages 9 and 10.\n\n[Image: Double bar graph]",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "All 4 bars correct for height, placement, and shading.",
+              "All 4 bars of correct height; either bars misplaced or bars shaded incorrectly in no more than one set (i.e., for age 9 or age 10)."
+            ]
+          },
+          {
+            "category": "Partially Correct",
+            "descriptors": [
+              "Placement, shading, and height all correct for one, two, or three bars. (At least one bar completely correct).",
+              "All 4 bars of correct height, but two or more errors involving placement or shading."
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Work is shown, but no bars are drawn. For example: only numbers are shown on the graph.",
+              "Other incorrect."
+            ]
+          }
+        ],
+        "figure_description": "An incomplete double bar graph. The vertical axis is labeled \"Number\" with tick marks and horizontal grid lines at 2, 4, 6, 8, and 10. The horizontal axis is labeled \"Age\" with positions for 8, 9, and 10. A legend in the upper right shows a dark grey shaded square labeled \"Girls\" and an unshaded (white) square labeled \"Boys\". For age 8, two bars are plotted: a grey shaded bar of height 4 (Girls) followed by an adjacent white unshaded bar of height 6 (Boys). For ages 9 and 10, no bars are drawn.",
+        "pct_correct_intl_avg": 41,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "GPCM",
+        "calibrated_parameters": {
+          "slope": 0.64,
+          "location": 0.018,
+          "step1": -0.722,
+          "step2": 0.722
+        }
+      }
+    ]
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 2.02,
+      "confidence": 0.57,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.07,
+        "1": 0.33,
+        "2": 0.39999999999999997,
+        "3": 0.08,
+        "4": 0.04,
+        "5": 0.03,
+        "6": 0.03,
+        "7": 0.01,
+        "8": 0.01
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 1.01,
+      "confidence": 0.56,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.49,
+        "1": 0.25,
+        "2": 0.14,
+        "3": 0.05,
+        "4": 0.02,
+        "5": 0.01,
+        "6": 0.01,
+        "7": 0.01,
+        "8": 0.01,
+        "9": 0.01
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 3.46,
+      "confidence": 0.64,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.05,
+        "2": 0.06,
+        "3": 0.22,
+        "4": 0.65,
+        "5": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 5868,
+  "output_tokens": 45,
+  "cost_usd": 0.000246456,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791918361-v7WoETMGj8K8LGcDYXDO",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 2.02,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.33,
+          "2": 0.39999999999999997,
+          "3": 0.08,
+          "4": 0.04,
+          "5": 0.03,
+          "6": 0.03,
+          "7": 0.01,
+          "8": 0.01
+        },
+        "confidence": 0.57
+      },
+      "location": {
+        "type": "score",
+        "score": 1.01,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.49,
+          "1": 0.25,
+          "2": 0.14,
+          "3": 0.05,
+          "4": 0.02,
+          "5": 0.01,
+          "6": 0.01,
+          "7": 0.01,
+          "8": 0.01,
+          "9": 0.01
+        },
+        "confidence": 0.56
+      },
+      "guessing": {
+        "type": "score",
+        "score": 3.46,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.05,
+          "2": 0.06,
+          "3": 0.22,
+          "4": 0.65,
+          "5": 0.01
+        },
+        "confidence": 0.64
+      }
+    },
+    "usage": {
+      "input_tokens": 5868,
+      "output_tokens": 45,
+      "cost": 0.000246456
+    },
+    "id": "gen-dec-1791918361-v7WoETMGj8K8LGcDYXDO",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T19:06:01+00:00",
+  "seconds": null
+}

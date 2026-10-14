@@ -1,0 +1,854 @@
+{
+  "item_id": "B09",
+  "assessment": "TIMSS 1999",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Fractions and Number Sense",
+  "main_topic": null,
+  "cognitive_domain": "Using Complex Procedures",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 1999/grade 8/Mathematics/B09"
+  ],
+  "similar_items": [
+    {
+      "rank": 1,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1999/grade 8/Mathematics/H08",
+      "item_id": "H08",
+      "assessment": "TIMSS 1999",
+      "cosine_similarity": 0.9008,
+      "pct_correct_intl_avg": 68,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.169,
+      "location": -0.405,
+      "guessing": 0.16
+    },
+    {
+      "rank": 2,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M032743",
+      "item_id": "M032743",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.7693,
+      "pct_correct_intl_avg": 49,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.575,
+      "location": -0.288
+    },
+    {
+      "rank": 3,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M022043",
+      "item_id": "M022043",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8583,
+      "pct_correct_intl_avg": 62.5,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.6518,
+      "location": -0.52336,
+      "guessing": 0.12486
+    },
+    {
+      "rank": 4,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M012001",
+      "item_id": "M012001",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8709,
+      "pct_correct_intl_avg": 49,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.466,
+      "location": 0.03,
+      "guessing": 0.154
+    },
+    {
+      "rank": 5,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1999/grade 8/Mathematics/N14",
+      "item_id": "N14",
+      "assessment": "TIMSS 1999",
+      "cosine_similarity": 0.8915,
+      "pct_correct_intl_avg": 61,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.503,
+      "location": 0.123,
+      "guessing": 0.29
+    },
+    {
+      "rank": 6,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1999/grade 8/Mathematics/F12",
+      "item_id": "F12",
+      "assessment": "TIMSS 1999",
+      "cosine_similarity": 0.8565,
+      "pct_correct_intl_avg": 50,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.817,
+      "location": 0.712,
+      "guessing": 0.243
+    },
+    {
+      "rank": 7,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M032745",
+      "item_id": "M032745",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.7947,
+      "pct_correct_intl_avg": 4,
+      "irt_model": "GPCM",
+      "scaled_points": 2,
+      "slope": 0.499,
+      "location": 2.207,
+      "step1": -1.288,
+      "step2": 1.288
+    },
+    {
+      "rank": 8,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M042031",
+      "item_id": "M042031",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8629,
+      "pct_correct_intl_avg": 50,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.62111,
+      "location": 0.52019,
+      "guessing": 0.24011
+    },
+    {
+      "rank": 9,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M022234A",
+      "item_id": "M022234A",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8379,
+      "pct_correct_intl_avg": 16.4,
+      "irt_model": "GPCM",
+      "scaled_points": 2,
+      "slope": 0.83737,
+      "location": 0.80177,
+      "step1": -0.42925,
+      "step2": 0.42925
+    },
+    {
+      "rank": 10,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1999/grade 8/Mathematics/N19",
+      "item_id": "N19",
+      "assessment": "TIMSS 1999",
+      "cosine_similarity": 0.8552,
+      "pct_correct_intl_avg": 49,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.209,
+      "location": -0.001
+    }
+  ],
+  "context": "item+references",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 1999",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Fractions and Number Sense",
+      "cognitive_domain": "Using Complex Procedures",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "Which picture shows that 2/5 is equivalent to 4/10 ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "[Image: 2-by-5 grid with 4 squares shaded]"
+        },
+        {
+          "label": "B",
+          "text": "[Image: 2-by-5 grid with 2 squares shaded]"
+        },
+        {
+          "label": "C",
+          "text": "[Image: 2-by-5 grid with 5 squares shaded in a checkerboard pattern]"
+        },
+        {
+          "label": "D",
+          "text": "[Image: Rectangle with 2 solid circles and 3 open circles]"
+        }
+      ],
+      "correct_option": "A",
+      "figure_description": "Four labeled options (A, B, C, D):\n- Option A shows a rectangle divided into a 2-by-5 grid of 10 equal squares. The two squares in the first column and the two squares in the fifth column are completely shaded black (4 of 10 squares shaded).\n- Option B shows a rectangle divided into a 2-by-5 grid of 10 equal squares. The top-left square (row 1, column 1) and bottom-right square (row 2, column 5) are shaded black (2 of 10 squares shaded).\n- Option C shows a rectangle divided into a 2-by-5 grid of 10 equal squares. In the top row, the 1st, 3rd, and 5th squares are shaded black; in the bottom row, the 2nd and 4th squares are shaded black (5 of 10 squares shaded in a checkerboard pattern).\n- Option D shows a rectangular box containing five small circles scattered inside: two circles are solid black and three circles are open white circles with a black outline.",
+      "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data."
+    },
+    "reference_items": [
+      {
+        "rank": 1,
+        "cosine_similarity": 0.901,
+        "assessment": "TIMSS 1999",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Fractions and Number Sense",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Which shows 2/3 of the square shaded?",
+        "options": [
+          {
+            "label": "A",
+            "text": "[Image: Square divided horizontally into six equal strips with the top two strips shaded]"
+          },
+          {
+            "label": "B",
+            "text": "[Image: Square with an unshaded triangle at the bottom and shaded regions above]"
+          },
+          {
+            "label": "C",
+            "text": "[Image: Square divided vertically into three strips with the two narrow outer strips shaded]"
+          },
+          {
+            "label": "D",
+            "text": "[Image: Square with an unshaded triangle spanning from the bottom edge to the top center and two shaded triangles on the sides]"
+          },
+          {
+            "label": "E",
+            "text": "[Image: Square divided vertically into three equal strips with the two outer strips shaded]"
+          }
+        ],
+        "correct_option": "E",
+        "figure_description": "Five squares, labeled A through E, are shown in a row:\n- Square A is divided horizontally into 6 equal strips. The top 2 strips are shaded gray, and the bottom 4 strips are unshaded white.\n- Square B has line segments extending from the bottom-left corner to the center, from the bottom-right corner to the center, and from the center to the top-right corner. The triangle formed at the bottom is white, and the remaining area of the square is shaded gray.\n- Square C is divided vertically into three regions by two vertical lines: two narrow gray strips on the left and right edges, each approximately one-sixth the width of the square, and a wider unshaded white region in the middle.\n- Square D contains an unshaded white isosceles triangle whose base is the bottom edge of the square and whose apex touches the midpoint of the top edge. The two right-triangular regions to the left and right of this triangle are shaded gray.\n- Square E is divided vertically into 3 strips of equal width. The leftmost and rightmost strips are shaded gray, and the middle strip is unshaded white.",
+        "pct_correct_intl_avg": 68,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.169,
+          "location": -0.405,
+          "guessing": 0.16
+        }
+      },
+      {
+        "rank": 2,
+        "cosine_similarity": 0.769,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Symmetry and Transformations",
+        "cognitive_domain": "Using Concepts",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "There are several ways of arranging the tiles so that they form patterns. The grid below has been shaded to show how tiles can be placed on some of the squares. The pattern can be continued so that AB and CD are lines of symmetry.\n\n[Image: A 4 by 4 grid with symmetry axes AB and CD]\n\nShade in all the remaining squares on the grid so that the resulting pattern is symmetrical about line AB, and also is symmetrical about line CD.",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Both quadrants correctly shaded (pattern shaded or demarcated in some way making symmetrical pattern about both axes, AB and CD)."
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "One of the two quadrants correctly shaded.",
+              "Incorrect (including crossed out/erased, stray marks, illegible, or off task)."
+            ]
+          }
+        ],
+        "figure_description": "A 4-by-4 square grid of 16 unit squares, divided into four 2-by-2 quadrants by a vertical line AB (with A at the top, B at the bottom) and a horizontal line CD (with C at the left, D at the right).\nTwo quadrants are shaded with tile patterns:\n- Top-right 2-by-2 quadrant (rows 1-2, columns 3-4):\n  - Row 1, column 3: small black square in the top-left corner.\n  - Row 1, column 4: small black square in the top-right corner.\n  - Row 2, column 3: small black square in the bottom-left corner.\n  - Row 2, column 4: small black square in the bottom-right corner.\n  - In the center of this 2-by-2 quadrant (where the four squares meet), a large black diamond (rotated square) is formed across the inner corners of all four squares.\n- Bottom-left 2-by-2 quadrant (rows 3-4, columns 1-2):\n  - Shaded with the exact same pattern: four small black corner squares at the outer corners of the 2-by-2 quadrant, and a large black diamond centered where the four squares meet.\nThe top-left 2-by-2 quadrant and bottom-right 2-by-2 quadrant are entirely blank (unshaded).",
+        "pct_correct_intl_avg": 49,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.575,
+          "location": -0.288
+        }
+      },
+      {
+        "rank": 3,
+        "cosine_similarity": 0.858,
+        "assessment": "TIMSS 2007",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Fractions and Decimals",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: Rectangle divided into 12 squares with some squares shaded]\n\nWhich circle has approximately the same fraction of its area shaded as the rectangle above?",
+        "options": [
+          {
+            "label": "A",
+            "text": "[Image: Circle with shaded sector]"
+          },
+          {
+            "label": "B",
+            "text": "[Image: Circle with shaded sector]"
+          },
+          {
+            "label": "C",
+            "text": "[Image: Circle with shaded sector]"
+          },
+          {
+            "label": "D",
+            "text": "[Image: Circle with shaded sector]"
+          },
+          {
+            "label": "E",
+            "text": "[Image: Circle with shaded sector]"
+          }
+        ],
+        "correct_option": "D",
+        "figure_description": "At the top, a rectangle is divided into a grid of 3 rows and 4 columns, forming 12 equal-sized squares. The bottom row has all 4 squares shaded gray. The middle row has the leftmost square shaded gray and the other 3 squares unshaded (white). The top row has all 4 squares unshaded. In total, 5 of the 12 squares are shaded.\n\nEach option shows a circle with a center point and radial lines dividing it into sectors, with one sector shaded gray:\n- Option A: The circle is divided by a vertical radius pointing up (12 o'clock) and another radius pointing down and slightly left (about 6:30). The larger sector on the right side is shaded gray (covering slightly more than half of the circle).\n- Option B: The circle is divided by a vertical diameter passing through the center from 12 o'clock to 6 o'clock. The right half of the circle is shaded gray (exactly 1/2 of the circle).\n- Option C: The circle is divided by a vertical radius pointing up (12 o'clock) and a horizontal radius pointing left (9 o'clock). The sector extending clockwise from 12 o'clock to 9 o'clock is shaded gray (3/4 of the circle).\n- Option D: The circle is divided by a vertical radius pointing up (12 o'clock) and another radius pointing down and to the right (about 4:30 to 5 o'clock). The sector between them on the right side is shaded gray (covering somewhat less than half of the circle, approximately 5/12 of the area).\n- Option E: The circle is divided by a vertical radius pointing up (12 o'clock) and another radius pointing up and slightly left (about 11 o'clock). The major sector extending clockwise from 12 o'clock to 11 o'clock is shaded gray (covering almost the entire circle, about 11/12 of the area).",
+        "pct_correct_intl_avg": 62.5,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.6518,
+          "location": -0.52336,
+          "guessing": 0.12486
+        }
+      },
+      {
+        "rank": 4,
+        "cosine_similarity": 0.871,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Fractions and Decimals",
+        "cognitive_domain": "Using Concepts",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "In the figure, how many MORE small squares need to be shaded so that 4/5 of the small squares are shaded?\n\n[Image: Grid of small squares]",
+        "options": [
+          {
+            "label": "A",
+            "text": "5"
+          },
+          {
+            "label": "B",
+            "text": "4"
+          },
+          {
+            "label": "C",
+            "text": "3"
+          },
+          {
+            "label": "D",
+            "text": "2"
+          },
+          {
+            "label": "E",
+            "text": "1"
+          }
+        ],
+        "correct_option": "A",
+        "figure_description": "A rectangle partitioned into a 2-by-5 grid of 10 identical small squares (2 rows and 5 columns). Three squares are shaded gray: the first two squares in the top row (columns 1 and 2) and the first square in the bottom row (column 1). The remaining seven squares are unshaded (white).",
+        "pct_correct_intl_avg": 49,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.466,
+          "location": 0.03,
+          "guessing": 0.154
+        }
+      },
+      {
+        "rank": 5,
+        "cosine_similarity": 0.892,
+        "assessment": "TIMSS 1999",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Fractions and Number Sense",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "In which list of fractions are all of the fractions equivalent?",
+        "options": [
+          {
+            "label": "A",
+            "text": "1/2 , 2/4 , 4/6"
+          },
+          {
+            "label": "B",
+            "text": "2/3 , 4/6 , 8/12"
+          },
+          {
+            "label": "C",
+            "text": "2/5 , 4/10 , 8/50"
+          },
+          {
+            "label": "D",
+            "text": "3/4 , 4/6 , 6/8"
+          }
+        ],
+        "correct_option": "B",
+        "pct_correct_intl_avg": 61,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.503,
+          "location": 0.123,
+          "guessing": 0.29
+        }
+      },
+      {
+        "rank": 6,
+        "cosine_similarity": 0.856,
+        "assessment": "TIMSS 1999",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Fractions and Number Sense",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "What fraction of the circle is shaded?\n\n[Image: A circle divided into two sectors, one shaded and one unshaded]",
+        "options": [
+          {
+            "label": "A",
+            "text": "Between 0 and 1/4"
+          },
+          {
+            "label": "B",
+            "text": "Between 1/4 and 1/2"
+          },
+          {
+            "label": "C",
+            "text": "Between 1/2 and 3/4"
+          },
+          {
+            "label": "D",
+            "text": "Between 3/4 and 1"
+          }
+        ],
+        "correct_option": "C",
+        "figure_description": "A circle with a center dot. Two radii divide the circle into two sectors. One radius extends straight up from the center to the 12 o'clock position. The other radius extends to the left, slightly below the horizontal 9 o'clock position. The larger sector, which runs clockwise from the top radius around through the right side and bottom to the lower-left radius, is shaded solid gray. The smaller remaining sector in the upper-left area is white (unshaded).",
+        "pct_correct_intl_avg": 50,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.817,
+          "location": 0.712,
+          "guessing": 0.243
+        }
+      },
+      {
+        "rank": 7,
+        "cosine_similarity": 0.795,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Symmetry and Transformations",
+        "cognitive_domain": "Reasoning",
+        "item_type": "constructed_response",
+        "max_points": 2,
+        "scaled_points": 2,
+        "stem": "[Image: Four square tiles labeled A, B, C, and D]\n\nContinue to identify the tiles as shown above. On the grid below, write the letters A, B, C, or D to make a symmetrical pattern where PQ and RS would be lines of symmetry. Arrange the tiles to make a pattern.\n\n[Image: A 4 by 4 grid with axes PQ and RS]",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "All cells are correct with symmetrical geometric pattern about both axes, PQ and RS (letters or drawings)."
+            ]
+          },
+          {
+            "category": "Partial Response",
+            "descriptors": [
+              "With respect to at least one of the original tiles the other three tiles are correct."
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Letters placed symmetrically with respect to both PQ and RS.",
+              "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)."
+            ]
+          }
+        ],
+        "figure_description": "At the top, four square tiles labeled A, B, C, and D are shown in a row. Each tile is divided conceptually into four smaller quadrants:\n- Tile A: A shaded black triangle in the upper-left corner (formed by the diagonal connecting the midpoint of the top edge and the midpoint of the left edge) and a solid black square in the lower-right quadrant.\n- Tile B: A shaded black triangle in the upper-right corner and a solid black square in the lower-left quadrant.\n- Tile C: A solid black square in the upper-left quadrant and a shaded black triangle in the lower-right corner.\n- Tile D: A solid black square in the upper-right quadrant and a shaded black triangle in the lower-left corner.\n\nBelow is a 4-by-4 square grid of 16 unit squares, divided into four 2-by-2 quadrants by a vertical line PQ and a horizontal line RS. P is at the top of the vertical line, Q is at the bottom; R is at the left of the horizontal line, S is at the right. Four squares are already labeled:\n- Row 1 (top), column 1 (left): 'D'\n- Row 2, column 4 (right): 'C'\n- Row 3, column 2: 'B'\n- Row 4 (bottom), column 3: 'A'\nThe remaining 12 squares are blank.",
+        "pct_correct_intl_avg": 4,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "GPCM",
+        "calibrated_parameters": {
+          "slope": 0.499,
+          "location": 2.207,
+          "step1": -1.288,
+          "step2": 1.288
+        }
+      },
+      {
+        "rank": 8,
+        "cosine_similarity": 0.863,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Fractions and Decimals",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "The fractions 4/14 and □/21 are equivalent.\n\nWhat is the value of □?",
+        "options": [
+          {
+            "label": "A",
+            "text": "6"
+          },
+          {
+            "label": "B",
+            "text": "7"
+          },
+          {
+            "label": "C",
+            "text": "11"
+          },
+          {
+            "label": "D",
+            "text": "14"
+          }
+        ],
+        "correct_option": "A",
+        "pct_correct_intl_avg": 50,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.62111,
+          "location": 0.52019,
+          "guessing": 0.24011
+        }
+      },
+      {
+        "rank": 9,
+        "cosine_similarity": 0.838,
+        "assessment": "TIMSS 2007",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Geometric Shapes",
+        "cognitive_domain": "Applying",
+        "item_type": "constructed_response",
+        "max_points": 2,
+        "scaled_points": 2,
+        "stem": "[Image: A rectangle]\n\nA. On the grid below, draw a rectangle whose length is three-fourths the length of the rectangle above, and whose width is two and one-half times the width of the rectangle above. Label the length and width of the new rectangle in centimeters on the figure. Each square on the grid is 1 cm by 1 cm.\n\n[Image: A grid of squares]",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "6 cm and 5 cm. Rectangle is correctly drawn and labeled (on the figure)."
+            ]
+          },
+          {
+            "category": "Partial Response",
+            "descriptors": [
+              "Rectangle is correctly labeled, 6 cm and 5 cm, but drawing is incorrect.",
+              "Correct drawing is shown, but the length and/or width is not labeled or is incorrectly labeled."
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "One side is 6 cm and other side is incorrect, explicitly written or implicit from the drawing.",
+              "One side is 5 cm and other side is incorrect, explicitly written or implicit from the drawing.",
+              "Other incorrect (including crossed out/erased, stray marks, illegible, or off task). Also includes responses in which the drawing is missing."
+            ]
+          },
+          {
+            "category": "Nonresponse",
+            "descriptors": [
+              "Blank"
+            ]
+          }
+        ],
+        "scoring_notes": "Note: There is no distinction made between responses with or without units.",
+        "figure_description": "At the top of the page is a rectangle drawn horizontally. Inside near the bottom edge is the word \"Length\", and below the bottom edge is labeled \"8 cm\". Along the inside right edge, printed vertically, is \"Width\" and \"2 cm\". Below Part A is a dashed-line grid measuring 10 squares wide by 15 squares high.",
+        "pct_correct_intl_avg": 16.4,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+        "irt_model": "GPCM",
+        "calibrated_parameters": {
+          "slope": 0.83737,
+          "location": 0.80177,
+          "step1": -0.42925,
+          "step2": 0.42925
+        }
+      },
+      {
+        "rank": 10,
+        "cosine_similarity": 0.855,
+        "assessment": "TIMSS 1999",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Fractions and Number Sense",
+        "cognitive_domain": "Knowing",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Shade in 3/8 of the unit squares in the grid.\n\n[Image: Grid of unit squares]",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "9 squares are shaded (regardless of which squares)",
+              "Other correct (e.g., 6 full squares and 6 half squares shaded or other equivalent of nine squares)"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "3 squares shaded",
+              "8 squares shaded",
+              "11 or 13 squares shaded",
+              "3 squares shaded and 8 more squares shaded (areas are shaded separately)",
+              "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "figure_description": "A rectangular grid divided into 4 rows and 6 columns of identical, unshaded unit squares, totaling 24 squares.",
+        "pct_correct_intl_avg": 49,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.209,
+          "location": -0.001
+        }
+      }
+    ]
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 4.57,
+      "confidence": 0.55,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.01,
+        "2": 0.05,
+        "3": 0.11,
+        "4": 0.26,
+        "5": 0.31,
+        "6": 0.22,
+        "7": 0.02,
+        "8": 0.01
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 2.67,
+      "confidence": 0.68,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.08,
+        "2": 0.47000000000000003,
+        "3": 0.23,
+        "4": 0.15,
+        "5": 0.04,
+        "6": 0.01,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 3.1,
+      "confidence": 0.39,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.02,
+        "2": 0.32,
+        "3": 0.17,
+        "4": 0.47,
+        "5": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 7194,
+  "output_tokens": 45,
+  "cost_usd": 0.000302148,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791918362-PTgQq7Us7LBSiEiSY8Xu",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 4.57,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.05,
+          "3": 0.11,
+          "4": 0.26,
+          "5": 0.31,
+          "6": 0.22,
+          "7": 0.02,
+          "8": 0.01
+        },
+        "confidence": 0.55
+      },
+      "location": {
+        "type": "score",
+        "score": 2.67,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.08,
+          "2": 0.47000000000000003,
+          "3": 0.23,
+          "4": 0.15,
+          "5": 0.04,
+          "6": 0.01,
+          "7": 0,
+          "8": 0,
+          "9": 0
+        },
+        "confidence": 0.68
+      },
+      "guessing": {
+        "type": "score",
+        "score": 3.1,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.02,
+          "2": 0.32,
+          "3": 0.17,
+          "4": 0.47,
+          "5": 0.01
+        },
+        "confidence": 0.39
+      }
+    },
+    "usage": {
+      "input_tokens": 7194,
+      "output_tokens": 45,
+      "cost": 0.000302148
+    },
+    "id": "gen-dec-1791918362-PTgQq7Us7LBSiEiSY8Xu",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T19:06:03+00:00",
+  "seconds": null
+}

@@ -1,0 +1,884 @@
+{
+  "item_id": "U4",
+  "assessment": "TIMSS 1995",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Patterns, Relations, and Functions",
+  "main_topic": null,
+  "cognitive_domain": "Knowing",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/U4"
+  ],
+  "similar_items": [
+    {
+      "rank": 1,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M031098",
+      "item_id": "M031098",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8501,
+      "pct_correct_intl_avg": 47.7,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.33503,
+      "location": 0.30171,
+      "guessing": 0.17429
+    },
+    {
+      "rank": 2,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/J5",
+      "item_id": "J5",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.8161,
+      "pct_correct_intl_avg": 39,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.273,
+      "location": 0.787,
+      "guessing": 0.195
+    },
+    {
+      "rank": 3,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/J9",
+      "item_id": "J9",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.8252,
+      "pct_correct_intl_avg": 73,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.794,
+      "location": -0.761,
+      "guessing": 0.283
+    },
+    {
+      "rank": 4,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M011027",
+      "item_id": "M011027",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8492,
+      "pct_correct_intl_avg": 69,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.707,
+      "location": -0.741,
+      "guessing": 0.167
+    },
+    {
+      "rank": 5,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M031252",
+      "item_id": "M031252",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8369,
+      "pct_correct_intl_avg": 62,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.91399,
+      "location": -0.40191,
+      "guessing": 0.17455
+    },
+    {
+      "rank": 6,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M031334",
+      "item_id": "M031334",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8311,
+      "pct_correct_intl_avg": 39.5,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.26107,
+      "location": 0.78162,
+      "guessing": 0.23725
+    },
+    {
+      "rank": 7,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M031227",
+      "item_id": "M031227",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8278,
+      "pct_correct_intl_avg": 15.5,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.17007,
+      "location": 1.06105
+    },
+    {
+      "rank": 8,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M041300C",
+      "item_id": "M041300C",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.7457,
+      "pct_correct_intl_avg": 30.6,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.0229,
+      "location": 0.44691
+    },
+    {
+      "rank": 9,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/V4A",
+      "item_id": "V4A",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.7387,
+      "pct_correct_intl_avg": 24,
+      "irt_model": "GPCM",
+      "scaled_points": 2,
+      "slope": 0.357,
+      "location": -0.012,
+      "step1": 1.964,
+      "step2": -1.964
+    },
+    {
+      "rank": 10,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M051601",
+      "item_id": "M051601",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8217,
+      "pct_correct_intl_avg": 54,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.88856,
+      "location": -0.3847
+    },
+    {
+      "rank": 11,
+      "found_by": "same model",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M031344A",
+      "item_id": "M031344A",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.7717,
+      "pct_correct_intl_avg": 41,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.51,
+      "location": 0.364
+    },
+    {
+      "rank": 12,
+      "found_by": "same model",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M041250",
+      "item_id": "M041250",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8237,
+      "pct_correct_intl_avg": 43.8,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.91983,
+      "location": -0.06528
+    }
+  ],
+  "context": "item+references",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 1995",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Patterns, Relations, and Functions",
+      "cognitive_domain": "Knowing",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "These numbers are part of a pattern.\n\n50 , 46 , 42 , 38 , 34 , ...\n\nWhat do you have to do to get the next number?\n\nAnswer: ____",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "“The number decreases by 4”.",
+            "30 OR 30,26,22,. . .",
+            "Other correct."
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "Indicates an increase by 4.",
+            "Focuses on the number 4. No indication of increase or decrease.",
+            "Other incorrect, includes decreases by 4 that are wrong numbers in the pattern."
+          ]
+        }
+      ],
+      "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data."
+    },
+    "reference_items": [
+      {
+        "rank": 1,
+        "cosine_similarity": 0.85,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Patterns and Relationships",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "The first four terms in a number pattern are shown below.\n\n2, 4, 8, 16, ...\n\nWhat is the next number in the pattern?",
+        "options": [
+          {
+            "label": "A",
+            "text": "24"
+          },
+          {
+            "label": "B",
+            "text": "30"
+          },
+          {
+            "label": "C",
+            "text": "32"
+          },
+          {
+            "label": "D",
+            "text": "64"
+          }
+        ],
+        "correct_option": "C",
+        "pct_correct_intl_avg": 47.7,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.33503,
+          "location": 0.30171,
+          "guessing": 0.17429
+        }
+      },
+      {
+        "rank": 2,
+        "cosine_similarity": 0.816,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Patterns, Relations, and Functions",
+        "cognitive_domain": "Solving Problems",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "What do you have to do to each number in Column A to get the number next to it in Column B?\n\n| Column A | Column B |\n| --- | --- |\n| 10 | 2 |\n| 15 | 3 |\n| 25 | 5 |\n| 50 | 10 |",
+        "options": [
+          {
+            "label": "A",
+            "text": "Add 8 to the number in Column A."
+          },
+          {
+            "label": "B",
+            "text": "Subtract 8 from the number in Column A."
+          },
+          {
+            "label": "C",
+            "text": "Multiply the number in Column A by 5."
+          },
+          {
+            "label": "D",
+            "text": "Divide the number in Column A by 5."
+          }
+        ],
+        "correct_option": "D",
+        "pct_correct_intl_avg": 39,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.273,
+          "location": 0.787,
+          "guessing": 0.195
+        }
+      },
+      {
+        "rank": 3,
+        "cosine_similarity": 0.825,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Whole Numbers",
+        "cognitive_domain": "Performing Routine Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Here is part of a wall chart that lists numbers from 1 to 100.\n\n[Image: Part of a 1 to 100 wall chart]\n\nBelow is part of the same wall chart. What number should be in the box with the question mark inside?\n\n[Image: Three boxes containing 43, 53, and ?]",
+        "options": [
+          {
+            "label": "A",
+            "text": "34"
+          },
+          {
+            "label": "B",
+            "text": "44"
+          },
+          {
+            "label": "C",
+            "text": "54"
+          },
+          {
+            "label": "D",
+            "text": "64"
+          }
+        ],
+        "correct_option": "D",
+        "figure_description": "The first image shows the top section of a 100-number wall chart organized in 10 columns:\n- Row 1 shows numbers 1 through 10 from left to right.\n- Row 2 shows numbers 11 through 20 from left to right.\n- Row 3 shows numbers 21 through 25 in the first five columns, with the remainder of the chart cut off.\n\nThe second image shows three individual square boxes from the chart arranged in a step-down pattern from top-left to bottom-right:\n- The top-left box contains the number 43.\n- The middle box contains the number 53, shifted down and to the right.\n- The third box contains a question mark (?), positioned directly below and adjacent to the right side of the box with 53, sharing its top-left corner with the bottom-right corner of the 53 box.",
+        "pct_correct_intl_avg": 73,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.794,
+          "location": -0.761,
+          "guessing": 0.283
+        }
+      },
+      {
+        "rank": 4,
+        "cosine_similarity": 0.849,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Patterns and Relationships",
+        "main_topic": "Patterns",
+        "cognitive_domain": "Reasoning",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Here is a number pattern.\n\n100, 1, 99, 2, 98, □, □, □\n\nWhat three numbers should go in the boxes?",
+        "options": [
+          {
+            "label": "A",
+            "text": "3, 97, 4"
+          },
+          {
+            "label": "B",
+            "text": "4, 97, 5"
+          },
+          {
+            "label": "C",
+            "text": "97, 3, 96"
+          },
+          {
+            "label": "D",
+            "text": "97, 4, 96"
+          }
+        ],
+        "correct_option": "A",
+        "pct_correct_intl_avg": 69,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.707,
+          "location": -0.741,
+          "guessing": 0.167
+        }
+      },
+      {
+        "rank": 5,
+        "cosine_similarity": 0.837,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Patterns and Relationships",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "If the pattern 3, 6, 9, 12 was continued, which of these numbers would be one of the numbers in the pattern?",
+        "options": [
+          {
+            "label": "A",
+            "text": "26"
+          },
+          {
+            "label": "B",
+            "text": "27"
+          },
+          {
+            "label": "C",
+            "text": "28"
+          },
+          {
+            "label": "D",
+            "text": "29"
+          }
+        ],
+        "correct_option": "B",
+        "pct_correct_intl_avg": 62,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.91399,
+          "location": -0.40191,
+          "guessing": 0.17455
+        }
+      },
+      {
+        "rank": 6,
+        "cosine_similarity": 0.831,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Patterns and Relationships",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "2, 5, 11, 23, ...\n\nStarting the pattern at 2, which of these rules would give each of the terms in the number pattern above?",
+        "options": [
+          {
+            "label": "A",
+            "text": "Add 1 to the previous term and then multiply by 2."
+          },
+          {
+            "label": "B",
+            "text": "Multiply the previous term by 3 and then subtract 1."
+          },
+          {
+            "label": "C",
+            "text": "Multiply the previous term by 2 and then add 1."
+          },
+          {
+            "label": "D",
+            "text": "Subtract 1 from the previous term and then multiply by 3."
+          }
+        ],
+        "correct_option": "C",
+        "pct_correct_intl_avg": 39.5,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.26107,
+          "location": 0.78162,
+          "guessing": 0.23725
+        }
+      },
+      {
+        "rank": 7,
+        "cosine_similarity": 0.828,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Patterns and Relationships",
+        "cognitive_domain": "Reasoning",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: Diagram of Sean's Rule]\n\nSean used the same rule to get the number in the □ from the number in the △. What was the rule?\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Double the number in the triangle and add 1 (e.g., double and add 1; multiply by 2 and add 1)",
+              "Other correct, including adding the next highest number to the given number in the triangle (e.g., 4 + 5 = 9)"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+            ]
+          },
+          {
+            "category": "Nonresponse",
+            "descriptors": [
+              "Blank"
+            ]
+          }
+        ],
+        "figure_description": "Four horizontal rows show input-output pairs:\n- Row 1: An upward-pointing triangle containing the number 4 connects via a right-pointing horizontal arrow labeled \"Sean's Rule\" to a square containing the number 9.\n- Row 2: A triangle containing the number 5 connects via a right-pointing arrow labeled \"Sean's Rule\" to a square containing the number 11.\n- Row 3: A triangle containing the number 8 connects via a right-pointing arrow labeled \"Sean's Rule\" to a square containing the number 17.\n- Row 4: A triangle containing the number 11 connects via a right-pointing arrow labeled \"Sean's Rule\" to a square containing the number 23.",
+        "pct_correct_intl_avg": 15.5,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.17007,
+          "location": 1.06105
+        }
+      },
+      {
+        "rank": 8,
+        "cosine_similarity": 0.746,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometric Shapes and Measures",
+        "main_topic": "Two- and Three-dimensional Shapes",
+        "cognitive_domain": "Reasoning",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Geometry Tiles\nInstruction:\n\nFor this item, you have been given a piece of cardboard with 6 tiles like the ones shown below. Take the piece of cardboard, and punch out the 6 tiles.\n\nIf you do not have the piece of cardboard, raise your hand.\n\n4 Triangle Tiles\n[Image: Four triangle tiles]\n\n2 Trapezoid Tiles\n[Image: Two trapezoid tiles]\n\nThese tiles can be used to make new figures. One problem has been done for you\n\nUSE: 3 Triangle Tiles\nMAKE: A trapezoid\nSHOW: Draw it on the grid.\n[Image: Example showing a trapezoid drawn on the grid]\n\nNow try these problems.\n\nC.\n\nUSE: 2 Trapezoid Tiles\nMAKE: A 6-sided figure that is not the same shape as the one you made in Part B\nSHOW: Draw it on the grid.\n\n[Image: Triangular grid]",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Any of four figures (6-sided) that was not used in part B."
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Repeats a correct figure already given in part B",
+              "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          },
+          {
+            "category": "Nonresponse",
+            "descriptors": [
+              "Blank"
+            ]
+          }
+        ],
+        "figure_description": "The stem includes four diagrams:\n1. '4 Triangle Tiles': Four identical equilateral triangles of unit side length, arranged in a row pointing alternately up, down, up, and down.\n2. '2 Trapezoid Tiles': Two identical isosceles trapezoids each composed of three equilateral triangle units (bottom base 2 units, top base 1 unit, legs 1 unit for the first one; and inverted with top base 2 units, bottom base 1 unit for the second one).\n3. Worked example grid: An isometric grid forming a parallelogram with horizontal top and bottom sides of 3 units each and slanted sides of 2 units each, divided by dashed lines into 2 rows of 6 equilateral triangles. In the top-right portion, a trapezoid made of 3 triangle units (top side 1 unit, bottom side 2 units, slanted sides 1 unit) is outlined in bold solid lines.\n4. Part C response grid: An identical empty parallelogram-shaped isometric grid with top and bottom edges of 3 units, slanted sides of 2 units, divided into 2 rows of 6 equilateral triangle units by dashed lines.",
+        "pct_correct_intl_avg": 30.6,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.0229,
+          "location": 0.44691
+        }
+      },
+      {
+        "rank": 9,
+        "cosine_similarity": 0.739,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Whole Numbers",
+        "cognitive_domain": "Solving Problems",
+        "item_type": "constructed_response",
+        "max_points": 2,
+        "scaled_points": 2,
+        "stem": "In a game, Mysong and Naoki are making problems. They each have four cards like these.\n\n[1] [2] [3] [4]\n\nThe winner of the game is the person who can make the problem with the largest answer.\n\nMysong placed the cards like this.\n\n[Image: Mysong's card placement]\n\nNaoki placed the cards like this.\n\n[Image: Naoki's card placement]\n\nWho won this game? ____\nHow do you know? ____\n____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Mysong. 64 and 55 are shown (or 9, which is the difference between 64 and 55) with a correct verbal explanation."
+            ]
+          },
+          {
+            "category": "Partially Correct",
+            "descriptors": [
+              "Mysong. 64 and 55 are shown (or 43 − 31 > 24 − 21) with an unsatisfactory explanation.",
+              "Mysong. 64 and 55 are shown (or 43 − 31 > 24 − 21) without any further explanation.",
+              "Mysong. The response given is a verbal explanation. Either 64 or 55 is shown but not both.",
+              "Mysong. The response gives no verbal or numeric explanation.",
+              "Other responses containing Mysong. For example, “because Mysong had the largest answer.”"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Neither Mysong nor Naoki win.",
+              "Naoki. There may or may not be an explanation.",
+              "Other incorrect, including “both won.”"
+            ]
+          }
+        ],
+        "figure_description": "Four square cards are shown in a row labeled with the digits 1, 2, 3, and 4.\nBelow are two vertical addition problems:\nUnder the heading \"Mysong placed the cards like this.\", two rows of two square cards form a vertical addition problem: top row has cards [4] and [3]; bottom row has cards [2] and [1], with a plus sign '+' to the left of the bottom row and a horizontal addition line underneath.\nUnder the heading \"Naoki placed the cards like this.\", two rows of two square cards form a vertical addition problem: top row has cards [3] and [1]; bottom row has cards [2] and [4], with a plus sign '+' to the left of the bottom row and a horizontal addition line underneath.",
+        "pct_correct_intl_avg": 24,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "GPCM",
+        "calibrated_parameters": {
+          "slope": 0.357,
+          "location": -0.012,
+          "step1": 1.964,
+          "step2": -1.964
+        }
+      },
+      {
+        "rank": 10,
+        "cosine_similarity": 0.822,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Patterns and Relationships",
+        "cognitive_domain": "Applying",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Cooney has to form figures 1 to 4 with matches.\n\nFigures 1, 2, and 3 are shown below.\n\nHe needs four matches to form figure 1, seven matches to form figure 2, and ten matches to form figure 3.\n\nHe uses the same rule each time to make the next figure in the pattern.\n\n[Image: that figure 1 forms a square with four matches, figure 2 forms two squares side by side with seven matches, and figure 3 forms three squares side by side with ten matches.]\n\nHow many matches will he need to form figure 4?\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "13"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "[Image: four squares side by side formed with 13 matches.]",
+              "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "figure_description": "Three figures made of matches arranged in a horizontal row, labeled below with numbers 1, 2, and 3:\n- Figure 1: 4 matches arranged to form a single square (one match on each of the four sides).\n- Figure 2: 7 matches arranged to form a row of two attached squares side by side, sharing one vertical match in the middle (2 top, 2 bottom, and 3 vertical matches).\n- Figure 3: 10 matches arranged to form a row of three attached squares side by side, each adjacent pair sharing a vertical match (3 top, 3 bottom, and 4 vertical matches).",
+        "pct_correct_intl_avg": 54,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.88856,
+          "location": -0.3847
+        }
+      },
+      {
+        "rank": 11,
+        "cosine_similarity": 0.772,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Using Concepts",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Get to 20 Number Game\n\nTwo children, Joan and Herbert, are learning to play a game “Get to 20.” Here are the rules for the game.\n\nGET TO 20\nRULES\n\nPick Tiles: Each player draws three number tiles.\n\nAdd Tiles: Each player places the three tiles to make an addition problem with the sum total closest to 20.\n\nFor example, here are four ways a player who draws [1] , [4] , and [5] could place the tiles:\n\n  [5] [1]          [4] [5]          [1] [5]             [1]\n+     [4]    or  +     [1]    or  +     [4]    or     + [5]\n---------        ---------        ---------         + [4]\n       55               46               19         -----\n                                                       10\n\nThis player should choose to show the addition problem\n  15\n+  4\n----\n  19\nbecause 19 is the total closest to 20.\n\nJoan and Herbert played the game “Get to 20.”\n\nJoan picked [2] , [7] , and [9] . Herbert picked [1] , [3] , and [6] .\n\nA. What is the addition problem that Joan could make with her number tiles that gives a total closest to 20? Be sure to include the total.",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "2 + 7 + 9 = 18",
+              "18 without addition statement shown"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "2 + 7 + 9 but 18 not shown",
+              "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 41,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.51,
+          "location": 0.364
+        }
+      },
+      {
+        "rank": 12,
+        "cosine_similarity": 0.824,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Fractions and Decimals",
+        "cognitive_domain": "Knowing",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Subtract:\n5.3 − 3.8\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "1.5"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "2.5",
+              "15",
+              "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          },
+          {
+            "category": "Nonresponse",
+            "descriptors": [
+              "Blank"
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 43.8,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.91983,
+          "location": -0.06528
+        }
+      }
+    ]
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 2.89,
+      "confidence": 0.39,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.07,
+        "1": 0.08,
+        "2": 0.28,
+        "3": 0.2,
+        "4": 0.25,
+        "5": 0.08,
+        "6": 0.02,
+        "7": 0.01,
+        "8": 0.01
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 2.31,
+      "confidence": 0.42,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.09,
+        "1": 0.32,
+        "2": 0.26,
+        "3": 0.12,
+        "4": 0.08,
+        "5": 0.06,
+        "6": 0.04,
+        "7": 0.02,
+        "8": 0.01,
+        "9": 0.0
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 7272,
+  "output_tokens": 31,
+  "cost_usd": 0.000305424,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791918361-bvULPtQpcjQoBYdc9Mvh",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 2.89,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.08,
+          "2": 0.28,
+          "3": 0.2,
+          "4": 0.25,
+          "5": 0.08,
+          "6": 0.02,
+          "7": 0.01,
+          "8": 0.01
+        },
+        "confidence": 0.39
+      },
+      "location": {
+        "type": "score",
+        "score": 2.31,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.09,
+          "1": 0.32,
+          "2": 0.26,
+          "3": 0.12,
+          "4": 0.08,
+          "5": 0.06,
+          "6": 0.04,
+          "7": 0.02,
+          "8": 0.01,
+          "9": 0
+        },
+        "confidence": 0.42
+      }
+    },
+    "usage": {
+      "input_tokens": 7272,
+      "output_tokens": 31,
+      "cost": 0.000305424
+    },
+    "id": "gen-dec-1791918361-bvULPtQpcjQoBYdc9Mvh",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T19:06:01+00:00",
+  "seconds": null
+}

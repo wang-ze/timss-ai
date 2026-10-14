@@ -16,13 +16,13 @@ import openai
 from timss_math.item_parameter_prediction import (
     ItemIndex,
     LeaveOneOut,
+    LLMPredictor,
     LLMSettings,
     NoPredictionError,
-    ParameterPredictor,
 )
 from timss_math.item_parameter_prediction.batch import BatchManifests
 from timss_math.item_parameter_prediction.evaluation import run_sync
-from timss_math.item_parameter_prediction.predictor import (
+from timss_math.item_parameter_prediction.llm import (
     Completion,
     ContextWindowError,
     LLMClient,
@@ -173,7 +173,7 @@ class RequestAsyncTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.index = ItemIndex.build()
-        cls.predictor = ParameterPredictor(cls.index, LLMSettings(api_key="test"))
+        cls.predictor = LLMPredictor(cls.index, LLMSettings(api_key="test"))
         calibrated = cls.index.bank.calibrated
         cls.keys = [
             key

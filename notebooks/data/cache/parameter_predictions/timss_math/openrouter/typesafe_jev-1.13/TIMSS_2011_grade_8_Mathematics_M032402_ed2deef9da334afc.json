@@ -1,0 +1,277 @@
+{
+  "item_id": "M032402",
+  "assessment": "TIMSS 2011",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Geometry",
+  "main_topic": "Geometric Shapes",
+  "cognitive_domain": "Reasoning",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M032402"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2011",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Geometry",
+      "main_topic": "Geometric Shapes",
+      "cognitive_domain": "Reasoning",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "[Image: A right-angle triangle. Segments PQ and RQ form a right angle and their lengths are 3 and 4 centimeters respectfully. Segment PR forms the hypotenuse and is 5 centimeters.]\n\nWhich of these is the reason that triangle PQR is a right angle triangle?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3^2 + 4^2 = 5^2"
+        },
+        {
+          "label": "B",
+          "text": "5 < 3 + 4"
+        },
+        {
+          "label": "C",
+          "text": "3 + 4 = 12 − 5"
+        },
+        {
+          "label": "D",
+          "text": "3 > 5 − 4"
+        }
+      ],
+      "correct_option": "A",
+      "figure_description": "A right triangle PQR with vertices shown as solid black dots. Vertex Q forms a right angle between vertical side PQ and horizontal side QR. Side PQ is on the left and has a length of 3 cm indicated by a double-headed vertical arrow. Side QR is along the bottom and has a length of 4 cm indicated by a double-headed horizontal arrow. The hypotenuse PR connects P at the top left to R at the bottom right, with a length of 5 cm indicated by a double-headed diagonal arrow.",
+      "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 4.21,
+      "confidence": 0.2,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.03,
+        "1": 0.04,
+        "2": 0.11,
+        "3": 0.21,
+        "4": 0.17,
+        "5": 0.18,
+        "6": 0.13,
+        "7": 0.08,
+        "8": 0.05
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 2.3,
+      "confidence": 0.37,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.12,
+        "1": 0.25,
+        "2": 0.23,
+        "3": 0.19,
+        "4": 0.09,
+        "5": 0.06,
+        "6": 0.03,
+        "7": 0.02,
+        "8": 0.01,
+        "9": 0.0
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 3.82,
+      "confidence": 0.87,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.01,
+        "2": 0.02,
+        "3": 0.07,
+        "4": 0.88,
+        "5": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1257,
+  "output_tokens": 45,
+  "cost_usd": 5.2794e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914770-LeRjKa36Inr8F6n4OpZx",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 4.21,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.04,
+          "2": 0.11,
+          "3": 0.21,
+          "4": 0.17,
+          "5": 0.18,
+          "6": 0.13,
+          "7": 0.08,
+          "8": 0.05
+        },
+        "confidence": 0.2
+      },
+      "location": {
+        "type": "score",
+        "score": 2.3,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.12,
+          "1": 0.25,
+          "2": 0.23,
+          "3": 0.19,
+          "4": 0.09,
+          "5": 0.06,
+          "6": 0.03,
+          "7": 0.02,
+          "8": 0.01,
+          "9": 0
+        },
+        "confidence": 0.37
+      },
+      "guessing": {
+        "type": "score",
+        "score": 3.82,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.02,
+          "3": 0.07,
+          "4": 0.88,
+          "5": 0.01
+        },
+        "confidence": 0.87
+      }
+    },
+    "usage": {
+      "input_tokens": 1257,
+      "output_tokens": 45,
+      "cost": 5.2794e-05
+    },
+    "id": "gen-dec-1791914770-LeRjKa36Inr8F6n4OpZx",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:10+00:00",
+  "seconds": null
+}

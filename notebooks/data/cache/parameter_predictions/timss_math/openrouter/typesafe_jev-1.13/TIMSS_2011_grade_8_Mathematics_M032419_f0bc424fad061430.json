@@ -1,0 +1,851 @@
+{
+  "item_id": "M032419",
+  "assessment": "TIMSS 2011",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Algebra",
+  "main_topic": "Algebraic Expressions",
+  "cognitive_domain": "Knowing",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M032419"
+  ],
+  "similar_items": [
+    {
+      "rank": 1,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M042067",
+      "item_id": "M042067",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8896,
+      "pct_correct_intl_avg": 40,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 2.09292,
+      "location": 1.10264,
+      "guessing": 0.29619
+    },
+    {
+      "rank": 2,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M042150",
+      "item_id": "M042150",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8146,
+      "pct_correct_intl_avg": 41,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.87672,
+      "location": 0.88646,
+      "guessing": 0.18943
+    },
+    {
+      "rank": 3,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M052173",
+      "item_id": "M052173",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8544,
+      "pct_correct_intl_avg": 16,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 2.51161,
+      "location": 1.37068,
+      "guessing": 0.07304
+    },
+    {
+      "rank": 4,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M032489",
+      "item_id": "M032489",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8128,
+      "pct_correct_intl_avg": 68,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.858,
+      "location": -0.697,
+      "guessing": 0.262
+    },
+    {
+      "rank": 5,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M042077",
+      "item_id": "M042077",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8413,
+      "pct_correct_intl_avg": 51,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.535,
+      "location": 0.44798,
+      "guessing": 0.26301
+    },
+    {
+      "rank": 6,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1999/grade 8/Mathematics/H08",
+      "item_id": "H08",
+      "assessment": "TIMSS 1999",
+      "cosine_similarity": 0.8295,
+      "pct_correct_intl_avg": 68,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.169,
+      "location": -0.405,
+      "guessing": 0.16
+    },
+    {
+      "rank": 7,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M022234A",
+      "item_id": "M022234A",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8113,
+      "pct_correct_intl_avg": 16.4,
+      "irt_model": "GPCM",
+      "scaled_points": 2,
+      "slope": 0.83737,
+      "location": 0.80177,
+      "step1": -0.42925,
+      "step2": 0.42925
+    },
+    {
+      "rank": 8,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M012016",
+      "item_id": "M012016",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.7489,
+      "pct_correct_intl_avg": 50,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.369,
+      "location": 0.891,
+      "guessing": 0.409
+    },
+    {
+      "rank": 9,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1999/grade 8/Mathematics/H12",
+      "item_id": "H12",
+      "assessment": "TIMSS 1999",
+      "cosine_similarity": 0.8376,
+      "pct_correct_intl_avg": 72,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.925,
+      "location": -0.617,
+      "guessing": 0.19
+    },
+    {
+      "rank": 10,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M032036",
+      "item_id": "M032036",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8323,
+      "pct_correct_intl_avg": 49,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.081,
+      "location": 0.141,
+      "guessing": 0.19
+    }
+  ],
+  "context": "item+references",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2011",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Algebra",
+      "main_topic": "Algebraic Expressions",
+      "cognitive_domain": "Knowing",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "Which of these could represent the expression 2x + 3x?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The length of this segment: [Image: X and 5 are segment lengths on a number line, and the segment length of 5 is slightly larger than the segment length of x.]"
+        },
+        {
+          "label": "B",
+          "text": "The length of this segment: [Image: 2, 3, and x are segment lengths on a number line. The segment length of 2 is the smallest. The segment length of 3 is around twice the length of 2, and the segment length of x is almost three times the length of 2.]"
+        },
+        {
+          "label": "C",
+          "text": "The area of this figure: [Image: A rectangle, where one side of the rectangle is labeled “x” and the other side is divided, with the smaller part labeled 2, and the larger part other labeled 3.]"
+        },
+        {
+          "label": "D",
+          "text": "The area of this figure: [Image: A rectangle, with one side is labeled 5 and the other side is divided in two equal parts, with each part labeled with “x”.]"
+        }
+      ],
+      "correct_option": "C",
+      "figure_description": "Four options showing visual representations:\n- Option A shows a horizontal line segment with vertical tick marks at its ends, divided into two segments by an interior vertical tick mark. The segment on the left is labeled x above, and the segment on the right is labeled 5 above.\n- Option B shows a horizontal line segment with vertical tick marks at its ends, divided into three segments by two interior vertical tick marks. From left to right, the segments are labeled 2, 3, and x above.\n- Option C shows a rectangle with its left vertical side labeled x. A vertical dotted line extends through the rectangle, dividing the top horizontal side into two parts, labeled 2 on the left and 3 on the right.\n- Option D shows a rectangle with its left vertical side labeled 5. A vertical dotted line extends through the rectangle, dividing the top horizontal side into two equal parts, each labeled x above.",
+      "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data."
+    },
+    "reference_items": [
+      {
+        "rank": 1,
+        "cosine_similarity": 0.89,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Algebra",
+        "main_topic": "Algebraic Expressions",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: A rectangle, with one side x and the other side, x plus 2.]\n\nWhat is the area of this rectangle?",
+        "options": [
+          {
+            "label": "A",
+            "text": "x^2 + 2"
+          },
+          {
+            "label": "B",
+            "text": "x^2 + 2x"
+          },
+          {
+            "label": "C",
+            "text": "2x + 2"
+          },
+          {
+            "label": "D",
+            "text": "4x + 4"
+          }
+        ],
+        "correct_option": "B",
+        "figure_description": "A rectangle is shown with dimension lines. The horizontal bottom side is indicated by a dimension line with tick marks at both ends and labeled x + 2. The vertical right side is indicated by a dimension line with tick marks at both ends and labeled x.",
+        "pct_correct_intl_avg": 40,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 2.09292,
+          "location": 1.10264,
+          "guessing": 0.29619
+        }
+      },
+      {
+        "rank": 2,
+        "cosine_similarity": 0.815,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Geometric Shapes",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Which shape has a line of symmetry?",
+        "options": [
+          {
+            "label": "A",
+            "text": "[Image: A trapezoid with two parallel horizontal lines. The right side of the trapezoid is longer than the left hand side.]"
+          },
+          {
+            "label": "B",
+            "text": "[Image: An isosceles triangle with the base forming a vertical line.]"
+          },
+          {
+            "label": "C",
+            "text": "[Image: A parallelogram where top and bottom sides are equal in length and the left and right sides are also equal in length.]"
+          },
+          {
+            "label": "D",
+            "text": "[Image: A right triangle with the 90 degree angle in the bottom left.]"
+          }
+        ],
+        "correct_option": "B",
+        "figure_description": "Four geometric shapes labeled A through D:\nA: A trapezoid with horizontal top and bottom parallel sides; the bottom is longer than the top, and the right slanted side is longer and less steep than the left side.\nB: An isosceles triangle with a vertical base on the left and a vertex pointing to the right; the top and bottom sides are marked with equal tick marks.\nC: A parallelogram with horizontal top and bottom sides each marked with a single tick mark, and slanted left and right sides each marked with a double tick mark.\nD: A scalene right-angled triangle with a vertical left side and a horizontal bottom side, with a right-angle square symbol marked at the lower-left corner.",
+        "pct_correct_intl_avg": 41,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.87672,
+          "location": 0.88646,
+          "guessing": 0.18943
+        }
+      },
+      {
+        "rank": 3,
+        "cosine_similarity": 0.854,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Algebra",
+        "main_topic": "Algebraic Expressions",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: Shaded rectangular diagram that is x meters by x plus 4 meters. A white, width-wise rectangular path goes down the middle of the diagram and is 1 meter by x meters.]\n\nThis is a diagram of a rectangular garden.\n\nThe white area is a rectangular path that is 1 meter wide.\n\nWhich expression shows the area of the shaded portion of the garden in m^2?",
+        "options": [
+          {
+            "label": "A",
+            "text": "x^2 + 3x"
+          },
+          {
+            "label": "B",
+            "text": "x^2 + 4x"
+          },
+          {
+            "label": "C",
+            "text": "x^2 + 4x − 1"
+          },
+          {
+            "label": "D",
+            "text": "x^2 + 3x − 1"
+          }
+        ],
+        "correct_option": "A",
+        "figure_description": "A rectangle with height labeled x m and total width labeled (x + 4) m. The rectangle is divided vertically into three sections: a shaded gray rectangular region on the left, a vertical white rectangular strip labeled \"path\" in the middle, and another shaded gray rectangular region on the right. An arrow beneath the white path indicates its width is 1 m.",
+        "pct_correct_intl_avg": 16,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 2.51161,
+          "location": 1.37068,
+          "guessing": 0.07304
+        }
+      },
+      {
+        "rank": 4,
+        "cosine_similarity": 0.813,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Locations and Spatial Relationships",
+        "cognitive_domain": "Using Concepts",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: Triangular prism]\n\nWhich of these could be folded to make a shape like the 3-D figure above?",
+        "options": [
+          {
+            "label": "A",
+            "text": "[Image: Net with three rectangles connected in a V-shape by two triangles]"
+          },
+          {
+            "label": "B",
+            "text": "[Image: Net with three stacked rectangles and two triangles on the right]"
+          },
+          {
+            "label": "C",
+            "text": "[Image: Net with three rectangles and three triangles]"
+          },
+          {
+            "label": "D",
+            "text": "[Image: Net with three stacked rectangles, one triangle on the top right and one triangle on the bottom left]"
+          }
+        ],
+        "correct_option": "D",
+        "figure_description": "The stem shows a 3-D triangular prism resting horizontally on one rectangular face, with dashed lines indicating the three hidden edges. The options show four candidate nets:\n- Option A: A central horizontal rectangle with an isosceles triangle attached to each vertical side, and another rectangle attached to the outer edge of each triangle angled upward, forming an open V-shape.\n- Option B: Three congruent rectangles stacked vertically in a column, with two identical triangles attached to the right edges of the top and middle rectangles, both pointing right.\n- Option C: Two congruent rectangles stacked vertically, each having a triangle attached to its left edge pointing left; a third rectangle extends to the right from the top rectangle, ending with a triangle pointing right.\n- Option D: Three congruent rectangles stacked vertically in a column, with one triangle attached to the right edge of the top rectangle pointing right, and another triangle attached to the left edge of the bottom rectangle pointing left.",
+        "pct_correct_intl_avg": 68,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.858,
+          "location": -0.697,
+          "guessing": 0.262
+        }
+      },
+      {
+        "rank": 5,
+        "cosine_similarity": 0.841,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Algebra",
+        "main_topic": "Algebraic Expressions",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Which expression is equivalent to 4(3 + x)?",
+        "options": [
+          {
+            "label": "A",
+            "text": "12 + x"
+          },
+          {
+            "label": "B",
+            "text": "7 + x"
+          },
+          {
+            "label": "C",
+            "text": "12 + 4x"
+          },
+          {
+            "label": "D",
+            "text": "12x"
+          }
+        ],
+        "correct_option": "C",
+        "pct_correct_intl_avg": 51,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.535,
+          "location": 0.44798,
+          "guessing": 0.26301
+        }
+      },
+      {
+        "rank": 6,
+        "cosine_similarity": 0.829,
+        "assessment": "TIMSS 1999",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Fractions and Number Sense",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Which shows 2/3 of the square shaded?",
+        "options": [
+          {
+            "label": "A",
+            "text": "[Image: Square divided horizontally into six equal strips with the top two strips shaded]"
+          },
+          {
+            "label": "B",
+            "text": "[Image: Square with an unshaded triangle at the bottom and shaded regions above]"
+          },
+          {
+            "label": "C",
+            "text": "[Image: Square divided vertically into three strips with the two narrow outer strips shaded]"
+          },
+          {
+            "label": "D",
+            "text": "[Image: Square with an unshaded triangle spanning from the bottom edge to the top center and two shaded triangles on the sides]"
+          },
+          {
+            "label": "E",
+            "text": "[Image: Square divided vertically into three equal strips with the two outer strips shaded]"
+          }
+        ],
+        "correct_option": "E",
+        "figure_description": "Five squares, labeled A through E, are shown in a row:\n- Square A is divided horizontally into 6 equal strips. The top 2 strips are shaded gray, and the bottom 4 strips are unshaded white.\n- Square B has line segments extending from the bottom-left corner to the center, from the bottom-right corner to the center, and from the center to the top-right corner. The triangle formed at the bottom is white, and the remaining area of the square is shaded gray.\n- Square C is divided vertically into three regions by two vertical lines: two narrow gray strips on the left and right edges, each approximately one-sixth the width of the square, and a wider unshaded white region in the middle.\n- Square D contains an unshaded white isosceles triangle whose base is the bottom edge of the square and whose apex touches the midpoint of the top edge. The two right-triangular regions to the left and right of this triangle are shaded gray.\n- Square E is divided vertically into 3 strips of equal width. The leftmost and rightmost strips are shaded gray, and the middle strip is unshaded white.",
+        "pct_correct_intl_avg": 68,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.169,
+          "location": -0.405,
+          "guessing": 0.16
+        }
+      },
+      {
+        "rank": 7,
+        "cosine_similarity": 0.811,
+        "assessment": "TIMSS 2007",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Geometric Shapes",
+        "cognitive_domain": "Applying",
+        "item_type": "constructed_response",
+        "max_points": 2,
+        "scaled_points": 2,
+        "stem": "[Image: A rectangle]\n\nA. On the grid below, draw a rectangle whose length is three-fourths the length of the rectangle above, and whose width is two and one-half times the width of the rectangle above. Label the length and width of the new rectangle in centimeters on the figure. Each square on the grid is 1 cm by 1 cm.\n\n[Image: A grid of squares]",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "6 cm and 5 cm. Rectangle is correctly drawn and labeled (on the figure)."
+            ]
+          },
+          {
+            "category": "Partial Response",
+            "descriptors": [
+              "Rectangle is correctly labeled, 6 cm and 5 cm, but drawing is incorrect.",
+              "Correct drawing is shown, but the length and/or width is not labeled or is incorrectly labeled."
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "One side is 6 cm and other side is incorrect, explicitly written or implicit from the drawing.",
+              "One side is 5 cm and other side is incorrect, explicitly written or implicit from the drawing.",
+              "Other incorrect (including crossed out/erased, stray marks, illegible, or off task). Also includes responses in which the drawing is missing."
+            ]
+          },
+          {
+            "category": "Nonresponse",
+            "descriptors": [
+              "Blank"
+            ]
+          }
+        ],
+        "scoring_notes": "Note: There is no distinction made between responses with or without units.",
+        "figure_description": "At the top of the page is a rectangle drawn horizontally. Inside near the bottom edge is the word \"Length\", and below the bottom edge is labeled \"8 cm\". Along the inside right edge, printed vertically, is \"Width\" and \"2 cm\". Below Part A is a dashed-line grid measuring 10 squares wide by 15 squares high.",
+        "pct_correct_intl_avg": 16.4,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+        "irt_model": "GPCM",
+        "calibrated_parameters": {
+          "slope": 0.83737,
+          "location": 0.80177,
+          "step1": -0.42925,
+          "step2": 0.42925
+        }
+      },
+      {
+        "rank": 8,
+        "cosine_similarity": 0.749,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Fractions and Decimals",
+        "cognitive_domain": "Knowing Facts and Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "In which of these pairs of numbers is 2.25 larger than the first number but smaller than the second number?",
+        "options": [
+          {
+            "label": "A",
+            "text": "1 and 2"
+          },
+          {
+            "label": "B",
+            "text": "2 and 5/2"
+          },
+          {
+            "label": "C",
+            "text": "5/2 and 11/4"
+          },
+          {
+            "label": "D",
+            "text": "11/4 and 3"
+          }
+        ],
+        "correct_option": "B",
+        "pct_correct_intl_avg": 50,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.369,
+          "location": 0.891,
+          "guessing": 0.409
+        }
+      },
+      {
+        "rank": 9,
+        "cosine_similarity": 0.838,
+        "assessment": "TIMSS 1999",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Algebra",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "□ represents the number of magazines that Lina reads each week. Which of these represents the total number of magazines that Lina reads in 6 weeks?",
+        "options": [
+          {
+            "label": "A",
+            "text": "6 + □"
+          },
+          {
+            "label": "B",
+            "text": "6 × □"
+          },
+          {
+            "label": "C",
+            "text": "□ + 6"
+          },
+          {
+            "label": "D",
+            "text": "(□ + □) × 6"
+          }
+        ],
+        "correct_option": "B",
+        "pct_correct_intl_avg": 72,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.925,
+          "location": -0.617,
+          "guessing": 0.19
+        }
+      },
+      {
+        "rank": 10,
+        "cosine_similarity": 0.832,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Algebra",
+        "main_topic": "Algebraic Expressions",
+        "cognitive_domain": "Knowing Facts and Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Which of these is equal to 2x − 3y + 7x + 5y?",
+        "options": [
+          {
+            "label": "A",
+            "text": "5x + 2y"
+          },
+          {
+            "label": "B",
+            "text": "5x + 8y"
+          },
+          {
+            "label": "C",
+            "text": "9x + 2y"
+          },
+          {
+            "label": "D",
+            "text": "9x + 8y"
+          }
+        ],
+        "correct_option": "C",
+        "pct_correct_intl_avg": 49,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.081,
+          "location": 0.141,
+          "guessing": 0.19
+        }
+      }
+    ]
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 5.03,
+      "confidence": 0.48,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.01,
+        "2": 0.06,
+        "3": 0.1,
+        "4": 0.11,
+        "5": 0.31,
+        "6": 0.28,
+        "7": 0.06,
+        "8": 0.06
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 3.45,
+      "confidence": 0.29,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.09,
+        "2": 0.21,
+        "3": 0.2,
+        "4": 0.18,
+        "5": 0.22,
+        "6": 0.06,
+        "7": 0.02,
+        "8": 0.0,
+        "9": 0.0
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 3.69,
+      "confidence": 0.79,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.01,
+        "2": 0.03,
+        "3": 0.18,
+        "4": 0.77,
+        "5": 0.0
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 6388,
+  "output_tokens": 45,
+  "cost_usd": 0.000268296,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791918378-fvxWW5oda5yAltMer2t0",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 5.03,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.06,
+          "3": 0.1,
+          "4": 0.11,
+          "5": 0.31,
+          "6": 0.28,
+          "7": 0.06,
+          "8": 0.06
+        },
+        "confidence": 0.48
+      },
+      "location": {
+        "type": "score",
+        "score": 3.45,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.09,
+          "2": 0.21,
+          "3": 0.2,
+          "4": 0.18,
+          "5": 0.22,
+          "6": 0.06,
+          "7": 0.02,
+          "8": 0,
+          "9": 0
+        },
+        "confidence": 0.29
+      },
+      "guessing": {
+        "type": "score",
+        "score": 3.69,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.03,
+          "3": 0.18,
+          "4": 0.77,
+          "5": 0
+        },
+        "confidence": 0.79
+      }
+    },
+    "usage": {
+      "input_tokens": 6388,
+      "output_tokens": 45,
+      "cost": 0.000268296
+    },
+    "id": "gen-dec-1791918378-fvxWW5oda5yAltMer2t0",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T19:06:19+00:00",
+  "seconds": null
+}

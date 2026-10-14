@@ -1,0 +1,277 @@
+{
+  "item_id": "M051117",
+  "assessment": "TIMSS 2011",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Data Display",
+  "main_topic": "Reading and Interpreting",
+  "cognitive_domain": "Reasoning",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M051117"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2011",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Data Display",
+      "main_topic": "Reading and Interpreting",
+      "cognitive_domain": "Reasoning",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "The graph shows the number of students at each grade in the Pine School.\n\n[Image: Bar graph titled Pine School shows 6 columns labeled 1, 2, 3, 4, 5, and 6. X-axis is labeled Grade. Y-axis is labeled Number of Students with values from 0 to 35 and increments at every 5 units.\n• Grade 1: value of 20.\n• Grade 2: value of 25.\n• Grade 3: value of 20.\n• Grade 4: value of 25.\n• Grade 5: value of 30.\n• Grade 6: value of 25.]\n\nIn the Pine School there is room in each grade for 30 students. How many more students could be in the school?",
+      "options": [
+        {
+          "label": "A",
+          "text": "20"
+        },
+        {
+          "label": "B",
+          "text": "25"
+        },
+        {
+          "label": "C",
+          "text": "30"
+        },
+        {
+          "label": "D",
+          "text": "35"
+        }
+      ],
+      "correct_option": "D",
+      "figure_description": "A vertical bar graph titled \"Pine School\". The vertical axis is labeled \"Number of Students\" and is marked with grid lines from 0 to 35 in increments of 5 (0, 5, 10, 15, 20, 25, 30, 35). The horizontal axis is labeled \"Grade\" and has tick marks labeled 1, 2, 3, 4, 5, 6. The shaded gray bars have the following heights:\n- Grade 1: height 20\n- Grade 2: height 25\n- Grade 3: height 20\n- Grade 4: height 25\n- Grade 5: height 30\n- Grade 6: height 25",
+      "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.63,
+      "confidence": 0.33,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.05,
+        "1": 0.07,
+        "2": 0.14,
+        "3": 0.25,
+        "4": 0.16,
+        "5": 0.17,
+        "6": 0.09,
+        "7": 0.05,
+        "8": 0.02
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 2.64,
+      "confidence": 0.47,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.07,
+        "1": 0.2,
+        "2": 0.26,
+        "3": 0.2,
+        "4": 0.12,
+        "5": 0.09,
+        "6": 0.03,
+        "7": 0.02,
+        "8": 0.01,
+        "9": 0.0
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 3.88,
+      "confidence": 0.9,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.01,
+        "2": 0.01,
+        "3": 0.05,
+        "4": 0.91,
+        "5": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1399,
+  "output_tokens": 45,
+  "cost_usd": 5.8758e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914769-LswClVTWb99J8jLFw4LG",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.63,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.07,
+          "2": 0.14,
+          "3": 0.25,
+          "4": 0.16,
+          "5": 0.17,
+          "6": 0.09,
+          "7": 0.05,
+          "8": 0.02
+        },
+        "confidence": 0.33
+      },
+      "location": {
+        "type": "score",
+        "score": 2.64,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.2,
+          "2": 0.26,
+          "3": 0.2,
+          "4": 0.12,
+          "5": 0.09,
+          "6": 0.03,
+          "7": 0.02,
+          "8": 0.01,
+          "9": 0
+        },
+        "confidence": 0.47
+      },
+      "guessing": {
+        "type": "score",
+        "score": 3.88,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.01,
+          "3": 0.05,
+          "4": 0.91,
+          "5": 0.01
+        },
+        "confidence": 0.9
+      }
+    },
+    "usage": {
+      "input_tokens": 1399,
+      "output_tokens": 45,
+      "cost": 5.8758e-05
+    },
+    "id": "gen-dec-1791914769-LswClVTWb99J8jLFw4LG",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:09+00:00",
+  "seconds": null
+}

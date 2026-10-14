@@ -1,0 +1,225 @@
+{
+  "item_id": "M031041",
+  "assessment": "TIMSS 2007",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Geometric Shapes and Measures",
+  "main_topic": "Two- and Three-dimensional Shapes",
+  "cognitive_domain": "Applying",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+  "excluded_item_keys": [
+    "TIMSS 2007/grade 4/Mathematics/M031041"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2007",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Geometric Shapes and Measures",
+      "main_topic": "Two- and Three-dimensional Shapes",
+      "cognitive_domain": "Applying",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "[Image: A shaded equilateral triangle]\n\nHow many triangular tiles like this are needed to cover the figure below?\n\n[Image: A seven-sided polygon]\n\nAnswer: ____",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "5"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "6",
+            "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+          ]
+        },
+        {
+          "category": "Nonresponse",
+          "descriptors": [
+            "Blank"
+          ]
+        }
+      ],
+      "figure_description": "At the top of the item is a solid black equilateral triangle with a horizontal base and its apex pointing directly upward. Below the question is an outline of a concave seven-sided polygon (heptagon) composed of five contiguous equilateral triangles of the same size as the tile above. The polygon has a horizontal bottom edge. From each end of the bottom edge, a side edge angles upward and outward at 60 degrees. From these two outer vertices, two edges angle upward and inward at 60 degrees to form two top peaks. From each top peak, an edge angles downward at 60 degrees toward the center, meeting in an interior V-shaped notch located at the center of what would otherwise be a regular hexagon.",
+      "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics)."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics)\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics)\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.58,
+      "confidence": 0.35,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.07,
+        "2": 0.16,
+        "3": 0.24,
+        "4": 0.18,
+        "5": 0.16,
+        "6": 0.09,
+        "7": 0.04,
+        "8": 0.02
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 3.96,
+      "confidence": 0.27,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.03,
+        "1": 0.1,
+        "2": 0.14,
+        "3": 0.18,
+        "4": 0.13,
+        "5": 0.17,
+        "6": 0.13,
+        "7": 0.07,
+        "8": 0.04,
+        "9": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1154,
+  "output_tokens": 31,
+  "cost_usd": 4.8468e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914763-CD0gxctS73ghPFJkmZTz",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.58,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.07,
+          "2": 0.16,
+          "3": 0.24,
+          "4": 0.18,
+          "5": 0.16,
+          "6": 0.09,
+          "7": 0.04,
+          "8": 0.02
+        },
+        "confidence": 0.35
+      },
+      "location": {
+        "type": "score",
+        "score": 3.96,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.1,
+          "2": 0.14,
+          "3": 0.18,
+          "4": 0.13,
+          "5": 0.17,
+          "6": 0.13,
+          "7": 0.07,
+          "8": 0.04,
+          "9": 0.01
+        },
+        "confidence": 0.27
+      }
+    },
+    "usage": {
+      "input_tokens": 1154,
+      "output_tokens": 31,
+      "cost": 4.8468e-05
+    },
+    "id": "gen-dec-1791914763-CD0gxctS73ghPFJkmZTz",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:03+00:00",
+  "seconds": null
+}

@@ -1,0 +1,373 @@
+{
+  "item_id": "L16",
+  "assessment": "TIMSS Advanced 1995",
+  "grade": 12,
+  "subject": "Advanced Mathematics",
+  "content_domain": "Numbers, Equations and Functions",
+  "main_topic": null,
+  "cognitive_domain": "Solving Problems",
+  "item_type": "constructed_response",
+  "max_points": 3,
+  "scaled_points": 3,
+  "irt_model": "GPCM",
+  "target_calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L16"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS Advanced 1995",
+      "grade": 12,
+      "subject": "Advanced Mathematics",
+      "content_domain": "Numbers, Equations and Functions",
+      "cognitive_domain": "Solving Problems",
+      "item_type": "constructed_response",
+      "max_points": 3,
+      "scaled_points": 3,
+      "stem": "Find all real values of x which satisfy the following equation:\n\nsqrt(x) - 2/sqrt(x) = 1\n\nShow all your work.",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "x = 4. Method:\n1. Original equation transformed to quadratic equation, x^2 - 5x + 4 = 0.\n2. Two roots, x=4 and x=1 found and checked in original equation.\n3. x=1 is rejected as a solution of the original equation; x=4 is accepted.\nNote: Since the original equation is squared, it is necessary to check both roots in the original equation.",
+            "x = 4. Method:\n1. Substitution (e.g., sqrt(x) = a) used and the original equation transformed, without squaring, into the quadratic equation a^2 - a - 2 = 0.\n2. Two roots found, a = 2 and a = -1.\n3. a = -1 rejected since a = -1 ≠ sqrt(x) , sqrt(x) ≥ 0 .\n4. By substitution reversed.a = 2 implies sqrt(x) = 2, thus x = 4. Checking in original equation is not necessary.",
+            "x = 4. Method:\n1. Graphs y = sqrt(x) - 2/sqrt(x) - 1 for x > 0 correctly.\n2. x-coordinate of y-intercept is found to be 4.\n3. Justifies that graph is increasing and thus x = 4 is an unique solution.\n4. x = 4 is checked in original equation.",
+            "Other completely correct solutions."
+          ]
+        },
+        {
+          "category": "Partial Response",
+          "descriptors": [
+            "Uses code 30 to find x = 4 and x = 1 and states both are roots.",
+            "Uses code 31 to find a = 2 and a = -1 and then either goes no further or makes an incorrect statement such as 4 and 1 or 2 and 1 are roots of the original equation.",
+            "Uses code 32 showing graph, states x = 4 is a root and x = 4 is checked in the original equation.",
+            "Other solutions with correct overall method but with minor error(s)."
+          ]
+        },
+        {
+          "category": "Minimal Response",
+          "descriptors": [
+            "x = 4. No work shown or some work shown, such as checking x = 4 in original equation but no argument given for why there are no other roots.",
+            "Solution as in codes 30 or 31: Original equation is transformed correctly into a quadratic equation, by any method, but quadratic equation either is not solved or incorrectly solved.",
+            "Solution as in code 22 (graphical) except that except that x = 4 is NOT checked in original equation.",
+            "Other minimally correct or incomplete solutions such as a simplification of the equation to x - 2 = sqrt(x) ."
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "Solution as in codes 30 or 31 except original equation is transformed into an incorrect quadratic equation or to a non-quadratic equation.",
+            "Other incorrect responses."
+          ]
+        },
+        {
+          "category": "Nonresponse",
+          "descriptors": [
+            "Crossed-out, illegible, or impossible to interpret.",
+            "BLANK"
+          ]
+        }
+      ],
+      "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 3-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 3-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "step1": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 3-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's step 1 parameter d1? In the GPCM, b - d1 is the ability at which earning the first point becomes more likely than earning no point, so a higher d1 means that this point is earned at a lower ability; the steps sum to 0. Choose the value closest to it.",
+      "criteria": [
+        "-3",
+        "-2",
+        "-1.5",
+        "-1",
+        "-0.5",
+        "0",
+        "1",
+        "2"
+      ]
+    },
+    "step2": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 3-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's step 2 parameter d2? In the GPCM, b - d2 is the ability at which earning the second point becomes more likely than earning only the first, so a higher d2 means that this point is earned at a lower ability; the steps sum to 0. Choose the value closest to it.",
+      "criteria": [
+        "-3",
+        "-2",
+        "-1.5",
+        "-1",
+        "-0.5",
+        "0",
+        "1",
+        "2"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 4.21,
+      "confidence": 0.34,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.04,
+        "2": 0.08,
+        "3": 0.21,
+        "4": 0.2,
+        "5": 0.22,
+        "6": 0.14,
+        "7": 0.06,
+        "8": 0.03
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 5.12,
+      "confidence": 0.38,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.0,
+        "1": 0.02,
+        "2": 0.04,
+        "3": 0.17,
+        "4": 0.12,
+        "5": 0.2,
+        "6": 0.21,
+        "7": 0.15,
+        "8": 0.07,
+        "9": 0.02
+      }
+    },
+    "step1": {
+      "type": "score",
+      "score": 3.29,
+      "confidence": 0.3,
+      "legend": {
+        "0": "-3",
+        "1": "-2",
+        "2": "-1.5",
+        "3": "-1",
+        "4": "-0.5",
+        "5": "0",
+        "6": "1",
+        "7": "2"
+      },
+      "probabilities": {
+        "0": 0.05,
+        "1": 0.11,
+        "2": 0.19,
+        "3": 0.24,
+        "4": 0.15,
+        "5": 0.14,
+        "6": 0.07,
+        "7": 0.05
+      }
+    },
+    "step2": {
+      "type": "score",
+      "score": 3.63,
+      "confidence": 0.34,
+      "legend": {
+        "0": "-3",
+        "1": "-2",
+        "2": "-1.5",
+        "3": "-1",
+        "4": "-0.5",
+        "5": "0",
+        "6": "1",
+        "7": "2"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.06,
+        "2": 0.15,
+        "3": 0.26,
+        "4": 0.17,
+        "5": 0.23,
+        "6": 0.08,
+        "7": 0.03
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1960,
+  "output_tokens": 59,
+  "cost_usd": 8.232e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791989185-y2vyqnZDSWSM38pqeQhX",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 4.21,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.04,
+          "2": 0.08,
+          "3": 0.21,
+          "4": 0.2,
+          "5": 0.22,
+          "6": 0.14,
+          "7": 0.06,
+          "8": 0.03
+        },
+        "confidence": 0.34
+      },
+      "location": {
+        "type": "score",
+        "score": 5.12,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0,
+          "1": 0.02,
+          "2": 0.04,
+          "3": 0.17,
+          "4": 0.12,
+          "5": 0.2,
+          "6": 0.21,
+          "7": 0.15,
+          "8": 0.07,
+          "9": 0.02
+        },
+        "confidence": 0.38
+      },
+      "step1": {
+        "type": "score",
+        "score": 3.29,
+        "legend": {
+          "0": "-3",
+          "1": "-2",
+          "2": "-1.5",
+          "3": "-1",
+          "4": "-0.5",
+          "5": "0",
+          "6": "1",
+          "7": "2"
+        },
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.11,
+          "2": 0.19,
+          "3": 0.24,
+          "4": 0.15,
+          "5": 0.14,
+          "6": 0.07,
+          "7": 0.05
+        },
+        "confidence": 0.3
+      },
+      "step2": {
+        "type": "score",
+        "score": 3.63,
+        "legend": {
+          "0": "-3",
+          "1": "-2",
+          "2": "-1.5",
+          "3": "-1",
+          "4": "-0.5",
+          "5": "0",
+          "6": "1",
+          "7": "2"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.06,
+          "2": 0.15,
+          "3": 0.26,
+          "4": 0.17,
+          "5": 0.23,
+          "6": 0.08,
+          "7": 0.03
+        },
+        "confidence": 0.34
+      }
+    },
+    "usage": {
+      "input_tokens": 1960,
+      "output_tokens": 59,
+      "cost": 8.232e-05
+    },
+    "id": "gen-dec-1791989185-y2vyqnZDSWSM38pqeQhX",
+    "provider": "TypeSafe"
+  },
+  "seconds": 0.196,
+  "requested_at": "2026-10-14T14:46:25+00:00"
+}

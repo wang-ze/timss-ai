@@ -1,0 +1,952 @@
+{
+  "item_id": "T03",
+  "assessment": "TIMSS 1999",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Measurement",
+  "main_topic": null,
+  "cognitive_domain": "Investigating and Solving Problems",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 1999/grade 8/Mathematics/T03"
+  ],
+  "similar_items": [
+    {
+      "rank": 1,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M022243",
+      "item_id": "M022243",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.9344,
+      "pct_correct_intl_avg": 28.7,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.09954,
+      "location": 0.42733
+    },
+    {
+      "rank": 2,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M032623",
+      "item_id": "M032623",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.9032,
+      "pct_correct_intl_avg": 36,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.84712,
+      "location": 0.5992,
+      "guessing": 0.12615
+    },
+    {
+      "rank": 3,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M032575",
+      "item_id": "M032575",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.876,
+      "pct_correct_intl_avg": 40.9,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.89036,
+      "location": 0.57383,
+      "guessing": 0.20768
+    },
+    {
+      "rank": 4,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M022043",
+      "item_id": "M022043",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8411,
+      "pct_correct_intl_avg": 62.5,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.6518,
+      "location": -0.52336,
+      "guessing": 0.12486
+    },
+    {
+      "rank": 5,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M032447",
+      "item_id": "M032447",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8591,
+      "pct_correct_intl_avg": 41,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.237,
+      "location": 0.391,
+      "guessing": 0.189
+    },
+    {
+      "rank": 6,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1999/grade 8/Mathematics/R11",
+      "item_id": "R11",
+      "assessment": "TIMSS 1999",
+      "cosine_similarity": 0.8702,
+      "pct_correct_intl_avg": 46,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.803,
+      "location": 0.335,
+      "guessing": 0.109
+    },
+    {
+      "rank": 7,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M022234B",
+      "item_id": "M022234B",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8416,
+      "pct_correct_intl_avg": 11.0,
+      "irt_model": "GPCM",
+      "scaled_points": 2,
+      "slope": 0.93131,
+      "location": 1.17667,
+      "step1": -1.38147,
+      "step2": 1.38147
+    },
+    {
+      "rank": 8,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M042067",
+      "item_id": "M042067",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8657,
+      "pct_correct_intl_avg": 40,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 2.09292,
+      "location": 1.10264,
+      "guessing": 0.29619
+    },
+    {
+      "rank": 9,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M032678",
+      "item_id": "M032678",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8569,
+      "pct_correct_intl_avg": 39,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.469,
+      "location": 0.213,
+      "guessing": 0.066
+    },
+    {
+      "rank": 10,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M022227A",
+      "item_id": "M022227A",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8425,
+      "pct_correct_intl_avg": 51,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.038,
+      "location": -0.444
+    },
+    {
+      "rank": 11,
+      "found_by": "same model",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M032693",
+      "item_id": "M032693",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8651,
+      "pct_correct_intl_avg": 33,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.674,
+      "location": 0.505
+    },
+    {
+      "rank": 12,
+      "found_by": "same model",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M022227B",
+      "item_id": "M022227B",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8417,
+      "pct_correct_intl_avg": 28,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.362,
+      "location": 0.402
+    },
+    {
+      "rank": 13,
+      "found_by": "same model",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M022227C",
+      "item_id": "M022227C",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8282,
+      "pct_correct_intl_avg": 20,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.256,
+      "location": 0.803
+    }
+  ],
+  "context": "item+references",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 1999",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Measurement",
+      "cognitive_domain": "Investigating and Solving Problems",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "The figure shows a shaded rectangle inside a parallelogram.\n\n[Image: A shaded rectangle inside a parallelogram]\n\nWhat is the area of the shaded rectangle?\n\nAnswer: ____",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "20"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "32 [4 x 8]",
+            "18 [perimeter]",
+            "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+          ]
+        }
+      ],
+      "scoring_notes": "Note: There is no distinction made between responses with or without units.",
+      "figure_description": "A parallelogram with horizontal top and bottom sides and slanted left and right sides. Inside the parallelogram is a shaded rectangle sharing parts of the top and bottom edges of the parallelogram. A dimension line at the bottom shows that the distance from the bottom-left vertex of the parallelogram to the bottom-right corner of the shaded rectangle is 8 cm. A dimension line along the top shows that the segment of the parallelogram's top edge extending to the right of the shaded rectangle has a length of 3 cm. A vertical dimension line on the right indicates that the height of the parallelogram (and of the rectangle) is 4 cm.",
+      "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data."
+    },
+    "reference_items": [
+      {
+        "rank": 1,
+        "cosine_similarity": 0.934,
+        "assessment": "TIMSS 2007",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Geometric Measurement",
+        "cognitive_domain": "Applying",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "The figure shows a shaded triangle inside a square.\n\n[Image: A shaded triangle inside a square]\n\nWhat is the area of the shaded triangle?\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "18"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "36",
+              "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+            ]
+          },
+          {
+            "category": "Nonresponse",
+            "descriptors": [
+              "Blank"
+            ]
+          }
+        ],
+        "scoring_notes": "Note: There is no distinction made between responses with or without units.",
+        "figure_description": "A square containing a shaded gray triangle. The base of the triangle lies along the bottom edge of the square, extending from the bottom-left corner to the bottom-right corner. The top vertex of the triangle lies on the top edge of the square. A dimension line above the top edge divides it into two segments: the segment to the left of the vertex is labeled \"4 cm\", and the segment to the right is labeled \"2 cm\". A vertical dimension line along the right edge of the square is labeled \"6 cm\". Together, the top segment lengths equal the side length of 6 cm.",
+        "pct_correct_intl_avg": 28.7,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.09954,
+          "location": 0.42733
+        }
+      },
+      {
+        "rank": 2,
+        "cosine_similarity": 0.903,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Geometric Measurement",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: A shaded rectangle that is 6 cm by 16 cm. Part of the rectangle is unshaded. The unshaded part of the rectangle forms a right triangle on the left that is 6 centimeters by 8 centimeters.]\n\nIn the figure above, what is the area of the shaded region in cm^2?",
+        "options": [
+          {
+            "label": "A",
+            "text": "24"
+          },
+          {
+            "label": "B",
+            "text": "44"
+          },
+          {
+            "label": "C",
+            "text": "48"
+          },
+          {
+            "label": "D",
+            "text": "72"
+          }
+        ],
+        "correct_option": "D",
+        "figure_description": "A rectangle with a height of 6 cm and a total length of 16 cm along the top, both labeled with dimension arrows. An unshaded right triangle occupies the bottom-left portion of the rectangle; its vertical leg is the left side of the rectangle (6 cm) and its horizontal leg along the bottom has a length of 8 cm labeled with a dimension arrow. The remainder of the rectangle is shaded solid black.",
+        "pct_correct_intl_avg": 36,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.84712,
+          "location": 0.5992,
+          "guessing": 0.12615
+        }
+      },
+      {
+        "rank": 3,
+        "cosine_similarity": 0.876,
+        "assessment": "TIMSS 2007",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Geometric Measurement",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: L-shaped polygon]\n\nWhat is the area, in square cm, of the figure shown above?",
+        "options": [
+          {
+            "label": "A",
+            "text": "66"
+          },
+          {
+            "label": "B",
+            "text": "69"
+          },
+          {
+            "label": "C",
+            "text": "81"
+          },
+          {
+            "label": "D",
+            "text": "96"
+          }
+        ],
+        "correct_option": "B",
+        "figure_description": "An L-shaped polygon with six sides. The leftmost vertical side is labeled 8 cm. The bottom horizontal side is labeled 12 cm. From the top-left vertex, a horizontal top edge extends to the right to meet a vertical segment that goes downward, labeled 3 cm. From the bottom of that 3 cm segment, a horizontal edge labeled 9 cm extends to the right to meet the rightmost vertical side. Right-angle symbols are marked at five vertices: the top-left vertex, the vertex where the top horizontal edge meets the 3 cm vertical segment, the vertex where the 9 cm segment meets the right vertical side, the bottom-right vertex, and the bottom-left vertex.",
+        "pct_correct_intl_avg": 40.9,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.89036,
+          "location": 0.57383,
+          "guessing": 0.20768
+        }
+      },
+      {
+        "rank": 4,
+        "cosine_similarity": 0.841,
+        "assessment": "TIMSS 2007",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Fractions and Decimals",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: Rectangle divided into 12 squares with some squares shaded]\n\nWhich circle has approximately the same fraction of its area shaded as the rectangle above?",
+        "options": [
+          {
+            "label": "A",
+            "text": "[Image: Circle with shaded sector]"
+          },
+          {
+            "label": "B",
+            "text": "[Image: Circle with shaded sector]"
+          },
+          {
+            "label": "C",
+            "text": "[Image: Circle with shaded sector]"
+          },
+          {
+            "label": "D",
+            "text": "[Image: Circle with shaded sector]"
+          },
+          {
+            "label": "E",
+            "text": "[Image: Circle with shaded sector]"
+          }
+        ],
+        "correct_option": "D",
+        "figure_description": "At the top, a rectangle is divided into a grid of 3 rows and 4 columns, forming 12 equal-sized squares. The bottom row has all 4 squares shaded gray. The middle row has the leftmost square shaded gray and the other 3 squares unshaded (white). The top row has all 4 squares unshaded. In total, 5 of the 12 squares are shaded.\n\nEach option shows a circle with a center point and radial lines dividing it into sectors, with one sector shaded gray:\n- Option A: The circle is divided by a vertical radius pointing up (12 o'clock) and another radius pointing down and slightly left (about 6:30). The larger sector on the right side is shaded gray (covering slightly more than half of the circle).\n- Option B: The circle is divided by a vertical diameter passing through the center from 12 o'clock to 6 o'clock. The right half of the circle is shaded gray (exactly 1/2 of the circle).\n- Option C: The circle is divided by a vertical radius pointing up (12 o'clock) and a horizontal radius pointing left (9 o'clock). The sector extending clockwise from 12 o'clock to 9 o'clock is shaded gray (3/4 of the circle).\n- Option D: The circle is divided by a vertical radius pointing up (12 o'clock) and another radius pointing down and to the right (about 4:30 to 5 o'clock). The sector between them on the right side is shaded gray (covering somewhat less than half of the circle, approximately 5/12 of the area).\n- Option E: The circle is divided by a vertical radius pointing up (12 o'clock) and another radius pointing up and slightly left (about 11 o'clock). The major sector extending clockwise from 12 o'clock to 11 o'clock is shaded gray (covering almost the entire circle, about 11/12 of the area).",
+        "pct_correct_intl_avg": 62.5,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.6518,
+          "location": -0.52336,
+          "guessing": 0.12486
+        }
+      },
+      {
+        "rank": 5,
+        "cosine_similarity": 0.859,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Ratio, Proportions, and Percent",
+        "cognitive_domain": "Knowing Facts and Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: Large right triangle divided into smaller triangles]\n\nIn the figure above, each of the smaller triangles has the same area. What is the ratio of the shaded area to the unshaded area?",
+        "options": [
+          {
+            "label": "A",
+            "text": "5:3"
+          },
+          {
+            "label": "B",
+            "text": "8:5"
+          },
+          {
+            "label": "C",
+            "text": "5:8"
+          },
+          {
+            "label": "D",
+            "text": "3:5"
+          }
+        ],
+        "correct_option": "A",
+        "figure_description": "A large right triangle with its vertical leg on the left and horizontal leg at the bottom, divided into smaller congruent right triangles arranged in 4 horizontal rows and 4 vertical columns:\n- Row 4 (top): Column 1 contains 1 shaded right triangle with its right angle at the bottom-left and its hypotenuse along the hypotenuse of the large triangle.\n- Row 3: Column 1 contains a rectangle divided by a diagonal into a shaded triangle (bottom-left) and an unshaded triangle (top-right); Column 2 contains 1 shaded right triangle with its hypotenuse along the large triangle's hypotenuse.\n- Row 2: Columns 1 and 2 each contain a rectangle divided by a diagonal into a shaded triangle (bottom-left) and an unshaded triangle (top-right); Column 3 contains 1 shaded right triangle with its hypotenuse along the large triangle's hypotenuse.\n- Row 1 (bottom): Columns 1, 2, and 3 each contain a rectangle divided by a diagonal into a shaded triangle (bottom-left) and an unshaded triangle (top-right); Column 4 contains 1 shaded right triangle with its hypotenuse along the large triangle's hypotenuse.",
+        "pct_correct_intl_avg": 41,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.237,
+          "location": 0.391,
+          "guessing": 0.189
+        }
+      },
+      {
+        "rank": 6,
+        "cosine_similarity": 0.87,
+        "assessment": "TIMSS 1999",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "cognitive_domain": "Using Complex Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: Shaded right triangle and rectangle]\n\nHow many of the shaded right triangles shown above are needed to exactly cover the surface of the rectangle?",
+        "options": [
+          {
+            "label": "A",
+            "text": "Four"
+          },
+          {
+            "label": "B",
+            "text": "Six"
+          },
+          {
+            "label": "C",
+            "text": "Eight"
+          },
+          {
+            "label": "D",
+            "text": "Ten"
+          }
+        ],
+        "correct_option": "C",
+        "figure_description": "Two geometric figures are shown:\n- On the left is a shaded gray right triangle with a vertical leg labeled \"2 cm\" and a horizontal bottom leg labeled \"3 cm\".\n- On the right is an unshaded rectangle with a vertical height labeled \"4 cm\" and a horizontal width labeled \"6 cm\".",
+        "pct_correct_intl_avg": 46,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.803,
+          "location": 0.335,
+          "guessing": 0.109
+        }
+      },
+      {
+        "rank": 7,
+        "cosine_similarity": 0.842,
+        "assessment": "TIMSS 2007",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Ratio, Proportion, and Percent",
+        "cognitive_domain": "Applying",
+        "item_type": "constructed_response",
+        "max_points": 2,
+        "scaled_points": 2,
+        "stem": "[Image: A rectangle]\n\nB. What is the ratio of the area of the original rectangle to the area of the new one?",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "8:15, 8/15 or equivalent (e.g., 16/30).",
+              "The ratio is not 8:15 but the ratio of part b is consistent with response in part a."
+            ]
+          },
+          {
+            "category": "Partial Response",
+            "descriptors": [
+              "15:8 or equivalent [ratio of new to original].",
+              "Gives ratio of new rectangle to original rectangle. The ratio is not 15:8 but the ratio of part b is consistent.",
+              "Other partially correct including correct ratio given but incorrectly reduced (e.g., 16/30 = 3/10)."
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Focuses exclusively on the ratios of lengths and/or widths between or within the rectangles.",
+              "Other incorrect (including crossed out/erased, stray marks, illegible, or off task). Also includes multiplication of ratio of lengths and widths."
+            ]
+          },
+          {
+            "category": "Nonresponse",
+            "descriptors": [
+              "Blank"
+            ]
+          }
+        ],
+        "scoring_notes": "Note: There is no distinction made between responses with or without units.",
+        "figure_description": "A rectangle is drawn horizontally. Inside near the bottom edge is the word \"Length\", and below the bottom edge is labeled \"8 cm\". Along the inside right edge, printed vertically, is \"Width\" and \"2 cm\".",
+        "pct_correct_intl_avg": 11.0,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+        "irt_model": "GPCM",
+        "calibrated_parameters": {
+          "slope": 0.93131,
+          "location": 1.17667,
+          "step1": -1.38147,
+          "step2": 1.38147
+        }
+      },
+      {
+        "rank": 8,
+        "cosine_similarity": 0.866,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Algebra",
+        "main_topic": "Algebraic Expressions",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: A rectangle, with one side x and the other side, x plus 2.]\n\nWhat is the area of this rectangle?",
+        "options": [
+          {
+            "label": "A",
+            "text": "x^2 + 2"
+          },
+          {
+            "label": "B",
+            "text": "x^2 + 2x"
+          },
+          {
+            "label": "C",
+            "text": "2x + 2"
+          },
+          {
+            "label": "D",
+            "text": "4x + 4"
+          }
+        ],
+        "correct_option": "B",
+        "figure_description": "A rectangle is shown with dimension lines. The horizontal bottom side is indicated by a dimension line with tick marks at both ends and labeled x + 2. The vertical right side is indicated by a dimension line with tick marks at both ends and labeled x.",
+        "pct_correct_intl_avg": 40,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 2.09292,
+          "location": 1.10264,
+          "guessing": 0.29619
+        }
+      },
+      {
+        "rank": 9,
+        "cosine_similarity": 0.857,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Measurement",
+        "main_topic": "Tools, Techniques, and Formulas",
+        "cognitive_domain": "Using Concepts",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: Rectangle ABCD containing two tangent circles P and Q]\n\nIn the figure above, ABCD is a rectangle, and circles P and Q each have a radius of 5 cm. What is the area of the rectangle?",
+        "options": [
+          {
+            "label": "A",
+            "text": "50 cm^2"
+          },
+          {
+            "label": "B",
+            "text": "60 cm^2"
+          },
+          {
+            "label": "C",
+            "text": "100 cm^2"
+          },
+          {
+            "label": "D",
+            "text": "200 cm^2"
+          }
+        ],
+        "correct_option": "D",
+        "figure_description": "A rectangle ABCD is oriented horizontally with vertices labeled A at the top-left, B at the top-right, C at the bottom-right, and D at the bottom-left. Inside the rectangle are two identical circles labeled P and Q, with their centers marked by dots labeled P and Q. The two circles are tangent to each other horizontally at the midline of the rectangle. Circle P touches the left side AD, the top side AB, and the bottom side CD. Circle Q touches circle P, the right side BC, the top side AB, and the bottom side CD. A vertical line segment is drawn from center P up to the point of tangency on top side AB, labeled \"5 cm\".",
+        "pct_correct_intl_avg": 39,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.469,
+          "location": 0.213,
+          "guessing": 0.066
+        }
+      },
+      {
+        "rank": 10,
+        "cosine_similarity": 0.843,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Measurement",
+        "main_topic": "Tools, Techniques, and Formulas",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "The figure consists of 5 squares of equal area. The area of the whole figure is 245 cm^2.\n\n[Image: Cross shape made of 5 squares]\n\nA. Find the area of one square.\n\nAnswer: ____ cm^2",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "49"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "1",
+              "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)."
+            ]
+          }
+        ],
+        "figure_description": "A cross-shaped figure (or plus sign) formed by 5 squares of equal size: one square in the center and four squares adjacent to each of its four sides (top, bottom, left, and right). The outer boundary of the entire shape is drawn with solid black lines, while the four interior shared edges dividing the central square from the four outer squares are drawn with dashed lines.",
+        "pct_correct_intl_avg": 51,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.038,
+          "location": -0.444
+        }
+      },
+      {
+        "rank": 11,
+        "cosine_similarity": 0.865,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Two- and Three-Dimensional Shapes",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: Regular hexagon with extended bottom side]\n\nThe figure above is a regular hexagon. What is the value of x?\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "60 degrees"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "120 degrees",
+              "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)."
+            ]
+          }
+        ],
+        "figure_description": "A regular hexagon with horizontal top and bottom edges. The bottom horizontal edge is extended to the right as a straight line segment. An angle arc is drawn between the bottom-right edge of the hexagon and the extended horizontal line, labeled 'x°'.",
+        "pct_correct_intl_avg": 33,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.674,
+          "location": 0.505
+        }
+      },
+      {
+        "rank": 12,
+        "cosine_similarity": 0.842,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Measurement",
+        "main_topic": "Tools, Techniques, and Formulas",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "The figure consists of 5 squares of equal area. The area of the whole figure is 245 cm^2.\n\n[Image: Cross shape made of 5 squares]\n\nB. Find the length of one side of one square.\n\nAnswer: ____ cm",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "7 (or sqrt(49))",
+              "Correct square root of incorrect answer to part a."
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "1 – only if the answer to part A is not 1.",
+              "Indication of division of area of one square (as obtained in part a) by 4 (e.g., 12.25, 49/4, etc.).",
+              "24.5 or other indication of division by 2.",
+              "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)."
+            ]
+          }
+        ],
+        "figure_description": "A cross-shaped figure (or plus sign) formed by 5 squares of equal size: one square in the center and four squares adjacent to each of its four sides (top, bottom, left, and right). The outer boundary of the entire shape is drawn with solid black lines, while the four interior shared edges dividing the central square from the four outer squares are drawn with dashed lines.",
+        "pct_correct_intl_avg": 28,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.362,
+          "location": 0.402
+        }
+      },
+      {
+        "rank": 13,
+        "cosine_similarity": 0.828,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Measurement",
+        "main_topic": "Tools, Techniques, and Formulas",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "The figure consists of 5 squares of equal area. The area of the whole figure is 245 cm^2.\n\n[Image: Cross shape made of 5 squares]\n\nC. Find the perimeter of the whole figure in centimeters.\n\nAnswer: ____ cm",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "84",
+              "12, on condition 1 was the response for part b.",
+              "Other responses consistent with answer to part b, using multiplication by 12 (e.g., 147, 294, etc.)."
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "An answer that is 4 times the response to part b.",
+              "Indication of multiplication by 12 but multiplication is incorrect.",
+              "245 [Confusion between area and perimeter].",
+              "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)."
+            ]
+          }
+        ],
+        "figure_description": "A cross-shaped figure (or plus sign) formed by 5 squares of equal size: one square in the center and four squares adjacent to each of its four sides (top, bottom, left, and right). The outer boundary of the entire shape is drawn with solid black lines, while the four interior shared edges dividing the central square from the four outer squares are drawn with dashed lines.",
+        "pct_correct_intl_avg": 20,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.256,
+          "location": 0.803
+        }
+      }
+    ]
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.15,
+      "confidence": 0.72,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.04,
+        "2": 0.11,
+        "3": 0.62,
+        "4": 0.12000000000000001,
+        "5": 0.05,
+        "6": 0.02,
+        "7": 0.02,
+        "8": 0.01
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 4.28,
+      "confidence": 0.52,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.03,
+        "2": 0.1,
+        "3": 0.16,
+        "4": 0.18,
+        "5": 0.38,
+        "6": 0.08,
+        "7": 0.04,
+        "8": 0.01,
+        "9": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 7984,
+  "output_tokens": 31,
+  "cost_usd": 0.000335328,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791918364-YGfsrKKN56neiGzLjvHr",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.15,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.04,
+          "2": 0.11,
+          "3": 0.62,
+          "4": 0.12000000000000001,
+          "5": 0.05,
+          "6": 0.02,
+          "7": 0.02,
+          "8": 0.01
+        },
+        "confidence": 0.72
+      },
+      "location": {
+        "type": "score",
+        "score": 4.28,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.03,
+          "2": 0.1,
+          "3": 0.16,
+          "4": 0.18,
+          "5": 0.38,
+          "6": 0.08,
+          "7": 0.04,
+          "8": 0.01,
+          "9": 0.01
+        },
+        "confidence": 0.52
+      }
+    },
+    "usage": {
+      "input_tokens": 7984,
+      "output_tokens": 31,
+      "cost": 0.000335328
+    },
+    "id": "gen-dec-1791918364-YGfsrKKN56neiGzLjvHr",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T19:06:04+00:00",
+  "seconds": null
+}

@@ -1,0 +1,225 @@
+{
+  "item_id": "M042130",
+  "assessment": "TIMSS 2007",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Geometry",
+  "main_topic": "Geometric Measurement",
+  "cognitive_domain": "Applying",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+  "excluded_item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M042130"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2007",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Geometry",
+      "main_topic": "Geometric Measurement",
+      "cognitive_domain": "Applying",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "Using the marked points, draw a triangle having an area TWICE that of the rectangle ABCD.\n\n[Image: Grid with rectangle ABCD and marked points]",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "Using marked points, draw a triangle with area 24 square units. For example, AZW, ZWX, XAW, XZA, AYW, BZX, and XWD."
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "Triangle with area 12 square units drawn",
+            "Other Incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+          ]
+        },
+        {
+          "category": "Nonresponse",
+          "descriptors": [
+            "Blank"
+          ]
+        }
+      ],
+      "figure_description": "An 11 by 11 square grid containing eight marked points labeled with black dots and letters:\n- Vertex A is at grid coordinate (2, 1) relative to the bottom-left corner of the grid (0, 0).\n- Vertex B is at (5, 1).\n- Vertex C is at (5, 5).\n- Vertex D is at (2, 5).\n- Vertices A, B, C, and D are connected by dashed lines to form rectangle ABCD, which is 3 units wide and 4 units high.\n- Four additional points are marked with black dots and labeled:\n  - Point W is at (8, 1).\n  - Point Z is at (2, 9).\n  - Point Y is at (5, 9).\n  - Point X is at (8, 9).",
+      "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.65,
+      "confidence": 0.35,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.07,
+        "2": 0.15,
+        "3": 0.24000000000000002,
+        "4": 0.19,
+        "5": 0.16,
+        "6": 0.09,
+        "7": 0.04,
+        "8": 0.02
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 4.7,
+      "confidence": 0.38,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.04,
+        "2": 0.08,
+        "3": 0.18,
+        "4": 0.13,
+        "5": 0.2,
+        "6": 0.18,
+        "7": 0.11,
+        "8": 0.06,
+        "9": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1209,
+  "output_tokens": 31,
+  "cost_usd": 5.0778e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914765-O2zJgqR8VNHYmthw7aV5",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.65,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.07,
+          "2": 0.15,
+          "3": 0.24000000000000002,
+          "4": 0.19,
+          "5": 0.16,
+          "6": 0.09,
+          "7": 0.04,
+          "8": 0.02
+        },
+        "confidence": 0.35
+      },
+      "location": {
+        "type": "score",
+        "score": 4.7,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.04,
+          "2": 0.08,
+          "3": 0.18,
+          "4": 0.13,
+          "5": 0.2,
+          "6": 0.18,
+          "7": 0.11,
+          "8": 0.06,
+          "9": 0.01
+        },
+        "confidence": 0.38
+      }
+    },
+    "usage": {
+      "input_tokens": 1209,
+      "output_tokens": 31,
+      "cost": 5.0778e-05
+    },
+    "id": "gen-dec-1791914765-O2zJgqR8VNHYmthw7aV5",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:05+00:00",
+  "seconds": null
+}

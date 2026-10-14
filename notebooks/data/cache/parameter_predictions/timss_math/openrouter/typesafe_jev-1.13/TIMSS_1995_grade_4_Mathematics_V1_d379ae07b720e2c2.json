@@ -1,0 +1,295 @@
+{
+  "item_id": "V1",
+  "assessment": "TIMSS 1995",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Fractions and Proportionality",
+  "main_topic": null,
+  "cognitive_domain": "Solving Problems",
+  "item_type": "constructed_response",
+  "max_points": 2,
+  "scaled_points": 2,
+  "irt_model": "GPCM",
+  "target_calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/V1"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 1995",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Fractions and Proportionality",
+      "cognitive_domain": "Solving Problems",
+      "item_type": "constructed_response",
+      "max_points": 2,
+      "scaled_points": 2,
+      "stem": "Sam said that 1/3 of a pie is less than 1/4 of the same pie.\n\nIs Sam correct? ____\n\nUse the circles below to show why this is so.\n\n[Image: Two circles]\n\nShade in 1/3 of this circle\n\nShade in 1/4 of this circle",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "NO. Both circles are correctly partitioned."
+          ]
+        },
+        {
+          "category": "Partially Correct",
+          "descriptors": [
+            "NO. No partitioning is shown.",
+            "NO. Only one of the circles correctly partitioned.",
+            "NO. Other incorrect ways of partitioning.",
+            "YES, or there is no conclusion stated. Both circles are correctly partitioned.",
+            "Other partial."
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "YES. No partitioning is shown.",
+            "YES. The part representing 1/3 is made consistently smaller than the part representing 1/4.",
+            "YES. Other responses where one or both of the circles partitioned into 3 and/or 4 parts.",
+            "Other incorrect."
+          ]
+        }
+      ],
+      "scoring_notes": "Note: The partition of circles has priority over shading. This is reflected in the scoring guide below.",
+      "figure_description": "Two identical, empty circles are shown side by side. Below the left circle is the text \"Shade in 1/3 of this circle\" with 1/3 written as a vertical fraction. Below the right circle is the text \"Shade in 1/4 of this circle\" with 1/4 written as a vertical fraction.",
+      "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 2-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 2-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "step1": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 2-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's step 1 parameter d1? In the GPCM, b - d1 is the ability at which earning the first point becomes more likely than earning no point, so a higher d1 means that this point is earned at a lower ability; the steps sum to 0. Choose the value closest to it.",
+      "criteria": [
+        "-3",
+        "-2",
+        "-1.5",
+        "-1",
+        "-0.5",
+        "0",
+        "1",
+        "2"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.78,
+      "confidence": 0.29,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.06,
+        "2": 0.14,
+        "3": 0.22,
+        "4": 0.18,
+        "5": 0.17,
+        "6": 0.11,
+        "7": 0.05,
+        "8": 0.03
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 3.68,
+      "confidence": 0.14,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.06,
+        "1": 0.14,
+        "2": 0.17,
+        "3": 0.15,
+        "4": 0.11,
+        "5": 0.14,
+        "6": 0.11,
+        "7": 0.07,
+        "8": 0.04,
+        "9": 0.01
+      }
+    },
+    "step1": {
+      "type": "score",
+      "score": 3.36,
+      "confidence": 0.4,
+      "legend": {
+        "0": "-3",
+        "1": "-2",
+        "2": "-1.5",
+        "3": "-1",
+        "4": "-0.5",
+        "5": "0",
+        "6": "1",
+        "7": "2"
+      },
+      "probabilities": {
+        "0": 0.03,
+        "1": 0.07,
+        "2": 0.18,
+        "3": 0.29,
+        "4": 0.2,
+        "5": 0.13,
+        "6": 0.07,
+        "7": 0.03
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1391,
+  "output_tokens": 45,
+  "cost_usd": 5.8422e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791989184-c8AWGf35TY2DalT8HAWd",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.78,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.06,
+          "2": 0.14,
+          "3": 0.22,
+          "4": 0.18,
+          "5": 0.17,
+          "6": 0.11,
+          "7": 0.05,
+          "8": 0.03
+        },
+        "confidence": 0.29
+      },
+      "location": {
+        "type": "score",
+        "score": 3.68,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.06,
+          "1": 0.14,
+          "2": 0.17,
+          "3": 0.15,
+          "4": 0.11,
+          "5": 0.14,
+          "6": 0.11,
+          "7": 0.07,
+          "8": 0.04,
+          "9": 0.01
+        },
+        "confidence": 0.14
+      },
+      "step1": {
+        "type": "score",
+        "score": 3.36,
+        "legend": {
+          "0": "-3",
+          "1": "-2",
+          "2": "-1.5",
+          "3": "-1",
+          "4": "-0.5",
+          "5": "0",
+          "6": "1",
+          "7": "2"
+        },
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.07,
+          "2": 0.18,
+          "3": 0.29,
+          "4": 0.2,
+          "5": 0.13,
+          "6": 0.07,
+          "7": 0.03
+        },
+        "confidence": 0.4
+      }
+    },
+    "usage": {
+      "input_tokens": 1391,
+      "output_tokens": 45,
+      "cost": 5.8422e-05
+    },
+    "id": "gen-dec-1791989184-c8AWGf35TY2DalT8HAWd",
+    "provider": "TypeSafe"
+  },
+  "seconds": 0.304,
+  "requested_at": "2026-10-14T14:46:25+00:00"
+}

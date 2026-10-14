@@ -1,0 +1,843 @@
+{
+  "item_id": "M032142",
+  "assessment": "TIMSS 2007",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Number",
+  "main_topic": "Ratio, Proportion, and Percent",
+  "cognitive_domain": "Applying",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+  "excluded_item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M032142"
+  ],
+  "similar_items": [
+    {
+      "rank": 1,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M042055",
+      "item_id": "M042055",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.9034,
+      "pct_correct_intl_avg": 45.5,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.22805,
+      "location": 0.80349,
+      "guessing": 0.29298
+    },
+    {
+      "rank": 2,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M012004",
+      "item_id": "M012004",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8508,
+      "pct_correct_intl_avg": 47,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.139,
+      "location": 0.643,
+      "guessing": 0.319
+    },
+    {
+      "rank": 3,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1999/grade 8/Mathematics/P16",
+      "item_id": "P16",
+      "assessment": "TIMSS 1999",
+      "cosine_similarity": 0.7954,
+      "pct_correct_intl_avg": 79,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.996,
+      "location": -1.049,
+      "guessing": 0.203
+    },
+    {
+      "rank": 4,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1999/grade 8/Mathematics/J17",
+      "item_id": "J17",
+      "assessment": "TIMSS 1999",
+      "cosine_similarity": 0.8256,
+      "pct_correct_intl_avg": 65,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.568,
+      "location": 0.047,
+      "guessing": 0.305
+    },
+    {
+      "rank": 5,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M012037",
+      "item_id": "M012037",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8189,
+      "pct_correct_intl_avg": 48,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.562,
+      "location": 0.6,
+      "guessing": 0.226
+    },
+    {
+      "rank": 6,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M032701",
+      "item_id": "M032701",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8466,
+      "pct_correct_intl_avg": 78.5,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.21073,
+      "location": -1.09809,
+      "guessing": 0.1851
+    },
+    {
+      "rank": 7,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1999/grade 8/Mathematics/D08",
+      "item_id": "D08",
+      "assessment": "TIMSS 1999",
+      "cosine_similarity": 0.8448,
+      "pct_correct_intl_avg": 69,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.197,
+      "location": -0.053,
+      "guessing": 0.389
+    },
+    {
+      "rank": 8,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M032352",
+      "item_id": "M032352",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8435,
+      "pct_correct_intl_avg": 60,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.5078,
+      "location": 0.40393,
+      "guessing": 0.39327
+    },
+    {
+      "rank": 9,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1999/grade 8/Mathematics/L15",
+      "item_id": "L15",
+      "assessment": "TIMSS 1999",
+      "cosine_similarity": 0.8374,
+      "pct_correct_intl_avg": 33,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.229,
+      "location": 0.967,
+      "guessing": 0.145
+    },
+    {
+      "rank": 10,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M032757",
+      "item_id": "M032757",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.758,
+      "pct_correct_intl_avg": 54,
+      "irt_model": "GPCM",
+      "scaled_points": 2,
+      "slope": 0.52005,
+      "location": -0.32603,
+      "step1": -1.99665,
+      "step2": 1.99665
+    }
+  ],
+  "context": "item+references",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2007",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Number",
+      "main_topic": "Ratio, Proportion, and Percent",
+      "cognitive_domain": "Applying",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "| Class | Boys | Girls |\n| :---: | :---: | :---: |\n| 1 | 12 | 9 |\n| 2 | 14 | 11 |\n| 3 | 16 | 12 |\n| 4 | 18 | 15 |\n\nThe table above shows the numbers of boys and girls in four classes. Which two classes have the same ratio of boys to girls?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1 and 2"
+        },
+        {
+          "label": "B",
+          "text": "1 and 3"
+        },
+        {
+          "label": "C",
+          "text": "2 and 3"
+        },
+        {
+          "label": "D",
+          "text": "2 and 4"
+        }
+      ],
+      "correct_option": "B",
+      "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)."
+    },
+    "reference_items": [
+      {
+        "rank": 1,
+        "cosine_similarity": 0.903,
+        "assessment": "TIMSS 2007",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Ratio, Proportion, and Percent",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "There are 30 students in a class. The ratio of boys to girls in the class is 2:3.\nHow many boys are there in the class?",
+        "options": [
+          {
+            "label": "A",
+            "text": "6"
+          },
+          {
+            "label": "B",
+            "text": "12"
+          },
+          {
+            "label": "C",
+            "text": "18"
+          },
+          {
+            "label": "D",
+            "text": "20"
+          }
+        ],
+        "correct_option": "B",
+        "pct_correct_intl_avg": 45.5,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.22805,
+          "location": 0.80349,
+          "guessing": 0.29298
+        }
+      },
+      {
+        "rank": 2,
+        "cosine_similarity": 0.851,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Ratio, Proportions, and Percent",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Alice can run 4 laps around a track in the same time that Carol can run 3 laps. When Carol has run 12 laps, how many laps has Alice run?",
+        "options": [
+          {
+            "label": "A",
+            "text": "9"
+          },
+          {
+            "label": "B",
+            "text": "11"
+          },
+          {
+            "label": "C",
+            "text": "13"
+          },
+          {
+            "label": "D",
+            "text": "16"
+          }
+        ],
+        "correct_option": "D",
+        "pct_correct_intl_avg": 47,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.139,
+          "location": 0.643,
+          "guessing": 0.319
+        }
+      },
+      {
+        "rank": 3,
+        "cosine_similarity": 0.795,
+        "assessment": "TIMSS 1999",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Data Representation, Analysis, and Probability",
+        "cognitive_domain": "Using Complex Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "This table shows temperatures at various times on four days.\n\n| TEMPERATURE | | | | | |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| | 6 a.m. | 9 a.m. | Noon | 3 p.m. | 6 p.m. |\n| Monday | 15° | 17° | 24° | 21° | 16° |\n| Tuesday | 20° | 16° | 15° | 10° | 9° |\n| Wednesday | 8° | 14° | 16° | 19° | 15° |\n| Thursday | 8° | 11° | 19° | 26° | 20° |\n\n[Image: Thermometer]\n\nOn which day and at what time was the temperature shown in the table the same as that shown on the thermometer?",
+        "options": [
+          {
+            "label": "A",
+            "text": "Monday, Noon"
+          },
+          {
+            "label": "B",
+            "text": "Tuesday, 6 a.m."
+          },
+          {
+            "label": "C",
+            "text": "Wednesday, 3 p.m."
+          },
+          {
+            "label": "D",
+            "text": "Thursday, 3 p.m."
+          }
+        ],
+        "correct_option": "A",
+        "figure_description": "A vertical thermometer labeled \"Thermometer\" at the bottom. The scale on the right has labeled marks at 5°, 10°, 15°, 20°, 25°, 30°, 35°, and 40°, with individual 1-degree tick marks between them. The shaded column of liquid inside the thermometer reaches exactly 24° (one tick mark below 25°).",
+        "pct_correct_intl_avg": 79,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.996,
+          "location": -1.049,
+          "guessing": 0.203
+        }
+      },
+      {
+        "rank": 4,
+        "cosine_similarity": 0.826,
+        "assessment": "TIMSS 1999",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Algebra",
+        "cognitive_domain": "Using Routine Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "The table represents a relation between x and y.\n\nWhat is the missing number in the table?\n\n| x | y |\n| --- | --- |\n| 2 | 5 |\n| 3 | 7 |\n| 4 | ? |\n| 7 | 15 |",
+        "options": [
+          {
+            "label": "A",
+            "text": "9"
+          },
+          {
+            "label": "B",
+            "text": "10"
+          },
+          {
+            "label": "C",
+            "text": "11"
+          },
+          {
+            "label": "D",
+            "text": "12"
+          },
+          {
+            "label": "E",
+            "text": "13"
+          }
+        ],
+        "correct_option": "A",
+        "pct_correct_intl_avg": 65,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.568,
+          "location": 0.047,
+          "guessing": 0.305
+        }
+      },
+      {
+        "rank": 5,
+        "cosine_similarity": 0.819,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Data",
+        "main_topic": "Data Interpretation",
+        "cognitive_domain": "Reasoning",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "The table shows scores for a class on a 10-point test.\n\n| Test Score | Tally | Frequency |\n| :---: | :---: | :---: |\n| 4 | / | 1 |\n| 5 | /// | 3 |\n| 6 | ///// / | 6 |\n| 7 | // | 2 |\n| 8 | //// | 4 |\n| 9 | /// | 3 |\n| 10 | / | 1 |\n\nHow many in the class had a score greater than 7?",
+        "options": [
+          {
+            "label": "A",
+            "text": "2"
+          },
+          {
+            "label": "B",
+            "text": "8"
+          },
+          {
+            "label": "C",
+            "text": "10"
+          },
+          {
+            "label": "D",
+            "text": "12"
+          },
+          {
+            "label": "E",
+            "text": "20"
+          }
+        ],
+        "correct_option": "B",
+        "pct_correct_intl_avg": 48,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.562,
+          "location": 0.6,
+          "guessing": 0.226
+        }
+      },
+      {
+        "rank": 6,
+        "cosine_similarity": 0.847,
+        "assessment": "TIMSS 2007",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Ratio, Proportion, and Percent",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "On a school trip there was 1 teacher for every 12 students. If 108 students went on the trip, how many teachers were on the trip?",
+        "options": [
+          {
+            "label": "A",
+            "text": "7"
+          },
+          {
+            "label": "B",
+            "text": "8"
+          },
+          {
+            "label": "C",
+            "text": "9"
+          },
+          {
+            "label": "D",
+            "text": "10"
+          }
+        ],
+        "correct_option": "C",
+        "pct_correct_intl_avg": 78.5,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.21073,
+          "location": -1.09809,
+          "guessing": 0.1851
+        }
+      },
+      {
+        "rank": 7,
+        "cosine_similarity": 0.845,
+        "assessment": "TIMSS 1999",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Algebra",
+        "cognitive_domain": "Using Routine Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "If the ratio 7 to 13 is the same as the ratio x to 52, what is the value of x?",
+        "options": [
+          {
+            "label": "A",
+            "text": "7"
+          },
+          {
+            "label": "B",
+            "text": "13"
+          },
+          {
+            "label": "C",
+            "text": "28"
+          },
+          {
+            "label": "D",
+            "text": "364"
+          }
+        ],
+        "correct_option": "C",
+        "pct_correct_intl_avg": 69,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.197,
+          "location": -0.053,
+          "guessing": 0.389
+        }
+      },
+      {
+        "rank": 8,
+        "cosine_similarity": 0.843,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Algebra",
+        "main_topic": "Patterns",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "| Bush height (cm) | Shadow length (cm) |\n| --- | --- |\n| 20 | 16 |\n| 40 | 32 |\n| 60 | 48 |\n| 80 | 64 |\n\nThe table above shows the shadow lengths of four bushes of different heights at 10 a.m. What is the shadow length at 10 a.m. of a bush that has a height of 50 centimeters?",
+        "options": [
+          {
+            "label": "A",
+            "text": "36 cm"
+          },
+          {
+            "label": "B",
+            "text": "38 cm"
+          },
+          {
+            "label": "C",
+            "text": "40 cm"
+          },
+          {
+            "label": "D",
+            "text": "42 cm"
+          }
+        ],
+        "correct_option": "C",
+        "pct_correct_intl_avg": 60,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.5078,
+          "location": 0.40393,
+          "guessing": 0.39327
+        }
+      },
+      {
+        "rank": 9,
+        "cosine_similarity": 0.837,
+        "assessment": "TIMSS 1999",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Algebra",
+        "cognitive_domain": "Using Routine Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "The table shows some values of x and y, where x is proportional to y.\n\n| x | 4 | 8 | Q |\n| --- | --- | --- | --- |\n| y | 9 | P | 45 |\n\nWhat are the values of P and Q?",
+        "options": [
+          {
+            "label": "A",
+            "text": "P = 40 and Q = 13"
+          },
+          {
+            "label": "B",
+            "text": "P = 18 and Q = 17"
+          },
+          {
+            "label": "C",
+            "text": "P = 20 and Q = 18"
+          },
+          {
+            "label": "D",
+            "text": "P = 40 and Q = 18"
+          },
+          {
+            "label": "E",
+            "text": "P = 18 and Q = 20"
+          }
+        ],
+        "correct_option": "E",
+        "pct_correct_intl_avg": 33,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.229,
+          "location": 0.967,
+          "guessing": 0.145
+        }
+      },
+      {
+        "rank": 10,
+        "cosine_similarity": 0.758,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Algebra",
+        "main_topic": "Patterns",
+        "cognitive_domain": "Reasoning",
+        "item_type": "constructed_response",
+        "max_points": 2,
+        "scaled_points": 2,
+        "stem": "Pat has red tiles and black tiles. Pat uses the tiles to make square shapes.\n\nThe 3 × 3 shape has 1 black tile and 8 red tiles.\n[Image: A black tile in the middle, surrounded by the 8 red tiles, to make a square shape.]\n\nThe 4 × 4 shape has 4 black tiles and 12 red tiles.\n[Image: Four black tiles forming a square in the center, with 12 red tiles lining the sides, to create a larger square shape.]\n\nThe table below shows the number of tiles for the first three shapes Pat made. Pat continued making shapes using this pattern. Complete the table for the 6 × 6 and 7 × 7 shapes.\n\n| Shape | Number of Black Tiles | Number of Red Tiles | Total Number of Tiles |\n| :---: | :---: | :---: | :---: |\n| 3 × 3 | 1 | 8 | 9 |\n| 4 × 4 | 4 | 12 | 16 |\n| 5 × 5 | 9 | 16 | 25 |\n| 6 × 6 | 16 | | |\n| 7 × 7 | 25 | | |",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Both rows completely correct\nShape 6 x 6: 20, 36\nShape 7 x 7: 24, 49"
+            ]
+          },
+          {
+            "category": "Partially Correct Response",
+            "descriptors": [
+              "Entries for one row correct but not both"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Entries for one column correct but not both\nRed Tiles: 20, 24   OR   Total Tiles: 36, 49",
+              "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "figure_description": "Two square shapes made of smaller square tiles and an explanatory key:\n- A 3 × 3 shape composed of 9 tiles: 1 black center tile labeled 'B' surrounded by 8 gray tiles labeled 'R'.\n- A 4 × 4 shape composed of 16 tiles: 4 black center tiles arranged in a 2 × 2 square, each labeled 'B', surrounded by 12 gray tiles labeled 'R'.\n- A key below the 3 × 3 shape shows a black square labeled 'B' = Black tile, and a gray square labeled 'R' = Red tile.",
+        "pct_correct_intl_avg": 54,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "GPCM",
+        "calibrated_parameters": {
+          "slope": 0.52005,
+          "location": -0.32603,
+          "step1": -1.99665,
+          "step2": 1.99665
+        }
+      }
+    ]
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.91,
+      "confidence": 0.82,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.02,
+        "2": 0.02,
+        "3": 0.06,
+        "4": 0.78,
+        "5": 0.06,
+        "6": 0.02,
+        "7": 0.01,
+        "8": 0.01
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 4.54,
+      "confidence": 0.29,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.06,
+        "2": 0.09,
+        "3": 0.15,
+        "4": 0.13,
+        "5": 0.2,
+        "6": 0.25,
+        "7": 0.08,
+        "8": 0.02,
+        "9": 0.01
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 3.7,
+      "confidence": 0.77,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.01,
+        "2": 0.02,
+        "3": 0.22,
+        "4": 0.72,
+        "5": 0.02
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 5842,
+  "output_tokens": 45,
+  "cost_usd": 0.000245364,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791918373-4FUbrC1bj3Bumn7EyqJ5",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.91,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.02,
+          "2": 0.02,
+          "3": 0.06,
+          "4": 0.78,
+          "5": 0.06,
+          "6": 0.02,
+          "7": 0.01,
+          "8": 0.01
+        },
+        "confidence": 0.82
+      },
+      "location": {
+        "type": "score",
+        "score": 4.54,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.06,
+          "2": 0.09,
+          "3": 0.15,
+          "4": 0.13,
+          "5": 0.2,
+          "6": 0.25,
+          "7": 0.08,
+          "8": 0.02,
+          "9": 0.01
+        },
+        "confidence": 0.29
+      },
+      "guessing": {
+        "type": "score",
+        "score": 3.7,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.02,
+          "3": 0.22,
+          "4": 0.72,
+          "5": 0.02
+        },
+        "confidence": 0.77
+      }
+    },
+    "usage": {
+      "input_tokens": 5842,
+      "output_tokens": 45,
+      "cost": 0.000245364
+    },
+    "id": "gen-dec-1791918373-4FUbrC1bj3Bumn7EyqJ5",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T19:06:13+00:00",
+  "seconds": null
+}

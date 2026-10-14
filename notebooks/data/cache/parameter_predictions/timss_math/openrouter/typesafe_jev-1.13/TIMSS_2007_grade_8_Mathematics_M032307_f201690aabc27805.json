@@ -1,0 +1,223 @@
+{
+  "item_id": "M032307",
+  "assessment": "TIMSS 2007",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Number",
+  "main_topic": "Fractions and Decimals",
+  "cognitive_domain": "Applying",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+  "excluded_item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M032307"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2007",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Number",
+      "main_topic": "Fractions and Decimals",
+      "cognitive_domain": "Applying",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "Tickets for a concert cost either 10 zeds, 15 zeds, or 30 zeds.\n\nOf the 900 tickets sold, 1/5 cost 30 zeds each and 2/3 cost 15 zeds each.\n\nWhat FRACTION of the tickets sold for 10 zeds each?\n\nAnswer: ____",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "2/15 or equivalent"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "Incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+          ]
+        },
+        {
+          "category": "Nonresponse",
+          "descriptors": [
+            "Blank"
+          ]
+        }
+      ],
+      "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.62,
+      "confidence": 0.38,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.06,
+        "2": 0.15,
+        "3": 0.25,
+        "4": 0.2,
+        "5": 0.17,
+        "6": 0.09,
+        "7": 0.03,
+        "8": 0.01
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 3.82,
+      "confidence": 0.38,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.08,
+        "2": 0.16,
+        "3": 0.21,
+        "4": 0.17,
+        "5": 0.19,
+        "6": 0.1,
+        "7": 0.05,
+        "8": 0.02,
+        "9": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1027,
+  "output_tokens": 31,
+  "cost_usd": 4.3134e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914765-TtxluYKBTUZsPOglzxKk",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.62,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.06,
+          "2": 0.15,
+          "3": 0.25,
+          "4": 0.2,
+          "5": 0.17,
+          "6": 0.09,
+          "7": 0.03,
+          "8": 0.01
+        },
+        "confidence": 0.38
+      },
+      "location": {
+        "type": "score",
+        "score": 3.82,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.08,
+          "2": 0.16,
+          "3": 0.21,
+          "4": 0.17,
+          "5": 0.19,
+          "6": 0.1,
+          "7": 0.05,
+          "8": 0.02,
+          "9": 0.01
+        },
+        "confidence": 0.38
+      }
+    },
+    "usage": {
+      "input_tokens": 1027,
+      "output_tokens": 31,
+      "cost": 4.3134e-05
+    },
+    "id": "gen-dec-1791914765-TtxluYKBTUZsPOglzxKk",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:05+00:00",
+  "seconds": null
+}

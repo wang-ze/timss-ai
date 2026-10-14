@@ -1,0 +1,834 @@
+{
+  "item_id": "F10",
+  "assessment": "TIMSS 1999",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Measurement",
+  "main_topic": null,
+  "cognitive_domain": "Knowing",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 1999/grade 8/Mathematics/F10"
+  ],
+  "similar_items": [
+    {
+      "rank": 1,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M012003",
+      "item_id": "M012003",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8723,
+      "pct_correct_intl_avg": 50,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.911,
+      "location": -0.197,
+      "guessing": 0.073
+    },
+    {
+      "rank": 2,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M012038",
+      "item_id": "M012038",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.9043,
+      "pct_correct_intl_avg": 67,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.983,
+      "location": -0.299,
+      "guessing": 0.355
+    },
+    {
+      "rank": 3,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1999/grade 8/Mathematics/P12",
+      "item_id": "P12",
+      "assessment": "TIMSS 1999",
+      "cosine_similarity": 0.8925,
+      "pct_correct_intl_avg": 41,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.62,
+      "location": 0.734,
+      "guessing": 0.125
+    },
+    {
+      "rank": 4,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M032640",
+      "item_id": "M032640",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.7664,
+      "pct_correct_intl_avg": 8.7,
+      "irt_model": "GPCM",
+      "scaled_points": 2,
+      "slope": 0.60659,
+      "location": 1.39441,
+      "step1": -0.75168,
+      "step2": 0.75168
+    },
+    {
+      "rank": 5,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M012030",
+      "item_id": "M012030",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8314,
+      "pct_correct_intl_avg": 37,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.275,
+      "location": 0.491,
+      "guessing": 0.135
+    },
+    {
+      "rank": 6,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M052206",
+      "item_id": "M052206",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.7956,
+      "pct_correct_intl_avg": 25,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.0351,
+      "location": 0.90572
+    },
+    {
+      "rank": 7,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1999/grade 8/Mathematics/N11",
+      "item_id": "N11",
+      "assessment": "TIMSS 1999",
+      "cosine_similarity": 0.8106,
+      "pct_correct_intl_avg": 74,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.758,
+      "location": -0.813,
+      "guessing": 0.137
+    },
+    {
+      "rank": 8,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1999/grade 8/Mathematics/D12",
+      "item_id": "D12",
+      "assessment": "TIMSS 1999",
+      "cosine_similarity": 0.8649,
+      "pct_correct_intl_avg": 68,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.873,
+      "location": -0.045,
+      "guessing": 0.338
+    },
+    {
+      "rank": 9,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M032699",
+      "item_id": "M032699",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8491,
+      "pct_correct_intl_avg": 75,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.639,
+      "location": -0.846,
+      "guessing": 0.332
+    },
+    {
+      "rank": 10,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M042137",
+      "item_id": "M042137",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8044,
+      "pct_correct_intl_avg": 42.1,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.15137,
+      "location": 0.68244,
+      "guessing": 0.226
+    }
+  ],
+  "context": "item+references",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 1999",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Measurement",
+      "cognitive_domain": "Knowing",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "[Image: Ruler]\n\nUsing a centimeter ruler like this one, you can measure accurately to the nearest",
+      "options": [
+        {
+          "label": "A",
+          "text": "millimeter"
+        },
+        {
+          "label": "B",
+          "text": "half-millimeter"
+        },
+        {
+          "label": "C",
+          "text": "centimeter"
+        },
+        {
+          "label": "D",
+          "text": "half-centimeter"
+        }
+      ],
+      "correct_option": "D",
+      "figure_description": "A centimeter ruler labeled \"cm\" at the left, with major tick marks numbered from 1 to 11. Between each pair of consecutive whole-centimeter marks (and between 0 and 1), there is exactly one intermediate, unnumbered tick mark of medium length indicating each half-centimeter. There are no smaller millimeter subdivision marks.",
+      "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data."
+    },
+    "reference_items": [
+      {
+        "rank": 1,
+        "cosine_similarity": 0.872,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Measurement",
+        "main_topic": "Tools, Techniques, and Formulas",
+        "cognitive_domain": "Knowing Facts and Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "The length of a box is 9 cm to the nearest centimeter. Which of these could be the actual length of the box?",
+        "options": [
+          {
+            "label": "A",
+            "text": "10 cm"
+          },
+          {
+            "label": "B",
+            "text": "9.9 cm"
+          },
+          {
+            "label": "C",
+            "text": "9.6 cm"
+          },
+          {
+            "label": "D",
+            "text": "8.6 cm"
+          }
+        ],
+        "correct_option": "D",
+        "pct_correct_intl_avg": 50,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.911,
+          "location": -0.197,
+          "guessing": 0.073
+        }
+      },
+      {
+        "rank": 2,
+        "cosine_similarity": 0.904,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Measurement",
+        "main_topic": "Tools, Techniques, and Formulas",
+        "cognitive_domain": "Knowing Facts and Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: A ruler measuring the length of a pipe]\n\nWhat is the length of the pipe being measured?",
+        "options": [
+          {
+            "label": "A",
+            "text": "0.085 m"
+          },
+          {
+            "label": "B",
+            "text": "0.805 m"
+          },
+          {
+            "label": "C",
+            "text": "0.85 m"
+          },
+          {
+            "label": "D",
+            "text": "8.5 m"
+          }
+        ],
+        "correct_option": "C",
+        "figure_description": "A horizontal ruler labeled \"Meters (m)\" at the top has major tick marks from 0 to 1.0 in increments of 0.1, with minor tick marks halfway between each major tick mark (representing increments of 0.05). Below the ruler, a gray cylindrical pipe is positioned horizontally. Dimension lines with arrows indicate the length being measured from the left end of the pipe, which aligns with 0 on the ruler, to the right end of the pipe, which aligns with the tick mark halfway between 0.8 and 0.9.",
+        "pct_correct_intl_avg": 67,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.983,
+          "location": -0.299,
+          "guessing": 0.355
+        }
+      },
+      {
+        "rank": 3,
+        "cosine_similarity": 0.892,
+        "assessment": "TIMSS 1999",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Measurement",
+        "cognitive_domain": "Using Complex Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: A ruler with a wavy string above it]\n\nIf the string in the diagram is pulled straight, which of these is closest to its length?",
+        "options": [
+          {
+            "label": "A",
+            "text": "5 cm"
+          },
+          {
+            "label": "B",
+            "text": "6 cm"
+          },
+          {
+            "label": "C",
+            "text": "7 cm"
+          },
+          {
+            "label": "D",
+            "text": "8 cm"
+          }
+        ],
+        "correct_option": "C",
+        "figure_description": "A metric ruler marked from 0 to 11 cm, with ticks at every centimeter and half-centimeter, labeled 'cm' at the left end and with numbers 1 through 11. Above the ruler, a curved line labeled 'string' begins at the 3 cm mark, extends horizontally to approximately 5.5 cm, loops back leftward to about 4.7 cm, and then extends horizontally rightward, ending near the 7 cm mark.",
+        "pct_correct_intl_avg": 41,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.62,
+          "location": 0.734,
+          "guessing": 0.125
+        }
+      },
+      {
+        "rank": 4,
+        "cosine_similarity": 0.766,
+        "assessment": "TIMSS 2007",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Algebra",
+        "main_topic": "Patterns",
+        "cognitive_domain": "Reasoning",
+        "item_type": "constructed_response",
+        "max_points": 2,
+        "scaled_points": 2,
+        "stem": "[Image: Row of 4 squares made of matches]\n\nIn the figure, 13 matches were used to make 4 squares in a row. What is the number of squares in a row that can be made in this way using 73 matches? Show the calculations that lead to your answer.\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "24 with calculations"
+            ]
+          },
+          {
+            "category": "Partial Response",
+            "descriptors": [
+              "24 with no calculations or no relevant calculations (includes only drawing and counting squares)"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Incorrect (including crossed out/erased, stray marks, illegible or off task)"
+            ]
+          },
+          {
+            "category": "Nonresponse",
+            "descriptors": [
+              "Blank"
+            ]
+          }
+        ],
+        "figure_description": "Four squares connected in a single horizontal row, sharing common vertical sides, constructed from 13 matchsticks: 4 horizontal matchsticks along the top (heads pointing right), 4 horizontal matchsticks along the bottom (heads pointing left), and 5 vertical matchsticks dividing and enclosing the squares (heads pointing up).",
+        "pct_correct_intl_avg": 8.7,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+        "irt_model": "GPCM",
+        "calibrated_parameters": {
+          "slope": 0.60659,
+          "location": 1.39441,
+          "step1": -0.75168,
+          "step2": 0.75168
+        }
+      },
+      {
+        "rank": 5,
+        "cosine_similarity": 0.831,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Measurement",
+        "main_topic": "Tools, Techniques, and Formulas",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "A thin wire 20 centimeters long is formed into a rectangle. If the width of this rectangle is 4 centimeters, what is its length?",
+        "options": [
+          {
+            "label": "A",
+            "text": "5 centimeters"
+          },
+          {
+            "label": "B",
+            "text": "6 centimeters"
+          },
+          {
+            "label": "C",
+            "text": "12 centimeters"
+          },
+          {
+            "label": "D",
+            "text": "16 centimeters"
+          }
+        ],
+        "correct_option": "B",
+        "pct_correct_intl_avg": 37,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.275,
+          "location": 0.491,
+          "guessing": 0.135
+        }
+      },
+      {
+        "rank": 6,
+        "cosine_similarity": 0.796,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Geometric Measurement",
+        "cognitive_domain": "Reasoning",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Ryan is packing books into a rectangular box.\n\nAll the books are the same size.\n\n[Image: A book and a box. The book measures 20 centimeters by 15 centimeters by 6 centimeters. The box has a length of 36 centimeters, width of 30 centimeters, and height of 20 centimeters.]\n\nWhat is the largest number of books that will fit inside the box?\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "12"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "figure_description": "Two 3-dimensional diagrams:\n1. A closed rectangular book labeled \"Book\" with dimensions indicated by double-headed arrows: height/thickness 6 cm, length 20 cm along the left edge, and width 15 cm along the right-front edge.\n2. An open rectangular box labeled \"Box\" with dimensions indicated by double-headed arrows: width 30 cm along the front-left top edge, length 36 cm along the back-right top edge, and vertical height/depth of 20 cm along the inside back corner from top to bottom.",
+        "pct_correct_intl_avg": 25,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.0351,
+          "location": 0.90572
+        }
+      },
+      {
+        "rank": 7,
+        "cosine_similarity": 0.811,
+        "assessment": "TIMSS 1999",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Fractions and Number Sense",
+        "cognitive_domain": "Using Routine Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "A company produced 17,175 cars in 1996. For a report, this\nnumber was rounded to the nearest hundred. Which was the\nnumber of cars given in the report?",
+        "options": [
+          {
+            "label": "A",
+            "text": "17,000"
+          },
+          {
+            "label": "B",
+            "text": "17,100"
+          },
+          {
+            "label": "C",
+            "text": "17,200"
+          },
+          {
+            "label": "D",
+            "text": "17,270"
+          }
+        ],
+        "correct_option": "C",
+        "pct_correct_intl_avg": 74,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.758,
+          "location": -0.813,
+          "guessing": 0.137
+        }
+      },
+      {
+        "rank": 8,
+        "cosine_similarity": 0.865,
+        "assessment": "TIMSS 1999",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Fractions and Number Sense",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: Number line from 0 to 3 with a point P marked]\n\nWhat is the best estimate of the number corresponding to P?",
+        "options": [
+          {
+            "label": "A",
+            "text": "1.1"
+          },
+          {
+            "label": "B",
+            "text": "1.2"
+          },
+          {
+            "label": "C",
+            "text": "1.4"
+          },
+          {
+            "label": "D",
+            "text": "1.5"
+          }
+        ],
+        "correct_option": "B",
+        "figure_description": "A horizontal number line with an arrow pointing right. Four evenly spaced vertical tick marks are labeled below with the numbers 0, 1, 2, and 3. On the line between 1 and 2, slightly to the right of 1 (at approximately one-fifth of the distance from 1 to 2), there is a solid black point labeled \"P\" directly above it.",
+        "pct_correct_intl_avg": 68,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.873,
+          "location": -0.045,
+          "guessing": 0.338
+        }
+      },
+      {
+        "rank": 9,
+        "cosine_similarity": 0.849,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Measurement",
+        "main_topic": "Attributes and Units",
+        "cognitive_domain": "Knowing Facts and Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Which of these units would usually be used for an area the size of a soccer field?",
+        "options": [
+          {
+            "label": "A",
+            "text": "square centimeters"
+          },
+          {
+            "label": "B",
+            "text": "cubic centimeters"
+          },
+          {
+            "label": "C",
+            "text": "square meters"
+          },
+          {
+            "label": "D",
+            "text": "cubic meters"
+          }
+        ],
+        "correct_option": "C",
+        "pct_correct_intl_avg": 75,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.639,
+          "location": -0.846,
+          "guessing": 0.332
+        }
+      },
+      {
+        "rank": 10,
+        "cosine_similarity": 0.804,
+        "assessment": "TIMSS 2007",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Geometric Shapes",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: Geometric figure with parallel lines and triangle]\n\nIn this figure, line l is parallel to line m. The measure of angle DAC is 55°.\nWhat is the value of x + y?",
+        "options": [
+          {
+            "label": "A",
+            "text": "55"
+          },
+          {
+            "label": "B",
+            "text": "110"
+          },
+          {
+            "label": "C",
+            "text": "125"
+          },
+          {
+            "label": "D",
+            "text": "135"
+          }
+        ],
+        "correct_option": "C",
+        "figure_description": "Two horizontal parallel lines are shown: line l on top and line m on the bottom. Points A and D lie on line l, with D to the right of A. Points B and C lie on line m, with C to the right of B. Line segments AB and AC connect the two lines, forming triangle ABC. A dashed arc indicates that angle DAC measures 55°. Inside triangle ABC, angle BAC at vertex A is marked with an arc labeled x°, and angle ABC at vertex B is marked with a dashed arc labeled y°.",
+        "pct_correct_intl_avg": 42.1,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.15137,
+          "location": 0.68244,
+          "guessing": 0.226
+        }
+      }
+    ]
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 2.55,
+      "confidence": 0.7,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.06,
+        "2": 0.41,
+        "3": 0.45,
+        "4": 0.05,
+        "5": 0.01,
+        "6": 0.01,
+        "7": 0.0,
+        "8": 0.0
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 2.0,
+      "confidence": 0.71,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.07,
+        "1": 0.25,
+        "2": 0.44,
+        "3": 0.18,
+        "4": 0.04,
+        "5": 0.01,
+        "6": 0.01,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 3.51,
+      "confidence": 0.62,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.06,
+        "2": 0.07,
+        "3": 0.16,
+        "4": 0.65,
+        "5": 0.05
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 5558,
+  "output_tokens": 45,
+  "cost_usd": 0.000233436,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791918364-f5qtjJnIx8cP7XtKCoHY",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 2.55,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.06,
+          "2": 0.41,
+          "3": 0.45,
+          "4": 0.05,
+          "5": 0.01,
+          "6": 0.01,
+          "7": 0,
+          "8": 0
+        },
+        "confidence": 0.7
+      },
+      "location": {
+        "type": "score",
+        "score": 2,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.25,
+          "2": 0.44,
+          "3": 0.18,
+          "4": 0.04,
+          "5": 0.01,
+          "6": 0.01,
+          "7": 0,
+          "8": 0,
+          "9": 0
+        },
+        "confidence": 0.71
+      },
+      "guessing": {
+        "type": "score",
+        "score": 3.51,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.06,
+          "2": 0.07,
+          "3": 0.16,
+          "4": 0.65,
+          "5": 0.05
+        },
+        "confidence": 0.62
+      }
+    },
+    "usage": {
+      "input_tokens": 5558,
+      "output_tokens": 45,
+      "cost": 0.000233436
+    },
+    "id": "gen-dec-1791918364-f5qtjJnIx8cP7XtKCoHY",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T19:06:04+00:00",
+  "seconds": null
+}

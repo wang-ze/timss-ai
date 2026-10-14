@@ -1,0 +1,857 @@
+{
+  "item_id": "K7",
+  "assessment": "TIMSS Advanced 1995",
+  "grade": 12,
+  "subject": "Advanced Mathematics",
+  "content_domain": "Geometry",
+  "main_topic": null,
+  "cognitive_domain": "Routine Procedures",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K7"
+  ],
+  "similar_items": [
+    {
+      "rank": 1,
+      "found_by": "most similar",
+      "item_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13008",
+      "item_id": "MA13008",
+      "assessment": "TIMSS Advanced 2008",
+      "cosine_similarity": 0.8411,
+      "pct_correct_intl_avg": null,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.78905,
+      "location": -0.73734,
+      "guessing": 0.16269
+    },
+    {
+      "rank": 2,
+      "found_by": "most similar",
+      "item_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23170",
+      "item_id": "MA23170",
+      "assessment": "TIMSS Advanced 2008",
+      "cosine_similarity": 0.8601,
+      "pct_correct_intl_avg": null,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.98081,
+      "location": 0.66134
+    },
+    {
+      "rank": 3,
+      "found_by": "most similar",
+      "item_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L8",
+      "item_id": "L8",
+      "assessment": "TIMSS Advanced 1995",
+      "cosine_similarity": 0.8259,
+      "pct_correct_intl_avg": 50,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.74474,
+      "location": 0.50409,
+      "guessing": 0.12956
+    },
+    {
+      "rank": 4,
+      "found_by": "most similar",
+      "item_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13007",
+      "item_id": "MA13007",
+      "assessment": "TIMSS Advanced 2008",
+      "cosine_similarity": 0.8316,
+      "pct_correct_intl_avg": null,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.82629,
+      "location": 0.21579,
+      "guessing": 0.17859
+    },
+    {
+      "rank": 5,
+      "found_by": "most similar",
+      "item_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13003",
+      "item_id": "MA13003",
+      "assessment": "TIMSS Advanced 2008",
+      "cosine_similarity": 0.7391,
+      "pct_correct_intl_avg": null,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.44262,
+      "location": -0.29826,
+      "guessing": 0.06569
+    },
+    {
+      "rank": 6,
+      "found_by": "most similar",
+      "item_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L9",
+      "item_id": "L9",
+      "assessment": "TIMSS Advanced 1995",
+      "cosine_similarity": 0.7946,
+      "pct_correct_intl_avg": 56,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.67902,
+      "location": 0.47454,
+      "guessing": 0.21991
+    },
+    {
+      "rank": 7,
+      "found_by": "most similar",
+      "item_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K18",
+      "item_id": "K18",
+      "assessment": "TIMSS Advanced 1995",
+      "cosine_similarity": 0.7592,
+      "pct_correct_intl_avg": 34,
+      "irt_model": "GPCM",
+      "scaled_points": 2,
+      "slope": 0.38335,
+      "location": 0.27409,
+      "step1": -1.25947,
+      "step2": 1.25947
+    },
+    {
+      "rank": 8,
+      "found_by": "most similar",
+      "item_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13009",
+      "item_id": "MA13009",
+      "assessment": "TIMSS Advanced 2008",
+      "cosine_similarity": 0.7777,
+      "pct_correct_intl_avg": null,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.63467,
+      "location": -0.17393,
+      "guessing": 0.09032
+    },
+    {
+      "rank": 9,
+      "found_by": "most similar",
+      "item_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23055",
+      "item_id": "MA23055",
+      "assessment": "TIMSS Advanced 2008",
+      "cosine_similarity": 0.7848,
+      "pct_correct_intl_avg": null,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.93142,
+      "location": 0.34951,
+      "guessing": 0.10013
+    },
+    {
+      "rank": 10,
+      "found_by": "most similar",
+      "item_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13026B",
+      "item_id": "MA13026B",
+      "assessment": "TIMSS Advanced 2008",
+      "cosine_similarity": 0.7842,
+      "pct_correct_intl_avg": null,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.8702,
+      "location": 1.27465
+    }
+  ],
+  "context": "item+references",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS Advanced 1995",
+      "grade": 12,
+      "subject": "Advanced Mathematics",
+      "content_domain": "Geometry",
+      "cognitive_domain": "Routine Procedures",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "The vertices of the triangle PQR are the points P(1, 2), Q(4, 6) and R(− 4, 12). Which one of the following statements about triangle PQR is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "PQR is a right triangle with the right angle ∠P."
+        },
+        {
+          "label": "B",
+          "text": "PQR is a right triangle with the right angle ∠Q."
+        },
+        {
+          "label": "C",
+          "text": "PQR is a right triangle with the right angle ∠R."
+        },
+        {
+          "label": "D",
+          "text": "PQR is not a right triangle."
+        }
+      ],
+      "correct_option": "B",
+      "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data."
+    },
+    "reference_items": [
+      {
+        "rank": 1,
+        "cosine_similarity": 0.841,
+        "assessment": "TIMSS Advanced 2008",
+        "grade": 12,
+        "subject": "Advanced Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Properties of Geometric Figures",
+        "cognitive_domain": "Reasoning",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Triangle PQR is an isosceles right triangle with a right angle at P. If PT is a median of the triangle, then PT has the same length as",
+        "options": [
+          {
+            "label": "A",
+            "text": "PR"
+          },
+          {
+            "label": "B",
+            "text": "PQ"
+          },
+          {
+            "label": "C",
+            "text": "QR"
+          },
+          {
+            "label": "D",
+            "text": "QT"
+          }
+        ],
+        "correct_option": "D",
+        "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.78905,
+          "location": -0.73734,
+          "guessing": 0.16269
+        }
+      },
+      {
+        "rank": 2,
+        "cosine_similarity": 0.86,
+        "assessment": "TIMSS Advanced 2008",
+        "grade": 12,
+        "subject": "Advanced Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Straight Lines in the Cartesian Plane",
+        "cognitive_domain": "Applying",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: Right triangle on a coordinate plane]\n\nA straight line l passes through the points A (1,−2) and B (3, 4).\nIs the line l parallel with PQ?\n\nGive a reason to support your answer.",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "No, with correct work showing gradients are different, and leading to conclusion that l and PQ are not parallel.",
+              "No, with correct work leading to conclusion that l and PQ are not parallel using method other than showing gradients are different. For example, shows angle between the lines is not 0°"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "No, with no correct reason",
+              "Yes, with or without reason",
+              "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          },
+          {
+            "category": "Nonresponse",
+            "descriptors": [
+              "Blank"
+            ]
+          }
+        ],
+        "figure_description": "A Cartesian coordinate plane with horizontal axis x and vertical axis y intersecting at origin O. Tick marks are shown every unit on both axes. The x-axis is labeled at 2, 4, 6, 8, 10, 12, and the y-axis is labeled at 2, 4, 6, 8, 10, 12. A right triangle is plotted in the first quadrant with vertices at point P, point Q, and a third vertex at the right angle:\n- Point P is at coordinates (8, 1).\n- A horizontal leg extends from P(8, 1) to (12, 1), with length labeled 4 beneath it.\n- A vertical leg extends from (12, 1) upward to point Q at (12, 12), with length labeled 11 to its right.\n- The hypotenuse connects point P to point Q.",
+        "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.98081,
+          "location": 0.66134
+        }
+      },
+      {
+        "rank": 3,
+        "cosine_similarity": 0.826,
+        "assessment": "TIMSS Advanced 1995",
+        "grade": 12,
+        "subject": "Advanced Mathematics",
+        "content_domain": "Geometry",
+        "cognitive_domain": "Routine Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "The rectangular coordinates of three points in a plane are Q(-3, -1), R(-2, 3), and S(1, -3). A fourth point T is chosen so that vector ST = 2 vector QR.\nThe y-coordinate of T is",
+        "options": [
+          {
+            "label": "A",
+            "text": "-11"
+          },
+          {
+            "label": "B",
+            "text": "-7"
+          },
+          {
+            "label": "C",
+            "text": "-1"
+          },
+          {
+            "label": "D",
+            "text": "1"
+          },
+          {
+            "label": "E",
+            "text": "5"
+          }
+        ],
+        "correct_option": "E",
+        "pct_correct_intl_avg": 50,
+        "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.74474,
+          "location": 0.50409,
+          "guessing": 0.12956
+        }
+      },
+      {
+        "rank": 4,
+        "cosine_similarity": 0.832,
+        "assessment": "TIMSS Advanced 2008",
+        "grade": 12,
+        "subject": "Advanced Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Straight Lines in the Cartesian Plane",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "One side of an equilateral triangle lies along the x-axis. The sum of the slopes of the three sides is",
+        "options": [
+          {
+            "label": "A",
+            "text": "0"
+          },
+          {
+            "label": "B",
+            "text": "-1"
+          },
+          {
+            "label": "C",
+            "text": "1"
+          },
+          {
+            "label": "D",
+            "text": "2sqrt(3)"
+          },
+          {
+            "label": "E",
+            "text": "1 + 2sqrt(3)"
+          }
+        ],
+        "correct_option": "A",
+        "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.82629,
+          "location": 0.21579,
+          "guessing": 0.17859
+        }
+      },
+      {
+        "rank": 5,
+        "cosine_similarity": 0.739,
+        "assessment": "TIMSS Advanced 2008",
+        "grade": 12,
+        "subject": "Advanced Mathematics",
+        "content_domain": "Algebra",
+        "main_topic": "Equations and Inequations",
+        "cognitive_domain": "Reasoning",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Two mathematical models are proposed to predict the return y, in dollars, from the sale of x thousand units of an article (where 0 < x < 5). Each of these models, P and Q, is based on different marketing methods.\n\nmodel P:   y = 6x − x^2\nmodel Q:   y = 2x\n\nFor what values of x does model Q predict a greater return than model P?",
+        "options": [
+          {
+            "label": "A",
+            "text": "0 < x < 4"
+          },
+          {
+            "label": "B",
+            "text": "0 < x < 5"
+          },
+          {
+            "label": "C",
+            "text": "3 < x < 5"
+          },
+          {
+            "label": "D",
+            "text": "3 < x < 4"
+          },
+          {
+            "label": "E",
+            "text": "4 < x < 5"
+          }
+        ],
+        "correct_option": "E",
+        "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.44262,
+          "location": -0.29826,
+          "guessing": 0.06569
+        }
+      },
+      {
+        "rank": 6,
+        "cosine_similarity": 0.795,
+        "assessment": "TIMSS Advanced 1995",
+        "grade": 12,
+        "subject": "Advanced Mathematics",
+        "content_domain": "Geometry",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: Rectangles P and Q]\n\nThe rectangle labeled Q CANNOT be obtained from the rectangle labeled P by means of a",
+        "options": [
+          {
+            "label": "A",
+            "text": "reflection (about an axis in the plane of the page)"
+          },
+          {
+            "label": "B",
+            "text": "rotation (in the plane of the page)"
+          },
+          {
+            "label": "C",
+            "text": "translation"
+          },
+          {
+            "label": "D",
+            "text": "translation followed by a reflection"
+          }
+        ],
+        "correct_option": "A",
+        "figure_description": "Two congruent horizontal rectangles labeled P and Q. Rectangle P is positioned above and to the left of rectangle Q. The bottom-right vertex of rectangle P coincides with the top-left vertex of rectangle Q. The sides of both rectangles are aligned horizontally and vertically.",
+        "pct_correct_intl_avg": 56,
+        "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.67902,
+          "location": 0.47454,
+          "guessing": 0.21991
+        }
+      },
+      {
+        "rank": 7,
+        "cosine_similarity": 0.759,
+        "assessment": "TIMSS Advanced 1995",
+        "grade": 12,
+        "subject": "Advanced Mathematics",
+        "content_domain": "Geometry",
+        "cognitive_domain": "Justifying and Proving",
+        "item_type": "constructed_response",
+        "max_points": 2,
+        "scaled_points": 2,
+        "stem": "In the ΔABC the altitudes BN and CM intersect at point S. The measure of ∠MSB is 40° and the measure of ∠SBC is 20°. Write a PROOF of the following statement:\n\n“ΔABC is isosceles.”\n\nGive geometric reasons for statements in your proof.\n\n[Image: Triangle ABC with altitudes BN and CM intersecting at S]",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Correct proof. Proves that ∠B = ∠C using the following facts:\n\n• the sum of angles in any triangle is 180°.\n• if two angles of a triangle are equal, the triangle is isosceles.\nand possibly also uses:\n• vertically opposite angles are equal.\n• supplementary angles add to 180°.\nThe concept of congruence is not used.",
+              "As code 20 but somewhere in the proof uses the fact that some triangles: e.g. triangles BCM and CBN, OR triangles BMS and CNS, are congruent.",
+              "All other fully correct and complete proofs."
+            ]
+          },
+          {
+            "category": "Partial Response",
+            "descriptors": [
+              "As in codes 20-21 shows ∠B and ∠C are equal giving steps in logical order, but omits one step or one reason or gives one incorrect reason.",
+              "As in codes 20-21 shows ∠B and ∠C are equal, states correct geometric facts but not in a logically correct order.",
+              "Other responses with minor errors."
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Shows measures of angles correctly on figure but no geometric facts mentioned or argumentation given.",
+              "Incorrect argumentation and/or includes more than one incorrect geometric fact, step, or reason.",
+              "\"Proof\" is circular; makes use of statements which are equivalent to what is to be proven.",
+              "Other incorrect responses."
+            ]
+          },
+          {
+            "category": "Nonresponse",
+            "descriptors": [
+              "Crossed-out, illegible, or impossible to interpret.",
+              "BLANK"
+            ]
+          }
+        ],
+        "scoring_notes": "Note: To be considered correct, all responses must include mention of all geometric facts used, all calculations made, and a conclusion",
+        "figure_description": "A triangle ABC with vertex A at the top, vertex B at the bottom left, and vertex C at the bottom right. Segment BN is an altitude drawn from B to AC, with a right-angle symbol at N. Segment CM is an altitude drawn from C to AB, with a right-angle symbol at M. BN and CM intersect at interior point S. The angle MSB is marked with an arc and labeled 40°. The angle SBC is marked with an arc and labeled 20°.",
+        "pct_correct_intl_avg": 34,
+        "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+        "irt_model": "GPCM",
+        "calibrated_parameters": {
+          "slope": 0.38335,
+          "location": 0.27409,
+          "step1": -1.25947,
+          "step2": 1.25947
+        }
+      },
+      {
+        "rank": 8,
+        "cosine_similarity": 0.778,
+        "assessment": "TIMSS Advanced 2008",
+        "grade": 12,
+        "subject": "Advanced Mathematics",
+        "content_domain": "Algebra",
+        "main_topic": "Signs and Values of Functions",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "How many points with integer coordinates are there on the graph of the function y = 12/x, x > 0?",
+        "options": [
+          {
+            "label": "A",
+            "text": "2"
+          },
+          {
+            "label": "B",
+            "text": "4"
+          },
+          {
+            "label": "C",
+            "text": "6"
+          },
+          {
+            "label": "D",
+            "text": "infinitely many"
+          }
+        ],
+        "correct_option": "C",
+        "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.63467,
+          "location": -0.17393,
+          "guessing": 0.09032
+        }
+      },
+      {
+        "rank": 9,
+        "cosine_similarity": 0.785,
+        "assessment": "TIMSS Advanced 2008",
+        "grade": 12,
+        "subject": "Advanced Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Properties of Circles",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: A circle on a Cartesian coordinate plane]\n\nWhat is the equation of the circle shown above?",
+        "options": [
+          {
+            "label": "A",
+            "text": "x^2 + y^2 - 6x + 4y - 9 = 0"
+          },
+          {
+            "label": "B",
+            "text": "x^2 + y^2 + 6x - 4y + 9 = 0"
+          },
+          {
+            "label": "C",
+            "text": "x^2 + y^2 + 6x - 4y - 3 = 0"
+          },
+          {
+            "label": "D",
+            "text": "x^2 + y^2 - 6x + 4y - 3 = 0"
+          }
+        ],
+        "correct_option": "D",
+        "figure_description": "A Cartesian coordinate plane with a grid of 1-unit squares. The horizontal x-axis has tick marks and numbers at -4, -2, 2, 4, and 6, with the origin labeled O. The vertical y-axis has tick marks and numbers at -6, -4, -2, 2, and 4. Both axes have arrows at both ends. A circle is drawn on the grid with its center at (3, -2) and a radius of 4 units. Its topmost point is at (3, 2), bottommost point at (3, -6), leftmost point at (-1, -2), and rightmost point at (7, -2). The circle intersects the x-axis between -1 and 0 and between 6 and 7, and intersects the y-axis between 0 and 1 and between -5 and -4.",
+        "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.93142,
+          "location": 0.34951,
+          "guessing": 0.10013
+        }
+      },
+      {
+        "rank": 10,
+        "cosine_similarity": 0.784,
+        "assessment": "TIMSS Advanced 2008",
+        "grade": 12,
+        "subject": "Advanced Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Properties of Geometric Figures",
+        "cognitive_domain": "Applying",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "B. Triangle ABC is rotated through 90° anti-clockwise, centre O. On the diagram, draw and label triangle A\"B\"C\", the image of triangle ABC under this rotation.\n\n[Image: Coordinate grid with triangle ABC]",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Correct answer: (x, y) -> (-y, x) A\" (1, -4) B\" (4, -1) C\" (4, -3)"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "A\"B\"C\" is the correct image of triangle A'B'C' (NOT ABC ), as shown in response to Part A, under the rotation 90° counterclockwise with center O.",
+              "A\"B\"C\" is the image of triangle ABC under a clockwise 90° rotation with center O.\nA\" (-1, 4) B\" (-4, 1) C\" (-4, 3)",
+              "Image A\"B\"C\" has correct shape and position but is incorrectly labeled",
+              "Other incorrect (including sides of a triangle not drawn or vertices not labeled, crossed out, erased, stray marks, illegible, or off task)\nExamples:\n1. A\"B\"C\" is the image of triangle ABC under reflection in the x-axis.\nA\" (-4, 1) B\" (-1, 4) C\" (-3, 4)\n2. A\"B\"C\" is the image of triangle ABC under the central symmetry with center O; OR, equivalently, under the rotation of 180° around O.\nA\" (4, 1) B\" (1, 4) C\" (3, 4)"
+            ]
+          },
+          {
+            "category": "Nonresponse",
+            "descriptors": [
+              "Blank"
+            ]
+          }
+        ],
+        "figure_description": "A Cartesian coordinate grid showing the x-axis and y-axis intersecting at the origin labeled O. The grid extends 5 units to the left, 10 units to the right, 5 units up, and 8 units down. Each grid square represents 1 unit by 1 unit. In the third quadrant, a triangle ABC is drawn with vertices at A(-4, -1), B(-1, -4), and C(-3, -4).",
+        "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.8702,
+          "location": 1.27465
+        }
+      }
+    ]
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 2.22,
+      "confidence": 0.79,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.06,
+        "2": 0.71,
+        "3": 0.15,
+        "4": 0.02,
+        "5": 0.01,
+        "6": 0.01,
+        "7": 0.01,
+        "8": 0.01
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 3.57,
+      "confidence": 0.47,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.08,
+        "2": 0.16,
+        "3": 0.23,
+        "4": 0.2,
+        "5": 0.22,
+        "6": 0.06,
+        "7": 0.02,
+        "8": 0.01,
+        "9": 0.0
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 3.45,
+      "confidence": 0.63,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.02,
+        "2": 0.13,
+        "3": 0.15,
+        "4": 0.67,
+        "5": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 6326,
+  "output_tokens": 45,
+  "cost_usd": 0.000265692,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791918361-LcYTzlrfoCkfG9bZBqZL",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 2.22,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.06,
+          "2": 0.71,
+          "3": 0.15,
+          "4": 0.02,
+          "5": 0.01,
+          "6": 0.01,
+          "7": 0.01,
+          "8": 0.01
+        },
+        "confidence": 0.79
+      },
+      "location": {
+        "type": "score",
+        "score": 3.57,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.08,
+          "2": 0.16,
+          "3": 0.23,
+          "4": 0.2,
+          "5": 0.22,
+          "6": 0.06,
+          "7": 0.02,
+          "8": 0.01,
+          "9": 0
+        },
+        "confidence": 0.47
+      },
+      "guessing": {
+        "type": "score",
+        "score": 3.45,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.02,
+          "2": 0.13,
+          "3": 0.15,
+          "4": 0.67,
+          "5": 0.01
+        },
+        "confidence": 0.63
+      }
+    },
+    "usage": {
+      "input_tokens": 6326,
+      "output_tokens": 45,
+      "cost": 0.000265692
+    },
+    "id": "gen-dec-1791918361-LcYTzlrfoCkfG9bZBqZL",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T19:06:02+00:00",
+  "seconds": null
+}

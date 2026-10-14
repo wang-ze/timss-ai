@@ -1,0 +1,294 @@
+{
+  "item_id": "M032640",
+  "assessment": "TIMSS 2007",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Algebra",
+  "main_topic": "Patterns",
+  "cognitive_domain": "Reasoning",
+  "item_type": "constructed_response",
+  "max_points": 2,
+  "scaled_points": 2,
+  "irt_model": "GPCM",
+  "target_calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+  "excluded_item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M032640"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2007",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Algebra",
+      "main_topic": "Patterns",
+      "cognitive_domain": "Reasoning",
+      "item_type": "constructed_response",
+      "max_points": 2,
+      "scaled_points": 2,
+      "stem": "[Image: Row of 4 squares made of matches]\n\nIn the figure, 13 matches were used to make 4 squares in a row. What is the number of squares in a row that can be made in this way using 73 matches? Show the calculations that lead to your answer.\n\nAnswer: ____",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "24 with calculations"
+          ]
+        },
+        {
+          "category": "Partial Response",
+          "descriptors": [
+            "24 with no calculations or no relevant calculations (includes only drawing and counting squares)"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "Incorrect (including crossed out/erased, stray marks, illegible or off task)"
+          ]
+        },
+        {
+          "category": "Nonresponse",
+          "descriptors": [
+            "Blank"
+          ]
+        }
+      ],
+      "figure_description": "Four squares connected in a single horizontal row, sharing common vertical sides, constructed from 13 matchsticks: 4 horizontal matchsticks along the top (heads pointing right), 4 horizontal matchsticks along the bottom (heads pointing left), and 5 vertical matchsticks dividing and enclosing the squares (heads pointing up).",
+      "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 2-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 2-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "step1": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 2-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)\". What is the item's step 1 parameter d1? In the GPCM, b - d1 is the ability at which earning the first point becomes more likely than earning no point, so a higher d1 means that this point is earned at a lower ability; the steps sum to 0. Choose the value closest to it.",
+      "criteria": [
+        "-3",
+        "-2",
+        "-1.5",
+        "-1",
+        "-0.5",
+        "0",
+        "1",
+        "2"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.98,
+      "confidence": 0.39,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.03,
+        "1": 0.05,
+        "2": 0.1,
+        "3": 0.21,
+        "4": 0.22,
+        "5": 0.2,
+        "6": 0.12,
+        "7": 0.05,
+        "8": 0.02
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 4.53,
+      "confidence": 0.46,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.0,
+        "1": 0.03,
+        "2": 0.08,
+        "3": 0.2,
+        "4": 0.17,
+        "5": 0.25,
+        "6": 0.16,
+        "7": 0.08,
+        "8": 0.03,
+        "9": 0.0
+      }
+    },
+    "step1": {
+      "type": "score",
+      "score": 3.54,
+      "confidence": 0.26,
+      "legend": {
+        "0": "-3",
+        "1": "-2",
+        "2": "-1.5",
+        "3": "-1",
+        "4": "-0.5",
+        "5": "0",
+        "6": "1",
+        "7": "2"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.1,
+        "2": 0.16,
+        "3": 0.22,
+        "4": 0.17,
+        "5": 0.15,
+        "6": 0.1,
+        "7": 0.06
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1339,
+  "output_tokens": 45,
+  "cost_usd": 5.6238e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791989185-VeolSLHFlKGozmoy1eHk",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.98,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.05,
+          "2": 0.1,
+          "3": 0.21,
+          "4": 0.22,
+          "5": 0.2,
+          "6": 0.12,
+          "7": 0.05,
+          "8": 0.02
+        },
+        "confidence": 0.39
+      },
+      "location": {
+        "type": "score",
+        "score": 4.53,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0,
+          "1": 0.03,
+          "2": 0.08,
+          "3": 0.2,
+          "4": 0.17,
+          "5": 0.25,
+          "6": 0.16,
+          "7": 0.08,
+          "8": 0.03,
+          "9": 0
+        },
+        "confidence": 0.46
+      },
+      "step1": {
+        "type": "score",
+        "score": 3.54,
+        "legend": {
+          "0": "-3",
+          "1": "-2",
+          "2": "-1.5",
+          "3": "-1",
+          "4": "-0.5",
+          "5": "0",
+          "6": "1",
+          "7": "2"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.1,
+          "2": 0.16,
+          "3": 0.22,
+          "4": 0.17,
+          "5": 0.15,
+          "6": 0.1,
+          "7": 0.06
+        },
+        "confidence": 0.26
+      }
+    },
+    "usage": {
+      "input_tokens": 1339,
+      "output_tokens": 45,
+      "cost": 5.6238e-05
+    },
+    "id": "gen-dec-1791989185-VeolSLHFlKGozmoy1eHk",
+    "provider": "TypeSafe"
+  },
+  "seconds": 0.202,
+  "requested_at": "2026-10-14T14:46:25+00:00"
+}

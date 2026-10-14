@@ -1,0 +1,226 @@
+{
+  "item_id": "M031274",
+  "assessment": "TIMSS 2007",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Geometric Shapes and Measures",
+  "main_topic": "Location and Movement",
+  "cognitive_domain": "Applying",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+  "excluded_item_keys": [
+    "TIMSS 2007/grade 4/Mathematics/M031274"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2007",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Geometric Shapes and Measures",
+      "main_topic": "Location and Movement",
+      "cognitive_domain": "Applying",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "On the grid below, draw the reflection of the shape in the dotted line of symmetry.\n\n[Image: Grid with a polygon and a dashed line of symmetry]",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "Image correctly drawn"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "One or more of image lines drawn correctly, but image not completely correct",
+            "Attempt to sketch an image under a transformation other than reflection (e.g., translation of image)",
+            "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+          ]
+        },
+        {
+          "category": "Nonresponse",
+          "descriptors": [
+            "Blank"
+          ]
+        }
+      ],
+      "figure_description": "An 8 by 8 grid of square cells with a vertical dashed line of symmetry running along the central vertical grid line (between the 4th and 5th columns from the left).\nTo the right of the dashed line is a six-sided polygon with vertices at grid intersections (with column lines 0 to 8 from left to right, and row lines 0 to 8 from top to bottom):\n- (column 4, row 3) on the dashed line\n- (column 5, row 2)\n- (column 6, row 4)\n- (column 7, row 4)\n- (column 7, row 6)\n- (column 4, row 5) on the dashed line\n\nThe edges of the polygon connect these vertices in sequence:\n- A straight segment from (4, 3) up and right to (5, 2)\n- A segment from (5, 2) down and right to (6, 4)\n- A horizontal segment from (6, 4) to (7, 4)\n- A vertical segment from (7, 4) down to (7, 6)\n- A slanted segment from (7, 6) up and left to (4, 5)\n- A vertical segment of length 2 along the dashed line from (4, 5) up to (4, 3)",
+      "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics)."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics)\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics)\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.73,
+      "confidence": 0.34,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.03,
+        "1": 0.06,
+        "2": 0.14,
+        "3": 0.24,
+        "4": 0.19,
+        "5": 0.18,
+        "6": 0.1,
+        "7": 0.04,
+        "8": 0.02
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 4.15,
+      "confidence": 0.31,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.06,
+        "2": 0.13,
+        "3": 0.21,
+        "4": 0.15,
+        "5": 0.19,
+        "6": 0.14,
+        "7": 0.07,
+        "8": 0.03,
+        "9": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1322,
+  "output_tokens": 31,
+  "cost_usd": 5.5524e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914763-88JgX2SgqeLZYo8JJsYx",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.73,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.06,
+          "2": 0.14,
+          "3": 0.24,
+          "4": 0.19,
+          "5": 0.18,
+          "6": 0.1,
+          "7": 0.04,
+          "8": 0.02
+        },
+        "confidence": 0.34
+      },
+      "location": {
+        "type": "score",
+        "score": 4.15,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.06,
+          "2": 0.13,
+          "3": 0.21,
+          "4": 0.15,
+          "5": 0.19,
+          "6": 0.14,
+          "7": 0.07,
+          "8": 0.03,
+          "9": 0.01
+        },
+        "confidence": 0.31
+      }
+    },
+    "usage": {
+      "input_tokens": 1322,
+      "output_tokens": 31,
+      "cost": 5.5524e-05
+    },
+    "id": "gen-dec-1791914763-88JgX2SgqeLZYo8JJsYx",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:03+00:00",
+  "seconds": null
+}

@@ -1,0 +1,220 @@
+{
+  "item_id": "M031297",
+  "assessment": "TIMSS 2011",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Geometric Shapes and Measures",
+  "main_topic": "Two- and Three-dimensional Shapes",
+  "cognitive_domain": "Applying",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M031297"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2011",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Geometric Shapes and Measures",
+      "main_topic": "Two- and Three-dimensional Shapes",
+      "cognitive_domain": "Applying",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "[Image: a shaded area overlaying a grid made up by small squares with each side of the square measured at 1 cm.]\n\nThe squares in the grid above are 1 cm by 1 cm.\nWhat is the shaded area in square centimeters?\n\nAnswer: ____ square centimeters",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "7"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "6",
+            "8",
+            "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+          ]
+        }
+      ],
+      "figure_description": "A grid of 9 columns and 5 rows of 1 cm by 1 cm squares containing a shaded polygon. Outside the bottom-right corner of the grid, dimension arrows indicate that a single square is 1 cm wide and 1 cm high.\n\nDefining grid coordinates from the top-left corner (0, 0) to the bottom-right corner (9, 5):\n- The shaded polygon has vertices at (3, 1), (5, 1), (6, 2), (5, 3), (5, 4), and (3, 4).\n- The left side is a vertical line from (3, 1) down to (3, 4), spanning 3 units.\n- The bottom side runs horizontally from (3, 4) to (5, 4), spanning 2 units.\n- The right side goes vertically up from (5, 4) to (5, 3), 1 unit.\n- From (5, 3), a diagonal side goes up and to the right to grid intersection (6, 2).\n- From (6, 2), a diagonal side goes up and to the left to grid intersection (5, 1).\n- The top side runs horizontally from (5, 1) left to (3, 1), spanning 2 units.",
+      "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.98,
+      "confidence": 0.25,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.05,
+        "2": 0.12,
+        "3": 0.21,
+        "4": 0.18,
+        "5": 0.18,
+        "6": 0.13,
+        "7": 0.06,
+        "8": 0.03
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 3.4,
+      "confidence": 0.37,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.13,
+        "2": 0.2,
+        "3": 0.21,
+        "4": 0.13,
+        "5": 0.13,
+        "6": 0.08,
+        "7": 0.05,
+        "8": 0.02,
+        "9": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1237,
+  "output_tokens": 31,
+  "cost_usd": 5.1954e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914768-yyvC7OdxoS455rl45sJZ",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.98,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.05,
+          "2": 0.12,
+          "3": 0.21,
+          "4": 0.18,
+          "5": 0.18,
+          "6": 0.13,
+          "7": 0.06,
+          "8": 0.03
+        },
+        "confidence": 0.25
+      },
+      "location": {
+        "type": "score",
+        "score": 3.4,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.13,
+          "2": 0.2,
+          "3": 0.21,
+          "4": 0.13,
+          "5": 0.13,
+          "6": 0.08,
+          "7": 0.05,
+          "8": 0.02,
+          "9": 0.01
+        },
+        "confidence": 0.37
+      }
+    },
+    "usage": {
+      "input_tokens": 1237,
+      "output_tokens": 31,
+      "cost": 5.1954e-05
+    },
+    "id": "gen-dec-1791914768-yyvC7OdxoS455rl45sJZ",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:08+00:00",
+  "seconds": null
+}

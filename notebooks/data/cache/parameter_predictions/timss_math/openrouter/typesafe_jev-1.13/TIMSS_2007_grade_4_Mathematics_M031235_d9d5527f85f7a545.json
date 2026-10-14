@@ -1,0 +1,225 @@
+{
+  "item_id": "M031235",
+  "assessment": "TIMSS 2007",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Number",
+  "main_topic": "Whole Numbers",
+  "cognitive_domain": "Reasoning",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+  "excluded_item_keys": [
+    "TIMSS 2007/grade 4/Mathematics/M031235"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2007",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Number",
+      "main_topic": "Whole Numbers",
+      "cognitive_domain": "Reasoning",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "A group of 8 children have 74 sweets altogether. How many more sweets are needed for the children to be able to share them equally?\n\nAnswer: ____",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "6 or any number other than 6 that added to 74 gives a multiple of 8 (e.g., 14, 22)"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "9.25, 9 1/4, or 9 with 2 remainder",
+            "2 (remainder) or 9",
+            "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+          ]
+        },
+        {
+          "category": "Nonresponse",
+          "descriptors": [
+            "Blank"
+          ]
+        }
+      ],
+      "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics)."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics)\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics)\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.45,
+      "confidence": 0.39,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.05,
+        "1": 0.08,
+        "2": 0.17,
+        "3": 0.26,
+        "4": 0.17,
+        "5": 0.15,
+        "6": 0.08,
+        "7": 0.03,
+        "8": 0.01
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 4.15,
+      "confidence": 0.3,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.07,
+        "2": 0.12,
+        "3": 0.2,
+        "4": 0.15,
+        "5": 0.19999999999999998,
+        "6": 0.14,
+        "7": 0.07,
+        "8": 0.03,
+        "9": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1040,
+  "output_tokens": 31,
+  "cost_usd": 4.368e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914763-vFA48J3A0JyGbiRnO8KB",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.45,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.08,
+          "2": 0.17,
+          "3": 0.26,
+          "4": 0.17,
+          "5": 0.15,
+          "6": 0.08,
+          "7": 0.03,
+          "8": 0.01
+        },
+        "confidence": 0.39
+      },
+      "location": {
+        "type": "score",
+        "score": 4.15,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.07,
+          "2": 0.12,
+          "3": 0.2,
+          "4": 0.15,
+          "5": 0.19999999999999998,
+          "6": 0.14,
+          "7": 0.07,
+          "8": 0.03,
+          "9": 0.01
+        },
+        "confidence": 0.3
+      }
+    },
+    "usage": {
+      "input_tokens": 1040,
+      "output_tokens": 31,
+      "cost": 4.368e-05
+    },
+    "id": "gen-dec-1791914763-vFA48J3A0JyGbiRnO8KB",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:03+00:00",
+  "seconds": null
+}

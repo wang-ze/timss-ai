@@ -1,7 +1,7 @@
 [project]
 name = "timss-math"
 version = "0.1.0"
-description = "Item-level datasets of the released TIMSS mathematics items and LLM predictions of their IRT parameters"
+description = "Item-level datasets of the released TIMSS mathematics items, and predictions of their IRT parameters by LLMs and Jev"
 readme = "README.md"
 authors = [
     { name = "Ze Wang", email = "zewang@gmail.com" }
@@ -51,5 +51,6 @@ dev = [
 extend-immutable-calls = [
     "timss_math.item_parameter_prediction.embeddings.EmbeddingSettings",
     "timss_math.item_parameter_prediction.index.IndexSettings",
-    "timss_math.item_parameter_prediction.predictor.LLMSettings",
+    "timss_math.item_parameter_prediction.jev.JevSettings",
+    "timss_math.item_parameter_prediction.llm.LLMSettings",
 ]

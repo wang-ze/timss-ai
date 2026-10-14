@@ -1,0 +1,842 @@
+{
+  "item_id": "M032331",
+  "assessment": "TIMSS 2011",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Geometry",
+  "main_topic": "Geometric Shapes",
+  "cognitive_domain": "Applying",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M032331"
+  ],
+  "similar_items": [
+    {
+      "rank": 1,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1999/grade 8/Mathematics/P16",
+      "item_id": "P16",
+      "assessment": "TIMSS 1999",
+      "cosine_similarity": 0.7687,
+      "pct_correct_intl_avg": 79,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.996,
+      "location": -1.049,
+      "guessing": 0.203
+    },
+    {
+      "rank": 2,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M012027",
+      "item_id": "M012027",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8416,
+      "pct_correct_intl_avg": 52,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.235,
+      "location": 0.231,
+      "guessing": 0.234
+    },
+    {
+      "rank": 3,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M032681B",
+      "item_id": "M032681B",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.7342,
+      "pct_correct_intl_avg": 29,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.60066,
+      "location": 0.88508
+    },
+    {
+      "rank": 4,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M032205",
+      "item_id": "M032205",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8287,
+      "pct_correct_intl_avg": 51.5,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.56988,
+      "location": 0.18057,
+      "guessing": 0.20735
+    },
+    {
+      "rank": 5,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M022135",
+      "item_id": "M022135",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.7698,
+      "pct_correct_intl_avg": 33,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.701,
+      "location": 0.702,
+      "guessing": 0.044
+    },
+    {
+      "rank": 6,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1999/grade 8/Mathematics/N15",
+      "item_id": "N15",
+      "assessment": "TIMSS 1999",
+      "cosine_similarity": 0.824,
+      "pct_correct_intl_avg": 60,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.604,
+      "location": -0.338,
+      "guessing": 0.101
+    },
+    {
+      "rank": 7,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M022108",
+      "item_id": "M022108",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8218,
+      "pct_correct_intl_avg": 52.6,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.909,
+      "location": 0.18481,
+      "guessing": 0.22419
+    },
+    {
+      "rank": 8,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M042300Z",
+      "item_id": "M042300Z",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8034,
+      "pct_correct_intl_avg": 31,
+      "irt_model": "GPCM",
+      "scaled_points": 2,
+      "slope": 0.77138,
+      "location": 0.26705,
+      "step1": -0.42567,
+      "step2": 0.42567
+    },
+    {
+      "rank": 9,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M022188",
+      "item_id": "M022188",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8146,
+      "pct_correct_intl_avg": 43,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.755,
+      "location": 0.83,
+      "guessing": 0.241
+    },
+    {
+      "rank": 10,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M032681C",
+      "item_id": "M032681C",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.7377,
+      "pct_correct_intl_avg": 34,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.13792,
+      "location": 0.46049
+    }
+  ],
+  "context": "item+references",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2011",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Geometry",
+      "main_topic": "Geometric Shapes",
+      "cognitive_domain": "Applying",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "How many degrees does a minute hand of a clock turn through from 6:20 a.m. to 8:00 a.m. on the same day?",
+      "options": [
+        {
+          "label": "A",
+          "text": "680°"
+        },
+        {
+          "label": "B",
+          "text": "600°"
+        },
+        {
+          "label": "C",
+          "text": "540°"
+        },
+        {
+          "label": "D",
+          "text": "420°"
+        }
+      ],
+      "correct_option": "B",
+      "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data."
+    },
+    "reference_items": [
+      {
+        "rank": 1,
+        "cosine_similarity": 0.769,
+        "assessment": "TIMSS 1999",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Data Representation, Analysis, and Probability",
+        "cognitive_domain": "Using Complex Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "This table shows temperatures at various times on four days.\n\n| TEMPERATURE | | | | | |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| | 6 a.m. | 9 a.m. | Noon | 3 p.m. | 6 p.m. |\n| Monday | 15° | 17° | 24° | 21° | 16° |\n| Tuesday | 20° | 16° | 15° | 10° | 9° |\n| Wednesday | 8° | 14° | 16° | 19° | 15° |\n| Thursday | 8° | 11° | 19° | 26° | 20° |\n\n[Image: Thermometer]\n\nOn which day and at what time was the temperature shown in the table the same as that shown on the thermometer?",
+        "options": [
+          {
+            "label": "A",
+            "text": "Monday, Noon"
+          },
+          {
+            "label": "B",
+            "text": "Tuesday, 6 a.m."
+          },
+          {
+            "label": "C",
+            "text": "Wednesday, 3 p.m."
+          },
+          {
+            "label": "D",
+            "text": "Thursday, 3 p.m."
+          }
+        ],
+        "correct_option": "A",
+        "figure_description": "A vertical thermometer labeled \"Thermometer\" at the bottom. The scale on the right has labeled marks at 5°, 10°, 15°, 20°, 25°, 30°, 35°, and 40°, with individual 1-degree tick marks between them. The shaded column of liquid inside the thermometer reaches exactly 24° (one tick mark below 25°).",
+        "pct_correct_intl_avg": 79,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.996,
+          "location": -1.049,
+          "guessing": 0.203
+        }
+      },
+      {
+        "rank": 2,
+        "cosine_similarity": 0.842,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Fractions and Decimals",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "What fraction of an hour has passed between 1:10 a.m. and 1:30 a.m.?",
+        "options": [
+          {
+            "label": "A",
+            "text": "1/5"
+          },
+          {
+            "label": "B",
+            "text": "1/3"
+          },
+          {
+            "label": "C",
+            "text": "1/2"
+          },
+          {
+            "label": "D",
+            "text": "2/3"
+          },
+          {
+            "label": "E",
+            "text": "3/4"
+          }
+        ],
+        "correct_option": "B",
+        "pct_correct_intl_avg": 52,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.235,
+          "location": 0.231,
+          "guessing": 0.234
+        }
+      },
+      {
+        "rank": 3,
+        "cosine_similarity": 0.734,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Data and Chance",
+        "main_topic": "Data Interpretation",
+        "cognitive_domain": "Applying",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: A graph of car production with time on the x-axis and total number of cars produced on the y-axis. Time goes from 8 a.m. to 4 p.m. in one hour increments. Total number of cars produced goes from 0 to 400 in intervals of 50. A straight dotted line is drawn on the graph, going from the origin at 0 cars at 8 a.m., to the top right of the graph, at 4:00p.m. and 400 cars. A solid line is shown starting at the origin and going above the dotted line after 8:00a.m. and before 11:30 a.m. The solid line then goes below the dotted line from 11:30 a.m. to 1:30 p.m. It again goes above the dotted line from 1:30 p.m. to 4:00 p.m. and ends at 400 cars at 4:00 p.m.]\n\nThe solid line (——) on the graph shows car production by the NU Car Motor Company during a particular day.\n\nThe dotted line (-----) shows what the total number of cars produced would be if the rate of production were constant.\n\nB. What was the average number of cars produced per hour on this day?\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "50"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "400",
+              "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "figure_description": "A line graph titled \"Car Production\". The horizontal axis is labeled \"Time\" with marked points for 8 am, 9 am, 10 am, 11 am, 12 noon, 1 pm, 2 pm, 3 pm, and 4 pm. The vertical axis is labeled \"Total Number of Cars Produced\" with grid marks from 0 to 400 in increments of 50. A dashed line segment runs directly from (8 am, 0) to (4 pm, 400). A solid line connects the points (8 am, 0), (9 am, 100), (10 am, 150), (1 pm, 200), (2 pm, 350), and (4 pm, 400).",
+        "pct_correct_intl_avg": 29,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.60066,
+          "location": 0.88508
+        }
+      },
+      {
+        "rank": 4,
+        "cosine_similarity": 0.829,
+        "assessment": "TIMSS 2007",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Geometric Shapes",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: Regular hexagon PQRSTU]\n\nPQRSTU is a regular hexagon. What is the measure of the angle QUS?",
+        "options": [
+          {
+            "label": "A",
+            "text": "30°"
+          },
+          {
+            "label": "B",
+            "text": "60°"
+          },
+          {
+            "label": "C",
+            "text": "90°"
+          },
+          {
+            "label": "D",
+            "text": "120°"
+          }
+        ],
+        "correct_option": "B",
+        "figure_description": "A regular hexagon with vertices labeled clockwise: P at the top left, Q at the top right, R at the far right, S at the bottom right, T at the bottom left, and U at the far left. Segment PQ forms the top horizontal edge, and segment TS forms the bottom horizontal edge. Two internal straight line segments are drawn: one connecting vertex U to vertex Q, and another connecting vertex U to vertex S, forming angle QUS.",
+        "pct_correct_intl_avg": 51.5,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.56988,
+          "location": 0.18057,
+          "guessing": 0.20735
+        }
+      },
+      {
+        "rank": 5,
+        "cosine_similarity": 0.77,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Data",
+        "main_topic": "Data Interpretation",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "A beaker of water which has reached boiling point is allowed to cool. The temperature of the water is recorded at five minute intervals, and a temperature-time graph is drawn.\n\nCooling Curve\n\n[Image: Graph of cooling curve]\n\nAbout how many minutes did it take for the water to cool the first 20 degrees?",
+        "options": [
+          {
+            "label": "A",
+            "text": "3"
+          },
+          {
+            "label": "B",
+            "text": "8"
+          },
+          {
+            "label": "C",
+            "text": "37"
+          },
+          {
+            "label": "D",
+            "text": "50"
+          }
+        ],
+        "correct_option": "A",
+        "figure_description": "A line graph titled \"Cooling Curve\" on a grid. The vertical axis is labeled \"Temperature (°C)\" with grid lines and numerical labels from 20 to 100 in increments of 20 (20, 40, 60, 80, 100), with 0 at the origin. The horizontal axis is labeled \"Time (minutes)\" with grid lines and numerical labels from 0 to 50 in increments of 5 (0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50). A smooth curve starts at (0, 100) and decreases monotonically toward the right, passing through approximately (5, 74), (10, 55), (15, 43), (20, 37), (25, 32), (30, 28), (35, 24), (40, 22), (45, 21), and ending at (50, 20).",
+        "pct_correct_intl_avg": 33,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.701,
+          "location": 0.702,
+          "guessing": 0.044
+        }
+      },
+      {
+        "rank": 6,
+        "cosine_similarity": 0.824,
+        "assessment": "TIMSS 1999",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Measurement",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Which angle in the figure has a measure closest to 45°?\n\n[Image: Circle divided into angles p, q, r, and s]",
+        "options": [
+          {
+            "label": "A",
+            "text": "p"
+          },
+          {
+            "label": "B",
+            "text": "q"
+          },
+          {
+            "label": "C",
+            "text": "r"
+          },
+          {
+            "label": "D",
+            "text": "s"
+          }
+        ],
+        "correct_option": "D",
+        "figure_description": "A circle contains a vertical diameter dividing it into left and right halves. From the center, two additional line segments (radii) are drawn: one extending to the left edge at roughly 9 o'clock (slightly below horizontal), and another extending down and to the right at approximately a 45-degree angle from the vertical. Four central angles are labeled: angle q is in the upper-left quadrant (between the upward vertical radius and the left radius, roughly 90°); angle p is in the lower-left quadrant (between the left radius and the downward vertical radius, roughly 90°); angle r is in the upper-right (between the upward vertical radius and the lower-right radius, an obtuse angle of roughly 135°); and angle s is in the lower-right (between the downward vertical radius and the lower-right radius, roughly 45°).",
+        "pct_correct_intl_avg": 60,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.604,
+          "location": -0.338,
+          "guessing": 0.101
+        }
+      },
+      {
+        "rank": 7,
+        "cosine_similarity": 0.822,
+        "assessment": "TIMSS 2007",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Geometric Shapes",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "In this figure PQ is a straight line.\n\n[Image: Angles on a straight line]\n\nWhat is the degree measure of angle PRS?",
+        "options": [
+          {
+            "label": "A",
+            "text": "10°"
+          },
+          {
+            "label": "B",
+            "text": "20°"
+          },
+          {
+            "label": "C",
+            "text": "40°"
+          },
+          {
+            "label": "D",
+            "text": "70°"
+          },
+          {
+            "label": "E",
+            "text": "140°"
+          }
+        ],
+        "correct_option": "C",
+        "figure_description": "A horizontal line segment has endpoints labeled P on the left and Q on the right. A point R lies on the line segment between P and Q. A ray labeled with endpoint S extends upward and to the left from R. The angle PRS is marked with an arc and labeled \"2x\". The adjacent angle SRQ is marked with an arc and labeled \"7x\".",
+        "pct_correct_intl_avg": 52.6,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.909,
+          "location": 0.18481,
+          "guessing": 0.22419
+        }
+      },
+      {
+        "rank": 8,
+        "cosine_similarity": 0.803,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Geometric Measurement",
+        "cognitive_domain": "Applying",
+        "item_type": "constructed_response",
+        "max_points": 2,
+        "scaled_points": 2,
+        "stem": "The diagram shows a system for locating points\n\n[Image: A group of 6 concentric circles with origin “O”. Degrees from 0 to 360 are marked in 10 degree intervals where 0 and 360 are marked on a line “A” that goes across all circles. The 6 concentric circles are labeled from 1 to 6 along line “A”.]\n\nIn this system, the position of a point P is described by its distance from origin, O, and the amount of counterclockwise turn from a baseline OA to OP. Thus, the coordinates of P are (5, 340°).\n\nA. Mark the points B (3, 30°) and C (4, 120°) on the graph above.\nB. Draw the angle BOC. What is the measure of angle BOC?\n\nAngle BOC = ____°",
+        "scoring_guide": [
+          {
+            "category": "M042300A Correct Response",
+            "descriptors": [
+              "Both points correctly marked (pictured on right) [Image: A line drawn from O to B where B is the point where the third circle intersects the 30 degree mark. Figure also has a line drawn from O to C where C is the point where the fourth circle intersects the 120 degree mark.]"
+            ]
+          },
+          {
+            "category": "M042300A Incorrect Response",
+            "descriptors": [
+              "One point correctly marked",
+              "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          },
+          {
+            "category": "M042300B Correct Response",
+            "descriptors": [
+              "90°"
+            ]
+          },
+          {
+            "category": "M042300B Incorrect Response",
+            "descriptors": [
+              "Correct value given for incorrect point(s) drawn in A",
+              "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "scoring_notes": "Note: Two score points will be given if both parts A and B are correct. One score point will be given if only part A is correct. No credit is given if only part B is correct.",
+        "figure_description": "A circular polar coordinate grid centered at an origin O, formed by 6 concentric circles. A horizontal baseline ray extends right from O, labeled A at its end, with the 6 concentric circles labeled 1, 2, 3, 4, 5, 6 along this ray. Radial line segments extend from O every 10° around the full circle, labeled on the outer rim counterclockwise from 0° at ray OA through 10°, 20°, 30°, up to 350°. A point labeled P is plotted on the 5th circle along the 340° radial line.",
+        "pct_correct_intl_avg": 31,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "GPCM",
+        "calibrated_parameters": {
+          "slope": 0.77138,
+          "location": 0.26705,
+          "step1": -0.42567,
+          "step2": 0.42567
+        }
+      },
+      {
+        "rank": 9,
+        "cosine_similarity": 0.815,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Measurement",
+        "main_topic": "Attributes and Units",
+        "cognitive_domain": "Knowing Facts and Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Which of these is the LEAST amount of time?",
+        "options": [
+          {
+            "label": "A",
+            "text": "1 day"
+          },
+          {
+            "label": "B",
+            "text": "20 hours"
+          },
+          {
+            "label": "C",
+            "text": "1,800 minutes"
+          },
+          {
+            "label": "D",
+            "text": "90,000 seconds"
+          }
+        ],
+        "correct_option": "B",
+        "pct_correct_intl_avg": 43,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.755,
+          "location": 0.83,
+          "guessing": 0.241
+        }
+      },
+      {
+        "rank": 10,
+        "cosine_similarity": 0.738,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Data and Chance",
+        "main_topic": "Data Interpretation",
+        "cognitive_domain": "Applying",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: A graph of car production with time on the x-axis and total number of cars produced on the y-axis. Time goes from 8 a.m. to 4 p.m. in one hour increments. Total number of cars produced goes from 0 to 400 in intervals of 50. A straight dotted line is drawn on the graph, going from the origin at 0 cars at 8 a.m., to the top right of the graph, at 4:00p.m. and 400 cars. A solid line is shown starting at the origin and going above the dotted line after 8:00a.m. and before 11:30 a.m. The solid line then goes below the dotted line from 11:30 a.m. to 1:30 p.m. It again goes above the dotted line from 1:30 p.m. to 4:00 p.m. and ends at 400 cars at 4:00 p.m. The straight line is steepest between 1 p.m and 2 p.m. and shows an increase of 150 cars during this hour.]\n\nThe solid line (——) on the graph shows car production by the NU Car Motor Company during a particular day.\n\nThe dotted line (-----) shows what the total number of cars produced would be if the rate of production were constant.\n\nC. During which hour were the most cars produced?\n\nBetween ____ and ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "1 p.m. and 2 p.m."
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "figure_description": "A line graph titled \"Car Production\". The horizontal axis is labeled \"Time\" with marked points for 8 am, 9 am, 10 am, 11 am, 12 noon, 1 pm, 2 pm, 3 pm, and 4 pm. The vertical axis is labeled \"Total Number of Cars Produced\" with grid marks from 0 to 400 in increments of 50. A dashed line segment runs directly from (8 am, 0) to (4 pm, 400). A solid line connects the points (8 am, 0), (9 am, 100), (10 am, 150), (1 pm, 200), (2 pm, 350), and (4 pm, 400).",
+        "pct_correct_intl_avg": 34,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.13792,
+          "location": 0.46049
+        }
+      }
+    ]
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 2.67,
+      "confidence": 0.49,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.16,
+        "2": 0.28,
+        "3": 0.31,
+        "4": 0.11,
+        "5": 0.04,
+        "6": 0.03,
+        "7": 0.02,
+        "8": 0.01
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 4.0,
+      "confidence": 0.47,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.07,
+        "2": 0.09,
+        "3": 0.22,
+        "4": 0.24,
+        "5": 0.19,
+        "6": 0.1,
+        "7": 0.05,
+        "8": 0.02,
+        "9": 0.01
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 3.38,
+      "confidence": 0.59,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.02,
+        "2": 0.02,
+        "3": 0.43,
+        "4": 0.5,
+        "5": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 7066,
+  "output_tokens": 45,
+  "cost_usd": 0.000296772,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791918379-TdQtinOzthJux1Hl4F7c",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 2.67,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.16,
+          "2": 0.28,
+          "3": 0.31,
+          "4": 0.11,
+          "5": 0.04,
+          "6": 0.03,
+          "7": 0.02,
+          "8": 0.01
+        },
+        "confidence": 0.49
+      },
+      "location": {
+        "type": "score",
+        "score": 4,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.07,
+          "2": 0.09,
+          "3": 0.22,
+          "4": 0.24,
+          "5": 0.19,
+          "6": 0.1,
+          "7": 0.05,
+          "8": 0.02,
+          "9": 0.01
+        },
+        "confidence": 0.47
+      },
+      "guessing": {
+        "type": "score",
+        "score": 3.38,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.02,
+          "2": 0.02,
+          "3": 0.43,
+          "4": 0.5,
+          "5": 0.01
+        },
+        "confidence": 0.59
+      }
+    },
+    "usage": {
+      "input_tokens": 7066,
+      "output_tokens": 45,
+      "cost": 0.000296772
+    },
+    "id": "gen-dec-1791918379-TdQtinOzthJux1Hl4F7c",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T19:06:19+00:00",
+  "seconds": null
+}

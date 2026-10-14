@@ -1,0 +1,815 @@
+{
+  "item_id": "M051007",
+  "assessment": "TIMSS 2011",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Number",
+  "main_topic": "Whole Numbers",
+  "cognitive_domain": "Reasoning",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M051007"
+  ],
+  "similar_items": [
+    {
+      "rank": 1,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/U3B",
+      "item_id": "U3B",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.8683,
+      "pct_correct_intl_avg": 45,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.183,
+      "location": 0.143
+    },
+    {
+      "rank": 2,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/U3A",
+      "item_id": "U3A",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.8739,
+      "pct_correct_intl_avg": 61,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.014,
+      "location": -0.454
+    },
+    {
+      "rank": 3,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M031242C",
+      "item_id": "M031242C",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8269,
+      "pct_correct_intl_avg": 56.5,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.02781,
+      "location": 0.15609,
+      "guessing": 0.23875
+    },
+    {
+      "rank": 4,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M031097",
+      "item_id": "M031097",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8535,
+      "pct_correct_intl_avg": 48,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.071,
+      "location": 0.605,
+      "guessing": 0.2
+    },
+    {
+      "rank": 5,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M031242B",
+      "item_id": "M031242B",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8202,
+      "pct_correct_intl_avg": 38.9,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.21245,
+      "location": 0.25578
+    },
+    {
+      "rank": 6,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/U3C",
+      "item_id": "U3C",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.8561,
+      "pct_correct_intl_avg": 73,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.607,
+      "location": -1.49
+    },
+    {
+      "rank": 7,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M031172",
+      "item_id": "M031172",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8313,
+      "pct_correct_intl_avg": 56.7,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.39727,
+      "location": -0.24326,
+      "guessing": 0.1129
+    },
+    {
+      "rank": 8,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/S4",
+      "item_id": "S4",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.8175,
+      "pct_correct_intl_avg": 46,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.858,
+      "location": 0.016
+    },
+    {
+      "rank": 9,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/J3",
+      "item_id": "J3",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.8178,
+      "pct_correct_intl_avg": 75,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.962,
+      "location": -0.815,
+      "guessing": 0.137
+    },
+    {
+      "rank": 10,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M031178",
+      "item_id": "M031178",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8251,
+      "pct_correct_intl_avg": 37,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.87,
+      "location": 0.777,
+      "guessing": 0.094
+    }
+  ],
+  "context": "item+references",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2011",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Number",
+      "main_topic": "Whole Numbers",
+      "cognitive_domain": "Reasoning",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "Mary left Apton and rode at the same speed for 2 hours.\n\nShe reached this sign.\n\n[Image: a girl on a bike facing right side stopping in front of a sign. The sign is written with “Brandon, 45 km” with a right arrow and “Apton, 30 km” with a left arrow.]\n\nMary continues to ride at the same speed to Brandon.\n\nHow many hours will it take her to ride from the sign to Brandon?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1 1/2 hours"
+        },
+        {
+          "label": "B",
+          "text": "2 hours"
+        },
+        {
+          "label": "C",
+          "text": "3 hours"
+        },
+        {
+          "label": "D",
+          "text": "3 1/2 hours"
+        }
+      ],
+      "correct_option": "C",
+      "figure_description": "A silhouette of a girl on a bicycle facing right, stopped beside a rectangular road sign mounted on a post. The top section of the sign displays the text \"Brandon, 45 km\" followed by a right-pointing arrow (►). The bottom section displays a left-pointing arrow (◄) followed by the text \"Apton, 30 km\".",
+      "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data."
+    },
+    "reference_items": [
+      {
+        "rank": 1,
+        "cosine_similarity": 0.868,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Fractions and Proportionality",
+        "cognitive_domain": "Solving Problems",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Maria and her sister Louisa leave home at the same time and ride their bicycles to school 9 kilometers away.\n\nLouisa rides at a rate of 1 kilometer in 3 minutes. How long will it take her to get to school?\n\nAnswer: ____ minutes",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "27"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Any other multiple of 3.",
+              "Other incorrect."
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 45,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.183,
+          "location": 0.143
+        }
+      },
+      {
+        "rank": 2,
+        "cosine_similarity": 0.874,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Fractions and Proportionality",
+        "cognitive_domain": "Solving Problems",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Maria and her sister Louisa leave home at the same time and ride their bicycles to school 9 kilometers away.\n\nMaria rides at a rate of 3 kilometers in 10 minutes. How long will it take her to get to school?\n\nAnswer: ____ minutes",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "30"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "10",
+              "Other incorrect."
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 61,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.014,
+          "location": -0.454
+        }
+      },
+      {
+        "rank": 3,
+        "cosine_similarity": 0.827,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Data Display",
+        "main_topic": "Reading and Interpreting",
+        "cognitive_domain": "Reasoning",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Posters for two sports clubs that rent bikes are shown below.\n\nMountain Bike Rentals\n8 zeds for 1st hour\n3 zeds for each additional hour\n[Image: A person riding a mountain bike downhill]\n\nRoadrace Bike Rentals\n10 zeds for 1st hour\n2 zeds for each additional hour\n[Image: Three cyclists on road bikes]\n\nC. From which club does it cost less to rent a bike for 12 hours?",
+        "options": [
+          {
+            "label": "A",
+            "text": "Mountain Bike Rentals"
+          },
+          {
+            "label": "B",
+            "text": "Roadrace Bike Rentals"
+          },
+          {
+            "label": "C",
+            "text": "They are both the same"
+          },
+          {
+            "label": "D",
+            "text": "It cannot be worked out"
+          }
+        ],
+        "correct_option": "B",
+        "figure_description": "Two framed posters are shown side by side.\nThe left poster is titled \"Mountain Bike Rentals\" and lists:\n\"8 zeds for 1st hour\"\n\"3 zeds for each additional hour\"\nBelow the text is an illustration framed in a rectangle showing a person riding a mountain bike downhill on a rough, rocky mountain path.\n\nThe right poster is titled \"Roadrace Bike Rentals\" and lists:\n\"10 zeds for 1st hour\"\n\"2 zeds for each additional hour\"\nBelow the text is an illustration framed in a rectangle showing three cyclists on road racing bikes riding along a curved paved road.",
+        "pct_correct_intl_avg": 56.5,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.02781,
+          "location": 0.15609,
+          "guessing": 0.23875
+        }
+      },
+      {
+        "rank": 4,
+        "cosine_similarity": 0.854,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Measurement",
+        "main_topic": "Tools, Techniques, and Formulas",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "The distance from one town to another is 180 km. If Betty has to drive the distance in 3 hours, what must her average speed be in kilometers per hour?",
+        "options": [
+          {
+            "label": "A",
+            "text": "180 × 3"
+          },
+          {
+            "label": "B",
+            "text": "180 + 3"
+          },
+          {
+            "label": "C",
+            "text": "180 ÷ 3"
+          },
+          {
+            "label": "D",
+            "text": "180 − 3"
+          }
+        ],
+        "correct_option": "C",
+        "pct_correct_intl_avg": 48,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.071,
+          "location": 0.605,
+          "guessing": 0.2
+        }
+      },
+      {
+        "rank": 5,
+        "cosine_similarity": 0.82,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Data Display",
+        "main_topic": "Reading and Interpreting",
+        "cognitive_domain": "Knowing",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Posters for two sports clubs that rent bikes are shown below.\n\nMountain Bike Rentals\n8 zeds for 1st hour\n3 zeds for each additional hour\n[Image: A person riding a mountain bike downhill]\n\nRoadrace Bike Rentals\n10 zeds for 1st hour\n2 zeds for each additional hour\n[Image: Three cyclists on road bikes]\n\nB. For what number of hours are the rental costs the same at the two clubs?\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "3 (as long as does not contradict Part A including table empty or incomplete).",
+              "Number(s) correct according to a complete but erroneous table in Part A OR indicates no match according to a complete but erroneous table in Part A."
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Incorrect (including crossed out/erased, stray marks, illegible or off task)."
+            ]
+          },
+          {
+            "category": "Nonresponse",
+            "descriptors": [
+              "Blank"
+            ]
+          }
+        ],
+        "figure_description": "Two framed posters are shown side by side.\nThe left poster is titled \"Mountain Bike Rentals\" and lists:\n\"8 zeds for 1st hour\"\n\"3 zeds for each additional hour\"\nBelow the text is an illustration framed in a rectangle showing a person riding a mountain bike downhill on a rough, rocky mountain path.\n\nThe right poster is titled \"Roadrace Bike Rentals\" and lists:\n\"10 zeds for 1st hour\"\n\"2 zeds for each additional hour\"\nBelow the text is an illustration framed in a rectangle showing three cyclists on road racing bikes riding along a curved paved road.",
+        "pct_correct_intl_avg": 38.9,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.21245,
+          "location": 0.25578
+        }
+      },
+      {
+        "rank": 6,
+        "cosine_similarity": 0.856,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Fractions and Proportionality",
+        "cognitive_domain": "Solving Problems",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Maria and her sister Louisa leave home at the same time and ride their bicycles to school 9 kilometers away.\n\nWho arrives at school first?\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Louisa",
+              "Maria (or other responses), in cases where the response is consistent with (a) and (b)."
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Inconsistent with part (a) or (b) or both.",
+              "Other incorrect"
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 73,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.607,
+          "location": -1.49
+        }
+      },
+      {
+        "rank": 7,
+        "cosine_similarity": 0.831,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Data Display",
+        "main_topic": "Organizing and Representing",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "| Street | Number of houses |\n| --- | --- |\n| Main | [Image: 5 house symbols] |\n| Center | [Image: 2 house symbols] |\n| First | [Image: 3 house symbols] |\n| Hill | |\n\nMary is making a chart to show the number of houses on some streets.\nEvery [Image: house symbol] stands for 5 houses. There are 20 houses on Hill Street.\nHow many [Image: house symbol] should Mary put in the chart beside Hill Street?",
+        "options": [
+          {
+            "label": "A",
+            "text": "4"
+          },
+          {
+            "label": "B",
+            "text": "5"
+          },
+          {
+            "label": "C",
+            "text": "15"
+          },
+          {
+            "label": "D",
+            "text": "20"
+          }
+        ],
+        "correct_option": "A",
+        "figure_description": "A pictograph table with two columns: \"Street\" on the left and \"Number of houses\" on the right. Under \"Street\" are rows labeled Main, Center, First, and Hill. Beside Main are 5 small house symbols in a horizontal row. Beside Center are 2 small house symbols. Beside First are 3 small house symbols. Beside Hill the row is empty. The house symbol is a simple outline of a house with a pitched roof and a doorway.",
+        "pct_correct_intl_avg": 56.7,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.39727,
+          "location": -0.24326,
+          "guessing": 0.1129
+        }
+      },
+      {
+        "rank": 8,
+        "cosine_similarity": 0.818,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Fractions and Proportionality",
+        "cognitive_domain": "Solving Problems",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "A teacher marks 10 of her pupils' tests every half hour. It takes her one and one-half hours to mark all her pupils' tests. How many pupils are in her class?\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "30"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "10",
+              "15",
+              "20",
+              "21",
+              "25",
+              "40",
+              "Other incorrect."
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 46,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.858,
+          "location": 0.016
+        }
+      },
+      {
+        "rank": 9,
+        "cosine_similarity": 0.818,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Data Representation, Analysis, and Probability",
+        "cognitive_domain": "Using Complex Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "The figure shows how Mary spent her time one day.\n\n[Image: Pie chart showing how Mary spent her time]\n\nWhat percent of time altogether did she spend playing and doing homework?",
+        "options": [
+          {
+            "label": "A",
+            "text": "10%"
+          },
+          {
+            "label": "B",
+            "text": "15%"
+          },
+          {
+            "label": "C",
+            "text": "20%"
+          },
+          {
+            "label": "D",
+            "text": "25%"
+          },
+          {
+            "label": "E",
+            "text": "30%"
+          }
+        ],
+        "correct_option": "D",
+        "figure_description": "A pie chart showing how Mary spent her time one day, divided into five labeled sectors:\n- \"Homework 10%\": from the 12 o'clock vertical radius clockwise to roughly 1 o'clock.\n- \"Sleeping & Resting 40%\": from roughly 1 o'clock clockwise to the 6 o'clock vertical radius.\n- \"Going to School 25%\": from the 6 o'clock vertical radius clockwise to the 9 o'clock horizontal radius.\n- \"Eating 10%\": from the 9 o'clock horizontal radius clockwise to roughly 10 o'clock.\n- \"Playing 15%\": from roughly 10 o'clock clockwise to the 12 o'clock vertical radius.",
+        "pct_correct_intl_avg": 75,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.962,
+          "location": -0.815,
+          "guessing": 0.137
+        }
+      },
+      {
+        "rank": 10,
+        "cosine_similarity": 0.825,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Measurement",
+        "main_topic": "Tools, Techniques, and Formulas",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "George practiced soccer six days a week.\n\nFor 3 of the days he practiced for 45 minutes each day.\n\nFor 3 of the days he practiced for 20 minutes each day.\n\nIn hours and minutes, what is the total amount of time George practiced on these six days?",
+        "options": [
+          {
+            "label": "A",
+            "text": "2 hours 20 minutes"
+          },
+          {
+            "label": "B",
+            "text": "2 hours 55 minutes"
+          },
+          {
+            "label": "C",
+            "text": "3 hours 5 minutes"
+          },
+          {
+            "label": "D",
+            "text": "3 hours 15 minutes"
+          }
+        ],
+        "correct_option": "D",
+        "pct_correct_intl_avg": 37,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.87,
+          "location": 0.777,
+          "guessing": 0.094
+        }
+      }
+    ]
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.37,
+      "confidence": 0.64,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.03,
+        "2": 0.1,
+        "3": 0.45,
+        "4": 0.29,
+        "5": 0.07,
+        "6": 0.02,
+        "7": 0.01,
+        "8": 0.01
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 4.75,
+      "confidence": 0.6,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.0,
+        "1": 0.01,
+        "2": 0.04,
+        "3": 0.11,
+        "4": 0.23,
+        "5": 0.36,
+        "6": 0.16,
+        "7": 0.06,
+        "8": 0.02,
+        "9": 0.01
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 3.33,
+      "confidence": 0.54,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.03,
+        "1": 0.02,
+        "2": 0.05,
+        "3": 0.4,
+        "4": 0.49,
+        "5": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 5699,
+  "output_tokens": 45,
+  "cost_usd": 0.000239358,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791918376-Ohl0GQ9XKJc7rynx2JEQ",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.37,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.03,
+          "2": 0.1,
+          "3": 0.45,
+          "4": 0.29,
+          "5": 0.07,
+          "6": 0.02,
+          "7": 0.01,
+          "8": 0.01
+        },
+        "confidence": 0.64
+      },
+      "location": {
+        "type": "score",
+        "score": 4.75,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.04,
+          "3": 0.11,
+          "4": 0.23,
+          "5": 0.36,
+          "6": 0.16,
+          "7": 0.06,
+          "8": 0.02,
+          "9": 0.01
+        },
+        "confidence": 0.6
+      },
+      "guessing": {
+        "type": "score",
+        "score": 3.33,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.02,
+          "2": 0.05,
+          "3": 0.4,
+          "4": 0.49,
+          "5": 0.01
+        },
+        "confidence": 0.54
+      }
+    },
+    "usage": {
+      "input_tokens": 5699,
+      "output_tokens": 45,
+      "cost": 0.000239358
+    },
+    "id": "gen-dec-1791918376-Ohl0GQ9XKJc7rynx2JEQ",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T19:06:17+00:00",
+  "seconds": null
+}

@@ -1,0 +1,225 @@
+{
+  "item_id": "M041203",
+  "assessment": "TIMSS 2007",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Data Display",
+  "main_topic": "Organizing and Representing",
+  "cognitive_domain": "Reasoning",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+  "excluded_item_keys": [
+    "TIMSS 2007/grade 4/Mathematics/M041203"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2007",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Data Display",
+      "main_topic": "Organizing and Representing",
+      "cognitive_domain": "Reasoning",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "This graph shows the points obtained by 4 drivers in the car racing championship. Montoya is in first place. Alonso is in third place. Draw a bar which shows how many points Alonso has scored.\n\n[Image: Bar graph]",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "Bar at 86"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "Bar between 85-87 exclusive but not at 86",
+            "Other Incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+          ]
+        },
+        {
+          "category": "Nonresponse",
+          "descriptors": [
+            "Blank"
+          ]
+        }
+      ],
+      "figure_description": "A horizontal bar graph with a grid. The vertical axis lists four driver names from top to bottom: \"Raikkonen\", \"Schumacher\", \"Alonso\", and \"Montoya\". The horizontal axis is labeled \"Points Scored\" below tick marks numbered 82, 83, 84, 85, 86, 87, 88, 89, 90, 91 at increments of 1, with vertical grid lines extending up from each number. Grey horizontal bars are drawn for:\n- Raikkonen: extending from 82 to 87\n- Schumacher: extending from 82 to 85\n- Alonso: no bar is drawn (blank row)\n- Montoya: extending from 82 to 90",
+      "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics)."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics)\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics)\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.73,
+      "confidence": 0.24,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.05,
+        "1": 0.08,
+        "2": 0.15,
+        "3": 0.21,
+        "4": 0.15,
+        "5": 0.15,
+        "6": 0.11,
+        "7": 0.06,
+        "8": 0.04
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 2.76,
+      "confidence": 0.19,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.12,
+        "1": 0.2,
+        "2": 0.19,
+        "3": 0.18,
+        "4": 0.1,
+        "5": 0.1,
+        "6": 0.05,
+        "7": 0.03,
+        "8": 0.02,
+        "9": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1196,
+  "output_tokens": 31,
+  "cost_usd": 5.0232e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914763-WNnoL4VHhLlm9nL2mtuh",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.73,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.08,
+          "2": 0.15,
+          "3": 0.21,
+          "4": 0.15,
+          "5": 0.15,
+          "6": 0.11,
+          "7": 0.06,
+          "8": 0.04
+        },
+        "confidence": 0.24
+      },
+      "location": {
+        "type": "score",
+        "score": 2.76,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.12,
+          "1": 0.2,
+          "2": 0.19,
+          "3": 0.18,
+          "4": 0.1,
+          "5": 0.1,
+          "6": 0.05,
+          "7": 0.03,
+          "8": 0.02,
+          "9": 0.01
+        },
+        "confidence": 0.19
+      }
+    },
+    "usage": {
+      "input_tokens": 1196,
+      "output_tokens": 31,
+      "cost": 5.0232e-05
+    },
+    "id": "gen-dec-1791914763-WNnoL4VHhLlm9nL2mtuh",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:03+00:00",
+  "seconds": null
+}

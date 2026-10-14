@@ -1,0 +1,277 @@
+{
+  "item_id": "M042254",
+  "assessment": "TIMSS 2007",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Data and Chance",
+  "main_topic": "Data Organization and Representation",
+  "cognitive_domain": "Applying",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+  "excluded_item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M042254"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2007",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Data and Chance",
+      "main_topic": "Data Organization and Representation",
+      "cognitive_domain": "Applying",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "Four students watched the traffic passing their school for 1 hour.\n\nThe table shows what they saw:\n\n| Type of Vehicle | Number |\n| :--- | :---: |\n| Cars | 60 |\n| Bicycles | 30 |\n| Buses | 10 |\n| Trucks | 20 |\n\nEach student drew a graph to show the results. Which graph shows the results correctly?",
+      "options": [
+        {
+          "label": "A",
+          "text": "[Image: Vertical bar graph A]"
+        },
+        {
+          "label": "B",
+          "text": "[Image: Pictograph]"
+        },
+        {
+          "label": "C",
+          "text": "[Image: Vertical bar graph C]"
+        },
+        {
+          "label": "D",
+          "text": "[Image: Pie chart]"
+        }
+      ],
+      "correct_option": "A",
+      "figure_description": "Four graphical representations of the traffic data:\n- Option A: A vertical bar graph with the vertical axis labeled from 0 to 60 in increments of 10. The bars correspond to: Cars = 60 (solid black bar), Bicycles = 30 (light gray bar), Buses = 10 (medium gray bar), Trucks = 20 (white bar with black border).\n- Option B: A pictograph with a legend stating '1 wheel = 10 vehicles'. Cars has 5 wheels, Bicycles has 4 wheels, Buses has 1 wheel, and Trucks has 2 wheels.\n- Option C: A vertical bar graph with the same axis and colors as Option A, showing: Cars = 60, Bicycles = 30, Buses = 20, Trucks = 10.\n- Option D: A pie chart divided into four sectors: Cars covers the right half (180°, solid black). Bicycles covers the bottom-left quadrant (90°, light gray). The remaining top-left quadrant is divided between Buses (a larger sector, medium gray) and Trucks (a smaller sector, white).",
+      "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.78,
+      "confidence": 0.31,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.06,
+        "2": 0.13,
+        "3": 0.25,
+        "4": 0.17,
+        "5": 0.16,
+        "6": 0.11,
+        "7": 0.05,
+        "8": 0.03
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 2.09,
+      "confidence": 0.46,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.12,
+        "1": 0.28,
+        "2": 0.25,
+        "3": 0.2,
+        "4": 0.07,
+        "5": 0.05,
+        "6": 0.02,
+        "7": 0.01,
+        "8": 0.0,
+        "9": 0.0
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 3.82,
+      "confidence": 0.87,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.01,
+        "2": 0.02,
+        "3": 0.07,
+        "4": 0.88,
+        "5": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1478,
+  "output_tokens": 45,
+  "cost_usd": 6.2076e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914764-t7QKF7t8vTp4dLXJSdXs",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.78,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.06,
+          "2": 0.13,
+          "3": 0.25,
+          "4": 0.17,
+          "5": 0.16,
+          "6": 0.11,
+          "7": 0.05,
+          "8": 0.03
+        },
+        "confidence": 0.31
+      },
+      "location": {
+        "type": "score",
+        "score": 2.09,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.12,
+          "1": 0.28,
+          "2": 0.25,
+          "3": 0.2,
+          "4": 0.07,
+          "5": 0.05,
+          "6": 0.02,
+          "7": 0.01,
+          "8": 0,
+          "9": 0
+        },
+        "confidence": 0.46
+      },
+      "guessing": {
+        "type": "score",
+        "score": 3.82,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.02,
+          "3": 0.07,
+          "4": 0.88,
+          "5": 0.01
+        },
+        "confidence": 0.87
+      }
+    },
+    "usage": {
+      "input_tokens": 1478,
+      "output_tokens": 45,
+      "cost": 6.2076e-05
+    },
+    "id": "gen-dec-1791914764-t7QKF7t8vTp4dLXJSdXs",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:05+00:00",
+  "seconds": null
+}

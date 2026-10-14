@@ -1,0 +1,226 @@
+{
+  "item_id": "M031350A",
+  "assessment": "TIMSS 2007",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Geometric Shapes and Measures",
+  "main_topic": "Lines and Angles",
+  "cognitive_domain": "Applying",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+  "excluded_item_keys": [
+    "TIMSS 2007/grade 4/Mathematics/M031350A",
+    "TIMSS 2007/grade 4/Mathematics/M031350B",
+    "TIMSS 2007/grade 4/Mathematics/M031350C"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2007",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Geometric Shapes and Measures",
+      "main_topic": "Lines and Angles",
+      "cognitive_domain": "Applying",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "For this item, you have been given a cardboard ruler. If you do not have the cardboard ruler raise your hand. Use the map below and your ruler to answer this set of questions.\n\nMarytown is a new town. The people of Marytown are planning their new town. They decided to put the town hall halfway between the lake and the forest, as shown on the map below. They made their measurements from the X's.\n\nMarytown\n\n[Image: Map of Marytown]\n\nAdd a park, a library, and a school to the map of Marytown using the following information.\n\nA. The park should be 200 meters from the lake so people can go fishing and swimming. On the map, mark with an X where you would put the park and write park below the X.",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "Park 2.0 cm from lake, measured from X to X (+/- 2 mm)"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "Incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+          ]
+        },
+        {
+          "category": "Nonresponse",
+          "descriptors": [
+            "Blank"
+          ]
+        }
+      ],
+      "figure_description": "A map of Marytown enclosed in an irregular rectangular border.\nNear the top right inside the border, text states: \"Scale: 1 cm represents 100 meters\".\nIn the upper-left quadrant is a forest represented by a cluster of pine trees, with an \"X\" mark below it labeled \"Forest\".\nNear the center of the map is an \"X\" mark labeled \"Town Hall\" below it.\nIn the lower-right quadrant is an outlined body of water with wavy horizontal lines inside, with an \"X\" mark directly above it labeled \"Lake\".",
+      "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics)."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics)\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics)\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.47,
+      "confidence": 0.34,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.06,
+        "1": 0.08,
+        "2": 0.16,
+        "3": 0.25,
+        "4": 0.16,
+        "5": 0.14,
+        "6": 0.09,
+        "7": 0.04,
+        "8": 0.02
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 3.97,
+      "confidence": 0.28,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.03,
+        "1": 0.09,
+        "2": 0.15,
+        "3": 0.19,
+        "4": 0.13,
+        "5": 0.16,
+        "6": 0.12,
+        "7": 0.08,
+        "8": 0.04,
+        "9": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1257,
+  "output_tokens": 31,
+  "cost_usd": 5.2794e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914763-UjJ6ua6xST88y9pNquNs",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.47,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.06,
+          "1": 0.08,
+          "2": 0.16,
+          "3": 0.25,
+          "4": 0.16,
+          "5": 0.14,
+          "6": 0.09,
+          "7": 0.04,
+          "8": 0.02
+        },
+        "confidence": 0.34
+      },
+      "location": {
+        "type": "score",
+        "score": 3.97,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.09,
+          "2": 0.15,
+          "3": 0.19,
+          "4": 0.13,
+          "5": 0.16,
+          "6": 0.12,
+          "7": 0.08,
+          "8": 0.04,
+          "9": 0.01
+        },
+        "confidence": 0.28
+      }
+    },
+    "usage": {
+      "input_tokens": 1257,
+      "output_tokens": 31,
+      "cost": 5.2794e-05
+    },
+    "id": "gen-dec-1791914763-UjJ6ua6xST88y9pNquNs",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:03+00:00",
+  "seconds": null
+}

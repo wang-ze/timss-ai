@@ -1,0 +1,224 @@
+{
+  "item_id": "M031330",
+  "assessment": "TIMSS 2007",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Geometric Shapes and Measures",
+  "main_topic": "Two- and Three-dimensional Shapes",
+  "cognitive_domain": "Knowing",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+  "excluded_item_keys": [
+    "TIMSS 2007/grade 4/Mathematics/M031330"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2007",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Geometric Shapes and Measures",
+      "main_topic": "Two- and Three-dimensional Shapes",
+      "cognitive_domain": "Knowing",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "[Image: Six geometric shapes labeled P through U]\n\nList the letters of all the shapes that are triangles.\n\nAnswer: ____",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "P, S, and U only"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "Incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+          ]
+        },
+        {
+          "category": "Nonresponse",
+          "descriptors": [
+            "Blank"
+          ]
+        }
+      ],
+      "figure_description": "Six 2D polygon outlines arranged in two rows of three:\n- Top row:\n  - P: a scalene triangle with a horizontal base.\n  - Q: a four-sided quadrilateral resembling a trapezoid, with horizontal top and bottom sides (top shorter than bottom) and slanted right side.\n  - R: a diamond/rhombus shape (a square rotated 45 degrees).\n- Bottom row:\n  - S: a very wide, flat obtuse triangle with a horizontal top-like orientation and a vertex pointing down.\n  - T: an isosceles trapezoid with parallel horizontal top and bottom edges (top shorter than bottom).\n  - U: a wide obtuse triangle with a horizontal top edge and a vertex pointing downwards.",
+      "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics)."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics)\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics)\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.6,
+      "confidence": 0.23,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.07,
+        "1": 0.1,
+        "2": 0.14,
+        "3": 0.2,
+        "4": 0.15,
+        "5": 0.14,
+        "6": 0.11,
+        "7": 0.06,
+        "8": 0.03
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 1.58,
+      "confidence": 0.57,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.28,
+        "1": 0.31,
+        "2": 0.2,
+        "3": 0.12,
+        "4": 0.04,
+        "5": 0.03,
+        "6": 0.01,
+        "7": 0.01,
+        "8": 0.0,
+        "9": 0.0
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1151,
+  "output_tokens": 31,
+  "cost_usd": 4.8342e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914764-iNRUC8KsTxr4KMsXzHmW",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.6,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.1,
+          "2": 0.14,
+          "3": 0.2,
+          "4": 0.15,
+          "5": 0.14,
+          "6": 0.11,
+          "7": 0.06,
+          "8": 0.03
+        },
+        "confidence": 0.23
+      },
+      "location": {
+        "type": "score",
+        "score": 1.58,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.28,
+          "1": 0.31,
+          "2": 0.2,
+          "3": 0.12,
+          "4": 0.04,
+          "5": 0.03,
+          "6": 0.01,
+          "7": 0.01,
+          "8": 0,
+          "9": 0
+        },
+        "confidence": 0.57
+      }
+    },
+    "usage": {
+      "input_tokens": 1151,
+      "output_tokens": 31,
+      "cost": 4.8342e-05
+    },
+    "id": "gen-dec-1791914764-iNRUC8KsTxr4KMsXzHmW",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:04+00:00",
+  "seconds": null
+}

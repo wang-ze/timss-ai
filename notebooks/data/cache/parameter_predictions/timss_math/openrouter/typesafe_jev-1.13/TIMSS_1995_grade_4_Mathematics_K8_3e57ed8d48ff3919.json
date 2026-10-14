@@ -1,0 +1,822 @@
+{
+  "item_id": "K8",
+  "assessment": "TIMSS 1995",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Geometry",
+  "main_topic": null,
+  "cognitive_domain": "Knowing",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/K8"
+  ],
+  "similar_items": [
+    {
+      "rank": 1,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M012044",
+      "item_id": "M012044",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8878,
+      "pct_correct_intl_avg": 57,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.131,
+      "location": 0.19,
+      "guessing": 0.251
+    },
+    {
+      "rank": 2,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/M5",
+      "item_id": "M5",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.8711,
+      "pct_correct_intl_avg": 40,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.317,
+      "location": 1.119,
+      "guessing": 0.263
+    },
+    {
+      "rank": 3,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M031272C",
+      "item_id": "M031272C",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8864,
+      "pct_correct_intl_avg": 47,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.918,
+      "location": 0.12
+    },
+    {
+      "rank": 4,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/J1",
+      "item_id": "J1",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.88,
+      "pct_correct_intl_avg": 88,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.809,
+      "location": -1.923,
+      "guessing": 0.19
+    },
+    {
+      "rank": 5,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M041064",
+      "item_id": "M041064",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8346,
+      "pct_correct_intl_avg": 59,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.74617,
+      "location": -0.59326
+    },
+    {
+      "rank": 6,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M041006",
+      "item_id": "M041006",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8823,
+      "pct_correct_intl_avg": 40.8,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.10671,
+      "location": 0.35087,
+      "guessing": 0.12689
+    },
+    {
+      "rank": 7,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/J2",
+      "item_id": "J2",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.8724,
+      "pct_correct_intl_avg": 64,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.62,
+      "location": -0.281,
+      "guessing": 0.273
+    },
+    {
+      "rank": 8,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M031219",
+      "item_id": "M031219",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8587,
+      "pct_correct_intl_avg": 47.2,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.50703,
+      "location": 0.59719,
+      "guessing": 0.16738
+    },
+    {
+      "rank": 9,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M031272A",
+      "item_id": "M031272A",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8796,
+      "pct_correct_intl_avg": 75,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.811,
+      "location": -1.231
+    },
+    {
+      "rank": 10,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/I8",
+      "item_id": "I8",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.8817,
+      "pct_correct_intl_avg": 54,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.425,
+      "location": 0.702,
+      "guessing": 0.263
+    }
+  ],
+  "context": "item+references",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 1995",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Geometry",
+      "cognitive_domain": "Knowing",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "Which rectangle is NOT divided into 4 equal parts?",
+      "options": [
+        {
+          "label": "A",
+          "text": "[Image: Rectangle divided into 4 equal smaller rectangles]"
+        },
+        {
+          "label": "B",
+          "text": "[Image: Rectangle divided into 4 equal triangles]"
+        },
+        {
+          "label": "C",
+          "text": "[Image: Rectangle divided into 4 equal horizontal strips]"
+        },
+        {
+          "label": "D",
+          "text": "[Image: Rectangle divided by three parallel diagonal lines]"
+        }
+      ],
+      "correct_option": "D",
+      "figure_description": "Four rectangular figures labeled A, B, C, and D, each partitioned into 4 regions:\n- Option A: Divided into 4 equal quadrants by a vertical line and a horizontal line through the center.\n- Option B: Divided into two squares by a central vertical line, with each square bisected by a diagonal from bottom-left to top-right, creating 4 identical right-angled triangles.\n- Option C: Divided into 4 equal horizontal bands by three evenly spaced horizontal lines.\n- Option D: Divided into 4 unequal regions by three parallel diagonal lines sloping up and to the right, creating two corner triangles and two trapezoids of unequal sizes.",
+      "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data."
+    },
+    "reference_items": [
+      {
+        "rank": 1,
+        "cosine_similarity": 0.888,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Fractions and Decimals",
+        "cognitive_domain": "Using Concepts",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Which shows 2/3 of the square shaded?",
+        "options": [
+          {
+            "label": "A",
+            "text": "[Image: Square divided horizontally into 5 strips]"
+          },
+          {
+            "label": "B",
+            "text": "[Image: Square divided into three triangles]"
+          },
+          {
+            "label": "C",
+            "text": "[Image: Square divided vertically into 3 unequal strips]"
+          },
+          {
+            "label": "D",
+            "text": "[Image: Square with an unshaded triangle]"
+          },
+          {
+            "label": "E",
+            "text": "[Image: Square divided vertically into 3 equal strips]"
+          }
+        ],
+        "correct_option": "E",
+        "figure_description": "Five identical squares, labeled A through E, each partitioned and shaded differently:\n- Option A: The square is divided horizontally into 5 equal strips. The top 2 strips are shaded grey and the bottom 3 strips are unshaded (white).\n- Option B: The square is divided by a diagonal from the bottom-left corner to the top-right corner, and a line segment from the center to the bottom-right corner. The entire upper-left triangular half is shaded grey, the right triangular section is shaded grey, and the bottom triangular section is unshaded.\n- Option C: The square is divided by two vertical lines into three strips: a narrow shaded strip on the left, a wide unshaded strip in the middle, and a narrow shaded strip on the right.\n- Option D: An unshaded triangle has its base along the entire bottom edge of the square and its apex at the midpoint of the top edge. The two right triangles flanking it on the left and right are shaded grey.\n- Option E: The square is divided by two vertical lines into 3 equal-width vertical strips. The left strip and the right strip are shaded grey, and the middle strip is unshaded.",
+        "pct_correct_intl_avg": 57,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.131,
+          "location": 0.19,
+          "guessing": 0.251
+        }
+      },
+      {
+        "rank": 2,
+        "cosine_similarity": 0.871,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Fractions and Proportionality",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: A rectangle divided into vertical strips]\n\nWhich number represents the shaded part of the figure?",
+        "options": [
+          {
+            "label": "A",
+            "text": "2.8"
+          },
+          {
+            "label": "B",
+            "text": "0.5"
+          },
+          {
+            "label": "C",
+            "text": "0.2"
+          },
+          {
+            "label": "D",
+            "text": "0.02"
+          }
+        ],
+        "correct_option": "C",
+        "figure_description": "A large horizontal rectangle divided into 10 equal vertical strips side-by-side. The leftmost 2 strips are shaded grey, and the remaining 8 strips on the right are unshaded (white).",
+        "pct_correct_intl_avg": 40,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.317,
+          "location": 1.119,
+          "guessing": 0.263
+        }
+      },
+      {
+        "rank": 3,
+        "cosine_similarity": 0.886,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Two- and Three-Dimensional Shapes",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "C. Draw 2 straight lines on this rectangle to divide it into 1 rectangle and 2 triangles.\n\n[Image: Rectangle]",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Two lines correctly drawn to show a smaller rectangle and two triangles"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Attempt made with two lines drawn but drawing does not show a line dividing the rectangle into 2 rectangles with a diagonal accurately drawn in one of them",
+              "Other incorrect (including crossed out/erased, stray marks, illegible or off task)"
+            ]
+          }
+        ],
+        "figure_description": "An outline of an empty rectangle, wider than it is tall, with horizontal top and bottom sides and vertical left and right sides.",
+        "pct_correct_intl_avg": 47,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.918,
+          "location": 0.12
+        }
+      },
+      {
+        "rank": 4,
+        "cosine_similarity": 0.88,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Here is a hexagon.\n\n[Image: Hexagon divided into six parts]\n\nThe hexagon is divided into six",
+        "options": [
+          {
+            "label": "A",
+            "text": "triangles"
+          },
+          {
+            "label": "B",
+            "text": "squares"
+          },
+          {
+            "label": "C",
+            "text": "pentagons"
+          },
+          {
+            "label": "D",
+            "text": "rectangles"
+          }
+        ],
+        "correct_option": "A",
+        "figure_description": "A regular hexagon with three straight line segments connecting opposite pairs of vertices. All three lines intersect at the central point of the hexagon, dividing it into six equilateral triangles.",
+        "pct_correct_intl_avg": 88,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.809,
+          "location": -1.923,
+          "guessing": 0.19
+        }
+      },
+      {
+        "rank": 5,
+        "cosine_similarity": 0.835,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Fractions and Decimals",
+        "cognitive_domain": "Applying",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Shade 1/2 of the large triangle.\n\n[Image: a large triangle is divided by lines into four smaller triangles.]",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Any 2 small triangles shaded",
+              "Half of the triangle shaded in some other way"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "1 triangle shaded",
+              "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "figure_description": "An equilateral triangle with a horizontal base and a top vertex, divided into four smaller congruent equilateral triangles: three pointing upward (top, bottom-left, bottom-right) and one inverted in the center. None of the triangles are shaded.",
+        "pct_correct_intl_avg": 59,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.74617,
+          "location": -0.59326
+        }
+      },
+      {
+        "rank": 6,
+        "cosine_similarity": 0.882,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Fractions and Decimals",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "What fraction of this rectangle is shaded?\n\n[Image: A grid rectangle with shaded sections]",
+        "options": [
+          {
+            "label": "A",
+            "text": "1/4"
+          },
+          {
+            "label": "B",
+            "text": "1/3"
+          },
+          {
+            "label": "C",
+            "text": "6/12"
+          },
+          {
+            "label": "D",
+            "text": "2/3"
+          }
+        ],
+        "correct_option": "B",
+        "figure_description": "A large rectangle divided into a grid of 3 rows and 6 columns, forming 18 identical smaller rectangles or squares. All 6 squares in the top row are shaded gray, while the 12 squares in the middle and bottom rows are unshaded white.",
+        "pct_correct_intl_avg": 40.8,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.10671,
+          "location": 0.35087,
+          "guessing": 0.12689
+        }
+      },
+      {
+        "rank": 7,
+        "cosine_similarity": 0.872,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Which of these does NOT show a line of symmetry?",
+        "options": [
+          {
+            "label": "A",
+            "text": "[Image: An arrow pointing up with a vertical double-headed line through its center]"
+          },
+          {
+            "label": "B",
+            "text": "[Image: A horizontally elongated symmetric shape with zigzag edges and a horizontal double-headed line through its center]"
+          },
+          {
+            "label": "C",
+            "text": "[Image: A triangle with a horizontal double-headed line passing through it]"
+          },
+          {
+            "label": "D",
+            "text": "[Image: A square with a diagonal double-headed line connecting two opposite vertices]"
+          }
+        ],
+        "correct_option": "C",
+        "figure_description": "Four shapes labeled A through D, each crossed by a straight line with arrowheads at both ends: A shows a vertically oriented block arrow pointing up, with a vertical line passing through the point of the arrow and the center of its base; B shows a horizontally elongated shape with zigzag top and bottom contours, with a horizontal line passing through the left and right tips; C shows a triangle with a horizontal line passing across it midway between the base and the top vertex; D shows a square with a diagonal line passing through the top-left and bottom-right corners.",
+        "pct_correct_intl_avg": 64,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.62,
+          "location": -0.281,
+          "guessing": 0.273
+        }
+      },
+      {
+        "rank": 8,
+        "cosine_similarity": 0.859,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometric Shapes and Measures",
+        "main_topic": "Two- and Three-dimensional Shapes",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Jill had a rectangular piece of paper.\n\n[Image: A rectangle divided horizontally into two equal halves by a dotted line]\n\nShe cut her paper along the dotted line and made an L shape like this.\n\n[Image: An L-shaped figure made of two rectangular strips]\n\nWhich of these statements is true?",
+        "options": [
+          {
+            "label": "A",
+            "text": "The area of the L shape is greater than the area of the rectangle."
+          },
+          {
+            "label": "B",
+            "text": "The area of the L shape is equal to the area of the rectangle."
+          },
+          {
+            "label": "C",
+            "text": "The area of the L shape is less than the area of the rectangle."
+          },
+          {
+            "label": "D",
+            "text": "You cannot work out which area is greater without measuring."
+          }
+        ],
+        "correct_option": "B",
+        "figure_description": "The first figure shows a horizontal rectangle with a dashed horizontal line dividing it into two equal top and bottom halves.\n\nThe second figure shows an L shape made from the two halves: one vertical rectangular strip on the left and one horizontal rectangular strip at the bottom right, joined along part of their edges at a right angle.",
+        "pct_correct_intl_avg": 47.2,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.50703,
+          "location": 0.59719,
+          "guessing": 0.16738
+        }
+      },
+      {
+        "rank": 9,
+        "cosine_similarity": 0.88,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Two- and Three-Dimensional Shapes",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "A. Draw 1 straight line on this rectangle to divide it into 2 triangles.\n\n[Image: Rectangle]",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "One diagonal drawn"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "One horizontal or vertical line drawn",
+              "Other incorrect (including crossed out/erased, stray marks, illegible or off task)"
+            ]
+          }
+        ],
+        "figure_description": "An outline of an empty rectangle, wider than it is tall, with horizontal top and bottom sides and vertical left and right sides.",
+        "pct_correct_intl_avg": 75,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.811,
+          "location": -1.231
+        }
+      },
+      {
+        "rank": 10,
+        "cosine_similarity": 0.882,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Fractions and Proportionality",
+        "cognitive_domain": "Using Complex Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Each figure represents a fraction.\n\n[Image: Four figures labeled 1, 2, 3, and 4]\n\nWhich two figures represent the same fraction?",
+        "options": [
+          {
+            "label": "A",
+            "text": "1 and 2"
+          },
+          {
+            "label": "B",
+            "text": "1 and 4"
+          },
+          {
+            "label": "C",
+            "text": "2 and 3"
+          },
+          {
+            "label": "D",
+            "text": "3 and 4"
+          }
+        ],
+        "correct_option": "A",
+        "figure_description": "Four rectangular figures labeled 1, 2, 3, and 4:\n- Figure 1: A rectangle divided vertically into 4 equal strips; the 3 strips on the left are shaded gray, and the 1 strip on the right is unshaded white.\n- Figure 2: A rectangle divided into a grid of 2 rows and 4 columns (8 equal parts); the 2 parts in the first column on the left are unshaded white, and the 6 parts in the other 3 columns are shaded gray.\n- Figure 3: A rectangle divided vertically into 3 equal strips; the 2 strips on the left are shaded gray, and the 1 strip on the right is unshaded white.\n- Figure 4: A rectangle divided into a grid of 2 rows and 2 columns (4 equal parts); the 2 parts in the left column are unshaded white, and the 2 parts in the right column are shaded gray.",
+        "pct_correct_intl_avg": 54,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.425,
+          "location": 0.702,
+          "guessing": 0.263
+        }
+      }
+    ]
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 2.67,
+      "confidence": 0.51,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.03,
+        "1": 0.18,
+        "2": 0.31,
+        "3": 0.18,
+        "4": 0.23,
+        "5": 0.06,
+        "6": 0.01,
+        "7": 0.0,
+        "8": 0.0
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 2.12,
+      "confidence": 0.35,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.22999999999999998,
+        "1": 0.23,
+        "2": 0.15,
+        "3": 0.14,
+        "4": 0.16,
+        "5": 0.03,
+        "6": 0.02,
+        "7": 0.02,
+        "8": 0.01,
+        "9": 0.01
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 3.71,
+      "confidence": 0.79,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.01,
+        "2": 0.02,
+        "3": 0.17,
+        "4": 0.78,
+        "5": 0.0
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 5889,
+  "output_tokens": 45,
+  "cost_usd": 0.000247338,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791918361-KWLowxcKRwBHYpjFjedf",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 2.67,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.18,
+          "2": 0.31,
+          "3": 0.18,
+          "4": 0.23,
+          "5": 0.06,
+          "6": 0.01,
+          "7": 0,
+          "8": 0
+        },
+        "confidence": 0.51
+      },
+      "location": {
+        "type": "score",
+        "score": 2.12,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.22999999999999998,
+          "1": 0.23,
+          "2": 0.15,
+          "3": 0.14,
+          "4": 0.16,
+          "5": 0.03,
+          "6": 0.02,
+          "7": 0.02,
+          "8": 0.01,
+          "9": 0.01
+        },
+        "confidence": 0.35
+      },
+      "guessing": {
+        "type": "score",
+        "score": 3.71,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.01,
+          "2": 0.02,
+          "3": 0.17,
+          "4": 0.78,
+          "5": 0
+        },
+        "confidence": 0.79
+      }
+    },
+    "usage": {
+      "input_tokens": 5889,
+      "output_tokens": 45,
+      "cost": 0.000247338
+    },
+    "id": "gen-dec-1791918361-KWLowxcKRwBHYpjFjedf",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T19:06:01+00:00",
+  "seconds": null
+}

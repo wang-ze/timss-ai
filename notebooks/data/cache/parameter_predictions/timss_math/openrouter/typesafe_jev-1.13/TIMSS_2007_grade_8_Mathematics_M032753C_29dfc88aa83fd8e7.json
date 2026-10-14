@@ -1,0 +1,229 @@
+{
+  "item_id": "M032753C",
+  "assessment": "TIMSS 2007",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Data and Chance",
+  "main_topic": "Data Interpretation",
+  "cognitive_domain": "Knowing",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+  "excluded_item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M032753A",
+    "TIMSS 2007/grade 8/Mathematics/M032753B",
+    "TIMSS 2007/grade 8/Mathematics/M032753C",
+    "TIMSS 2007/grade 8/Mathematics/M032754",
+    "TIMSS 2007/grade 8/Mathematics/M032755",
+    "TIMSS 2007/grade 8/Mathematics/M032756"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2007",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Data and Chance",
+      "main_topic": "Data Interpretation",
+      "cognitive_domain": "Knowing",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "The teacher also said that three scheduling conditions must be met for the trip. They are as follows:\n\n1. We must leave Ourtown at 9 a.m. or later;\n\n2. We must be back at Ourtown by 5 p.m.;\n\n3. We must stay at the town we visit for at least 3 hours.\n\nMike and Katy used the bus timetables to find out if they could meet the teacher's conditions. They started putting the information in the table below but they did not complete it.\n\n| | Best Bus Times | Best Bus Times | Best Bus Times | Best Bus Times | Best Bus Times | Teacher's Conditions | Teacher's Conditions | Teacher's Conditions |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Trip to... | Leave Ourtown at... | Arrive destination at... | Depart for return to Ourtown... | Arrive back in Ourtown at... | Time in town visited | Leave 9 am or later | Stay at least 3 hours | Back by 5 pm |\n| Acton | 9:00 am | 11:15 am | | | | | | |\n| Burley | 9:15 am | 12:20 pm | 2:30 pm | 5:35 pm | 2 hr 10 min | Yes | No | No |\n| Camford | 9:25 am | | | | | | | |\n| Darley | 9:10 am | 11:15 am | 2:40 pm | 4:45 pm | 3 hr 25 min | Yes | Yes | Yes |\n\nActon Bus Timetables\n\nBus Timetable\nFrom Ourtown to Acton\n\n| Depart: Ourtown | Arrive: Acton |\n| :--- | :--- |\n| 8:00 am | 10:15 am |\n| 9:00 am | 11:15 am |\n| 10:00 am | 12:15 pm |\n| 11:00 am | 1:15 pm |\n| 12:00 pm | 2:15 pm |\n| 1:00 pm | 3:15 pm |\n| 2:00 pm | 4:15 pm |\n| 3:00 pm | 5:15 pm |\n| 4:00 pm | 6:15 pm |\n\nBus Timetable\nFrom Acton to Ourtown\n\n| Depart: Acton | Arrive: Ourtown |\n| :--- | :--- |\n| 8:30 am | 10:45 am |\n| 9:30 am | 11:45 am |\n| 10:30 am | 12:45 pm |\n| 11:30 am | 1:45 pm |\n| 12:30 pm | 2:45 pm |\n| 1:30 pm | 3:45 pm |\n| 2:30 pm | 4:45 pm |\n| 3:30 pm | 5:45 pm |\n| 4:30 pm | 6:45 pm |\n\nCamford Bus Timetables\n\nBus Timetable\nFrom Ourtown to Camford\n\n| Depart: Ourtown | Arrive: Camford |\n| :--- | :--- |\n| 8:25 am | 10:40 am |\n| 9:25 am | 11:40 am |\n| 10:25 am | 12:40 pm |\n| 11:25 am | 1:40 pm |\n| 12:25 pm | 2:40 pm |\n| 1:25 pm | 3:40 pm |\n| 2:25 pm | 4:40 pm |\n| 3:25 pm | 5:40 pm |\n| 4:25 pm | 6:40 pm |\n\nBus Timetable\nFrom Camford to Ourtown\n\n| Depart: Camford | Arrive: Ourtown |\n| :--- | :--- |\n| 8:35 am | 10:50 am |\n| 9:35 am | 11:50 am |\n| 10:35 am | 12:50 pm |\n| 11:35 am | 1:50 pm |\n| 12:35 pm | 2:50 pm |\n| 1:35 pm | 3:50 pm |\n| 2:35 pm | 4:50 pm |\n| 3:35 pm | 5:50 pm |\n| 4:35 pm | 6:50 pm |\n\nC. Which towns meet the teacher's three scheduling conditions?\n\nAnswer: ____",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "Indicates Acton and Darley",
+            "Darley AND other town(s) (not Burley) consistent with answers for A and B"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "Incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+          ]
+        },
+        {
+          "category": "Nonresponse",
+          "descriptors": [
+            "Blank"
+          ]
+        }
+      ],
+      "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.52,
+      "confidence": 0.34,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.05,
+        "1": 0.08,
+        "2": 0.16,
+        "3": 0.23,
+        "4": 0.18,
+        "5": 0.16,
+        "6": 0.09,
+        "7": 0.03,
+        "8": 0.02
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 4.29,
+      "confidence": 0.27,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.06,
+        "2": 0.11,
+        "3": 0.2,
+        "4": 0.15,
+        "5": 0.19,
+        "6": 0.15,
+        "7": 0.08,
+        "8": 0.04,
+        "9": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 2060,
+  "output_tokens": 31,
+  "cost_usd": 8.652e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914766-sgyeQPBDPYVkilomJ7Nh",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.52,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.08,
+          "2": 0.16,
+          "3": 0.23,
+          "4": 0.18,
+          "5": 0.16,
+          "6": 0.09,
+          "7": 0.03,
+          "8": 0.02
+        },
+        "confidence": 0.34
+      },
+      "location": {
+        "type": "score",
+        "score": 4.29,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.06,
+          "2": 0.11,
+          "3": 0.2,
+          "4": 0.15,
+          "5": 0.19,
+          "6": 0.15,
+          "7": 0.08,
+          "8": 0.04,
+          "9": 0.01
+        },
+        "confidence": 0.27
+      }
+    },
+    "usage": {
+      "input_tokens": 2060,
+      "output_tokens": 31,
+      "cost": 8.652e-05
+    },
+    "id": "gen-dec-1791914766-sgyeQPBDPYVkilomJ7Nh",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:06+00:00",
+  "seconds": null
+}

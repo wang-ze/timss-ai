@@ -1,0 +1,221 @@
+{
+  "item_id": "M032681A",
+  "assessment": "TIMSS 2011",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Data and Chance",
+  "main_topic": "Data Organization and Representation",
+  "cognitive_domain": "Knowing",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M032681A",
+    "TIMSS 2011/grade 8/Mathematics/M032681B",
+    "TIMSS 2011/grade 8/Mathematics/M032681C"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2011",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Data and Chance",
+      "main_topic": "Data Organization and Representation",
+      "cognitive_domain": "Knowing",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "[Image: A graph of car production with time on the x-axis and total number of cars produced on the y-axis. Time starts at 8 a.m. and goes to 4 p.m. in one hour increments. Total number of cars produced goes from 0 to 400 in intervals of 50. A straight dotted line is drawn on the graph, going from the origin at 0 cars at 8 a.m., to the top right of the graph, at 4:00p.m. and 400 cars. A solid line is shown starting at the origin and going above the dotted line after 8:00a.m. and before 11:30 a.m. The solid line then goes below the dotted line from 11:30 a.m. to 1:30 p.m. It again goes above the dotted line from 1:30 p.m. to 4:00 p.m. and ends at 400 cars at 4:00 p.m. At 150 total cars produced, the solid line is at 10a.m. and the dotted line is at 11:00a.m.]\n\nThe solid line (——) on the graph shows car production by the NU Car Motor Company during a particular day.\n\nThe dotted line (-----) shows what the total number of cars produced would be if the rate of production were constant.\n\nA. By what time had a total of 150 cars been produced?\n\nAnswer: ____",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "10 a.m."
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "11 a.m.",
+            "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+          ]
+        }
+      ],
+      "figure_description": "A line graph titled \"Car Production\". The horizontal axis is labeled \"Time\" with marked points for 8 am, 9 am, 10 am, 11 am, 12 noon, 1 pm, 2 pm, 3 pm, and 4 pm. The vertical axis is labeled \"Total Number of Cars Produced\" with grid marks from 0 to 400 in increments of 50. A dashed line segment runs directly from (8 am, 0) to (4 pm, 400). A solid line connects the points (8 am, 0), (9 am, 100), (10 am, 150), (1 pm, 200), (2 pm, 350), and (4 pm, 400).",
+      "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.74,
+      "confidence": 0.15,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.09,
+        "1": 0.08,
+        "2": 0.13,
+        "3": 0.18,
+        "4": 0.14,
+        "5": 0.14,
+        "6": 0.11,
+        "7": 0.08,
+        "8": 0.05
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 1.16,
+      "confidence": 0.56,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.41000000000000003,
+        "1": 0.3,
+        "2": 0.15,
+        "3": 0.09,
+        "4": 0.02,
+        "5": 0.02,
+        "6": 0.01,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1394,
+  "output_tokens": 31,
+  "cost_usd": 5.8548e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914770-KSvIJGEAwN51wt9qOT2D",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.74,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.09,
+          "1": 0.08,
+          "2": 0.13,
+          "3": 0.18,
+          "4": 0.14,
+          "5": 0.14,
+          "6": 0.11,
+          "7": 0.08,
+          "8": 0.05
+        },
+        "confidence": 0.15
+      },
+      "location": {
+        "type": "score",
+        "score": 1.16,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.41000000000000003,
+          "1": 0.3,
+          "2": 0.15,
+          "3": 0.09,
+          "4": 0.02,
+          "5": 0.02,
+          "6": 0.01,
+          "7": 0,
+          "8": 0,
+          "9": 0
+        },
+        "confidence": 0.56
+      }
+    },
+    "usage": {
+      "input_tokens": 1394,
+      "output_tokens": 31,
+      "cost": 5.8548e-05
+    },
+    "id": "gen-dec-1791914770-KSvIJGEAwN51wt9qOT2D",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:10+00:00",
+  "seconds": null
+}

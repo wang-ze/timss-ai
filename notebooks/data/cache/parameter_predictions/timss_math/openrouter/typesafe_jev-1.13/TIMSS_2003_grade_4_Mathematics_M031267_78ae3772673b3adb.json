@@ -1,0 +1,220 @@
+{
+  "item_id": "M031267",
+  "assessment": "TIMSS 2003",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Geometry",
+  "main_topic": "Congruence and Similarity",
+  "cognitive_domain": "Knowing Facts and Procedures",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 2003/grade 4/Mathematics/M031267"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2003",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Geometry",
+      "main_topic": "Congruence and Similarity",
+      "cognitive_domain": "Knowing Facts and Procedures",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "[Image: Trapezoid ABCD with diagonals intersecting to form four numbered triangles]\nAB is parallel to DC\n\nTwo of the four triangles in the figure above are the same shape but different sizes. Shade in those two triangles.",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "Triangles 1 and 3"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "Triangles 2 and 4",
+            "Triangles 1 and 2; Triangles 3 and 4; Triangles 1 and 4; OR Triangles 2 and 3",
+            "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+          ]
+        }
+      ],
+      "figure_description": "A trapezoid labeled ABCD, with horizontal base AB at the bottom and a shorter horizontal side DC at the top. The non-parallel sides are AD on the left and BC on the right. Diagonals AC and BD intersect inside the trapezoid, dividing it into four triangles numbered 1, 2, 3, and 4: triangle 1 is at the top with base DC; triangle 2 is on the right with side BC; triangle 3 is at the bottom with base AB; and triangle 4 is on the left with side AD. Below segment AB is the text \"AB is parallel to DC\".",
+      "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.55,
+      "confidence": 0.33,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.05,
+        "1": 0.08,
+        "2": 0.16,
+        "3": 0.22999999999999998,
+        "4": 0.17,
+        "5": 0.16,
+        "6": 0.09,
+        "7": 0.04,
+        "8": 0.02
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 4.77,
+      "confidence": 0.36,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.05,
+        "2": 0.08,
+        "3": 0.15,
+        "4": 0.13,
+        "5": 0.19999999999999998,
+        "6": 0.18,
+        "7": 0.12,
+        "8": 0.06,
+        "9": 0.02
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1120,
+  "output_tokens": 31,
+  "cost_usd": 4.704e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914758-Gy9gkVZyXOqMqwnFfbkW",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.55,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.08,
+          "2": 0.16,
+          "3": 0.22999999999999998,
+          "4": 0.17,
+          "5": 0.16,
+          "6": 0.09,
+          "7": 0.04,
+          "8": 0.02
+        },
+        "confidence": 0.33
+      },
+      "location": {
+        "type": "score",
+        "score": 4.77,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.05,
+          "2": 0.08,
+          "3": 0.15,
+          "4": 0.13,
+          "5": 0.19999999999999998,
+          "6": 0.18,
+          "7": 0.12,
+          "8": 0.06,
+          "9": 0.02
+        },
+        "confidence": 0.36
+      }
+    },
+    "usage": {
+      "input_tokens": 1120,
+      "output_tokens": 31,
+      "cost": 4.704e-05
+    },
+    "id": "gen-dec-1791914758-Gy9gkVZyXOqMqwnFfbkW",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:05:59+00:00",
+  "seconds": null
+}

@@ -1,96 +1,72 @@
 """Leave-one-out evaluation: predict every calibrated released item as if it were new, and measure the errors.
 
-``LeaveOneOut(predictor)`` predicts each calibrated item of the collection (722) with ``ParameterPredictor`` and
-compares the prediction with the item's calibrated parameters, as ``predict_item_parameters.ipynb`` does:
+``LeaveOneOut(predictor)`` predicts each calibrated item of the collection (722) with a ``Predictor``, an
+``LLMPredictor`` or a ``JevPredictor``, and compares the prediction with the item's calibrated parameters, as
+``predict_item_parameters.ipynb`` does:
 
 - The item and its other parts (``ItemBank.parts``: the items whose IDs differ only in a final part letter, and the
   other items of its task) are left out of its context, both as reference items and from the calibration summary.
-- The item's own percent correct is not in its prompt, and each item is predicted with the IRT model and points of
-  its calibration, on the scale of its own calibration.
+- The item's own percent correct is not in what the predictor sees, and each item is predicted with the IRT model and
+  points of its calibration, on the scale of its own calibration.
 - Each item reuses its stored vector, so the run makes no embedding requests.
 
-Each prediction is saved as it arrives, one JSON file per item and prompt, named by the item and a hash of the LLM
-provider, model, reasoning effort, and both prompts. A rerun therefore requests only predictions that are missing, and
-runs that differ in any setting (embedding model, search method, LLM, ...) never overwrite each other's predictions.
-For the notebook's OpenRouter model, the predictions the notebook saved are reused when their prompts match.
+Each prediction is saved as it arrives, one JSON file per item and input, named by the item and a hash of the
+predictor's identity (``Predictor.identity``: for an LLM, its provider, model, reasoning effort, and both prompts; for
+Jev, its provider, model, state, and questions). A rerun therefore requests only predictions that are missing, and runs
+that differ in any setting (embedding model, search method, LLM or Jev, ...) never overwrite each other's predictions.
+For the notebook's OpenRouter LLM, the predictions the notebook saved are reused when their prompts match.
 
 ``request`` sends one request per item, ``workers`` at a time, as coroutines in one event loop (``request_async`` in a
 notebook, where ``await loo.request_async(...)`` runs in the notebook's own loop). On an API error it sends no further
 requests but saves the ones already running, which are paid for; an interrupt cancels them all at once.
-``request_batch`` sends the same requests as OpenRouter batches instead (see ``batch``), at about half the price, and
-saves the predictions under the same names once the batches complete, which can take up to 24 hours. Submitted batches
-are kept in manifests next to the predictions, so a run that stops collects them on the next run instead of submitting
-them again.
+``request_batch`` sends the same LLM requests as OpenRouter batches instead (see ``batch``), at about half the price,
+and saves the predictions under the same names once the batches complete, which can take up to 24 hours. Submitted
+batches are kept in manifests next to the predictions, so a run that stops collects them on the next run instead of
+submitting them again.
 
 ``PredictionResults`` holds one row per item (``predictions``) and one row per item and predicted parameter
-(``errors``, with two baselines that need no LLM), summarizes the errors by grade or assessment, and exports them to
-Excel. Run ``uv run timss-predict-loo --help`` for the command line.
+(``errors``, with two baselines that need no LLM or Jev), summarizes the errors by grade or assessment, and exports
+them to Excel. Run ``uv run timss-predict-loo --help`` for the command line.
 """
 
 from __future__ import annotations
 
 import argparse
 import asyncio
-import contextlib
 import functools
 import hashlib
 import json
 import logging
 import re
 import sys
-import threading
 import time
-from collections.abc import Coroutine, Iterable
+from collections.abc import Callable, Iterable
 from dataclasses import dataclass, field
 from pathlib import Path
 
 import numpy as np
-import openai
 import pandas as pd
 from openpyxl.cell.cell import ILLEGAL_CHARACTERS_RE
-from pydantic import ValidationError
+from scipy import stats
 
 from .batch import TERMINAL_STATUSES, BatchAPIError, BatchManifests, OpenRouterBatches
 from .config import data_dir as resolve_data_dir
-from .config import slug, write_json
+from .config import write_json
 from .embeddings import DEFAULT_MODELS as DEFAULT_EMBEDDING_MODELS
 from .embeddings import EMBEDDING_PROVIDERS, EmbeddingSettings
 from .index import SEARCH_METHODS, IndexSettings, ItemIndex
 from .items import PARAMETER_NAMES, ItemBank, predicted_parameters
-from .predictor import BASE_URLS as LLM_PROVIDERS
-from .predictor import (
-    AsyncLLMSession,
-    LLMSettings,
-    NoPredictionError,
-    ParameterPredictor,
-    plural,
-)
+from .jev import BASE_URLS as JEV_PROVIDERS
+from .jev import CONTEXTS, ESTIMATORS, JevPredictor, JevSettings
+from .llm import BASE_URLS as LLM_PROVIDERS
+from .llm import LLMPredictor, LLMSettings
+from .predictor import Predictor, plural, run_sync
 
 log = logging.getLogger(__name__)
 
-PREDICTIONS_DIR = Path("cache") / "parameter_predictions" / "timss_math"
 RUNS_DIR = "parameter_prediction_runs"
-# Output that the LLM may get right on a rerun: the item is reported and left for the next run. Any other error, such
-# as an API error from exhausted credit, stops the run.
-UNUSABLE_OUTPUT_ERRORS = (
-    ValidationError,
-    openai.LengthFinishReasonError,
-    openai.ContentFilterFinishReasonError,
-    NoPredictionError,
-)
 EXCEL_CELL_LIMIT = 32_767
 SAVED_FILE = re.compile(r"(.+)_[0-9a-f]{16}\.json")  # <item file stem>_<identity hash>.json
-
-
-def prediction_identity(llm: LLMSettings, prepared: dict) -> dict:
-    """What a saved prediction must match to be reused: the LLM, its reasoning effort, and both prompts."""
-    return {
-        "llm_provider": llm.provider,
-        "llm_model": llm.model,
-        "reasoning_effort": llm.reasoning_effort,
-        "system_prompt": prepared["system_prompt"],
-        "user_prompt": prepared["user_prompt"],
-    }
 
 
 def item_file_stem(key: str) -> str:
@@ -99,10 +75,10 @@ def item_file_stem(key: str) -> str:
 
 
 class PredictionCache:
-    """Saved predictions: ``<directory>/<item>_<hash of prediction_identity>.json``.
+    """Saved predictions: ``<directory>/<item>_<hash of the predictor's identity>.json``.
 
-    ``notebook_directory`` holds the notebook's predictions, one ``<item>.json`` per item, which are reused when they
-    match the identity.
+    ``notebook_directory`` holds the notebook's LLM predictions, one ``<item>.json`` per item, which are reused when
+    they match the identity.
     """
 
     def __init__(self, directory: Path, notebook_directory: Path | None = None):
@@ -135,7 +111,7 @@ class PredictionCache:
         return None
 
     def predicted_item_stems(self) -> set[str]:
-        """The item file stems (``item_file_stem``) with a saved prediction for any prompts and LLM settings."""
+        """The item file stems (``item_file_stem``) with a saved prediction for any inputs and settings."""
         stems = set()
         if self.directory.exists():
             stems |= {match[1] for path in self.directory.iterdir() if (match := SAVED_FILE.fullmatch(path.name))}
@@ -150,18 +126,6 @@ class PredictionCache:
         path = self.directory / f"{stem}.json"
         write_json(path, record)
         return path
-
-
-def default_cache_dir(llm: LLMSettings, data_dir: str | Path | None = None) -> Path:
-    """``cache/parameter_predictions/timss_math/<provider>/<model>/`` in the data directory."""
-    return resolve_data_dir(data_dir) / PREDICTIONS_DIR / slug(llm.provider) / slug(llm.model)
-
-
-def notebook_cache_dir(llm: LLMSettings, data_dir: str | Path | None = None) -> Path | None:
-    """Where the notebook saves the predictions of an OpenRouter model; None for other providers."""
-    if llm.provider != "openrouter":
-        return None
-    return resolve_data_dir(data_dir) / PREDICTIONS_DIR / llm.model.replace("/", "_")
 
 
 @dataclass
@@ -184,7 +148,7 @@ class LeaveOneOut:
 
     def __init__(
         self,
-        predictor: ParameterPredictor,
+        predictor: Predictor,
         keys: Iterable[str] | None = None,
         cache_dir: str | Path | None = None,
         data_dir: str | Path | None = None,
@@ -203,15 +167,16 @@ class LeaveOneOut:
         for key, item in self.items.items():
             if item.irt_model != calibrated.at[key, "irt_model"]:
                 raise ValueError(f"{key} would be predicted with {item.irt_model} but is calibrated with another model")
+        self.data_dir = resolve_data_dir(data_dir)
         self.cache = PredictionCache(
-            Path(cache_dir) if cache_dir else default_cache_dir(predictor.llm, data_dir),
-            notebook_cache_dir(predictor.llm, data_dir) if reuse_notebook_predictions else None,
+            Path(cache_dir) if cache_dir else predictor.cache_dir(data_dir),
+            predictor.notebook_cache_dir(data_dir) if reuse_notebook_predictions else None,
         )
         self.batches = BatchManifests(self.cache.directory / "batches")
 
     @functools.cached_property
     def prepared(self) -> dict[str, dict]:
-        """The reference items and prompts of every item, found without API calls."""
+        """The reference items and inputs of every item, found without API calls."""
         started = time.monotonic()
         prepared = {
             key: self.predictor.prepare(item, exclude_keys=self.bank.parts[key]) for key, item in self.items.items()
@@ -220,16 +185,15 @@ class LeaveOneOut:
         return prepared
 
     def identity(self, key: str) -> dict:
-        return prediction_identity(self.predictor.llm, self.prepared[key])
+        return self.predictor.identity(self.prepared[key])
 
     def saved(self) -> dict[str, Path]:
-        """The file of the saved prediction of each item that has one for the current prompts and LLM settings."""
+        """The file of the saved prediction of each item that has one for the current inputs and settings."""
         paths = {key: self.cache.find(key, self.identity(key)) for key in self.items}
         return {key: path for key, path in paths.items() if path is not None}
 
     def status(self) -> pd.Series:
-        """Per item: "saved", "in a submitted batch", "saved for other prompts or LLM settings", or
-        "not predicted yet"."""
+        """Per item: "saved", "in a submitted batch", "saved for other inputs or settings", or "not predicted yet"."""
         saved, predicted, in_batches = self.saved(), self.cache.predicted_item_stems(), self.batches.open_custom_ids()
         return pd.Series(
             {
@@ -237,7 +201,7 @@ class LeaveOneOut:
                 if key in saved
                 else "in a submitted batch"
                 if self.cache.stem(key, self.identity(key)) in in_batches
-                else "saved for other prompts or LLM settings"
+                else "saved for other inputs or settings"
                 if item_file_stem(key) in predicted
                 else "not predicted yet"
                 for key in self.items
@@ -246,8 +210,8 @@ class LeaveOneOut:
         )
 
     def pending(self, max_requests: int | None) -> list[str]:
-        """The items with no saved prediction for the current prompts and LLM settings that are not in a submitted
-        batch either, at most ``max_requests`` of them (None for all)."""
+        """The items with no saved prediction for the current inputs and settings that are not in a submitted batch
+        either, at most ``max_requests`` of them (None for all)."""
         in_batches = self.batches.open_custom_ids()
         pending = [
             key
@@ -261,26 +225,29 @@ class LeaveOneOut:
         """Request the predictions that are not saved yet, at most ``max_requests`` of them (None for all),
         ``workers`` at a time, saving each as it arrives.
 
-        LLM requests cost money (about $9 for all 722 items with the default LLM), so ``max_requests`` must be given.
-        Items in a submitted batch are left to the batch. Runs ``request_async`` (see ``run_sync``).
+        Requests cost money (about $9 for all 722 items with the default LLM, about $0.20 with Jev and reference
+        items), so ``max_requests`` must be given. Items in a submitted batch are left to the batch. Runs
+        ``request_async`` (see ``run_sync``).
         """
         return run_sync(self.request_async(max_requests, workers))
 
-    async def request_async(
-        self, max_requests: int | None, workers: int = 8, session: AsyncLLMSession | None = None
-    ) -> RequestReport:
+    async def request_async(self, max_requests: int | None, workers: int = 8, session=None) -> RequestReport:
         """``request`` as a coroutine, for a notebook: ``await loo.request_async(...)``.
 
         On the first API error (such as exhausted credit) no further request starts; the requests already running
         are saved, as they are paid for, and then the error is raised. Cancelling the coroutine, as an interrupt
-        does, cancels every request at once. ``session`` replaces the LLM session, such as a fake one in tests.
+        does, cancels every request at once. ``session`` replaces the predictor's session, such as a fake one in
+        tests.
         """
-        if session is None:
-            async with self.predictor.client.session() as opened:
-                return await self.request_async(max_requests, workers, opened)
         pending = self.pending(max_requests)
-        llm = self.predictor.llm
-        log.info("Requesting %d predictions from %s (%s), %d at a time", len(pending), llm.model, llm.provider, workers)
+        if not pending:  # nothing to send, so no session, which would need an API key
+            return RequestReport(0, 0, {}, 0.0, 0.0)
+        if session is None:
+            async with self.predictor.session() as opened:
+                return await self.request_async(max_requests, workers, opened)
+        provider, model = self.predictor.cache_name()
+        log.info("Requesting %d predictions from %s (%s), %d at a time", len(pending), model, provider, workers)
+        unusable_errors = self.predictor.UNUSABLE_ERRORS
         report = RequestReport(0, 0, {}, 0.0, 0.0)
         started = time.monotonic()
         slots = asyncio.Semaphore(max(1, workers))
@@ -295,7 +262,7 @@ class LeaveOneOut:
                 try:
                     return key, await self.predictor.request_async(self.items[key], self.prepared[key], session)
                 except Exception as error:  # noqa: BLE001 - returned, and raised after the running requests are saved
-                    if not isinstance(error, UNUSABLE_OUTPUT_ERRORS):
+                    if not isinstance(error, unusable_errors):
                         stopped.set()
                     return key, error
 
@@ -307,7 +274,7 @@ class LeaveOneOut:
                 if output is None:
                     continue
                 report.requested += 1
-                if isinstance(output, UNUSABLE_OUTPUT_ERRORS):
+                if isinstance(output, unusable_errors):
                     report.unusable[key] = f"{type(output).__name__}: {output}"
                     log.warning("%s: unusable output (%s), left for a rerun", key, type(output).__name__)
                 elif isinstance(output, Exception):
@@ -319,7 +286,7 @@ class LeaveOneOut:
                     report.saved += 1
                     report.cost_usd += output["cost_usd"] or 0.0
                 if done % 50 == 0 or done == len(pending):
-                    log.info("%d/%d in %.0f s, $%.2f", done, len(pending), time.monotonic() - started, report.cost_usd)
+                    log.info("%d/%d in %.0f s, $%.4f", done, len(pending), time.monotonic() - started, report.cost_usd)
         finally:
             # On a cancellation (an interrupt) or an error here, stop every request still running or waiting.
             for task in tasks:
@@ -337,7 +304,7 @@ class LeaveOneOut:
         poll_seconds: float = 60,
         client: OpenRouterBatches | None = None,
     ) -> RequestReport:
-        """Request the predictions that are not saved yet as OpenRouter batches, at about half the price of
+        """Request the LLM predictions that are not saved yet as OpenRouter batches, at about half the price of
         ``request``, and save them once the batches complete.
 
         First collects the batches that earlier runs submitted, then submits at most ``max_requests`` items (None for
@@ -348,6 +315,8 @@ class LeaveOneOut:
         shares them, such as a notebook and a ``timss-predict-loo --batch`` run, waits instead of submitting the same
         items again.
         """
+        if not isinstance(self.predictor, LLMPredictor):
+            raise TypeError(f"OpenRouter batches are for LLM predictors, not {type(self.predictor).__name__}")
         started = time.monotonic()
         client = client or OpenRouterBatches(self.predictor.llm)
         report = RequestReport(0, 0, {}, 0.0, 0.0)
@@ -422,7 +391,7 @@ class LeaveOneOut:
                 else:
                     try:
                         output = self.predictor.parse_response(self.items[key], result["response"]["body"])
-                    except UNUSABLE_OUTPUT_ERRORS as exception:
+                    except self.predictor.UNUSABLE_ERRORS as exception:
                         error = report.unusable[key] = f"{type(exception).__name__}: {exception}"
                     else:
                         self.cache.save_stem(custom_id, entry["record"] | output | {"batch_id": batch["id"]})
@@ -443,13 +412,16 @@ class LeaveOneOut:
             self.batches.close(manifest, batch, outcomes)
 
     def results(self) -> PredictionResults:
-        """The predictions saved for the current prompts and LLM settings, with their errors."""
+        """The predictions saved for the current inputs and settings, with their errors."""
         saved = self.saved()
         if len(saved) < len(self.items):
             log.warning("%d items have no current prediction and are left out", len(self.items) - len(saved))
         records = {key: json.loads(path.read_text(encoding="utf-8")) for key, path in saved.items()}
+        # The point predictions, which a Jev record holds as probabilities and its predictor's estimator turns into
+        # values.
+        records = {key: record | self.predictor.parameters(record) for key, record in records.items()}
         predictions = pd.DataFrame(
-            [prediction_row(self.bank, key, record, saved[key].name) for key, record in records.items()]
+            [prediction_row(self.bank, key, record, saved[key].name, self.predictor) for key, record in records.items()]
         )
         if not predictions.empty:
             predicted = predictions[[f"{name}_predicted" for name in PARAMETER_NAMES]].notna().to_numpy()
@@ -457,48 +429,23 @@ class LeaveOneOut:
             mismatched = predictions.loc[(predicted != calibrated).any(axis=1), "item_key"].tolist()
             if mismatched:
                 raise ValueError(f"Predicted and calibrated items have different parameters: {mismatched}")
+        # Relative to the data directory when in it, so that a published workbook names no local path.
+        cache_dir = self.cache.directory
+        if cache_dir.is_relative_to(self.data_dir):
+            cache_dir = cache_dir.relative_to(self.data_dir)
         settings = flatten(self.predictor.describe()) | {
+            "evaluation.predictor": self.predictor.kind,
             "evaluation.items": len(self.items),
             "evaluation.predicted_items": len(records),
-            "evaluation.cache_dir": str(self.cache.directory),
+            "evaluation.cache_dir": cache_dir.as_posix(),
         }
-        return PredictionResults(predictions, prediction_errors(self.bank, records), settings)
+        errors = prediction_errors(self.bank, records, self.predictor.parameter_details)
+        return PredictionResults(predictions, errors, settings)
 
 
-def run_sync(coroutine: Coroutine):
-    """Run a coroutine to the end from synchronous code, and return its result.
-
-    Without a running event loop (a script or the command line) it runs in a new one. Inside a running loop (a
-    notebook) it runs in a new loop in a thread, and an interrupt cancels it there before it is raised here.
-    """
-    try:
-        asyncio.get_running_loop()
-    except RuntimeError:
-        return asyncio.run(coroutine)
-    loop = asyncio.new_event_loop()
-    task = loop.create_task(coroutine)
-
-    def run():
-        with contextlib.suppress(BaseException):  # task.result() raises it in the calling thread
-            loop.run_until_complete(task)
-        loop.run_until_complete(loop.shutdown_asyncgens())
-        loop.run_until_complete(loop.shutdown_default_executor())
-        loop.close()
-
-    thread = threading.Thread(target=run, name="run_sync")
-    thread.start()
-    try:
-        thread.join()
-    except KeyboardInterrupt:
-        with contextlib.suppress(RuntimeError):  # the loop has closed: the task is done
-            loop.call_soon_threadsafe(task.cancel)
-        thread.join()
-        raise
-    return task.result()
-
-
-def prediction_row(bank: ItemBank, key: str, record: dict, file_name: str) -> dict:
-    """One row of ``predictions``: the item, its context, each parameter with its error, and the LLM's output."""
+def prediction_row(bank: ItemBank, key: str, record: dict, file_name: str, predictor: Predictor) -> dict:
+    """One row of ``predictions``: the item, its context, each parameter with its error, and the predictor's output
+    (``Predictor.row_details``). ``record`` holds the point predictions (``Predictor.parameters``)."""
     calibrated = bank.calibrated.loc[key]
     row = {
         "item_key": key,
@@ -533,37 +480,24 @@ def prediction_row(bank: ItemBank, key: str, record: dict, file_name: str) -> di
             f"{name}_abs_error": abs(error),
         }
     return row | {
-        "llm_provider": record.get("llm_provider", "openrouter"),
-        "llm_model": record["llm_model"],
-        "reasoning_effort": record["reasoning_effort"],
-        "batch_id": record.get("batch_id"),
-        "reasoning": record["reasoning"],
-        **{f"{name}_reasoning": record.get(f"{name}_reasoning") for name in PARAMETER_NAMES},
-        **{
-            column: record[column]
-            for column in (
-                "llm_thinking",
-                "finish_reason",
-                "prompt_tokens",
-                "completion_tokens",
-                "reasoning_tokens",
-                "cost_usd",
-                "predicted_at",
-            )
-        },
+        "predictor": predictor.kind,
+        **predictor.row_details(record),
         "similar_items": json.dumps(record["similar_items"], ensure_ascii=False),
-        "system_prompt": record["system_prompt"],
-        "user_prompt": record["user_prompt"],
         "prediction_file": file_name,
     }
 
 
-def prediction_errors(bank: ItemBank, records: dict[str, dict]) -> pd.DataFrame:
-    """One row per item and parameter the LLM predicted (the last GPCM step is derived, so it is left out), with the
-    predicted and calibrated values, the error (predicted minus calibrated), and two baselines that need no LLM:
-    ``calibration_mean``, the mean in the item's calibration summary (the calibrated items of its grade with its
+def prediction_errors(
+    bank: ItemBank, records: dict[str, dict], details: Callable[[dict, str], dict] | None = None
+) -> pd.DataFrame:
+    """One row per item and parameter predicted (the last GPCM step is derived, so it is left out), with the
+    predicted and calibrated values, the error (predicted minus calibrated), and two baselines that need no LLM or
+    Jev: ``calibration_mean``, the mean in the item's calibration summary (the calibrated items of its grade with its
     model and points, its parts left out), and ``reference_mean``, the mean over its reference items with its model
-    and points."""
+    and points (missing for a prediction without reference items).
+
+    ``records`` hold the point predictions; ``details(record, name)`` adds columns per parameter, such as the
+    posterior of a Jev answer."""
     rows = []
     for key, record in records.items():
         item = bank.item(key)
@@ -589,16 +523,31 @@ def prediction_errors(bank: ItemBank, records: dict[str, dict]) -> pd.DataFrame:
                     if same_scoring_references
                     else np.nan,
                 }
+                | (details(record, name) if details else {})
             )
     columns = ["item_key", "assessment", "grade", "item_id", "irt_model", "parameter", "predicted", "calibrated"]
-    errors = pd.DataFrame(rows, columns=[*columns, "calibration_mean", "reference_mean"])
-    errors["error"] = errors["predicted"] - errors["calibrated"]
+    columns += ["calibration_mean", "reference_mean"]
+    extra = list(dict.fromkeys(name for row in rows for name in row if name not in columns))
+    errors = pd.DataFrame(rows, columns=[*columns, *extra])
+    errors.insert(len(columns), "error", errors["predicted"] - errors["calibrated"])
     errors["parameter"] = pd.Categorical(errors["parameter"], categories=PARAMETER_NAMES, ordered=True)
     return errors
 
 
+def correlation(x, y, method: str = "pearson") -> float:
+    """Pearson's or Spearman's correlation of the pairs where neither value is missing; NaN for fewer than 3 pairs or
+    a constant variable."""
+    x, y = np.asarray(x, dtype=float), np.asarray(y, dtype=float)
+    keep = ~(np.isnan(x) | np.isnan(y))
+    if keep.sum() < 3 or np.ptp(x[keep]) == 0 or np.ptp(y[keep]) == 0:
+        return np.nan
+    test = stats.pearsonr if method == "pearson" else stats.spearmanr
+    return float(test(x[keep], y[keep]).statistic)
+
+
 def summarize_errors(rows: pd.DataFrame) -> pd.Series:
-    """Bias, spread, mean absolute error, RMSE, and correlation of the predictions, and the baselines' MAE."""
+    """Bias, spread, mean absolute error, RMSE, and Pearson and Spearman correlations of the predictions, and the
+    baselines' MAE."""
     error = rows["predicted"] - rows["calibrated"]
 
     def baseline_mae(baseline):
@@ -611,7 +560,8 @@ def summarize_errors(rows: pd.DataFrame) -> pd.Series:
             "sd_error": error.std(),
             "mean_absolute_error": error.abs().mean(),
             "rmse": np.sqrt((error**2).mean()),
-            "correlation": rows["predicted"].corr(rows["calibrated"]) if len(rows) > 2 else np.nan,
+            "correlation": correlation(rows["predicted"], rows["calibrated"]),
+            "spearman": correlation(rows["predicted"], rows["calibrated"], "spearman"),
             "baseline_mae_calibration_mean": baseline_mae("calibration_mean"),
             "baseline_mae_reference_mean": baseline_mae("reference_mean"),
         }
@@ -657,10 +607,11 @@ class PredictionResults:
     """The leave-one-out predictions of a run and their errors."""
 
     predictions: pd.DataFrame
-    """One row per item: the item, its context, each parameter predicted and calibrated with its error, and the LLM's
-    reasoning, usage, and prompts."""
+    """One row per item: the item, its context, each parameter predicted and calibrated with its error, and the
+    predictor's output: an LLM's reasoning, usage, and prompts, or Jev's usage, state, and questions."""
     errors: pd.DataFrame
-    """One row per item and predicted parameter: predicted, calibrated, error, and the two baselines."""
+    """One row per item and predicted parameter: predicted, calibrated, error, and the two baselines, and for Jev the
+    posterior of its answer."""
     settings: dict = field(default_factory=dict)
     """The settings of the run, such as {"llm.model": "google/gemini-3.8-flash"}."""
 
@@ -702,18 +653,6 @@ class PredictionResults:
         return cls(predictions, errors, settings)
 
 
-def run_name(predictor: ParameterPredictor) -> str:
-    """A name for the run's output directory, from its main settings."""
-    llm, embedding = predictor.llm, predictor.index.embedder.settings
-    return "__".join(
-        [
-            f"{llm.provider}-{slug(llm.model)}-{slug(str(llm.reasoning_effort))}",
-            f"{embedding.provider}-{slug(embedding.model)}-{embedding.dimension or 'full'}",
-            f"{predictor.search_method}-{predictor.n_similar}+{predictor.n_same_model}",
-        ]
-    )
-
-
 def _optional_int(value: str) -> int | None:
     return None if value.lower() in ("full", "none", "all") else int(value)
 
@@ -723,15 +662,20 @@ def _reasoning_effort(value: str) -> str | bool | None:
 
 
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
-    embedding_defaults, index_defaults, llm_defaults = EmbeddingSettings(), IndexSettings(), LLMSettings()
+    embedding_defaults, index_defaults, llm_defaults, jev_defaults = (
+        EmbeddingSettings(),
+        IndexSettings(),
+        LLMSettings(),
+        JevSettings(),
+    )
     default_models = ", ".join(f"{model} for {provider}" for provider, model in DEFAULT_EMBEDDING_MODELS.items())
     parser = argparse.ArgumentParser(
         prog="timss-predict-loo",
         description=(
-            "Predict the IRT parameters of every calibrated TIMSS released mathematics item as if it were new, and "
-            "write the predictions, their errors, and graphs of the errors. Defaults are the notebook's settings. "
-            "LLM requests cost money, so none are sent unless --max-requests is given. With --batch they are sent as "
-            "OpenRouter batches at about half the price, which can take up to 24 hours."
+            "Predict the IRT parameters of every calibrated TIMSS released mathematics item as if it were new, with an "
+            "LLM or with Jev, and write the predictions, their errors, and graphs of the errors. Defaults are the "
+            "notebook's settings. Requests cost money, so none are sent unless --max-requests is given. With --batch "
+            "the LLM requests are sent as OpenRouter batches at about half the price, which can take up to 24 hours."
         ),
     )
     paths = parser.add_argument_group("data")
@@ -773,31 +717,97 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     retrieval.add_argument("--qdrant-url", help="Qdrant server URL (default: in memory)")
     retrieval.add_argument("--collection", default=index_defaults.collection)
 
-    llm = parser.add_argument_group("LLM")
-    llm.add_argument("--llm-provider", choices=sorted(LLM_PROVIDERS), default=llm_defaults.provider)
-    llm.add_argument("--llm-model", default=llm_defaults.model)
+    predictor = parser.add_argument_group("predictor")
+    predictor.add_argument(
+        "--predictor",
+        choices=["llm", "jev"],
+        default="llm",
+        help="an LLM, or Jev, which answers with a probability for each value of a scale (default: llm)",
+    )
+
+    # The options of one predictor are an error with the other, so they are left out of the namespace unless given.
+    llm_options = {
+        "llm_provider": llm_defaults.provider,
+        "llm_model": llm_defaults.model,
+        "reasoning_effort": llm_defaults.reasoning_effort,
+        "max_tokens": llm_defaults.max_tokens,
+        "llm_base_url": None,
+        "ollama_num_ctx": llm_defaults.ollama_num_ctx,
+    }
+    llm = parser.add_argument_group("LLM (--predictor llm)")
+    llm.add_argument(
+        "--llm-provider",
+        choices=sorted(LLM_PROVIDERS),
+        default=argparse.SUPPRESS,
+        help=f"default: {llm_defaults.provider}",
+    )
+    llm.add_argument("--llm-model", default=argparse.SUPPRESS, help=f"default: {llm_defaults.model}")
     llm.add_argument(
         "--reasoning-effort",
         type=_reasoning_effort,
-        default=llm_defaults.reasoning_effort,
-        help="such as low, medium, or high; 'omit' sends none; Ollama also takes true or false (default: %(default)s)",
+        default=argparse.SUPPRESS,
+        help=f"such as low, medium, or high; 'omit' sends none; Ollama also takes true or false (default: "
+        f"{llm_defaults.reasoning_effort})",
     )
-    llm.add_argument("--max-tokens", type=int, default=llm_defaults.max_tokens)
-    llm.add_argument("--llm-base-url", help="API URL of the LLM provider")
-    llm.add_argument("--ollama-num-ctx", type=int, default=llm_defaults.ollama_num_ctx)
+    llm.add_argument("--max-tokens", type=int, default=argparse.SUPPRESS, help=f"default: {llm_defaults.max_tokens}")
+    llm.add_argument("--llm-base-url", default=argparse.SUPPRESS, help="API URL of the LLM provider")
+    llm.add_argument(
+        "--ollama-num-ctx", type=int, default=argparse.SUPPRESS, help=f"default: {llm_defaults.ollama_num_ctx}"
+    )
+
+    jev_options = {
+        "jev_provider": jev_defaults.provider,
+        "jev_model": jev_defaults.model,
+        "jev_base_url": None,
+        "jev_context": "item+references",
+        "jev_scales": None,
+        "estimator": "eap",
+    }
+    jev = parser.add_argument_group("Jev (--predictor jev)")
+    jev.add_argument(
+        "--jev-provider",
+        choices=sorted(JEV_PROVIDERS),
+        default=argparse.SUPPRESS,
+        help=f"default: {jev_defaults.provider}",
+    )
+    jev.add_argument(
+        "--jev-model",
+        default=argparse.SUPPRESS,
+        help=f"default: {jev_defaults.model}; TypeSafe's API names it without 'typesafe/'",
+    )
+    jev.add_argument("--jev-base-url", default=argparse.SUPPRESS, help="API URL of the Jev provider")
+    jev.add_argument(
+        "--jev-context",
+        choices=CONTEXTS,
+        default=argparse.SUPPRESS,
+        help="what Jev sees: the item alone, or also its reference items (default: item+references)",
+    )
+    jev.add_argument(
+        "--jev-scales",
+        type=Path,
+        default=argparse.SUPPRESS,
+        help='JSON file of value scales replacing the defaults by parameter, such as {"slope": ["0.5", "1.0", "1.5"]}',
+    )
+    jev.add_argument(
+        "--estimator",
+        choices=ESTIMATORS,
+        default=argparse.SUPPRESS,
+        help="Jev's point prediction: the probability-weighted mean (eap), the median, or the most likely value "
+        "(map) (default: eap)",
+    )
 
     run = parser.add_argument_group("run")
     run.add_argument(
         "--max-requests",
         type=_optional_int,
         default=0,
-        help="LLM requests to send at most, or 'all' (default: 0, which only evaluates saved predictions)",
+        help="requests to send at most, or 'all' (default: 0, which only evaluates saved predictions)",
     )
-    run.add_argument("--workers", type=int, default=8, help="concurrent LLM requests (default: 8)")
+    run.add_argument("--workers", type=int, default=8, help="concurrent requests (default: 8)")
     run.add_argument(
         "--batch",
         action="store_true",
-        help="send the requests as OpenRouter batches at about half the price, and collect the batches of earlier "
+        help="send the LLM requests as OpenRouter batches at about half the price, and collect the batches of earlier "
         "runs (OpenRouter only)",
     )
     run.add_argument(
@@ -808,7 +818,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     run.add_argument(
         "--poll-seconds", type=float, default=60, help="with --batch, seconds between status checks (default: 60)"
     )
-    run.add_argument("--cache-dir", type=Path, help="where predictions are saved (default: by LLM provider and model)")
+    run.add_argument("--cache-dir", type=Path, help="where predictions are saved (default: by provider and model)")
     run.add_argument(
         "--output-dir",
         type=Path,
@@ -816,8 +826,15 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     )
     run.add_argument("--no-plots", action="store_true", help="write the workbook only")
     args = parser.parse_args(argv)
-    if args.batch and args.llm_provider != "openrouter":
-        parser.error("--batch sends requests through OpenRouter only")
+    for predictor_name, options, other in (("llm", jev_options, "jev"), ("jev", llm_options, "llm")):
+        given = [f"--{name.replace('_', '-')}" for name in options if name in args]
+        if args.predictor == predictor_name and given:
+            parser.error(f"{', '.join(given)} apply to --predictor {other} only")
+    for name, default in (llm_options | jev_options).items():
+        if name not in args:
+            setattr(args, name, default)
+    if args.batch and (args.predictor != "llm" or args.llm_provider != "openrouter"):
+        parser.error("--batch sends LLM requests through OpenRouter only")
     if args.no_wait and not args.batch:
         parser.error("--no-wait needs --batch")
     if args.embedding_model is None:
@@ -827,6 +844,31 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     if "embedding_dimension" not in args:
         args.embedding_dimension = None if args.embedding_provider == "fastembed" else embedding_defaults.dimension
     return args
+
+
+def make_predictor(args: argparse.Namespace, index: ItemIndex) -> Predictor:
+    """The predictor of the parsed command line."""
+    retrieval = {"search_method": args.search_method, "n_similar": args.n_similar, "n_same_model": args.n_same_model}
+    if args.predictor == "llm":
+        llm = LLMSettings(
+            provider=args.llm_provider,
+            model=args.llm_model,
+            reasoning_effort=args.reasoning_effort,
+            max_tokens=args.max_tokens,
+            base_url=args.llm_base_url,
+            ollama_num_ctx=args.ollama_num_ctx,
+        )
+        return LLMPredictor(index, llm, **retrieval)
+    jev = JevSettings(provider=args.jev_provider, model=args.jev_model, base_url=args.jev_base_url)
+    scales = None if args.jev_scales is None else json.loads(args.jev_scales.read_text(encoding="utf-8"))
+    return JevPredictor(
+        index,
+        jev,
+        with_references=args.jev_context == "item+references",
+        estimator=args.estimator,
+        scales=scales,
+        **retrieval,
+    )
 
 
 def main(argv: list[str] | None = None) -> None:
@@ -848,16 +890,8 @@ def main(argv: list[str] | None = None) -> None:
     index_settings = IndexSettings(
         collection=args.collection, path=args.qdrant_path, url=args.qdrant_url, hybrid_candidates=args.hybrid_candidates
     )
-    llm = LLMSettings(
-        provider=args.llm_provider,
-        model=args.llm_model,
-        reasoning_effort=args.reasoning_effort,
-        max_tokens=args.max_tokens,
-        base_url=args.llm_base_url,
-        ollama_num_ctx=args.ollama_num_ctx,
-    )
     with ItemIndex.build(embedding, index_settings, data_dir=args.data_dir) as index:
-        predictor = ParameterPredictor(index, llm, args.search_method, args.n_similar, args.n_same_model)
+        predictor = make_predictor(args, index)
         calibrated = index.bank.calibrated
         keep = pd.Series(True, index=calibrated.index)
         if args.grade:
@@ -878,7 +912,7 @@ def main(argv: list[str] | None = None) -> None:
             )
         elif args.max_requests != 0:
             report = loo.request(args.max_requests, args.workers)
-            print(f"Requested {report.requested} predictions in {report.seconds:.0f} s for ${report.cost_usd:.2f}")
+            print(f"Requested {report.requested} predictions in {report.seconds:.0f} s for ${report.cost_usd:.4f}")
         if args.batch or args.max_requests != 0:
             for key, error in report.unusable.items():
                 print(f"  unusable output, left for a rerun: {key}: {error}")
@@ -887,7 +921,7 @@ def main(argv: list[str] | None = None) -> None:
             if report.in_flight:
                 print(f"{report.in_flight} predictions are in batches still running; rerun with --batch to collect them")
         results = loo.results()
-        name = run_name(predictor)
+        name = predictor.run_name()
     if results.predictions.empty:
         raise SystemExit(
             "No item has a saved prediction for these settings; pass --max-requests to request some, or rerun with "

@@ -1,0 +1,848 @@
+{
+  "item_id": "MA13006",
+  "assessment": "TIMSS Advanced 2008",
+  "grade": 12,
+  "subject": "Advanced Mathematics",
+  "content_domain": "Calculus",
+  "main_topic": "Differentiation",
+  "cognitive_domain": "Knowing",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13006"
+  ],
+  "similar_items": [
+    {
+      "rank": 1,
+      "found_by": "most similar",
+      "item_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23133",
+      "item_id": "MA23133",
+      "assessment": "TIMSS Advanced 2008",
+      "cosine_similarity": 0.8203,
+      "pct_correct_intl_avg": null,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.91422,
+      "location": 0.99764,
+      "guessing": 0.07897
+    },
+    {
+      "rank": 2,
+      "found_by": "most similar",
+      "item_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K4",
+      "item_id": "K4",
+      "assessment": "TIMSS Advanced 1995",
+      "cosine_similarity": 0.8639,
+      "pct_correct_intl_avg": 29,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.01084,
+      "location": 1.19261,
+      "guessing": 0.1026
+    },
+    {
+      "rank": 3,
+      "found_by": "most similar",
+      "item_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23039",
+      "item_id": "MA23039",
+      "assessment": "TIMSS Advanced 2008",
+      "cosine_similarity": 0.864,
+      "pct_correct_intl_avg": null,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.67574,
+      "location": -0.5572,
+      "guessing": 0.0202
+    },
+    {
+      "rank": 4,
+      "found_by": "most similar",
+      "item_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13007",
+      "item_id": "MA13007",
+      "assessment": "TIMSS Advanced 2008",
+      "cosine_similarity": 0.7958,
+      "pct_correct_intl_avg": null,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.82629,
+      "location": 0.21579,
+      "guessing": 0.17859
+    },
+    {
+      "rank": 5,
+      "found_by": "most similar",
+      "item_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13024",
+      "item_id": "MA13024",
+      "assessment": "TIMSS Advanced 2008",
+      "cosine_similarity": 0.8374,
+      "pct_correct_intl_avg": null,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.35879,
+      "location": 0.4547,
+      "guessing": 0.25269
+    },
+    {
+      "rank": 6,
+      "found_by": "most similar",
+      "item_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13004",
+      "item_id": "MA13004",
+      "assessment": "TIMSS Advanced 2008",
+      "cosine_similarity": 0.807,
+      "pct_correct_intl_avg": null,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.16252,
+      "location": 0.24715,
+      "guessing": 0.26963
+    },
+    {
+      "rank": 7,
+      "found_by": "most similar",
+      "item_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23159",
+      "item_id": "MA23159",
+      "assessment": "TIMSS Advanced 2008",
+      "cosine_similarity": 0.8484,
+      "pct_correct_intl_avg": null,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.71339,
+      "location": -0.38964
+    },
+    {
+      "rank": 8,
+      "found_by": "most similar",
+      "item_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23041",
+      "item_id": "MA23041",
+      "assessment": "TIMSS Advanced 2008",
+      "cosine_similarity": 0.8332,
+      "pct_correct_intl_avg": null,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.96427,
+      "location": 0.88641,
+      "guessing": 0.19607
+    },
+    {
+      "rank": 9,
+      "found_by": "most similar",
+      "item_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23042",
+      "item_id": "MA23042",
+      "assessment": "TIMSS Advanced 2008",
+      "cosine_similarity": 0.8266,
+      "pct_correct_intl_avg": null,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.20893,
+      "location": 0.52639,
+      "guessing": 0.34745
+    },
+    {
+      "rank": 10,
+      "found_by": "most similar",
+      "item_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L12",
+      "item_id": "L12",
+      "assessment": "TIMSS Advanced 1995",
+      "cosine_similarity": 0.7551,
+      "pct_correct_intl_avg": 66,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.51994,
+      "location": -0.10657,
+      "guessing": 0.23664
+    }
+  ],
+  "context": "item+references",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS Advanced 2008",
+      "grade": 12,
+      "subject": "Advanced Mathematics",
+      "content_domain": "Calculus",
+      "main_topic": "Differentiation",
+      "cognitive_domain": "Knowing",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "The derivative with respect to x of 4/sqrt(3x - 4) is",
+      "options": [
+        {
+          "label": "A",
+          "text": "12sqrt(3x - 4)"
+        },
+        {
+          "label": "B",
+          "text": "4/sqrt(3)"
+        },
+        {
+          "label": "C",
+          "text": "-2/(3x - 4)^(3/2)"
+        },
+        {
+          "label": "D",
+          "text": "-6/(3x - 4)^(3/2)"
+        },
+        {
+          "label": "E",
+          "text": "6sqrt(3x - 4)"
+        }
+      ],
+      "correct_option": "D",
+      "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data."
+    },
+    "reference_items": [
+      {
+        "rank": 1,
+        "cosine_similarity": 0.82,
+        "assessment": "TIMSS Advanced 2008",
+        "grade": 12,
+        "subject": "Advanced Mathematics",
+        "content_domain": "Algebra",
+        "main_topic": "Signs and Values of Functions",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "The function f is given by f(x) = x^2 + 4. Another function g is given by g(u) = sqrt(2u - 1). Determine the minimum value of g(f(x)).",
+        "options": [
+          {
+            "label": "A",
+            "text": "0"
+          },
+          {
+            "label": "B",
+            "text": "sqrt(3)"
+          },
+          {
+            "label": "C",
+            "text": "sqrt(7/2)"
+          },
+          {
+            "label": "D",
+            "text": "sqrt(7)"
+          }
+        ],
+        "correct_option": "D",
+        "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.91422,
+          "location": 0.99764,
+          "guessing": 0.07897
+        }
+      },
+      {
+        "rank": 2,
+        "cosine_similarity": 0.864,
+        "assessment": "TIMSS Advanced 1995",
+        "grade": 12,
+        "subject": "Advanced Mathematics",
+        "content_domain": "Calculus",
+        "cognitive_domain": "Routine Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "The value of lim_(h->0) (sqrt(2 + h) - sqrt(2))/h is",
+        "options": [
+          {
+            "label": "A",
+            "text": "0"
+          },
+          {
+            "label": "B",
+            "text": "1/(2 sqrt(2))"
+          },
+          {
+            "label": "C",
+            "text": "1/2"
+          },
+          {
+            "label": "D",
+            "text": "1/sqrt(2)"
+          },
+          {
+            "label": "E",
+            "text": "∞"
+          }
+        ],
+        "correct_option": "B",
+        "pct_correct_intl_avg": 29,
+        "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.01084,
+          "location": 1.19261,
+          "guessing": 0.1026
+        }
+      },
+      {
+        "rank": 3,
+        "cosine_similarity": 0.864,
+        "assessment": "TIMSS Advanced 2008",
+        "grade": 12,
+        "subject": "Advanced Mathematics",
+        "content_domain": "Calculus",
+        "main_topic": "Differentiation",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "f(x) = e^(cos x)\n\nWhat is f'(x)?",
+        "options": [
+          {
+            "label": "A",
+            "text": "e^(cos x)"
+          },
+          {
+            "label": "B",
+            "text": "e^(-sin x)"
+          },
+          {
+            "label": "C",
+            "text": "e^(cos x) · sin x"
+          },
+          {
+            "label": "D",
+            "text": "-e^(cos x) · sin x"
+          }
+        ],
+        "correct_option": "D",
+        "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.67574,
+          "location": -0.5572,
+          "guessing": 0.0202
+        }
+      },
+      {
+        "rank": 4,
+        "cosine_similarity": 0.796,
+        "assessment": "TIMSS Advanced 2008",
+        "grade": 12,
+        "subject": "Advanced Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Straight Lines in the Cartesian Plane",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "One side of an equilateral triangle lies along the x-axis. The sum of the slopes of the three sides is",
+        "options": [
+          {
+            "label": "A",
+            "text": "0"
+          },
+          {
+            "label": "B",
+            "text": "-1"
+          },
+          {
+            "label": "C",
+            "text": "1"
+          },
+          {
+            "label": "D",
+            "text": "2sqrt(3)"
+          },
+          {
+            "label": "E",
+            "text": "1 + 2sqrt(3)"
+          }
+        ],
+        "correct_option": "A",
+        "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.82629,
+          "location": 0.21579,
+          "guessing": 0.17859
+        }
+      },
+      {
+        "rank": 5,
+        "cosine_similarity": 0.837,
+        "assessment": "TIMSS Advanced 2008",
+        "grade": 12,
+        "subject": "Advanced Mathematics",
+        "content_domain": "Calculus",
+        "main_topic": "Integration",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "integral from 1 to 2 of (x - 1/x^2) dx is equal to",
+        "options": [
+          {
+            "label": "A",
+            "text": "-3 1/8"
+          },
+          {
+            "label": "B",
+            "text": "1"
+          },
+          {
+            "label": "C",
+            "text": "2 5/8"
+          },
+          {
+            "label": "D",
+            "text": "4"
+          },
+          {
+            "label": "E",
+            "text": "4 1/2"
+          }
+        ],
+        "correct_option": "B",
+        "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.35879,
+          "location": 0.4547,
+          "guessing": 0.25269
+        }
+      },
+      {
+        "rank": 6,
+        "cosine_similarity": 0.807,
+        "assessment": "TIMSS Advanced 2008",
+        "grade": 12,
+        "subject": "Advanced Mathematics",
+        "content_domain": "Calculus",
+        "main_topic": "Limits and Continuity",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "lim_(x->+∞) ((2x + 1)(x + 1))/(3x^2 − 2) is equal to",
+        "options": [
+          {
+            "label": "A",
+            "text": "−1/2"
+          },
+          {
+            "label": "B",
+            "text": "2/3"
+          },
+          {
+            "label": "C",
+            "text": "1"
+          },
+          {
+            "label": "D",
+            "text": "6"
+          },
+          {
+            "label": "E",
+            "text": "∞"
+          }
+        ],
+        "correct_option": "B",
+        "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.16252,
+          "location": 0.24715,
+          "guessing": 0.26963
+        }
+      },
+      {
+        "rank": 7,
+        "cosine_similarity": 0.848,
+        "assessment": "TIMSS Advanced 2008",
+        "grade": 12,
+        "subject": "Advanced Mathematics",
+        "content_domain": "Calculus",
+        "main_topic": "Differentiation",
+        "cognitive_domain": "Knowing",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Find f'(x), when f(x) = (3x + 2)/(x - 1).\n\nShow your work.",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Using quotient rule (u/v)' = (u'v - uv')/v^2 or, product rule (uv)' = u'v + uv' , obtains\nf'(x) = -5/(x - 1)^2",
+              "Correct expression using calculator"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Calculator used—answer incorrect or explanation inadequate",
+              "Correct answer but no method shown",
+              "Using quotient rule but not completing with correct answer",
+              "Using product rule but not completing with correct answer",
+              "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          },
+          {
+            "category": "Nonresponse",
+            "descriptors": [
+              "Blank"
+            ]
+          }
+        ],
+        "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.71339,
+          "location": -0.38964
+        }
+      },
+      {
+        "rank": 8,
+        "cosine_similarity": 0.833,
+        "assessment": "TIMSS Advanced 2008",
+        "grade": 12,
+        "subject": "Advanced Mathematics",
+        "content_domain": "Calculus",
+        "main_topic": "Integration",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "What is integral e^(1+4x) dx?",
+        "options": [
+          {
+            "label": "A",
+            "text": "1/4 e^(1+4x) + C"
+          },
+          {
+            "label": "B",
+            "text": "e^(1+4x) + C"
+          },
+          {
+            "label": "C",
+            "text": "4e^(1+4x) + C"
+          },
+          {
+            "label": "D",
+            "text": "e^(x+2x^2) + C"
+          }
+        ],
+        "correct_option": "A",
+        "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.96427,
+          "location": 0.88641,
+          "guessing": 0.19607
+        }
+      },
+      {
+        "rank": 9,
+        "cosine_similarity": 0.827,
+        "assessment": "TIMSS Advanced 2008",
+        "grade": 12,
+        "subject": "Advanced Mathematics",
+        "content_domain": "Calculus",
+        "main_topic": "Integration",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "What is integral (x^2 + 2)/x dx? (x > 0)",
+        "options": [
+          {
+            "label": "A",
+            "text": "1/2 x^2 - 2/x^2 + C"
+          },
+          {
+            "label": "B",
+            "text": "1/2 x^2 + 2 ln x + C"
+          },
+          {
+            "label": "C",
+            "text": "1/2 x^2 + ln 2x + C"
+          },
+          {
+            "label": "D",
+            "text": "4/3 x^3 + 4x^3 + C"
+          }
+        ],
+        "correct_option": "B",
+        "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.20893,
+          "location": 0.52639,
+          "guessing": 0.34745
+        }
+      },
+      {
+        "rank": 10,
+        "cosine_similarity": 0.755,
+        "assessment": "TIMSS Advanced 1995",
+        "grade": 12,
+        "subject": "Advanced Mathematics",
+        "content_domain": "Geometry",
+        "cognitive_domain": "Solving Problems",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Each side of the regular hexagon ABCDEF is 10 cm long. What is the length of the diagonal AC?\n\n[Image: Regular hexagon ABCDEF with diagonal AC]",
+        "options": [
+          {
+            "label": "A",
+            "text": "10 sqrt(3) cm"
+          },
+          {
+            "label": "B",
+            "text": "20 cm"
+          },
+          {
+            "label": "C",
+            "text": "5 sqrt(3) cm"
+          },
+          {
+            "label": "D",
+            "text": "10 cm"
+          },
+          {
+            "label": "E",
+            "text": "20 sqrt(3) cm"
+          }
+        ],
+        "correct_option": "A",
+        "figure_description": "A regular hexagon ABCDEF is shown with vertices labeled clockwise from left: A (leftmost), B (top-left), C (top-right), D (rightmost), E (bottom-right), and F (bottom-left). Sides BC and FE are horizontal. A straight line segment connects vertex A and vertex C, representing diagonal AC.",
+        "pct_correct_intl_avg": 66,
+        "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.51994,
+          "location": -0.10657,
+          "guessing": 0.23664
+        }
+      }
+    ]
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 2.75,
+      "confidence": 0.65,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.06,
+        "2": 0.31,
+        "3": 0.45,
+        "4": 0.1,
+        "5": 0.03,
+        "6": 0.01,
+        "7": 0.01,
+        "8": 0.01
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 4.83,
+      "confidence": 0.09,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.0,
+        "1": 0.02,
+        "2": 0.18,
+        "3": 0.14,
+        "4": 0.08,
+        "5": 0.11,
+        "6": 0.19,
+        "7": 0.24,
+        "8": 0.03,
+        "9": 0.01
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 2.37,
+      "confidence": 0.51,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.05,
+        "1": 0.22,
+        "2": 0.08,
+        "3": 0.6,
+        "4": 0.04,
+        "5": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 4953,
+  "output_tokens": 45,
+  "cost_usd": 0.000208026,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791918374-zexOHiwQZBPOF7rAJBtf",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 2.75,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.06,
+          "2": 0.31,
+          "3": 0.45,
+          "4": 0.1,
+          "5": 0.03,
+          "6": 0.01,
+          "7": 0.01,
+          "8": 0.01
+        },
+        "confidence": 0.65
+      },
+      "location": {
+        "type": "score",
+        "score": 4.83,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0,
+          "1": 0.02,
+          "2": 0.18,
+          "3": 0.14,
+          "4": 0.08,
+          "5": 0.11,
+          "6": 0.19,
+          "7": 0.24,
+          "8": 0.03,
+          "9": 0.01
+        },
+        "confidence": 0.09
+      },
+      "guessing": {
+        "type": "score",
+        "score": 2.37,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.22,
+          "2": 0.08,
+          "3": 0.6,
+          "4": 0.04,
+          "5": 0.01
+        },
+        "confidence": 0.51
+      }
+    },
+    "usage": {
+      "input_tokens": 4953,
+      "output_tokens": 45,
+      "cost": 0.000208026
+    },
+    "id": "gen-dec-1791918374-zexOHiwQZBPOF7rAJBtf",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T19:06:14+00:00",
+  "seconds": null
+}

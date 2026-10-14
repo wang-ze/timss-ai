@@ -1,0 +1,301 @@
+{
+  "item_id": "K15",
+  "assessment": "TIMSS Advanced 1995",
+  "grade": 12,
+  "subject": "Advanced Mathematics",
+  "content_domain": "Numbers, Equations and Functions",
+  "main_topic": null,
+  "cognitive_domain": "Routine Procedures",
+  "item_type": "constructed_response",
+  "max_points": 2,
+  "scaled_points": 2,
+  "irt_model": "GPCM",
+  "target_calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K15"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS Advanced 1995",
+      "grade": 12,
+      "subject": "Advanced Mathematics",
+      "content_domain": "Numbers, Equations and Functions",
+      "cognitive_domain": "Routine Procedures",
+      "item_type": "constructed_response",
+      "max_points": 2,
+      "scaled_points": 2,
+      "stem": "Determine all complex numbers z that satisfy the equation\n\nz + 2 z̄ = 3 + i\n\nwhere z̄ denotes the conjugate of z .",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "z = 1 - i. No work shown",
+            "z = 1 - i. Method: Let z = a + bi.\nThe given equation is then equivalent to 3a - ib = 3 + i OR 3(a-1) - i (b + 1) = 0.\nThis equation correctly solved, finding a = 1, b = -1.",
+            "z = 1 - i, obtained by any other correct method."
+          ]
+        },
+        {
+          "category": "Partial Response",
+          "descriptors": [
+            "Equation for a,b is derived correctly, but either left unsolved or solution contains numerical or single algebraic error.",
+            "Due to numerical error an incorrect equation for a,b has been derived and solved, either correctly or incorrectly.",
+            "Other partially correct solutions with correct method but contains a numerical or single algebraic error."
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "Incorrect answer. No work shown.",
+            "Attempts using b - ai as the conjugate of z, which leads to\nz = -3 - i.",
+            "Attempts using -z as the conjugate of z which leads to\nz = -1/3 + 5/3i.",
+            "Attempts using 1/z as the conjugate of z.",
+            "Other incorrect responses."
+          ]
+        },
+        {
+          "category": "Nonresponse",
+          "descriptors": [
+            "Crossed-out, illegible, or impossible to interpret",
+            "BLANK"
+          ]
+        }
+      ],
+      "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 2-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 2-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "step1": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 2-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's step 1 parameter d1? In the GPCM, b - d1 is the ability at which earning the first point becomes more likely than earning no point, so a higher d1 means that this point is earned at a lower ability; the steps sum to 0. Choose the value closest to it.",
+      "criteria": [
+        "-3",
+        "-2",
+        "-1.5",
+        "-1",
+        "-0.5",
+        "0",
+        "1",
+        "2"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 4.26,
+      "confidence": 0.23,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.04,
+        "2": 0.09,
+        "3": 0.21,
+        "4": 0.19,
+        "5": 0.2,
+        "6": 0.14,
+        "7": 0.07,
+        "8": 0.04
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 4.32,
+      "confidence": 0.27,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.06,
+        "2": 0.11,
+        "3": 0.21000000000000002,
+        "4": 0.14,
+        "5": 0.19,
+        "6": 0.14,
+        "7": 0.09,
+        "8": 0.04,
+        "9": 0.01
+      }
+    },
+    "step1": {
+      "type": "score",
+      "score": 3.91,
+      "confidence": 0.24,
+      "legend": {
+        "0": "-3",
+        "1": "-2",
+        "2": "-1.5",
+        "3": "-1",
+        "4": "-0.5",
+        "5": "0",
+        "6": "1",
+        "7": "2"
+      },
+      "probabilities": {
+        "0": 0.03,
+        "1": 0.05,
+        "2": 0.12,
+        "3": 0.22999999999999998,
+        "4": 0.18,
+        "5": 0.2,
+        "6": 0.13,
+        "7": 0.06
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1403,
+  "output_tokens": 45,
+  "cost_usd": 5.8926e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791989184-Gbx7Ymqh79R8ffESKWoN",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 4.26,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.04,
+          "2": 0.09,
+          "3": 0.21,
+          "4": 0.19,
+          "5": 0.2,
+          "6": 0.14,
+          "7": 0.07,
+          "8": 0.04
+        },
+        "confidence": 0.23
+      },
+      "location": {
+        "type": "score",
+        "score": 4.32,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.06,
+          "2": 0.11,
+          "3": 0.21000000000000002,
+          "4": 0.14,
+          "5": 0.19,
+          "6": 0.14,
+          "7": 0.09,
+          "8": 0.04,
+          "9": 0.01
+        },
+        "confidence": 0.27
+      },
+      "step1": {
+        "type": "score",
+        "score": 3.91,
+        "legend": {
+          "0": "-3",
+          "1": "-2",
+          "2": "-1.5",
+          "3": "-1",
+          "4": "-0.5",
+          "5": "0",
+          "6": "1",
+          "7": "2"
+        },
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.05,
+          "2": 0.12,
+          "3": 0.22999999999999998,
+          "4": 0.18,
+          "5": 0.2,
+          "6": 0.13,
+          "7": 0.06
+        },
+        "confidence": 0.24
+      }
+    },
+    "usage": {
+      "input_tokens": 1403,
+      "output_tokens": 45,
+      "cost": 5.8926e-05
+    },
+    "id": "gen-dec-1791989184-Gbx7Ymqh79R8ffESKWoN",
+    "provider": "TypeSafe"
+  },
+  "seconds": 0.308,
+  "requested_at": "2026-10-14T14:46:25+00:00"
+}

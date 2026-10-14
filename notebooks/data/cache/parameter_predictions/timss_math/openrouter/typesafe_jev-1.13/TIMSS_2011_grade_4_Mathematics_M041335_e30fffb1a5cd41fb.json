@@ -1,0 +1,277 @@
+{
+  "item_id": "M041335",
+  "assessment": "TIMSS 2011",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Data Display",
+  "main_topic": "Reading and Interpreting",
+  "cognitive_domain": "Knowing",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M041335"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2011",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Data Display",
+      "main_topic": "Reading and Interpreting",
+      "cognitive_domain": "Knowing",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "Ahmed made a survey of the favorite color of the students in 4 classes.\n\n[Image: Four bar graph figures labeled Class 1, Class 2, Class 3, Class 4 with 3 columns labeled Red, Green, and Blue on x-axis. Y-axis with values of 0 to 14 for Class 1 and Class 4 and values of 0 to 15 for Class 2 and Class 3.\n• Class 1: Red value of 12, Green value of 10, Blue value of 8.\n• Class 2: Red value of 10, Green value of 15, Blue value of 5.\n• Class 3: Red value of 5, Green value of 10, Blue value of 15.\n• Class 4: Red value of 7, Green value of 10, Blue value of 13.]\n\nIn which class do the fewest students choose blue?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Class 1"
+        },
+        {
+          "label": "B",
+          "text": "Class 2"
+        },
+        {
+          "label": "C",
+          "text": "Class 3"
+        },
+        {
+          "label": "D",
+          "text": "Class 4"
+        }
+      ],
+      "correct_option": "B",
+      "figure_description": "Four bar graphs arranged in a 2-by-2 grid, each showing student choices for favorite colors (Red, Green, Blue):\n- Class 1 (top-left): The vertical axis ranges from 0 to 14 in increments of 2, with grid lines at 0, 2, 4, 6, 8, 10, 12, and 14. The horizontal axis has three bars: Red is shaded gray with a height of 12; Green is shaded black with a height of 10; Blue is unshaded (white) with a height of 8.\n- Class 2 (top-right): The vertical axis ranges from 0 to 15 in increments of 5, with grid lines at 0, 5, 10, and 15. The horizontal axis has three bars: Red is gray with a height of 10; Green is black with a height of 15; Blue is white with a height of 5.\n- Class 3 (bottom-left): The vertical axis ranges from 0 to 15 in increments of 5, with grid lines at 0, 5, 10, and 15. The horizontal axis has three bars: Red is gray with a height of 5; Green is black with a height of 10; Blue is white with a height of 15.\n- Class 4 (bottom-right): The vertical axis ranges from 0 to 14 in increments of 2, with grid lines at 0, 2, 4, 6, 8, 10, 12, and 14. The horizontal axis has three bars: Red is gray with a height of 7; Green is black with a height of 10; Blue is white with a height of 13.",
+      "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.99,
+      "confidence": 0.2,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.05,
+        "1": 0.06,
+        "2": 0.12,
+        "3": 0.21,
+        "4": 0.16,
+        "5": 0.16,
+        "6": 0.11,
+        "7": 0.07,
+        "8": 0.06
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 0.91,
+      "confidence": 0.67,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.46,
+        "1": 0.33,
+        "2": 0.15,
+        "3": 0.05,
+        "4": 0.01,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 3.89,
+      "confidence": 0.94,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.0,
+        "2": 0.01,
+        "3": 0.03,
+        "4": 0.95,
+        "5": 0.0
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1660,
+  "output_tokens": 45,
+  "cost_usd": 6.972e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914769-Q9qt23rxp4GrGyxWqriA",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.99,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.06,
+          "2": 0.12,
+          "3": 0.21,
+          "4": 0.16,
+          "5": 0.16,
+          "6": 0.11,
+          "7": 0.07,
+          "8": 0.06
+        },
+        "confidence": 0.2
+      },
+      "location": {
+        "type": "score",
+        "score": 0.91,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.46,
+          "1": 0.33,
+          "2": 0.15,
+          "3": 0.05,
+          "4": 0.01,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0
+        },
+        "confidence": 0.67
+      },
+      "guessing": {
+        "type": "score",
+        "score": 3.89,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.03,
+          "4": 0.95,
+          "5": 0
+        },
+        "confidence": 0.94
+      }
+    },
+    "usage": {
+      "input_tokens": 1660,
+      "output_tokens": 45,
+      "cost": 6.972e-05
+    },
+    "id": "gen-dec-1791914769-Q9qt23rxp4GrGyxWqriA",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:09+00:00",
+  "seconds": null
+}

@@ -1,0 +1,225 @@
+{
+  "item_id": "M031345B",
+  "assessment": "TIMSS 2003",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Number",
+  "main_topic": "Whole Numbers",
+  "cognitive_domain": "Solving Routine Problems",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 2003/grade 4/Mathematics/M031344A",
+    "TIMSS 2003/grade 4/Mathematics/M031344B",
+    "TIMSS 2003/grade 4/Mathematics/M031344C",
+    "TIMSS 2003/grade 4/Mathematics/M031345A",
+    "TIMSS 2003/grade 4/Mathematics/M031345B",
+    "TIMSS 2003/grade 4/Mathematics/M031345C"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2003",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Number",
+      "main_topic": "Whole Numbers",
+      "cognitive_domain": "Solving Routine Problems",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "Using the number tiles, Joan and Herbert played a new game.\nThey placed the numbers to make the largest answer.\n\nB. Use the tiles [2], [3], and [7]. Write the numbers on the tiles in the boxes below to make the largest answer when you subtract.\n\n[Image: Vertical subtraction layout with boxes]",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "73 − 2"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "72 − 3",
+            "Any other arrangement of the digits 2, 3, and 7",
+            "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+          ]
+        }
+      ],
+      "figure_description": "A vertical subtraction problem setup with two rows above a horizontal line. The top row has two square boxes side by side. The bottom row has a minus sign (−) on the left and a single square box aligned under the right box of the top row.",
+      "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.7,
+      "confidence": 0.33,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.07,
+        "2": 0.14,
+        "3": 0.23,
+        "4": 0.19,
+        "5": 0.17,
+        "6": 0.1,
+        "7": 0.04,
+        "8": 0.02
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 2.6,
+      "confidence": 0.42,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.11,
+        "1": 0.22,
+        "2": 0.24000000000000002,
+        "3": 0.15,
+        "4": 0.1,
+        "5": 0.1,
+        "6": 0.05,
+        "7": 0.02,
+        "8": 0.01,
+        "9": 0.0
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1031,
+  "output_tokens": 31,
+  "cost_usd": 4.3302e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914760-g9pl2KFRPpVUS74nwdOQ",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.7,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.07,
+          "2": 0.14,
+          "3": 0.23,
+          "4": 0.19,
+          "5": 0.17,
+          "6": 0.1,
+          "7": 0.04,
+          "8": 0.02
+        },
+        "confidence": 0.33
+      },
+      "location": {
+        "type": "score",
+        "score": 2.6,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.11,
+          "1": 0.22,
+          "2": 0.24000000000000002,
+          "3": 0.15,
+          "4": 0.1,
+          "5": 0.1,
+          "6": 0.05,
+          "7": 0.02,
+          "8": 0.01,
+          "9": 0
+        },
+        "confidence": 0.42
+      }
+    },
+    "usage": {
+      "input_tokens": 1031,
+      "output_tokens": 31,
+      "cost": 4.3302e-05
+    },
+    "id": "gen-dec-1791914760-g9pl2KFRPpVUS74nwdOQ",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:00+00:00",
+  "seconds": null
+}

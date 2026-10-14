@@ -104,7 +104,7 @@ def model_parameters(irt_model: str, points: int) -> list[str]:
 
 
 def predicted_parameters(irt_model: str, points: int) -> list[str]:
-    """The parameters an LLM predicts: all but the last step of a GPCM item, which is minus the sum of the others."""
+    """The parameters a predictor predicts: all but the last step of a GPCM item, which is minus the sum of the others."""
     names = model_parameters(irt_model, points)
     return names[:-1] if irt_model == "GPCM" else names
 

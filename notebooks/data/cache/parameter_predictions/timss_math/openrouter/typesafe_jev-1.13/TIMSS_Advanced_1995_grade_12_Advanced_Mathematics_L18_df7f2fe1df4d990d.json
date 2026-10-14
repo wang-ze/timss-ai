@@ -1,0 +1,239 @@
+{
+  "item_id": "L18",
+  "assessment": "TIMSS Advanced 1995",
+  "grade": 12,
+  "subject": "Advanced Mathematics",
+  "content_domain": "Geometry",
+  "main_topic": null,
+  "cognitive_domain": "Solving Problems",
+  "item_type": "constructed_response",
+  "max_points": 2,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L18"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS Advanced 1995",
+      "grade": 12,
+      "subject": "Advanced Mathematics",
+      "content_domain": "Geometry",
+      "cognitive_domain": "Solving Problems",
+      "item_type": "constructed_response",
+      "max_points": 2,
+      "scaled_points": 1,
+      "stem": "Two circles with centres A and B as shown below have radii of 7 cm and 10 cm respectively. If the length of the common chord PQ is 8 cm, what is the length of AB? Show all your work.\n\n[Image: Two intersecting circles with centers A and B]",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "14.9 or sqrt(84) + sqrt(33) . Method: Pythagorean theorem applied in triangles APS and BPS (S is the midpoint of PQ).",
+            "14.9. Method: Trigonometry functions (ratios) used correctly to determine lengths of sides of triangles OR size of angles of triangle that results in determining the length of AB. Note: Most frequently used trigonometric functions are sine and cosine.",
+            "Other complete and correct solutions."
+          ]
+        },
+        {
+          "category": "Partial Response",
+          "descriptors": [
+            "Method as in 20 but solution contains a (minor) error in method, or numerical or rounding error.",
+            "Method as in 21 but solution contains a (minor) error in method, or numerical or rounding error.",
+            "sqrt(84) + sqrt(33) . No work shown.",
+            "Other partially correct solutions, with minor error."
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "Method: Pythagorean theorem applied to ΔAPB which is not a right triangle.",
+            "Incorrect use of the Pythagorean theorem in a right triangle.",
+            "Figure in booklet has been considered accurate and lengths of segments and/or measures of angles have been determined from the diagram.",
+            "All other incorrect responses."
+          ]
+        },
+        {
+          "category": "Nonresponse",
+          "descriptors": [
+            "Crossed-out, illegible, or impossible to interpret",
+            "BLANK"
+          ]
+        }
+      ],
+      "scoring_notes": "Note: 1. Since the expected precision is not indicated, every result obtained by a correct method and reasonable and correct rounding should be accepted.\n2. If student gives at some stage the correct answer but continues and later makes a numerical (not conceptual) error, ignore this error.",
+      "figure_description": "Two intersecting circles are shown. The smaller circle on the left has its center labeled A, and the larger circle on the right has its center labeled B. A horizontal line segment connects center A and center B. The two circles intersect at two points labeled P (top) and Q (bottom). A vertical line segment connects P and Q, intersecting line segment AB. Line segment AP is drawn and labeled \"7 cm\", and line segment BP is drawn and labeled \"10 cm\".",
+      "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.96,
+      "confidence": 0.28,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.03,
+        "1": 0.06,
+        "2": 0.11,
+        "3": 0.22,
+        "4": 0.2,
+        "5": 0.18,
+        "6": 0.12,
+        "7": 0.05,
+        "8": 0.03
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 5.52,
+      "confidence": 0.43,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.0,
+        "1": 0.01,
+        "2": 0.03,
+        "3": 0.12,
+        "4": 0.11,
+        "5": 0.19,
+        "6": 0.23,
+        "7": 0.17,
+        "8": 0.11,
+        "9": 0.03
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1400,
+  "output_tokens": 31,
+  "cost_usd": 5.88e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914756-UGlDR8A1mihlK4xudAev",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.96,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.06,
+          "2": 0.11,
+          "3": 0.22,
+          "4": 0.2,
+          "5": 0.18,
+          "6": 0.12,
+          "7": 0.05,
+          "8": 0.03
+        },
+        "confidence": 0.28
+      },
+      "location": {
+        "type": "score",
+        "score": 5.52,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.03,
+          "3": 0.12,
+          "4": 0.11,
+          "5": 0.19,
+          "6": 0.23,
+          "7": 0.17,
+          "8": 0.11,
+          "9": 0.03
+        },
+        "confidence": 0.43
+      }
+    },
+    "usage": {
+      "input_tokens": 1400,
+      "output_tokens": 31,
+      "cost": 5.88e-05
+    },
+    "id": "gen-dec-1791914756-UGlDR8A1mihlK4xudAev",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:05:56+00:00",
+  "seconds": null
+}

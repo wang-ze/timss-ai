@@ -1,0 +1,840 @@
+{
+  "item_id": "M012002",
+  "assessment": "TIMSS 2003",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Algebra",
+  "main_topic": "Equations and Formulas",
+  "cognitive_domain": "Using Concepts",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 2003/grade 8/Mathematics/M012002"
+  ],
+  "similar_items": [
+    {
+      "rank": 1,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M032424",
+      "item_id": "M032424",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8816,
+      "pct_correct_intl_avg": 47,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.17793,
+      "location": 0.33901,
+      "guessing": 0.1516
+    },
+    {
+      "rank": 2,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1999/grade 8/Mathematics/R08",
+      "item_id": "R08",
+      "assessment": "TIMSS 1999",
+      "cosine_similarity": 0.8298,
+      "pct_correct_intl_avg": 52,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.707,
+      "location": 0.737,
+      "guessing": 0.378
+    },
+    {
+      "rank": 3,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M032397",
+      "item_id": "M032397",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.7582,
+      "pct_correct_intl_avg": 43,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.19463,
+      "location": 0.71061,
+      "guessing": 0.22798
+    },
+    {
+      "rank": 4,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M032489",
+      "item_id": "M032489",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.7702,
+      "pct_correct_intl_avg": 68,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.858,
+      "location": -0.697,
+      "guessing": 0.262
+    },
+    {
+      "rank": 5,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1999/grade 8/Mathematics/L09",
+      "item_id": "L09",
+      "assessment": "TIMSS 1999",
+      "cosine_similarity": 0.828,
+      "pct_correct_intl_avg": 75,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.726,
+      "location": -1.079,
+      "guessing": 0.097
+    },
+    {
+      "rank": 6,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M042279",
+      "item_id": "M042279",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8133,
+      "pct_correct_intl_avg": 48.7,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.06456,
+      "location": -0.01696,
+      "guessing": 0.11778
+    },
+    {
+      "rank": 7,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M022049",
+      "item_id": "M022049",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8133,
+      "pct_correct_intl_avg": 56.5,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.61854,
+      "location": 0.1739,
+      "guessing": 0.25215
+    },
+    {
+      "rank": 8,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M022105",
+      "item_id": "M022105",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.7625,
+      "pct_correct_intl_avg": 37.8,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.62986,
+      "location": 0.75358,
+      "guessing": 0.11689
+    },
+    {
+      "rank": 9,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M012038",
+      "item_id": "M012038",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8205,
+      "pct_correct_intl_avg": 67,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.983,
+      "location": -0.299,
+      "guessing": 0.355
+    },
+    {
+      "rank": 10,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1999/grade 8/Mathematics/F12",
+      "item_id": "F12",
+      "assessment": "TIMSS 1999",
+      "cosine_similarity": 0.815,
+      "pct_correct_intl_avg": 50,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.817,
+      "location": 0.712,
+      "guessing": 0.243
+    }
+  ],
+  "context": "item+references",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2003",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Algebra",
+      "main_topic": "Equations and Formulas",
+      "cognitive_domain": "Using Concepts",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "The objects on the scale make it balance exactly. On the left pan there is a 1 kg weight (mass) and half a brick. On the right pan there is one brick.\n\n[Image: A balance scale with objects on each pan]\n\nWhat is the weight (mass) of one brick?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.5 kg"
+        },
+        {
+          "label": "B",
+          "text": "1 kg"
+        },
+        {
+          "label": "C",
+          "text": "2 kg"
+        },
+        {
+          "label": "D",
+          "text": "3 kg"
+        }
+      ],
+      "correct_option": "C",
+      "figure_description": "A two-pan balance scale is shown balanced horizontally on a central pivot and base. On the left pan, there is a weight labeled \"1 kg\" shaped like a standard counterweight, and a standing rectangular block representing half a brick. On the right pan, there is a larger rectangular block representing one whole brick, which has the same height as the block on the left pan but twice its width.",
+      "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data."
+    },
+    "reference_items": [
+      {
+        "rank": 1,
+        "cosine_similarity": 0.882,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Algebra",
+        "main_topic": "Equations/Formulas and Functions",
+        "cognitive_domain": "Reasoning",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Jo has three metal blocks. The weight of each block is the same.\nWhen she weighed one block against 8 grams, this is what happened.\n\n[Image: The block is lighter than the weight of 8 grams on the scale.]\n\nWhen she weighed all three blocks against 20 grams, this is what happened.\n\n[Image: The three blocks are heavier than the weight of 20 grams on the scale.]\n\nWhich of the following could be the weight of one metal block?",
+        "options": [
+          {
+            "label": "A",
+            "text": "5 g"
+          },
+          {
+            "label": "B",
+            "text": "6 g"
+          },
+          {
+            "label": "C",
+            "text": "7 g"
+          },
+          {
+            "label": "D",
+            "text": "8 g"
+          }
+        ],
+        "correct_option": "C",
+        "figure_description": "Two balance scale diagrams:\n- Top balance scale: The beam is tilted down to the right. On the higher left pan rests one gray rectangular metal block. On the lower right pan rest four weights: one large weight labeled \"5g\" and three small weights stacked beside it, each labeled \"1g\" (total 8 grams).\n- Bottom balance scale: The beam is tilted down to the left. On the lower left pan rests a stack of three identical gray rectangular metal blocks. On the higher right pan rest two large weights, each labeled \"10g\" (total 20 grams).",
+        "pct_correct_intl_avg": 47,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.17793,
+          "location": 0.33901,
+          "guessing": 0.1516
+        }
+      },
+      {
+        "rank": 2,
+        "cosine_similarity": 0.83,
+        "assessment": "TIMSS 1999",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Fractions and Number Sense",
+        "cognitive_domain": "Using Complex Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "The total weight of a pile of 500 salt crystals is 6.5 g. What is the average weight of a salt crystal?",
+        "options": [
+          {
+            "label": "A",
+            "text": "0.0078 g"
+          },
+          {
+            "label": "B",
+            "text": "0.013 g"
+          },
+          {
+            "label": "C",
+            "text": "0.0325 g"
+          },
+          {
+            "label": "D",
+            "text": "0.078 g"
+          }
+        ],
+        "correct_option": "B",
+        "pct_correct_intl_avg": 52,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.707,
+          "location": 0.737,
+          "guessing": 0.378
+        }
+      },
+      {
+        "rank": 3,
+        "cosine_similarity": 0.758,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Location and Movement",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: Figure 1: A right triangle with the right angle at the bottom left. The tip of the right-most angle has a line drawn through it. Figure 2: The same triangle, but with the right angle on the bottom right and the angle with the line on the bottom left. Figure 3: The same triangle, but with the right angle facing the bottom left, and the angle with the line on the top left.]\n\nWhich of these transformations, taken in order, can be used so that Figure 1 above becomes Figure 2 and then Figure 3?",
+        "options": [
+          {
+            "label": "A",
+            "text": "reflection and then translation"
+          },
+          {
+            "label": "B",
+            "text": "reflection and then 1/4 turn rotation clockwise"
+          },
+          {
+            "label": "C",
+            "text": "1/2 turn rotation and then translation"
+          },
+          {
+            "label": "D",
+            "text": "1/4 turn rotation counterclockwise and then reflection"
+          }
+        ],
+        "correct_option": "B",
+        "figure_description": "Three right-angled triangles labeled Figure 1, Figure 2, and Figure 3 from left to right:\n- Figure 1: A right triangle with the right angle at the bottom-left corner, a horizontal base, and a vertical left side. A vertical line segment connects the hypotenuse to the base near the acute right-most vertex.\n- Figure 2: A right triangle with the right angle at the bottom-right corner, a horizontal base, and a vertical right side. A vertical line segment connects the hypotenuse to the base near the acute left-most vertex.\n- Figure 3: A right triangle with the right angle at the bottom-left corner, a shorter horizontal base, and a longer vertical left side. A horizontal line segment connects the vertical left side to the hypotenuse near the acute top vertex.",
+        "pct_correct_intl_avg": 43,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.19463,
+          "location": 0.71061,
+          "guessing": 0.22798
+        }
+      },
+      {
+        "rank": 4,
+        "cosine_similarity": 0.77,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Locations and Spatial Relationships",
+        "cognitive_domain": "Using Concepts",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: Triangular prism]\n\nWhich of these could be folded to make a shape like the 3-D figure above?",
+        "options": [
+          {
+            "label": "A",
+            "text": "[Image: Net with three rectangles connected in a V-shape by two triangles]"
+          },
+          {
+            "label": "B",
+            "text": "[Image: Net with three stacked rectangles and two triangles on the right]"
+          },
+          {
+            "label": "C",
+            "text": "[Image: Net with three rectangles and three triangles]"
+          },
+          {
+            "label": "D",
+            "text": "[Image: Net with three stacked rectangles, one triangle on the top right and one triangle on the bottom left]"
+          }
+        ],
+        "correct_option": "D",
+        "figure_description": "The stem shows a 3-D triangular prism resting horizontally on one rectangular face, with dashed lines indicating the three hidden edges. The options show four candidate nets:\n- Option A: A central horizontal rectangle with an isosceles triangle attached to each vertical side, and another rectangle attached to the outer edge of each triangle angled upward, forming an open V-shape.\n- Option B: Three congruent rectangles stacked vertically in a column, with two identical triangles attached to the right edges of the top and middle rectangles, both pointing right.\n- Option C: Two congruent rectangles stacked vertically, each having a triangle attached to its left edge pointing left; a third rectangle extends to the right from the top rectangle, ending with a triangle pointing right.\n- Option D: Three congruent rectangles stacked vertically in a column, with one triangle attached to the right edge of the top rectangle pointing right, and another triangle attached to the left edge of the bottom rectangle pointing left.",
+        "pct_correct_intl_avg": 68,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.858,
+          "location": -0.697,
+          "guessing": 0.262
+        }
+      },
+      {
+        "rank": 5,
+        "cosine_similarity": 0.828,
+        "assessment": "TIMSS 1999",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Fractions and Number Sense",
+        "cognitive_domain": "Using Complex Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: Front of a building with a car parked outside]\n\nThe car is 3.5 m long. About how long is the building?",
+        "options": [
+          {
+            "label": "A",
+            "text": "18 m"
+          },
+          {
+            "label": "B",
+            "text": "14 m"
+          },
+          {
+            "label": "C",
+            "text": "10 m"
+          },
+          {
+            "label": "D",
+            "text": "4 m"
+          }
+        ],
+        "correct_option": "B",
+        "figure_description": "A line drawing showing the front facade of a single-story building. In the center is a double door with an arched window above it. Symmetrically flanking the doors are six identical rectangular windows with multipaned sashes: three windows to the left of the door and three to the right. Parked on the ground along the far left of the building facade is a black car, positioned spanning the space of roughly the first two windows. The length of the entire building is approximately four times the length of the car.",
+        "pct_correct_intl_avg": 75,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.726,
+          "location": -1.079,
+          "guessing": 0.097
+        }
+      },
+      {
+        "rank": 6,
+        "cosine_similarity": 0.813,
+        "assessment": "TIMSS 2007",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Geometric Shapes",
+        "cognitive_domain": "Reasoning",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: A person looking at a solid made of cubes]\n\nThe solid is made of 5 small cubes.\nWhich shape does the person in the diagram see?",
+        "options": [
+          {
+            "label": "A",
+            "text": "[Image: A vertical column of three squares with one square attached to the left of the middle square]"
+          },
+          {
+            "label": "B",
+            "text": "[Image: A vertical column of three squares with one square attached to the right of the middle square]"
+          },
+          {
+            "label": "C",
+            "text": "[Image: A vertical column of three squares with one square attached to the left of the middle square and one square attached to the right of the top square]"
+          },
+          {
+            "label": "D",
+            "text": "[Image: A vertical column of three squares with one square attached to the left of the top square and one square attached to the right of the middle square]"
+          }
+        ],
+        "correct_option": "B",
+        "figure_description": "At the top of the item, a person is standing to the left of a three-dimensional solid made of 5 small identical cubes. The person is shown in side profile facing right toward the solid, with a horizontal dotted line extending from the person's eyes to the top-left cube of the solid. The solid is drawn in isometric projection and consists of:\n- A central vertical column of 3 cubes.\n- One cube attached to the back-right of the top cube of the column, at the same height as the top cube.\n- One cube attached to the front-right of the middle cube of the column, extending forward toward the viewer at the middle height level.\n\nThe response options each show a flat 2D shape composed of connected unit squares:\n- Option A: 4 squares consisting of a vertical column of 3 squares with 1 square attached to the left of the middle square.\n- Option B: 4 squares consisting of a vertical column of 3 squares with 1 square attached to the right of the middle square.\n- Option C: 5 squares consisting of a vertical column of 3 squares with 1 square attached to the left of the middle square and 1 square attached to the right of the top square.\n- Option D: 5 squares consisting of a vertical column of 3 squares with 1 square attached to the left of the top square and 1 square attached to the right of the middle square.",
+        "pct_correct_intl_avg": 48.7,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.06456,
+          "location": -0.01696,
+          "guessing": 0.11778
+        }
+      },
+      {
+        "rank": 7,
+        "cosine_similarity": 0.813,
+        "assessment": "TIMSS 2007",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Location and Movement",
+        "cognitive_domain": "Reasoning",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "This object will be turned to a different position\n\n[Image: 3D object made of cubes]\n\nWhich of these could be the object after being turned?",
+        "options": [
+          {
+            "label": "A",
+            "text": "[Image: 3D object A]"
+          },
+          {
+            "label": "B",
+            "text": "[Image: 3D object B]"
+          },
+          {
+            "label": "C",
+            "text": "[Image: 3D object C]"
+          },
+          {
+            "label": "D",
+            "text": "[Image: 3D object D]"
+          }
+        ],
+        "correct_option": "D",
+        "figure_description": "An isometric drawing of a three-dimensional solid composed of 4 identical unit cubes:\n- In the upper horizontal layer, 3 cubes form an L-shape consisting of a corner cube at the back, one cube extending forward and to the left, and one cube extending forward and to the right.\n- In the lower layer, a fourth cube is situated directly underneath the forward-left cube, creating a vertical column of 2 cubes on the left side of the object. The spaces directly beneath the back corner cube and the forward-right cube are empty.\n\nThe response options show four similar objects made of 4 cubes, drawn in the same isometric perspective:\n- Option A: Three cubes form an L-shape in an upper layer (a corner cube at the back, one cube extending forward-left, and one extending forward-right). A fourth cube is in a lower layer, positioned stepped down in front of the forward-left cube.\n- Option B: A vertical column of 2 cubes is located on the right side (front-right). In the upper layer, extending back and to the left from the top cube of this column is a cube, and extending back and to the right from that cube is a third cube, forming an L-shape of 3 cubes in the upper layer with the 2-cube column at one end.\n- Option C: Three cubes form a shape in an upper layer stepping up from a single cube in a lower layer at the front-left.\n- Option D: A vertical column of 2 cubes is located on the right side (front-right). In the upper layer, two cubes extend to the left.",
+        "pct_correct_intl_avg": 56.5,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.61854,
+          "location": 0.1739,
+          "guessing": 0.25215
+        }
+      },
+      {
+        "rank": 8,
+        "cosine_similarity": 0.763,
+        "assessment": "TIMSS 2007",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Location and Movement",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "A half-turn about point P in the plane is applied to the shaded figure.\n\n[Image: Shaded figure on dashed axes]\n\nWhich of the following shows the results of the half-turn?",
+        "options": [
+          {
+            "label": "A",
+            "text": "[Image: Shaded right triangle above the horizontal line with vertical side on the left]"
+          },
+          {
+            "label": "B",
+            "text": "[Image: Shaded right triangle below the horizontal line with vertical side on the right]"
+          },
+          {
+            "label": "C",
+            "text": "[Image: Shaded right triangle above the horizontal line with vertical side on the right]"
+          },
+          {
+            "label": "D",
+            "text": "[Image: Shaded right triangle below the horizontal line with vertical side on the left]"
+          },
+          {
+            "label": "E",
+            "text": "[Image: Shaded right triangle below the horizontal line with rightmost vertex at point P]"
+          }
+        ],
+        "correct_option": "D",
+        "figure_description": "In the stem diagram, a horizontal dashed line and a vertical dashed line intersect perpendicularly at point P, which is marked with a black dot and labeled P below the horizontal line. A shaded right triangle lies above the horizontal dashed line. Its bottom horizontal base lies along the horizontal dashed line, extending both to the left and to the right of point P, with the segment to the left of P being longer than the segment to the right of P. The right edge of the triangle is vertical, extending upward from the horizontal line. The hypotenuse connects the top-right vertex to the leftmost vertex on the horizontal dashed line. The vertical dashed line passes through the shaded triangle.\n\nOption A shows a shaded right triangle above the horizontal line, with its base on the horizontal line extending to both sides of P (longer to the right of P), its vertical side on the left extending upward, and hypotenuse sloping down to the right.\nOption B shows a shaded right triangle below the horizontal line, with its base on the horizontal line extending to both sides of P (longer to the left of P), its vertical side on the right extending downward, and hypotenuse sloping up to the left.\nOption C shows a shaded right triangle above the horizontal line, with its base on the horizontal line, vertical side on the right extending upward, and hypotenuse sloping down to the left.\nOption D shows a shaded right triangle below the horizontal line, with its base on the horizontal line extending to both sides of P (longer to the right of P), its vertical side on the left extending downward, and hypotenuse sloping up to the right.\nOption E shows a shaded right triangle below the horizontal line, with its base on the horizontal line located entirely to the left of point P, touching point P at its rightmost acute vertex, with its vertical side on the left extending downward.",
+        "pct_correct_intl_avg": 37.8,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.62986,
+          "location": 0.75358,
+          "guessing": 0.11689
+        }
+      },
+      {
+        "rank": 9,
+        "cosine_similarity": 0.821,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Measurement",
+        "main_topic": "Tools, Techniques, and Formulas",
+        "cognitive_domain": "Knowing Facts and Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: A ruler measuring the length of a pipe]\n\nWhat is the length of the pipe being measured?",
+        "options": [
+          {
+            "label": "A",
+            "text": "0.085 m"
+          },
+          {
+            "label": "B",
+            "text": "0.805 m"
+          },
+          {
+            "label": "C",
+            "text": "0.85 m"
+          },
+          {
+            "label": "D",
+            "text": "8.5 m"
+          }
+        ],
+        "correct_option": "C",
+        "figure_description": "A horizontal ruler labeled \"Meters (m)\" at the top has major tick marks from 0 to 1.0 in increments of 0.1, with minor tick marks halfway between each major tick mark (representing increments of 0.05). Below the ruler, a gray cylindrical pipe is positioned horizontally. Dimension lines with arrows indicate the length being measured from the left end of the pipe, which aligns with 0 on the ruler, to the right end of the pipe, which aligns with the tick mark halfway between 0.8 and 0.9.",
+        "pct_correct_intl_avg": 67,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.983,
+          "location": -0.299,
+          "guessing": 0.355
+        }
+      },
+      {
+        "rank": 10,
+        "cosine_similarity": 0.815,
+        "assessment": "TIMSS 1999",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Fractions and Number Sense",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "What fraction of the circle is shaded?\n\n[Image: A circle divided into two sectors, one shaded and one unshaded]",
+        "options": [
+          {
+            "label": "A",
+            "text": "Between 0 and 1/4"
+          },
+          {
+            "label": "B",
+            "text": "Between 1/4 and 1/2"
+          },
+          {
+            "label": "C",
+            "text": "Between 1/2 and 3/4"
+          },
+          {
+            "label": "D",
+            "text": "Between 3/4 and 1"
+          }
+        ],
+        "correct_option": "C",
+        "figure_description": "A circle with a center dot. Two radii divide the circle into two sectors. One radius extends straight up from the center to the 12 o'clock position. The other radius extends to the left, slightly below the horizontal 9 o'clock position. The larger sector, which runs clockwise from the top radius around through the right side and bottom to the lower-left radius, is shaded solid gray. The smaller remaining sector in the upper-left area is white (unshaded).",
+        "pct_correct_intl_avg": 50,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.817,
+          "location": 0.712,
+          "guessing": 0.243
+        }
+      }
+    ]
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.7,
+      "confidence": 0.41,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.03,
+        "2": 0.17,
+        "3": 0.27999999999999997,
+        "4": 0.23,
+        "5": 0.1,
+        "6": 0.1,
+        "7": 0.05,
+        "8": 0.02
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 2.59,
+      "confidence": 0.48,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.07,
+        "1": 0.2,
+        "2": 0.28,
+        "3": 0.19,
+        "4": 0.12,
+        "5": 0.08,
+        "6": 0.03,
+        "7": 0.01,
+        "8": 0.01,
+        "9": 0.01
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 3.38,
+      "confidence": 0.56,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.06,
+        "2": 0.13,
+        "3": 0.11,
+        "4": 0.65,
+        "5": 0.03
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 7227,
+  "output_tokens": 45,
+  "cost_usd": 0.000303534,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791918367-yaVSXALxs8v3Qhv0ZvQY",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.7,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.03,
+          "2": 0.17,
+          "3": 0.27999999999999997,
+          "4": 0.23,
+          "5": 0.1,
+          "6": 0.1,
+          "7": 0.05,
+          "8": 0.02
+        },
+        "confidence": 0.41
+      },
+      "location": {
+        "type": "score",
+        "score": 2.59,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.2,
+          "2": 0.28,
+          "3": 0.19,
+          "4": 0.12,
+          "5": 0.08,
+          "6": 0.03,
+          "7": 0.01,
+          "8": 0.01,
+          "9": 0.01
+        },
+        "confidence": 0.48
+      },
+      "guessing": {
+        "type": "score",
+        "score": 3.38,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.06,
+          "2": 0.13,
+          "3": 0.11,
+          "4": 0.65,
+          "5": 0.03
+        },
+        "confidence": 0.56
+      }
+    },
+    "usage": {
+      "input_tokens": 7227,
+      "output_tokens": 45,
+      "cost": 0.000303534
+    },
+    "id": "gen-dec-1791918367-yaVSXALxs8v3Qhv0ZvQY",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T19:06:07+00:00",
+  "seconds": null
+}

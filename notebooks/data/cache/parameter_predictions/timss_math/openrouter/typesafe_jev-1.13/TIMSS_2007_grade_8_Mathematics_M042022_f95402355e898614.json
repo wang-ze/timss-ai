@@ -1,0 +1,831 @@
+{
+  "item_id": "M042022",
+  "assessment": "TIMSS 2007",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Number",
+  "main_topic": "Whole Numbers",
+  "cognitive_domain": "Knowing",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+  "excluded_item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M042022"
+  ],
+  "similar_items": [
+    {
+      "rank": 1,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M032626",
+      "item_id": "M032626",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.9176,
+      "pct_correct_intl_avg": 49,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.8368,
+      "location": 0.26789,
+      "guessing": 0.15353
+    },
+    {
+      "rank": 2,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M032036",
+      "item_id": "M032036",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.787,
+      "pct_correct_intl_avg": 49,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.081,
+      "location": 0.141,
+      "guessing": 0.19
+    },
+    {
+      "rank": 3,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1999/grade 8/Mathematics/N14",
+      "item_id": "N14",
+      "assessment": "TIMSS 1999",
+      "cosine_similarity": 0.8025,
+      "pct_correct_intl_avg": 61,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.503,
+      "location": 0.123,
+      "guessing": 0.29
+    },
+    {
+      "rank": 4,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M032690",
+      "item_id": "M032690",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8319,
+      "pct_correct_intl_avg": 39,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.814,
+      "location": 0.711,
+      "guessing": 0.163
+    },
+    {
+      "rank": 5,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1999/grade 8/Mathematics/P11",
+      "item_id": "P11",
+      "assessment": "TIMSS 1999",
+      "cosine_similarity": 0.8238,
+      "pct_correct_intl_avg": 57,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.111,
+      "location": 0.112,
+      "guessing": 0.279
+    },
+    {
+      "rank": 6,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M022251",
+      "item_id": "M022251",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.744,
+      "pct_correct_intl_avg": 29,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.826,
+      "location": 1.272,
+      "guessing": 0.158
+    },
+    {
+      "rank": 7,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M042077",
+      "item_id": "M042077",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8135,
+      "pct_correct_intl_avg": 51,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.535,
+      "location": 0.44798,
+      "guessing": 0.26301
+    },
+    {
+      "rank": 8,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M032198",
+      "item_id": "M032198",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8129,
+      "pct_correct_intl_avg": 46.6,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.76976,
+      "location": 0.4608,
+      "guessing": 0.18284
+    },
+    {
+      "rank": 9,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M052214",
+      "item_id": "M052214",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.812,
+      "pct_correct_intl_avg": 41,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.1009,
+      "location": 1.05698,
+      "guessing": 0.25255
+    },
+    {
+      "rank": 10,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M042016",
+      "item_id": "M042016",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8117,
+      "pct_correct_intl_avg": 51,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.88736,
+      "location": 0.5227,
+      "guessing": 0.22006
+    }
+  ],
+  "context": "item+references",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2007",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Number",
+      "main_topic": "Whole Numbers",
+      "cognitive_domain": "Knowing",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "Which of these shows 1080 as the product of prime factors?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1080 = 8 × 27 × 5"
+        },
+        {
+          "label": "B",
+          "text": "1080 = 2 × 4 × 3 × 9 × 5"
+        },
+        {
+          "label": "C",
+          "text": "1080 = 2 × 2 × 2 × 3 × 3 × 3 × 5"
+        },
+        {
+          "label": "D",
+          "text": "1080 = 2^2 × 3^2 × 6 × 5"
+        }
+      ],
+      "correct_option": "C",
+      "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)."
+    },
+    "reference_items": [
+      {
+        "rank": 1,
+        "cosine_similarity": 0.918,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Which of these shows how 36 can be expressed as a product of prime factors?",
+        "options": [
+          {
+            "label": "A",
+            "text": "6 × 6"
+          },
+          {
+            "label": "B",
+            "text": "4 × 9"
+          },
+          {
+            "label": "C",
+            "text": "4 × 3 × 3"
+          },
+          {
+            "label": "D",
+            "text": "2 × 2 × 3 × 3"
+          }
+        ],
+        "correct_option": "D",
+        "pct_correct_intl_avg": 49,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.8368,
+          "location": 0.26789,
+          "guessing": 0.15353
+        }
+      },
+      {
+        "rank": 2,
+        "cosine_similarity": 0.787,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Algebra",
+        "main_topic": "Algebraic Expressions",
+        "cognitive_domain": "Knowing Facts and Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Which of these is equal to 2x − 3y + 7x + 5y?",
+        "options": [
+          {
+            "label": "A",
+            "text": "5x + 2y"
+          },
+          {
+            "label": "B",
+            "text": "5x + 8y"
+          },
+          {
+            "label": "C",
+            "text": "9x + 2y"
+          },
+          {
+            "label": "D",
+            "text": "9x + 8y"
+          }
+        ],
+        "correct_option": "C",
+        "pct_correct_intl_avg": 49,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.081,
+          "location": 0.141,
+          "guessing": 0.19
+        }
+      },
+      {
+        "rank": 3,
+        "cosine_similarity": 0.803,
+        "assessment": "TIMSS 1999",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Fractions and Number Sense",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "In which list of fractions are all of the fractions equivalent?",
+        "options": [
+          {
+            "label": "A",
+            "text": "1/2 , 2/4 , 4/6"
+          },
+          {
+            "label": "B",
+            "text": "2/3 , 4/6 , 8/12"
+          },
+          {
+            "label": "C",
+            "text": "2/5 , 4/10 , 8/50"
+          },
+          {
+            "label": "D",
+            "text": "3/4 , 4/6 , 6/8"
+          }
+        ],
+        "correct_option": "B",
+        "pct_correct_intl_avg": 61,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.503,
+          "location": 0.123,
+          "guessing": 0.29
+        }
+      },
+      {
+        "rank": 4,
+        "cosine_similarity": 0.832,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Knowing Facts and Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Which of these is equal to 370 × 998 + 370 × 2?",
+        "options": [
+          {
+            "label": "A",
+            "text": "370 × 1,000"
+          },
+          {
+            "label": "B",
+            "text": "372 × 998"
+          },
+          {
+            "label": "C",
+            "text": "740 × 998"
+          },
+          {
+            "label": "D",
+            "text": "370 × 998 × 2"
+          }
+        ],
+        "correct_option": "A",
+        "pct_correct_intl_avg": 39,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.814,
+          "location": 0.711,
+          "guessing": 0.163
+        }
+      },
+      {
+        "rank": 5,
+        "cosine_similarity": 0.824,
+        "assessment": "TIMSS 1999",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Algebra",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "For all numbers k,\nk + k + k + k + k can be written as",
+        "options": [
+          {
+            "label": "A",
+            "text": "k + 5"
+          },
+          {
+            "label": "B",
+            "text": "5k"
+          },
+          {
+            "label": "C",
+            "text": "k^5"
+          },
+          {
+            "label": "D",
+            "text": "5(k + 1)"
+          }
+        ],
+        "correct_option": "B",
+        "pct_correct_intl_avg": 57,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.111,
+          "location": 0.112,
+          "guessing": 0.279
+        }
+      },
+      {
+        "rank": 6,
+        "cosine_similarity": 0.744,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Algebra",
+        "main_topic": "Algebraic Expressions",
+        "cognitive_domain": "Using Concepts",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Graham has twice as many books as Bob. Chan has six more books than Bob. If Bob has x books, which of the following represents the total number of books the three boys have?",
+        "options": [
+          {
+            "label": "A",
+            "text": "3x + 6"
+          },
+          {
+            "label": "B",
+            "text": "3x + 8"
+          },
+          {
+            "label": "C",
+            "text": "4x + 6"
+          },
+          {
+            "label": "D",
+            "text": "5x + 6"
+          },
+          {
+            "label": "E",
+            "text": "8x + 2"
+          }
+        ],
+        "correct_option": "C",
+        "pct_correct_intl_avg": 29,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.826,
+          "location": 1.272,
+          "guessing": 0.158
+        }
+      },
+      {
+        "rank": 7,
+        "cosine_similarity": 0.813,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Algebra",
+        "main_topic": "Algebraic Expressions",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Which expression is equivalent to 4(3 + x)?",
+        "options": [
+          {
+            "label": "A",
+            "text": "12 + x"
+          },
+          {
+            "label": "B",
+            "text": "7 + x"
+          },
+          {
+            "label": "C",
+            "text": "12 + 4x"
+          },
+          {
+            "label": "D",
+            "text": "12x"
+          }
+        ],
+        "correct_option": "C",
+        "pct_correct_intl_avg": 51,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.535,
+          "location": 0.44798,
+          "guessing": 0.26301
+        }
+      },
+      {
+        "rank": 8,
+        "cosine_similarity": 0.813,
+        "assessment": "TIMSS 2007",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Algebra",
+        "main_topic": "Algebraic Expressions",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "2a^2 × 3a =",
+        "options": [
+          {
+            "label": "A",
+            "text": "5a^2"
+          },
+          {
+            "label": "B",
+            "text": "5a^3"
+          },
+          {
+            "label": "C",
+            "text": "6a^2"
+          },
+          {
+            "label": "D",
+            "text": "6a^3"
+          }
+        ],
+        "correct_option": "D",
+        "pct_correct_intl_avg": 46.6,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.76976,
+          "location": 0.4608,
+          "guessing": 0.18284
+        }
+      },
+      {
+        "rank": 9,
+        "cosine_similarity": 0.812,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Fractions and Decimals",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Which of these number sentences is true?",
+        "options": [
+          {
+            "label": "A",
+            "text": "3/10 of 50 = 50% of 3"
+          },
+          {
+            "label": "B",
+            "text": "3% of 50 = 6% of 100"
+          },
+          {
+            "label": "C",
+            "text": "50 ÷ 30 = 30 ÷ 50"
+          },
+          {
+            "label": "D",
+            "text": "3/10 × 50 = 5/10 × 30"
+          }
+        ],
+        "correct_option": "D",
+        "pct_correct_intl_avg": 41,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.1009,
+          "location": 1.05698,
+          "guessing": 0.25255
+        }
+      },
+      {
+        "rank": 10,
+        "cosine_similarity": 0.812,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Look at this table:\n\n| 4^1 | 4^2 | 4^3 | 4^4 | 4^5 | 4^6 |\n| --- | --- | --- | --- | --- | --- |\n| 4 | 16 | 64 | 256 | 1,024 | 4,096 |\n\nUse the table to express the value of 256 × 4,096 as a power of 4.",
+        "options": [
+          {
+            "label": "A",
+            "text": "4^10"
+          },
+          {
+            "label": "B",
+            "text": "4^16"
+          },
+          {
+            "label": "C",
+            "text": "4^20"
+          },
+          {
+            "label": "D",
+            "text": "4^24"
+          }
+        ],
+        "correct_option": "A",
+        "pct_correct_intl_avg": 51,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.88736,
+          "location": 0.5227,
+          "guessing": 0.22006
+        }
+      }
+    ]
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 2.43,
+      "confidence": 0.74,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.04,
+        "2": 0.73,
+        "3": 0.09,
+        "4": 0.04,
+        "5": 0.04,
+        "6": 0.03,
+        "7": 0.01,
+        "8": 0.01
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 4.12,
+      "confidence": 0.59,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.03,
+        "2": 0.09,
+        "3": 0.16,
+        "4": 0.31,
+        "5": 0.28,
+        "6": 0.09,
+        "7": 0.02,
+        "8": 0.01,
+        "9": 0.0
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 2.97,
+      "confidence": 0.55,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.02,
+        "2": 0.29,
+        "3": 0.36,
+        "4": 0.32,
+        "5": 0.0
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 4915,
+  "output_tokens": 45,
+  "cost_usd": 0.00020643,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791918373-lvZhuZrdD0Av1QLBbhsx",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 2.43,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.04,
+          "2": 0.73,
+          "3": 0.09,
+          "4": 0.04,
+          "5": 0.04,
+          "6": 0.03,
+          "7": 0.01,
+          "8": 0.01
+        },
+        "confidence": 0.74
+      },
+      "location": {
+        "type": "score",
+        "score": 4.12,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.03,
+          "2": 0.09,
+          "3": 0.16,
+          "4": 0.31,
+          "5": 0.28,
+          "6": 0.09,
+          "7": 0.02,
+          "8": 0.01,
+          "9": 0
+        },
+        "confidence": 0.59
+      },
+      "guessing": {
+        "type": "score",
+        "score": 2.97,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.02,
+          "2": 0.29,
+          "3": 0.36,
+          "4": 0.32,
+          "5": 0
+        },
+        "confidence": 0.55
+      }
+    },
+    "usage": {
+      "input_tokens": 4915,
+      "output_tokens": 45,
+      "cost": 0.00020643
+    },
+    "id": "gen-dec-1791918373-lvZhuZrdD0Av1QLBbhsx",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T19:06:13+00:00",
+  "seconds": null
+}

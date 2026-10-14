@@ -1,0 +1,300 @@
+{
+  "item_id": "M032755",
+  "assessment": "TIMSS 2007",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Number",
+  "main_topic": "Ratio, Proportion, and Percent",
+  "cognitive_domain": "Reasoning",
+  "item_type": "constructed_response",
+  "max_points": 2,
+  "scaled_points": 2,
+  "irt_model": "GPCM",
+  "target_calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+  "excluded_item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M032753A",
+    "TIMSS 2007/grade 8/Mathematics/M032753B",
+    "TIMSS 2007/grade 8/Mathematics/M032753C",
+    "TIMSS 2007/grade 8/Mathematics/M032754",
+    "TIMSS 2007/grade 8/Mathematics/M032755",
+    "TIMSS 2007/grade 8/Mathematics/M032756"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2007",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Number",
+      "main_topic": "Ratio, Proportion, and Percent",
+      "cognitive_domain": "Reasoning",
+      "item_type": "constructed_response",
+      "max_points": 2,
+      "scaled_points": 2,
+      "stem": "The total cost of the journey for all the students must be 500 zeds or less.\nThere are 30 students in the class.\n\nHere are the costs for visiting each town:\n\n| Visiting Acton or Camford | Visiting Burley or Darley |\n| --- | --- |\n| Student Rate | Student Rate |\n| Round-trip ticket: 25 zeds | Round-trip ticket: 20 zeds |\n| 1/3 off for groups of 25 or more students | 10% off for groups of 15 or more students |\n\nWhich towns can they afford to visit? Show your work.",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "Show costs of 500 zeds for Acton and Camford; 540 zeds for Burley and Darley; Indicates Acton and Camford"
+          ]
+        },
+        {
+          "category": "Partial Response",
+          "descriptors": [
+            "Shows 500 zeds for Acton and Camford; 540 zeds for Burley and Darley; does not indicate Acton and Camford",
+            "Finds correct cost for visiting Acton and Camford (500 zeds) or Burley and Darley (540 zeds) but not both"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "Indicates Acton and Camford but no calculations or incorrect calculations shown",
+            "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+          ]
+        },
+        {
+          "category": "Nonresponse",
+          "descriptors": [
+            "Blank"
+          ]
+        }
+      ],
+      "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 2-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 2-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "step1": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 2-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)\". What is the item's step 1 parameter d1? In the GPCM, b - d1 is the ability at which earning the first point becomes more likely than earning no point, so a higher d1 means that this point is earned at a lower ability; the steps sum to 0. Choose the value closest to it.",
+      "criteria": [
+        "-3",
+        "-2",
+        "-1.5",
+        "-1",
+        "-0.5",
+        "0",
+        "1",
+        "2"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.87,
+      "confidence": 0.35,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.03,
+        "1": 0.04,
+        "2": 0.11,
+        "3": 0.24,
+        "4": 0.23,
+        "5": 0.19,
+        "6": 0.1,
+        "7": 0.04,
+        "8": 0.02
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 4.25,
+      "confidence": 0.35,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.04,
+        "2": 0.1,
+        "3": 0.25,
+        "4": 0.16,
+        "5": 0.2,
+        "6": 0.14,
+        "7": 0.07,
+        "8": 0.03,
+        "9": 0.0
+      }
+    },
+    "step1": {
+      "type": "score",
+      "score": 3.41,
+      "confidence": 0.3,
+      "legend": {
+        "0": "-3",
+        "1": "-2",
+        "2": "-1.5",
+        "3": "-1",
+        "4": "-0.5",
+        "5": "0",
+        "6": "1",
+        "7": "2"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.09,
+        "2": 0.18,
+        "3": 0.24,
+        "4": 0.18,
+        "5": 0.13,
+        "6": 0.09,
+        "7": 0.05
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1443,
+  "output_tokens": 45,
+  "cost_usd": 6.0606e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791989185-Z14YDEIn9yC1SEeW5C9B",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.87,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.04,
+          "2": 0.11,
+          "3": 0.24,
+          "4": 0.23,
+          "5": 0.19,
+          "6": 0.1,
+          "7": 0.04,
+          "8": 0.02
+        },
+        "confidence": 0.35
+      },
+      "location": {
+        "type": "score",
+        "score": 4.25,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.04,
+          "2": 0.1,
+          "3": 0.25,
+          "4": 0.16,
+          "5": 0.2,
+          "6": 0.14,
+          "7": 0.07,
+          "8": 0.03,
+          "9": 0
+        },
+        "confidence": 0.35
+      },
+      "step1": {
+        "type": "score",
+        "score": 3.41,
+        "legend": {
+          "0": "-3",
+          "1": "-2",
+          "2": "-1.5",
+          "3": "-1",
+          "4": "-0.5",
+          "5": "0",
+          "6": "1",
+          "7": "2"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.09,
+          "2": 0.18,
+          "3": 0.24,
+          "4": 0.18,
+          "5": 0.13,
+          "6": 0.09,
+          "7": 0.05
+        },
+        "confidence": 0.3
+      }
+    },
+    "usage": {
+      "input_tokens": 1443,
+      "output_tokens": 45,
+      "cost": 6.0606e-05
+    },
+    "id": "gen-dec-1791989185-Z14YDEIn9yC1SEeW5C9B",
+    "provider": "TypeSafe"
+  },
+  "seconds": 0.188,
+  "requested_at": "2026-10-14T14:46:25+00:00"
+}

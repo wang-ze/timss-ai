@@ -1,0 +1,277 @@
+{
+  "item_id": "M032679",
+  "assessment": "TIMSS 2011",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Geometry",
+  "main_topic": "Geometric Shapes",
+  "cognitive_domain": "Knowing",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M032679"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2011",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Geometry",
+      "main_topic": "Geometric Shapes",
+      "cognitive_domain": "Knowing",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "[Image: A piece of paper in the shape of a rectangle, folded in half. The paper is cut along a dotted line, which intersects the bottom of the folded paper and the fold itself. The dotted line forms a right triangle with the folded side. The height of the triangle is 4 centimeters on the fold, and the base on the front half of the paper is 1 centimeter.]\n\nA piece of paper in the shape of a rectangle is folded in half as shown in the figure above. It is then cut along the dotted line, and the small piece that is cut is opened. What is the shape of the cutout figure?",
+      "options": [
+        {
+          "label": "A",
+          "text": "an isosceles triangle"
+        },
+        {
+          "label": "B",
+          "text": "two isosceles triangles"
+        },
+        {
+          "label": "C",
+          "text": "a right triangle"
+        },
+        {
+          "label": "D",
+          "text": "an equilateral triangle"
+        }
+      ],
+      "correct_option": "A",
+      "figure_description": "A rectangular sheet of paper folded vertically in half, shown standing slightly open with the fold along the left vertical edge. A straight dashed cut line runs from the folded edge down to the bottom front edge. A dimension arrow along the fold indicates that the top of the cut is 4 cm above the bottom edge. Another dimension arrow along the bottom edge indicates that the cut meets the bottom edge 1 cm to the right of the fold.",
+      "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.67,
+      "confidence": 0.28,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.05,
+        "1": 0.08,
+        "2": 0.15,
+        "3": 0.21,
+        "4": 0.16,
+        "5": 0.17,
+        "6": 0.1,
+        "7": 0.05,
+        "8": 0.03
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 2.66,
+      "confidence": 0.46,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.09,
+        "1": 0.2,
+        "2": 0.25,
+        "3": 0.21,
+        "4": 0.1,
+        "5": 0.08,
+        "6": 0.04,
+        "7": 0.02,
+        "8": 0.01,
+        "9": 0.0
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 3.86,
+      "confidence": 0.9,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.01,
+        "2": 0.01,
+        "3": 0.05,
+        "4": 0.91,
+        "5": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1290,
+  "output_tokens": 45,
+  "cost_usd": 5.418e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914770-3L9i3IDUriMZ4fEJckij",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.67,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.08,
+          "2": 0.15,
+          "3": 0.21,
+          "4": 0.16,
+          "5": 0.17,
+          "6": 0.1,
+          "7": 0.05,
+          "8": 0.03
+        },
+        "confidence": 0.28
+      },
+      "location": {
+        "type": "score",
+        "score": 2.66,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.09,
+          "1": 0.2,
+          "2": 0.25,
+          "3": 0.21,
+          "4": 0.1,
+          "5": 0.08,
+          "6": 0.04,
+          "7": 0.02,
+          "8": 0.01,
+          "9": 0
+        },
+        "confidence": 0.46
+      },
+      "guessing": {
+        "type": "score",
+        "score": 3.86,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.01,
+          "3": 0.05,
+          "4": 0.91,
+          "5": 0.01
+        },
+        "confidence": 0.9
+      }
+    },
+    "usage": {
+      "input_tokens": 1290,
+      "output_tokens": 45,
+      "cost": 5.418e-05
+    },
+    "id": "gen-dec-1791914770-3L9i3IDUriMZ4fEJckij",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:10+00:00",
+  "seconds": null
+}

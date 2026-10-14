@@ -1,0 +1,224 @@
+{
+  "item_id": "M031346B",
+  "assessment": "TIMSS 2011",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Number",
+  "main_topic": "Whole Numbers",
+  "cognitive_domain": "Reasoning",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M031346A",
+    "TIMSS 2011/grade 4/Mathematics/M031346B",
+    "TIMSS 2011/grade 4/Mathematics/M031346C",
+    "TIMSS 2011/grade 4/Mathematics/M031379",
+    "TIMSS 2011/grade 4/Mathematics/M031380"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2011",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Number",
+      "main_topic": "Whole Numbers",
+      "cognitive_domain": "Reasoning",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "The town fair had a booth where people could trade cards.\n\n[Image: one animal card, an equal sign, and two cartoon cards.]\n\n1 animal card is worth 2 cartoon cards.\n\n[Image: two animal cards, an equal sign, and three sports cards.]\n\n2 animal cards are worth 3 sports cards.\n\nSome children went to the booth to trade cards.\n\nTrading Animal Cards\n\nB. Jim had 8 animal cards to trade for sports cards. How many sports cards would he get?\n\nAnswer: ____ sports cards",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "12"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "16",
+            "24",
+            "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+          ]
+        }
+      ],
+      "figure_description": "Two trade equations are illustrated with rectangular cards:\n1. Top equation: 1 card depicting a bear is on the left, an equals sign (=) is in the middle, and 2 identical cards depicting an oval cartoon face are on the right.\n2. Bottom equation: 2 identical cards depicting a bear are on the left, an equals sign (=) is in the middle, and 3 identical cards depicting a sports player kicking a ball are on the right.",
+      "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.8,
+      "confidence": 0.35,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.03,
+        "1": 0.05,
+        "2": 0.12,
+        "3": 0.25,
+        "4": 0.2,
+        "5": 0.19,
+        "6": 0.1,
+        "7": 0.04,
+        "8": 0.02
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 3.82,
+      "confidence": 0.41,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.07,
+        "2": 0.15,
+        "3": 0.24000000000000002,
+        "4": 0.17,
+        "5": 0.18,
+        "6": 0.11,
+        "7": 0.05,
+        "8": 0.02,
+        "9": 0.0
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1097,
+  "output_tokens": 31,
+  "cost_usd": 4.6074e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914767-DY7DLOfPqUcKKiwHGLmK",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.8,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.05,
+          "2": 0.12,
+          "3": 0.25,
+          "4": 0.2,
+          "5": 0.19,
+          "6": 0.1,
+          "7": 0.04,
+          "8": 0.02
+        },
+        "confidence": 0.35
+      },
+      "location": {
+        "type": "score",
+        "score": 3.82,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.07,
+          "2": 0.15,
+          "3": 0.24000000000000002,
+          "4": 0.17,
+          "5": 0.18,
+          "6": 0.11,
+          "7": 0.05,
+          "8": 0.02,
+          "9": 0
+        },
+        "confidence": 0.41
+      }
+    },
+    "usage": {
+      "input_tokens": 1097,
+      "output_tokens": 31,
+      "cost": 4.6074e-05
+    },
+    "id": "gen-dec-1791914767-DY7DLOfPqUcKKiwHGLmK",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:07+00:00",
+  "seconds": null
+}

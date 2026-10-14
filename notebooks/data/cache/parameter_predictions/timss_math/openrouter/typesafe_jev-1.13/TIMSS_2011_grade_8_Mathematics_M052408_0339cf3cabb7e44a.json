@@ -1,0 +1,218 @@
+{
+  "item_id": "M052408",
+  "assessment": "TIMSS 2011",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Geometry",
+  "main_topic": "Geometric Shapes",
+  "cognitive_domain": "Reasoning",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M052408"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2011",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Geometry",
+      "main_topic": "Geometric Shapes",
+      "cognitive_domain": "Reasoning",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "[Image: Two parallel lines, M and N. M lies above N. Two lines are drawn over M and N. One goes up from the left to the right, and the other one goes down, from the left to the right. The two lines intersect N at two different points, but meet at a common point on line M. This forms a triangle between lines M and N. The top angle of this triangle is angle B. The right most angle of this triangle is 70 degrees. The line that goes up from the left to the right intersects line M at a 60 degree angle.]\n\nLines m and n are parallel.\n\nWhat is the value of b?\n\nAnswer: ____",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "50"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "Incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+          ]
+        }
+      ],
+      "figure_description": "Two horizontal parallel lines with arrows at both ends are labeled m (top line) and n (bottom line). Two intersecting lines cross lines m and n: one line slopes upward from lower left to upper right, and the other slopes downward from upper left to lower right. The two lines intersect each other at a single point on line m, and they cross line n at two separate points, forming a triangle between lines m and n. The top interior angle of this triangle at the intersection point on line m is marked with an arc and labeled b°. The bottom-right interior angle of the triangle along line n is marked with an arc and labeled 70°. Above line m, in the angle between the right side of line m and the upward-sloping line, the angle is marked with an arc and labeled 60°.",
+      "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.68,
+      "confidence": 0.3,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.05,
+        "1": 0.07,
+        "2": 0.14,
+        "3": 0.22,
+        "4": 0.18,
+        "5": 0.17,
+        "6": 0.1,
+        "7": 0.05,
+        "8": 0.02
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 4.53,
+      "confidence": 0.22,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.05,
+        "2": 0.1,
+        "3": 0.19,
+        "4": 0.14,
+        "5": 0.19,
+        "6": 0.16,
+        "7": 0.1,
+        "8": 0.05,
+        "9": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1193,
+  "output_tokens": 31,
+  "cost_usd": 5.0106e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914770-QTHI9fYWzZsDsgi8ZHuN",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.68,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.07,
+          "2": 0.14,
+          "3": 0.22,
+          "4": 0.18,
+          "5": 0.17,
+          "6": 0.1,
+          "7": 0.05,
+          "8": 0.02
+        },
+        "confidence": 0.3
+      },
+      "location": {
+        "type": "score",
+        "score": 4.53,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.05,
+          "2": 0.1,
+          "3": 0.19,
+          "4": 0.14,
+          "5": 0.19,
+          "6": 0.16,
+          "7": 0.1,
+          "8": 0.05,
+          "9": 0.01
+        },
+        "confidence": 0.22
+      }
+    },
+    "usage": {
+      "input_tokens": 1193,
+      "output_tokens": 31,
+      "cost": 5.0106e-05
+    },
+    "id": "gen-dec-1791914770-QTHI9fYWzZsDsgi8ZHuN",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:10+00:00",
+  "seconds": null
+}

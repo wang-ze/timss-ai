@@ -1,0 +1,227 @@
+{
+  "item_id": "M032688",
+  "assessment": "TIMSS 2007",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Data and Chance",
+  "main_topic": "Chance",
+  "cognitive_domain": "Applying",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+  "excluded_item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M032688"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2007",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Data and Chance",
+      "main_topic": "Chance",
+      "cognitive_domain": "Applying",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "[Image: Spinner]\n\nRoland’s spinner has three sectors of different colors, orange, purple, and green. Roland spins the pointer 1000 times. The chart below shows how many times the pointer stops on each section.\n\n| Color | Times Stopped |\n| :--- | :---: |\n| Orange | 510 |\n| Purple | 243 |\n| Green | 247 |\n\nDraw lines on the spinner above to make the three sectors the approximate size you would expect them to be. Label them orange, purple, and green.",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "Orange sector approximately half the circle, green and purple each approximately one-quarter, all correctly labeled"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "Only one labeled sector the correct size",
+            "Three sectors drawn but none the correct size",
+            "Three sectors of correct size drawn but no labels",
+            "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+          ]
+        },
+        {
+          "category": "Nonresponse",
+          "descriptors": [
+            "Blank"
+          ]
+        }
+      ],
+      "figure_description": "A circular spinner with a central circular hub and an arrow pointer angled upward and to the right. Around the circumference of the circle is an outer rim with 8 equally spaced tick marks, dividing the circle into 8 equal arcs of 45° each (at 12 o'clock, 1:30, 3 o'clock, 4:30, 6 o'clock, 7:30, 9 o'clock, and 10:30). The interior of the circle is blank.",
+      "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.44,
+      "confidence": 0.42,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.08,
+        "2": 0.16,
+        "3": 0.28,
+        "4": 0.19,
+        "5": 0.14,
+        "6": 0.07,
+        "7": 0.03,
+        "8": 0.01
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 3.61,
+      "confidence": 0.42,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.11,
+        "2": 0.16,
+        "3": 0.26,
+        "4": 0.13,
+        "5": 0.16,
+        "6": 0.09,
+        "7": 0.05,
+        "8": 0.02,
+        "9": 0.0
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1228,
+  "output_tokens": 31,
+  "cost_usd": 5.1576e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914766-kxOmh2dIuvVkshk4Zen4",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.44,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.08,
+          "2": 0.16,
+          "3": 0.28,
+          "4": 0.19,
+          "5": 0.14,
+          "6": 0.07,
+          "7": 0.03,
+          "8": 0.01
+        },
+        "confidence": 0.42
+      },
+      "location": {
+        "type": "score",
+        "score": 3.61,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.11,
+          "2": 0.16,
+          "3": 0.26,
+          "4": 0.13,
+          "5": 0.16,
+          "6": 0.09,
+          "7": 0.05,
+          "8": 0.02,
+          "9": 0
+        },
+        "confidence": 0.42
+      }
+    },
+    "usage": {
+      "input_tokens": 1228,
+      "output_tokens": 31,
+      "cost": 5.1576e-05
+    },
+    "id": "gen-dec-1791914766-kxOmh2dIuvVkshk4Zen4",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:06+00:00",
+  "seconds": null
+}

@@ -1,0 +1,277 @@
+{
+  "item_id": "M022101",
+  "assessment": "TIMSS 2007",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Data and Chance",
+  "main_topic": "Chance",
+  "cognitive_domain": "Knowing",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+  "excluded_item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M022101"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2007",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Data and Chance",
+      "main_topic": "Chance",
+      "cognitive_domain": "Knowing",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "The smaller box contains 20 tickets numbered from 1 to 20. The larger box contains 100 tickets numbered from 1 to 100.\n\n[Image: Two boxes containing tickets]\n\nWithout looking at them, you can pick a ticket from either box. Which box would give you the greater chance of picking out a ticket with the number 17 on it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The box with 20 tickets"
+        },
+        {
+          "label": "B",
+          "text": "The box with 100 tickets"
+        },
+        {
+          "label": "C",
+          "text": "Both boxes would give the same chance"
+        },
+        {
+          "label": "D",
+          "text": "It is impossible to tell"
+        }
+      ],
+      "correct_option": "A",
+      "figure_description": "Two rectangular prism-shaped boxes drawn in perspective. The box on the left is smaller and labeled below as \"20 tickets\". The box on the right is noticeably larger and labeled below as \"100 tickets\".",
+      "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.47,
+      "confidence": 0.25,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.08,
+        "1": 0.1,
+        "2": 0.15,
+        "3": 0.21000000000000002,
+        "4": 0.14,
+        "5": 0.14,
+        "6": 0.1,
+        "7": 0.05,
+        "8": 0.03
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 2.83,
+      "confidence": 0.16,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.12,
+        "1": 0.19,
+        "2": 0.19,
+        "3": 0.18,
+        "4": 0.1,
+        "5": 0.09,
+        "6": 0.06,
+        "7": 0.04,
+        "8": 0.02,
+        "9": 0.01
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 3.89,
+      "confidence": 0.92,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.0,
+        "2": 0.01,
+        "3": 0.05,
+        "4": 0.92,
+        "5": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1258,
+  "output_tokens": 45,
+  "cost_usd": 5.2836e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914765-ivG8ps3uxwHYA9cyJcAb",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.47,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.08,
+          "1": 0.1,
+          "2": 0.15,
+          "3": 0.21000000000000002,
+          "4": 0.14,
+          "5": 0.14,
+          "6": 0.1,
+          "7": 0.05,
+          "8": 0.03
+        },
+        "confidence": 0.25
+      },
+      "location": {
+        "type": "score",
+        "score": 2.83,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.12,
+          "1": 0.19,
+          "2": 0.19,
+          "3": 0.18,
+          "4": 0.1,
+          "5": 0.09,
+          "6": 0.06,
+          "7": 0.04,
+          "8": 0.02,
+          "9": 0.01
+        },
+        "confidence": 0.16
+      },
+      "guessing": {
+        "type": "score",
+        "score": 3.89,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.05,
+          "4": 0.92,
+          "5": 0.01
+        },
+        "confidence": 0.92
+      }
+    },
+    "usage": {
+      "input_tokens": 1258,
+      "output_tokens": 45,
+      "cost": 5.2836e-05
+    },
+    "id": "gen-dec-1791914765-ivG8ps3uxwHYA9cyJcAb",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:05+00:00",
+  "seconds": null
+}

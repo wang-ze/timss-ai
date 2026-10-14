@@ -1,0 +1,225 @@
+{
+  "item_id": "MA13025A",
+  "assessment": "TIMSS Advanced 2008",
+  "grade": 12,
+  "subject": "Advanced Mathematics",
+  "content_domain": "Calculus",
+  "main_topic": "Limits and Continuity",
+  "cognitive_domain": "Knowing",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13025A",
+    "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13025B"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS Advanced 2008",
+      "grade": 12,
+      "subject": "Advanced Mathematics",
+      "content_domain": "Calculus",
+      "main_topic": "Limits and Continuity",
+      "cognitive_domain": "Knowing",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "The function y = f(x), -3 ≤ x ≤ 3, is defined in the following graph\n\n[Image: Graph of y = f(x)]\n\nA. For what value(s) of x in the interval -3 < x < 3 is the function f NOT continuous?",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "Correct answer: Only for x = 0. Accept answers such as \"in points (0, 0) and (0, 2)\" as correct."
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "Incorrect (including crossed out, erased, stray marks, illegible, or off task)\nExamples:\n1. Any of the following answers:\nFor x = -1 OR For x = 2 OR For x = -1 and x = 2\n2. For all values of x in the interval 0 ≤ x ≤ 2\nNote: Use this code for all answers \"interval with endpoints 0 and 2\" no matter whether the interval is open or closed.\n3. For no values of x, that is, the function is continuous for all x in the interval -3 < x < 3 (\"Continuous\" may be confused with \"defined.\")\n4. x in (-3, -1) ∪ (0, 2) OR x in (-1, 0) ∪ (2, 3)"
+          ]
+        },
+        {
+          "category": "Nonresponse",
+          "descriptors": [
+            "Blank"
+          ]
+        }
+      ],
+      "figure_description": "A Cartesian coordinate system with horizontal axis x and vertical axis y. The x-axis is marked with ticks and labels at -3, -2, -1, 0, 1, 2, 3. The y-axis is marked with ticks and labels at -2, -1, 1, 2, and 0 at the origin. The graph of y = f(x) consists of:\n- A line segment from a solid dot at (-3, -2) to (-1, 0).\n- A horizontal segment along the x-axis from (-1, 0) to an open circle at (0, 0).\n- A solid dot at (0, 2).\n- A line segment from (0, 2) down to (2, 0).\n- A horizontal segment along the x-axis from (2, 0) to a solid dot at (3, 0).",
+      "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.82,
+      "confidence": 0.23,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.05,
+        "1": 0.08,
+        "2": 0.13,
+        "3": 0.19999999999999998,
+        "4": 0.16,
+        "5": 0.16,
+        "6": 0.12,
+        "7": 0.06,
+        "8": 0.04
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 3.94,
+      "confidence": 0.3,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.03,
+        "1": 0.09,
+        "2": 0.13,
+        "3": 0.23,
+        "4": 0.12,
+        "5": 0.15,
+        "6": 0.12,
+        "7": 0.08,
+        "8": 0.04,
+        "9": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1337,
+  "output_tokens": 31,
+  "cost_usd": 5.6154e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914766-7xyUoxHE9vSctk0FVTYL",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.82,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.08,
+          "2": 0.13,
+          "3": 0.19999999999999998,
+          "4": 0.16,
+          "5": 0.16,
+          "6": 0.12,
+          "7": 0.06,
+          "8": 0.04
+        },
+        "confidence": 0.23
+      },
+      "location": {
+        "type": "score",
+        "score": 3.94,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.09,
+          "2": 0.13,
+          "3": 0.23,
+          "4": 0.12,
+          "5": 0.15,
+          "6": 0.12,
+          "7": 0.08,
+          "8": 0.04,
+          "9": 0.01
+        },
+        "confidence": 0.3
+      }
+    },
+    "usage": {
+      "input_tokens": 1337,
+      "output_tokens": 31,
+      "cost": 5.6154e-05
+    },
+    "id": "gen-dec-1791914766-7xyUoxHE9vSctk0FVTYL",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:06+00:00",
+  "seconds": null
+}

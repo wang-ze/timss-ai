@@ -1,0 +1,839 @@
+{
+  "item_id": "J3",
+  "assessment": "TIMSS 1995",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Data Representation, Analysis, and Probability",
+  "main_topic": null,
+  "cognitive_domain": "Using Complex Procedures",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/J3"
+  ],
+  "similar_items": [
+    {
+      "rank": 1,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M031135",
+      "item_id": "M031135",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8419,
+      "pct_correct_intl_avg": 65.8,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.12708,
+      "location": -0.58666,
+      "guessing": 0.12815
+    },
+    {
+      "rank": 2,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M041336",
+      "item_id": "M041336",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8604,
+      "pct_correct_intl_avg": 32.3,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.22811,
+      "location": 0.94206,
+      "guessing": 0.18124
+    },
+    {
+      "rank": 3,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M041184",
+      "item_id": "M041184",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8412,
+      "pct_correct_intl_avg": 71,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.91669,
+      "location": -0.7915,
+      "guessing": 0.1641
+    },
+    {
+      "rank": 4,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M041175",
+      "item_id": "M041175",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8438,
+      "pct_correct_intl_avg": 77,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.82581,
+      "location": -1.31032,
+      "guessing": 0.17672
+    },
+    {
+      "rank": 5,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M031045",
+      "item_id": "M031045",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8434,
+      "pct_correct_intl_avg": 61.1,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.13135,
+      "location": -0.62229,
+      "guessing": 0.11457
+    },
+    {
+      "rank": 6,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M041076",
+      "item_id": "M041076",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.7893,
+      "pct_correct_intl_avg": 36.6,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.95518,
+      "location": 0.16857
+    },
+    {
+      "rank": 7,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M031178",
+      "item_id": "M031178",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8233,
+      "pct_correct_intl_avg": 37,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.87,
+      "location": 0.777,
+      "guessing": 0.094
+    },
+    {
+      "rank": 8,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M031172",
+      "item_id": "M031172",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8021,
+      "pct_correct_intl_avg": 56.7,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.39727,
+      "location": -0.24326,
+      "guessing": 0.1129
+    },
+    {
+      "rank": 9,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M012078",
+      "item_id": "M012078",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.7747,
+      "pct_correct_intl_avg": 74,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.71,
+      "location": -1.008,
+      "guessing": 0.102
+    },
+    {
+      "rank": 10,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M011017",
+      "item_id": "M011017",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.7885,
+      "pct_correct_intl_avg": 64,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.651,
+      "location": -0.707,
+      "guessing": 0.111
+    }
+  ],
+  "context": "item+references",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 1995",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Data Representation, Analysis, and Probability",
+      "cognitive_domain": "Using Complex Procedures",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "The figure shows how Mary spent her time one day.\n\n[Image: Pie chart showing how Mary spent her time]\n\nWhat percent of time altogether did she spend playing and doing homework?",
+      "options": [
+        {
+          "label": "A",
+          "text": "10%"
+        },
+        {
+          "label": "B",
+          "text": "15%"
+        },
+        {
+          "label": "C",
+          "text": "20%"
+        },
+        {
+          "label": "D",
+          "text": "25%"
+        },
+        {
+          "label": "E",
+          "text": "30%"
+        }
+      ],
+      "correct_option": "D",
+      "figure_description": "A pie chart showing how Mary spent her time one day, divided into five labeled sectors:\n- \"Homework 10%\": from the 12 o'clock vertical radius clockwise to roughly 1 o'clock.\n- \"Sleeping & Resting 40%\": from roughly 1 o'clock clockwise to the 6 o'clock vertical radius.\n- \"Going to School 25%\": from the 6 o'clock vertical radius clockwise to the 9 o'clock horizontal radius.\n- \"Eating 10%\": from the 9 o'clock horizontal radius clockwise to roughly 10 o'clock.\n- \"Playing 15%\": from roughly 10 o'clock clockwise to the 12 o'clock vertical radius.",
+      "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data."
+    },
+    "reference_items": [
+      {
+        "rank": 1,
+        "cosine_similarity": 0.842,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Data Display",
+        "main_topic": "Organizing and Representing",
+        "cognitive_domain": "Reasoning",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Favorite Fruit Juice\n\n[Image: Bar graph]\n\nLena asked her 20 classmates if they like orange, mango, or pineapple juice the best. She shows her data in the bar graph above.\n\nShe also drew a pie chart using the same data. Which of the following is the pie chart for this data?",
+        "options": [
+          {
+            "label": "A",
+            "text": "[Image: Pie chart A]"
+          },
+          {
+            "label": "B",
+            "text": "[Image: Pie chart B]"
+          },
+          {
+            "label": "C",
+            "text": "[Image: Pie chart C]"
+          },
+          {
+            "label": "D",
+            "text": "[Image: Pie chart D]"
+          }
+        ],
+        "correct_option": "B",
+        "figure_description": "A bar graph titled \"Favorite Fruit Juice\".\n- Vertical axis: labeled \"Number of Classmates\", marked from 0 to 12 in increments of 2 (0, 2, 4, 6, 8, 10, 12) with horizontal gridlines.\n- Horizontal axis: labeled \"Fruit Juice\", with three categories:\n  - \"Mango\": bar height reaches 3 (halfway between 2 and 4).\n  - \"Orange\": bar height reaches 10.\n  - \"Pineapple\": bar height reaches 7 (halfway between 6 and 8).\n\nBelow are four pie charts, labeled A, B, C, and D, each divided into three sectors with distinct shadings and labels:\n- White sector labeled \"Pineapple\"\n- Cross-hatched/patterned sector labeled \"Mango\"\n- Solid black sector labeled \"Orange\"\n\nIn each chart:\n- A: The black sector (Orange) occupies less than half of the circle (around 1/4), the patterned sector (Mango) is small, and the white sector (Pineapple) is more than half the circle.\n- B: The black sector (Orange) occupies less than half (around 1/3), the white sector (Pineapple) is about half, and the patterned sector (Mango) is small.\n- C: The patterned sector (Mango) is large (around 1/3 or more), the black sector (Orange) is about 1/4, and the white sector (Pineapple) is about 1/3 to 1/2.\n- D: The black sector (Orange) represents exactly half the circle (a semi-circle, 50%); the white sector (Pineapple) represents approximately 35%; and the patterned sector (Mango) represents approximately 15%.",
+        "pct_correct_intl_avg": 65.8,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.12708,
+          "location": -0.58666,
+          "guessing": 0.12815
+        }
+      },
+      {
+        "rank": 2,
+        "cosine_similarity": 0.86,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Data Display",
+        "main_topic": "Reading and Interpreting",
+        "cognitive_domain": "Reasoning",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Class A and B each have 40 students.\n\n[Image: Pie chart for Class A and bar graph for Class B]\n\nThere are more girls in Class A than in Class B. How many more?",
+        "options": [
+          {
+            "label": "A",
+            "text": "14"
+          },
+          {
+            "label": "B",
+            "text": "16"
+          },
+          {
+            "label": "C",
+            "text": "24"
+          },
+          {
+            "label": "D",
+            "text": "30"
+          }
+        ],
+        "correct_option": "A",
+        "figure_description": "Two graphs representing student populations in Class A and Class B:\n- On the left, a pie chart titled \"Class A\" showing a circle divided into two sectors. An unshaded sector representing one quarter of the circle (from 9 o'clock to 12 o'clock) is labeled \"Boys\". The remaining three-quarters of the circle is shaded grey and labeled \"Girls\".\n- On the right, a bar graph titled \"Class B\" with a vertical axis labeled with values from 0 to 24 in increments of 4 (0, 4, 8, 12, 16, 20, 24) with horizontal grid lines. The horizontal axis has two categories: \"Boys\", with a light-grey bar of height 24, and \"Girls\", with a dark bar of height 16.",
+        "pct_correct_intl_avg": 32.3,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.22811,
+          "location": 0.94206,
+          "guessing": 0.18124
+        }
+      },
+      {
+        "rank": 3,
+        "cosine_similarity": 0.841,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Data Display",
+        "main_topic": "Organizing and Representing",
+        "cognitive_domain": "Reasoning",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Mr. Johnson asked the students in his school about their favorite subject.\n\nThis pie chart shows how many students liked each of 5 subjects.\n\n[Image: Pie chart titled Favorite Subject, divided into various sizes and labeled with Math about one-third, Science about one-fourth, History about one-fifth, Gym less than one-fifth, and Music less than one-eighth.]\n\nWhich graph shows the same information as the pie chart?",
+        "options": [
+          {
+            "label": "A",
+            "text": "[Image: Bar graph with y-axis labeled number of students and values from 0 to 25; x-axis with 5 columns, Math value of 30, Science value of 25, History value of 20, Gym value of 17, Music value of 8.]"
+          },
+          {
+            "label": "B",
+            "text": "[Image: Bar graph with y-axis labeled number of students and values from 0 to 25; x-axis with 5 columns, Math value of 30, Science value of 15, History value of 15, Gym value of 15, Music value of 14.]"
+          },
+          {
+            "label": "C",
+            "text": "[Image: Bar graph with y-axis labeled number of students and values from 0 to 25; x-axis with 5 columns, Math value of 20, Science value of 25, History value of 30, Gym value of 17, Music value of 8.]"
+          },
+          {
+            "label": "D",
+            "text": "[Image: Bar graph with y-axis labeled number of students and values from 0 to 25; x-axis with 5 columns, Math value of 25, Science value of 30, History value of 20, Gym value of 8, Music value of 12.]"
+          }
+        ],
+        "correct_option": "A",
+        "figure_description": "A pie chart titled \"Favorite Subject\" is divided into five sectors: Math (the largest sector, about one-third of the circle), Science (the second largest, about one-fourth of the circle), History (about one-fifth of the circle), Gym (smaller than History), and Music (the smallest sector, less than one-eighth of the circle). In order of sector size from largest to smallest: Math, Science, History, Gym, Music.\n\nEach of the four response options shows a vertical bar graph with the vertical axis labeled \"Number of Students\" ranging from 0 to 35 with grid lines every 5 units, and the horizontal axis showing five subjects: Math, Science, History, Gym, Music.\n- Graph A: Math = 30, Science = 25, History = 20, Gym = 17, Music = 8.\n- Graph B: Math = 30, Science = 15, History = 15, Gym = 15, Music = 14.\n- Graph C: Math = 20, Science = 25, History = 30, Gym = 17, Music = 8.\n- Graph D: Math = 25, Science = 30, History = 20, Gym = 8, Music = 16.",
+        "pct_correct_intl_avg": 71,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.91669,
+          "location": -0.7915,
+          "guessing": 0.1641
+        }
+      },
+      {
+        "rank": 4,
+        "cosine_similarity": 0.844,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Data Display",
+        "main_topic": "Reading and Interpreting",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "This chart shows the types of cookies sold by the local bakery.\n\n[Image: Pie chart titled Cookies Sold, shaded and divided into various sizes; sugar about one-fourth, chocolate chip more than one-fourth, oatmeal more than one-half, and vanilla about one-eighth.]\n\nWhich type of cookie did the bakery sell the most of?",
+        "options": [
+          {
+            "label": "A",
+            "text": "oatmeal"
+          },
+          {
+            "label": "B",
+            "text": "vanilla"
+          },
+          {
+            "label": "C",
+            "text": "chocolate chip"
+          },
+          {
+            "label": "D",
+            "text": "sugar"
+          }
+        ],
+        "correct_option": "A",
+        "figure_description": "A pie chart titled \"Cookies Sold\" is divided into four unequal sectors:\n- \"sugar\": light-gray shading, occupying the top-right quadrant from the 12 o'clock position to the 3 o'clock position (a right angle, exactly one-quarter of the circle).\n- \"chocolate chip\": medium-gray shading, occupying the sector from the 3 o'clock position to approximately the 5 o'clock position.\n- \"oatmeal\": white (unshaded), occupying the largest sector from approximately the 5 o'clock position counter-clockwise around the bottom and left to approximately the 10:30 position.\n- \"vanilla\": white (unshaded), occupying the sector from approximately the 10:30 position to the 12 o'clock position.\nVisually, oatmeal is the largest sector, sugar is the second largest, chocolate chip is third, and vanilla is the smallest.",
+        "pct_correct_intl_avg": 77,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.82581,
+          "location": -1.31032,
+          "guessing": 0.17672
+        }
+      },
+      {
+        "rank": 5,
+        "cosine_similarity": 0.843,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Data Display",
+        "main_topic": "Organizing and Representing",
+        "cognitive_domain": "Reasoning",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "| Type of Tree | Number of Trees |\n| --- | --- |\n| Pine | 200 |\n| Spruce | 100 |\n| Oak | 50 |\n| Birch | 50 |\n\nThe table above shows the numbers of four types of trees growing in a park. Which of the following pie charts correctly displays the information shown in the table?",
+        "options": [
+          {
+            "label": "A",
+            "text": "[Image: Pie chart with Pine (half), Spruce (quarter), Oak (eighth), Birch (eighth)]"
+          },
+          {
+            "label": "B",
+            "text": "[Image: Pie chart with Pine (half), and the other half divided into Spruce, Oak, Birch]"
+          },
+          {
+            "label": "C",
+            "text": "[Image: Pie chart divided into four equal fourths labeled Pine, Spruce, Birch, Oak]"
+          },
+          {
+            "label": "D",
+            "text": "[Image: Pie chart with Birch (half), and the other half divided into Oak, Pine, Spruce]"
+          }
+        ],
+        "correct_option": "A",
+        "figure_description": "Four circular pie charts labeled A, B, C, and D:\n- Chart A: Divided into four sectors. The entire left half is labeled 'Pine'. The upper-right quadrant is labeled 'Spruce'. The lower-right quadrant is divided equally into two sectors labeled 'Oak' (top) and 'Birch' (bottom).\n- Chart B: Divided into four sectors. The left half is labeled 'Pine'. The right half is divided into three sectors labeled 'Spruce' (top), 'Oak' (middle), and 'Birch' (bottom).\n- Chart C: Divided into four equal quadrants labeled 'Pine' (top-left), 'Spruce' (top-right), 'Birch' (bottom-left), and 'Oak' (bottom-right).\n- Chart D: Divided into four sectors. The left half is labeled 'Birch'. The right half is divided into three sectors: a larger top sector labeled 'Oak', a narrow middle sector labeled 'Pine', and a bottom sector labeled 'Spruce'.",
+        "pct_correct_intl_avg": 61.1,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.13135,
+          "location": -0.62229,
+          "guessing": 0.11457
+        }
+      },
+      {
+        "rank": 6,
+        "cosine_similarity": 0.789,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Fractions and Decimals",
+        "cognitive_domain": "Knowing",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Joe spent 3/10 of his money on a pen and 5/10 of it on a book.\n\nWhat fraction of his money did he spend?\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "8/10 or equivalent"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "8/20",
+              "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          },
+          {
+            "category": "Nonresponse",
+            "descriptors": [
+              "Blank"
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 36.6,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.95518,
+          "location": 0.16857
+        }
+      },
+      {
+        "rank": 7,
+        "cosine_similarity": 0.823,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Measurement",
+        "main_topic": "Tools, Techniques, and Formulas",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "George practiced soccer six days a week.\n\nFor 3 of the days he practiced for 45 minutes each day.\n\nFor 3 of the days he practiced for 20 minutes each day.\n\nIn hours and minutes, what is the total amount of time George practiced on these six days?",
+        "options": [
+          {
+            "label": "A",
+            "text": "2 hours 20 minutes"
+          },
+          {
+            "label": "B",
+            "text": "2 hours 55 minutes"
+          },
+          {
+            "label": "C",
+            "text": "3 hours 5 minutes"
+          },
+          {
+            "label": "D",
+            "text": "3 hours 15 minutes"
+          }
+        ],
+        "correct_option": "D",
+        "pct_correct_intl_avg": 37,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.87,
+          "location": 0.777,
+          "guessing": 0.094
+        }
+      },
+      {
+        "rank": 8,
+        "cosine_similarity": 0.802,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Data Display",
+        "main_topic": "Organizing and Representing",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "| Street | Number of houses |\n| --- | --- |\n| Main | [Image: 5 house symbols] |\n| Center | [Image: 2 house symbols] |\n| First | [Image: 3 house symbols] |\n| Hill | |\n\nMary is making a chart to show the number of houses on some streets.\nEvery [Image: house symbol] stands for 5 houses. There are 20 houses on Hill Street.\nHow many [Image: house symbol] should Mary put in the chart beside Hill Street?",
+        "options": [
+          {
+            "label": "A",
+            "text": "4"
+          },
+          {
+            "label": "B",
+            "text": "5"
+          },
+          {
+            "label": "C",
+            "text": "15"
+          },
+          {
+            "label": "D",
+            "text": "20"
+          }
+        ],
+        "correct_option": "A",
+        "figure_description": "A pictograph table with two columns: \"Street\" on the left and \"Number of houses\" on the right. Under \"Street\" are rows labeled Main, Center, First, and Hill. Beside Main are 5 small house symbols in a horizontal row. Beside Center are 2 small house symbols. Beside First are 3 small house symbols. Beside Hill the row is empty. The house symbol is a simple outline of a house with a pitched roof and a doorway.",
+        "pct_correct_intl_avg": 56.7,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.39727,
+          "location": -0.24326,
+          "guessing": 0.1129
+        }
+      },
+      {
+        "rank": 9,
+        "cosine_similarity": 0.775,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Data",
+        "main_topic": "Data Interpretation",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "This chart shows temperature readings made at different times on four days.\n\n| TEMPERATURES | | | | | |\n| :--- | :---: | :---: | :---: | :---: | :---: |\n| | 6 a.m. | 9 a.m. | Noon | 3 p.m. | 8 p.m. |\n| Monday | 15° | 17° | 20° | 21° | 19° |\n| Tuesday | 15° | 15° | 15° | 10° | 9° |\n| Wednesday | 8° | 10° | 14° | 13° | 15° |\n| Thursday | 8° | 11° | 14° | 17° | 20° |\n\nWhen was the highest temperature recorded?",
+        "options": [
+          {
+            "label": "A",
+            "text": "Noon on Monday"
+          },
+          {
+            "label": "B",
+            "text": "3 p.m. on Monday"
+          },
+          {
+            "label": "C",
+            "text": "Noon on Tuesday"
+          },
+          {
+            "label": "D",
+            "text": "3 p.m. on Wednesday"
+          }
+        ],
+        "correct_option": "B",
+        "pct_correct_intl_avg": 74,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.71,
+          "location": -1.008,
+          "guessing": 0.102
+        }
+      },
+      {
+        "rank": 10,
+        "cosine_similarity": 0.789,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Measurement",
+        "main_topic": "Tools, Techniques, and Formulas",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Here is a calendar for December.\n\nDECEMBER\n\n| S | M | T | W | T | F | S |\n| --- | --- | --- | --- | --- | --- | --- |\n| | | | 1 | 2 | 3 | 4 |\n| 5 | 6 | 7 | 8 | 9 | 10 | 11 |\n| 12 | 13 | 14 | 15 | 16 | 17 | 18 |\n| 19 | 20 | 21 | 22 | 23 | 24 | 25 |\n| 26 | 27 | 28 | 29 | 30 | 31 | |\n\nMary’s birthday is on Thursday, December 2. She is going on a trip exactly 3 weeks later. On what date will she go on the trip?",
+        "options": [
+          {
+            "label": "A",
+            "text": "December 16th"
+          },
+          {
+            "label": "B",
+            "text": "December 21st"
+          },
+          {
+            "label": "C",
+            "text": "December 23rd"
+          },
+          {
+            "label": "D",
+            "text": "December 30th"
+          }
+        ],
+        "correct_option": "C",
+        "pct_correct_intl_avg": 64,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.651,
+          "location": -0.707,
+          "guessing": 0.111
+        }
+      }
+    ]
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 2.79,
+      "confidence": 0.54,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.06,
+        "2": 0.38,
+        "3": 0.27999999999999997,
+        "4": 0.2,
+        "5": 0.03,
+        "6": 0.01,
+        "7": 0.01,
+        "8": 0.01
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 2.64,
+      "confidence": 0.46,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.25,
+        "2": 0.3,
+        "3": 0.14,
+        "4": 0.09,
+        "5": 0.09,
+        "6": 0.05,
+        "7": 0.02,
+        "8": 0.01,
+        "9": 0.01
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 1.91,
+      "confidence": 0.39,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.45,
+        "2": 0.21,
+        "3": 0.3,
+        "4": 0.03,
+        "5": 0.0
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 7430,
+  "output_tokens": 45,
+  "cost_usd": 0.00031206,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791918360-XoFxNWAouDVmVAalroha",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 2.79,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.06,
+          "2": 0.38,
+          "3": 0.27999999999999997,
+          "4": 0.2,
+          "5": 0.03,
+          "6": 0.01,
+          "7": 0.01,
+          "8": 0.01
+        },
+        "confidence": 0.54
+      },
+      "location": {
+        "type": "score",
+        "score": 2.64,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.25,
+          "2": 0.3,
+          "3": 0.14,
+          "4": 0.09,
+          "5": 0.09,
+          "6": 0.05,
+          "7": 0.02,
+          "8": 0.01,
+          "9": 0.01
+        },
+        "confidence": 0.46
+      },
+      "guessing": {
+        "type": "score",
+        "score": 1.91,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.45,
+          "2": 0.21,
+          "3": 0.3,
+          "4": 0.03,
+          "5": 0
+        },
+        "confidence": 0.39
+      }
+    },
+    "usage": {
+      "input_tokens": 7430,
+      "output_tokens": 45,
+      "cost": 0.00031206
+    },
+    "id": "gen-dec-1791918360-XoFxNWAouDVmVAalroha",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T19:06:01+00:00",
+  "seconds": null
+}

@@ -1,0 +1,733 @@
+{
+  "item_id": "M031327",
+  "assessment": "TIMSS 2003",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Geometry",
+  "main_topic": "Lines and Angles",
+  "cognitive_domain": "Knowing Facts and Procedures",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 2003/grade 4/Mathematics/M031327"
+  ],
+  "similar_items": [
+    {
+      "rank": 1,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M031274",
+      "item_id": "M031274",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8875,
+      "pct_correct_intl_avg": 50.6,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.79789,
+      "location": -0.49527
+    },
+    {
+      "rank": 2,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M041146",
+      "item_id": "M041146",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8904,
+      "pct_correct_intl_avg": 53.7,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.73154,
+      "location": -0.44274
+    },
+    {
+      "rank": 3,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M051015",
+      "item_id": "M051015",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8417,
+      "pct_correct_intl_avg": 42,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.60974,
+      "location": 0.17929
+    },
+    {
+      "rank": 4,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M041328",
+      "item_id": "M041328",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8868,
+      "pct_correct_intl_avg": 53,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.79695,
+      "location": -0.43893
+    },
+    {
+      "rank": 5,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M031298",
+      "item_id": "M031298",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8474,
+      "pct_correct_intl_avg": 29,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.833,
+      "location": 0.845
+    },
+    {
+      "rank": 6,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M031322",
+      "item_id": "M031322",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8686,
+      "pct_correct_intl_avg": 67,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.42,
+      "location": -1.458
+    },
+    {
+      "rank": 7,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M041327",
+      "item_id": "M041327",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8446,
+      "pct_correct_intl_avg": 47,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.57923,
+      "location": 0.02065
+    },
+    {
+      "rank": 8,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M031272A",
+      "item_id": "M031272A",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8324,
+      "pct_correct_intl_avg": 75,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.811,
+      "location": -1.231
+    },
+    {
+      "rank": 9,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M031272B",
+      "item_id": "M031272B",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8368,
+      "pct_correct_intl_avg": 83,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.717,
+      "location": -2.066
+    },
+    {
+      "rank": 10,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M031272C",
+      "item_id": "M031272C",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8215,
+      "pct_correct_intl_avg": 47,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.918,
+      "location": 0.12
+    }
+  ],
+  "context": "item+references",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2003",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Geometry",
+      "main_topic": "Lines and Angles",
+      "cognitive_domain": "Knowing Facts and Procedures",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "On the grid, draw a line parallel to line L.\n\n[Image: A grid with line L]",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "Line (or lines) parallel to L"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "Line perpendicular to L shown",
+            "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+          ]
+        }
+      ],
+      "figure_description": "A grid measuring 11 squares wide by 6 squares high. A straight line segment with arrowheads at both ends is labeled L near its upper-right end. The line follows the diagonals of grid squares at a 45-degree angle (slope of 1), extending from the grid intersection located 3 units from the left and 2 units from the bottom to the intersection located 6 units from the left and 5 units from the bottom.",
+      "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data."
+    },
+    "reference_items": [
+      {
+        "rank": 1,
+        "cosine_similarity": 0.887,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometric Shapes and Measures",
+        "main_topic": "Location and Movement",
+        "cognitive_domain": "Applying",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "On the grid below, draw the reflection of the shape in the dotted line of symmetry.\n\n[Image: Grid with a polygon and a dashed line of symmetry]",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Image correctly drawn"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "One or more of image lines drawn correctly, but image not completely correct",
+              "Attempt to sketch an image under a transformation other than reflection (e.g., translation of image)",
+              "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+            ]
+          },
+          {
+            "category": "Nonresponse",
+            "descriptors": [
+              "Blank"
+            ]
+          }
+        ],
+        "figure_description": "An 8 by 8 grid of square cells with a vertical dashed line of symmetry running along the central vertical grid line (between the 4th and 5th columns from the left).\nTo the right of the dashed line is a six-sided polygon with vertices at grid intersections (with column lines 0 to 8 from left to right, and row lines 0 to 8 from top to bottom):\n- (column 4, row 3) on the dashed line\n- (column 5, row 2)\n- (column 6, row 4)\n- (column 7, row 4)\n- (column 7, row 6)\n- (column 4, row 5) on the dashed line\n\nThe edges of the polygon connect these vertices in sequence:\n- A straight segment from (4, 3) up and right to (5, 2)\n- A segment from (5, 2) down and right to (6, 4)\n- A horizontal segment from (6, 4) to (7, 4)\n- A vertical segment from (7, 4) down to (7, 6)\n- A slanted segment from (7, 6) up and left to (4, 5)\n- A vertical segment of length 2 along the dashed line from (4, 5) up to (4, 3)",
+        "pct_correct_intl_avg": 50.6,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.79789,
+          "location": -0.49527
+        }
+      },
+      {
+        "rank": 2,
+        "cosine_similarity": 0.89,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometric Shapes and Measures",
+        "main_topic": "Two- and Three-dimensional Shapes",
+        "cognitive_domain": "Applying",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Here are two sides of a rectangle. Draw the other two sides.\n\n[Image: Two sides of a rectangle drawn on a grid]",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Correct rectangle drawn with the fourth vertex lying within the circle, as shown below.\nNote: The center of the circle is the correct position for the vertex. The radius of the circle is half the length of a square on the grid.\n[Image: A grid showing the completed rectangle with the missing sides dashed, and an enlarged inset showing a circle centered on the correct fourth vertex]"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          },
+          {
+            "category": "Nonresponse",
+            "descriptors": [
+              "Blank"
+            ]
+          }
+        ],
+        "figure_description": "A 10 by 10 grid of identical square units. Two line segments forming a 90° angle are drawn on the grid:\n- The corner vertex shared by both segments is at grid intersection (2, 5), counting from the bottom-left corner at (0, 0).\n- The shorter segment extends diagonally up and right across 2 squares, ending at grid intersection (4, 7).\n- The longer segment extends diagonally down and right across 4 squares, ending at grid intersection (6, 1).",
+        "pct_correct_intl_avg": 53.7,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.73154,
+          "location": -0.44274
+        }
+      },
+      {
+        "rank": 3,
+        "cosine_similarity": 0.842,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometric Shapes and Measures",
+        "main_topic": "Two- and Three-dimensional Shapes",
+        "cognitive_domain": "Applying",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Jay has to draw a shape.\n- It must have 5 sides.\n- It must have one line of symmetry.\nJay has started to draw the shape.\nComplete Jay’s shape.\n\n[Image: an incomplete shape with three sides forming a rectangle on a grid.]",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Correct shape drawn which has 5 sides and 1 line of symmetry. The new vertex must be within ±2 mm of the line of symmetry (accept the new vertex anywhere on the line of symmetry, provided there are 5 sides).\n[Image: figure drawn on grid with three lines forming an incomplete rectangle on the bottom. Two lines drawn on top to close the figure and form a convex interior angle.] OR\n[Image: figure drawn on grid with three lines forming an incomplete rectangle on the bottom. Two lines sloping inwards are drawn on top to close the figure and form a convex interior angle.]"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "[Image: figure drawn on grid with three lines forming an incomplete rectangle on the bottom. The rectangle is completed with a fourth line and then two additional lines are drawn on top to close the figure and form a convex interior angle.]",
+              "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "figure_description": "A 10 by 10 square grid. A three-sided incomplete shape is drawn with thick black lines along the grid lines: a horizontal bottom segment 6 units long (leaving 2 units of margin on the left and 2 units on the right along the bottom edge of the grid), and two vertical segments each 4 units tall rising upward from the two ends of the bottom segment (leaving 6 units of grid space above them). The top of the shape is open.",
+        "pct_correct_intl_avg": 42,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.60974,
+          "location": 0.17929
+        }
+      },
+      {
+        "rank": 4,
+        "cosine_similarity": 0.887,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometric Shapes and Measures",
+        "main_topic": "Two- and Three-dimensional Shapes",
+        "cognitive_domain": "Applying",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: a grid divided into two halves by line labeled m. A triangle is drawn on the left side.]\nDraw the reflection of the triangle. Line m is the mirror line.",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Correct figure drawn (each vertex should be within 2 mm of the correct position)\n[Image: a grid divided into two halves by a line labeled m. On the left, a right triangle is drawn with the hypotenuse to the left, and the right angle to the bottom right. On the right, the same triangle is drawn, but with the hypotenuse on the right and the right angle on to bottom left.]"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "figure_description": "A square grid 6 units wide and 6 units tall. A vertical dashed line labeled \"m\" at the bottom divides the grid vertically down the center (3 units from the left edge and 3 units from the right edge). On the left side of line m, a right triangle is drawn along the grid lines with vertices at:\n- 2 units from the left edge and 2 units above the bottom edge (the right-angled vertex, located 1 unit to the left of line m)\n- 1 unit from the left edge and 2 units above the bottom edge (located 2 units to the left of line m)\n- 2 units from the left edge and 5 units above the bottom edge (1 unit below the top edge, located 1 unit to the left of line m).\nThe vertical leg of the triangle is 3 units long and lies along the grid line 1 unit to the left of line m; the horizontal base is 1 unit long and lies 2 units above the bottom edge.",
+        "pct_correct_intl_avg": 53,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.79695,
+          "location": -0.43893
+        }
+      },
+      {
+        "rank": 5,
+        "cosine_similarity": 0.847,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Measurement",
+        "main_topic": "Tools, Techniques, and Formulas",
+        "cognitive_domain": "Reasoning",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: Incomplete figure on a grid]\n\nThe squares in the grid above have areas of 1 square centimeter. Draw lines to complete the figure so that it has an area of 13 square centimeters.",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Lines drawn to give area of 13 square cm"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Error due to counting half squares as full square centimeters",
+              "One line drawn to close given figure",
+              "Symmetrical figure drawn",
+              "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "figure_description": "A grid measuring 8 squares wide and 6 squares high. At the bottom right of the grid, a single square cell is indicated with dimension arrows showing a width of '1 cm' and a height of '1 cm'. An incomplete polygon is drawn with heavy black lines on the grid intersections:\n- A horizontal segment 4 units long on the 1st horizontal line from the top, extending from column 1 to column 5 (where grid lines are numbered 0 to 8 horizontally, and 0 to 6 vertically).\n- From the point (1, 1), a diagonal segment runs down and right 2 units horizontally and 2 units vertically to (3, 3).\n- From (3, 3), a vertical segment runs down 2 units to (3, 5).\n- From (3, 5), a horizontal segment runs right 2 units to (5, 5).\nThe points (5, 1) and (5, 5) are currently open endpoints.",
+        "pct_correct_intl_avg": 29,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.833,
+          "location": 0.845
+        }
+      },
+      {
+        "rank": 6,
+        "cosine_similarity": 0.869,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Measurement",
+        "main_topic": "Tools, Techniques, and Formulas",
+        "cognitive_domain": "Knowing Facts and Procedures",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: Grid with horizontal line segment AB]\n\nDraw a triangle in the grid so that the line AB is the base of the triangle and the two new sides are the same length as each other.",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Triangle with two new sides equal (i.e. meeting on or within 2mm of the gridline that is the perpendicular bisector of AB)"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Triangle with two new sides unequal",
+              "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "figure_description": "A square grid 10 units wide and 6 units high. A heavy horizontal line segment is drawn along the fourth horizontal grid line from the top (second from the bottom), spanning 3 grid units from the second vertical grid line from the left to the fifth vertical grid line from the left. The left endpoint of this segment is labeled 'A' directly below it, and the right endpoint is labeled 'B' directly below it.",
+        "pct_correct_intl_avg": 67,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.42,
+          "location": -1.458
+        }
+      },
+      {
+        "rank": 7,
+        "cosine_similarity": 0.845,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometric Shapes and Measures",
+        "main_topic": "Two- and Three-dimensional Shapes",
+        "cognitive_domain": "Applying",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Draw the line of symmetry on this shape.\n\n[Image: an elongated kite shape figure with two pointy-ends at either end.]",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Line drawn correctly as shown\n[Image: an elongated kite shape figure with two pointy ends at either end. A dotted line goes lengthwise through the figure, through the pointy ends.]"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "figure_description": "A quadrilateral kite shape oriented diagonally on a blank background. It has a sharp, acute vertex pointing toward the bottom left. From this vertex, two long straight sides of equal length extend upward and to the right: one side goes steeply up and right to an upper vertex, and the other side goes gently up and right to a lower-right vertex. The top side is a short horizontal segment extending rightward from the upper vertex, and the right side is a short vertical segment extending upward from the lower-right vertex, meeting at a top-right corner.",
+        "pct_correct_intl_avg": 47,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.57923,
+          "location": 0.02065
+        }
+      },
+      {
+        "rank": 8,
+        "cosine_similarity": 0.832,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Two- and Three-Dimensional Shapes",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "A. Draw 1 straight line on this rectangle to divide it into 2 triangles.\n\n[Image: Rectangle]",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "One diagonal drawn"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "One horizontal or vertical line drawn",
+              "Other incorrect (including crossed out/erased, stray marks, illegible or off task)"
+            ]
+          }
+        ],
+        "figure_description": "An outline of an empty rectangle, wider than it is tall, with horizontal top and bottom sides and vertical left and right sides.",
+        "pct_correct_intl_avg": 75,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.811,
+          "location": -1.231
+        }
+      },
+      {
+        "rank": 9,
+        "cosine_similarity": 0.837,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Two- and Three-Dimensional Shapes",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "B. Draw 1 straight line on this rectangle to divide it into 2 rectangles.\n\n[Image: Rectangle]",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "One horizontal or vertical line drawn"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Incorrect (including crossed out/erased, stray marks, illegible or off task)"
+            ]
+          }
+        ],
+        "figure_description": "An outline of an empty rectangle, wider than it is tall, with horizontal top and bottom sides and vertical left and right sides.",
+        "pct_correct_intl_avg": 83,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.717,
+          "location": -2.066
+        }
+      },
+      {
+        "rank": 10,
+        "cosine_similarity": 0.821,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Two- and Three-Dimensional Shapes",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "C. Draw 2 straight lines on this rectangle to divide it into 1 rectangle and 2 triangles.\n\n[Image: Rectangle]",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Two lines correctly drawn to show a smaller rectangle and two triangles"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Attempt made with two lines drawn but drawing does not show a line dividing the rectangle into 2 rectangles with a diagonal accurately drawn in one of them",
+              "Other incorrect (including crossed out/erased, stray marks, illegible or off task)"
+            ]
+          }
+        ],
+        "figure_description": "An outline of an empty rectangle, wider than it is tall, with horizontal top and bottom sides and vertical left and right sides.",
+        "pct_correct_intl_avg": 47,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.918,
+          "location": 0.12
+        }
+      }
+    ]
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 2.09,
+      "confidence": 0.72,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.09,
+        "1": 0.09,
+        "2": 0.65,
+        "3": 0.09,
+        "4": 0.03,
+        "5": 0.02,
+        "6": 0.01,
+        "7": 0.01,
+        "8": 0.01
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 2.15,
+      "confidence": 0.52,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.12,
+        "1": 0.28,
+        "2": 0.35,
+        "3": 0.08,
+        "4": 0.06,
+        "5": 0.04,
+        "6": 0.03,
+        "7": 0.02,
+        "8": 0.01,
+        "9": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 6248,
+  "output_tokens": 31,
+  "cost_usd": 0.000262416,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791918365-nK8sxiEJ0JHRX4WIDfJL",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 2.09,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.09,
+          "1": 0.09,
+          "2": 0.65,
+          "3": 0.09,
+          "4": 0.03,
+          "5": 0.02,
+          "6": 0.01,
+          "7": 0.01,
+          "8": 0.01
+        },
+        "confidence": 0.72
+      },
+      "location": {
+        "type": "score",
+        "score": 2.15,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.12,
+          "1": 0.28,
+          "2": 0.35,
+          "3": 0.08,
+          "4": 0.06,
+          "5": 0.04,
+          "6": 0.03,
+          "7": 0.02,
+          "8": 0.01,
+          "9": 0.01
+        },
+        "confidence": 0.52
+      }
+    },
+    "usage": {
+      "input_tokens": 6248,
+      "output_tokens": 31,
+      "cost": 0.000262416
+    },
+    "id": "gen-dec-1791918365-nK8sxiEJ0JHRX4WIDfJL",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T19:06:05+00:00",
+  "seconds": null
+}

@@ -1,0 +1,761 @@
+{
+  "item_id": "M041115B",
+  "assessment": "TIMSS 2011",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Number",
+  "main_topic": "Patterns and Relationships",
+  "cognitive_domain": "Reasoning",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M041115A",
+    "TIMSS 2011/grade 4/Mathematics/M041115B"
+  ],
+  "similar_items": [
+    {
+      "rank": 1,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M051601",
+      "item_id": "M051601",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.9017,
+      "pct_correct_intl_avg": 54,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.88856,
+      "location": -0.3847
+    },
+    {
+      "rank": 2,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M031079C",
+      "item_id": "M031079C",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.9047,
+      "pct_correct_intl_avg": 39,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.7045,
+      "location": 0.40604
+    },
+    {
+      "rank": 3,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M031079B",
+      "item_id": "M031079B",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.9043,
+      "pct_correct_intl_avg": 68,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.10576,
+      "location": -0.85922
+    },
+    {
+      "rank": 4,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M031344C",
+      "item_id": "M031344C",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.7823,
+      "pct_correct_intl_avg": 44,
+      "irt_model": "GPCM",
+      "scaled_points": 2,
+      "slope": 0.456,
+      "location": -0.123,
+      "step1": -1.983,
+      "step2": 1.983
+    },
+    {
+      "rank": 5,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M031346C",
+      "item_id": "M031346C",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.7784,
+      "pct_correct_intl_avg": 24,
+      "irt_model": "GPCM",
+      "scaled_points": 2,
+      "slope": 1.31278,
+      "location": 0.1474,
+      "step1": 0.47389,
+      "step2": -0.47389
+    },
+    {
+      "rank": 6,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/K6",
+      "item_id": "K6",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.8803,
+      "pct_correct_intl_avg": 63,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.753,
+      "location": -0.253,
+      "guessing": 0.198
+    },
+    {
+      "rank": 7,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M031346B",
+      "item_id": "M031346B",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8065,
+      "pct_correct_intl_avg": 31,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.69011,
+      "location": 0.42089
+    },
+    {
+      "rank": 8,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M041158",
+      "item_id": "M041158",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8721,
+      "pct_correct_intl_avg": 63,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.75915,
+      "location": -0.462,
+      "guessing": 0.22262
+    },
+    {
+      "rank": 9,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M031009",
+      "item_id": "M031009",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.826,
+      "pct_correct_intl_avg": 34,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.79578,
+      "location": 0.48436
+    },
+    {
+      "rank": 10,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M031134",
+      "item_id": "M031134",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.7697,
+      "pct_correct_intl_avg": 27.7,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.56981,
+      "location": 0.85068
+    }
+  ],
+  "context": "item+references",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2011",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Number",
+      "main_topic": "Patterns and Relationships",
+      "cognitive_domain": "Reasoning",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "Bill is arranging squares in the following way:\n\n[Image: Figure 1 with one column of two squares, Figure 2 with two columns of two squares for each column, and Figure 3 with three columns of two squares for each column.]\n\nB. How many squares would Bill need to make Figure 16?\n\nAnswer: ____",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "32/ twice 16/ or equivalent"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "Incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+          ]
+        }
+      ],
+      "figure_description": "Three figures made of identical square tiles arranged in a grid: Figure 1 consists of 1 column of 2 squares stacked vertically, labeled \"Figure 1\". Figure 2 consists of 2 columns of 2 squares each (a 2-by-2 square), labeled \"Figure 2\". Figure 3 consists of 3 columns of 2 squares each (a 3-by-2 rectangle), labeled \"Figure 3\".",
+      "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data."
+    },
+    "reference_items": [
+      {
+        "rank": 1,
+        "cosine_similarity": 0.902,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Patterns and Relationships",
+        "cognitive_domain": "Applying",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Cooney has to form figures 1 to 4 with matches.\n\nFigures 1, 2, and 3 are shown below.\n\nHe needs four matches to form figure 1, seven matches to form figure 2, and ten matches to form figure 3.\n\nHe uses the same rule each time to make the next figure in the pattern.\n\n[Image: that figure 1 forms a square with four matches, figure 2 forms two squares side by side with seven matches, and figure 3 forms three squares side by side with ten matches.]\n\nHow many matches will he need to form figure 4?\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "13"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "[Image: four squares side by side formed with 13 matches.]",
+              "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "figure_description": "Three figures made of matches arranged in a horizontal row, labeled below with numbers 1, 2, and 3:\n- Figure 1: 4 matches arranged to form a single square (one match on each of the four sides).\n- Figure 2: 7 matches arranged to form a row of two attached squares side by side, sharing one vertical match in the middle (2 top, 2 bottom, and 3 vertical matches).\n- Figure 3: 10 matches arranged to form a row of three attached squares side by side, each adjacent pair sharing a vertical match (3 top, 3 bottom, and 4 vertical matches).",
+        "pct_correct_intl_avg": 54,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.88856,
+          "location": -0.3847
+        }
+      },
+      {
+        "rank": 2,
+        "cosine_similarity": 0.905,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Patterns and Relationships",
+        "cognitive_domain": "Reasoning",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: four figures with various numbers of circles connected.]\n\nA sequence of four figures is shown above.\n\nC. If the figures were continued, how many circles would there be in Figure 10? (Do not draw the figures.)\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "19"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "figure_description": "Four figures labeled 'Figure 1', 'Figure 2', 'Figure 3', and 'Figure 4' are displayed from left to right:\n- Figure 1 consists of a single circle.\n- Figure 2 consists of 3 circles forming an arch or inverted V-shape: 1 circle at the top, with 1 circle touching its lower left and 1 circle touching its lower right.\n- Figure 3 consists of 5 circles forming an arch: 1 circle at the apex, with 2 circles extending down to the left and 2 circles extending down to the right.\n- Figure 4 consists of 7 circles forming an arch: 1 circle at the apex, with 3 circles extending down to the left and 3 circles extending down to the right.",
+        "pct_correct_intl_avg": 39,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.7045,
+          "location": 0.40604
+        }
+      },
+      {
+        "rank": 3,
+        "cosine_similarity": 0.904,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Patterns and Relationships",
+        "cognitive_domain": "Applying",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: four figures with various numbers of circles connected are shown.]\n\nA sequence of four figures is shown above.\n\nA. Complete the table below for Figure 4.\n\n| Figure | Number of Circles |\n| :---: | :---: |\n| 1 | 1 |\n| 2 | 3 |\n| 3 | 5 |\n| 4 | |\n\nB. If there were a Figure 5, how many circles would it have?\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "9"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "7",
+              "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "scoring_notes": "Note: Part A not scored",
+        "figure_description": "A horizontal sequence of four figures composed of identical circles:\n- Figure 1 consists of 1 circle, labeled \"Figure 1\" below.\n- Figure 2 consists of 3 circles forming an inverted V-shape, with 1 circle at the top touching 1 circle to the lower left and 1 circle to the lower right, labeled \"Figure 2\" below.\n- Figure 3 consists of 5 circles forming an inverted V-shape, with 1 circle at the apex, a branch of 2 circles extending downward and to the left, and a branch of 2 circles extending downward and to the right, labeled \"Figure 3\" below.\n- Figure 4 consists of 7 circles forming an inverted V-shape, with 1 circle at the apex, a branch of 3 circles extending downward and to the left, and a branch of 3 circles extending downward and to the right, labeled \"Figure 4\" below.",
+        "pct_correct_intl_avg": 68,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.10576,
+          "location": -0.85922
+        }
+      },
+      {
+        "rank": 4,
+        "cosine_similarity": 0.782,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Using Concepts",
+        "item_type": "constructed_response",
+        "max_points": 2,
+        "scaled_points": 2,
+        "stem": "Get to 20 Number Game\n\nTwo children, Joan and Herbert, are learning to play a game “Get to 20.” Here are the rules for the game.\n\nGET TO 20\nRULES\n\nPick Tiles: Each player draws three number tiles.\n\nAdd Tiles: Each player places the three tiles to make an addition problem with the sum total closest to 20.\n\nFor example, here are four ways a player who draws [1] , [4] , and [5] could place the tiles:\n\n  [5] [1]          [4] [5]          [1] [5]             [1]\n+     [4]    or  +     [1]    or  +     [4]    or     + [5]\n---------        ---------        ---------         + [4]\n       55               46               19         -----\n                                                       10\n\nThis player should choose to show the addition problem\n  15\n+  4\n----\n  19\nbecause 19 is the total closest to 20.\n\nJoan and Herbert played the game “Get to 20.”\n\nJoan picked [2] , [7] , and [9] . Herbert picked [1] , [3] , and [6] .\n\nC. Herbert said, “If I pick [1] , [4] , and [6] , I can make 20 two different ways.”\n\nShow two ways Herbert could make 20 with [1] , [4] , and [6] .\n\nFirst way:\n\nSecond way:",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Both ways correct 16 + 4 AND 14 + 6"
+            ]
+          },
+          {
+            "category": "Partially Correct Response",
+            "descriptors": [
+              "Only one way correct 16 + 4 OR 14 + 6"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 44,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "GPCM",
+        "calibrated_parameters": {
+          "slope": 0.456,
+          "location": -0.123,
+          "step1": -1.983,
+          "step2": 1.983
+        }
+      },
+      {
+        "rank": 5,
+        "cosine_similarity": 0.778,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Reasoning",
+        "item_type": "constructed_response",
+        "max_points": 2,
+        "scaled_points": 2,
+        "stem": "The town fair had a booth where people could trade cards.\n\n[Image: one animal card, an equal sign, and two cartoon cards]\n\n1 animal card is worth 2 cartoon cards.\n\n[Image: two animal cards, an equal sign, and three sports cards]\n\n2 animal cards are worth 3 sports cards.\n\nSome children went to the booth to trade cards.\n\nTrading Animal Cards\n\nC. Katrina had 6 animal cards. She wanted to trade them for as many cards as possible.\n\nHow many cartoon cards would she get? ____\n\nHow many sports cards would she get? ____\n\nShould she trade for cartoon cards or trade for sport cards?\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Numbers of cartoon cards (12) AND sports cards (9) correct AND choice (cartoon cards) correct"
+            ]
+          },
+          {
+            "category": "Partially Correct Response",
+            "descriptors": [
+              "Number of cartoon cards only correct",
+              "Number of sports cards only correct",
+              "Numbers of cartoon cards and sports cards correct but choice not shown or incorrect"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Choice of cartoon cards or sports cards with no numbers shown",
+              "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "figure_description": "Two pictorial trading equations are displayed:\n1. A single card showing a drawing of a standing bear, an equals sign (=), and two identical cards each showing an oval cartoon face with large eyes. The text below states: \"1 animal card is worth 2 cartoon cards.\"\n2. Two identical cards showing a drawing of a standing bear, an equals sign (=), and three identical cards each showing a soccer player kicking a soccer ball. The text below states: \"2 animal cards are worth 3 sports cards.\"",
+        "pct_correct_intl_avg": 24,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "GPCM",
+        "calibrated_parameters": {
+          "slope": 1.31278,
+          "location": 0.1474,
+          "step1": 0.47389,
+          "step2": -0.47389
+        }
+      },
+      {
+        "rank": 6,
+        "cosine_similarity": 0.88,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Patterns, Relations, and Functions",
+        "cognitive_domain": "Solving Problems",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Here is the beginning of a pattern of tiles.\n\n[Image: Pattern of tiles]\n\nIf the pattern continues, how many tiles will be in Figure 6?",
+        "options": [
+          {
+            "label": "A",
+            "text": "12"
+          },
+          {
+            "label": "B",
+            "text": "15"
+          },
+          {
+            "label": "C",
+            "text": "18"
+          },
+          {
+            "label": "D",
+            "text": "21"
+          }
+        ],
+        "correct_option": "C",
+        "figure_description": "Three rectangular grid figures made of square tiles, arranged horizontally:\n- Figure 1: a grid of 1 row and 3 columns, containing 3 tiles.\n- Figure 2: a grid of 2 rows and 3 columns, containing 6 tiles.\n- Figure 3: a grid of 3 rows and 3 columns, containing 9 tiles.",
+        "pct_correct_intl_avg": 63,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.753,
+          "location": -0.253,
+          "guessing": 0.198
+        }
+      },
+      {
+        "rank": 7,
+        "cosine_similarity": 0.806,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Reasoning",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "The town fair had a booth where people could trade cards.\n\n[Image: one animal card, an equal sign, and two cartoon cards.]\n\n1 animal card is worth 2 cartoon cards.\n\n[Image: two animal cards, an equal sign, and three sports cards.]\n\n2 animal cards are worth 3 sports cards.\n\nSome children went to the booth to trade cards.\n\nTrading Animal Cards\n\nB. Jim had 8 animal cards to trade for sports cards. How many sports cards would he get?\n\nAnswer: ____ sports cards",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "12"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "16",
+              "24",
+              "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "figure_description": "Two trade equations are illustrated with rectangular cards:\n1. Top equation: 1 card depicting a bear is on the left, an equals sign (=) is in the middle, and 2 identical cards depicting an oval cartoon face are on the right.\n2. Bottom equation: 2 identical cards depicting a bear are on the left, an equals sign (=) is in the middle, and 3 identical cards depicting a sports player kicking a ball are on the right.",
+        "pct_correct_intl_avg": 31,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.69011,
+          "location": 0.42089
+        }
+      },
+      {
+        "rank": 8,
+        "cosine_similarity": 0.872,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometric Shapes and Measures",
+        "main_topic": "Two- and Three-dimensional Shapes",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: a stack of square boxes in the corner of a room.]\n\nAnn stacks these boxes in the corner of the room. All the boxes are the same size.\nHow many boxes does she use?",
+        "options": [
+          {
+            "label": "A",
+            "text": "25"
+          },
+          {
+            "label": "B",
+            "text": "19"
+          },
+          {
+            "label": "C",
+            "text": "18"
+          },
+          {
+            "label": "D",
+            "text": "13"
+          }
+        ],
+        "correct_option": "C",
+        "figure_description": "An isometric drawing shows a stack of identical cube-shaped boxes resting in the corner of a room. Three line segments represent the room's edges meeting at the corner behind the stack: a vertical line extends straight up from the top-back corner of the stack, a line extends down and to the left from the bottom-left of the stack along the floor, and a line extends to the right from the bottom-right of the stack along the floor.\n\nThe stack rests on the floor against both walls. The base layer is completely filled, measuring 3 cubes deep along the left wall and 4 cubes wide along the back wall (a 3 by 4 grid of cubes).\n\nA second layer of cubes is stacked on top against the corner in a stepped pattern:\n- Along the back wall (row 1, closest to the back wall), the first 3 columns from the left are 2 cubes high, and the 4th column is 1 cube high.\n- In the middle row (row 2), the first 2 columns from the left are 2 cubes high, and the remaining 2 columns are 1 cube high.\n- In the front row (row 3), the first column on the left is 2 cubes high, and the remaining 3 columns are 1 cube high.",
+        "pct_correct_intl_avg": 63,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.75915,
+          "location": -0.462,
+          "guessing": 0.22262
+        }
+      },
+      {
+        "rank": 9,
+        "cosine_similarity": 0.826,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Applying",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Georgia wants to send letters to 12 of her friends. Half of the letters will need 1 page each and the other half will need 2 pages each. How many pages will be needed altogether?\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "18"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "24",
+              "36",
+              "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 34,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.79578,
+          "location": 0.48436
+        }
+      },
+      {
+        "rank": 10,
+        "cosine_similarity": 0.77,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Data Display",
+        "main_topic": "Organizing and Representing",
+        "cognitive_domain": "Applying",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: Slips of paper with numbers]\n\nJasmin asked her classmates to write down how many brothers and sisters they had. She collected their answers and started to make a tally chart. She put in the two marks for the zeroes.\n\nComplete Jasmin's tally chart.\n\n| Number of brothers and sisters | Tally |\n| --- | --- |\n| 0 | // |\n| 1 | |\n| 2 | |\n| 3 | |\n| 4 | |",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Number of tally marks in table as listed below.\n\n| Number | Number of Tally Marks |\n| --- | --- |\n| 1 | 5 tally marks |\n| 2 | 4 tally marks |\n| 3 | 3 tally marks |\n| 4 | 2 tally marks |"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "One tally incorrect",
+              "Two or more tallies incorrect",
+              "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+            ]
+          },
+          {
+            "category": "Nonresponse",
+            "descriptors": [
+              "Blank"
+            ]
+          }
+        ],
+        "figure_description": "At the top of the item, 16 small slips of paper are scattered, each showing a single number:\n- Two slips show the digit 0\n- Five slips show the digit 1\n- Four slips show the digit 2\n- Three slips show the digit 3\n- Two slips show the digit 4",
+        "pct_correct_intl_avg": 27.7,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.56981,
+          "location": 0.85068
+        }
+      }
+    ]
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 2.55,
+      "confidence": 0.69,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.04,
+        "2": 0.67,
+        "3": 0.12,
+        "4": 0.07,
+        "5": 0.03,
+        "6": 0.03,
+        "7": 0.01,
+        "8": 0.02
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 1.94,
+      "confidence": 0.69,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.08,
+        "1": 0.27,
+        "2": 0.44,
+        "3": 0.12,
+        "4": 0.06,
+        "5": 0.02,
+        "6": 0.01,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 6660,
+  "output_tokens": 31,
+  "cost_usd": 0.00027972,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791918376-yPXU7vJDMreqYMVQ0sbr",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 2.55,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.04,
+          "2": 0.67,
+          "3": 0.12,
+          "4": 0.07,
+          "5": 0.03,
+          "6": 0.03,
+          "7": 0.01,
+          "8": 0.02
+        },
+        "confidence": 0.69
+      },
+      "location": {
+        "type": "score",
+        "score": 1.94,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.08,
+          "1": 0.27,
+          "2": 0.44,
+          "3": 0.12,
+          "4": 0.06,
+          "5": 0.02,
+          "6": 0.01,
+          "7": 0,
+          "8": 0,
+          "9": 0
+        },
+        "confidence": 0.69
+      }
+    },
+    "usage": {
+      "input_tokens": 6660,
+      "output_tokens": 31,
+      "cost": 0.00027972
+    },
+    "id": "gen-dec-1791918376-yPXU7vJDMreqYMVQ0sbr",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T19:06:17+00:00",
+  "seconds": null
+}

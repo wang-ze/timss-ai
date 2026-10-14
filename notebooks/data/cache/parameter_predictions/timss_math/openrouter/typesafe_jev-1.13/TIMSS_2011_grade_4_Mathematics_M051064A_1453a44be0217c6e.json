@@ -1,0 +1,221 @@
+{
+  "item_id": "M051064A",
+  "assessment": "TIMSS 2011",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Geometric Shapes and Measures",
+  "main_topic": "Points, Lines, and Angles",
+  "cognitive_domain": "Knowing",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M051064A",
+    "TIMSS 2011/grade 4/Mathematics/M051064B"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2011",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Geometric Shapes and Measures",
+      "main_topic": "Points, Lines, and Angles",
+      "cognitive_domain": "Knowing",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "A. Complete the table to show where the places are.\n\nThe first one has been done for you.\n\n| Places | Grid Square |\n| :--- | :--- |\n| Playground | B2 |\n| School | |\n| Corner of Maple and Oak Streets | |\n\n[Image: a map with the x-axis labeled A to F from left to right and the y-axis labeled 1 to 4 from down to up on a grid with various squares labeled Playground, Library, Shop, and Fire Station.]",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "Both the places are correct: School (F2) AND Maple/Oak Streets (E3). Do not accept 2F or 3E."
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "School correct only (F2)",
+            "Maple/Oak correct only (E3)",
+            "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+          ]
+        }
+      ],
+      "figure_description": "A 6-by-4 grid with columns labeled A, B, C, D, E, F from left to right along the bottom, and rows labeled 1, 2, 3, 4 from bottom to top along the left. A network of wide gray roads runs through the grid: a main horizontal road runs through row 3 from column A to F; from it, a road angles upward into D4, and a vertical road runs downward through column E down to row 1. Another horizontal road segment runs across row 2 from column C through column F, with a small downward branch to square C1. Several grid squares contain illustrated locations: square B2 contains two children on a seesaw, labeled \"Playground\"; square C1 contains a building labeled \"Library\"; square E1 contains a store labeled \"Shop\"; square F2 contains a school building with a bell tower; square F4 contains a building labeled \"Fire Station\".",
+      "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.56,
+      "confidence": 0.33,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.05,
+        "1": 0.07,
+        "2": 0.17,
+        "3": 0.23,
+        "4": 0.17,
+        "5": 0.16,
+        "6": 0.09,
+        "7": 0.04,
+        "8": 0.02
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 2.43,
+      "confidence": 0.45,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.12,
+        "1": 0.24,
+        "2": 0.25,
+        "3": 0.15,
+        "4": 0.09,
+        "5": 0.08,
+        "6": 0.04,
+        "7": 0.02,
+        "8": 0.01,
+        "9": 0.0
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1241,
+  "output_tokens": 31,
+  "cost_usd": 5.2122e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914768-e4QrvQEiLlOrIPiZ9SCM",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.56,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.07,
+          "2": 0.17,
+          "3": 0.23,
+          "4": 0.17,
+          "5": 0.16,
+          "6": 0.09,
+          "7": 0.04,
+          "8": 0.02
+        },
+        "confidence": 0.33
+      },
+      "location": {
+        "type": "score",
+        "score": 2.43,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.12,
+          "1": 0.24,
+          "2": 0.25,
+          "3": 0.15,
+          "4": 0.09,
+          "5": 0.08,
+          "6": 0.04,
+          "7": 0.02,
+          "8": 0.01,
+          "9": 0
+        },
+        "confidence": 0.45
+      }
+    },
+    "usage": {
+      "input_tokens": 1241,
+      "output_tokens": 31,
+      "cost": 5.2122e-05
+    },
+    "id": "gen-dec-1791914768-e4QrvQEiLlOrIPiZ9SCM",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:08+00:00",
+  "seconds": null
+}

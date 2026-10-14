@@ -1,0 +1,224 @@
+{
+  "item_id": "M022227B",
+  "assessment": "TIMSS 2003",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Measurement",
+  "main_topic": "Tools, Techniques, and Formulas",
+  "cognitive_domain": "Solving Routine Problems",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 2003/grade 8/Mathematics/M022227A",
+    "TIMSS 2003/grade 8/Mathematics/M022227B",
+    "TIMSS 2003/grade 8/Mathematics/M022227C"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2003",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Measurement",
+      "main_topic": "Tools, Techniques, and Formulas",
+      "cognitive_domain": "Solving Routine Problems",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "The figure consists of 5 squares of equal area. The area of the whole figure is 245 cm^2.\n\n[Image: Cross shape made of 5 squares]\n\nB. Find the length of one side of one square.\n\nAnswer: ____ cm",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "7 (or sqrt(49))",
+            "Correct square root of incorrect answer to part a."
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "1 – only if the answer to part A is not 1.",
+            "Indication of division of area of one square (as obtained in part a) by 4 (e.g., 12.25, 49/4, etc.).",
+            "24.5 or other indication of division by 2.",
+            "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)."
+          ]
+        }
+      ],
+      "figure_description": "A cross-shaped figure (or plus sign) formed by 5 squares of equal size: one square in the center and four squares adjacent to each of its four sides (top, bottom, left, and right). The outer boundary of the entire shape is drawn with solid black lines, while the four interior shared edges dividing the central square from the four outer squares are drawn with dashed lines.",
+      "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.65,
+      "confidence": 0.38,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.06,
+        "2": 0.14,
+        "3": 0.25,
+        "4": 0.2,
+        "5": 0.18,
+        "6": 0.09,
+        "7": 0.03,
+        "8": 0.01
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 3.67,
+      "confidence": 0.4,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.1,
+        "2": 0.17,
+        "3": 0.23,
+        "4": 0.14,
+        "5": 0.16,
+        "6": 0.1,
+        "7": 0.05,
+        "8": 0.02,
+        "9": 0.0
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1115,
+  "output_tokens": 31,
+  "cost_usd": 4.683e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914761-vXha8Zz87IUOBbl9Q9DF",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.65,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.06,
+          "2": 0.14,
+          "3": 0.25,
+          "4": 0.2,
+          "5": 0.18,
+          "6": 0.09,
+          "7": 0.03,
+          "8": 0.01
+        },
+        "confidence": 0.38
+      },
+      "location": {
+        "type": "score",
+        "score": 3.67,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.1,
+          "2": 0.17,
+          "3": 0.23,
+          "4": 0.14,
+          "5": 0.16,
+          "6": 0.1,
+          "7": 0.05,
+          "8": 0.02,
+          "9": 0
+        },
+        "confidence": 0.4
+      }
+    },
+    "usage": {
+      "input_tokens": 1115,
+      "output_tokens": 31,
+      "cost": 4.683e-05
+    },
+    "id": "gen-dec-1791914761-vXha8Zz87IUOBbl9Q9DF",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:01+00:00",
+  "seconds": null
+}

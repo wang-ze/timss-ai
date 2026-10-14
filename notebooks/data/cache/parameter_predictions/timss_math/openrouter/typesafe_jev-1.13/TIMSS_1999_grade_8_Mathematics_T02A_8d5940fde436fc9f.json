@@ -1,0 +1,823 @@
+{
+  "item_id": "T02A",
+  "assessment": "TIMSS 1999",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Fractions and Number Sense",
+  "main_topic": null,
+  "cognitive_domain": "Investigating and Solving Problems",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 1999/grade 8/Mathematics/T02A",
+    "TIMSS 1999/grade 8/Mathematics/T02B"
+  ],
+  "similar_items": [
+    {
+      "rank": 1,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M052206",
+      "item_id": "M052206",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.861,
+      "pct_correct_intl_avg": 25,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.0351,
+      "location": 0.90572
+    },
+    {
+      "rank": 2,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M022189",
+      "item_id": "M022189",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8018,
+      "pct_correct_intl_avg": 67,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.822,
+      "location": -0.768,
+      "guessing": 0.104
+    },
+    {
+      "rank": 3,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1999/grade 8/Mathematics/T01",
+      "item_id": "T01",
+      "assessment": "TIMSS 1999",
+      "cosine_similarity": 0.8372,
+      "pct_correct_intl_avg": 33,
+      "irt_model": "GPCM",
+      "scaled_points": 2,
+      "slope": 0.641,
+      "location": 0.411,
+      "step1": -1.738,
+      "step2": 1.738
+    },
+    {
+      "rank": 4,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M052061",
+      "item_id": "M052061",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8129,
+      "pct_correct_intl_avg": 41,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.96372,
+      "location": 0.26011
+    },
+    {
+      "rank": 5,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M032647",
+      "item_id": "M032647",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.7945,
+      "pct_correct_intl_avg": 44,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.857,
+      "location": 1.342,
+      "guessing": 0.334
+    },
+    {
+      "rank": 6,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M022251",
+      "item_id": "M022251",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8319,
+      "pct_correct_intl_avg": 29,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.826,
+      "location": 1.272,
+      "guessing": 0.158
+    },
+    {
+      "rank": 7,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M032652",
+      "item_id": "M032652",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8333,
+      "pct_correct_intl_avg": 21,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.24,
+      "location": 0.797
+    },
+    {
+      "rank": 8,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M022106",
+      "item_id": "M022106",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8254,
+      "pct_correct_intl_avg": 26.5,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.97877,
+      "location": 0.65679
+    },
+    {
+      "rank": 9,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1999/grade 8/Mathematics/R15",
+      "item_id": "R15",
+      "assessment": "TIMSS 1999",
+      "cosine_similarity": 0.8224,
+      "pct_correct_intl_avg": 44,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.994,
+      "location": -0.034
+    },
+    {
+      "rank": 10,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M032701",
+      "item_id": "M032701",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8108,
+      "pct_correct_intl_avg": 78.5,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.21073,
+      "location": -1.09809,
+      "guessing": 0.1851
+    },
+    {
+      "rank": 11,
+      "found_by": "same model",
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M032381",
+      "item_id": "M032381",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8109,
+      "pct_correct_intl_avg": 37.1,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.09848,
+      "location": 0.26014
+    }
+  ],
+  "context": "item+references",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 1999",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Fractions and Number Sense",
+      "cognitive_domain": "Investigating and Solving Problems",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "A book publisher sent 140 copies of a certain book to a bookstore. The publisher packed the books in two types of boxes. One type of box held 8 copies of the book, and the other type of box held 12 copies of the book. The boxes were all full, and there were equal numbers of both types of boxes.\n\na) How many boxes holding 12 books were sent to the bookstore?\n\nAnswer: ____",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "7"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "Incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+          ]
+        }
+      ],
+      "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data."
+    },
+    "reference_items": [
+      {
+        "rank": 1,
+        "cosine_similarity": 0.861,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Geometric Measurement",
+        "cognitive_domain": "Reasoning",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Ryan is packing books into a rectangular box.\n\nAll the books are the same size.\n\n[Image: A book and a box. The book measures 20 centimeters by 15 centimeters by 6 centimeters. The box has a length of 36 centimeters, width of 30 centimeters, and height of 20 centimeters.]\n\nWhat is the largest number of books that will fit inside the box?\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "12"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "figure_description": "Two 3-dimensional diagrams:\n1. A closed rectangular book labeled \"Book\" with dimensions indicated by double-headed arrows: height/thickness 6 cm, length 20 cm along the left edge, and width 15 cm along the right-front edge.\n2. An open rectangular box labeled \"Box\" with dimensions indicated by double-headed arrows: width 30 cm along the front-left top edge, length 36 cm along the back-right top edge, and vertical height/depth of 20 cm along the inside back corner from top to bottom.",
+        "pct_correct_intl_avg": 25,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.0351,
+          "location": 0.90572
+        }
+      },
+      {
+        "rank": 2,
+        "cosine_similarity": 0.802,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Data",
+        "main_topic": "Data Interpretation",
+        "cognitive_domain": "Reasoning",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "The graph shows the number of pens, pencils, rulers, and erasers sold by a store in one week.\n\n[Image: Bar graph of items sold]\n\nThe names of the items are missing from the graph. Pens were the item most often sold, and fewer erasers than any other item were sold. More pencils than rulers were sold. How many pencils were sold?",
+        "options": [
+          {
+            "label": "A",
+            "text": "40"
+          },
+          {
+            "label": "B",
+            "text": "80"
+          },
+          {
+            "label": "C",
+            "text": "120"
+          },
+          {
+            "label": "D",
+            "text": "140"
+          }
+        ],
+        "correct_option": "C",
+        "figure_description": "A vertical bar graph. The vertical axis is labeled \"Number of Items\" with tick marks and numbers at increments of 20 from 0 up to 160 (0, 20, 40, 60, 80, 100, 120, 140, 160). The horizontal axis is labeled \"Items Sold by Store\". There are four shaded vertical bars without individual category labels beneath them. From left to right, their heights are:\n- First bar: 120\n- Second bar: 80\n- Third bar: 140\n- Fourth bar: 40",
+        "pct_correct_intl_avg": 67,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.822,
+          "location": -0.768,
+          "guessing": 0.104
+        }
+      },
+      {
+        "rank": 3,
+        "cosine_similarity": 0.837,
+        "assessment": "TIMSS 1999",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Algebra",
+        "cognitive_domain": "Investigating and Solving Problems",
+        "item_type": "constructed_response",
+        "max_points": 2,
+        "scaled_points": 2,
+        "stem": "A club has 86 members, and there are 14 more girls than boys. How many boys and how many girls are members of the club?\n\nShow your work.",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "36 boys and 50 girls [Numerical method: e.g., 86 ÷ 2 = 43; 43 − 7 = 36 boys; 43 + 7 = 50 girls]",
+              "36 boys and 50 girls [Algebraic method: e.g., b + (b + 14) = 86; 2b = 72; b = 36; g = 36 + 14 = 50]",
+              "Other fully satisfactory method including “guess and check” with justification that 36 + 50 = 86"
+            ]
+          },
+          {
+            "category": "Partial Response",
+            "descriptors": [
+              "Either 36 boys or 50 girls, with or without another (incorrect) number",
+              "36 and 50 are given [Makes correct computations but reverses labels or does not include any mention of which is boys or girls]",
+              "36 boys and 50 girls, no method shown",
+              "Gives an algebraic equation or system of equations that can lead to the correct solution",
+              "Other partially correct"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "29 boys and 57 girls [Computes 86 ÷ 2 = 43; 43 − 14 = 29 and 43 + 14 = 57]",
+              "One of the numbers is 72 [Computes 86 − 14]",
+              "29 boys and 43 girls [Computes 43 − 14 = 29]",
+              "Gives an algebraic equation or system of equations that cannot lead to a correct solution",
+              "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 33,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "GPCM",
+        "calibrated_parameters": {
+          "slope": 0.641,
+          "location": 0.411,
+          "step1": -1.738,
+          "step2": 1.738
+        }
+      },
+      {
+        "rank": 4,
+        "cosine_similarity": 0.813,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Applying",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Kim is packing eggs into boxes.\n\nEach box holds 6 eggs.\n\nShe has 94 eggs.\n\nWhat is the smallest number of boxes she needs to pack all the eggs?\n\nAnswer: ____ boxes",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "16"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "15 OR 15.6 OR 15.67 OR 15.7 OR 15 2/3",
+              "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 41,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.96372,
+          "location": 0.26011
+        }
+      },
+      {
+        "rank": 5,
+        "cosine_similarity": 0.794,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Measurement",
+        "main_topic": "Tools, Techniques, and Formulas",
+        "cognitive_domain": "Reasoning",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Oranges are packed in boxes. The average diameter of the oranges is 6 cm, and the boxes are 60 cm long, 36 cm wide, and 24 cm deep.\n\nWhich of these is the BEST approximation of the number of oranges that can be packed in a box?",
+        "options": [
+          {
+            "label": "A",
+            "text": "30"
+          },
+          {
+            "label": "B",
+            "text": "240"
+          },
+          {
+            "label": "C",
+            "text": "360"
+          },
+          {
+            "label": "D",
+            "text": "1,920"
+          }
+        ],
+        "correct_option": "B",
+        "pct_correct_intl_avg": 44,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.857,
+          "location": 1.342,
+          "guessing": 0.334
+        }
+      },
+      {
+        "rank": 6,
+        "cosine_similarity": 0.832,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Algebra",
+        "main_topic": "Algebraic Expressions",
+        "cognitive_domain": "Using Concepts",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Graham has twice as many books as Bob. Chan has six more books than Bob. If Bob has x books, which of the following represents the total number of books the three boys have?",
+        "options": [
+          {
+            "label": "A",
+            "text": "3x + 6"
+          },
+          {
+            "label": "B",
+            "text": "3x + 8"
+          },
+          {
+            "label": "C",
+            "text": "4x + 6"
+          },
+          {
+            "label": "D",
+            "text": "5x + 6"
+          },
+          {
+            "label": "E",
+            "text": "8x + 2"
+          }
+        ],
+        "correct_option": "C",
+        "pct_correct_intl_avg": 29,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.826,
+          "location": 1.272,
+          "guessing": 0.158
+        }
+      },
+      {
+        "rank": 7,
+        "cosine_similarity": 0.833,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "The teachers at Parkway School plan to send 6 newsletters per year to each of the 620 families with children at the school. The newsletters each need 2 sheets of paper. The paper is sold in packs of 500 sheets.\n\nWhat is the least number of packs of paper needed to print the school newsletter for the year?\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "15"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "14 or 14.88",
+              "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)."
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 21,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.24,
+          "location": 0.797
+        }
+      },
+      {
+        "rank": 8,
+        "cosine_similarity": 0.825,
+        "assessment": "TIMSS 2007",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Ratio, Proportion, and Percent",
+        "cognitive_domain": "Applying",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "There are 36 passengers on a bus. The ratio of children to adults on the bus is 5 to 4. How many children are on the bus?\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "20"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "9 [5 + 4 or 36 ÷ 4]",
+              "16 [number of adults]",
+              "5 [ratio of children]",
+              "27 [36 − 9]",
+              "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+            ]
+          },
+          {
+            "category": "Nonresponse",
+            "descriptors": [
+              "Blank"
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 26.5,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.97877,
+          "location": 0.65679
+        }
+      },
+      {
+        "rank": 9,
+        "cosine_similarity": 0.822,
+        "assessment": "TIMSS 1999",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Fractions and Number Sense",
+        "cognitive_domain": "Investigating and Solving Problems",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "John sold 60 magazines and Mark sold 80 magazines. The magazines were all sold for the same price. The total amount of money received for the magazines was $700. How much money did Mark receive?\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "400"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "500 [price per magazine x 100]",
+              "350 [700 ÷ 2]",
+              "300 [money John received]",
+              "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "scoring_notes": "There is no distinction made between responses with and without units.",
+        "pct_correct_intl_avg": 44,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.994,
+          "location": -0.034
+        }
+      },
+      {
+        "rank": 10,
+        "cosine_similarity": 0.811,
+        "assessment": "TIMSS 2007",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Ratio, Proportion, and Percent",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "On a school trip there was 1 teacher for every 12 students. If 108 students went on the trip, how many teachers were on the trip?",
+        "options": [
+          {
+            "label": "A",
+            "text": "7"
+          },
+          {
+            "label": "B",
+            "text": "8"
+          },
+          {
+            "label": "C",
+            "text": "9"
+          },
+          {
+            "label": "D",
+            "text": "10"
+          }
+        ],
+        "correct_option": "C",
+        "pct_correct_intl_avg": 78.5,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.21073,
+          "location": -1.09809,
+          "guessing": 0.1851
+        }
+      },
+      {
+        "rank": 11,
+        "cosine_similarity": 0.811,
+        "assessment": "TIMSS 2007",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Reasoning",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "The number of children on a trip was larger than 55, but smaller than 65.\nThe children could be divided into groups of 7, but not groups of 8.\nHow many children were on the trip?\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "63; 9 × 7; or 7 × 9"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "56; 8 × 7; or 7 × 8",
+              "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+            ]
+          },
+          {
+            "category": "Nonresponse",
+            "descriptors": [
+              "Blank"
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 37.1,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.09848,
+          "location": 0.26014
+        }
+      }
+    ]
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 2.99,
+      "confidence": 0.78,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.03,
+        "2": 0.11,
+        "3": 0.7,
+        "4": 0.09,
+        "5": 0.02,
+        "6": 0.01,
+        "7": 0.01,
+        "8": 0.01
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 4.26,
+      "confidence": 0.41,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.0,
+        "1": 0.02,
+        "2": 0.07,
+        "3": 0.27,
+        "4": 0.19,
+        "5": 0.27,
+        "6": 0.11,
+        "7": 0.05,
+        "8": 0.01,
+        "9": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 5861,
+  "output_tokens": 31,
+  "cost_usd": 0.000246162,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791918363-a9azUMKYEnLMNbkMGkcC",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 2.99,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.03,
+          "2": 0.11,
+          "3": 0.7,
+          "4": 0.09,
+          "5": 0.02,
+          "6": 0.01,
+          "7": 0.01,
+          "8": 0.01
+        },
+        "confidence": 0.78
+      },
+      "location": {
+        "type": "score",
+        "score": 4.26,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0,
+          "1": 0.02,
+          "2": 0.07,
+          "3": 0.27,
+          "4": 0.19,
+          "5": 0.27,
+          "6": 0.11,
+          "7": 0.05,
+          "8": 0.01,
+          "9": 0.01
+        },
+        "confidence": 0.41
+      }
+    },
+    "usage": {
+      "input_tokens": 5861,
+      "output_tokens": 31,
+      "cost": 0.000246162
+    },
+    "id": "gen-dec-1791918363-a9azUMKYEnLMNbkMGkcC",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T19:06:03+00:00",
+  "seconds": null
+}

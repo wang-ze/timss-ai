@@ -1,0 +1,304 @@
+{
+  "item_id": "M022232",
+  "assessment": "TIMSS 2007",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Number",
+  "main_topic": "Fractions and Decimals",
+  "cognitive_domain": "Applying",
+  "item_type": "constructed_response",
+  "max_points": 2,
+  "scaled_points": 2,
+  "irt_model": "GPCM",
+  "target_calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+  "excluded_item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M022232"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2007",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Number",
+      "main_topic": "Fractions and Decimals",
+      "cognitive_domain": "Applying",
+      "item_type": "constructed_response",
+      "max_points": 2,
+      "scaled_points": 2,
+      "stem": "Katy made a table to keep track of how long it took water in a beaker to cool from 95°C to 70°C. She measured the time it took the water to cool in 5°C intervals.\n\n| Interval Readings | Amount of Cooling Time |\n| :--- | :--- |\n| 95°C – 90°C | 2 minutes 10 seconds |\n| 90°C – 85°C | 3 minutes 19 seconds |\n| 85°C – 80°C | 4 minutes 48 seconds |\n| 80°C – 75°C | 6 minutes 55 seconds |\n| 75°C – 70°C | 9 minutes 43 seconds |\n\nEstimate to the nearest minute the total time taken for the temperature of the water in the beaker to cool from 95°C to 70°C, and explain how your estimate was made.\n\nEstimate: ____\n\nExplain:",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "27 minutes, each amount of time is correctly rounded to whole minutes before adding (e.g., 2 + 3 + 5 + 7 + 10)",
+            "27 minutes, each amount of time is correctly rounded to the nearest 5, 10, 15, or 30 seconds",
+            "27 minutes, add minutes to equal 24 and uses some approach to estimate seconds to 3 minutes",
+            "27 minutes, adds correctly and then rounds off from 26 minutes 55 seconds",
+            "27 minutes. No calculations shown. Statements might include \"rounded off to the nearest minute\", \"rounded the numbers up and down\" or similar expressions",
+            "Other fully correct"
+          ]
+        },
+        {
+          "category": "Partial Response",
+          "descriptors": [
+            "Method includes each amount of time correctly rounded to whole minutes before adding but answer is incorrect",
+            "Method includes each amount of time correctly rounded to the nearest 5, 10, 15, or 30 seconds but answer is incorrect",
+            "Other partially correct including 27 minutes with no explanation or method shown."
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "Each amount of time is rounded off, but one or more rounding is incorrect",
+            "26 minutes 55 seconds, no rounding",
+            "25 minutes 75 seconds, 25.75 minutes; or rounds off from 25.75 minutes (or equivalent)",
+            "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+          ]
+        },
+        {
+          "category": "Nonresponse",
+          "descriptors": [
+            "Blank"
+          ]
+        }
+      ],
+      "scoring_notes": "Note: There is no distinction made between responses with or without units.",
+      "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 2-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 2-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "step1": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 2-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)\". What is the item's step 1 parameter d1? In the GPCM, b - d1 is the ability at which earning the first point becomes more likely than earning no point, so a higher d1 means that this point is earned at a lower ability; the steps sum to 0. Choose the value closest to it.",
+      "criteria": [
+        "-3",
+        "-2",
+        "-1.5",
+        "-1",
+        "-0.5",
+        "0",
+        "1",
+        "2"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.73,
+      "confidence": 0.39,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.03,
+        "1": 0.05,
+        "2": 0.12,
+        "3": 0.26,
+        "4": 0.22,
+        "5": 0.18,
+        "6": 0.1,
+        "7": 0.03,
+        "8": 0.01
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 3.53,
+      "confidence": 0.47,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.1,
+        "2": 0.17,
+        "3": 0.26,
+        "4": 0.17,
+        "5": 0.16,
+        "6": 0.08,
+        "7": 0.03,
+        "8": 0.01,
+        "9": 0.0
+      }
+    },
+    "step1": {
+      "type": "score",
+      "score": 3.45,
+      "confidence": 0.35,
+      "legend": {
+        "0": "-3",
+        "1": "-2",
+        "2": "-1.5",
+        "3": "-1",
+        "4": "-0.5",
+        "5": "0",
+        "6": "1",
+        "7": "2"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.08,
+        "2": 0.16,
+        "3": 0.26,
+        "4": 0.2,
+        "5": 0.16,
+        "6": 0.07,
+        "7": 0.03
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1704,
+  "output_tokens": 45,
+  "cost_usd": 7.1568e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791989185-UlKZ3vKocLJ3Q9YMjR65",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.73,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.05,
+          "2": 0.12,
+          "3": 0.26,
+          "4": 0.22,
+          "5": 0.18,
+          "6": 0.1,
+          "7": 0.03,
+          "8": 0.01
+        },
+        "confidence": 0.39
+      },
+      "location": {
+        "type": "score",
+        "score": 3.53,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.1,
+          "2": 0.17,
+          "3": 0.26,
+          "4": 0.17,
+          "5": 0.16,
+          "6": 0.08,
+          "7": 0.03,
+          "8": 0.01,
+          "9": 0
+        },
+        "confidence": 0.47
+      },
+      "step1": {
+        "type": "score",
+        "score": 3.45,
+        "legend": {
+          "0": "-3",
+          "1": "-2",
+          "2": "-1.5",
+          "3": "-1",
+          "4": "-0.5",
+          "5": "0",
+          "6": "1",
+          "7": "2"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.08,
+          "2": 0.16,
+          "3": 0.26,
+          "4": 0.2,
+          "5": 0.16,
+          "6": 0.07,
+          "7": 0.03
+        },
+        "confidence": 0.35
+      }
+    },
+    "usage": {
+      "input_tokens": 1704,
+      "output_tokens": 45,
+      "cost": 7.1568e-05
+    },
+    "id": "gen-dec-1791989185-UlKZ3vKocLJ3Q9YMjR65",
+    "provider": "TypeSafe"
+  },
+  "seconds": 0.196,
+  "requested_at": "2026-10-14T14:46:25+00:00"
+}

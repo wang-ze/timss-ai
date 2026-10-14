@@ -1,0 +1,294 @@
+{
+  "item_id": "M032761",
+  "assessment": "TIMSS 2011",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Algebra",
+  "main_topic": "Algebraic Expressions",
+  "cognitive_domain": "Reasoning",
+  "item_type": "constructed_response",
+  "max_points": 2,
+  "scaled_points": 2,
+  "irt_model": "GPCM",
+  "target_calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M032757",
+    "TIMSS 2011/grade 8/Mathematics/M032760A",
+    "TIMSS 2011/grade 8/Mathematics/M032760B",
+    "TIMSS 2011/grade 8/Mathematics/M032760C",
+    "TIMSS 2011/grade 8/Mathematics/M032761"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2011",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Algebra",
+      "main_topic": "Algebraic Expressions",
+      "cognitive_domain": "Reasoning",
+      "item_type": "constructed_response",
+      "max_points": 2,
+      "scaled_points": 2,
+      "stem": "Pat wanted to add a line to the table showing how to find the number of tiles needed to make a square of any size. Use the patterns in the table on the opposite page to help you complete the line for shape n × n in the table below.\n\n| Shape | Number of Black Tiles | Number of Red Tiles | Total Number of Tiles |\n| :--- | :--- | :--- | :--- |\n| n × n | (n − 2)^2 | | |",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "Both expressions correct in simplified form\nRed tiles: 4(n − 1); 4n − 4; or correct verbal expression\nTotal tiles: n^2, n x n; or correct verbal expression, such as “square the number” or “multiply by itself”",
+            "Both expressions correct with expression for red tiles in the form of total number of tiles minus number of black tiles e.g., n^2 − (n − 2)^2 or equivalent."
+          ]
+        },
+        {
+          "category": "Partially Correct Response",
+          "descriptors": [
+            "Expression for red tiles correct as in 20 but not expression for total tiles",
+            "Expression for total tiles correct as in 20 but not expression for red tiles"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "Incorrect expression including n for red tiles or total or both (includes incorrect attempts to express red tiles as difference from total tiles)",
+            "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+          ]
+        }
+      ],
+      "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 2-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 2-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "step1": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 2-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data\". What is the item's step 1 parameter d1? In the GPCM, b - d1 is the ability at which earning the first point becomes more likely than earning no point, so a higher d1 means that this point is earned at a lower ability; the steps sum to 0. Choose the value closest to it.",
+      "criteria": [
+        "-3",
+        "-2",
+        "-1.5",
+        "-1",
+        "-0.5",
+        "0",
+        "1",
+        "2"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 4.07,
+      "confidence": 0.42,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.04,
+        "2": 0.09,
+        "3": 0.21,
+        "4": 0.22,
+        "5": 0.22,
+        "6": 0.13,
+        "7": 0.05,
+        "8": 0.02
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 4.89,
+      "confidence": 0.42,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.0,
+        "1": 0.03,
+        "2": 0.07,
+        "3": 0.16,
+        "4": 0.14,
+        "5": 0.21,
+        "6": 0.19,
+        "7": 0.13,
+        "8": 0.06,
+        "9": 0.01
+      }
+    },
+    "step1": {
+      "type": "score",
+      "score": 3.69,
+      "confidence": 0.28,
+      "legend": {
+        "0": "-3",
+        "1": "-2",
+        "2": "-1.5",
+        "3": "-1",
+        "4": "-0.5",
+        "5": "0",
+        "6": "1",
+        "7": "2"
+      },
+      "probabilities": {
+        "0": 0.03,
+        "1": 0.07,
+        "2": 0.15,
+        "3": 0.24,
+        "4": 0.18,
+        "5": 0.17,
+        "6": 0.1,
+        "7": 0.06
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1362,
+  "output_tokens": 45,
+  "cost_usd": 5.7204e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791989186-ASD7bHVe0MWxquOyGtvr",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 4.07,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.04,
+          "2": 0.09,
+          "3": 0.21,
+          "4": 0.22,
+          "5": 0.22,
+          "6": 0.13,
+          "7": 0.05,
+          "8": 0.02
+        },
+        "confidence": 0.42
+      },
+      "location": {
+        "type": "score",
+        "score": 4.89,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0,
+          "1": 0.03,
+          "2": 0.07,
+          "3": 0.16,
+          "4": 0.14,
+          "5": 0.21,
+          "6": 0.19,
+          "7": 0.13,
+          "8": 0.06,
+          "9": 0.01
+        },
+        "confidence": 0.42
+      },
+      "step1": {
+        "type": "score",
+        "score": 3.69,
+        "legend": {
+          "0": "-3",
+          "1": "-2",
+          "2": "-1.5",
+          "3": "-1",
+          "4": "-0.5",
+          "5": "0",
+          "6": "1",
+          "7": "2"
+        },
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.07,
+          "2": 0.15,
+          "3": 0.24,
+          "4": 0.18,
+          "5": 0.17,
+          "6": 0.1,
+          "7": 0.06
+        },
+        "confidence": 0.28
+      }
+    },
+    "usage": {
+      "input_tokens": 1362,
+      "output_tokens": 45,
+      "cost": 5.7204e-05
+    },
+    "id": "gen-dec-1791989186-ASD7bHVe0MWxquOyGtvr",
+    "provider": "TypeSafe"
+  },
+  "seconds": 0.166,
+  "requested_at": "2026-10-14T14:46:26+00:00"
+}

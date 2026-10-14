@@ -1,0 +1,836 @@
+{
+  "item_id": "R12",
+  "assessment": "TIMSS 1999",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Algebra",
+  "main_topic": null,
+  "cognitive_domain": "Knowing",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 1999/grade 8/Mathematics/R12"
+  ],
+  "similar_items": [
+    {
+      "rank": 1,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M032643",
+      "item_id": "M032643",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8598,
+      "pct_correct_intl_avg": 40,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.133,
+      "location": 0.539,
+      "guessing": 0.17
+    },
+    {
+      "rank": 2,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M012042",
+      "item_id": "M012042",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8634,
+      "pct_correct_intl_avg": 48,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.116,
+      "location": 0.037,
+      "guessing": 0.132
+    },
+    {
+      "rank": 3,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M022002",
+      "item_id": "M022002",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.818,
+      "pct_correct_intl_avg": 24,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.627,
+      "location": 1.121,
+      "guessing": 0.142
+    },
+    {
+      "rank": 4,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1999/grade 8/Mathematics/P11",
+      "item_id": "P11",
+      "assessment": "TIMSS 1999",
+      "cosine_similarity": 0.8522,
+      "pct_correct_intl_avg": 57,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.111,
+      "location": 0.112,
+      "guessing": 0.279
+    },
+    {
+      "rank": 5,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M022196",
+      "item_id": "M022196",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8209,
+      "pct_correct_intl_avg": 58,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.217,
+      "location": -0.357,
+      "guessing": 0.082
+    },
+    {
+      "rank": 6,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1999/grade 8/Mathematics/P09",
+      "item_id": "P09",
+      "assessment": "TIMSS 1999",
+      "cosine_similarity": 0.8379,
+      "pct_correct_intl_avg": 71,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.673,
+      "location": -0.486,
+      "guessing": 0.344
+    },
+    {
+      "rank": 7,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M042024",
+      "item_id": "M042024",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.7912,
+      "pct_correct_intl_avg": 54,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.72223,
+      "location": 0.09398,
+      "guessing": 0.17133
+    },
+    {
+      "rank": 8,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M042152",
+      "item_id": "M042152",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.7579,
+      "pct_correct_intl_avg": 45,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.74089,
+      "location": 0.71657,
+      "guessing": 0.19756
+    },
+    {
+      "rank": 9,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M032046",
+      "item_id": "M032046",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8129,
+      "pct_correct_intl_avg": 25,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.204,
+      "location": 1.071,
+      "guessing": 0.14
+    },
+    {
+      "rank": 10,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M032612",
+      "item_id": "M032612",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8273,
+      "pct_correct_intl_avg": 35,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.887,
+      "location": 0.655,
+      "guessing": 0.133
+    }
+  ],
+  "context": "item+references",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 1999",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Algebra",
+      "cognitive_domain": "Knowing",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "If k represents a negative number, which of these is a positive number?",
+      "options": [
+        {
+          "label": "A",
+          "text": "k^2"
+        },
+        {
+          "label": "B",
+          "text": "k^3"
+        },
+        {
+          "label": "C",
+          "text": "2k"
+        },
+        {
+          "label": "D",
+          "text": "k/2"
+        }
+      ],
+      "correct_option": "A",
+      "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data."
+    },
+    "reference_items": [
+      {
+        "rank": 1,
+        "cosine_similarity": 0.86,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Integers",
+        "cognitive_domain": "Using Concepts",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "If n is a negative integer, which of these is the largest number?",
+        "options": [
+          {
+            "label": "A",
+            "text": "3 + n"
+          },
+          {
+            "label": "B",
+            "text": "3 × n"
+          },
+          {
+            "label": "C",
+            "text": "3 − n"
+          },
+          {
+            "label": "D",
+            "text": "3 ÷ n"
+          }
+        ],
+        "correct_option": "C",
+        "pct_correct_intl_avg": 40,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.133,
+          "location": 0.539,
+          "guessing": 0.17
+        }
+      },
+      {
+        "rank": 2,
+        "cosine_similarity": 0.863,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Algebra",
+        "main_topic": "Algebraic Expressions",
+        "cognitive_domain": "Knowing Facts and Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "If x = −3, what is the value of −3x ?",
+        "options": [
+          {
+            "label": "A",
+            "text": "−9"
+          },
+          {
+            "label": "B",
+            "text": "−6"
+          },
+          {
+            "label": "C",
+            "text": "−1"
+          },
+          {
+            "label": "D",
+            "text": "1"
+          },
+          {
+            "label": "E",
+            "text": "9"
+          }
+        ],
+        "correct_option": "E",
+        "pct_correct_intl_avg": 48,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.116,
+          "location": 0.037,
+          "guessing": 0.132
+        }
+      },
+      {
+        "rank": 3,
+        "cosine_similarity": 0.818,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Algebra",
+        "main_topic": "Algebraic Expressions",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Sam wanted to find three consecutive even numbers that add up to 84.\nHe wrote the equation k + (k + 2) + (k + 4) = 84.\nWhat does the letter k represent?",
+        "options": [
+          {
+            "label": "A",
+            "text": "The least of the three even numbers"
+          },
+          {
+            "label": "B",
+            "text": "The middle even number"
+          },
+          {
+            "label": "C",
+            "text": "The greatest of the three even numbers"
+          },
+          {
+            "label": "D",
+            "text": "The average of the three even numbers"
+          }
+        ],
+        "correct_option": "A",
+        "pct_correct_intl_avg": 24,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.627,
+          "location": 1.121,
+          "guessing": 0.142
+        }
+      },
+      {
+        "rank": 4,
+        "cosine_similarity": 0.852,
+        "assessment": "TIMSS 1999",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Algebra",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "For all numbers k,\nk + k + k + k + k can be written as",
+        "options": [
+          {
+            "label": "A",
+            "text": "k + 5"
+          },
+          {
+            "label": "B",
+            "text": "5k"
+          },
+          {
+            "label": "C",
+            "text": "k^5"
+          },
+          {
+            "label": "D",
+            "text": "5(k + 1)"
+          }
+        ],
+        "correct_option": "B",
+        "pct_correct_intl_avg": 57,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.111,
+          "location": 0.112,
+          "guessing": 0.279
+        }
+      },
+      {
+        "rank": 5,
+        "cosine_similarity": 0.821,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Algebra",
+        "main_topic": "Equations and Formulas",
+        "cognitive_domain": "Knowing Facts and Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "If L = 4 when K = 6 and M = 24, which of the following is true?",
+        "options": [
+          {
+            "label": "A",
+            "text": "L = M/K"
+          },
+          {
+            "label": "B",
+            "text": "L = K/M"
+          },
+          {
+            "label": "C",
+            "text": "L = KM"
+          },
+          {
+            "label": "D",
+            "text": "L = K + M"
+          },
+          {
+            "label": "E",
+            "text": "L = M − K"
+          }
+        ],
+        "correct_option": "A",
+        "pct_correct_intl_avg": 58,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.217,
+          "location": -0.357,
+          "guessing": 0.082
+        }
+      },
+      {
+        "rank": 6,
+        "cosine_similarity": 0.838,
+        "assessment": "TIMSS 1999",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Algebra",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Which of these expressions is equivalent to n x n x n for all values of n?",
+        "options": [
+          {
+            "label": "A",
+            "text": "n/3"
+          },
+          {
+            "label": "B",
+            "text": "n + 3"
+          },
+          {
+            "label": "C",
+            "text": "3n"
+          },
+          {
+            "label": "D",
+            "text": "n^3"
+          }
+        ],
+        "correct_option": "D",
+        "pct_correct_intl_avg": 71,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.673,
+          "location": -0.486,
+          "guessing": 0.344
+        }
+      },
+      {
+        "rank": 7,
+        "cosine_similarity": 0.791,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Fractions and Decimals",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: A numbered axis from 26 to 28. There are four marks in between 26 to 27, as well as in between 27 to 28. K is marked underneath the last mark between 27 and 28.]\n\nWhich number does K represent on this number line?",
+        "options": [
+          {
+            "label": "A",
+            "text": "27.4"
+          },
+          {
+            "label": "B",
+            "text": "27.8"
+          },
+          {
+            "label": "C",
+            "text": "27.9"
+          },
+          {
+            "label": "D",
+            "text": "28.2"
+          }
+        ],
+        "correct_option": "B",
+        "figure_description": "A horizontal number line with arrowheads at both ends. There are evenly spaced vertical tick marks. The first labeled tick mark is labeled 26 below the line. Between 26 and 27, there are 4 evenly spaced tick marks dividing the interval into 5 equal parts. The tick mark for 27 is labeled below the line. Between 27 and 28, there are 4 evenly spaced tick marks, with the fourth tick mark labeled with the letter K below the line. The next tick mark is labeled 28 below the line. The line extends slightly past 26 to the left and past 28 to the right.",
+        "pct_correct_intl_avg": 54,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.72223,
+          "location": 0.09398,
+          "guessing": 0.17133
+        }
+      },
+      {
+        "rank": 8,
+        "cosine_similarity": 0.758,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Location and Movement",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: An x-y coordinate system with the origin labeled “O.” A shaded triangle is in the first quadrant, with the base lying on the positive y axis.]\nWhich of these shows the result of a half-turn clockwise around point O?",
+        "options": [
+          {
+            "label": "A",
+            "text": "[Image: The same x-y coordinate system but with the shaded triangle on the positive x-axis and the shaded triangle in the fourth quadrant.]"
+          },
+          {
+            "label": "B",
+            "text": "[Image: The same x-y coordinate system, but with the base of the shaded triangle on the negative y-axis and the shaded triangle in the fourth quadrant.]"
+          },
+          {
+            "label": "C",
+            "text": "[Image: The same x-y coordinate system, but with the base of the shaded triangle on the negative x-axis and the shaded triangle in the second quadrant.]"
+          },
+          {
+            "label": "D",
+            "text": "[Image: The same x-y coordinate system, but with the base of the shaded triangle on the negative y-axis and the shaded triangle in the third quadrant.]"
+          }
+        ],
+        "correct_option": "D",
+        "figure_description": "Stem: A Cartesian coordinate system with dashed axes and arrows at each end; the origin is marked with a point labeled O. A shaded right-like scalene triangle is located in the first quadrant with its vertical base lying on the positive y-axis and its third vertex pointing to the right.\nOption A: The coordinate plane with the triangle's base along the positive x-axis and the third vertex pointing downward into the fourth quadrant.\nOption B: The coordinate plane with the triangle's base along the negative y-axis and the third vertex pointing to the right into the fourth quadrant.\nOption C: The coordinate plane with the triangle's base along the negative x-axis and the third vertex pointing upward into the second quadrant.\nOption D: The coordinate plane with the triangle's base along the negative y-axis and the third vertex pointing to the left into the third quadrant.",
+        "pct_correct_intl_avg": 45,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.74089,
+          "location": 0.71657,
+          "guessing": 0.19756
+        }
+      },
+      {
+        "rank": 9,
+        "cosine_similarity": 0.813,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Algebra",
+        "main_topic": "Equations and Formulas",
+        "cognitive_domain": "Using Concepts",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "If y = 3x + 2, which of these expresses x in terms of y?",
+        "options": [
+          {
+            "label": "A",
+            "text": "x = (y − 2)/3"
+          },
+          {
+            "label": "B",
+            "text": "x = (y + 2)/3"
+          },
+          {
+            "label": "C",
+            "text": "x = y/3 − 2"
+          },
+          {
+            "label": "D",
+            "text": "x = y/3 + 2"
+          }
+        ],
+        "correct_option": "A",
+        "pct_correct_intl_avg": 25,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.204,
+          "location": 1.071,
+          "guessing": 0.14
+        }
+      },
+      {
+        "rank": 10,
+        "cosine_similarity": 0.827,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Integers",
+        "cognitive_domain": "Knowing Facts and Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "What is the value of 1 − 5 × (−2)?",
+        "options": [
+          {
+            "label": "A",
+            "text": "11"
+          },
+          {
+            "label": "B",
+            "text": "8"
+          },
+          {
+            "label": "C",
+            "text": "−8"
+          },
+          {
+            "label": "D",
+            "text": "−9"
+          }
+        ],
+        "correct_option": "A",
+        "pct_correct_intl_avg": 35,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.887,
+          "location": 0.655,
+          "guessing": 0.133
+        }
+      }
+    ]
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.5,
+      "confidence": 0.72,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.06,
+        "2": 0.07,
+        "3": 0.21,
+        "4": 0.61,
+        "5": 0.03,
+        "6": 0.01,
+        "7": 0.0,
+        "8": 0.0
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 2.85,
+      "confidence": 0.56,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.08,
+        "2": 0.36,
+        "3": 0.25,
+        "4": 0.17,
+        "5": 0.1,
+        "6": 0.01,
+        "7": 0.01,
+        "8": 0.0,
+        "9": 0.0
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 3.26,
+      "confidence": 0.49,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.04,
+        "2": 0.19,
+        "3": 0.17,
+        "4": 0.57,
+        "5": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 5100,
+  "output_tokens": 45,
+  "cost_usd": 0.0002142,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791918364-4CkGd5CKexQvXOVuOKky",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.5,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.06,
+          "2": 0.07,
+          "3": 0.21,
+          "4": 0.61,
+          "5": 0.03,
+          "6": 0.01,
+          "7": 0,
+          "8": 0
+        },
+        "confidence": 0.72
+      },
+      "location": {
+        "type": "score",
+        "score": 2.85,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.08,
+          "2": 0.36,
+          "3": 0.25,
+          "4": 0.17,
+          "5": 0.1,
+          "6": 0.01,
+          "7": 0.01,
+          "8": 0,
+          "9": 0
+        },
+        "confidence": 0.56
+      },
+      "guessing": {
+        "type": "score",
+        "score": 3.26,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.04,
+          "2": 0.19,
+          "3": 0.17,
+          "4": 0.57,
+          "5": 0.01
+        },
+        "confidence": 0.49
+      }
+    },
+    "usage": {
+      "input_tokens": 5100,
+      "output_tokens": 45,
+      "cost": 0.0002142
+    },
+    "id": "gen-dec-1791918364-4CkGd5CKexQvXOVuOKky",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T19:06:04+00:00",
+  "seconds": null
+}

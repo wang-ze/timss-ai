@@ -1,0 +1,736 @@
+{
+  "item_id": "S2",
+  "assessment": "TIMSS 1995",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Whole Numbers",
+  "main_topic": null,
+  "cognitive_domain": "Performing Routine Procedures",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/S2"
+  ],
+  "similar_items": [
+    {
+      "rank": 1,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M031316",
+      "item_id": "M031316",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8493,
+      "pct_correct_intl_avg": 83,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.58693,
+      "location": -2.32344
+    },
+    {
+      "rank": 2,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M031317",
+      "item_id": "M031317",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8507,
+      "pct_correct_intl_avg": 39,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.27798,
+      "location": 0.6407,
+      "guessing": 0.14744
+    },
+    {
+      "rank": 3,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/V2",
+      "item_id": "V2",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.852,
+      "pct_correct_intl_avg": 49,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.994,
+      "location": 0.048
+    },
+    {
+      "rank": 4,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/T2",
+      "item_id": "T2",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.8471,
+      "pct_correct_intl_avg": 43,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.608,
+      "location": 0.093
+    },
+    {
+      "rank": 5,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/M9",
+      "item_id": "M9",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.8199,
+      "pct_correct_intl_avg": 70,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.807,
+      "location": -0.477,
+      "guessing": 0.245
+    },
+    {
+      "rank": 6,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M011026",
+      "item_id": "M011026",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8144,
+      "pct_correct_intl_avg": 66,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.605,
+      "location": -0.303,
+      "guessing": 0.247
+    },
+    {
+      "rank": 7,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/T3",
+      "item_id": "T3",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.7682,
+      "pct_correct_intl_avg": 47,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.794,
+      "location": 0.012
+    },
+    {
+      "rank": 8,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M031345A",
+      "item_id": "M031345A",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.829,
+      "pct_correct_intl_avg": 52,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.734,
+      "location": -0.412
+    },
+    {
+      "rank": 9,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M031128",
+      "item_id": "M031128",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8342,
+      "pct_correct_intl_avg": 72,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.39563,
+      "location": -1.75671
+    },
+    {
+      "rank": 10,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M031162",
+      "item_id": "M031162",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8334,
+      "pct_correct_intl_avg": 66,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.475,
+      "location": -1.106
+    }
+  ],
+  "context": "item+references",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 1995",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Whole Numbers",
+      "cognitive_domain": "Performing Routine Procedures",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "Here is a number sentence.\n\n2,000 + □ + 30 + 9 = 2,739\n\nWhat number goes where the □ is to make this sentence true?\n\nAnswer: ____",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "700 or written out as \"seven hundred.\""
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "7",
+            "43",
+            "70",
+            "Gives other numbers made by digits in 2,739 such as 73, 30, 9, 39, 739, 2,739,...",
+            "Other incorrect."
+          ]
+        }
+      ],
+      "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data."
+    },
+    "reference_items": [
+      {
+        "rank": 1,
+        "cosine_similarity": 0.849,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Number Sentences with Whole Numbers",
+        "cognitive_domain": "Knowing",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "4 × □ = 28\n\nWhat number goes in the box to make this number sentence true?\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "7"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 83,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.58693,
+          "location": -2.32344
+        }
+      },
+      {
+        "rank": 2,
+        "cosine_similarity": 0.851,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Number Sentences with Whole Numbers",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "3 + 8 = □ + 6\n\nWhat number goes in the box to make this number sentence true?",
+        "options": [
+          {
+            "label": "A",
+            "text": "17"
+          },
+          {
+            "label": "B",
+            "text": "11"
+          },
+          {
+            "label": "C",
+            "text": "7"
+          },
+          {
+            "label": "D",
+            "text": "5"
+          }
+        ],
+        "correct_option": "D",
+        "pct_correct_intl_avg": 39,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.27798,
+          "location": 0.6407,
+          "guessing": 0.14744
+        }
+      },
+      {
+        "rank": 3,
+        "cosine_similarity": 0.852,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Whole Numbers",
+        "cognitive_domain": "Knowing",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Write the number that is 1,000 more than 56,821.\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "57,821"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "66,821",
+              "Any number except 66,821 where one or more digits in 56,821 have been increased by 1. Example: 56,921, 66,932, 57,921",
+              "Other incorrect."
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 49,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.994,
+          "location": 0.048
+        }
+      },
+      {
+        "rank": 4,
+        "cosine_similarity": 0.847,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Whole Numbers",
+        "cognitive_domain": "Solving Problems",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "What is the smallest whole number that you can make using the digits 4, 3, 9 and 1? Use each digit only once.\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "1,349"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "1,3,4,9",
+              "1",
+              "4",
+              "17",
+              "Any four-digit number with digits 4,3,9 and 1, other than 1,349",
+              "13 OR \"1 and 3\" OR \"3 and 1\"",
+              "Other incorrect."
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 43,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.608,
+          "location": 0.093
+        }
+      },
+      {
+        "rank": 5,
+        "cosine_similarity": 0.82,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Patterns, Relations, and Functions",
+        "cognitive_domain": "Performing Routine Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Here is a number sentence.\n\n4 × □ < 17\n\nWhich number could go in the □ to make the sentence true?",
+        "options": [
+          {
+            "label": "A",
+            "text": "4"
+          },
+          {
+            "label": "B",
+            "text": "5"
+          },
+          {
+            "label": "C",
+            "text": "12"
+          },
+          {
+            "label": "D",
+            "text": "13"
+          }
+        ],
+        "correct_option": "A",
+        "pct_correct_intl_avg": 70,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.807,
+          "location": -0.477,
+          "guessing": 0.245
+        }
+      },
+      {
+        "rank": 6,
+        "cosine_similarity": 0.814,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Using Concepts",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Which number sentence is true?",
+        "options": [
+          {
+            "label": "A",
+            "text": "968 < 698"
+          },
+          {
+            "label": "B",
+            "text": "968 < 689"
+          },
+          {
+            "label": "C",
+            "text": "968 > 689"
+          },
+          {
+            "label": "D",
+            "text": "968 = 689"
+          }
+        ],
+        "correct_option": "C",
+        "pct_correct_intl_avg": 66,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.605,
+          "location": -0.303,
+          "guessing": 0.247
+        }
+      },
+      {
+        "rank": 7,
+        "cosine_similarity": 0.768,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Measurement, Estimation, and Number Sense",
+        "cognitive_domain": "Performing Routine Procedures",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Mr. Brown goes for a walk and returns to where he started at 07:00. If his walk took 1 hour and 30 minutes, at what time did he start his walk?\n\nAnswer:____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "05:30 OR 5:30",
+              "The answer expressed informally.\nExample: \"half past five\""
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "04:30, 4:30, or equivalent informal expression.",
+              "06:00, 6:00, or equivalent informal expression.",
+              "06:30, 6:30, or equivalent informal expression.",
+              "08:30, 8:30, or equivalent informal expression.",
+              "Other incorrect."
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 47,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.794,
+          "location": 0.012
+        }
+      },
+      {
+        "rank": 8,
+        "cosine_similarity": 0.829,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Using the number tiles, Joan and Herbert played a new game.\nThey placed the numbers to make the largest answer.\n\nA. Use the tiles [1], [5], and [9]. Write the numbers on the tiles in the boxes below to make the largest answer when you add.\n\n[Image: Vertical addition layout with boxes]",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "91 + 5 or 95 + 1"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Any other arrangement of digits 1, 5, and 9",
+              "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "figure_description": "A vertical addition problem setup with two rows above a horizontal line. The top row has two square boxes side by side. The bottom row has an addition sign (+) on the left and a single square box aligned under the right box of the top row.",
+        "pct_correct_intl_avg": 52,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.734,
+          "location": -0.412
+        }
+      },
+      {
+        "rank": 9,
+        "cosine_similarity": 0.834,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Knowing",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "5,631 + 286 =\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "5,917"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 72,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.39563,
+          "location": -1.75671
+        }
+      },
+      {
+        "rank": 10,
+        "cosine_similarity": 0.833,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Using Concepts",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: Number line]\n\nOn the number line above, what number goes in the box?\n\nNumber in □ = ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "7"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "figure_description": "A horizontal number line ending with an arrow on the right. There are 10 evenly spaced vertical tick marks along the line. The 1st tick mark is labeled 0 below it. The 4th tick mark is labeled 3 below it. Below the 8th tick mark is an empty square box. The remaining tick marks are unlabeled.",
+        "pct_correct_intl_avg": 66,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.475,
+          "location": -1.106
+        }
+      }
+    ]
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 2.29,
+      "confidence": 0.53,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.05,
+        "1": 0.2,
+        "2": 0.3,
+        "3": 0.37,
+        "4": 0.03,
+        "5": 0.02,
+        "6": 0.01,
+        "7": 0.01,
+        "8": 0.01
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 2.83,
+      "confidence": 0.5,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.07,
+        "1": 0.16,
+        "2": 0.18,
+        "3": 0.32,
+        "4": 0.13,
+        "5": 0.07,
+        "6": 0.03,
+        "7": 0.02,
+        "8": 0.01,
+        "9": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 4581,
+  "output_tokens": 31,
+  "cost_usd": 0.000192402,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791918360-jfi3tlrkuJbol8OscFI3",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 2.29,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.2,
+          "2": 0.3,
+          "3": 0.37,
+          "4": 0.03,
+          "5": 0.02,
+          "6": 0.01,
+          "7": 0.01,
+          "8": 0.01
+        },
+        "confidence": 0.53
+      },
+      "location": {
+        "type": "score",
+        "score": 2.83,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.16,
+          "2": 0.18,
+          "3": 0.32,
+          "4": 0.13,
+          "5": 0.07,
+          "6": 0.03,
+          "7": 0.02,
+          "8": 0.01,
+          "9": 0.01
+        },
+        "confidence": 0.5
+      }
+    },
+    "usage": {
+      "input_tokens": 4581,
+      "output_tokens": 31,
+      "cost": 0.000192402
+    },
+    "id": "gen-dec-1791918360-jfi3tlrkuJbol8OscFI3",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T19:06:00+00:00",
+  "seconds": null
+}

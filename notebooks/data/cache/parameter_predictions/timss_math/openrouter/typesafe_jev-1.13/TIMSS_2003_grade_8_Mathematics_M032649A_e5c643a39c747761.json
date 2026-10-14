@@ -1,0 +1,218 @@
+{
+  "item_id": "M032649A",
+  "assessment": "TIMSS 2003",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Measurement",
+  "main_topic": "Tools, Techniques, and Formulas",
+  "cognitive_domain": "Solving Routine Problems",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 2003/grade 8/Mathematics/M032649A",
+    "TIMSS 2003/grade 8/Mathematics/M032649B"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2003",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Measurement",
+      "main_topic": "Tools, Techniques, and Formulas",
+      "cognitive_domain": "Solving Routine Problems",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "In a car rally two checkpoints are 160 km apart. Drivers must travel from one checkpoint to the other in exactly 2.5 hours to earn maximum points.\n\nA. What must the average speed be to travel the 160 km in this time?\n\nAnswer: ____",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "64 kph or 64 or equivalent."
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "Incorrect (including crossed out/erased, stray marks, illegible or off task)."
+          ]
+        }
+      ],
+      "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.58,
+      "confidence": 0.31,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.05,
+        "1": 0.08,
+        "2": 0.15,
+        "3": 0.22,
+        "4": 0.18,
+        "5": 0.15,
+        "6": 0.1,
+        "7": 0.05,
+        "8": 0.02
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 2.1,
+      "confidence": 0.58,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.1,
+        "1": 0.28,
+        "2": 0.29,
+        "3": 0.19,
+        "4": 0.07,
+        "5": 0.04,
+        "6": 0.02,
+        "7": 0.01,
+        "8": 0.0,
+        "9": 0.0
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 945,
+  "output_tokens": 31,
+  "cost_usd": 3.969e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914761-gt631grsEG73xIudSZWQ",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.58,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.08,
+          "2": 0.15,
+          "3": 0.22,
+          "4": 0.18,
+          "5": 0.15,
+          "6": 0.1,
+          "7": 0.05,
+          "8": 0.02
+        },
+        "confidence": 0.31
+      },
+      "location": {
+        "type": "score",
+        "score": 2.1,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.1,
+          "1": 0.28,
+          "2": 0.29,
+          "3": 0.19,
+          "4": 0.07,
+          "5": 0.04,
+          "6": 0.02,
+          "7": 0.01,
+          "8": 0,
+          "9": 0
+        },
+        "confidence": 0.58
+      }
+    },
+    "usage": {
+      "input_tokens": 945,
+      "output_tokens": 31,
+      "cost": 3.969e-05
+    },
+    "id": "gen-dec-1791914761-gt631grsEG73xIudSZWQ",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:01+00:00",
+  "seconds": null
+}

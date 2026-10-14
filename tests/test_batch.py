@@ -19,12 +19,12 @@ import openai
 from timss_math.item_parameter_prediction import (
     ItemIndex,
     LeaveOneOut,
+    LLMPredictor,
     LLMSettings,
     NoPredictionError,
-    ParameterPredictor,
 )
 from timss_math.item_parameter_prediction.batch import BatchManifests
-from timss_math.item_parameter_prediction.predictor import LLMClient, prediction_schema
+from timss_math.item_parameter_prediction.llm import LLMClient, prediction_schema
 
 SCHEMAS = [("3PL", 1), ("2PL", 1), ("GPCM", 2), ("GPCM", 3)]
 
@@ -164,7 +164,7 @@ class RequestBatchTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.index = ItemIndex.build()
-        cls.predictor = ParameterPredictor(cls.index, LLMSettings(api_key="test"))
+        cls.predictor = LLMPredictor(cls.index, LLMSettings(api_key="test"))
         calibrated = cls.index.bank.calibrated
         # Two items of each prediction schema.
         cls.keys = [

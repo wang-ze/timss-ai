@@ -1,0 +1,295 @@
+{
+  "item_id": "M042220",
+  "assessment": "TIMSS 2007",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Data and Chance",
+  "main_topic": "Data Organization and Representation",
+  "cognitive_domain": "Applying",
+  "item_type": "constructed_response",
+  "max_points": 2,
+  "scaled_points": 2,
+  "irt_model": "GPCM",
+  "target_calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+  "excluded_item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M042220"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2007",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Data and Chance",
+      "main_topic": "Data Organization and Representation",
+      "cognitive_domain": "Applying",
+      "item_type": "constructed_response",
+      "max_points": 2,
+      "scaled_points": 2,
+      "stem": "The results of a survey of 200 students are shown in the pie chart.\n\n[Image: Pie chart showing popularity of rock bands]\n\nMake a bar chart showing the number of students in each category in the pie chart.\n\n[Image: Bar chart template]",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "All three correct - (50, 90, 60)\n50 should be to the correct line.\n90 should be less than 100 but greater than 80.\n60 should be less than 70 but greater than 50."
+          ]
+        },
+        {
+          "category": "Partial Response",
+          "descriptors": [
+            "Any two correct"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "Bars drawn as percentages not actual numbers",
+            "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+          ]
+        },
+        {
+          "category": "Nonresponse",
+          "descriptors": [
+            "Blank"
+          ]
+        }
+      ],
+      "figure_description": "The item includes two figures:\n1. A pie chart titled \"Popularity of Rock Bands\" divided into three sectors: \"Red Hot Peppers 25%\" (shaded light gray, occupies the top-right quarter from 12 o'clock to 3 o'clock), \"Stone Cold 45%\" (shaded medium gray, occupies from 3 o'clock to approximately 8:30), and \"Dreadlocks 30%\" (unshaded, occupies from approximately 8:30 to 12 o'clock). There are tick marks on the circle edge at 12 o'clock, 3 o'clock, and 6 o'clock.\n2. A blank bar chart titled \"Popularity of Rock Bands\". The vertical axis is labeled \"Number of Students\" with horizontal grid lines at 0, 50, 100, 150, and 200. Between each labeled interval of 50, there are 4 tick marks dividing each interval into five 10-unit subdivisions. The horizontal axis has three tick marks labeled \"Red Hot Peppers\", \"Stone Cold\", and \"Dreadlocks\".",
+      "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 2-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 2-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "step1": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 2-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)\". What is the item's step 1 parameter d1? In the GPCM, b - d1 is the ability at which earning the first point becomes more likely than earning no point, so a higher d1 means that this point is earned at a lower ability; the steps sum to 0. Choose the value closest to it.",
+      "criteria": [
+        "-3",
+        "-2",
+        "-1.5",
+        "-1",
+        "-0.5",
+        "0",
+        "1",
+        "2"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.73,
+      "confidence": 0.33,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.06,
+        "2": 0.14,
+        "3": 0.22999999999999998,
+        "4": 0.2,
+        "5": 0.17,
+        "6": 0.1,
+        "7": 0.04,
+        "8": 0.02
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 3.09,
+      "confidence": 0.38,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.16,
+        "2": 0.25,
+        "3": 0.19,
+        "4": 0.12,
+        "5": 0.14,
+        "6": 0.06,
+        "7": 0.03,
+        "8": 0.01,
+        "9": 0.0
+      }
+    },
+    "step1": {
+      "type": "score",
+      "score": 3.5,
+      "confidence": 0.32,
+      "legend": {
+        "0": "-3",
+        "1": "-2",
+        "2": "-1.5",
+        "3": "-1",
+        "4": "-0.5",
+        "5": "0",
+        "6": "1",
+        "7": "2"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.08,
+        "2": 0.16,
+        "3": 0.25,
+        "4": 0.18,
+        "5": 0.17,
+        "6": 0.08,
+        "7": 0.04
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1557,
+  "output_tokens": 45,
+  "cost_usd": 6.5394e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791989185-nIJZrFX0HQSAhRO7Jz84",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.73,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.06,
+          "2": 0.14,
+          "3": 0.22999999999999998,
+          "4": 0.2,
+          "5": 0.17,
+          "6": 0.1,
+          "7": 0.04,
+          "8": 0.02
+        },
+        "confidence": 0.33
+      },
+      "location": {
+        "type": "score",
+        "score": 3.09,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.16,
+          "2": 0.25,
+          "3": 0.19,
+          "4": 0.12,
+          "5": 0.14,
+          "6": 0.06,
+          "7": 0.03,
+          "8": 0.01,
+          "9": 0
+        },
+        "confidence": 0.38
+      },
+      "step1": {
+        "type": "score",
+        "score": 3.5,
+        "legend": {
+          "0": "-3",
+          "1": "-2",
+          "2": "-1.5",
+          "3": "-1",
+          "4": "-0.5",
+          "5": "0",
+          "6": "1",
+          "7": "2"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.08,
+          "2": 0.16,
+          "3": 0.25,
+          "4": 0.18,
+          "5": 0.17,
+          "6": 0.08,
+          "7": 0.04
+        },
+        "confidence": 0.32
+      }
+    },
+    "usage": {
+      "input_tokens": 1557,
+      "output_tokens": 45,
+      "cost": 6.5394e-05
+    },
+    "id": "gen-dec-1791989185-nIJZrFX0HQSAhRO7Jz84",
+    "provider": "TypeSafe"
+  },
+  "seconds": 0.193,
+  "requested_at": "2026-10-14T14:46:25+00:00"
+}

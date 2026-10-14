@@ -1,0 +1,835 @@
+{
+  "item_id": "M032649B",
+  "assessment": "TIMSS 2003",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Measurement",
+  "main_topic": "Tools, Techniques, and Formulas",
+  "cognitive_domain": "Reasoning",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 2003/grade 8/Mathematics/M032649A",
+    "TIMSS 2003/grade 8/Mathematics/M032649B"
+  ],
+  "similar_items": [
+    {
+      "rank": 1,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M032704",
+      "item_id": "M032704",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8381,
+      "pct_correct_intl_avg": 59.5,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.19001,
+      "location": -0.23458,
+      "guessing": 0.18669
+    },
+    {
+      "rank": 2,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M032681B",
+      "item_id": "M032681B",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8461,
+      "pct_correct_intl_avg": 29,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.60066,
+      "location": 0.88508
+    },
+    {
+      "rank": 3,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M042304B",
+      "item_id": "M042304B",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8345,
+      "pct_correct_intl_avg": 13.3,
+      "irt_model": "GPCM",
+      "scaled_points": 2,
+      "slope": 0.96616,
+      "location": 0.67041,
+      "step1": 0.4122,
+      "step2": -0.4122
+    },
+    {
+      "rank": 4,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M042304C",
+      "item_id": "M042304C",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8264,
+      "pct_correct_intl_avg": 21.6,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.41362,
+      "location": 0.72311
+    },
+    {
+      "rank": 5,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M022127",
+      "item_id": "M022127",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8387,
+      "pct_correct_intl_avg": 26,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.33,
+      "location": 1.157,
+      "guessing": 0.182
+    },
+    {
+      "rank": 6,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M042304D",
+      "item_id": "M042304D",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8074,
+      "pct_correct_intl_avg": 32.6,
+      "irt_model": "GPCM",
+      "scaled_points": 2,
+      "slope": 0.58019,
+      "location": 0.23264,
+      "step1": -1.41108,
+      "step2": 1.41108
+    },
+    {
+      "rank": 7,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1999/grade 8/Mathematics/F07",
+      "item_id": "F07",
+      "assessment": "TIMSS 1999",
+      "cosine_similarity": 0.8306,
+      "pct_correct_intl_avg": 33,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.37,
+      "location": 0.907,
+      "guessing": 0.14
+    },
+    {
+      "rank": 8,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M022139",
+      "item_id": "M022139",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8143,
+      "pct_correct_intl_avg": 31,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.236,
+      "location": 0.945,
+      "guessing": 0.157
+    },
+    {
+      "rank": 9,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M032681A",
+      "item_id": "M032681A",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8255,
+      "pct_correct_intl_avg": 60,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.58054,
+      "location": -0.63868
+    },
+    {
+      "rank": 10,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M042304A",
+      "item_id": "M042304A",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.802,
+      "pct_correct_intl_avg": 57.8,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.40266,
+      "location": -0.47267
+    },
+    {
+      "rank": 11,
+      "found_by": "same model",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M032681C",
+      "item_id": "M032681C",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8006,
+      "pct_correct_intl_avg": 34,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.13792,
+      "location": 0.46049
+    }
+  ],
+  "context": "item+references",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2003",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Measurement",
+      "main_topic": "Tools, Techniques, and Formulas",
+      "cognitive_domain": "Reasoning",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "In a car rally two checkpoints are 160 km apart. Drivers must travel from one checkpoint to the other in exactly 2.5 hours to earn maximum points.\n\nB. A driver took 1 hour to travel through a 40 km hilly section at the beginning of the course.\n\nWhat must the average speed, in kilometers per hour, be for the remaining 120 km if the total time between checkpoints is to be 2.5 hours?\n\nAnswer: ____",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "80 kph or 80"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "5, 2, 120 or 48 shown.",
+            "Other incorrect (including crossed out/erased, stray marks, illegible or off task)."
+          ]
+        }
+      ],
+      "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data."
+    },
+    "reference_items": [
+      {
+        "rank": 1,
+        "cosine_similarity": 0.838,
+        "assessment": "TIMSS 2007",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Ratio, Proportion, and Percent",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "A bus travels at a constant speed so that the distance traveled is directly proportional to the time spent traveling. If the bus travels 120 km in 5 hours, how many kilometers does it travel in 8 hours?",
+        "options": [
+          {
+            "label": "A",
+            "text": "168"
+          },
+          {
+            "label": "B",
+            "text": "192"
+          },
+          {
+            "label": "C",
+            "text": "200"
+          },
+          {
+            "label": "D",
+            "text": "245"
+          }
+        ],
+        "correct_option": "B",
+        "pct_correct_intl_avg": 59.5,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.19001,
+          "location": -0.23458,
+          "guessing": 0.18669
+        }
+      },
+      {
+        "rank": 2,
+        "cosine_similarity": 0.846,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Data and Chance",
+        "main_topic": "Data Interpretation",
+        "cognitive_domain": "Applying",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: A graph of car production with time on the x-axis and total number of cars produced on the y-axis. Time goes from 8 a.m. to 4 p.m. in one hour increments. Total number of cars produced goes from 0 to 400 in intervals of 50. A straight dotted line is drawn on the graph, going from the origin at 0 cars at 8 a.m., to the top right of the graph, at 4:00p.m. and 400 cars. A solid line is shown starting at the origin and going above the dotted line after 8:00a.m. and before 11:30 a.m. The solid line then goes below the dotted line from 11:30 a.m. to 1:30 p.m. It again goes above the dotted line from 1:30 p.m. to 4:00 p.m. and ends at 400 cars at 4:00 p.m.]\n\nThe solid line (——) on the graph shows car production by the NU Car Motor Company during a particular day.\n\nThe dotted line (-----) shows what the total number of cars produced would be if the rate of production were constant.\n\nB. What was the average number of cars produced per hour on this day?\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "50"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "400",
+              "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "figure_description": "A line graph titled \"Car Production\". The horizontal axis is labeled \"Time\" with marked points for 8 am, 9 am, 10 am, 11 am, 12 noon, 1 pm, 2 pm, 3 pm, and 4 pm. The vertical axis is labeled \"Total Number of Cars Produced\" with grid marks from 0 to 400 in increments of 50. A dashed line segment runs directly from (8 am, 0) to (4 pm, 400). A solid line connects the points (8 am, 0), (9 am, 100), (10 am, 150), (1 pm, 200), (2 pm, 350), and (4 pm, 400).",
+        "pct_correct_intl_avg": 29,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.60066,
+          "location": 0.88508
+        }
+      },
+      {
+        "rank": 3,
+        "cosine_similarity": 0.835,
+        "assessment": "TIMSS 2007",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Ratio, Proportion, and Percent",
+        "cognitive_domain": "Applying",
+        "item_type": "constructed_response",
+        "max_points": 2,
+        "scaled_points": 2,
+        "stem": "Triathlon\n\nA triathlon is a race in which athletes swim, then cycle, then run set distances. The first person to complete the whole course is the winner.\n\nKathy, Barbara, and Sue competed with each other in a triathalon. The course they covered consisted of a 1 kilometer swim, followed by a 40 kilometer cycle ride, and then a 15 kilometer run.\n\nB. Kathy was the fastest cyclist. She averaged 30 kilometers per hour for the 40 km ride. Barbara took 10 minutes more than Kathy, and Sue took 15 minutes more than Kathy.\n\nUse this information to complete the table for cycling:\n\n| Cycling | Kathy | Barbara | Sue |\n| --- | --- | --- | --- |\n| Time taken (minutes) | | | |",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Kathy 80, Barbara 90, Sue 95 (accept time given in hours and minutes)"
+            ]
+          },
+          {
+            "category": "Partial Response",
+            "descriptors": [
+              "Barbara 10 more than value for Kathy; Sue 15 more than value for Kathy",
+              "Kathy 80, at least one of others not given or incorrect."
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          },
+          {
+            "category": "Nonresponse",
+            "descriptors": [
+              "Blank"
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 13.3,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+        "irt_model": "GPCM",
+        "calibrated_parameters": {
+          "slope": 0.96616,
+          "location": 0.67041,
+          "step1": 0.4122,
+          "step2": -0.4122
+        }
+      },
+      {
+        "rank": 4,
+        "cosine_similarity": 0.826,
+        "assessment": "TIMSS 2007",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Ratio, Proportion, and Percent",
+        "cognitive_domain": "Applying",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Triathlon\n\nA triathlon is a race in which athletes swim, then cycle, then run set distances. The first person to complete the whole course is the winner.\n\nKathy, Barbara, and Sue competed with each other in a triathalon. The course they covered consisted of a 1 kilometer swim, followed by a 40 kilometer cycle ride, and then a 15 kilometer run.\n\nC. Sue was the fastest runner. She averaged 7.5 km per hour for the 15 km run. Barbara took 10 minutes more than Sue, and Kathy took 5 minutes more than Barbara.\n\nUse this information to complete the table for running:\n\n| Running | Kathy | Barbara | Sue |\n| --- | --- | --- | --- |\n| Time taken (minutes) | | | |",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Kathy 135, Barbara 130, Sue 120 (accept time given in hours and minutes)"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          },
+          {
+            "category": "Nonresponse",
+            "descriptors": [
+              "Blank"
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 21.6,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.41362,
+          "location": 0.72311
+        }
+      },
+      {
+        "rank": 5,
+        "cosine_similarity": 0.839,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Fractions and Decimals",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "A car has a fuel tank that holds 45 L of fuel. The car consumes 8.5 L of fuel for each 100 km driven. A trip of 350 km was started with a full tank of fuel. How much remained in the tank at the end of the trip?",
+        "options": [
+          {
+            "label": "A",
+            "text": "15.25 L"
+          },
+          {
+            "label": "B",
+            "text": "16.25 L"
+          },
+          {
+            "label": "C",
+            "text": "24.75 L"
+          },
+          {
+            "label": "D",
+            "text": "29.75 L"
+          }
+        ],
+        "correct_option": "A",
+        "pct_correct_intl_avg": 26,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.33,
+          "location": 1.157,
+          "guessing": 0.182
+        }
+      },
+      {
+        "rank": 6,
+        "cosine_similarity": 0.807,
+        "assessment": "TIMSS 2007",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Reasoning",
+        "item_type": "constructed_response",
+        "max_points": 2,
+        "scaled_points": 2,
+        "stem": "Triathlon\n\nA triathlon is a race in which athletes swim, then cycle, then run set distances. The first person to complete the whole course is the winner.\n\nKathy, Barbara, and Sue competed with each other in a triathalon. The course they covered consisted of a 1 kilometer swim, followed by a 40 kilometer cycle ride, and then a 15 kilometer run.\n\nD. Complete the table to show the total time each person took to finish the triathlon.\n\n| Triathlon | Kathy | Barbara | Sue |\n| --- | --- | --- | --- |\n| Time taken (minutes) | | | |\n\nWho won the triathlon?\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "250, 245, 255 - won by Barbara (accept time given in hours and minutes)",
+              "All three table entries consistent with results given by the student in A, B, and C. Winner chosen is the person with the shortest time according to the student’s table."
+            ]
+          },
+          {
+            "category": "Partial Response",
+            "descriptors": [
+              "All three table entries correctly calculated, but no winner indicated or Sue (longer time) indicated as winner.",
+              "One of three table entries incorrectly calculated but winner chosen is the person in the student’s table with the shortest time."
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          },
+          {
+            "category": "Nonresponse",
+            "descriptors": [
+              "Blank"
+            ]
+          }
+        ],
+        "scoring_notes": "| Part | Code | Kathy | Barbara | Sue |\n| --- | --- | --- | --- | --- |\n| A | 10 | 35 | (25) | 40 |\n| B | 20 | 80<br>(1hr 20 min) | 90<br>(1 hr 30 min) | 95<br>(1 hr 35 min) |\n| | 10 | Wrong | Kathy + 10 | Kathy + 15 |\n| | 11 | 80 | One or both incorrect | |\n| C | 10 | 135<br>(2 hr 15 min) | 130<br>(2 hr 10 min) | 120<br>(2 hr) |\n| D | 20 | 250<br>(4 hr 10 min) | 245<br>(4 hr 5 min) | 255<br>(4 hr 15 min) |\n| | 21 | See scoring guide above | | |\n| | 10 | | | |\n| | 11 | | | |",
+        "pct_correct_intl_avg": 32.6,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+        "irt_model": "GPCM",
+        "calibrated_parameters": {
+          "slope": 0.58019,
+          "location": 0.23264,
+          "step1": -1.41108,
+          "step2": 1.41108
+        }
+      },
+      {
+        "rank": 7,
+        "cosine_similarity": 0.831,
+        "assessment": "TIMSS 1999",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Fractions and Number Sense",
+        "cognitive_domain": "Investigating and Solving Problems",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "A runner ran 3000 m in exactly 8 minutes. What was his average speed in meters per second?",
+        "options": [
+          {
+            "label": "A",
+            "text": "3.75"
+          },
+          {
+            "label": "B",
+            "text": "6.25"
+          },
+          {
+            "label": "C",
+            "text": "16.0"
+          },
+          {
+            "label": "D",
+            "text": "37.5"
+          },
+          {
+            "label": "E",
+            "text": "62.5"
+          }
+        ],
+        "correct_option": "B",
+        "pct_correct_intl_avg": 33,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.37,
+          "location": 0.907,
+          "guessing": 0.14
+        }
+      },
+      {
+        "rank": 8,
+        "cosine_similarity": 0.814,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Ratio, Proportions, and Percent",
+        "cognitive_domain": "Knowing Facts and Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "When a new highway is built, the average time it takes a bus to travel from one town to another is reduced from 25 minutes to 20 minutes. What is the percent decrease in time taken to travel between the two towns?",
+        "options": [
+          {
+            "label": "A",
+            "text": "4%"
+          },
+          {
+            "label": "B",
+            "text": "5%"
+          },
+          {
+            "label": "C",
+            "text": "20%"
+          },
+          {
+            "label": "D",
+            "text": "25%"
+          }
+        ],
+        "correct_option": "C",
+        "pct_correct_intl_avg": 31,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.236,
+          "location": 0.945,
+          "guessing": 0.157
+        }
+      },
+      {
+        "rank": 9,
+        "cosine_similarity": 0.826,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Data and Chance",
+        "main_topic": "Data Organization and Representation",
+        "cognitive_domain": "Knowing",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: A graph of car production with time on the x-axis and total number of cars produced on the y-axis. Time starts at 8 a.m. and goes to 4 p.m. in one hour increments. Total number of cars produced goes from 0 to 400 in intervals of 50. A straight dotted line is drawn on the graph, going from the origin at 0 cars at 8 a.m., to the top right of the graph, at 4:00p.m. and 400 cars. A solid line is shown starting at the origin and going above the dotted line after 8:00a.m. and before 11:30 a.m. The solid line then goes below the dotted line from 11:30 a.m. to 1:30 p.m. It again goes above the dotted line from 1:30 p.m. to 4:00 p.m. and ends at 400 cars at 4:00 p.m. At 150 total cars produced, the solid line is at 10a.m. and the dotted line is at 11:00a.m.]\n\nThe solid line (——) on the graph shows car production by the NU Car Motor Company during a particular day.\n\nThe dotted line (-----) shows what the total number of cars produced would be if the rate of production were constant.\n\nA. By what time had a total of 150 cars been produced?\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "10 a.m."
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "11 a.m.",
+              "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "figure_description": "A line graph titled \"Car Production\". The horizontal axis is labeled \"Time\" with marked points for 8 am, 9 am, 10 am, 11 am, 12 noon, 1 pm, 2 pm, 3 pm, and 4 pm. The vertical axis is labeled \"Total Number of Cars Produced\" with grid marks from 0 to 400 in increments of 50. A dashed line segment runs directly from (8 am, 0) to (4 pm, 400). A solid line connects the points (8 am, 0), (9 am, 100), (10 am, 150), (1 pm, 200), (2 pm, 350), and (4 pm, 400).",
+        "pct_correct_intl_avg": 60,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.58054,
+          "location": -0.63868
+        }
+      },
+      {
+        "rank": 10,
+        "cosine_similarity": 0.802,
+        "assessment": "TIMSS 2007",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Applying",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Triathlon\n\nA triathlon is a race in which athletes swim, then cycle, then run set distances. The first person to complete the whole course is the winner.\n\nKathy, Barbara, and Sue competed with each other in a triathalon. The course they covered consisted of a 1 kilometer swim, followed by a 40 kilometer cycle ride, and then a 15 kilometer run.\n\nA. Barbara was the fastest swimmer and completed the 1 km distance in 25 minutes. Kathy took 10 minutes longer than Barbara, and Sue took 5 minutes longer than Kathy.\n\nUse this information to complete the table for swimming:\n\n| Swimming | Kathy | Barbara | Sue |\n| --- | --- | --- | --- |\n| Time taken (minutes) | | 25 | |",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Kathy 35, Sue 40"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Kathy 35, Sue 30",
+              "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          },
+          {
+            "category": "Nonresponse",
+            "descriptors": [
+              "Blank"
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 57.8,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.40266,
+          "location": -0.47267
+        }
+      },
+      {
+        "rank": 11,
+        "cosine_similarity": 0.801,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Data and Chance",
+        "main_topic": "Data Interpretation",
+        "cognitive_domain": "Applying",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: A graph of car production with time on the x-axis and total number of cars produced on the y-axis. Time goes from 8 a.m. to 4 p.m. in one hour increments. Total number of cars produced goes from 0 to 400 in intervals of 50. A straight dotted line is drawn on the graph, going from the origin at 0 cars at 8 a.m., to the top right of the graph, at 4:00p.m. and 400 cars. A solid line is shown starting at the origin and going above the dotted line after 8:00a.m. and before 11:30 a.m. The solid line then goes below the dotted line from 11:30 a.m. to 1:30 p.m. It again goes above the dotted line from 1:30 p.m. to 4:00 p.m. and ends at 400 cars at 4:00 p.m. The straight line is steepest between 1 p.m and 2 p.m. and shows an increase of 150 cars during this hour.]\n\nThe solid line (——) on the graph shows car production by the NU Car Motor Company during a particular day.\n\nThe dotted line (-----) shows what the total number of cars produced would be if the rate of production were constant.\n\nC. During which hour were the most cars produced?\n\nBetween ____ and ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "1 p.m. and 2 p.m."
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "figure_description": "A line graph titled \"Car Production\". The horizontal axis is labeled \"Time\" with marked points for 8 am, 9 am, 10 am, 11 am, 12 noon, 1 pm, 2 pm, 3 pm, and 4 pm. The vertical axis is labeled \"Total Number of Cars Produced\" with grid marks from 0 to 400 in increments of 50. A dashed line segment runs directly from (8 am, 0) to (4 pm, 400). A solid line connects the points (8 am, 0), (9 am, 100), (10 am, 150), (1 pm, 200), (2 pm, 350), and (4 pm, 400).",
+        "pct_correct_intl_avg": 34,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.13792,
+          "location": 0.46049
+        }
+      }
+    ]
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.87,
+      "confidence": 0.6,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.04,
+        "2": 0.06,
+        "3": 0.12,
+        "4": 0.45,
+        "5": 0.24,
+        "6": 0.03,
+        "7": 0.01,
+        "8": 0.01
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 4.23,
+      "confidence": 0.27,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.05,
+        "2": 0.15,
+        "3": 0.19,
+        "4": 0.13,
+        "5": 0.18,
+        "6": 0.15,
+        "7": 0.11,
+        "8": 0.02,
+        "9": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 7461,
+  "output_tokens": 31,
+  "cost_usd": 0.000313362,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791918369-25HBJXW0rPdcwuqjXeyd",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.87,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.04,
+          "2": 0.06,
+          "3": 0.12,
+          "4": 0.45,
+          "5": 0.24,
+          "6": 0.03,
+          "7": 0.01,
+          "8": 0.01
+        },
+        "confidence": 0.6
+      },
+      "location": {
+        "type": "score",
+        "score": 4.23,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.05,
+          "2": 0.15,
+          "3": 0.19,
+          "4": 0.13,
+          "5": 0.18,
+          "6": 0.15,
+          "7": 0.11,
+          "8": 0.02,
+          "9": 0.01
+        },
+        "confidence": 0.27
+      }
+    },
+    "usage": {
+      "input_tokens": 7461,
+      "output_tokens": 31,
+      "cost": 0.000313362
+    },
+    "id": "gen-dec-1791918369-25HBJXW0rPdcwuqjXeyd",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T19:06:09+00:00",
+  "seconds": null
+}

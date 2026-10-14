@@ -1,0 +1,226 @@
+{
+  "item_id": "M042301A",
+  "assessment": "TIMSS 2007",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Algebra",
+  "main_topic": "Patterns",
+  "cognitive_domain": "Knowing",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+  "excluded_item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M042301A",
+    "TIMSS 2007/grade 8/Mathematics/M042301B",
+    "TIMSS 2007/grade 8/Mathematics/M042301C"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2007",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Algebra",
+      "main_topic": "Patterns",
+      "cognitive_domain": "Knowing",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "Interior Angles\nJackson was investigating the properties of polygons. Jackson made up the table below to see if he could find a connection between sides and angles.\n\nA. Complete the table by filling in the blank spaces.\n\n| Polygon | Number of Sides | Number of Triangles | Sum of Interior Angles |\n| --- | --- | --- | --- |\n| [Image: Triangle] | 3 | 1 | 1 × 180° |\n| [Image: Quadrilateral] | ____ | ____ | ____ × 180° |\n| [Image: Pentagon] | ____ | ____ | ____ × 180° |\n| [Image: Hexagon] | ____ | ____ | ____ × 180° |",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "All entries correct\n4 2 2\n5 3 3\n6 4 4"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "Incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+          ]
+        },
+        {
+          "category": "Nonresponse",
+          "descriptors": [
+            "Blank"
+          ]
+        }
+      ],
+      "figure_description": "A table with four rows of geometric polygons in the first column:\n- Row 1: A triangle (3 sides).\n- Row 2: A four-sided polygon (quadrilateral) with a dashed line segment connecting two opposite vertices, dividing the polygon into 2 triangles.\n- Row 3: A five-sided polygon (pentagon) with dashed line segments drawn from one vertex to two non-adjacent vertices, dividing the polygon into 3 triangles.\n- Row 4: A six-sided polygon (hexagon) with dashed line segments drawn from one vertex to three non-adjacent vertices, dividing the polygon into 4 triangles.",
+      "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics)\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.64,
+      "confidence": 0.34,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.07,
+        "2": 0.15,
+        "3": 0.24,
+        "4": 0.18,
+        "5": 0.17,
+        "6": 0.09,
+        "7": 0.04,
+        "8": 0.02
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 2.64,
+      "confidence": 0.44,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.08,
+        "1": 0.22,
+        "2": 0.24,
+        "3": 0.19,
+        "4": 0.1,
+        "5": 0.09,
+        "6": 0.05,
+        "7": 0.02,
+        "8": 0.01,
+        "9": 0.0
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1252,
+  "output_tokens": 31,
+  "cost_usd": 5.2584e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914764-y70tmmocRqEtayra0fDc",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.64,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.07,
+          "2": 0.15,
+          "3": 0.24,
+          "4": 0.18,
+          "5": 0.17,
+          "6": 0.09,
+          "7": 0.04,
+          "8": 0.02
+        },
+        "confidence": 0.34
+      },
+      "location": {
+        "type": "score",
+        "score": 2.64,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.08,
+          "1": 0.22,
+          "2": 0.24,
+          "3": 0.19,
+          "4": 0.1,
+          "5": 0.09,
+          "6": 0.05,
+          "7": 0.02,
+          "8": 0.01,
+          "9": 0
+        },
+        "confidence": 0.44
+      }
+    },
+    "usage": {
+      "input_tokens": 1252,
+      "output_tokens": 31,
+      "cost": 5.2584e-05
+    },
+    "id": "gen-dec-1791914764-y70tmmocRqEtayra0fDc",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:04+00:00",
+  "seconds": null
+}

@@ -1,0 +1,276 @@
+{
+  "item_id": "K8",
+  "assessment": "TIMSS 1995",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Geometry",
+  "main_topic": null,
+  "cognitive_domain": "Knowing",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/K8"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 1995",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Geometry",
+      "cognitive_domain": "Knowing",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "Which rectangle is NOT divided into 4 equal parts?",
+      "options": [
+        {
+          "label": "A",
+          "text": "[Image: Rectangle divided into 4 equal smaller rectangles]"
+        },
+        {
+          "label": "B",
+          "text": "[Image: Rectangle divided into 4 equal triangles]"
+        },
+        {
+          "label": "C",
+          "text": "[Image: Rectangle divided into 4 equal horizontal strips]"
+        },
+        {
+          "label": "D",
+          "text": "[Image: Rectangle divided by three parallel diagonal lines]"
+        }
+      ],
+      "correct_option": "D",
+      "figure_description": "Four rectangular figures labeled A, B, C, and D, each partitioned into 4 regions:\n- Option A: Divided into 4 equal quadrants by a vertical line and a horizontal line through the center.\n- Option B: Divided into two squares by a central vertical line, with each square bisected by a diagonal from bottom-left to top-right, creating 4 identical right-angled triangles.\n- Option C: Divided into 4 equal horizontal bands by three evenly spaced horizontal lines.\n- Option D: Divided into 4 unequal regions by three parallel diagonal lines sloping up and to the right, creating two corner triangles and two trapezoids of unequal sizes.",
+      "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.63,
+      "confidence": 0.36,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.07,
+        "2": 0.16,
+        "3": 0.26,
+        "4": 0.17,
+        "5": 0.15,
+        "6": 0.09,
+        "7": 0.04,
+        "8": 0.02
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 1.65,
+      "confidence": 0.55,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.24,
+        "1": 0.3,
+        "2": 0.22,
+        "3": 0.14,
+        "4": 0.05,
+        "5": 0.03,
+        "6": 0.01,
+        "7": 0.01,
+        "8": 0.0,
+        "9": 0.0
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 3.86,
+      "confidence": 0.89,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.0,
+        "2": 0.01,
+        "3": 0.05,
+        "4": 0.91,
+        "5": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1238,
+  "output_tokens": 45,
+  "cost_usd": 5.1996e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914755-7b8MC1tSloDjyUdkWAcT",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.63,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.07,
+          "2": 0.16,
+          "3": 0.26,
+          "4": 0.17,
+          "5": 0.15,
+          "6": 0.09,
+          "7": 0.04,
+          "8": 0.02
+        },
+        "confidence": 0.36
+      },
+      "location": {
+        "type": "score",
+        "score": 1.65,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.24,
+          "1": 0.3,
+          "2": 0.22,
+          "3": 0.14,
+          "4": 0.05,
+          "5": 0.03,
+          "6": 0.01,
+          "7": 0.01,
+          "8": 0,
+          "9": 0
+        },
+        "confidence": 0.55
+      },
+      "guessing": {
+        "type": "score",
+        "score": 3.86,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.05,
+          "4": 0.91,
+          "5": 0.01
+        },
+        "confidence": 0.89
+      }
+    },
+    "usage": {
+      "input_tokens": 1238,
+      "output_tokens": 45,
+      "cost": 5.1996e-05
+    },
+    "id": "gen-dec-1791914755-7b8MC1tSloDjyUdkWAcT",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:05:55+00:00",
+  "seconds": null
+}

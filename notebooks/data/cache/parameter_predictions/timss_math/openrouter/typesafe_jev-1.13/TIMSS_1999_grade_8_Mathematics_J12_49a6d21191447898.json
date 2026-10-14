@@ -1,0 +1,742 @@
+{
+  "item_id": "J12",
+  "assessment": "TIMSS 1999",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Fractions and Number Sense",
+  "main_topic": null,
+  "cognitive_domain": "Using Routine Procedures",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 1999/grade 8/Mathematics/J12"
+  ],
+  "similar_items": [
+    {
+      "rank": 1,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M022199",
+      "item_id": "M022199",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.85,
+      "pct_correct_intl_avg": 40,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.352,
+      "location": 0.51,
+      "guessing": 0.211
+    },
+    {
+      "rank": 2,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M032064",
+      "item_id": "M032064",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8377,
+      "pct_correct_intl_avg": 27,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.39819,
+      "location": 0.71091
+    },
+    {
+      "rank": 3,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M032725",
+      "item_id": "M032725",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8398,
+      "pct_correct_intl_avg": 25,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.32546,
+      "location": 0.78901
+    },
+    {
+      "rank": 4,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M032753C",
+      "item_id": "M032753C",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.682,
+      "pct_correct_intl_avg": 29.7,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.0235,
+      "location": 0.51765
+    },
+    {
+      "rank": 5,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M042086",
+      "item_id": "M042086",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.7981,
+      "pct_correct_intl_avg": 32,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.2303,
+      "location": 0.58604
+    },
+    {
+      "rank": 6,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1999/grade 8/Mathematics/R14",
+      "item_id": "R14",
+      "assessment": "TIMSS 1999",
+      "cosine_similarity": 0.8374,
+      "pct_correct_intl_avg": 30,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.005,
+      "location": 0.62
+    },
+    {
+      "rank": 7,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M042198A",
+      "item_id": "M042198A",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8234,
+      "pct_correct_intl_avg": 70,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.17937,
+      "location": -0.75177
+    },
+    {
+      "rank": 8,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1999/grade 8/Mathematics/N13",
+      "item_id": "N13",
+      "assessment": "TIMSS 1999",
+      "cosine_similarity": 0.8322,
+      "pct_correct_intl_avg": 53,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 1.013,
+      "location": -0.195
+    },
+    {
+      "rank": 9,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M032079",
+      "item_id": "M032079",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.7751,
+      "pct_correct_intl_avg": 34,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.997,
+      "location": 1.005,
+      "guessing": 0.184
+    },
+    {
+      "rank": 10,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M022012",
+      "item_id": "M022012",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8326,
+      "pct_correct_intl_avg": 54,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.518,
+      "location": -0.567
+    }
+  ],
+  "context": "item+references",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 1999",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Fractions and Number Sense",
+      "cognitive_domain": "Using Routine Procedures",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "Divide: 6/55 ÷ 3/25 =\n\nAnswer: ____",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "10/11",
+            "Other fractions or decimals equivalent to 10/11 (e.g., 30/33, 150/165, .909, .91, etc.)"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "Any fraction with 2 as a numerator [Divides 6 by 3]",
+            "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+          ]
+        }
+      ],
+      "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data."
+    },
+    "reference_items": [
+      {
+        "rank": 1,
+        "cosine_similarity": 0.85,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Fractions and Decimals",
+        "cognitive_domain": "Knowing Facts and Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "3/5 + (3/10 × 4/15) =",
+        "options": [
+          {
+            "label": "A",
+            "text": "3/51"
+          },
+          {
+            "label": "B",
+            "text": "1/6"
+          },
+          {
+            "label": "C",
+            "text": "6/25"
+          },
+          {
+            "label": "D",
+            "text": "11/25"
+          },
+          {
+            "label": "E",
+            "text": "17/25"
+          }
+        ],
+        "correct_option": "E",
+        "pct_correct_intl_avg": 40,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.352,
+          "location": 0.51,
+          "guessing": 0.211
+        }
+      },
+      {
+        "rank": 2,
+        "cosine_similarity": 0.838,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Fractions and Decimals",
+        "cognitive_domain": "Applying",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Ann and Jenny divide 560 zeds between them. If Jenny gets 3/8 of the money, how many zeds will Ann get?\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "350"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "210",
+              "5/8",
+              "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 27,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.39819,
+          "location": 0.71091
+        }
+      },
+      {
+        "rank": 3,
+        "cosine_similarity": 0.84,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Fractions and Decimals",
+        "cognitive_domain": "Knowing",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Write 3 5/6 in decimal form, rounded to 2 decimal places.\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "3.83"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "3.56",
+              "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 25,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.32546,
+          "location": 0.78901
+        }
+      },
+      {
+        "rank": 4,
+        "cosine_similarity": 0.682,
+        "assessment": "TIMSS 2007",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Data and Chance",
+        "main_topic": "Data Interpretation",
+        "cognitive_domain": "Knowing",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "The teacher also said that three scheduling conditions must be met for the trip. They are as follows:\n\n1. We must leave Ourtown at 9 a.m. or later;\n\n2. We must be back at Ourtown by 5 p.m.;\n\n3. We must stay at the town we visit for at least 3 hours.\n\nMike and Katy used the bus timetables to find out if they could meet the teacher's conditions. They started putting the information in the table below but they did not complete it.\n\n| | Best Bus Times | Best Bus Times | Best Bus Times | Best Bus Times | Best Bus Times | Teacher's Conditions | Teacher's Conditions | Teacher's Conditions |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Trip to... | Leave Ourtown at... | Arrive destination at... | Depart for return to Ourtown... | Arrive back in Ourtown at... | Time in town visited | Leave 9 am or later | Stay at least 3 hours | Back by 5 pm |\n| Acton | 9:00 am | 11:15 am | | | | | | |\n| Burley | 9:15 am | 12:20 pm | 2:30 pm | 5:35 pm | 2 hr 10 min | Yes | No | No |\n| Camford | 9:25 am | | | | | | | |\n| Darley | 9:10 am | 11:15 am | 2:40 pm | 4:45 pm | 3 hr 25 min | Yes | Yes | Yes |\n\nActon Bus Timetables\n\nBus Timetable\nFrom Ourtown to Acton\n\n| Depart: Ourtown | Arrive: Acton |\n| :--- | :--- |\n| 8:00 am | 10:15 am |\n| 9:00 am | 11:15 am |\n| 10:00 am | 12:15 pm |\n| 11:00 am | 1:15 pm |\n| 12:00 pm | 2:15 pm |\n| 1:00 pm | 3:15 pm |\n| 2:00 pm | 4:15 pm |\n| 3:00 pm | 5:15 pm |\n| 4:00 pm | 6:15 pm |\n\nBus Timetable\nFrom Acton to Ourtown\n\n| Depart: Acton | Arrive: Ourtown |\n| :--- | :--- |\n| 8:30 am | 10:45 am |\n| 9:30 am | 11:45 am |\n| 10:30 am | 12:45 pm |\n| 11:30 am | 1:45 pm |\n| 12:30 pm | 2:45 pm |\n| 1:30 pm | 3:45 pm |\n| 2:30 pm | 4:45 pm |\n| 3:30 pm | 5:45 pm |\n| 4:30 pm | 6:45 pm |\n\nCamford Bus Timetables\n\nBus Timetable\nFrom Ourtown to Camford\n\n| Depart: Ourtown | Arrive: Camford |\n| :--- | :--- |\n| 8:25 am | 10:40 am |\n| 9:25 am | 11:40 am |\n| 10:25 am | 12:40 pm |\n| 11:25 am | 1:40 pm |\n| 12:25 pm | 2:40 pm |\n| 1:25 pm | 3:40 pm |\n| 2:25 pm | 4:40 pm |\n| 3:25 pm | 5:40 pm |\n| 4:25 pm | 6:40 pm |\n\nBus Timetable\nFrom Camford to Ourtown\n\n| Depart: Camford | Arrive: Ourtown |\n| :--- | :--- |\n| 8:35 am | 10:50 am |\n| 9:35 am | 11:50 am |\n| 10:35 am | 12:50 pm |\n| 11:35 am | 1:50 pm |\n| 12:35 pm | 2:50 pm |\n| 1:35 pm | 3:50 pm |\n| 2:35 pm | 4:50 pm |\n| 3:35 pm | 5:50 pm |\n| 4:35 pm | 6:50 pm |\n\nC. Which towns meet the teacher's three scheduling conditions?\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Indicates Acton and Darley",
+              "Darley AND other town(s) (not Burley) consistent with answers for A and B"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+            ]
+          },
+          {
+            "category": "Nonresponse",
+            "descriptors": [
+              "Blank"
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 29.7,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.0235,
+          "location": 0.51765
+        }
+      },
+      {
+        "rank": 5,
+        "cosine_similarity": 0.798,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Algebra",
+        "main_topic": "Equations/Formulas and Functions",
+        "cognitive_domain": "Applying",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "a + b = 25.\nWhat is the value of 2a + 2b + 4?\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "54"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "104",
+              "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 32,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.2303,
+          "location": 0.58604
+        }
+      },
+      {
+        "rank": 6,
+        "cosine_similarity": 0.837,
+        "assessment": "TIMSS 1999",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Fractions and Number Sense",
+        "cognitive_domain": "Investigating and Solving Problems",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Laura had $240. She spent 5/8 of it. How much money did she have left?\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "90"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "150 [money spent]",
+              "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "scoring_notes": "There is no distinction made between responses with and without units.",
+        "pct_correct_intl_avg": 30,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.005,
+          "location": 0.62
+        }
+      },
+      {
+        "rank": 7,
+        "cosine_similarity": 0.823,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Algebra",
+        "main_topic": "Patterns",
+        "cognitive_domain": "Knowing",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "1/2, 2/3, 3/4, 4/5, 5/6\n\nA. What is the next term in this pattern?\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "6/7"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 70,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.17937,
+          "location": -0.75177
+        }
+      },
+      {
+        "rank": 8,
+        "cosine_similarity": 0.832,
+        "assessment": "TIMSS 1999",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Algebra",
+        "cognitive_domain": "Using Routine Procedures",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "If x = 3, what is the value of (5x + 3)/(4x − 3) ?\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "2",
+              "18/9, 2/1 or other fraction equivalent to 2",
+              "Other correct"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Indicates the correct substitution of x = 3 in numerator and/or denominator but student did not correctly complete the solution.",
+              "Indicates a wrong substitution such as 5x = 53 or 5x = 5 + 3 in the numerator; for example, any fractions with 56 or 11 as numerators, or 40 or 4 as denominators.",
+              "A response containing the variable x",
+              "Cancels or ignores x's (e.g., 8/1, 8, 7, etc.)",
+              "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 53,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 1.013,
+          "location": -0.195
+        }
+      },
+      {
+        "rank": 9,
+        "cosine_similarity": 0.775,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Fractions and Decimals",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "John and Cathy were told to divide a number by 100. By mistake John multiplied the number by 100 and obtained an answer of 450.\nCathy correctly divided the number by 100. What was her answer?",
+        "options": [
+          {
+            "label": "A",
+            "text": "0.0045"
+          },
+          {
+            "label": "B",
+            "text": "0.045"
+          },
+          {
+            "label": "C",
+            "text": "0.45"
+          },
+          {
+            "label": "D",
+            "text": "4.5"
+          }
+        ],
+        "correct_option": "B",
+        "pct_correct_intl_avg": 34,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.997,
+          "location": 1.005,
+          "guessing": 0.184
+        }
+      },
+      {
+        "rank": 10,
+        "cosine_similarity": 0.833,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Fractions and Decimals",
+        "cognitive_domain": "Using Concepts",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Write a fraction that is less than 4/9.\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "A fraction with numerator smaller than 4 and denominator equal to 9, includes 3/9 = 1/3 OR 1/3.",
+              "A fraction with numerator equal to 4 and denominator greater than 9, includes 4/10 = 2/5 OR 2/5.",
+              "3/8",
+              "Other correct fraction"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "5/9",
+              "2/3",
+              "Any fraction equivalent to 4/9.",
+              "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)."
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 54,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.518,
+          "location": -0.567
+        }
+      }
+    ]
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.23,
+      "confidence": 0.78,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.02,
+        "2": 0.05,
+        "3": 0.64,
+        "4": 0.2,
+        "5": 0.06,
+        "6": 0.01,
+        "7": 0.0,
+        "8": 0.0
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 3.86,
+      "confidence": 0.4,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.04,
+        "2": 0.17,
+        "3": 0.21,
+        "4": 0.2,
+        "5": 0.27,
+        "6": 0.06,
+        "7": 0.03,
+        "8": 0.01,
+        "9": 0.0
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 5678,
+  "output_tokens": 31,
+  "cost_usd": 0.000238476,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791918363-GpIggd3sk1TfzijeHewH",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.23,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.02,
+          "2": 0.05,
+          "3": 0.64,
+          "4": 0.2,
+          "5": 0.06,
+          "6": 0.01,
+          "7": 0,
+          "8": 0
+        },
+        "confidence": 0.78
+      },
+      "location": {
+        "type": "score",
+        "score": 3.86,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.04,
+          "2": 0.17,
+          "3": 0.21,
+          "4": 0.2,
+          "5": 0.27,
+          "6": 0.06,
+          "7": 0.03,
+          "8": 0.01,
+          "9": 0
+        },
+        "confidence": 0.4
+      }
+    },
+    "usage": {
+      "input_tokens": 5678,
+      "output_tokens": 31,
+      "cost": 0.000238476
+    },
+    "id": "gen-dec-1791918363-GpIggd3sk1TfzijeHewH",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T19:06:03+00:00",
+  "seconds": null
+}

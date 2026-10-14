@@ -1,0 +1,277 @@
+{
+  "item_id": "M041184",
+  "assessment": "TIMSS 2011",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Data Display",
+  "main_topic": "Organizing and Representing",
+  "cognitive_domain": "Reasoning",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M041184"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2011",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Data Display",
+      "main_topic": "Organizing and Representing",
+      "cognitive_domain": "Reasoning",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "Mr. Johnson asked the students in his school about their favorite subject.\n\nThis pie chart shows how many students liked each of 5 subjects.\n\n[Image: Pie chart titled Favorite Subject, divided into various sizes and labeled with Math about one-third, Science about one-fourth, History about one-fifth, Gym less than one-fifth, and Music less than one-eighth.]\n\nWhich graph shows the same information as the pie chart?",
+      "options": [
+        {
+          "label": "A",
+          "text": "[Image: Bar graph with y-axis labeled number of students and values from 0 to 25; x-axis with 5 columns, Math value of 30, Science value of 25, History value of 20, Gym value of 17, Music value of 8.]"
+        },
+        {
+          "label": "B",
+          "text": "[Image: Bar graph with y-axis labeled number of students and values from 0 to 25; x-axis with 5 columns, Math value of 30, Science value of 15, History value of 15, Gym value of 15, Music value of 14.]"
+        },
+        {
+          "label": "C",
+          "text": "[Image: Bar graph with y-axis labeled number of students and values from 0 to 25; x-axis with 5 columns, Math value of 20, Science value of 25, History value of 30, Gym value of 17, Music value of 8.]"
+        },
+        {
+          "label": "D",
+          "text": "[Image: Bar graph with y-axis labeled number of students and values from 0 to 25; x-axis with 5 columns, Math value of 25, Science value of 30, History value of 20, Gym value of 8, Music value of 12.]"
+        }
+      ],
+      "correct_option": "A",
+      "figure_description": "A pie chart titled \"Favorite Subject\" is divided into five sectors: Math (the largest sector, about one-third of the circle), Science (the second largest, about one-fourth of the circle), History (about one-fifth of the circle), Gym (smaller than History), and Music (the smallest sector, less than one-eighth of the circle). In order of sector size from largest to smallest: Math, Science, History, Gym, Music.\n\nEach of the four response options shows a vertical bar graph with the vertical axis labeled \"Number of Students\" ranging from 0 to 35 with grid lines every 5 units, and the horizontal axis showing five subjects: Math, Science, History, Gym, Music.\n- Graph A: Math = 30, Science = 25, History = 20, Gym = 17, Music = 8.\n- Graph B: Math = 30, Science = 15, History = 15, Gym = 15, Music = 14.\n- Graph C: Math = 20, Science = 25, History = 30, Gym = 17, Music = 8.\n- Graph D: Math = 25, Science = 30, History = 20, Gym = 8, Music = 16.",
+      "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.86,
+      "confidence": 0.32,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.03,
+        "1": 0.05,
+        "2": 0.13,
+        "3": 0.24,
+        "4": 0.19,
+        "5": 0.18,
+        "6": 0.1,
+        "7": 0.05,
+        "8": 0.03
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 2.55,
+      "confidence": 0.5,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.08,
+        "1": 0.2,
+        "2": 0.26,
+        "3": 0.22,
+        "4": 0.11,
+        "5": 0.09,
+        "6": 0.03,
+        "7": 0.01,
+        "8": 0.0,
+        "9": 0.0
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 3.79,
+      "confidence": 0.84,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.01,
+        "2": 0.02,
+        "3": 0.09,
+        "4": 0.86,
+        "5": 0.0
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1687,
+  "output_tokens": 45,
+  "cost_usd": 7.0854e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914768-Rx28Zm1VNCK9zcpXHLB0",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.86,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.05,
+          "2": 0.13,
+          "3": 0.24,
+          "4": 0.19,
+          "5": 0.18,
+          "6": 0.1,
+          "7": 0.05,
+          "8": 0.03
+        },
+        "confidence": 0.32
+      },
+      "location": {
+        "type": "score",
+        "score": 2.55,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.08,
+          "1": 0.2,
+          "2": 0.26,
+          "3": 0.22,
+          "4": 0.11,
+          "5": 0.09,
+          "6": 0.03,
+          "7": 0.01,
+          "8": 0,
+          "9": 0
+        },
+        "confidence": 0.5
+      },
+      "guessing": {
+        "type": "score",
+        "score": 3.79,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.01,
+          "2": 0.02,
+          "3": 0.09,
+          "4": 0.86,
+          "5": 0
+        },
+        "confidence": 0.84
+      }
+    },
+    "usage": {
+      "input_tokens": 1687,
+      "output_tokens": 45,
+      "cost": 7.0854e-05
+    },
+    "id": "gen-dec-1791914768-Rx28Zm1VNCK9zcpXHLB0",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:09+00:00",
+  "seconds": null
+}

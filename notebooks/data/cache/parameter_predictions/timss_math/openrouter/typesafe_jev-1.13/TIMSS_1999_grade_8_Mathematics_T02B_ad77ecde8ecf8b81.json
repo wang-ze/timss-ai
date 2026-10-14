@@ -1,0 +1,223 @@
+{
+  "item_id": "T02B",
+  "assessment": "TIMSS 1999",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Fractions and Number Sense",
+  "main_topic": null,
+  "cognitive_domain": "Investigating and Solving Problems",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 1999/grade 8/Mathematics/T02A",
+    "TIMSS 1999/grade 8/Mathematics/T02B"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 1999",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Fractions and Number Sense",
+      "cognitive_domain": "Investigating and Solving Problems",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "A book publisher sent 140 copies of a certain book to a bookstore. The publisher packed the books in two types of boxes. One type of box held 8 copies of the book, and the other type of box held 12 copies of the book. The boxes were all full, and there were equal numbers of both types of boxes.\n\nb) What fraction of the books sent to the bookstore were packed in the smaller boxes?\n\nAnswer: ____",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "2/5",
+            "Another fraction or percent equivalent to 2/5 (e.g., 8/20, 14/35, 28/70, etc.)",
+            "Other correct"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "1/2",
+            "2/3 OR 8/12 OR 56/84 [fraction of boxes]",
+            "Any integer",
+            "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+          ]
+        }
+      ],
+      "scoring_notes": "The term “equivalent” in the scoring guide below includes decimal fractions and percentages.",
+      "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.64,
+      "confidence": 0.37,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.06,
+        "2": 0.14,
+        "3": 0.26,
+        "4": 0.19,
+        "5": 0.17,
+        "6": 0.09,
+        "7": 0.03,
+        "8": 0.02
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 5.03,
+      "confidence": 0.42,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.0,
+        "1": 0.02,
+        "2": 0.06,
+        "3": 0.15,
+        "4": 0.13,
+        "5": 0.21,
+        "6": 0.2,
+        "7": 0.14,
+        "8": 0.07,
+        "9": 0.02
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1075,
+  "output_tokens": 31,
+  "cost_usd": 4.515e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914757-STBdQC7gVIMW3YPlcfGu",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.64,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.06,
+          "2": 0.14,
+          "3": 0.26,
+          "4": 0.19,
+          "5": 0.17,
+          "6": 0.09,
+          "7": 0.03,
+          "8": 0.02
+        },
+        "confidence": 0.37
+      },
+      "location": {
+        "type": "score",
+        "score": 5.03,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0,
+          "1": 0.02,
+          "2": 0.06,
+          "3": 0.15,
+          "4": 0.13,
+          "5": 0.21,
+          "6": 0.2,
+          "7": 0.14,
+          "8": 0.07,
+          "9": 0.02
+        },
+        "confidence": 0.42
+      }
+    },
+    "usage": {
+      "input_tokens": 1075,
+      "output_tokens": 31,
+      "cost": 4.515e-05
+    },
+    "id": "gen-dec-1791914757-STBdQC7gVIMW3YPlcfGu",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:05:57+00:00",
+  "seconds": null
+}

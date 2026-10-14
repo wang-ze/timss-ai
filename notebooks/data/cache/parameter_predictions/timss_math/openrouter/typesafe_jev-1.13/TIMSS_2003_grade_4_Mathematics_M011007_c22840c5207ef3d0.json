@@ -1,0 +1,836 @@
+{
+  "item_id": "M011007",
+  "assessment": "TIMSS 2003",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Number",
+  "main_topic": "Whole Numbers",
+  "cognitive_domain": "Using Concepts",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 2003/grade 4/Mathematics/M011007"
+  ],
+  "similar_items": [
+    {
+      "rank": 1,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M041052",
+      "item_id": "M041052",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.9279,
+      "pct_correct_intl_avg": 70.5,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.78018,
+      "location": -0.76098,
+      "guessing": 0.19072
+    },
+    {
+      "rank": 2,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M051117",
+      "item_id": "M051117",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.7504,
+      "pct_correct_intl_avg": 54,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.01373,
+      "location": 0.28451,
+      "guessing": 0.30311
+    },
+    {
+      "rank": 3,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M041010",
+      "item_id": "M041010",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.9042,
+      "pct_correct_intl_avg": 72,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.88292,
+      "location": -0.43529,
+      "guessing": 0.29569
+    },
+    {
+      "rank": 4,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M011005",
+      "item_id": "M011005",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.7789,
+      "pct_correct_intl_avg": 78,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.474,
+      "location": -1.508,
+      "guessing": 0.349
+    },
+    {
+      "rank": 5,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M011018",
+      "item_id": "M011018",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8978,
+      "pct_correct_intl_avg": 77,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.715,
+      "location": -1.191,
+      "guessing": 0.101
+    },
+    {
+      "rank": 6,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M031173",
+      "item_id": "M031173",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.7973,
+      "pct_correct_intl_avg": 57.6,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.55926,
+      "location": -0.1457,
+      "guessing": 0.12482
+    },
+    {
+      "rank": 7,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M041335",
+      "item_id": "M041335",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.7403,
+      "pct_correct_intl_avg": 76,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.71719,
+      "location": -1.31267,
+      "guessing": 0.15675
+    },
+    {
+      "rank": 8,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M041011",
+      "item_id": "M041011",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8875,
+      "pct_correct_intl_avg": 66,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.09989,
+      "location": -0.40181,
+      "guessing": 0.21168
+    },
+    {
+      "rank": 9,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/I8",
+      "item_id": "I8",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.7968,
+      "pct_correct_intl_avg": 54,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.425,
+      "location": 0.702,
+      "guessing": 0.263
+    },
+    {
+      "rank": 10,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M011021",
+      "item_id": "M011021",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8869,
+      "pct_correct_intl_avg": 68,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.754,
+      "location": -0.484,
+      "guessing": 0.186
+    }
+  ],
+  "context": "item+references",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2003",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Number",
+      "main_topic": "Whole Numbers",
+      "cognitive_domain": "Using Concepts",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "Which of these has the same value as 342?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3,000 + 400 + 2"
+        },
+        {
+          "label": "B",
+          "text": "300 + 40 + 2"
+        },
+        {
+          "label": "C",
+          "text": "30 + 4 + 2"
+        },
+        {
+          "label": "D",
+          "text": "3 + 4 + 2"
+        }
+      ],
+      "correct_option": "B",
+      "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data."
+    },
+    "reference_items": [
+      {
+        "rank": 1,
+        "cosine_similarity": 0.928,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Which number equals 3 ones + 2 tens + 4 hundreds?",
+        "options": [
+          {
+            "label": "A",
+            "text": "432"
+          },
+          {
+            "label": "B",
+            "text": "423"
+          },
+          {
+            "label": "C",
+            "text": "324"
+          },
+          {
+            "label": "D",
+            "text": "234"
+          }
+        ],
+        "correct_option": "B",
+        "pct_correct_intl_avg": 70.5,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.78018,
+          "location": -0.76098,
+          "guessing": 0.19072
+        }
+      },
+      {
+        "rank": 2,
+        "cosine_similarity": 0.75,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Data Display",
+        "main_topic": "Reading and Interpreting",
+        "cognitive_domain": "Reasoning",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "The graph shows the number of students at each grade in the Pine School.\n\n[Image: Bar graph titled Pine School shows 6 columns labeled 1, 2, 3, 4, 5, and 6. X-axis is labeled Grade. Y-axis is labeled Number of Students with values from 0 to 35 and increments at every 5 units.\n• Grade 1: value of 20.\n• Grade 2: value of 25.\n• Grade 3: value of 20.\n• Grade 4: value of 25.\n• Grade 5: value of 30.\n• Grade 6: value of 25.]\n\nIn the Pine School there is room in each grade for 30 students. How many more students could be in the school?",
+        "options": [
+          {
+            "label": "A",
+            "text": "20"
+          },
+          {
+            "label": "B",
+            "text": "25"
+          },
+          {
+            "label": "C",
+            "text": "30"
+          },
+          {
+            "label": "D",
+            "text": "35"
+          }
+        ],
+        "correct_option": "D",
+        "figure_description": "A vertical bar graph titled \"Pine School\". The vertical axis is labeled \"Number of Students\" and is marked with grid lines from 0 to 35 in increments of 5 (0, 5, 10, 15, 20, 25, 30, 35). The horizontal axis is labeled \"Grade\" and has tick marks labeled 1, 2, 3, 4, 5, 6. The shaded gray bars have the following heights:\n- Grade 1: height 20\n- Grade 2: height 25\n- Grade 3: height 20\n- Grade 4: height 25\n- Grade 5: height 30\n- Grade 6: height 25",
+        "pct_correct_intl_avg": 54,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.01373,
+          "location": 0.28451,
+          "guessing": 0.30311
+        }
+      },
+      {
+        "rank": 3,
+        "cosine_similarity": 0.904,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "In which number does the 8 have the value of 800?",
+        "options": [
+          {
+            "label": "A",
+            "text": "1,468"
+          },
+          {
+            "label": "B",
+            "text": "2,587"
+          },
+          {
+            "label": "C",
+            "text": "3,809"
+          },
+          {
+            "label": "D",
+            "text": "8,634"
+          }
+        ],
+        "correct_option": "C",
+        "pct_correct_intl_avg": 72,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.88292,
+          "location": -0.43529,
+          "guessing": 0.29569
+        }
+      },
+      {
+        "rank": 4,
+        "cosine_similarity": 0.779,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Measurement",
+        "main_topic": "Attributes and Units",
+        "cognitive_domain": "Reasoning",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Which of these figures has the largest area?",
+        "options": [
+          {
+            "label": "A",
+            "text": "[Image: 2 by 3 grid of squares]"
+          },
+          {
+            "label": "B",
+            "text": "[Image: 1 by 6 row of squares]"
+          },
+          {
+            "label": "C",
+            "text": "[Image: 2 by 4 grid of squares]"
+          },
+          {
+            "label": "D",
+            "text": "[Image: 6 squares arranged in two offset rows of 3]"
+          }
+        ],
+        "correct_option": "C",
+        "figure_description": "Four shapes composed of identical square units are shown:\n- Option A: A rectangle consisting of a grid with 2 rows and 3 columns (6 square units in total).\n- Option B: A horizontal bar consisting of a single row of 6 square units (6 square units in total).\n- Option C: A rectangle consisting of a grid with 2 rows and 4 columns (8 square units in total).\n- Option D: A figure consisting of 6 square units arranged in two rows of 3 squares: a top row of 3 adjacent squares, and a bottom row of 3 adjacent squares shifted to the right so that its leftmost square is directly beneath the rightmost square of the top row (6 square units in total).",
+        "pct_correct_intl_avg": 78,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.474,
+          "location": -1.508,
+          "guessing": 0.349
+        }
+      },
+      {
+        "rank": 5,
+        "cosine_similarity": 0.898,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Using Concepts",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Which digit is in the hundreds place in 2,345?",
+        "options": [
+          {
+            "label": "A",
+            "text": "2"
+          },
+          {
+            "label": "B",
+            "text": "3"
+          },
+          {
+            "label": "C",
+            "text": "4"
+          },
+          {
+            "label": "D",
+            "text": "5"
+          }
+        ],
+        "correct_option": "B",
+        "pct_correct_intl_avg": 77,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.715,
+          "location": -1.191,
+          "guessing": 0.101
+        }
+      },
+      {
+        "rank": 6,
+        "cosine_similarity": 0.797,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Maria has 6 red boxes. Each red box has 4 pencils inside. She also has 3 blue boxes. Each blue box has 2 pencils inside. How many pencils does Maria have altogether?",
+        "options": [
+          {
+            "label": "A",
+            "text": "6"
+          },
+          {
+            "label": "B",
+            "text": "15"
+          },
+          {
+            "label": "C",
+            "text": "24"
+          },
+          {
+            "label": "D",
+            "text": "30"
+          }
+        ],
+        "correct_option": "D",
+        "pct_correct_intl_avg": 57.6,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.55926,
+          "location": -0.1457,
+          "guessing": 0.12482
+        }
+      },
+      {
+        "rank": 7,
+        "cosine_similarity": 0.74,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Data Display",
+        "main_topic": "Reading and Interpreting",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Ahmed made a survey of the favorite color of the students in 4 classes.\n\n[Image: Four bar graph figures labeled Class 1, Class 2, Class 3, Class 4 with 3 columns labeled Red, Green, and Blue on x-axis. Y-axis with values of 0 to 14 for Class 1 and Class 4 and values of 0 to 15 for Class 2 and Class 3.\n• Class 1: Red value of 12, Green value of 10, Blue value of 8.\n• Class 2: Red value of 10, Green value of 15, Blue value of 5.\n• Class 3: Red value of 5, Green value of 10, Blue value of 15.\n• Class 4: Red value of 7, Green value of 10, Blue value of 13.]\n\nIn which class do the fewest students choose blue?",
+        "options": [
+          {
+            "label": "A",
+            "text": "Class 1"
+          },
+          {
+            "label": "B",
+            "text": "Class 2"
+          },
+          {
+            "label": "C",
+            "text": "Class 3"
+          },
+          {
+            "label": "D",
+            "text": "Class 4"
+          }
+        ],
+        "correct_option": "B",
+        "figure_description": "Four bar graphs arranged in a 2-by-2 grid, each showing student choices for favorite colors (Red, Green, Blue):\n- Class 1 (top-left): The vertical axis ranges from 0 to 14 in increments of 2, with grid lines at 0, 2, 4, 6, 8, 10, 12, and 14. The horizontal axis has three bars: Red is shaded gray with a height of 12; Green is shaded black with a height of 10; Blue is unshaded (white) with a height of 8.\n- Class 2 (top-right): The vertical axis ranges from 0 to 15 in increments of 5, with grid lines at 0, 5, 10, and 15. The horizontal axis has three bars: Red is gray with a height of 10; Green is black with a height of 15; Blue is white with a height of 5.\n- Class 3 (bottom-left): The vertical axis ranges from 0 to 15 in increments of 5, with grid lines at 0, 5, 10, and 15. The horizontal axis has three bars: Red is gray with a height of 5; Green is black with a height of 10; Blue is white with a height of 15.\n- Class 4 (bottom-right): The vertical axis ranges from 0 to 14 in increments of 2, with grid lines at 0, 2, 4, 6, 8, 10, 12, and 14. The horizontal axis has three bars: Red is gray with a height of 7; Green is black with a height of 10; Blue is white with a height of 13.",
+        "pct_correct_intl_avg": 76,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.71719,
+          "location": -1.31267,
+          "guessing": 0.15675
+        }
+      },
+      {
+        "rank": 8,
+        "cosine_similarity": 0.888,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Which number is 100 more than 5,432?",
+        "options": [
+          {
+            "label": "A",
+            "text": "6,432"
+          },
+          {
+            "label": "B",
+            "text": "5,532"
+          },
+          {
+            "label": "C",
+            "text": "5,442"
+          },
+          {
+            "label": "D",
+            "text": "5,433"
+          }
+        ],
+        "correct_option": "B",
+        "pct_correct_intl_avg": 66,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.09989,
+          "location": -0.40181,
+          "guessing": 0.21168
+        }
+      },
+      {
+        "rank": 9,
+        "cosine_similarity": 0.797,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Fractions and Proportionality",
+        "cognitive_domain": "Using Complex Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Each figure represents a fraction.\n\n[Image: Four figures labeled 1, 2, 3, and 4]\n\nWhich two figures represent the same fraction?",
+        "options": [
+          {
+            "label": "A",
+            "text": "1 and 2"
+          },
+          {
+            "label": "B",
+            "text": "1 and 4"
+          },
+          {
+            "label": "C",
+            "text": "2 and 3"
+          },
+          {
+            "label": "D",
+            "text": "3 and 4"
+          }
+        ],
+        "correct_option": "A",
+        "figure_description": "Four rectangular figures labeled 1, 2, 3, and 4:\n- Figure 1: A rectangle divided vertically into 4 equal strips; the 3 strips on the left are shaded gray, and the 1 strip on the right is unshaded white.\n- Figure 2: A rectangle divided into a grid of 2 rows and 4 columns (8 equal parts); the 2 parts in the first column on the left are unshaded white, and the 6 parts in the other 3 columns are shaded gray.\n- Figure 3: A rectangle divided vertically into 3 equal strips; the 2 strips on the left are shaded gray, and the 1 strip on the right is unshaded white.\n- Figure 4: A rectangle divided into a grid of 2 rows and 2 columns (4 equal parts); the 2 parts in the left column are unshaded white, and the 2 parts in the right column are shaded gray.",
+        "pct_correct_intl_avg": 54,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.425,
+          "location": 0.702,
+          "guessing": 0.263
+        }
+      },
+      {
+        "rank": 10,
+        "cosine_similarity": 0.887,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Knowing Facts and Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "What number equals 3 ones + 5 tens + 4 hundreds + 60 thousands?",
+        "options": [
+          {
+            "label": "A",
+            "text": "6,453"
+          },
+          {
+            "label": "B",
+            "text": "60,453"
+          },
+          {
+            "label": "C",
+            "text": "64,530"
+          },
+          {
+            "label": "D",
+            "text": "354,060"
+          },
+          {
+            "label": "E",
+            "text": "604,530"
+          }
+        ],
+        "correct_option": "B",
+        "pct_correct_intl_avg": 68,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.754,
+          "location": -0.484,
+          "guessing": 0.186
+        }
+      }
+    ]
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 1.97,
+      "confidence": 0.79,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.05,
+        "1": 0.16,
+        "2": 0.7,
+        "3": 0.04,
+        "4": 0.02,
+        "5": 0.01,
+        "6": 0.01,
+        "7": 0.0,
+        "8": 0.01
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 1.28,
+      "confidence": 0.81,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.11,
+        "1": 0.65,
+        "2": 0.18,
+        "3": 0.03,
+        "4": 0.01,
+        "5": 0.01,
+        "6": 0.01,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 2.87,
+      "confidence": 0.22,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.24,
+        "2": 0.08,
+        "3": 0.2,
+        "4": 0.45,
+        "5": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 5958,
+  "output_tokens": 45,
+  "cost_usd": 0.000250236,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791918367-e6FaIbXYRuTZfiREUZAB",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 1.97,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.16,
+          "2": 0.7,
+          "3": 0.04,
+          "4": 0.02,
+          "5": 0.01,
+          "6": 0.01,
+          "7": 0,
+          "8": 0.01
+        },
+        "confidence": 0.79
+      },
+      "location": {
+        "type": "score",
+        "score": 1.28,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.11,
+          "1": 0.65,
+          "2": 0.18,
+          "3": 0.03,
+          "4": 0.01,
+          "5": 0.01,
+          "6": 0.01,
+          "7": 0,
+          "8": 0,
+          "9": 0
+        },
+        "confidence": 0.81
+      },
+      "guessing": {
+        "type": "score",
+        "score": 2.87,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.24,
+          "2": 0.08,
+          "3": 0.2,
+          "4": 0.45,
+          "5": 0.01
+        },
+        "confidence": 0.22
+      }
+    },
+    "usage": {
+      "input_tokens": 5958,
+      "output_tokens": 45,
+      "cost": 0.000250236
+    },
+    "id": "gen-dec-1791918367-e6FaIbXYRuTZfiREUZAB",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T19:06:07+00:00",
+  "seconds": null
+}

@@ -38,7 +38,7 @@ import requests
 from filelock import FileLock, Timeout
 
 from .config import api_key, write_json
-from .predictor import BASE_URLS, LLMSettings
+from .llm import BASE_URLS, LLMSettings
 
 log = logging.getLogger(__name__)
 

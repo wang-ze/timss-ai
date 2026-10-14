@@ -1,0 +1,936 @@
+{
+  "item_id": "K4",
+  "assessment": "TIMSS 1995",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Data Representation, Analysis, and Probability",
+  "main_topic": null,
+  "cognitive_domain": "Using Complex Procedures",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/K4"
+  ],
+  "similar_items": [
+    {
+      "rank": 1,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/V4A",
+      "item_id": "V4A",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.8247,
+      "pct_correct_intl_avg": 24,
+      "irt_model": "GPCM",
+      "scaled_points": 2,
+      "slope": 0.357,
+      "location": -0.012,
+      "step1": 1.964,
+      "step2": -1.964
+    },
+    {
+      "rank": 2,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M031344B",
+      "item_id": "M031344B",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.7998,
+      "pct_correct_intl_avg": 41,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.766,
+      "location": 0.257
+    },
+    {
+      "rank": 3,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M031344A",
+      "item_id": "M031344A",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8069,
+      "pct_correct_intl_avg": 41,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.51,
+      "location": 0.364
+    },
+    {
+      "rank": 4,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/M2",
+      "item_id": "M2",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.8155,
+      "pct_correct_intl_avg": 55,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.688,
+      "location": -0.205
+    },
+    {
+      "rank": 5,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/V4B",
+      "item_id": "V4B",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.8078,
+      "pct_correct_intl_avg": 48,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.929,
+      "location": -0.087
+    },
+    {
+      "rank": 6,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M031344C",
+      "item_id": "M031344C",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.7945,
+      "pct_correct_intl_avg": 44,
+      "irt_model": "GPCM",
+      "scaled_points": 2,
+      "slope": 0.456,
+      "location": -0.123,
+      "step1": -1.983,
+      "step2": 1.983
+    },
+    {
+      "rank": 7,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M031023",
+      "item_id": "M031023",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8072,
+      "pct_correct_intl_avg": 61,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.575,
+      "location": 0.191,
+      "guessing": 0.283
+    },
+    {
+      "rank": 8,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/L8",
+      "item_id": "L8",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.8018,
+      "pct_correct_intl_avg": 32,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.971,
+      "location": 0.903,
+      "guessing": 0.049
+    },
+    {
+      "rank": 9,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/J3",
+      "item_id": "J3",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.7856,
+      "pct_correct_intl_avg": 75,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.962,
+      "location": -0.815,
+      "guessing": 0.137
+    },
+    {
+      "rank": 10,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M041203",
+      "item_id": "M041203",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.7486,
+      "pct_correct_intl_avg": 37.8,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.86545,
+      "location": 0.04122
+    },
+    {
+      "rank": 11,
+      "found_by": "same model",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M012126",
+      "item_id": "M012126",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.7827,
+      "pct_correct_intl_avg": 67,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.711,
+      "location": -0.592,
+      "guessing": 0.115
+    },
+    {
+      "rank": 12,
+      "found_by": "same model",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M041094",
+      "item_id": "M041094",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8036,
+      "pct_correct_intl_avg": 38.0,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.03288,
+      "location": 0.85019,
+      "guessing": 0.20581
+    }
+  ],
+  "context": "item+references",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 1995",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Data Representation, Analysis, and Probability",
+      "cognitive_domain": "Using Complex Procedures",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "Kyle and Bob are playing a game. The object of the game is to get the highest total of points. This chart shows how many points they each scored.\n\nScorecard\n| Player | Kyle | Bob |\n| :--- | :--- | :--- |\n| Round 1 | 125 | 100 |\n| Round 2 | 125 | 125 |\n| Round 3 | 150 | 100 |\n| Round 4 | 50 | 150 |\n\nWho won, and by how many points?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Bob won by 25 points."
+        },
+        {
+          "label": "B",
+          "text": "Bob won by 100 points."
+        },
+        {
+          "label": "C",
+          "text": "Kyle won by 25 points."
+        },
+        {
+          "label": "D",
+          "text": "Kyle won by 175 points."
+        }
+      ],
+      "correct_option": "A",
+      "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data."
+    },
+    "reference_items": [
+      {
+        "rank": 1,
+        "cosine_similarity": 0.825,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Whole Numbers",
+        "cognitive_domain": "Solving Problems",
+        "item_type": "constructed_response",
+        "max_points": 2,
+        "scaled_points": 2,
+        "stem": "In a game, Mysong and Naoki are making problems. They each have four cards like these.\n\n[1] [2] [3] [4]\n\nThe winner of the game is the person who can make the problem with the largest answer.\n\nMysong placed the cards like this.\n\n[Image: Mysong's card placement]\n\nNaoki placed the cards like this.\n\n[Image: Naoki's card placement]\n\nWho won this game? ____\nHow do you know? ____\n____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Mysong. 64 and 55 are shown (or 9, which is the difference between 64 and 55) with a correct verbal explanation."
+            ]
+          },
+          {
+            "category": "Partially Correct",
+            "descriptors": [
+              "Mysong. 64 and 55 are shown (or 43 − 31 > 24 − 21) with an unsatisfactory explanation.",
+              "Mysong. 64 and 55 are shown (or 43 − 31 > 24 − 21) without any further explanation.",
+              "Mysong. The response given is a verbal explanation. Either 64 or 55 is shown but not both.",
+              "Mysong. The response gives no verbal or numeric explanation.",
+              "Other responses containing Mysong. For example, “because Mysong had the largest answer.”"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Neither Mysong nor Naoki win.",
+              "Naoki. There may or may not be an explanation.",
+              "Other incorrect, including “both won.”"
+            ]
+          }
+        ],
+        "figure_description": "Four square cards are shown in a row labeled with the digits 1, 2, 3, and 4.\nBelow are two vertical addition problems:\nUnder the heading \"Mysong placed the cards like this.\", two rows of two square cards form a vertical addition problem: top row has cards [4] and [3]; bottom row has cards [2] and [1], with a plus sign '+' to the left of the bottom row and a horizontal addition line underneath.\nUnder the heading \"Naoki placed the cards like this.\", two rows of two square cards form a vertical addition problem: top row has cards [3] and [1]; bottom row has cards [2] and [4], with a plus sign '+' to the left of the bottom row and a horizontal addition line underneath.",
+        "pct_correct_intl_avg": 24,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "GPCM",
+        "calibrated_parameters": {
+          "slope": 0.357,
+          "location": -0.012,
+          "step1": 1.964,
+          "step2": -1.964
+        }
+      },
+      {
+        "rank": 2,
+        "cosine_similarity": 0.8,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Using Concepts",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Get to 20 Number Game\n\nTwo children, Joan and Herbert, are learning to play a game “Get to 20.” Here are the rules for the game.\n\nGET TO 20\nRULES\n\nPick Tiles: Each player draws three number tiles.\n\nAdd Tiles: Each player places the three tiles to make an addition problem with the sum total closest to 20.\n\nFor example, here are four ways a player who draws [1] , [4] , and [5] could place the tiles:\n\n  [5] [1]          [4] [5]          [1] [5]             [1]\n+     [4]    or  +     [1]    or  +     [4]    or     + [5]\n---------        ---------        ---------         + [4]\n       55               46               19         -----\n                                                       10\n\nThis player should choose to show the addition problem\n  15\n+  4\n----\n  19\nbecause 19 is the total closest to 20.\n\nJoan and Herbert played the game “Get to 20.”\n\nJoan picked [2] , [7] , and [9] . Herbert picked [1] , [3] , and [6] .\n\nB. What is the addition problem that Herbert could make with his number tiles that gives a total closest to 20? Be sure to include the total.",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "13 + 6 = 19 OR 16 + 3 = 19",
+              "19 without addition statement shown"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "13 + 6 OR 16 + 3 but 19 not shown",
+              "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 41,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.766,
+          "location": 0.257
+        }
+      },
+      {
+        "rank": 3,
+        "cosine_similarity": 0.807,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Using Concepts",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Get to 20 Number Game\n\nTwo children, Joan and Herbert, are learning to play a game “Get to 20.” Here are the rules for the game.\n\nGET TO 20\nRULES\n\nPick Tiles: Each player draws three number tiles.\n\nAdd Tiles: Each player places the three tiles to make an addition problem with the sum total closest to 20.\n\nFor example, here are four ways a player who draws [1] , [4] , and [5] could place the tiles:\n\n  [5] [1]          [4] [5]          [1] [5]             [1]\n+     [4]    or  +     [1]    or  +     [4]    or     + [5]\n---------        ---------        ---------         + [4]\n       55               46               19         -----\n                                                       10\n\nThis player should choose to show the addition problem\n  15\n+  4\n----\n  19\nbecause 19 is the total closest to 20.\n\nJoan and Herbert played the game “Get to 20.”\n\nJoan picked [2] , [7] , and [9] . Herbert picked [1] , [3] , and [6] .\n\nA. What is the addition problem that Joan could make with her number tiles that gives a total closest to 20? Be sure to include the total.",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "2 + 7 + 9 = 18",
+              "18 without addition statement shown"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "2 + 7 + 9 but 18 not shown",
+              "Other incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 41,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.51,
+          "location": 0.364
+        }
+      },
+      {
+        "rank": 4,
+        "cosine_similarity": 0.816,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Data Representation, Analysis, and Probability",
+        "cognitive_domain": "Using Complex Procedures",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "A team is selling raffle tickets. The table shows how many tickets they have sold so far.\n\n| Player's Name | Number of Tickets Sold |\n| :--- | :--- |\n| Carlos | 4 |\n| Maria | 7 |\n| Bill | 3 |\n| Ted | 7 |\n| Faye | 6 |\n| Abby | 9 |\n\nThey need to sell 60 tickets altogether. How many more tickets must they sell?\n\nAnswer:____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "24"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "30",
+              "34",
+              "36",
+              "Other incorrect."
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 55,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.688,
+          "location": -0.205
+        }
+      },
+      {
+        "rank": 5,
+        "cosine_similarity": 0.808,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Whole Numbers",
+        "cognitive_domain": "Solving Problems",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "In a game, Mysong and Naoki are making problems. They each have four cards like these.\n\n[1] [2] [3] [4]\n\nThe winner of the game is the person who can make the problem with the largest answer.\n\nMysong placed the cards like this.\n\n[Image: Mysong's card placement]\n\nNaoki placed the cards like this.\n\n[Image: Naoki's card placement]\n\nWrite numbers in the squares below to show how you would place the cards to beat both Mysong and Naoki.\n\n[Image: Blank addition grid]",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "One of the following: 42+31; 41+32; 31+42; or 32+41"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Combinations of the numbers 1, 2, 3 and 4. Every number is used only once.",
+              "Combinations of the numbers 1, 2, 3 and 4. One or more numbers are used more than once.",
+              "Combinations containing one or more numbers other than 1, 2, 3 and 4",
+              "Other incorrect"
+            ]
+          }
+        ],
+        "figure_description": "Four square cards are shown in a row labeled with the digits 1, 2, 3, and 4.\nBelow are two vertical addition problems:\nUnder the heading \"Mysong placed the cards like this.\", two rows of two square cards form a vertical addition problem: top row has cards [4] and [3]; bottom row has cards [2] and [1], with a plus sign '+' to the left of the bottom row and a horizontal addition line underneath.\nUnder the heading \"Naoki placed the cards like this.\", two rows of two square cards form a vertical addition problem: top row has cards [3] and [1]; bottom row has cards [2] and [4], with a plus sign '+' to the left of the bottom row and a horizontal addition line underneath.\nAt the bottom of the item is an empty addition grid consisting of four blank squares arranged in two rows of two, with a plus sign '+' to the left of the bottom row and a horizontal addition line underneath.",
+        "pct_correct_intl_avg": 48,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.929,
+          "location": -0.087
+        }
+      },
+      {
+        "rank": 6,
+        "cosine_similarity": 0.795,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Using Concepts",
+        "item_type": "constructed_response",
+        "max_points": 2,
+        "scaled_points": 2,
+        "stem": "Get to 20 Number Game\n\nTwo children, Joan and Herbert, are learning to play a game “Get to 20.” Here are the rules for the game.\n\nGET TO 20\nRULES\n\nPick Tiles: Each player draws three number tiles.\n\nAdd Tiles: Each player places the three tiles to make an addition problem with the sum total closest to 20.\n\nFor example, here are four ways a player who draws [1] , [4] , and [5] could place the tiles:\n\n  [5] [1]          [4] [5]          [1] [5]             [1]\n+     [4]    or  +     [1]    or  +     [4]    or     + [5]\n---------        ---------        ---------         + [4]\n       55               46               19         -----\n                                                       10\n\nThis player should choose to show the addition problem\n  15\n+  4\n----\n  19\nbecause 19 is the total closest to 20.\n\nJoan and Herbert played the game “Get to 20.”\n\nJoan picked [2] , [7] , and [9] . Herbert picked [1] , [3] , and [6] .\n\nC. Herbert said, “If I pick [1] , [4] , and [6] , I can make 20 two different ways.”\n\nShow two ways Herbert could make 20 with [1] , [4] , and [6] .\n\nFirst way:\n\nSecond way:",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Both ways correct 16 + 4 AND 14 + 6"
+            ]
+          },
+          {
+            "category": "Partially Correct Response",
+            "descriptors": [
+              "Only one way correct 16 + 4 OR 14 + 6"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Incorrect (including crossed out/erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 44,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "GPCM",
+        "calibrated_parameters": {
+          "slope": 0.456,
+          "location": -0.123,
+          "step1": -1.983,
+          "step2": 1.983
+        }
+      },
+      {
+        "rank": 7,
+        "cosine_similarity": 0.807,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Patterns and Relationships",
+        "main_topic": "Patterns",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "| 4 | 11 | 6 |\n| 9 | | 5 |\n| 8 | 3 | 10 |\n\nThe rule for the table is that numbers in each row and column must add up to the same number. What number goes in the center of the table?",
+        "options": [
+          {
+            "label": "A",
+            "text": "1"
+          },
+          {
+            "label": "B",
+            "text": "2"
+          },
+          {
+            "label": "C",
+            "text": "7"
+          },
+          {
+            "label": "D",
+            "text": "12"
+          }
+        ],
+        "correct_option": "C",
+        "pct_correct_intl_avg": 61,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.575,
+          "location": 0.191,
+          "guessing": 0.283
+        }
+      },
+      {
+        "rank": 8,
+        "cosine_similarity": 0.802,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Measurement, Estimation, and Number Sense",
+        "cognitive_domain": "Solving Problems",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Four children measured the width of a room by counting how many paces it took them to cross it. The chart shows their measurements.\n\n| Name | Number of Paces |\n| --- | --- |\n| Stephen | 10 |\n| Erlane | 8 |\n| Ana | 9 |\n| Carlos | 7 |\n\nWho had the longest pace?",
+        "options": [
+          {
+            "label": "A",
+            "text": "Stephen"
+          },
+          {
+            "label": "B",
+            "text": "Erlane"
+          },
+          {
+            "label": "C",
+            "text": "Ana"
+          },
+          {
+            "label": "D",
+            "text": "Carlos"
+          }
+        ],
+        "correct_option": "D",
+        "pct_correct_intl_avg": 32,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.971,
+          "location": 0.903,
+          "guessing": 0.049
+        }
+      },
+      {
+        "rank": 9,
+        "cosine_similarity": 0.786,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Data Representation, Analysis, and Probability",
+        "cognitive_domain": "Using Complex Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "The figure shows how Mary spent her time one day.\n\n[Image: Pie chart showing how Mary spent her time]\n\nWhat percent of time altogether did she spend playing and doing homework?",
+        "options": [
+          {
+            "label": "A",
+            "text": "10%"
+          },
+          {
+            "label": "B",
+            "text": "15%"
+          },
+          {
+            "label": "C",
+            "text": "20%"
+          },
+          {
+            "label": "D",
+            "text": "25%"
+          },
+          {
+            "label": "E",
+            "text": "30%"
+          }
+        ],
+        "correct_option": "D",
+        "figure_description": "A pie chart showing how Mary spent her time one day, divided into five labeled sectors:\n- \"Homework 10%\": from the 12 o'clock vertical radius clockwise to roughly 1 o'clock.\n- \"Sleeping & Resting 40%\": from roughly 1 o'clock clockwise to the 6 o'clock vertical radius.\n- \"Going to School 25%\": from the 6 o'clock vertical radius clockwise to the 9 o'clock horizontal radius.\n- \"Eating 10%\": from the 9 o'clock horizontal radius clockwise to roughly 10 o'clock.\n- \"Playing 15%\": from roughly 10 o'clock clockwise to the 12 o'clock vertical radius.",
+        "pct_correct_intl_avg": 75,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.962,
+          "location": -0.815,
+          "guessing": 0.137
+        }
+      },
+      {
+        "rank": 10,
+        "cosine_similarity": 0.749,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Data Display",
+        "main_topic": "Organizing and Representing",
+        "cognitive_domain": "Reasoning",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "This graph shows the points obtained by 4 drivers in the car racing championship. Montoya is in first place. Alonso is in third place. Draw a bar which shows how many points Alonso has scored.\n\n[Image: Bar graph]",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Bar at 86"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Bar between 85-87 exclusive but not at 86",
+              "Other Incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          },
+          {
+            "category": "Nonresponse",
+            "descriptors": [
+              "Blank"
+            ]
+          }
+        ],
+        "figure_description": "A horizontal bar graph with a grid. The vertical axis lists four driver names from top to bottom: \"Raikkonen\", \"Schumacher\", \"Alonso\", and \"Montoya\". The horizontal axis is labeled \"Points Scored\" below tick marks numbered 82, 83, 84, 85, 86, 87, 88, 89, 90, 91 at increments of 1, with vertical grid lines extending up from each number. Grey horizontal bars are drawn for:\n- Raikkonen: extending from 82 to 87\n- Schumacher: extending from 82 to 85\n- Alonso: no bar is drawn (blank row)\n- Montoya: extending from 82 to 90",
+        "pct_correct_intl_avg": 37.8,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.86545,
+          "location": 0.04122
+        }
+      },
+      {
+        "rank": 11,
+        "cosine_similarity": 0.783,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Data",
+        "main_topic": "Data Interpretation",
+        "cognitive_domain": "Reasoning",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "The graph shows the heights of four girls.\n\n[Image: Bar graph showing heights of four girls]\n\nThe names are missing from the graph. Debbie is the tallest. Amy is the shortest. Dawn is taller than Sarah. How tall is Sarah?",
+        "options": [
+          {
+            "label": "A",
+            "text": "75 cm"
+          },
+          {
+            "label": "B",
+            "text": "100 cm"
+          },
+          {
+            "label": "C",
+            "text": "125 cm"
+          },
+          {
+            "label": "D",
+            "text": "150 cm"
+          }
+        ],
+        "correct_option": "B",
+        "figure_description": "A vertical bar graph titled \"Names of Girls\" along the horizontal axis, and labeled \"Height (Centimeters)\" along the vertical axis.\nThe vertical axis has tick marks from 0 to 150 in increments of 25 (0, 25, 50, 75, 100, 125, 150).\nThere are four unlabeled shaded bars from left to right:\n- The first bar has a height of 100.\n- The second bar has a height of 150.\n- The third bar has a height of 125.\n- The fourth bar has a height of 75.",
+        "pct_correct_intl_avg": 67,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.711,
+          "location": -0.592,
+          "guessing": 0.115
+        }
+      },
+      {
+        "rank": 12,
+        "cosine_similarity": 0.804,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Fractions and Decimals",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Bob has 10 zeds. For lunch, he buys a bottle of fruit juice for 2.50 zeds and a sandwich for 3.85 zeds. How much money does Bob have left after he has paid for his lunch?",
+        "options": [
+          {
+            "label": "A",
+            "text": "3.65 zeds"
+          },
+          {
+            "label": "B",
+            "text": "4.75 zeds"
+          },
+          {
+            "label": "C",
+            "text": "6.35 zeds"
+          },
+          {
+            "label": "D",
+            "text": "16.35 zeds"
+          }
+        ],
+        "correct_option": "A",
+        "pct_correct_intl_avg": 38.0,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.03288,
+          "location": 0.85019,
+          "guessing": 0.20581
+        }
+      }
+    ]
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 2.22,
+      "confidence": 0.48,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.1,
+        "1": 0.18,
+        "2": 0.3,
+        "3": 0.33,
+        "4": 0.04,
+        "5": 0.02,
+        "6": 0.01,
+        "7": 0.01,
+        "8": 0.01
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 3.34,
+      "confidence": 0.45,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.12,
+        "2": 0.21,
+        "3": 0.25,
+        "4": 0.15,
+        "5": 0.12,
+        "6": 0.07,
+        "7": 0.04,
+        "8": 0.01,
+        "9": 0.01
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 3.16,
+      "confidence": 0.41,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.11,
+        "1": 0.06,
+        "2": 0.08,
+        "3": 0.09,
+        "4": 0.64,
+        "5": 0.02
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 7924,
+  "output_tokens": 45,
+  "cost_usd": 0.000332808,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791918360-HofafQWCUjUtdVlzMJ8T",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 2.22,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.1,
+          "1": 0.18,
+          "2": 0.3,
+          "3": 0.33,
+          "4": 0.04,
+          "5": 0.02,
+          "6": 0.01,
+          "7": 0.01,
+          "8": 0.01
+        },
+        "confidence": 0.48
+      },
+      "location": {
+        "type": "score",
+        "score": 3.34,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.12,
+          "2": 0.21,
+          "3": 0.25,
+          "4": 0.15,
+          "5": 0.12,
+          "6": 0.07,
+          "7": 0.04,
+          "8": 0.01,
+          "9": 0.01
+        },
+        "confidence": 0.45
+      },
+      "guessing": {
+        "type": "score",
+        "score": 3.16,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.11,
+          "1": 0.06,
+          "2": 0.08,
+          "3": 0.09,
+          "4": 0.64,
+          "5": 0.02
+        },
+        "confidence": 0.41
+      }
+    },
+    "usage": {
+      "input_tokens": 7924,
+      "output_tokens": 45,
+      "cost": 0.000332808
+    },
+    "id": "gen-dec-1791918360-HofafQWCUjUtdVlzMJ8T",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T19:06:01+00:00",
+  "seconds": null
+}

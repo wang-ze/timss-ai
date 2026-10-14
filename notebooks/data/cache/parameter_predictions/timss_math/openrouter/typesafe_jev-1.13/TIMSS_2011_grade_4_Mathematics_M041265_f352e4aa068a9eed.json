@@ -1,0 +1,842 @@
+{
+  "item_id": "M041265",
+  "assessment": "TIMSS 2011",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Geometric Shapes and Measures",
+  "main_topic": "Two- and Three-dimensional Shapes",
+  "cognitive_domain": "Reasoning",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M041265"
+  ],
+  "similar_items": [
+    {
+      "rank": 1,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M031083",
+      "item_id": "M031083",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8862,
+      "pct_correct_intl_avg": 69,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.88438,
+      "location": -0.56598,
+      "guessing": 0.21206
+    },
+    {
+      "rank": 2,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M031088",
+      "item_id": "M031088",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8044,
+      "pct_correct_intl_avg": 68,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.73809,
+      "location": -0.78369,
+      "guessing": 0.18336
+    },
+    {
+      "rank": 3,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M031071",
+      "item_id": "M031071",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8242,
+      "pct_correct_intl_avg": 43,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.8805,
+      "location": 0.61525,
+      "guessing": 0.16764
+    },
+    {
+      "rank": 4,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M011006",
+      "item_id": "M011006",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8575,
+      "pct_correct_intl_avg": 55,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.409,
+      "location": -0.135,
+      "guessing": 0.069
+    },
+    {
+      "rank": 5,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M031351",
+      "item_id": "M031351",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8814,
+      "pct_correct_intl_avg": 45.7,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.81492,
+      "location": 0.25575,
+      "guessing": 0.12338
+    },
+    {
+      "rank": 6,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/I6",
+      "item_id": "I6",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.8208,
+      "pct_correct_intl_avg": 72,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.73,
+      "location": -1.037,
+      "guessing": 0.096
+    },
+    {
+      "rank": 7,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M031159",
+      "item_id": "M031159",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8296,
+      "pct_correct_intl_avg": 64,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.99374,
+      "location": -0.40127,
+      "guessing": 0.20124
+    },
+    {
+      "rank": 8,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M012069",
+      "item_id": "M012069",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8429,
+      "pct_correct_intl_avg": 43,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.412,
+      "location": 1.63,
+      "guessing": 0.294
+    },
+    {
+      "rank": 9,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M031093",
+      "item_id": "M031093",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8283,
+      "pct_correct_intl_avg": 54,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.51915,
+      "location": 0.67423,
+      "guessing": 0.27013
+    },
+    {
+      "rank": 10,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/L4",
+      "item_id": "L4",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.838,
+      "pct_correct_intl_avg": 72,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.798,
+      "location": -0.744,
+      "guessing": 0.162
+    }
+  ],
+  "context": "item+references",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2011",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Geometric Shapes and Measures",
+      "main_topic": "Two- and Three-dimensional Shapes",
+      "cognitive_domain": "Reasoning",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "Ariana found the following patterns to make containers. Which pattern actually makes the container shown beside it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "[Image: a pattern made up by squares and a cube to the right of the pattern]"
+        },
+        {
+          "label": "B",
+          "text": "[Image: a pattern made up by two circles on the ends of a rectangular shape and a cylinder to the right of the pattern]"
+        },
+        {
+          "label": "C",
+          "text": "[Image: a pattern made up by square and two triangles coming out of two sides of the square and a square base pyramid to the right of the pattern]"
+        },
+        {
+          "label": "D",
+          "text": "[Image: a pattern made up by two large rectangles and four small rectangles with two of the smaller rectangles coming out of the opposite shorter sides of the large rectangles and a rectangular prism]"
+        }
+      ],
+      "correct_option": "D",
+      "figure_description": "Four multiple-choice options, each showing a 2D net (with dashed interior fold lines) beside a 3D container (with dashed hidden edges):\n- Option A: A net of 5 congruent squares arranged in an inverted U-shape (a row of 3 squares across the top, and 1 square hanging down from each of the left and right squares, leaving the middle space empty). Beside it is a line drawing of a cube.\n- Option B: A net consisting of a horizontal rectangle with a circle attached to each of its two shorter vertical ends. Beside it is a line drawing of a vertical cylinder.\n- Option C: A net consisting of a square with two triangles attached to adjacent sides: one extending down from the bottom side and one extending to the right from the right side. Beside it is a line drawing of an inverted square-based pyramid pointing downward.\n- Option D: A net consisting of a horizontal row of four rectangles alternating in width (narrow, wide, narrow, wide), with a narrow rectangle attached to the top of the first wide rectangle and a narrow rectangle attached to the bottom of the second wide rectangle. Beside it is a line drawing of a matching upright rectangular prism.",
+      "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data."
+    },
+    "reference_items": [
+      {
+        "rank": 1,
+        "cosine_similarity": 0.886,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometric Shapes and Measures",
+        "main_topic": "Two- and Three-dimensional Shapes",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: six pieces of cardboard with length of the sides labeled in cm. Two of the pieces are square shaped with each side measured at 1 cm. Four of the pieces are rectangular shaped with two sides measured at 1 cm and two other sides measured at 2 cm.]\n\nSusan has the 6 pieces of cardboard shown above. Which of the following shapes could Susan make using all 6 of these pieces without cutting them?",
+        "options": [
+          {
+            "label": "A",
+            "text": "[Image: Cube.]"
+          },
+          {
+            "label": "B",
+            "text": "[Image: Triangular prism.]"
+          },
+          {
+            "label": "C",
+            "text": "[Image: Truncated (or trapezoid) pyramid.]"
+          },
+          {
+            "label": "D",
+            "text": "[Image: Rectangular prism.]"
+          }
+        ],
+        "correct_option": "D",
+        "figure_description": "At the top of the item, six gray-shaded flat cardboard shapes are shown. Two are identical squares, each labeled '1 cm' on all four sides (top, bottom, left, and right). Four are identical horizontal rectangles, each labeled '2 cm' on the top and bottom sides and '1 cm' on the left and right sides.\n\nThe response options show line drawings of four 3D geometric solids with dashed lines representing hidden edges:\n- Option A: A cube.\n- Option B: A triangular prism resting on one of its rectangular faces.\n- Option C: A truncated pyramid with a square or rectangular base and top.\n- Option D: A tall right rectangular prism standing on a square base.",
+        "pct_correct_intl_avg": 69,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.88438,
+          "location": -0.56598,
+          "guessing": 0.21206
+        }
+      },
+      {
+        "rank": 2,
+        "cosine_similarity": 0.804,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometric Shapes and Measures",
+        "main_topic": "Points, Lines, and Angles",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: a large square divided into smaller squares with the x-axis labeled A through H from left to right and the y-axis labeled 1 through 8 from down to up.]\n\nJamie is playing a board game. His counter is on square D5. Which of these moves would put his counter on square G7?",
+        "options": [
+          {
+            "label": "A",
+            "text": "2 squares to the right and 3 squares up"
+          },
+          {
+            "label": "B",
+            "text": "2 squares to the left and 3 squares up"
+          },
+          {
+            "label": "C",
+            "text": "3 squares to the right and 2 squares up"
+          },
+          {
+            "label": "D",
+            "text": "3 squares to the left and 2 squares up"
+          }
+        ],
+        "correct_option": "C",
+        "figure_description": "An 8 by 8 grid of square spaces. The columns are labeled along the bottom from left to right with the letters A, B, C, D, E, F, G, and H. The rows are labeled along the left side from bottom to top with the numbers 1, 2, 3, 4, 5, 6, 7, and 8. A solid black circle representing a counter is located in the square at column D, row 5.",
+        "pct_correct_intl_avg": 68,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.73809,
+          "location": -0.78369,
+          "guessing": 0.18336
+        }
+      },
+      {
+        "rank": 3,
+        "cosine_similarity": 0.824,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometric Shapes and Measures",
+        "main_topic": "Two- and Three-dimensional Shapes",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: a rectangle shape with a line connected to a dot on the left side pointing down.]\nWhich of the following shows the position of the shape above after a half turn or 180° rotation?",
+        "options": [
+          {
+            "label": "A",
+            "text": "[Image: a rectangle shape with a line connected to a dot pointing left.]"
+          },
+          {
+            "label": "B",
+            "text": "[Image: a rectangle shape with a line connected to a dot pointing up.]"
+          },
+          {
+            "label": "C",
+            "text": "[Image: a rectangle shape with a line connected to a dot pointing right.]"
+          },
+          {
+            "label": "D",
+            "text": "[Image: a rectangle shape with a line connected to a dot pointing down.]"
+          }
+        ],
+        "correct_option": "B",
+        "figure_description": "At the top is a figure consisting of a horizontal rectangle (wider than it is tall) with a straight line segment extending vertically downward from its lower-left corner, ending with a solid black dot.\nFour options show rotations or positions of the shape:\n- Option A shows a vertical rectangle (taller than it is wide) with a line segment extending horizontally to the left from its upper-left corner, ending with a solid dot.\n- Option B shows a horizontal rectangle with a line segment extending vertically upward from its upper-right corner, ending with a solid dot.\n- Option C shows a vertical rectangle with a line segment extending horizontally to the right from its lower-right corner, ending with a solid dot.\n- Option D shows a horizontal rectangle identical to the original figure, with a line segment extending downward from the lower-left corner, ending with a solid dot.",
+        "pct_correct_intl_avg": 43,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.8805,
+          "location": 0.61525,
+          "guessing": 0.16764
+        }
+      },
+      {
+        "rank": 4,
+        "cosine_similarity": 0.857,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Two- and Three-Dimensional Shapes",
+        "cognitive_domain": "Knowing Facts and Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Here is a cone. Part of its surface is flat and part of its surface is curved.\n\n[Image: A cone]\n\nWhich of these solids also has both a flat surface and a curved surface?",
+        "options": [
+          {
+            "label": "A",
+            "text": "[Image: A rectangular prism]"
+          },
+          {
+            "label": "B",
+            "text": "[Image: A sphere]"
+          },
+          {
+            "label": "C",
+            "text": "[Image: A triangular pyramid]"
+          },
+          {
+            "label": "D",
+            "text": "[Image: A cylinder]"
+          }
+        ],
+        "correct_option": "D",
+        "figure_description": "The figure in the stem is an upright circular cone resting on an elliptical-perspective circular base with a dashed rear edge. Option A shows a rectangular prism with all flat faces and dashed lines for interior/hidden edges. Option B shows a sphere with a dashed horizontal equator indicating curvature. Option C shows a triangular pyramid (tetrahedron) with flat triangular faces and dashed lines for hidden base edges. Option D shows a right circular cylinder standing upright, with a flat circular top, a flat circular bottom (with a dashed rear edge), and a curved lateral side.",
+        "pct_correct_intl_avg": 55,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.409,
+          "location": -0.135,
+          "guessing": 0.069
+        }
+      },
+      {
+        "rank": 5,
+        "cosine_similarity": 0.881,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometric Shapes and Measures",
+        "main_topic": "Two- and Three-dimensional Shapes",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: 3-D figure]\n\nWhich of these could be folded to make a shape like the 3-D figure above?",
+        "options": [
+          {
+            "label": "A",
+            "text": "[Image: Net A]"
+          },
+          {
+            "label": "B",
+            "text": "[Image: Net B]"
+          },
+          {
+            "label": "C",
+            "text": "[Image: Net C]"
+          },
+          {
+            "label": "D",
+            "text": "[Image: Net D]"
+          }
+        ],
+        "correct_option": "D",
+        "figure_description": "At the top, a perspective drawing of a right triangular prism lying horizontally on one rectangular face. The front and back faces are triangles, connected by three rectangular faces.\n\nBelow are four candidate nets labeled A, B, C, and D:\n- A: A chain consisting of a rectangle at an angle, a triangle, a central horizontal rectangle, a triangle, and another rectangle angled upward.\n- B: Three identical horizontal rectangles stacked vertically, with two triangles attached to the right edge of the top two rectangles, pointing to the right.\n- C: Two horizontal rectangles stacked vertically with two triangles attached to their left side pointing left, and a third rectangle extending to the right with a triangle attached at its right end.\n- D: Three identical horizontal rectangles stacked vertically in a column; one triangle is attached to the right side of the top rectangle pointing right, and another triangle is attached to the left side of the bottom rectangle pointing left.",
+        "pct_correct_intl_avg": 45.7,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.81492,
+          "location": 0.25575,
+          "guessing": 0.12338
+        }
+      },
+      {
+        "rank": 6,
+        "cosine_similarity": 0.821,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Which of these is made with straight sides only?",
+        "options": [
+          {
+            "label": "A",
+            "text": "[Image: A quarter circle with two perpendicular straight sides and one curved side]"
+          },
+          {
+            "label": "B",
+            "text": "[Image: A circle]"
+          },
+          {
+            "label": "C",
+            "text": "[Image: A rectangle with rounded corners]"
+          },
+          {
+            "label": "D",
+            "text": "[Image: A house-shaped pentagon with five straight sides]"
+          },
+          {
+            "label": "E",
+            "text": "[Image: A circular shape with jagged, star-like points along its perimeter]"
+          }
+        ],
+        "correct_option": "D",
+        "figure_description": "Five shapes labeled A through E in a row: A is a quarter-circle consisting of a vertical line segment and a horizontal line segment meeting at a right angle, joined by an arc; B is a circle; C is a rectangle whose four corners are rounded curves; D is a five-sided polygon with a horizontal bottom edge, two vertical side edges, and two sloped top edges that meet at a point; E is a starburst shape with pointed projections radiating around a circular center.",
+        "pct_correct_intl_avg": 72,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.73,
+          "location": -1.037,
+          "guessing": 0.096
+        }
+      },
+      {
+        "rank": 7,
+        "cosine_similarity": 0.83,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometric Shapes and Measures",
+        "main_topic": "Two- and Three-dimensional Shapes",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "A pattern rule says “Rotate the shape [Image: a circle with a dot in the middle connected by a straight line to the arc pointing up] 1/4 turn clockwise each time.”\nWhat will the pattern look like?",
+        "options": [
+          {
+            "label": "A",
+            "text": "[Image: First circle pointing up, second circle pointing right, third circle pointing down, fourth circle pointing left.]"
+          },
+          {
+            "label": "B",
+            "text": "[Image: First circle pointing up, second circle pointing down, third circle pointing up, fourth circle pointing down.]"
+          },
+          {
+            "label": "C",
+            "text": "[Image: First circle pointing up, second circle pointing left, third circle pointing down, fourth circle pointing right.]"
+          },
+          {
+            "label": "D",
+            "text": "[Image: First circle pointing up, second circle pointing right, third circle pointing left, fourth circle pointing down.]"
+          }
+        ],
+        "correct_option": "A",
+        "figure_description": "In the stem, a circle has a central dot with a line segment extending straight up to the top edge (12 o'clock position).\n\nFour response options each show a row of four circles showing different orientations of the line segment:\n- Option A: First circle points straight up (12 o'clock); second points right (3 o'clock); third points straight down (6 o'clock); fourth points left (9 o'clock).\n- Option B: First circle points straight up (12 o'clock); second points straight down (6 o'clock); third points straight up (12 o'clock); fourth points straight down (6 o'clock).\n- Option C: First circle points straight up (12 o'clock); second points left (9 o'clock); third points straight down (6 o'clock); fourth points right (3 o'clock).\n- Option D: First circle points straight up (12 o'clock); second points right (3 o'clock); third points left (9 o'clock); fourth points straight down (6 o'clock).",
+        "pct_correct_intl_avg": 64,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.99374,
+          "location": -0.40127,
+          "guessing": 0.20124
+        }
+      },
+      {
+        "rank": 8,
+        "cosine_similarity": 0.843,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Locations and Spatial Relationships",
+        "cognitive_domain": "Reasoning",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "This figure will be turned to a different position.\n\n[Image: A 3D figure made of cubes]\n\nWhich of these could be the figure after it is turned?",
+        "options": [
+          {
+            "label": "A",
+            "text": "[Image: Option A]"
+          },
+          {
+            "label": "B",
+            "text": "[Image: Option B]"
+          },
+          {
+            "label": "C",
+            "text": "[Image: Option C]"
+          },
+          {
+            "label": "D",
+            "text": "[Image: Option D]"
+          }
+        ],
+        "correct_option": "A",
+        "figure_description": "The initial figure is a solid composed of 5 cubes: 4 cubes form an upright T-shape (a horizontal row of 3 cubes at the bottom, and 1 cube centered on top of the middle cube), and a 5th cube is attached to the back face of the leftmost cube of the bottom row. Option A shows an upside-down T-shape (a horizontal row of 3 cubes at the top with 1 cube centered below the middle cube) with a 5th cube attached to the back face of the rightmost cube. Option B shows an upright T-shape with a 5th cube attached to the back face of the rightmost cube. Option C shows an upright T-shape with a 5th cube attached to the front face of the middle bottom cube. Option D shows a vertical column of 3 cubes with 2 cubes extending to the right and backward from the middle cube.",
+        "pct_correct_intl_avg": 43,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.412,
+          "location": 1.63,
+          "guessing": 0.294
+        }
+      },
+      {
+        "rank": 9,
+        "cosine_similarity": 0.828,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Geometric Shapes and Measures",
+        "main_topic": "Two- and Three-dimensional Shapes",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "In which of the following figures is the dotted line a line of symmetry?",
+        "options": [
+          {
+            "label": "A",
+            "text": "[Image: a dotted line dividing a square into two opposite trapezoids.]"
+          },
+          {
+            "label": "B",
+            "text": "[Image: a dotted line dividing a rectangle into two opposite right angle triangles.]"
+          },
+          {
+            "label": "C",
+            "text": "[Image: a dotted line dividing a pentagon into a trapezoid and an irregular pentagon.]"
+          },
+          {
+            "label": "D",
+            "text": "[Image: a dotted line dividing a hexagon in the middle.]"
+          }
+        ],
+        "correct_option": "D",
+        "figure_description": "Four geometric shapes, each intersected by a dotted line:\n- Option A shows a square with a tilted dotted line that enters through the top side near the top-left corner and exits through the bottom side near the bottom-right corner, dividing the square into two non-congruent trapezoids.\n- Option B shows a horizontal rectangle with a dotted line running along the diagonal from the bottom-left corner to the top-right corner.\n- Option C shows a regular pentagon with one vertex at the top and a horizontal base at the bottom. A slightly slanted, nearly horizontal dotted line cuts through the left and right sides below the center, dividing it into an upper portion and a lower trapezoid.\n- Option D shows a regular hexagon with horizontal top and bottom edges. A vertical dotted line passes through the exact center, bisecting the top and bottom edges into two identical mirror-image halves.",
+        "pct_correct_intl_avg": 54,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.51915,
+          "location": 0.67423,
+          "guessing": 0.27013
+        }
+      },
+      {
+        "rank": 10,
+        "cosine_similarity": 0.838,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Patterns, Relations, and Functions",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "These shapes are arranged in a pattern.\n\n[Image: Pattern of shapes]\n\nWhich set of shapes is arranged in the same pattern?",
+        "options": [
+          {
+            "label": "A",
+            "text": "★ □ ★ □ ★ ★ □ □ ★ ★ □ □"
+          },
+          {
+            "label": "B",
+            "text": "□ ★ □ □ ★ □ □ □ ★ □ □ □ □"
+          },
+          {
+            "label": "C",
+            "text": "★ □ ★ ★ □ □ ★ ★ ★ □ □ □"
+          },
+          {
+            "label": "D",
+            "text": "□ □ ★ ★ □ ★ □ □ ★ ★ □ ★"
+          }
+        ],
+        "correct_option": "C",
+        "figure_description": "In the stem, a horizontal sequence of shapes shows: 1 open circle, 1 open triangle, 2 open circles, 2 open triangles, 3 open circles, 3 open triangles.\nOption A shows a horizontal sequence: 1 solid star, 1 open square, 1 solid star, 1 open square, 2 solid stars, 2 open squares, 2 solid stars, 2 open squares.\nOption B shows a horizontal sequence: 1 open square, 1 solid star, 2 open squares, 1 solid star, 3 open squares, 1 solid star, 4 open squares.\nOption C shows a horizontal sequence: 1 solid star, 1 open square, 2 solid stars, 2 open squares, 3 solid stars, 3 open squares.\nOption D shows a horizontal sequence: 2 open squares, 2 solid stars, 1 open square, 1 solid star, 2 open squares, 2 solid stars, 1 open square, 1 solid star.",
+        "pct_correct_intl_avg": 72,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.798,
+          "location": -0.744,
+          "guessing": 0.162
+        }
+      }
+    ]
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 2.17,
+      "confidence": 0.84,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.03,
+        "1": 0.03,
+        "2": 0.79,
+        "3": 0.1,
+        "4": 0.02,
+        "5": 0.01,
+        "6": 0.01,
+        "7": 0.0,
+        "8": 0.01
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 3.58,
+      "confidence": 0.36,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.0,
+        "1": 0.03,
+        "2": 0.33,
+        "3": 0.19,
+        "4": 0.19,
+        "5": 0.14,
+        "6": 0.06,
+        "7": 0.03,
+        "8": 0.02,
+        "9": 0.01
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 3.12,
+      "confidence": 0.71,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.03,
+        "2": 0.08,
+        "3": 0.61,
+        "4": 0.27,
+        "5": 0.0
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 7277,
+  "output_tokens": 45,
+  "cost_usd": 0.000305634,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791918377-HYpOSznH5gIqWjp3PV7u",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 2.17,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.03,
+          "2": 0.79,
+          "3": 0.1,
+          "4": 0.02,
+          "5": 0.01,
+          "6": 0.01,
+          "7": 0,
+          "8": 0.01
+        },
+        "confidence": 0.84
+      },
+      "location": {
+        "type": "score",
+        "score": 3.58,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0,
+          "1": 0.03,
+          "2": 0.33,
+          "3": 0.19,
+          "4": 0.19,
+          "5": 0.14,
+          "6": 0.06,
+          "7": 0.03,
+          "8": 0.02,
+          "9": 0.01
+        },
+        "confidence": 0.36
+      },
+      "guessing": {
+        "type": "score",
+        "score": 3.12,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.03,
+          "2": 0.08,
+          "3": 0.61,
+          "4": 0.27,
+          "5": 0
+        },
+        "confidence": 0.71
+      }
+    },
+    "usage": {
+      "input_tokens": 7277,
+      "output_tokens": 45,
+      "cost": 0.000305634
+    },
+    "id": "gen-dec-1791918377-HYpOSznH5gIqWjp3PV7u",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T19:06:17+00:00",
+  "seconds": null
+}

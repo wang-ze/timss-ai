@@ -1,0 +1,297 @@
+{
+  "item_id": "M042300Z",
+  "assessment": "TIMSS 2011",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Geometry",
+  "main_topic": "Geometric Measurement",
+  "cognitive_domain": "Applying",
+  "item_type": "constructed_response",
+  "max_points": 2,
+  "scaled_points": 2,
+  "irt_model": "GPCM",
+  "target_calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M042300Z"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2011",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Geometry",
+      "main_topic": "Geometric Measurement",
+      "cognitive_domain": "Applying",
+      "item_type": "constructed_response",
+      "max_points": 2,
+      "scaled_points": 2,
+      "stem": "The diagram shows a system for locating points\n\n[Image: A group of 6 concentric circles with origin “O”. Degrees from 0 to 360 are marked in 10 degree intervals where 0 and 360 are marked on a line “A” that goes across all circles. The 6 concentric circles are labeled from 1 to 6 along line “A”.]\n\nIn this system, the position of a point P is described by its distance from origin, O, and the amount of counterclockwise turn from a baseline OA to OP. Thus, the coordinates of P are (5, 340°).\n\nA. Mark the points B (3, 30°) and C (4, 120°) on the graph above.\nB. Draw the angle BOC. What is the measure of angle BOC?\n\nAngle BOC = ____°",
+      "scoring_guide": [
+        {
+          "category": "M042300A Correct Response",
+          "descriptors": [
+            "Both points correctly marked (pictured on right) [Image: A line drawn from O to B where B is the point where the third circle intersects the 30 degree mark. Figure also has a line drawn from O to C where C is the point where the fourth circle intersects the 120 degree mark.]"
+          ]
+        },
+        {
+          "category": "M042300A Incorrect Response",
+          "descriptors": [
+            "One point correctly marked",
+            "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+          ]
+        },
+        {
+          "category": "M042300B Correct Response",
+          "descriptors": [
+            "90°"
+          ]
+        },
+        {
+          "category": "M042300B Incorrect Response",
+          "descriptors": [
+            "Correct value given for incorrect point(s) drawn in A",
+            "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+          ]
+        }
+      ],
+      "scoring_notes": "Note: Two score points will be given if both parts A and B are correct. One score point will be given if only part A is correct. No credit is given if only part B is correct.",
+      "figure_description": "A circular polar coordinate grid centered at an origin O, formed by 6 concentric circles. A horizontal baseline ray extends right from O, labeled A at its end, with the 6 concentric circles labeled 1, 2, 3, 4, 5, 6 along this ray. Radial line segments extend from O every 10° around the full circle, labeled on the outer rim counterclockwise from 0° at ray OA through 10°, 20°, 30°, up to 350°. A point labeled P is plotted on the 5th circle along the 340° radial line.",
+      "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 2-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 2-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "step1": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 2-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data\". What is the item's step 1 parameter d1? In the GPCM, b - d1 is the ability at which earning the first point becomes more likely than earning no point, so a higher d1 means that this point is earned at a lower ability; the steps sum to 0. Choose the value closest to it.",
+      "criteria": [
+        "-3",
+        "-2",
+        "-1.5",
+        "-1",
+        "-0.5",
+        "0",
+        "1",
+        "2"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.89,
+      "confidence": 0.31,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.03,
+        "1": 0.06,
+        "2": 0.13,
+        "3": 0.22,
+        "4": 0.2,
+        "5": 0.18,
+        "6": 0.11,
+        "7": 0.05,
+        "8": 0.02
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 4.14,
+      "confidence": 0.34,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.06,
+        "2": 0.13,
+        "3": 0.21,
+        "4": 0.16,
+        "5": 0.19999999999999998,
+        "6": 0.13,
+        "7": 0.07,
+        "8": 0.03,
+        "9": 0.0
+      }
+    },
+    "step1": {
+      "type": "score",
+      "score": 3.45,
+      "confidence": 0.34,
+      "legend": {
+        "0": "-3",
+        "1": "-2",
+        "2": "-1.5",
+        "3": "-1",
+        "4": "-0.5",
+        "5": "0",
+        "6": "1",
+        "7": "2"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.08,
+        "2": 0.17,
+        "3": 0.27,
+        "4": 0.19,
+        "5": 0.12,
+        "6": 0.08,
+        "7": 0.05
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1651,
+  "output_tokens": 45,
+  "cost_usd": 6.9342e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791989186-8aKu1VrqmuosDWaDbqER",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.89,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.06,
+          "2": 0.13,
+          "3": 0.22,
+          "4": 0.2,
+          "5": 0.18,
+          "6": 0.11,
+          "7": 0.05,
+          "8": 0.02
+        },
+        "confidence": 0.31
+      },
+      "location": {
+        "type": "score",
+        "score": 4.14,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.06,
+          "2": 0.13,
+          "3": 0.21,
+          "4": 0.16,
+          "5": 0.19999999999999998,
+          "6": 0.13,
+          "7": 0.07,
+          "8": 0.03,
+          "9": 0
+        },
+        "confidence": 0.34
+      },
+      "step1": {
+        "type": "score",
+        "score": 3.45,
+        "legend": {
+          "0": "-3",
+          "1": "-2",
+          "2": "-1.5",
+          "3": "-1",
+          "4": "-0.5",
+          "5": "0",
+          "6": "1",
+          "7": "2"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.08,
+          "2": 0.17,
+          "3": 0.27,
+          "4": 0.19,
+          "5": 0.12,
+          "6": 0.08,
+          "7": 0.05
+        },
+        "confidence": 0.34
+      }
+    },
+    "usage": {
+      "input_tokens": 1651,
+      "output_tokens": 45,
+      "cost": 6.9342e-05
+    },
+    "id": "gen-dec-1791989186-8aKu1VrqmuosDWaDbqER",
+    "provider": "TypeSafe"
+  },
+  "seconds": 0.254,
+  "requested_at": "2026-10-14T14:46:26+00:00"
+}

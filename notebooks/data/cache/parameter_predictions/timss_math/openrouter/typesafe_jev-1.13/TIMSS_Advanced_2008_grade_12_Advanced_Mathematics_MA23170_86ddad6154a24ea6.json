@@ -1,0 +1,227 @@
+{
+  "item_id": "MA23170",
+  "assessment": "TIMSS Advanced 2008",
+  "grade": 12,
+  "subject": "Advanced Mathematics",
+  "content_domain": "Geometry",
+  "main_topic": "Straight Lines in the Cartesian Plane",
+  "cognitive_domain": "Applying",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23170"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS Advanced 2008",
+      "grade": 12,
+      "subject": "Advanced Mathematics",
+      "content_domain": "Geometry",
+      "main_topic": "Straight Lines in the Cartesian Plane",
+      "cognitive_domain": "Applying",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "[Image: Right triangle on a coordinate plane]\n\nA straight line l passes through the points A (1,−2) and B (3, 4).\nIs the line l parallel with PQ?\n\nGive a reason to support your answer.",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "No, with correct work showing gradients are different, and leading to conclusion that l and PQ are not parallel.",
+            "No, with correct work leading to conclusion that l and PQ are not parallel using method other than showing gradients are different. For example, shows angle between the lines is not 0°"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "No, with no correct reason",
+            "Yes, with or without reason",
+            "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+          ]
+        },
+        {
+          "category": "Nonresponse",
+          "descriptors": [
+            "Blank"
+          ]
+        }
+      ],
+      "figure_description": "A Cartesian coordinate plane with horizontal axis x and vertical axis y intersecting at origin O. Tick marks are shown every unit on both axes. The x-axis is labeled at 2, 4, 6, 8, 10, 12, and the y-axis is labeled at 2, 4, 6, 8, 10, 12. A right triangle is plotted in the first quadrant with vertices at point P, point Q, and a third vertex at the right angle:\n- Point P is at coordinates (8, 1).\n- A horizontal leg extends from P(8, 1) to (12, 1), with length labeled 4 beneath it.\n- A vertical leg extends from (12, 1) upward to point Q at (12, 12), with length labeled 11 to its right.\n- The hypotenuse connects point P to point Q.",
+      "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.88,
+      "confidence": 0.29,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.06,
+        "2": 0.12,
+        "3": 0.22,
+        "4": 0.18,
+        "5": 0.19,
+        "6": 0.12,
+        "7": 0.05,
+        "8": 0.02
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 4.51,
+      "confidence": 0.23,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.05,
+        "2": 0.09,
+        "3": 0.2,
+        "4": 0.14,
+        "5": 0.19,
+        "6": 0.16,
+        "7": 0.1,
+        "8": 0.05,
+        "9": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1236,
+  "output_tokens": 31,
+  "cost_usd": 5.1912e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914767-355Rv0TIJPlB1BxRvaA4",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.88,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.06,
+          "2": 0.12,
+          "3": 0.22,
+          "4": 0.18,
+          "5": 0.19,
+          "6": 0.12,
+          "7": 0.05,
+          "8": 0.02
+        },
+        "confidence": 0.29
+      },
+      "location": {
+        "type": "score",
+        "score": 4.51,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.05,
+          "2": 0.09,
+          "3": 0.2,
+          "4": 0.14,
+          "5": 0.19,
+          "6": 0.16,
+          "7": 0.1,
+          "8": 0.05,
+          "9": 0.01
+        },
+        "confidence": 0.23
+      }
+    },
+    "usage": {
+      "input_tokens": 1236,
+      "output_tokens": 31,
+      "cost": 5.1912e-05
+    },
+    "id": "gen-dec-1791914767-355Rv0TIJPlB1BxRvaA4",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:07+00:00",
+  "seconds": null
+}

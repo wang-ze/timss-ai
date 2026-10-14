@@ -1,0 +1,288 @@
+{
+  "item_id": "M032692",
+  "assessment": "TIMSS 2011",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Geometry",
+  "main_topic": "Geometric Shapes",
+  "cognitive_domain": "Reasoning",
+  "item_type": "constructed_response",
+  "max_points": 2,
+  "scaled_points": 2,
+  "irt_model": "GPCM",
+  "target_calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M032692"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2011",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Geometry",
+      "main_topic": "Geometric Shapes",
+      "cognitive_domain": "Reasoning",
+      "item_type": "constructed_response",
+      "max_points": 2,
+      "scaled_points": 2,
+      "stem": "[Image: A pentagon. Going from the bottom left corner and working clockwise, the corners are labeled as A, E, D, C, and B. There is a line drawn from A to D, and also from A to C.]\n\nWhat is the sum of all the interior angles of pentagon ABCDE?\nShow your work.\n\nAnswer: ____",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "540 degrees with work shown\nExamples:\n3 (triangles) × 180° = 540°\n6 (right angles) × 90° = 540°"
+          ]
+        },
+        {
+          "category": "Partially Correct Response",
+          "descriptors": [
+            "540 degrees with no work shown"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "Incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+          ]
+        }
+      ],
+      "figure_description": "A pentagon ABCDE with vertices labeled clockwise starting from the bottom left: A at the bottom left, E at the middle left, D at the top apex, C at the middle right, and B at the bottom right. Two internal line segments are drawn from vertex A: one segment connects A to D, and another connects A to C, dividing the interior of the pentagon into three triangles: triangle AED, triangle ADC, and triangle ABC.",
+      "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 2-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 2-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "step1": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 2-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data\". What is the item's step 1 parameter d1? In the GPCM, b - d1 is the ability at which earning the first point becomes more likely than earning no point, so a higher d1 means that this point is earned at a lower ability; the steps sum to 0. Choose the value closest to it.",
+      "criteria": [
+        "-3",
+        "-2",
+        "-1.5",
+        "-1",
+        "-0.5",
+        "0",
+        "1",
+        "2"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.96,
+      "confidence": 0.32,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.05,
+        "2": 0.11,
+        "3": 0.23,
+        "4": 0.21,
+        "5": 0.19,
+        "6": 0.12,
+        "7": 0.05,
+        "8": 0.02
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 3.35,
+      "confidence": 0.44,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.03,
+        "1": 0.13,
+        "2": 0.2,
+        "3": 0.23,
+        "4": 0.15,
+        "5": 0.14,
+        "6": 0.07,
+        "7": 0.04,
+        "8": 0.01,
+        "9": 0.0
+      }
+    },
+    "step1": {
+      "type": "score",
+      "score": 3.61,
+      "confidence": 0.28,
+      "legend": {
+        "0": "-3",
+        "1": "-2",
+        "2": "-1.5",
+        "3": "-1",
+        "4": "-0.5",
+        "5": "0",
+        "6": "1",
+        "7": "2"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.07,
+        "2": 0.16,
+        "3": 0.22,
+        "4": 0.19,
+        "5": 0.18,
+        "6": 0.09,
+        "7": 0.05
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1321,
+  "output_tokens": 45,
+  "cost_usd": 5.5482e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791989186-eHCJvWxDg2cz0ruQORQx",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.96,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.05,
+          "2": 0.11,
+          "3": 0.23,
+          "4": 0.21,
+          "5": 0.19,
+          "6": 0.12,
+          "7": 0.05,
+          "8": 0.02
+        },
+        "confidence": 0.32
+      },
+      "location": {
+        "type": "score",
+        "score": 3.35,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.13,
+          "2": 0.2,
+          "3": 0.23,
+          "4": 0.15,
+          "5": 0.14,
+          "6": 0.07,
+          "7": 0.04,
+          "8": 0.01,
+          "9": 0
+        },
+        "confidence": 0.44
+      },
+      "step1": {
+        "type": "score",
+        "score": 3.61,
+        "legend": {
+          "0": "-3",
+          "1": "-2",
+          "2": "-1.5",
+          "3": "-1",
+          "4": "-0.5",
+          "5": "0",
+          "6": "1",
+          "7": "2"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.07,
+          "2": 0.16,
+          "3": 0.22,
+          "4": 0.19,
+          "5": 0.18,
+          "6": 0.09,
+          "7": 0.05
+        },
+        "confidence": 0.28
+      }
+    },
+    "usage": {
+      "input_tokens": 1321,
+      "output_tokens": 45,
+      "cost": 5.5482e-05
+    },
+    "id": "gen-dec-1791989186-eHCJvWxDg2cz0ruQORQx",
+    "provider": "TypeSafe"
+  },
+  "seconds": 0.129,
+  "requested_at": "2026-10-14T14:46:26+00:00"
+}

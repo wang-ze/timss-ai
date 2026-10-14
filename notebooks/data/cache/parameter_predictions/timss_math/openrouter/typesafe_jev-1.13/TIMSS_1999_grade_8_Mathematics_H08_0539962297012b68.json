@@ -1,0 +1,280 @@
+{
+  "item_id": "H08",
+  "assessment": "TIMSS 1999",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Fractions and Number Sense",
+  "main_topic": null,
+  "cognitive_domain": "Knowing",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 1999/grade 8/Mathematics/H08"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 1999",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Fractions and Number Sense",
+      "cognitive_domain": "Knowing",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "Which shows 2/3 of the square shaded?",
+      "options": [
+        {
+          "label": "A",
+          "text": "[Image: Square divided horizontally into six equal strips with the top two strips shaded]"
+        },
+        {
+          "label": "B",
+          "text": "[Image: Square with an unshaded triangle at the bottom and shaded regions above]"
+        },
+        {
+          "label": "C",
+          "text": "[Image: Square divided vertically into three strips with the two narrow outer strips shaded]"
+        },
+        {
+          "label": "D",
+          "text": "[Image: Square with an unshaded triangle spanning from the bottom edge to the top center and two shaded triangles on the sides]"
+        },
+        {
+          "label": "E",
+          "text": "[Image: Square divided vertically into three equal strips with the two outer strips shaded]"
+        }
+      ],
+      "correct_option": "E",
+      "figure_description": "Five squares, labeled A through E, are shown in a row:\n- Square A is divided horizontally into 6 equal strips. The top 2 strips are shaded gray, and the bottom 4 strips are unshaded white.\n- Square B has line segments extending from the bottom-left corner to the center, from the bottom-right corner to the center, and from the center to the top-right corner. The triangle formed at the bottom is white, and the remaining area of the square is shaded gray.\n- Square C is divided vertically into three regions by two vertical lines: two narrow gray strips on the left and right edges, each approximately one-sixth the width of the square, and a wider unshaded white region in the middle.\n- Square D contains an unshaded white isosceles triangle whose base is the bottom edge of the square and whose apex touches the midpoint of the top edge. The two right-triangular regions to the left and right of this triangle are shaded gray.\n- Square E is divided vertically into 3 strips of equal width. The leftmost and rightmost strips are shaded gray, and the middle strip is unshaded white.",
+      "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.9,
+      "confidence": 0.22,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.05,
+        "1": 0.07,
+        "2": 0.13,
+        "3": 0.19999999999999998,
+        "4": 0.16,
+        "5": 0.16,
+        "6": 0.12,
+        "7": 0.07,
+        "8": 0.04
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 2.34,
+      "confidence": 0.35,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.14,
+        "1": 0.23,
+        "2": 0.23,
+        "3": 0.18,
+        "4": 0.08,
+        "5": 0.08,
+        "6": 0.04,
+        "7": 0.01,
+        "8": 0.01,
+        "9": 0.0
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 2.98,
+      "confidence": 0.89,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.01,
+        "2": 0.04,
+        "3": 0.86,
+        "4": 0.08,
+        "5": 0.0
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1410,
+  "output_tokens": 45,
+  "cost_usd": 5.922e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914756-C1denKE3xPXFAoe86UWT",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.9,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.07,
+          "2": 0.13,
+          "3": 0.19999999999999998,
+          "4": 0.16,
+          "5": 0.16,
+          "6": 0.12,
+          "7": 0.07,
+          "8": 0.04
+        },
+        "confidence": 0.22
+      },
+      "location": {
+        "type": "score",
+        "score": 2.34,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.14,
+          "1": 0.23,
+          "2": 0.23,
+          "3": 0.18,
+          "4": 0.08,
+          "5": 0.08,
+          "6": 0.04,
+          "7": 0.01,
+          "8": 0.01,
+          "9": 0
+        },
+        "confidence": 0.35
+      },
+      "guessing": {
+        "type": "score",
+        "score": 2.98,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.04,
+          "3": 0.86,
+          "4": 0.08,
+          "5": 0
+        },
+        "confidence": 0.89
+      }
+    },
+    "usage": {
+      "input_tokens": 1410,
+      "output_tokens": 45,
+      "cost": 5.922e-05
+    },
+    "id": "gen-dec-1791914756-C1denKE3xPXFAoe86UWT",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:05:56+00:00",
+  "seconds": null
+}

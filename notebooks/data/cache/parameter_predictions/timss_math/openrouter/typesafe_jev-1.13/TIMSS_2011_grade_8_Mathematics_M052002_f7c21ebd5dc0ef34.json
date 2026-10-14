@@ -1,0 +1,290 @@
+{
+  "item_id": "M052002",
+  "assessment": "TIMSS 2011",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Algebra",
+  "main_topic": "Equations/Formulas and Functions",
+  "cognitive_domain": "Applying",
+  "item_type": "constructed_response",
+  "max_points": 2,
+  "scaled_points": 2,
+  "irt_model": "GPCM",
+  "target_calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M052002"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2011",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Algebra",
+      "main_topic": "Equations/Formulas and Functions",
+      "cognitive_domain": "Applying",
+      "item_type": "constructed_response",
+      "max_points": 2,
+      "scaled_points": 2,
+      "stem": "A piece of wood was 40 cm long.\n\nIt was cut into 3 pieces.\n\nThe lengths in cm are\n\n2x − 5\n\nx + 7\n\nx + 6\n\nA. What is the length of the longest piece?\n\nAnswer: ____ cm\n\nB. Show your work. If you use a calculator, you still must describe all the steps you used to obtain your answer.",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "15, with 4x + 8 = 40 or equivalent algebraic reasoning shown"
+          ]
+        },
+        {
+          "category": "Partially Correct Response",
+          "descriptors": [
+            "8, with correct working shown or indication of x = 8 with correct working",
+            "x + 7, with correct working shown or indication of x = 8",
+            "15, with numerical (i.e., non-algebraic) reasoning shown"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "15 or x + 7 with no/incorrect work shown",
+            "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+          ]
+        }
+      ],
+      "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 2-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 2-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "step1": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 2-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data\". What is the item's step 1 parameter d1? In the GPCM, b - d1 is the ability at which earning the first point becomes more likely than earning no point, so a higher d1 means that this point is earned at a lower ability; the steps sum to 0. Choose the value closest to it.",
+      "criteria": [
+        "-3",
+        "-2",
+        "-1.5",
+        "-1",
+        "-0.5",
+        "0",
+        "1",
+        "2"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.96,
+      "confidence": 0.31,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.03,
+        "1": 0.05,
+        "2": 0.11,
+        "3": 0.22,
+        "4": 0.22,
+        "5": 0.19,
+        "6": 0.11,
+        "7": 0.05,
+        "8": 0.02
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 4.23,
+      "confidence": 0.34,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.0,
+        "1": 0.05,
+        "2": 0.11,
+        "3": 0.22,
+        "4": 0.17,
+        "5": 0.21,
+        "6": 0.14,
+        "7": 0.07,
+        "8": 0.03,
+        "9": 0.0
+      }
+    },
+    "step1": {
+      "type": "score",
+      "score": 3.49,
+      "confidence": 0.28,
+      "legend": {
+        "0": "-3",
+        "1": "-2",
+        "2": "-1.5",
+        "3": "-1",
+        "4": "-0.5",
+        "5": "0",
+        "6": "1",
+        "7": "2"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.09,
+        "2": 0.17,
+        "3": 0.23,
+        "4": 0.18,
+        "5": 0.14,
+        "6": 0.09,
+        "7": 0.06
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1281,
+  "output_tokens": 45,
+  "cost_usd": 5.3802e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791989186-gxHGJ8OU1d41rQsE6nnK",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.96,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.05,
+          "2": 0.11,
+          "3": 0.22,
+          "4": 0.22,
+          "5": 0.19,
+          "6": 0.11,
+          "7": 0.05,
+          "8": 0.02
+        },
+        "confidence": 0.31
+      },
+      "location": {
+        "type": "score",
+        "score": 4.23,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0,
+          "1": 0.05,
+          "2": 0.11,
+          "3": 0.22,
+          "4": 0.17,
+          "5": 0.21,
+          "6": 0.14,
+          "7": 0.07,
+          "8": 0.03,
+          "9": 0
+        },
+        "confidence": 0.34
+      },
+      "step1": {
+        "type": "score",
+        "score": 3.49,
+        "legend": {
+          "0": "-3",
+          "1": "-2",
+          "2": "-1.5",
+          "3": "-1",
+          "4": "-0.5",
+          "5": "0",
+          "6": "1",
+          "7": "2"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.09,
+          "2": 0.17,
+          "3": 0.23,
+          "4": 0.18,
+          "5": 0.14,
+          "6": 0.09,
+          "7": 0.06
+        },
+        "confidence": 0.28
+      }
+    },
+    "usage": {
+      "input_tokens": 1281,
+      "output_tokens": 45,
+      "cost": 5.3802e-05
+    },
+    "id": "gen-dec-1791989186-gxHGJ8OU1d41rQsE6nnK",
+    "provider": "TypeSafe"
+  },
+  "seconds": 0.169,
+  "requested_at": "2026-10-14T14:46:26+00:00"
+}

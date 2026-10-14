@@ -1,0 +1,836 @@
+{
+  "item_id": "B11",
+  "assessment": "TIMSS 1999",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Geometry",
+  "main_topic": null,
+  "cognitive_domain": "Using Complex Procedures",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 1999/grade 8/Mathematics/B11"
+  ],
+  "similar_items": [
+    {
+      "rank": 1,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M032489",
+      "item_id": "M032489",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.9307,
+      "pct_correct_intl_avg": 68,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.858,
+      "location": -0.697,
+      "guessing": 0.262
+    },
+    {
+      "rank": 2,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M042265",
+      "item_id": "M042265",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.9494,
+      "pct_correct_intl_avg": 43.5,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.82304,
+      "location": 0.37121,
+      "guessing": 0.14876
+    },
+    {
+      "rank": 3,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M032397",
+      "item_id": "M032397",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8419,
+      "pct_correct_intl_avg": 43,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.19463,
+      "location": 0.71061,
+      "guessing": 0.22798
+    },
+    {
+      "rank": 4,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M042279",
+      "item_id": "M042279",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8798,
+      "pct_correct_intl_avg": 48.7,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.06456,
+      "location": -0.01696,
+      "guessing": 0.11778
+    },
+    {
+      "rank": 5,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M022105",
+      "item_id": "M022105",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8533,
+      "pct_correct_intl_avg": 37.8,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.62986,
+      "location": 0.75358,
+      "guessing": 0.11689
+    },
+    {
+      "rank": 6,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M022049",
+      "item_id": "M022049",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8977,
+      "pct_correct_intl_avg": 56.5,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.61854,
+      "location": 0.1739,
+      "guessing": 0.25215
+    },
+    {
+      "rank": 7,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M032100",
+      "item_id": "M032100",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8494,
+      "pct_correct_intl_avg": 47,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.03935,
+      "location": 0.32241,
+      "guessing": 0.12723
+    },
+    {
+      "rank": 8,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M032679",
+      "item_id": "M032679",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8556,
+      "pct_correct_intl_avg": 52,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.22179,
+      "location": 0.29129,
+      "guessing": 0.22737
+    },
+    {
+      "rank": 9,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M042150",
+      "item_id": "M042150",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8295,
+      "pct_correct_intl_avg": 41,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.87672,
+      "location": 0.88646,
+      "guessing": 0.18943
+    },
+    {
+      "rank": 10,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M032734",
+      "item_id": "M032734",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8638,
+      "pct_correct_intl_avg": 58,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.77402,
+      "location": -0.38523
+    }
+  ],
+  "context": "item+references",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 1999",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Geometry",
+      "cognitive_domain": "Using Complex Procedures",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "[Image: Net of a cube]\n\nWhich of these cubes could be made by folding the figure above?",
+      "options": [
+        {
+          "label": "A",
+          "text": "[Image: Cube with black circle on top face, black triangle on left face, white circle on right face]"
+        },
+        {
+          "label": "B",
+          "text": "[Image: Cube with white circle on top face, black triangle on left face, black circle on right face]"
+        },
+        {
+          "label": "C",
+          "text": "[Image: Cube with white circle on top face, black circle on left face, blank right face]"
+        },
+        {
+          "label": "D",
+          "text": "[Image: Cube with white circle on top face, blank left face, blank right face]"
+        }
+      ],
+      "correct_option": "C",
+      "figure_description": "The stem shows a net of a cube consisting of six square faces arranged in a cross. A vertical column of four squares has, from top to bottom: a square containing a solid black circle, a square containing an unfilled circle, a square containing a solid black triangle pointing upward, and a blank square. Flanking the second square (with the unfilled circle) are two additional blank squares, one to the left and one to the right.\n\nThe options show perspective views of a cube displaying three faces (top, front-left, and front-right):\n- A: Top face has a solid black circle, front-left face has an upward-pointing black triangle, and front-right face has an unfilled circle.\n- B: Top face has an unfilled circle, front-left face has an upward-pointing black triangle, and front-right face has a solid black circle.\n- C: Top face has an unfilled circle, front-left face has a solid black circle, and front-right face is blank.\n- D: Top face has an unfilled circle, front-left face is blank, and front-right face is blank.",
+      "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data."
+    },
+    "reference_items": [
+      {
+        "rank": 1,
+        "cosine_similarity": 0.931,
+        "assessment": "TIMSS 2003",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Locations and Spatial Relationships",
+        "cognitive_domain": "Using Concepts",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: Triangular prism]\n\nWhich of these could be folded to make a shape like the 3-D figure above?",
+        "options": [
+          {
+            "label": "A",
+            "text": "[Image: Net with three rectangles connected in a V-shape by two triangles]"
+          },
+          {
+            "label": "B",
+            "text": "[Image: Net with three stacked rectangles and two triangles on the right]"
+          },
+          {
+            "label": "C",
+            "text": "[Image: Net with three rectangles and three triangles]"
+          },
+          {
+            "label": "D",
+            "text": "[Image: Net with three stacked rectangles, one triangle on the top right and one triangle on the bottom left]"
+          }
+        ],
+        "correct_option": "D",
+        "figure_description": "The stem shows a 3-D triangular prism resting horizontally on one rectangular face, with dashed lines indicating the three hidden edges. The options show four candidate nets:\n- Option A: A central horizontal rectangle with an isosceles triangle attached to each vertical side, and another rectangle attached to the outer edge of each triangle angled upward, forming an open V-shape.\n- Option B: Three congruent rectangles stacked vertically in a column, with two identical triangles attached to the right edges of the top and middle rectangles, both pointing right.\n- Option C: Two congruent rectangles stacked vertically, each having a triangle attached to its left edge pointing left; a third rectangle extends to the right from the top rectangle, ending with a triangle pointing right.\n- Option D: Three congruent rectangles stacked vertically in a column, with one triangle attached to the right edge of the top rectangle pointing right, and another triangle attached to the left edge of the bottom rectangle pointing left.",
+        "pct_correct_intl_avg": 68,
+        "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.858,
+          "location": -0.697,
+          "guessing": 0.262
+        }
+      },
+      {
+        "rank": 2,
+        "cosine_similarity": 0.949,
+        "assessment": "TIMSS 2007",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Geometric Shapes",
+        "cognitive_domain": "Reasoning",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Which net when folded forms a cube?",
+        "options": [
+          {
+            "label": "A",
+            "text": "[Image: Net A]"
+          },
+          {
+            "label": "B",
+            "text": "[Image: Net B]"
+          },
+          {
+            "label": "C",
+            "text": "[Image: Net C]"
+          },
+          {
+            "label": "D",
+            "text": "[Image: Net D]"
+          }
+        ],
+        "correct_option": "C",
+        "figure_description": "Four nets, each composed of six congruent squares:\n- Option A: On a grid, row 1 has 1 square in column 2; row 2 has 3 squares in columns 1, 2, and 3; row 3 has 1 square in column 1; row 4 has 1 square in column 1.\n- Option B: On a grid, row 1 has 1 square in column 3; row 2 has 3 squares in columns 1, 2, and 3; row 3 has 1 square in column 1; row 4 has 1 square in column 1.\n- Option C: On a grid, rows 1 and 2 each have 1 square in column 2; row 3 has 3 squares in columns 1, 2, and 3; row 4 has 1 square in column 1.\n- Option D: On a grid, row 1 has 1 square in column 2; row 2 has 3 squares in columns 1, 2, and 3; row 3 has 2 squares, one in column 1 and one in column 3.",
+        "pct_correct_intl_avg": 43.5,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.82304,
+          "location": 0.37121,
+          "guessing": 0.14876
+        }
+      },
+      {
+        "rank": 3,
+        "cosine_similarity": 0.842,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Location and Movement",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: Figure 1: A right triangle with the right angle at the bottom left. The tip of the right-most angle has a line drawn through it. Figure 2: The same triangle, but with the right angle on the bottom right and the angle with the line on the bottom left. Figure 3: The same triangle, but with the right angle facing the bottom left, and the angle with the line on the top left.]\n\nWhich of these transformations, taken in order, can be used so that Figure 1 above becomes Figure 2 and then Figure 3?",
+        "options": [
+          {
+            "label": "A",
+            "text": "reflection and then translation"
+          },
+          {
+            "label": "B",
+            "text": "reflection and then 1/4 turn rotation clockwise"
+          },
+          {
+            "label": "C",
+            "text": "1/2 turn rotation and then translation"
+          },
+          {
+            "label": "D",
+            "text": "1/4 turn rotation counterclockwise and then reflection"
+          }
+        ],
+        "correct_option": "B",
+        "figure_description": "Three right-angled triangles labeled Figure 1, Figure 2, and Figure 3 from left to right:\n- Figure 1: A right triangle with the right angle at the bottom-left corner, a horizontal base, and a vertical left side. A vertical line segment connects the hypotenuse to the base near the acute right-most vertex.\n- Figure 2: A right triangle with the right angle at the bottom-right corner, a horizontal base, and a vertical right side. A vertical line segment connects the hypotenuse to the base near the acute left-most vertex.\n- Figure 3: A right triangle with the right angle at the bottom-left corner, a shorter horizontal base, and a longer vertical left side. A horizontal line segment connects the vertical left side to the hypotenuse near the acute top vertex.",
+        "pct_correct_intl_avg": 43,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.19463,
+          "location": 0.71061,
+          "guessing": 0.22798
+        }
+      },
+      {
+        "rank": 4,
+        "cosine_similarity": 0.88,
+        "assessment": "TIMSS 2007",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Geometric Shapes",
+        "cognitive_domain": "Reasoning",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: A person looking at a solid made of cubes]\n\nThe solid is made of 5 small cubes.\nWhich shape does the person in the diagram see?",
+        "options": [
+          {
+            "label": "A",
+            "text": "[Image: A vertical column of three squares with one square attached to the left of the middle square]"
+          },
+          {
+            "label": "B",
+            "text": "[Image: A vertical column of three squares with one square attached to the right of the middle square]"
+          },
+          {
+            "label": "C",
+            "text": "[Image: A vertical column of three squares with one square attached to the left of the middle square and one square attached to the right of the top square]"
+          },
+          {
+            "label": "D",
+            "text": "[Image: A vertical column of three squares with one square attached to the left of the top square and one square attached to the right of the middle square]"
+          }
+        ],
+        "correct_option": "B",
+        "figure_description": "At the top of the item, a person is standing to the left of a three-dimensional solid made of 5 small identical cubes. The person is shown in side profile facing right toward the solid, with a horizontal dotted line extending from the person's eyes to the top-left cube of the solid. The solid is drawn in isometric projection and consists of:\n- A central vertical column of 3 cubes.\n- One cube attached to the back-right of the top cube of the column, at the same height as the top cube.\n- One cube attached to the front-right of the middle cube of the column, extending forward toward the viewer at the middle height level.\n\nThe response options each show a flat 2D shape composed of connected unit squares:\n- Option A: 4 squares consisting of a vertical column of 3 squares with 1 square attached to the left of the middle square.\n- Option B: 4 squares consisting of a vertical column of 3 squares with 1 square attached to the right of the middle square.\n- Option C: 5 squares consisting of a vertical column of 3 squares with 1 square attached to the left of the middle square and 1 square attached to the right of the top square.\n- Option D: 5 squares consisting of a vertical column of 3 squares with 1 square attached to the left of the top square and 1 square attached to the right of the middle square.",
+        "pct_correct_intl_avg": 48.7,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.06456,
+          "location": -0.01696,
+          "guessing": 0.11778
+        }
+      },
+      {
+        "rank": 5,
+        "cosine_similarity": 0.853,
+        "assessment": "TIMSS 2007",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Location and Movement",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "A half-turn about point P in the plane is applied to the shaded figure.\n\n[Image: Shaded figure on dashed axes]\n\nWhich of the following shows the results of the half-turn?",
+        "options": [
+          {
+            "label": "A",
+            "text": "[Image: Shaded right triangle above the horizontal line with vertical side on the left]"
+          },
+          {
+            "label": "B",
+            "text": "[Image: Shaded right triangle below the horizontal line with vertical side on the right]"
+          },
+          {
+            "label": "C",
+            "text": "[Image: Shaded right triangle above the horizontal line with vertical side on the right]"
+          },
+          {
+            "label": "D",
+            "text": "[Image: Shaded right triangle below the horizontal line with vertical side on the left]"
+          },
+          {
+            "label": "E",
+            "text": "[Image: Shaded right triangle below the horizontal line with rightmost vertex at point P]"
+          }
+        ],
+        "correct_option": "D",
+        "figure_description": "In the stem diagram, a horizontal dashed line and a vertical dashed line intersect perpendicularly at point P, which is marked with a black dot and labeled P below the horizontal line. A shaded right triangle lies above the horizontal dashed line. Its bottom horizontal base lies along the horizontal dashed line, extending both to the left and to the right of point P, with the segment to the left of P being longer than the segment to the right of P. The right edge of the triangle is vertical, extending upward from the horizontal line. The hypotenuse connects the top-right vertex to the leftmost vertex on the horizontal dashed line. The vertical dashed line passes through the shaded triangle.\n\nOption A shows a shaded right triangle above the horizontal line, with its base on the horizontal line extending to both sides of P (longer to the right of P), its vertical side on the left extending upward, and hypotenuse sloping down to the right.\nOption B shows a shaded right triangle below the horizontal line, with its base on the horizontal line extending to both sides of P (longer to the left of P), its vertical side on the right extending downward, and hypotenuse sloping up to the left.\nOption C shows a shaded right triangle above the horizontal line, with its base on the horizontal line, vertical side on the right extending upward, and hypotenuse sloping down to the left.\nOption D shows a shaded right triangle below the horizontal line, with its base on the horizontal line extending to both sides of P (longer to the right of P), its vertical side on the left extending downward, and hypotenuse sloping up to the right.\nOption E shows a shaded right triangle below the horizontal line, with its base on the horizontal line located entirely to the left of point P, touching point P at its rightmost acute vertex, with its vertical side on the left extending downward.",
+        "pct_correct_intl_avg": 37.8,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.62986,
+          "location": 0.75358,
+          "guessing": 0.11689
+        }
+      },
+      {
+        "rank": 6,
+        "cosine_similarity": 0.898,
+        "assessment": "TIMSS 2007",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Location and Movement",
+        "cognitive_domain": "Reasoning",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "This object will be turned to a different position\n\n[Image: 3D object made of cubes]\n\nWhich of these could be the object after being turned?",
+        "options": [
+          {
+            "label": "A",
+            "text": "[Image: 3D object A]"
+          },
+          {
+            "label": "B",
+            "text": "[Image: 3D object B]"
+          },
+          {
+            "label": "C",
+            "text": "[Image: 3D object C]"
+          },
+          {
+            "label": "D",
+            "text": "[Image: 3D object D]"
+          }
+        ],
+        "correct_option": "D",
+        "figure_description": "An isometric drawing of a three-dimensional solid composed of 4 identical unit cubes:\n- In the upper horizontal layer, 3 cubes form an L-shape consisting of a corner cube at the back, one cube extending forward and to the left, and one cube extending forward and to the right.\n- In the lower layer, a fourth cube is situated directly underneath the forward-left cube, creating a vertical column of 2 cubes on the left side of the object. The spaces directly beneath the back corner cube and the forward-right cube are empty.\n\nThe response options show four similar objects made of 4 cubes, drawn in the same isometric perspective:\n- Option A: Three cubes form an L-shape in an upper layer (a corner cube at the back, one cube extending forward-left, and one extending forward-right). A fourth cube is in a lower layer, positioned stepped down in front of the forward-left cube.\n- Option B: A vertical column of 2 cubes is located on the right side (front-right). In the upper layer, extending back and to the left from the top cube of this column is a cube, and extending back and to the right from that cube is a third cube, forming an L-shape of 3 cubes in the upper layer with the 2-cube column at one end.\n- Option C: Three cubes form a shape in an upper layer stepping up from a single cube in a lower layer at the front-left.\n- Option D: A vertical column of 2 cubes is located on the right side (front-right). In the upper layer, two cubes extend to the left.",
+        "pct_correct_intl_avg": 56.5,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (eighth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.61854,
+          "location": 0.1739,
+          "guessing": 0.25215
+        }
+      },
+      {
+        "rank": 7,
+        "cosine_similarity": 0.849,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Geometric Measurement",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: A rectangular prism, with a length of 5 blocks, width of 4 blocks, and height of 3 blocks. There is a hole shown on the top of the rectangular prism. The hole is 2 blocks by 3 blocks and goes all the way through the shape.]\n\nThe figure above shows a shape made up of cubes that are all the same size. There is a hole all the way through the shape. How many cubes would be needed to fill the hole?",
+        "options": [
+          {
+            "label": "A",
+            "text": "6"
+          },
+          {
+            "label": "B",
+            "text": "12"
+          },
+          {
+            "label": "C",
+            "text": "15"
+          },
+          {
+            "label": "D",
+            "text": "18"
+          }
+        ],
+        "correct_option": "D",
+        "figure_description": "An isometric drawing of a 3D block shape constructed from identical unit cubes. The overall block is 5 cubes wide along the front, 4 cubes deep along the right side, and 3 cubes tall. In the center of the top face, there is a rectangular rectangular hole measuring 3 cubes wide by 2 cubes deep, bordered by a rim that is 1 cube wide on all four sides. The hole extends vertically straight down through the entire height of 3 cubes.",
+        "pct_correct_intl_avg": 47,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.03935,
+          "location": 0.32241,
+          "guessing": 0.12723
+        }
+      },
+      {
+        "rank": 8,
+        "cosine_similarity": 0.856,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Geometric Shapes",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: A piece of paper in the shape of a rectangle, folded in half. The paper is cut along a dotted line, which intersects the bottom of the folded paper and the fold itself. The dotted line forms a right triangle with the folded side. The height of the triangle is 4 centimeters on the fold, and the base on the front half of the paper is 1 centimeter.]\n\nA piece of paper in the shape of a rectangle is folded in half as shown in the figure above. It is then cut along the dotted line, and the small piece that is cut is opened. What is the shape of the cutout figure?",
+        "options": [
+          {
+            "label": "A",
+            "text": "an isosceles triangle"
+          },
+          {
+            "label": "B",
+            "text": "two isosceles triangles"
+          },
+          {
+            "label": "C",
+            "text": "a right triangle"
+          },
+          {
+            "label": "D",
+            "text": "an equilateral triangle"
+          }
+        ],
+        "correct_option": "A",
+        "figure_description": "A rectangular sheet of paper folded vertically in half, shown standing slightly open with the fold along the left vertical edge. A straight dashed cut line runs from the folded edge down to the bottom front edge. A dimension arrow along the fold indicates that the top of the cut is 4 cm above the bottom edge. Another dimension arrow along the bottom edge indicates that the cut meets the bottom edge 1 cm to the right of the fold.",
+        "pct_correct_intl_avg": 52,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.22179,
+          "location": 0.29129,
+          "guessing": 0.22737
+        }
+      },
+      {
+        "rank": 9,
+        "cosine_similarity": 0.829,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Geometric Shapes",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Which shape has a line of symmetry?",
+        "options": [
+          {
+            "label": "A",
+            "text": "[Image: A trapezoid with two parallel horizontal lines. The right side of the trapezoid is longer than the left hand side.]"
+          },
+          {
+            "label": "B",
+            "text": "[Image: An isosceles triangle with the base forming a vertical line.]"
+          },
+          {
+            "label": "C",
+            "text": "[Image: A parallelogram where top and bottom sides are equal in length and the left and right sides are also equal in length.]"
+          },
+          {
+            "label": "D",
+            "text": "[Image: A right triangle with the 90 degree angle in the bottom left.]"
+          }
+        ],
+        "correct_option": "B",
+        "figure_description": "Four geometric shapes labeled A through D:\nA: A trapezoid with horizontal top and bottom parallel sides; the bottom is longer than the top, and the right slanted side is longer and less steep than the left side.\nB: An isosceles triangle with a vertical base on the left and a vertex pointing to the right; the top and bottom sides are marked with equal tick marks.\nC: A parallelogram with horizontal top and bottom sides each marked with a single tick mark, and slanted left and right sides each marked with a double tick mark.\nD: A scalene right-angled triangle with a vertical left side and a horizontal bottom side, with a right-angle square symbol marked at the lower-left corner.",
+        "pct_correct_intl_avg": 41,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.87672,
+          "location": 0.88646,
+          "guessing": 0.18943
+        }
+      },
+      {
+        "rank": 10,
+        "cosine_similarity": 0.864,
+        "assessment": "TIMSS 2011",
+        "grade": 8,
+        "subject": "Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Geometric Shapes",
+        "cognitive_domain": "Knowing",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: A square, with a triangle attached to each side. Each triangle shares a side with the square, shown with a dotted line.]\nThe shape shown above is cut out of cardboard. The triangle flaps are then folded up along the dotted lines until they touch the edges of the flaps next to them.\n\nComplete the diagram below to show what the shape would look like when viewed from directly above.\n\n[Image: A square.]",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Correct figure (square with diagonals meeting in center)"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "figure_description": "Top diagram: A flat net composed of a central square with dashed sides, each side joined to the base of an identical isosceles triangle pointing outward.\nBottom diagram: A square drawn with solid lines, representing the outer border of the shape viewed directly from above, awaiting completion.",
+        "pct_correct_intl_avg": 58,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.77402,
+          "location": -0.38523
+        }
+      }
+    ]
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 2.3,
+      "confidence": 0.78,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.04,
+        "2": 0.73,
+        "3": 0.12,
+        "4": 0.04,
+        "5": 0.02,
+        "6": 0.01,
+        "7": 0.01,
+        "8": 0.01
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 3.6,
+      "confidence": 0.28,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.07,
+        "2": 0.26,
+        "3": 0.18,
+        "4": 0.16999999999999998,
+        "5": 0.17,
+        "6": 0.07,
+        "7": 0.04,
+        "8": 0.02,
+        "9": 0.01
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 3.62,
+      "confidence": 0.75,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.02,
+        "2": 0.06,
+        "3": 0.1,
+        "4": 0.79,
+        "5": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 7825,
+  "output_tokens": 45,
+  "cost_usd": 0.00032865,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791918364-MeW7uAwyEerN218fVWE7",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 2.3,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.04,
+          "2": 0.73,
+          "3": 0.12,
+          "4": 0.04,
+          "5": 0.02,
+          "6": 0.01,
+          "7": 0.01,
+          "8": 0.01
+        },
+        "confidence": 0.78
+      },
+      "location": {
+        "type": "score",
+        "score": 3.6,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.07,
+          "2": 0.26,
+          "3": 0.18,
+          "4": 0.16999999999999998,
+          "5": 0.17,
+          "6": 0.07,
+          "7": 0.04,
+          "8": 0.02,
+          "9": 0.01
+        },
+        "confidence": 0.28
+      },
+      "guessing": {
+        "type": "score",
+        "score": 3.62,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.02,
+          "2": 0.06,
+          "3": 0.1,
+          "4": 0.79,
+          "5": 0.01
+        },
+        "confidence": 0.75
+      }
+    },
+    "usage": {
+      "input_tokens": 7825,
+      "output_tokens": 45,
+      "cost": 0.00032865
+    },
+    "id": "gen-dec-1791918364-MeW7uAwyEerN218fVWE7",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T19:06:04+00:00",
+  "seconds": null
+}

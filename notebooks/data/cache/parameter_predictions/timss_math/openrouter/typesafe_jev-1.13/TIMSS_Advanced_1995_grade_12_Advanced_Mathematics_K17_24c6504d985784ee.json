@@ -1,0 +1,372 @@
+{
+  "item_id": "K17",
+  "assessment": "TIMSS Advanced 1995",
+  "grade": 12,
+  "subject": "Advanced Mathematics",
+  "content_domain": "Calculus",
+  "main_topic": null,
+  "cognitive_domain": "Solving Problems",
+  "item_type": "constructed_response",
+  "max_points": 3,
+  "scaled_points": 3,
+  "irt_model": "GPCM",
+  "target_calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K17"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS Advanced 1995",
+      "grade": 12,
+      "subject": "Advanced Mathematics",
+      "content_domain": "Calculus",
+      "cognitive_domain": "Solving Problems",
+      "item_type": "constructed_response",
+      "max_points": 3,
+      "scaled_points": 3,
+      "stem": "The graph of the function g passes through the point (1,2). The slope of the tangent to the graph at any point (x, y) is given by g'(x) = 6x − 12. What is g(x)? Show all your work.",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "g(x) = 3x^2 - 12x + 11. Method: First the function g is determined to be of the form g(x) = 3x^2 - 12 x + c. Then c is found to be 11 by solving the equation g(1) = 2, i.e. 3 - 12 + c = 2.",
+            "g(x) = 3x^2 - 12x + 11. Other correct method used."
+          ]
+        },
+        {
+          "category": "Partial Response",
+          "descriptors": [
+            "g(x) = 3x^2 - 12 x + 11. No work shown.",
+            "Answer of the form g(x) = 3 x^2 - 12 x + c, where c is a numerical value other than 11. Method correct; the value of c given incorrectly due to error in solving the equation g(1) = 2. If c = 13, check to determine if 13 results from an error in solving g(1) = 2[code 21] or from solving correctly the \"reversed\" equation, g(2) = 1 [code 22].",
+            "Method: Solves the \"reversed\" equation g(2) = 1 and determines the value of c to be 13. If an error is made in solving the reversed equation; c determined to be a number other than 13, use code 11.",
+            "Answers of the form g(x) = 3x^2 -12x + c, where the value of c is NOT determined by solving either g(1) = 2 or g(2) = 1.",
+            "Other nearly complete solutions with a minor error."
+          ]
+        },
+        {
+          "category": "Minimal Response",
+          "descriptors": [
+            "Answer of the form g(x) = 3x^2 - 12 x + c, where a numerical value of c is NOT found.",
+            "Method: Incorrectly solves \"reversed\" equation g(2) = 1, finds c to be a number other than 13.",
+            "Other minimally correct solutions"
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "g(x) = 3x^2 - 12x and no work shown.",
+            "Answers of the form g(x) = 6x^2 - ... or other integration error.",
+            "Other incorrect attempts."
+          ]
+        },
+        {
+          "category": "Nonresponse",
+          "descriptors": [
+            "Crossed-out, illegible, or impossible to interpret.",
+            "BLANK"
+          ]
+        }
+      ],
+      "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 3-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 3-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "step1": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 3-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's step 1 parameter d1? In the GPCM, b - d1 is the ability at which earning the first point becomes more likely than earning no point, so a higher d1 means that this point is earned at a lower ability; the steps sum to 0. Choose the value closest to it.",
+      "criteria": [
+        "-3",
+        "-2",
+        "-1.5",
+        "-1",
+        "-0.5",
+        "0",
+        "1",
+        "2"
+      ]
+    },
+    "step2": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 3-point item with the generalized partial credit model (GPCM), which TIMSS uses for constructed-response items worth 2 or 3 points, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's step 2 parameter d2? In the GPCM, b - d2 is the ability at which earning the second point becomes more likely than earning only the first, so a higher d2 means that this point is earned at a lower ability; the steps sum to 0. Choose the value closest to it.",
+      "criteria": [
+        "-3",
+        "-2",
+        "-1.5",
+        "-1",
+        "-0.5",
+        "0",
+        "1",
+        "2"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 4.27,
+      "confidence": 0.32,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.04,
+        "2": 0.09,
+        "3": 0.2,
+        "4": 0.2,
+        "5": 0.21,
+        "6": 0.14,
+        "7": 0.06,
+        "8": 0.04
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 4.82,
+      "confidence": 0.42,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.0,
+        "1": 0.03,
+        "2": 0.06,
+        "3": 0.19,
+        "4": 0.14,
+        "5": 0.21,
+        "6": 0.18,
+        "7": 0.12,
+        "8": 0.06,
+        "9": 0.01
+      }
+    },
+    "step1": {
+      "type": "score",
+      "score": 3.65,
+      "confidence": 0.21,
+      "legend": {
+        "0": "-3",
+        "1": "-2",
+        "2": "-1.5",
+        "3": "-1",
+        "4": "-0.5",
+        "5": "0",
+        "6": "1",
+        "7": "2"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.09,
+        "2": 0.16,
+        "3": 0.23,
+        "4": 0.14,
+        "5": 0.14,
+        "6": 0.11,
+        "7": 0.09
+      }
+    },
+    "step2": {
+      "type": "score",
+      "score": 3.83,
+      "confidence": 0.24,
+      "legend": {
+        "0": "-3",
+        "1": "-2",
+        "2": "-1.5",
+        "3": "-1",
+        "4": "-0.5",
+        "5": "0",
+        "6": "1",
+        "7": "2"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.05,
+        "2": 0.14,
+        "3": 0.22,
+        "4": 0.18,
+        "5": 0.25,
+        "6": 0.1,
+        "7": 0.04
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1887,
+  "output_tokens": 59,
+  "cost_usd": 7.9254e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791989184-lNHyO47lyfnhW31yaDHS",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 4.27,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.04,
+          "2": 0.09,
+          "3": 0.2,
+          "4": 0.2,
+          "5": 0.21,
+          "6": 0.14,
+          "7": 0.06,
+          "8": 0.04
+        },
+        "confidence": 0.32
+      },
+      "location": {
+        "type": "score",
+        "score": 4.82,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0,
+          "1": 0.03,
+          "2": 0.06,
+          "3": 0.19,
+          "4": 0.14,
+          "5": 0.21,
+          "6": 0.18,
+          "7": 0.12,
+          "8": 0.06,
+          "9": 0.01
+        },
+        "confidence": 0.42
+      },
+      "step1": {
+        "type": "score",
+        "score": 3.65,
+        "legend": {
+          "0": "-3",
+          "1": "-2",
+          "2": "-1.5",
+          "3": "-1",
+          "4": "-0.5",
+          "5": "0",
+          "6": "1",
+          "7": "2"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.09,
+          "2": 0.16,
+          "3": 0.23,
+          "4": 0.14,
+          "5": 0.14,
+          "6": 0.11,
+          "7": 0.09
+        },
+        "confidence": 0.21
+      },
+      "step2": {
+        "type": "score",
+        "score": 3.83,
+        "legend": {
+          "0": "-3",
+          "1": "-2",
+          "2": "-1.5",
+          "3": "-1",
+          "4": "-0.5",
+          "5": "0",
+          "6": "1",
+          "7": "2"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.05,
+          "2": 0.14,
+          "3": 0.22,
+          "4": 0.18,
+          "5": 0.25,
+          "6": 0.1,
+          "7": 0.04
+        },
+        "confidence": 0.24
+      }
+    },
+    "usage": {
+      "input_tokens": 1887,
+      "output_tokens": 59,
+      "cost": 7.9254e-05
+    },
+    "id": "gen-dec-1791989184-lNHyO47lyfnhW31yaDHS",
+    "provider": "TypeSafe"
+  },
+  "seconds": 0.43,
+  "requested_at": "2026-10-14T14:46:25+00:00"
+}

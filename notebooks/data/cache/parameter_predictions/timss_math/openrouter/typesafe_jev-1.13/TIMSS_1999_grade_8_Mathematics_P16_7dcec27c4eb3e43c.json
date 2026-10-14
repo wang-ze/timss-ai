@@ -1,0 +1,276 @@
+{
+  "item_id": "P16",
+  "assessment": "TIMSS 1999",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Data Representation, Analysis, and Probability",
+  "main_topic": null,
+  "cognitive_domain": "Using Complex Procedures",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 1999/grade 8/Mathematics/P16"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 1999",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Data Representation, Analysis, and Probability",
+      "cognitive_domain": "Using Complex Procedures",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "This table shows temperatures at various times on four days.\n\n| TEMPERATURE | | | | | |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| | 6 a.m. | 9 a.m. | Noon | 3 p.m. | 6 p.m. |\n| Monday | 15° | 17° | 24° | 21° | 16° |\n| Tuesday | 20° | 16° | 15° | 10° | 9° |\n| Wednesday | 8° | 14° | 16° | 19° | 15° |\n| Thursday | 8° | 11° | 19° | 26° | 20° |\n\n[Image: Thermometer]\n\nOn which day and at what time was the temperature shown in the table the same as that shown on the thermometer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Monday, Noon"
+        },
+        {
+          "label": "B",
+          "text": "Tuesday, 6 a.m."
+        },
+        {
+          "label": "C",
+          "text": "Wednesday, 3 p.m."
+        },
+        {
+          "label": "D",
+          "text": "Thursday, 3 p.m."
+        }
+      ],
+      "correct_option": "A",
+      "figure_description": "A vertical thermometer labeled \"Thermometer\" at the bottom. The scale on the right has labeled marks at 5°, 10°, 15°, 20°, 25°, 30°, 35°, and 40°, with individual 1-degree tick marks between them. The shaded column of liquid inside the thermometer reaches exactly 24° (one tick mark below 25°).",
+      "calibration": "Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1999 and 2003 eighth-grade mathematics data\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.69,
+      "confidence": 0.3,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.05,
+        "1": 0.07,
+        "2": 0.15,
+        "3": 0.23,
+        "4": 0.17,
+        "5": 0.15,
+        "6": 0.1,
+        "7": 0.05,
+        "8": 0.03
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 2.49,
+      "confidence": 0.44,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.12,
+        "1": 0.21,
+        "2": 0.22,
+        "3": 0.2,
+        "4": 0.1,
+        "5": 0.08,
+        "6": 0.04,
+        "7": 0.02,
+        "8": 0.01,
+        "9": 0.0
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 3.89,
+      "confidence": 0.93,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.03,
+        "4": 0.95,
+        "5": 0.0
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1368,
+  "output_tokens": 45,
+  "cost_usd": 5.7456e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914758-1vgeEXCNiP67exsbAlEV",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.69,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.07,
+          "2": 0.15,
+          "3": 0.23,
+          "4": 0.17,
+          "5": 0.15,
+          "6": 0.1,
+          "7": 0.05,
+          "8": 0.03
+        },
+        "confidence": 0.3
+      },
+      "location": {
+        "type": "score",
+        "score": 2.49,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.12,
+          "1": 0.21,
+          "2": 0.22,
+          "3": 0.2,
+          "4": 0.1,
+          "5": 0.08,
+          "6": 0.04,
+          "7": 0.02,
+          "8": 0.01,
+          "9": 0
+        },
+        "confidence": 0.44
+      },
+      "guessing": {
+        "type": "score",
+        "score": 3.89,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0,
+          "2": 0,
+          "3": 0.03,
+          "4": 0.95,
+          "5": 0
+        },
+        "confidence": 0.93
+      }
+    },
+    "usage": {
+      "input_tokens": 1368,
+      "output_tokens": 45,
+      "cost": 5.7456e-05
+    },
+    "id": "gen-dec-1791914758-1vgeEXCNiP67exsbAlEV",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:05:58+00:00",
+  "seconds": null
+}

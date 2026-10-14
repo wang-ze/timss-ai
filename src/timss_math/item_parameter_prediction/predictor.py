@@ -1,480 +1,51 @@
-"""Predict the IRT parameters of a new item with an LLM grounded in the most similar calibrated items.
+"""What every predictor of IRT parameters shares: the reference items, and what a leave-one-out run asks of it.
 
-``ParameterPredictor.predict(item)`` works in two steps, as ``predict_item_parameters.ipynb`` does:
+A predictor predicts the IRT parameters of a new item from the calibrated released items most similar to it. Two
+predictors share this base and differ only in how they are asked and how they answer:
 
-1. ``prepare`` finds the reference items: the ``n_similar`` calibrated items of the item's grade most similar to it
-   (by ``search_method``), then the ``n_same_model`` most similar ones scored with its IRT model and points that are
-   not among them, so the LLM always sees calibrated examples of every parameter it predicts. It writes the system
-   prompt (an expert in testing the item's grade, content domain, and cognitive domain, and an IRT measurement expert)
-   and the user prompt (a calibration summary, the reference items with their parameters, and the new item).
-2. ``request`` sends the prompts to the LLM of ``LLMSettings`` and returns its reasoning and parameters, parsed with a
-   structured-output schema.
+- ``LLMPredictor`` (``llm``) prompts an LLM with the reference items and the new item and gets a value per parameter.
+- ``JevPredictor`` (``jev``) asks Jev a rubric question per parameter, whose criteria are the values of a scale, and
+  gets a probability for each value.
 
-``request_async`` is ``request`` as a coroutine, through an ``AsyncLLMSession`` (``LLMClient.session``), so that many
-requests can run at once in one event loop (``LeaveOneOut.request``). ``request_body`` and ``parse_response`` split
-``request`` for batches (``batch``). All three send the same request body and check the output the same way.
+Both find the reference items the same way (``Predictor.references``): the ``n_similar`` calibrated items of the
+item's grade most similar to it (by ``search_method``), then the ``n_same_model`` most similar ones scored with its IRT
+model and points that are not among them, so the predictor sees calibrated examples of every parameter it predicts.
+The embedding model and the index (``ItemIndex``) are therefore chosen the same way for both.
 
-LLM providers:
-
-- ``"openrouter"`` (the default, with ``google/gemini-3.8-flash``): reasoning effort goes in OpenRouter's ``reasoning``
-  object, and the response reports the cost.
-- ``"openai"``: the OpenAI API, or any OpenAI-compatible server through ``base_url``.
-- ``"gemini"``: the Gemini API's OpenAI-compatible endpoint, with models such as ``gemini-3.8-flash``.
-- ``"ollama"``: a local Ollama server through its native chat API, which takes the JSON schema as ``format``, the
-  reasoning effort as ``think`` (a level such as "medium", or True or False for models without levels; None for
-  models that cannot think), and the context window as ``num_ctx``.
+``LeaveOneOut`` (``evaluation``) uses only the methods of ``Predictor``: ``prepare`` finds the reference items and
+builds what is sent without any request, ``identity`` is what a saved prediction must match to be reused, ``record``
+and ``request_async`` make the saved record, and ``parameters`` and ``parameter_details`` read the predicted values
+back from it.
 """
 
 from __future__ import annotations
 
+import abc
+import asyncio
 import contextlib
 import functools
-import json
-from collections.abc import AsyncIterator, Iterable
-from dataclasses import asdict, dataclass, field
-from datetime import UTC, datetime
-from typing import Literal
+import threading
+from collections.abc import Coroutine, Iterable
+from contextlib import AbstractAsyncContextManager
+from pathlib import Path
+from typing import Any, ClassVar
 
-import httpx2
-import openai
-import requests
-from openai.lib._parsing._completions import (
-    parse_chat_completion,
-    type_to_response_format_param,
-)
-from openai.types.chat import ChatCompletion, ParsedChatCompletion
-from pydantic import BaseModel, Field, create_model
-
-from .config import api_key
+from .config import data_dir as resolve_data_dir
+from .config import slug
 from .index import ITEM_PARAMETERS_PAYLOAD, ItemIndex, SearchMethod
-from .items import (
-    PARAMETER_LABELS,
-    ItemBank,
-    TimssItem,
-    model_parameters,
-    predicted_parameters,
-)
+from .items import ItemBank, TimssItem, model_parameters
 
-LLMProvider = Literal["openrouter", "openai", "gemini", "ollama"]
-
-BASE_URLS = {
-    "openrouter": "https://openrouter.ai/api/v1",
-    "openai": "https://api.openai.com/v1",
-    "gemini": "https://generativelanguage.googleapis.com/v1beta/openai/",
-    "ollama": "http://localhost:11434",
-}
-API_KEY_VARIABLES = {"openrouter": "OPENROUTER_API_KEY", "openai": "OPENAI_API_KEY", "gemini": "GEMINI_API_KEY"}
-STUDENTS = {
-    4: "fourth-grade students",
-    8: "eighth-grade students",
-    12: "students in their final year of secondary school who have taken advanced mathematics courses (TIMSS Advanced)",
-}
+PREDICTIONS_DIR = Path("cache") / "parameter_predictions" / "timss_math"
+"""Where predictions are saved in the data directory, one subdirectory per provider and model."""
 
 
-@dataclass(frozen=True)
-class LLMSettings:
-    """Which LLM predicts the parameters, and how it is called."""
-
-    provider: LLMProvider = "openrouter"
-    model: str = "google/gemini-3.8-flash"
-    reasoning_effort: str | bool | None = "medium"
-    """Reasoning effort, such as "low", "medium", or "high"; None sends none. Ollama also takes True or False."""
-    max_tokens: int = 16384
-    """Output cap, reasoning included."""
-    base_url: str | None = None
-    """The provider's API URL; None uses its public one (Ollama: http://localhost:11434)."""
-    api_key: str | None = field(default=None, repr=False)
-    """None reads the provider's variable (OPENROUTER_API_KEY, OPENAI_API_KEY, GEMINI_API_KEY) from the environment
-    or the project .env. Ollama needs none."""
-    timeout: float = 600
-    max_retries: int = 2
-    """Retries of a failed request by the OpenAI client (not used for Ollama)."""
-    ollama_num_ctx: int = 32768
-    """Ollama context window in tokens, which must hold the prompts (about 6,000 tokens) and the output."""
-
-    def __post_init__(self):
-        if self.provider not in BASE_URLS:
-            raise ValueError(f"Unknown LLM provider {self.provider!r}; use one of {sorted(BASE_URLS)}")
-        if isinstance(self.reasoning_effort, bool) and self.provider != "ollama":
-            raise ValueError("Only Ollama takes True or False as the reasoning effort")
-
-    def describe(self) -> dict:
-        return {name: value for name, value in asdict(self).items() if name != "api_key"}
-
-
-class NoPredictionError(RuntimeError):
-    """The LLM returned no usable prediction, such as output cut off at max_tokens; a rerun may succeed."""
-
-
-class ContextWindowError(RuntimeError):
-    """The prompts and output do not fit the Ollama context window; raise ollama_num_ctx."""
-
-
-@dataclass
-class Completion:
-    parsed: BaseModel
-    thinking: str | None
-    finish_reason: str | None
-    prompt_tokens: int | None
-    completion_tokens: int | None
-    reasoning_tokens: int | None
-    cost_usd: float | None
-
-
-class LLMClient:
-    """Sends a system and a user prompt to the LLM of an LLMSettings and parses its output with a pydantic schema."""
-
-    def __init__(self, settings: LLMSettings = LLMSettings()):
-        self.settings = settings
-        self.base_url = (settings.base_url or BASE_URLS[settings.provider]).rstrip("/")
-
-    @functools.cached_property
-    def _client(self) -> openai.OpenAI:
-        """Made when the first request is sent, so that preparing prompts and reading saved predictions need no API
-        key."""
-        return openai.OpenAI(**self._openai_options())
-
-    def _openai_options(self) -> dict:
-        settings = self.settings
-        return {
-            "base_url": self.base_url,
-            "api_key": api_key(API_KEY_VARIABLES[settings.provider], settings.api_key),
-            "max_retries": settings.max_retries,
-            "timeout": settings.timeout,
-        }
-
-    @contextlib.asynccontextmanager
-    async def session(self, http_client: httpx2.AsyncClient | None = None) -> AsyncIterator[AsyncLLMSession]:
-        """An ``AsyncLLMSession`` for the requests of one event loop, closed at the end.
-
-        A session is opened for each run instead of once per client, because an async connection pool belongs to the
-        event loop that opened it. ``http_client`` replaces the HTTP client, such as one with a mock transport in tests.
-        """
-        if self.settings.provider == "ollama":
-            async with http_client or httpx2.AsyncClient(timeout=self.settings.timeout) as http:
-                yield AsyncLLMSession(self, http=http)
-        else:
-            async with openai.AsyncOpenAI(**self._openai_options(), http_client=http_client) as client:
-                yield AsyncLLMSession(self, openai_client=client)
-
-    def complete(self, system_prompt: str, user_prompt: str, schema: type[BaseModel]) -> Completion:
-        """The LLM's output parsed with ``schema``.
-
-        Output that does not fit the schema raises pydantic's ValidationError, output cut off at max_tokens raises
-        openai.LengthFinishReasonError (or NoPredictionError from Ollama), and no output at all raises
-        NoPredictionError. API errors propagate.
-        """
-        messages = messages_of(system_prompt, user_prompt)
-        if self.settings.provider == "ollama":
-            return self._ollama(messages, schema)
-        options, extra_body = self._options()
-        completion = self._client.chat.completions.parse(
-            model=self.settings.model, messages=messages, response_format=schema, **options, extra_body=extra_body
-        )
-        return completion_of(completion)
-
-    def _options(self) -> tuple[dict, dict]:
-        """The output cap and reasoning effort of an OpenAI-compatible request: the SDK's own parameters, and the
-        provider's extra body fields."""
-        settings = self.settings
-        if settings.provider == "ollama":
-            raise ValueError("Ollama is not called through the OpenAI-compatible chat completions API")
-        effort = settings.reasoning_effort
-        extra_body = {}
-        if settings.provider == "openrouter":
-            options = {"max_tokens": settings.max_tokens}
-            extra_body = ({"reasoning": {"effort": effort}} if effort is not None else {}) | {"usage": {"include": True}}
-        elif settings.provider == "openai":
-            options = {"max_completion_tokens": settings.max_tokens}
-        else:
-            options = {"max_tokens": settings.max_tokens}
-        if settings.provider != "openrouter" and effort is not None:
-            options["reasoning_effort"] = effort
-        return options, extra_body
-
-    def chat_body(self, system_prompt: str, user_prompt: str, schema: type[BaseModel]) -> dict:
-        """The JSON body that ``complete`` sends to an OpenAI-compatible provider, for a batch request."""
-        options, extra_body = self._options()
-        return {
-            "messages": messages_of(system_prompt, user_prompt),
-            "model": self.settings.model,
-            **options,
-            "response_format": type_to_response_format_param(schema),
-            **extra_body,
-        }
-
-    @staticmethod
-    def parse_chat_response(body: dict, schema: type[BaseModel]) -> Completion:
-        """A chat-completions response body, such as a batch result, parsed and checked as ``complete`` does."""
-        completion = parse_chat_completion(
-            response_format=schema, input_tools=openai.omit, chat_completion=ChatCompletion.construct(**body)
-        )
-        return completion_of(completion)
-
-    def _ollama(self, messages: list[dict], schema: type[BaseModel]) -> Completion:
-        response = requests.post(
-            f"{self.base_url}/api/chat", json=self._ollama_body(messages, schema), timeout=self.settings.timeout
-        )
-        return self._ollama_completion(response.status_code, response.text, schema)
-
-    def _ollama_body(self, messages: list[dict], schema: type[BaseModel]) -> dict:
-        settings = self.settings
-        body = {
-            "model": settings.model,
-            "messages": messages,
-            "stream": False,
-            "format": schema.model_json_schema(),
-            "options": {"num_ctx": settings.ollama_num_ctx, "num_predict": settings.max_tokens},
-        }
-        if settings.reasoning_effort is not None:
-            body["think"] = settings.reasoning_effort
-        return body
-
-    def _ollama_completion(self, status_code: int, text: str, schema: type[BaseModel]) -> Completion:
-        """The output of an Ollama chat response, checked for errors, a full context window, and missing output."""
-        settings = self.settings
-        if not 200 <= status_code < 300:
-            hint = "; set reasoning_effort=None" if "does not support thinking" in text else ""
-            raise RuntimeError(f"Ollama {settings.model} returned HTTP {status_code}: {text}{hint}")
-        result = json.loads(text)
-        prompt_tokens, completion_tokens = result.get("prompt_eval_count"), result.get("eval_count")
-        # Ollama cuts a prompt that does not fit the context window instead of failing.
-        if prompt_tokens is not None and prompt_tokens + (completion_tokens or 0) >= settings.ollama_num_ctx:
-            raise ContextWindowError(
-                f"{prompt_tokens} prompt and {completion_tokens} output tokens fill the context window of "
-                f"{settings.ollama_num_ctx}; raise ollama_num_ctx"
-            )
-        if result.get("done_reason") == "length":
-            raise NoPredictionError(f"Output cut off at max_tokens ({settings.max_tokens})")
-        content = result["message"].get("content")
-        if not content:
-            raise NoPredictionError(f"No prediction (done_reason={result.get('done_reason')})")
-        return Completion(
-            parsed=schema.model_validate_json(content),
-            thinking=result["message"].get("thinking"),
-            finish_reason=result.get("done_reason"),
-            prompt_tokens=prompt_tokens,
-            completion_tokens=completion_tokens,
-            reasoning_tokens=None,
-            cost_usd=None,
-        )
-
-
-class AsyncLLMSession:
-    """``LLMClient.complete`` as a coroutine, on the HTTP client of one event loop (``LLMClient.session``)."""
-
-    def __init__(
-        self, llm: LLMClient, openai_client: openai.AsyncOpenAI | None = None, http: httpx2.AsyncClient | None = None
-    ):
-        self.llm = llm
-        self.openai_client = openai_client
-        self.http = http
-
-    async def complete(self, system_prompt: str, user_prompt: str, schema: type[BaseModel]) -> Completion:
-        """The LLM's output parsed with ``schema``; raises as ``LLMClient.complete`` does."""
-        llm = self.llm
-        messages = messages_of(system_prompt, user_prompt)
-        if llm.settings.provider == "ollama":
-            response = await self.http.post(f"{llm.base_url}/api/chat", json=llm._ollama_body(messages, schema))
-            return llm._ollama_completion(response.status_code, response.text, schema)
-        options, extra_body = llm._options()
-        completion = await self.openai_client.chat.completions.parse(
-            model=llm.settings.model, messages=messages, response_format=schema, **options, extra_body=extra_body
-        )
-        return completion_of(completion)
-
-
-def messages_of(system_prompt: str, user_prompt: str) -> list[dict]:
-    return [{"role": "system", "content": system_prompt}, {"role": "user", "content": user_prompt}]
-
-
-def completion_of(completion: ParsedChatCompletion) -> Completion:
-    """The parsed output, reasoning, and usage of an OpenAI-compatible response; NoPredictionError if none parsed."""
-    choice = completion.choices[0]
-    if choice.message.parsed is None:
-        raise NoPredictionError(f"No prediction (finish_reason={choice.finish_reason}): {choice.message.refusal}")
-    usage = completion.usage
-    details = usage.completion_tokens_details if usage else None
-    return Completion(
-        parsed=choice.message.parsed,
-        # The reasoning summary that OpenRouter returns for a reasoning model, if any.
-        thinking=getattr(choice.message, "reasoning", None),
-        finish_reason=choice.finish_reason,
-        prompt_tokens=usage.prompt_tokens if usage else None,
-        completion_tokens=usage.completion_tokens if usage else None,
-        reasoning_tokens=details.reasoning_tokens if details else None,
-        cost_usd=getattr(usage, "cost", None),
-    )
+class UnusableOutputError(RuntimeError):
+    """The predictor returned no usable prediction, such as output cut off at max_tokens or probabilities that do not
+    fit the rubric; a rerun may succeed."""
 
 
 def plural(count: int, noun: str) -> str:
     return f"{count} {noun}{'' if count == 1 else 's'}"
-
-
-def system_prompt(item: TimssItem) -> str:
-    """System prompt: an expert in testing the subject for the item's grade, content domain, and cognitive domain, and
-    a measurement expert in IRT models."""
-    subject = item.subject.lower()
-    students = STUDENTS[item.grade]
-    topic = f", especially {item.main_topic}," if item.main_topic else ""
-    return f"""\
-You are an expert in testing {subject} for {students}. You are very familiar with assessing these students in the \
-{item.content_domain} content domain{topic} and in the {item.cognitive_domain} cognitive domain, as the \
-{item.assessment} framework defines them. You have written, reviewed, and analyzed many {subject} items for these \
-students, and you know from experience how students across the TIMSS countries perform on them.
-
-You are also a measurement expert in item response theory (IRT). You know the three-parameter logistic (3PL), \
-two-parameter logistic (2PL), and generalized partial credit (GPCM) models, how TIMSS calibrates items with them, and \
-how content, cognitive demand, the number and difficulty of steps, the numbers involved, reading load, figures, \
-response format, distractor plausibility, and scoring rules shape item parameters.
-
-Your task is to predict the IRT parameters that a new item would receive in a TIMSS calibration, using calibrated \
-reference items of the same grade.
-
-TIMSS scales items with these models, where theta is student ability and 1.7 is the scaling constant:
-- 3PL, for multiple-choice items: P(correct | theta) = c + (1 - c) / (1 + exp(-1.7 a (theta - b))).
-- 2PL, for constructed-response items scored 0 or 1: P(correct | theta) = 1 / (1 + exp(-1.7 a (theta - b))).
-- GPCM, for constructed-response items scored from 0 to m points with partial credit: P(score = k | theta) is \
-proportional to exp(sum over v = 0..k of 1.7 a (theta - b + d_v)), with d_0 = 0 and d_1 + ... + d_m = 0.
-
-The parameters:
-- Slope (a): discrimination, how sharply the chance of success rises with ability. Always positive.
-- Location (b): overall difficulty on the theta scale. Higher is harder.
-- Guessing (c), 3PL only: the chance that a student of very low ability answers correctly. It is usually below 1 \
-divided by the number of options, because plausible distractors attract low-ability students.
-- Steps (d_1 to d_m), GPCM only: scores k - 1 and k are equally likely at theta = b - d_k. A positive d_1 means the \
-first point is reached well below b. When these boundaries are out of order, a middle score is rarely the most \
-likely one. The steps sum to 0, so give all steps but the last, which is minus the sum of the others.
-
-The reference items come from the concurrent calibrations of the TIMSS assessments of this grade. TIMSS links each \
-calibration to the one before through trend items, so their scales are close but not identical. Each reference item \
-names its calibration; when the evidence is otherwise equal, give more weight to reference items from the calibration \
-that the new item is predicted for.
-
-How to work:
-1. Study the reference items, chosen for their similarity to the new item. Their percent correct shows how hard each \
-one was for the students of its assessment, and their calibrated parameters anchor the scale.
-2. Compare the new item with the most relevant reference items on content, cognitive demand, the number and difficulty \
-of steps, the numbers involved, reading load, and figures, and also on distractor plausibility for a multiple-choice \
-item or on how demanding the scoring guide is for a constructed-response item. Decide whether the new item should be \
-easier or harder, and more or less discriminating, than each of them.
-3. Treat the calibration summary for the new item's model as a prior, and stay within its range unless the new item \
-is clearly unusual.
-4. Combine the evidence instead of copying the parameters of one reference item.
-5. First state which reference items are most comparable and how the new item differs from them. Then, for each \
-parameter, give your reasoning before its value."""
-
-
-def describe_item(item: TimssItem) -> str:
-    """Plain-text rendering of a TimssItem, the same for reference items and the new item."""
-    topic = f"; main topic: {item.main_topic}" if item.main_topic else ""
-    lines = [f"Content domain: {item.content_domain}{topic}; cognitive domain: {item.cognitive_domain}"]
-    if item.item_type == "multiple_choice":
-        lines.append(f"Format: multiple choice with {len(item.options)} options, 1 point, scored with the 3PL model")
-    else:
-        points = plural(item.max_points, "point")
-        if item.points != item.max_points:
-            points += f" in the scoring guide, scaled as {plural(item.points, 'point')}"
-        lines.append(f"Format: constructed response, {points}, scored with the {item.irt_model} model")
-    lines.append(f"Stem:\n{item.stem}")
-    if item.figure_description:
-        lines.append(f"Figure, as described by a model (may be inexact):\n{item.figure_description}")
-    if item.options:
-        lines.append("Options:\n" + "\n".join(f"{option.label}. {option.text}" for option in item.options))
-        lines.append(f"Correct option: {item.correct_option}")
-    if item.scoring_guide:
-        lines.append(
-            "Scoring guide:\n"
-            + "\n".join(f"- {category.category}: {' | '.join(category.descriptors)}" for category in item.scoring_guide)
-        )
-    if item.scoring_notes:
-        lines.append(f"Scoring notes: {item.scoring_notes}")
-    return "\n".join(lines)
-
-
-def calibration_summary(bank: ItemBank, item: TimssItem, exclude_keys: Iterable[str] = ()) -> str:
-    """The distribution of each parameter over the calibrated items of the item's grade scored with its model and
-    points (``ItemBank.same_scoring_items``), the prior in the prompt."""
-    scoring = f"the {item.irt_model} model" + (f" and {plural(item.points, 'point')}" if item.irt_model == "GPCM" else "")
-    calibrated = bank.same_scoring_items(item, exclude_keys)
-    if calibrated.empty:
-        return f"Calibration summary: no calibrated items of this grade are scored with {scoring}."
-    summary = (
-        calibrated[model_parameters(item.irt_model, item.points)]
-        .rename(columns=PARAMETER_LABELS)
-        .describe(percentiles=[0.1, 0.5, 0.9])
-        .drop(index="count")
-        .round(3)
-    )
-    return (
-        f"Calibration summary: the parameters of the {len(calibrated)} calibrated items of this grade, from all its "
-        f"assessments, that are scored with {scoring} (the new item is not among them):\n{summary.to_string()}"
-    )
-
-
-def format_parameters(parameters: dict) -> str:
-    """Calibrated parameters from an item_parameters payload, such as "slope (a) = 0.927, location (b) = 0.111"."""
-    names = model_parameters(parameters["irt_model"], parameters["scaled_points"])
-    return ", ".join(f"{PARAMETER_LABELS[name]} = {parameters[name]:.3f}" for name in names)
-
-
-def target_scale(bank: ItemBank, item: TimssItem) -> str:
-    """The calibration whose scale the prediction targets, as the end of a sentence."""
-    calibration = bank.calibrations.get((item.assessment, item.grade))
-    if calibration is None:
-        return "on the scale of the most recent calibration among the reference items"
-    return f"that it would receive in the {calibration[0].lower()}{calibration[1:].rstrip('.')}"
-
-
-def user_prompt(bank: ItemBank, item: TimssItem, references: list[dict], exclude_keys: Iterable[str] = ()) -> str:
-    """User prompt: the calibration summary, the reference items with their parameters, and the new item."""
-    blocks = [calibration_summary(bank, item, exclude_keys), "Reference items, most similar first:"]
-    for reference in references:
-        payload = reference["payload"]
-        parameters = payload[ITEM_PARAMETERS_PAYLOAD]
-        reference_item = TimssItem.model_validate(
-            bank.items_by_key[reference["item_key"]] | {"scaled_points": parameters["scaled_points"]}
-        )
-        pct_correct = payload["pct_correct_intl_avg"]
-        blocks.append(
-            f"### Reference item {reference['rank']}: {payload['item_id']} ({payload['assessment']}, "
-            f"grade {payload['grade']})\n"
-            f"Cosine similarity with the new item: {reference['cosine_similarity']:.3f}\n"
-            f"{describe_item(reference_item)}\n"
-            f"Percent correct, international average: {'not reported' if pct_correct is None else pct_correct}\n"
-            f"Calibration: {parameters['calibration']}\n"
-            f"Calibrated parameters: {format_parameters(parameters)}"
-        )
-    names = predicted_parameters(item.irt_model, item.points)
-    request = f"Predict the parameters of the new item {target_scale(bank, item)}. "
-    request += f"Give its {', '.join(PARAMETER_LABELS[name] for name in names)}."
-    if item.irt_model == "GPCM":
-        request += f" Its {PARAMETER_LABELS[f'step{item.points}']} is minus the sum of the other steps."
-    blocks.append(f"### New item ({item.assessment}, grade {item.grade})\n{describe_item(item)}\n\n{request}")
-    return "\n\n".join(blocks)
-
-
-@functools.cache
-def prediction_schema(irt_model: str, points: int) -> type[BaseModel]:
-    """Structured-output schema of a prediction: the comparison with the reference items, then each parameter the LLM
-    predicts, with its reasoning first."""
-    fields = {
-        "reasoning": (
-            str,
-            Field(
-                description="The reference items most comparable to the new item, and how the new item differs from them."
-            ),
-        )
-    }
-    for name in predicted_parameters(irt_model, points):
-        fields[f"{name}_reasoning"] = (str, Field(description=f"Why the new item gets this {PARAMETER_LABELS[name]}."))
-        if name == "slope":
-            fields[name] = (float, Field(ge=0, description="Slope (a), positive."))
-        elif name == "guessing":
-            fields[name] = (float, Field(ge=0, le=1, description="Guessing (c), from 0 to 1."))
-        else:
-            fields[name] = (float, Field(description=f"{PARAMETER_LABELS[name].capitalize()}."))
-    return create_model(f"{irt_model}Prediction{points}Points", **fields)
 
 
 def reference_summary(entry: dict) -> dict:
@@ -495,46 +66,63 @@ def reference_summary(entry: dict) -> dict:
     }
 
 
-class ParameterPredictor:
-    """Predicts the IRT parameters of TimssItems with an LLM, using similar calibrated items of an ItemIndex."""
+def run_sync(coroutine: Coroutine):
+    """Run a coroutine to the end from synchronous code, and return its result.
+
+    Without a running event loop (a script or the command line) it runs in a new one. Inside a running loop (a
+    notebook) it runs in a new loop in a thread, and an interrupt cancels it there before it is raised here.
+    """
+    try:
+        asyncio.get_running_loop()
+    except RuntimeError:
+        return asyncio.run(coroutine)
+    loop = asyncio.new_event_loop()
+    task = loop.create_task(coroutine)
+
+    def run():
+        with contextlib.suppress(BaseException):  # task.result() raises it in the calling thread
+            loop.run_until_complete(task)
+        loop.run_until_complete(loop.shutdown_asyncgens())
+        loop.run_until_complete(loop.shutdown_default_executor())
+        loop.close()
+
+    thread = threading.Thread(target=run, name="run_sync")
+    thread.start()
+    try:
+        thread.join()
+    except KeyboardInterrupt:
+        with contextlib.suppress(RuntimeError):  # the loop has closed: the task is done
+            loop.call_soon_threadsafe(task.cancel)
+        thread.join()
+        raise
+    return task.result()
+
+
+class Predictor(abc.ABC):
+    """Predicts the IRT parameters of TimssItems, using similar calibrated items of an ItemIndex."""
+
+    kind: ClassVar[str]
+    """The kind of predictor, "llm" or "jev": the ``predictor`` column of the results."""
+    UNUSABLE_ERRORS: ClassVar[tuple[type[Exception], ...]] = (UnusableOutputError,)
+    """Errors of output that a rerun may get right: a leave-one-out run reports the item and requests it again on the
+    next run. Any other error, such as an API error from exhausted credit, stops the run."""
 
     def __init__(
-        self,
-        index: ItemIndex,
-        llm: LLMSettings = LLMSettings(),
-        search_method: SearchMethod = "hybrid",
-        n_similar: int = 10,
-        n_same_model: int = 5,
+        self, index: ItemIndex, search_method: SearchMethod = "hybrid", n_similar: int = 10, n_same_model: int = 5
     ):
         """``search_method`` finds the reference items; ``n_similar`` is the number of most similar items of any
         format, and ``n_same_model`` the number of most similar items scored with the new item's IRT model and points
         that are added if they are not among them."""
         self.index = index
-        self.bank = index.bank
-        self.llm = llm
+        self.bank: ItemBank = index.bank
         self.search_method = search_method
         self.n_similar = n_similar
         self.n_same_model = n_same_model
-        self.client = LLMClient(llm)
 
-    def describe(self) -> dict:
-        """The settings of every step, for run reports."""
-        return {
-            "embedding": self.index.embedder.settings.describe(),
-            "index": self.index.settings.describe(),
-            "retrieval": {
-                "search_method": self.search_method,
-                "n_similar": self.n_similar,
-                "n_same_model": self.n_same_model,
-            },
-            "llm": self.llm.describe(),
-        }
+    def references(self, item: TimssItem, exclude_keys: Iterable[str] = ()) -> list[dict]:
+        """The reference items of ``item``, most similar first, each with its ``rank`` and how it was ``found_by``.
 
-    def prepare(self, item: TimssItem, exclude_keys: Iterable[str] = ()) -> dict:
-        """Reference items and prompts for predicting ``item``, without calling the LLM.
-
-        ``exclude_keys`` (such as the item and its other parts) are left out of the reference items and the
-        calibration summary.
+        ``exclude_keys`` (such as the item and its other parts) are left out.
         """
         exclude_keys = list(exclude_keys)
         find = functools.partial(self.index.find_similar_items, item, exclude_keys=exclude_keys, method=self.search_method)
@@ -553,15 +141,33 @@ class ParameterPredictor:
         ]
         if not references:
             raise ValueError(f"No calibrated grade {item.grade} items in '{self.index.settings.collection}'")
+        return references
+
+    def describe_retrieval(self) -> dict:
+        """The settings of the steps before the prediction: embedding, index, and retrieval."""
         return {
-            "exclude_keys": sorted(exclude_keys),
-            "references": references,
-            "system_prompt": system_prompt(item),
-            "user_prompt": user_prompt(self.bank, item, references, exclude_keys),
+            "embedding": self.index.embedder.settings.describe(),
+            "index": self.index.settings.describe(),
+            "retrieval": {
+                "search_method": self.search_method,
+                "n_similar": self.n_similar,
+                "n_same_model": self.n_same_model,
+            },
         }
 
-    def record(self, item: TimssItem, prepared: dict) -> dict:
-        """Everything about a prediction except the LLM's output: the item, its reference items, and the prompts."""
+    def retrieval_name(self) -> str:
+        """The embedding and retrieval settings, for the name of a run's output directory."""
+        embedding = self.index.embedder.settings
+        return "__".join(
+            [
+                f"{embedding.provider}-{slug(embedding.model)}-{embedding.dimension or 'full'}",
+                f"{self.search_method}-{self.n_similar}+{self.n_same_model}",
+            ]
+        )
+
+    def item_record(self, item: TimssItem, prepared: dict) -> dict:
+        """The part of a saved prediction that every predictor shares: the item, the calibration whose scale it is
+        predicted on, the items left out of its context, and its reference items."""
         return {
             **item.model_dump(
                 include={
@@ -581,64 +187,79 @@ class ParameterPredictor:
             "target_calibration": self.bank.calibrations.get((item.assessment, item.grade)),
             "excluded_item_keys": prepared["exclude_keys"],
             "similar_items": [reference_summary(entry) for entry in prepared["references"]],
-            "system_prompt": prepared["system_prompt"],
-            "user_prompt": prepared["user_prompt"],
-        }
-
-    def request(self, item: TimssItem, prepared: dict) -> dict:
-        """Send the prompts of ``prepare`` to the LLM. Returns its reasoning, parameters, and token usage.
-
-        Raises as ``LLMClient.complete`` does.
-        """
-        schema = prediction_schema(item.irt_model, item.points)
-        return self.output(item, self.client.complete(prepared["system_prompt"], prepared["user_prompt"], schema))
-
-    async def request_async(self, item: TimssItem, prepared: dict, session: AsyncLLMSession) -> dict:
-        """``request`` as a coroutine, through a session of ``self.client.session()``."""
-        schema = prediction_schema(item.irt_model, item.points)
-        return self.output(item, await session.complete(prepared["system_prompt"], prepared["user_prompt"], schema))
-
-    def request_body(self, item: TimssItem, prepared: dict) -> dict:
-        """The chat-completions body that ``request`` would send (not for Ollama), for a batch."""
-        schema = prediction_schema(item.irt_model, item.points)
-        return self.client.chat_body(prepared["system_prompt"], prepared["user_prompt"], schema)
-
-    def parse_response(self, item: TimssItem, body: dict) -> dict:
-        """The output of ``request`` from the response body of a ``request_body`` request, such as a batch result.
-
-        Raises as ``LLMClient.complete`` does for output that cannot be used.
-        """
-        schema = prediction_schema(item.irt_model, item.points)
-        return self.output(item, self.client.parse_chat_response(body, schema))
-
-    def output(self, item: TimssItem, completion: Completion) -> dict:
-        """The LLM's reasoning, parameters (with the last GPCM step derived), and token usage."""
-        output = completion.parsed.model_dump()
-        names = predicted_parameters(item.irt_model, item.points)
-        parameters = {name: output[name] for name in names}
-        if item.irt_model == "GPCM":
-            parameters[f"step{item.points}"] = -sum(parameters[f"step{step}"] for step in range(1, item.points))
-        return {
-            "llm_provider": self.llm.provider,
-            "llm_model": self.llm.model,
-            "reasoning_effort": self.llm.reasoning_effort,
-            "reasoning": output["reasoning"],
-            **{f"{name}_reasoning": output[f"{name}_reasoning"] for name in names},
-            **parameters,
-            "llm_thinking": completion.thinking,
-            "finish_reason": completion.finish_reason,
-            "prompt_tokens": completion.prompt_tokens,
-            "completion_tokens": completion.completion_tokens,
-            "reasoning_tokens": completion.reasoning_tokens,
-            "cost_usd": completion.cost_usd,
-            "predicted_at": datetime.now(UTC).isoformat(timespec="seconds"),
         }
 
     def predict(self, item: TimssItem, exclude_keys: Iterable[str] = ()) -> dict:
-        """Predict the IRT parameters of a TimssItem with the LLM, using similar calibrated items as context.
+        """Predict the IRT parameters of a TimssItem, using similar calibrated items as context.
 
-        Returns the prediction record: the item, its reference items, the prompts, and the LLM's reasoning and
-        parameters.
+        Returns the prediction record: the item, its reference items, what was sent, and the answer, from which
+        ``parameters`` reads the predicted values.
         """
         prepared = self.prepare(item, exclude_keys)
         return self.record(item, prepared) | self.request(item, prepared)
+
+    def request(self, item: TimssItem, prepared: dict) -> dict:
+        """Send what ``prepare`` built and return the answer (``request_async`` in a session of its own)."""
+
+        async def once() -> dict:
+            async with self.session() as session:
+                return await self.request_async(item, prepared, session)
+
+        return run_sync(once())
+
+    def cache_dir(self, data_dir: str | Path | None = None) -> Path:
+        """``cache/parameter_predictions/timss_math/<provider>/<model>/`` in the data directory."""
+        provider, model = self.cache_name()
+        return resolve_data_dir(data_dir) / PREDICTIONS_DIR / slug(provider) / slug(model)
+
+    def notebook_cache_dir(self, data_dir: str | Path | None = None) -> Path | None:
+        """Where a notebook saved predictions that a leave-one-out run may reuse, if anywhere."""
+        return None
+
+    def parameter_details(self, record: dict, name: str) -> dict:
+        """More about the prediction of the parameter ``name`` of a saved record, one column each in the errors."""
+        return {}
+
+    @abc.abstractmethod
+    def describe(self) -> dict:
+        """The settings of every step, for run reports."""
+
+    @abc.abstractmethod
+    def prepare(self, item: TimssItem, exclude_keys: Iterable[str] = ()) -> dict:
+        """The reference items and what is sent to predict ``item``, without any request: a dict with at least
+        ``exclude_keys`` (sorted) and ``references``. ``exclude_keys`` (such as the item and its other parts) are left
+        out of the reference items and of anything else the item is compared with."""
+
+    @abc.abstractmethod
+    def identity(self, prepared: dict) -> dict:
+        """What a saved prediction must match to be reused: who answers, and everything sent."""
+
+    @abc.abstractmethod
+    def record(self, item: TimssItem, prepared: dict) -> dict:
+        """Everything about a prediction except the answer: the item, its reference items, and what is sent."""
+
+    @abc.abstractmethod
+    def session(self) -> AbstractAsyncContextManager[Any]:
+        """A session for the requests of one event loop, closed at the end."""
+
+    @abc.abstractmethod
+    async def request_async(self, item: TimssItem, prepared: dict, session: Any) -> dict:
+        """``request`` as a coroutine, through a session of ``session()``. Raises one of ``UNUSABLE_ERRORS`` for
+        output that cannot be used, and API errors as they come."""
+
+    @abc.abstractmethod
+    def cache_name(self) -> tuple[str, str]:
+        """The provider and model that name the directory of the saved predictions."""
+
+    @abc.abstractmethod
+    def parameters(self, record: dict) -> dict[str, float]:
+        """The predicted value of every parameter of the item's IRT model, the last GPCM step included, from a saved
+        record."""
+
+    @abc.abstractmethod
+    def row_details(self, record: dict) -> dict:
+        """The predictor's own columns of a saved record in the predictions table, such as the LLM's reasoning."""
+
+    @abc.abstractmethod
+    def run_name(self) -> str:
+        """A name for the run's output directory, from its main settings."""

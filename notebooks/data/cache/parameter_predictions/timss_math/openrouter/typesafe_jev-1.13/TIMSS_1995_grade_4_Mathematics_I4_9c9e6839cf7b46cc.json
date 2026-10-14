@@ -1,0 +1,820 @@
+{
+  "item_id": "I4",
+  "assessment": "TIMSS 1995",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Whole Numbers",
+  "main_topic": null,
+  "cognitive_domain": "Performing Routine Procedures",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/I4"
+  ],
+  "similar_items": [
+    {
+      "rank": 1,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M051203",
+      "item_id": "M051203",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8806,
+      "pct_correct_intl_avg": 41,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.42843,
+      "location": 0.42038
+    },
+    {
+      "rank": 2,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M031252",
+      "item_id": "M031252",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.842,
+      "pct_correct_intl_avg": 62,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.91399,
+      "location": -0.40191,
+      "guessing": 0.17455
+    },
+    {
+      "rank": 3,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M011017",
+      "item_id": "M011017",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.7811,
+      "pct_correct_intl_avg": 64,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.651,
+      "location": -0.707,
+      "guessing": 0.111
+    },
+    {
+      "rank": 4,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M041278",
+      "item_id": "M041278",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.873,
+      "pct_correct_intl_avg": 40.8,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.49684,
+      "location": 0.23896
+    },
+    {
+      "rank": 5,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M031051",
+      "item_id": "M031051",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.7577,
+      "pct_correct_intl_avg": 67,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.853,
+      "location": -0.587,
+      "guessing": 0.15
+    },
+    {
+      "rank": 6,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/J4",
+      "item_id": "J4",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.8479,
+      "pct_correct_intl_avg": 45,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.134,
+      "location": 0.521,
+      "guessing": 0.142
+    },
+    {
+      "rank": 7,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M011008",
+      "item_id": "M011008",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8359,
+      "pct_correct_intl_avg": 67,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.277,
+      "location": 0.1,
+      "guessing": 0.294
+    },
+    {
+      "rank": 8,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M041041",
+      "item_id": "M041041",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.8415,
+      "pct_correct_intl_avg": 60,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.99807,
+      "location": 0.16643,
+      "guessing": 0.31001
+    },
+    {
+      "rank": 9,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M011018",
+      "item_id": "M011018",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8348,
+      "pct_correct_intl_avg": 77,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.715,
+      "location": -1.191,
+      "guessing": 0.101
+    },
+    {
+      "rank": 10,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M031334",
+      "item_id": "M031334",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8153,
+      "pct_correct_intl_avg": 39.5,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.26107,
+      "location": 0.78162,
+      "guessing": 0.23725
+    }
+  ],
+  "context": "item+references",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 1995",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Whole Numbers",
+      "cognitive_domain": "Performing Routine Procedures",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "What is 3 times 23?",
+      "options": [
+        {
+          "label": "A",
+          "text": "323"
+        },
+        {
+          "label": "B",
+          "text": "233"
+        },
+        {
+          "label": "C",
+          "text": "69"
+        },
+        {
+          "label": "D",
+          "text": "26"
+        }
+      ],
+      "correct_option": "C",
+      "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data."
+    },
+    "reference_items": [
+      {
+        "rank": 1,
+        "cosine_similarity": 0.881,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Knowing",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "23 × 19 =\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "437"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 41,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.42843,
+          "location": 0.42038
+        }
+      },
+      {
+        "rank": 2,
+        "cosine_similarity": 0.842,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Patterns and Relationships",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "If the pattern 3, 6, 9, 12 was continued, which of these numbers would be one of the numbers in the pattern?",
+        "options": [
+          {
+            "label": "A",
+            "text": "26"
+          },
+          {
+            "label": "B",
+            "text": "27"
+          },
+          {
+            "label": "C",
+            "text": "28"
+          },
+          {
+            "label": "D",
+            "text": "29"
+          }
+        ],
+        "correct_option": "B",
+        "pct_correct_intl_avg": 62,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.91399,
+          "location": -0.40191,
+          "guessing": 0.17455
+        }
+      },
+      {
+        "rank": 3,
+        "cosine_similarity": 0.781,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Measurement",
+        "main_topic": "Tools, Techniques, and Formulas",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Here is a calendar for December.\n\nDECEMBER\n\n| S | M | T | W | T | F | S |\n| --- | --- | --- | --- | --- | --- | --- |\n| | | | 1 | 2 | 3 | 4 |\n| 5 | 6 | 7 | 8 | 9 | 10 | 11 |\n| 12 | 13 | 14 | 15 | 16 | 17 | 18 |\n| 19 | 20 | 21 | 22 | 23 | 24 | 25 |\n| 26 | 27 | 28 | 29 | 30 | 31 | |\n\nMary’s birthday is on Thursday, December 2. She is going on a trip exactly 3 weeks later. On what date will she go on the trip?",
+        "options": [
+          {
+            "label": "A",
+            "text": "December 16th"
+          },
+          {
+            "label": "B",
+            "text": "December 21st"
+          },
+          {
+            "label": "C",
+            "text": "December 23rd"
+          },
+          {
+            "label": "D",
+            "text": "December 30th"
+          }
+        ],
+        "correct_option": "C",
+        "pct_correct_intl_avg": 64,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.651,
+          "location": -0.707,
+          "guessing": 0.111
+        }
+      },
+      {
+        "rank": 4,
+        "cosine_similarity": 0.873,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Knowing",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Multiply:\n53 × 26\n\nAnswer: ____",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "1378"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "118",
+              "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          },
+          {
+            "category": "Nonresponse",
+            "descriptors": [
+              "Blank"
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 40.8,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.49684,
+          "location": 0.23896
+        }
+      },
+      {
+        "rank": 5,
+        "cosine_similarity": 0.758,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Patterns and Relationships",
+        "main_topic": "Patterns",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "The daily start times for showing a movie are listed below:\n\n| Show | Start Time |\n| --- | --- |\n| 1st | 2:00 p.m. |\n| 2nd | 3:30 p.m. |\n| 3rd | 5:00 p.m. |\n| 4th | ? |\n\nIf this pattern continues, what is the start time for the 4th show?",
+        "options": [
+          {
+            "label": "A",
+            "text": "5:30 p.m."
+          },
+          {
+            "label": "B",
+            "text": "6:00 p.m."
+          },
+          {
+            "label": "C",
+            "text": "6:30 p.m."
+          },
+          {
+            "label": "D",
+            "text": "7:00 p.m."
+          }
+        ],
+        "correct_option": "C",
+        "pct_correct_intl_avg": 67,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.853,
+          "location": -0.587,
+          "guessing": 0.15
+        }
+      },
+      {
+        "rank": 6,
+        "cosine_similarity": 0.848,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Whole Numbers",
+        "cognitive_domain": "Using Complex Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "25 × 18 is more than 24 × 18. How much more?",
+        "options": [
+          {
+            "label": "A",
+            "text": "1"
+          },
+          {
+            "label": "B",
+            "text": "18"
+          },
+          {
+            "label": "C",
+            "text": "24"
+          },
+          {
+            "label": "D",
+            "text": "25"
+          }
+        ],
+        "correct_option": "B",
+        "pct_correct_intl_avg": 45,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.134,
+          "location": 0.521,
+          "guessing": 0.142
+        }
+      },
+      {
+        "rank": 7,
+        "cosine_similarity": 0.836,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Fractions and Decimals",
+        "cognitive_domain": "Knowing Facts and Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "What is the sum of 2.5 and 3.8?",
+        "options": [
+          {
+            "label": "A",
+            "text": "5.3"
+          },
+          {
+            "label": "B",
+            "text": "6.3"
+          },
+          {
+            "label": "C",
+            "text": "6.4"
+          },
+          {
+            "label": "D",
+            "text": "9.5"
+          }
+        ],
+        "correct_option": "B",
+        "pct_correct_intl_avg": 67,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.277,
+          "location": 0.1,
+          "guessing": 0.294
+        }
+      },
+      {
+        "rank": 8,
+        "cosine_similarity": 0.841,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Which gives an answer closest to 9 × 22?",
+        "options": [
+          {
+            "label": "A",
+            "text": "5 × 20"
+          },
+          {
+            "label": "B",
+            "text": "5 × 25"
+          },
+          {
+            "label": "C",
+            "text": "10 × 20"
+          },
+          {
+            "label": "D",
+            "text": "10 × 25"
+          }
+        ],
+        "correct_option": "C",
+        "pct_correct_intl_avg": 60,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.99807,
+          "location": 0.16643,
+          "guessing": 0.31001
+        }
+      },
+      {
+        "rank": 9,
+        "cosine_similarity": 0.835,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Using Concepts",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Which digit is in the hundreds place in 2,345?",
+        "options": [
+          {
+            "label": "A",
+            "text": "2"
+          },
+          {
+            "label": "B",
+            "text": "3"
+          },
+          {
+            "label": "C",
+            "text": "4"
+          },
+          {
+            "label": "D",
+            "text": "5"
+          }
+        ],
+        "correct_option": "B",
+        "pct_correct_intl_avg": 77,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.715,
+          "location": -1.191,
+          "guessing": 0.101
+        }
+      },
+      {
+        "rank": 10,
+        "cosine_similarity": 0.815,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Patterns and Relationships",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "2, 5, 11, 23, ...\n\nStarting the pattern at 2, which of these rules would give each of the terms in the number pattern above?",
+        "options": [
+          {
+            "label": "A",
+            "text": "Add 1 to the previous term and then multiply by 2."
+          },
+          {
+            "label": "B",
+            "text": "Multiply the previous term by 3 and then subtract 1."
+          },
+          {
+            "label": "C",
+            "text": "Multiply the previous term by 2 and then add 1."
+          },
+          {
+            "label": "D",
+            "text": "Subtract 1 from the previous term and then multiply by 3."
+          }
+        ],
+        "correct_option": "C",
+        "pct_correct_intl_avg": 39.5,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.26107,
+          "location": 0.78162,
+          "guessing": 0.23725
+        }
+      }
+    ]
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 2.86,
+      "confidence": 0.33,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.09,
+        "1": 0.13,
+        "2": 0.16,
+        "3": 0.25,
+        "4": 0.27,
+        "5": 0.05,
+        "6": 0.03,
+        "7": 0.01,
+        "8": 0.01
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 2.99,
+      "confidence": 0.47,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.05,
+        "1": 0.18,
+        "2": 0.17,
+        "3": 0.21,
+        "4": 0.18,
+        "5": 0.17,
+        "6": 0.03,
+        "7": 0.01,
+        "8": 0.0,
+        "9": 0.0
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 3.49,
+      "confidence": 0.63,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.03,
+        "1": 0.07,
+        "2": 0.07,
+        "3": 0.07,
+        "4": 0.74,
+        "5": 0.02
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 4810,
+  "output_tokens": 45,
+  "cost_usd": 0.00020202,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791918359-zyMVUHzbSD14pUNCzBfd",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 2.86,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.09,
+          "1": 0.13,
+          "2": 0.16,
+          "3": 0.25,
+          "4": 0.27,
+          "5": 0.05,
+          "6": 0.03,
+          "7": 0.01,
+          "8": 0.01
+        },
+        "confidence": 0.33
+      },
+      "location": {
+        "type": "score",
+        "score": 2.99,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.18,
+          "2": 0.17,
+          "3": 0.21,
+          "4": 0.18,
+          "5": 0.17,
+          "6": 0.03,
+          "7": 0.01,
+          "8": 0,
+          "9": 0
+        },
+        "confidence": 0.47
+      },
+      "guessing": {
+        "type": "score",
+        "score": 3.49,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.07,
+          "2": 0.07,
+          "3": 0.07,
+          "4": 0.74,
+          "5": 0.02
+        },
+        "confidence": 0.63
+      }
+    },
+    "usage": {
+      "input_tokens": 4810,
+      "output_tokens": 45,
+      "cost": 0.00020202
+    },
+    "id": "gen-dec-1791918359-zyMVUHzbSD14pUNCzBfd",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T19:06:00+00:00",
+  "seconds": null
+}

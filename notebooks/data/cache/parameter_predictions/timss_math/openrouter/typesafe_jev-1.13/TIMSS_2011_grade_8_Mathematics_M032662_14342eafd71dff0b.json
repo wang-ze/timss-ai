@@ -1,0 +1,277 @@
+{
+  "item_id": "M032662",
+  "assessment": "TIMSS 2011",
+  "grade": 8,
+  "subject": "Mathematics",
+  "content_domain": "Number",
+  "main_topic": "Fractions and Decimals",
+  "cognitive_domain": "Reasoning",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M032662"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2011",
+      "grade": 8,
+      "subject": "Mathematics",
+      "content_domain": "Number",
+      "main_topic": "Fractions and Decimals",
+      "cognitive_domain": "Reasoning",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "[Image: A numbered axis, from 0 to 2. Two dots are shown, “P” and “Q”. “P” lies roughly halfway between 0 and 1 and “Q” lies roughly three fourths between 0 and 1.]\n\nP and Q represent two fractions on the number line above.\n\nP × Q = N.\n\nWhich of these shows the location of N on the number line?",
+      "options": [
+        {
+          "label": "A",
+          "text": "[Image: A numbered axis from 0 to 2 where “P” lies roughly halfway between 0 and 1, “Q” lays roughly three fourths between 0 and 1, and “N” lies halfway between 1 and 2.]"
+        },
+        {
+          "label": "B",
+          "text": "[Image: A numbered axis from 0 to 2 where “P” lies roughly halfway between 0 and 1, “Q” lies roughly three fourths between 0 and 1, and “N” lies after Q but before 1.]"
+        },
+        {
+          "label": "C",
+          "text": "[Image: A numbered axis from 0 to 2 where “P” lies roughly halfway between 0 and 1, “Q” lies roughly three fourths between 0 and 1, and “N” lies in between P and Q.]"
+        },
+        {
+          "label": "D",
+          "text": "[Image: A numbered axis from 0 to 2 where “P” lies roughly halfway between 0 and 1, “Q” lies roughly three fourths between 0 and 1, and “N” lies in between 0 and P.]"
+        }
+      ],
+      "correct_option": "D",
+      "figure_description": "The figure above the text shows a horizontal number line with an arrow at the right end. There are tick marks labeled 0, 1, and 2, with equal spacing between 0 and 1 and between 1 and 2. Between 0 and 1, two points are marked with black dots: point P is labeled below the line at approximately 0.5 (halfway between 0 and 1), and point Q is labeled below the line at approximately 0.75 (three-fourths of the distance from 0 to 1).\n\nEach of the four response options shows the same number line with points P and Q in their original positions, along with a third point labeled N above the line:\n- Option A: Point N is marked halfway between 1 and 2, at approximately 1.5.\n- Option B: Point N is marked between Q and 1, at approximately 0.85.\n- Option C: Point N is marked between P and Q, at approximately 0.625.\n- Option D: Point N is marked between 0 and P, at approximately 0.25.",
+      "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2007 and 2011 eighth-grade mathematics data\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.9,
+      "confidence": 0.3,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.03,
+        "1": 0.06,
+        "2": 0.13,
+        "3": 0.22,
+        "4": 0.18,
+        "5": 0.19,
+        "6": 0.12,
+        "7": 0.05,
+        "8": 0.02
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 4.03,
+      "confidence": 0.34,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.07,
+        "2": 0.13,
+        "3": 0.22,
+        "4": 0.15,
+        "5": 0.2,
+        "6": 0.12,
+        "7": 0.06,
+        "8": 0.03,
+        "9": 0.01
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 3.84,
+      "confidence": 0.89,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.01,
+        "2": 0.02,
+        "3": 0.05,
+        "4": 0.9,
+        "5": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1601,
+  "output_tokens": 45,
+  "cost_usd": 6.7242e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914769-4w8ttwGaOGDUPE4IxpOL",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.9,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.06,
+          "2": 0.13,
+          "3": 0.22,
+          "4": 0.18,
+          "5": 0.19,
+          "6": 0.12,
+          "7": 0.05,
+          "8": 0.02
+        },
+        "confidence": 0.3
+      },
+      "location": {
+        "type": "score",
+        "score": 4.03,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.07,
+          "2": 0.13,
+          "3": 0.22,
+          "4": 0.15,
+          "5": 0.2,
+          "6": 0.12,
+          "7": 0.06,
+          "8": 0.03,
+          "9": 0.01
+        },
+        "confidence": 0.34
+      },
+      "guessing": {
+        "type": "score",
+        "score": 3.84,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.02,
+          "3": 0.05,
+          "4": 0.9,
+          "5": 0.01
+        },
+        "confidence": 0.89
+      }
+    },
+    "usage": {
+      "input_tokens": 1601,
+      "output_tokens": 45,
+      "cost": 6.7242e-05
+    },
+    "id": "gen-dec-1791914769-4w8ttwGaOGDUPE4IxpOL",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:09+00:00",
+  "seconds": null
+}

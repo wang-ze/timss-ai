@@ -6,13 +6,24 @@ matplotlib Figure, one panel per parameter:
 
 - ``predicted_vs_calibrated``: each item's predicted against its calibrated value, by grade, with the identity line.
 - ``error_distributions``: box plots of the errors (predicted minus calibrated) by grade or assessment.
-- ``mae_vs_baselines``: the mean absolute error of the LLM against the two baselines that need no LLM.
+- ``mae_vs_baselines``: the mean absolute error of the predictions against the two baselines, which need neither an
+  LLM nor Jev.
 - ``mean_error_by_group``: the bias (mean error) with its 95% confidence interval, by assessment or grade, which
   shows whether the items of one calibration are predicted too easy or too hard.
-- ``compare_runs``: the mean absolute errors of several runs (such as different LLMs or search methods) on the items
+- ``compare_runs``: the mean absolute errors of several runs (such as different predictors or search methods) on the items
   that all of them predicted.
 - ``factorial_mae``: the mean absolute error of each condition of a factorial experiment (``FactorialResults.errors``),
   one line per level of one factor across the levels of another, which shows their main effects and interaction.
+
+Four more take a ``RunComparison`` (``comparison``), whose runs, such as Jev and two LLMs, each get a color:
+
+- ``comparison_mae_by_grade``: each run's mean absolute error by grade, with its 95% confidence interval, and both
+  baselines as lines.
+- ``comparison_predicted_vs_calibrated``: each run's predictions against the calibrated values, one row per run.
+- ``comparison_scale_agreement``: how often each run's value is the calibrated parameter's closest value on the value
+  scale, or within one value of it, against the best constant value.
+- ``comparison_scale_confusion``: each run's values against the calibrated parameters' closest values, one row per
+  run; a strong diagonal is accurate.
 
 ``save_all`` writes the first four. In a notebook, a returned Figure displays inline once the inline backend is on
 (``%matplotlib inline``; these Figures do not use pyplot, which would turn it on). From the command line::
@@ -27,17 +38,23 @@ import argparse
 import math
 from collections.abc import Sequence
 from pathlib import Path
+from typing import TYPE_CHECKING
 
 import matplotlib
+import matplotlib.ticker
 import numpy as np
 import pandas as pd
 from matplotlib.axes import Axes
+from matplotlib.colors import LinearSegmentedColormap
 from matplotlib.figure import Figure
 from matplotlib.lines import Line2D
 from matplotlib.patches import Patch
 from scipy import stats
 
 from .items import PARAMETER_NAMES
+
+if TYPE_CHECKING:
+    from .comparison import RunComparison
 
 # Chart surface, ink, and the categorical series colors in their fixed order (each validated for color-vision
 # deficiencies against the surface).
@@ -61,7 +78,7 @@ PARAMETER_TITLES = {
     "step3": "Step 3 (d₃)",
 }
 BASELINES = {
-    "predicted": ("LLM prediction", SERIES[0]),
+    "predicted": ("Prediction", SERIES[0]),
     "calibration_mean": ("Calibration-summary mean", SERIES[1]),
     "reference_mean": ("Reference-item mean", SERIES[2]),
 }
@@ -239,11 +256,12 @@ def error_distributions(errors: pd.DataFrame, by: str = "grade", parameters: Seq
 
 
 def mae_vs_baselines(errors: pd.DataFrame, by: str = "grade", parameters: Sequence[str] | None = None) -> Figure:
-    """Mean absolute error of the LLM and of the two baselines, by ``by`` and over all items, one panel per parameter.
+    """Mean absolute error of the predictions and of the two baselines, by ``by`` and over all items, one panel per
+    parameter.
 
     The calibration-summary mean predicts each item by the mean of the calibrated items of its grade with its model and
-    points; the reference-item mean by the mean over its reference items with its model and points. A useful LLM beats
-    both.
+    points; the reference-item mean by the mean over its reference items with its model and points. A useful predictor
+    beats both.
     """
     with matplotlib.rc_context(STYLE):
         names = _parameters(errors, parameters)
@@ -267,7 +285,7 @@ def mae_vs_baselines(errors: pd.DataFrame, by: str = "grade", parameters: Sequen
             ax.set_title(PARAMETER_TITLES[name])
         handles = [Patch(color=color, label=label) for label, color in BASELINES.values()]
         figure.legend(handles=handles, loc="outside lower center", ncols=len(handles))
-        _title(figure, "Mean absolute error of the LLM and of two baselines without an LLM (lower is better)")
+        _title(figure, "Mean absolute error of the predictions and of two baselines without an LLM or Jev (lower is better)")
     return figure
 
 
@@ -398,6 +416,200 @@ def factorial_mae(errors: pd.DataFrame, x: str, lines: str, parameters: Sequence
         figure.legend(handles=handles, loc="outside lower center", ncols=min(len(handles), 3))
         items = compared["item_key"].nunique()
         _title(figure, f"Mean absolute error with 95% confidence intervals, on the {items} items every condition predicted")
+    return figure
+
+
+def _run_colors(comparison: RunComparison) -> dict[str, str]:
+    if len(comparison.run_names) > len(SERIES):
+        raise ValueError(f"Compare at most {len(SERIES)} runs")
+    return dict(zip(comparison.run_names, SERIES))
+
+
+def _two_lines(label: str) -> str:
+    """A run's label on two lines, broken at its first comma, for an axis label."""
+    return label.replace(", ", ",\n", 1)
+
+
+def comparison_mae_by_grade(comparison: RunComparison) -> Figure:
+    """Mean absolute error of each run by grade, with its 95% confidence interval, one panel per parameter; the
+    calibration-summary mean is a black line and the reference-item mean a gray one over each grade's bars."""
+    rows = comparison.errors
+    runs, colors = comparison.run_names, _run_colors(comparison)
+    grades = sorted(rows["grade"].unique())
+    baseline_colors = dict(zip(comparison.baselines, (INK, INK_MUTED)))
+    with matplotlib.rc_context(STYLE):
+        figure = Figure(figsize=(3.5 * len(comparison.parameters), 4.2), layout="constrained")
+        axes = figure.subplots(1, len(comparison.parameters), squeeze=False).ravel()
+        x = np.arange(len(grades))
+        width = 0.8 / len(runs)
+        offsets = (np.arange(len(runs)) - (len(runs) - 1) / 2) * width
+        for ax, name in zip(axes, comparison.parameters):
+            parameter_rows = rows[rows["parameter"] == name]
+            for offset, run in zip(offsets, runs):
+                cells = [
+                    parameter_rows.loc[(parameter_rows["run"] == run) & (parameter_rows["grade"] == grade), "abs_error"]
+                    for grade in grades
+                ]
+                means = [cell.mean() for cell in cells]
+                ax.bar(x + offset, means, width, color=colors[run], edgecolor=SURFACE, linewidth=1, zorder=2)
+                ax.errorbar(
+                    x + offset,
+                    means,
+                    yerr=[_ci_half_width(cell) for cell in cells],
+                    fmt="none",
+                    ecolor=INK_SECONDARY,
+                    elinewidth=1,
+                    zorder=3,
+                )
+            for baseline, color in baseline_colors.items():
+                values = [
+                    parameter_rows.loc[(parameter_rows["run"] == baseline) & (parameter_rows["grade"] == grade), "abs_error"].mean()
+                    for grade in grades
+                ]
+                ax.hlines(values, x - 0.42, x + 0.42, color=color, linewidth=1.5, zorder=4)
+            counts = [((parameter_rows["run"] == runs[0]) & (parameter_rows["grade"] == grade)).sum() for grade in grades]
+            ax.set_xticks(x, _with_counts("grade", grades, counts))
+            ax.grid(axis="x", visible=False)
+            ax.set_ylim(bottom=0)
+            ax.set_ylabel("Mean absolute error")
+            ax.set_title(PARAMETER_TITLES[name])
+        handles = [Patch(color=colors[run], label=comparison.label(run)) for run in runs]
+        handles += [
+            Line2D([], [], color=color, linewidth=1.5, label=f"{comparison.label(baseline)} (baseline)")
+            for baseline, color in baseline_colors.items()
+        ]
+        figure.legend(handles=handles, loc="outside lower center", ncols=3)
+        _title(figure, "Mean absolute error by grade, with 95% confidence intervals (lower is better)")
+    return figure
+
+
+def comparison_predicted_vs_calibrated(comparison: RunComparison) -> Figure:
+    """Each run's point prediction against the calibrated value, one row per run and one column per parameter, with
+    the same axes in a column and points colored by grade."""
+    runs, parameters = comparison.run_names, comparison.parameters
+    rows = comparison.errors[comparison.errors["run"].isin(runs)]
+    grades = sorted(rows["grade"].unique())
+    with matplotlib.rc_context(STYLE):
+        figure = Figure(figsize=(3.2 * len(parameters), 3.1 * len(runs) + 0.5), layout="constrained")
+        axes = figure.subplots(len(runs), len(parameters), squeeze=False)
+        for column, name in enumerate(parameters):
+            parameter_rows = rows[rows["parameter"] == name]
+            low = min(parameter_rows["predicted"].min(), parameter_rows["calibrated"].min())
+            high = max(parameter_rows["predicted"].max(), parameter_rows["calibrated"].max())
+            pad = (high - low) * 0.05 or 0.05
+            limits = (low - pad, high + pad)
+            for row_number, run in enumerate(runs):
+                ax = axes[row_number, column]
+                run_rows = parameter_rows[parameter_rows["run"] == run]
+                ax.plot(limits, limits, color=INK_MUTED, linewidth=1, zorder=1)
+                for grade in grades:
+                    grade_rows = run_rows[run_rows["grade"] == grade]
+                    color, marker = GRADE_STYLES.get(grade, (INK_SECONDARY, "o"))
+                    ax.scatter(
+                        grade_rows["calibrated"],
+                        grade_rows["predicted"],
+                        s=14,
+                        marker=marker,
+                        color=color,
+                        alpha=0.6,
+                        edgecolors=SURFACE,
+                        linewidths=0.5,
+                        zorder=2,
+                    )
+                ax.set(xlim=limits, ylim=limits, aspect="equal")
+                correlation = run_rows["predicted"].corr(run_rows["calibrated"])
+                ax.text(
+                    0.03,
+                    0.97,
+                    f"MAE {run_rows['abs_error'].mean():.3f}\nr {correlation:.2f}",
+                    transform=ax.transAxes,
+                    va="top",
+                    fontsize=8,
+                    color=INK_SECONDARY,
+                )
+                if row_number == 0:
+                    ax.set_title(f"{PARAMETER_TITLES[name]} (n = {len(run_rows)})")
+                if row_number == len(runs) - 1:
+                    ax.set_xlabel("Calibrated")
+                if column == 0:
+                    ax.set_ylabel(f"{_two_lines(comparison.label(run))}\nPredicted")
+        handles = [
+            Line2D([], [], linestyle="", marker=GRADE_STYLES[grade][1], color=GRADE_STYLES[grade][0], label=GRADE_NAMES[grade])
+            for grade in grades
+            if grade in GRADE_STYLES
+        ]
+        handles.append(Line2D([], [], color=INK_MUTED, linewidth=1, label="Predicted = calibrated"))
+        figure.legend(handles=handles, loc="outside lower center", ncols=len(handles))
+        _title(figure, "Point predictions against the calibrated parameters, one point per item")
+    return figure
+
+
+def comparison_scale_agreement(comparison: RunComparison) -> Figure:
+    """How often each run's value on the value scale is the calibrated parameter's closest value, and how often it is
+    within one value of it, by parameter, with the best constant value as a black line."""
+    table = comparison.scale_agreement()
+    runs, colors = comparison.run_names, _run_colors(comparison)
+    measures = {"exact": "Same value", "within_one": "Within one value"}
+    with matplotlib.rc_context(STYLE):
+        figure = Figure(figsize=(12, 4.4), layout="constrained")
+        axes = figure.subplots(1, len(measures))
+        x = np.arange(len(table))
+        width = 0.8 / len(runs)
+        offsets = (np.arange(len(runs)) - (len(runs) - 1) / 2) * width
+        for ax, (measure, panel_title) in zip(axes, measures.items()):
+            for offset, run in zip(offsets, runs):
+                ax.bar(x + offset, table[f"{run}_{measure}"], width, color=colors[run], edgecolor=SURFACE, linewidth=1, zorder=2)
+            ax.hlines(table[f"baseline_{measure}"], x - 0.42, x + 0.42, color=INK, linewidth=1.5, zorder=3)
+            ax.set_xticks(x, [f"{PARAMETER_TITLES[name]}\nn = {items}" for name, items in table["items"].items()])
+            ax.grid(axis="x", visible=False)
+            ax.set_ylim(0, 1)
+            ax.yaxis.set_major_formatter(matplotlib.ticker.PercentFormatter(1))
+            ax.set_ylabel("Calibrated items")
+            ax.set_title(panel_title)
+        handles = [Patch(color=colors[run], label=comparison.label(run)) for run in runs]
+        handles.append(Line2D([], [], color=INK, linewidth=1.5, label="Best constant value (baseline)"))
+        figure.legend(handles=handles, loc="outside lower center", ncols=3)
+        _title(figure, "How often the predicted value is the calibrated parameter's closest value (higher is better)")
+    return figure
+
+
+def comparison_scale_confusion(comparison: RunComparison) -> Figure:
+    """The calibrated parameter's closest value on the value scale against each run's value, one row per run and one
+    column per parameter with a scale. Each cell holds the number of items, and its shade the share of the calibrated
+    value's items."""
+    choices = comparison.scale_choices
+    runs = comparison.run_names
+    names = [name for name in comparison.parameters if name in comparison.scales]
+    shades = LinearSegmentedColormap.from_list("share", [SURFACE, SERIES[0]])
+    with matplotlib.rc_context(STYLE):
+        figure = Figure(figsize=(4.2 * len(names), 4.0 * len(runs) + 0.6), layout="constrained")
+        axes = figure.subplots(len(runs), len(names), squeeze=False)
+        for column, name in enumerate(names):
+            ticks = comparison.scales[name].ticks
+            categories = range(1, len(ticks) + 1)
+            for row_number, run in enumerate(runs):
+                ax = axes[row_number, column]
+                run_rows = choices[(choices["parameter"] == name) & (choices["run"] == run)]
+                counts = pd.crosstab(run_rows["calibrated_category"].astype(int), run_rows["category"].astype(int)).reindex(
+                    index=categories, columns=categories, fill_value=0
+                )
+                shares = counts.div(counts.sum(axis=1).replace(0, np.nan), axis=0).fillna(0)
+                image = ax.imshow(shares.to_numpy(), cmap=shades, vmin=0, vmax=1)
+                for i, j in zip(*np.nonzero(counts.to_numpy())):
+                    color = SURFACE if shares.iat[i, j] > 0.55 else INK_SECONDARY
+                    ax.text(j, i, counts.iat[i, j], ha="center", va="center", fontsize=7, color=color)
+                ax.set_xticks(range(len(ticks)), ticks, rotation=90)
+                ax.set_yticks(range(len(ticks)), ticks)
+                ax.grid(False)
+                ax.spines[:].set_visible(False)
+                exact = (run_rows["category"] == run_rows["calibrated_category"]).mean()
+                ax.set_title(f"{PARAMETER_TITLES[name]}, exact {exact:.0%}" if row_number == 0 else f"exact {exact:.0%}")
+                if row_number == len(runs) - 1:
+                    ax.set_xlabel("Predicted value")
+                if column == 0:
+                    ax.set_ylabel(f"{_two_lines(comparison.label(run))}\nCalibrated value")
+        figure.colorbar(image, ax=axes.ravel().tolist(), shrink=0.4, label="Share of the calibrated value's items")
+        _title(figure, "Predicted values against the calibrated parameters' closest values on the scale")
     return figure
 
 

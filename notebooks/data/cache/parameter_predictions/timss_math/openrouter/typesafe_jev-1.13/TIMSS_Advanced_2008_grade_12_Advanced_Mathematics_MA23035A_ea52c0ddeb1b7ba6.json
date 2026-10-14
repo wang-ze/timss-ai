@@ -1,0 +1,225 @@
+{
+  "item_id": "MA23035A",
+  "assessment": "TIMSS Advanced 2008",
+  "grade": 12,
+  "subject": "Advanced Mathematics",
+  "content_domain": "Calculus",
+  "main_topic": "Applying Derivatives to Graphs of  Functions",
+  "cognitive_domain": "Applying",
+  "item_type": "constructed_response",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "2PL",
+  "target_calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23035A",
+    "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23035B"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS Advanced 2008",
+      "grade": 12,
+      "subject": "Advanced Mathematics",
+      "content_domain": "Calculus",
+      "main_topic": "Applying Derivatives to Graphs of  Functions",
+      "cognitive_domain": "Applying",
+      "item_type": "constructed_response",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "f(x) = x^4 - 2x^2\n\nA. What are the values of x at the points of intersection of the graph of f(x) with the x-axis?\n\nx = ____",
+      "scoring_guide": [
+        {
+          "category": "Correct Response",
+          "descriptors": [
+            "All three of -sqrt(2), 0, and sqrt(2) . Accept (-sqrt(2), 0), (0, 0), (sqrt(2), 0) . sqrt(2) may be given as 1.41, 1.42, or a value between these."
+          ]
+        },
+        {
+          "category": "Incorrect Response",
+          "descriptors": [
+            "Any two of -sqrt(2), 0, and sqrt(2) , or (-sqrt(2), 0), (0, 0), (sqrt(2), 0) . sqrt(2) may be given as 1.41, 1.42, or a value between these.",
+            "Incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+          ]
+        },
+        {
+          "category": "Nonresponse",
+          "descriptors": [
+            "Blank"
+          ]
+        }
+      ],
+      "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the two-parameter logistic (2PL) model, which TIMSS uses for constructed-response items worth 1 point, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 3.85,
+      "confidence": 0.25,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.06,
+        "1": 0.06,
+        "2": 0.12,
+        "3": 0.24000000000000002,
+        "4": 0.15,
+        "5": 0.16,
+        "6": 0.11,
+        "7": 0.06,
+        "8": 0.04
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 2.64,
+      "confidence": 0.25,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.1,
+        "1": 0.23,
+        "2": 0.22999999999999998,
+        "3": 0.17,
+        "4": 0.08,
+        "5": 0.08,
+        "6": 0.05,
+        "7": 0.03,
+        "8": 0.02,
+        "9": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1086,
+  "output_tokens": 31,
+  "cost_usd": 4.5612e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914767-kDsoXiNLsjNQLJL2QdDY",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 3.85,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.06,
+          "1": 0.06,
+          "2": 0.12,
+          "3": 0.24000000000000002,
+          "4": 0.15,
+          "5": 0.16,
+          "6": 0.11,
+          "7": 0.06,
+          "8": 0.04
+        },
+        "confidence": 0.25
+      },
+      "location": {
+        "type": "score",
+        "score": 2.64,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.1,
+          "1": 0.23,
+          "2": 0.22999999999999998,
+          "3": 0.17,
+          "4": 0.08,
+          "5": 0.08,
+          "6": 0.05,
+          "7": 0.03,
+          "8": 0.02,
+          "9": 0.01
+        },
+        "confidence": 0.25
+      }
+    },
+    "usage": {
+      "input_tokens": 1086,
+      "output_tokens": 31,
+      "cost": 4.5612e-05
+    },
+    "id": "gen-dec-1791914767-kDsoXiNLsjNQLJL2QdDY",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:07+00:00",
+  "seconds": null
+}

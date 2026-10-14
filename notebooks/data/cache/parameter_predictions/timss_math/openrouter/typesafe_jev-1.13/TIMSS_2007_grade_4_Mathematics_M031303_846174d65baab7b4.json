@@ -1,0 +1,837 @@
+{
+  "item_id": "M031303",
+  "assessment": "TIMSS 2007",
+  "grade": 4,
+  "subject": "Mathematics",
+  "content_domain": "Number",
+  "main_topic": "Whole Numbers",
+  "cognitive_domain": "Applying",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+  "excluded_item_keys": [
+    "TIMSS 2007/grade 4/Mathematics/M031303"
+  ],
+  "similar_items": [
+    {
+      "rank": 1,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M031218",
+      "item_id": "M031218",
+      "assessment": "TIMSS 2011",
+      "cosine_similarity": 0.878,
+      "pct_correct_intl_avg": 55,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.31439,
+      "location": 0.00598,
+      "guessing": 0.1752
+    },
+    {
+      "rank": 2,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M012117",
+      "item_id": "M012117",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8322,
+      "pct_correct_intl_avg": 50,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.946,
+      "location": 0.597,
+      "guessing": 0.213
+    },
+    {
+      "rank": 3,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M011003",
+      "item_id": "M011003",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8625,
+      "pct_correct_intl_avg": 63,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.646,
+      "location": -0.184,
+      "guessing": 0.206
+    },
+    {
+      "rank": 4,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M012048",
+      "item_id": "M012048",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8677,
+      "pct_correct_intl_avg": 58,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.807,
+      "location": 0.127,
+      "guessing": 0.189
+    },
+    {
+      "rank": 5,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M031173",
+      "item_id": "M031173",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.869,
+      "pct_correct_intl_avg": 57.6,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.55926,
+      "location": -0.1457,
+      "guessing": 0.12482
+    },
+    {
+      "rank": 6,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/K9",
+      "item_id": "K9",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.8121,
+      "pct_correct_intl_avg": 38,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.131,
+      "location": 0.821,
+      "guessing": 0.146
+    },
+    {
+      "rank": 7,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M041039",
+      "item_id": "M041039",
+      "assessment": "TIMSS 2007",
+      "cosine_similarity": 0.8688,
+      "pct_correct_intl_avg": 57.0,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.80764,
+      "location": -0.22512,
+      "guessing": 0.1768
+    },
+    {
+      "rank": 8,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M031310",
+      "item_id": "M031310",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8537,
+      "pct_correct_intl_avg": 73,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.38,
+      "location": -0.475,
+      "guessing": 0.251
+    },
+    {
+      "rank": 9,
+      "found_by": "most similar",
+      "item_key": "TIMSS 1995/grade 4/Mathematics/L2",
+      "item_id": "L2",
+      "assessment": "TIMSS 1995",
+      "cosine_similarity": 0.7593,
+      "pct_correct_intl_avg": 51,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.888,
+      "location": 0.176,
+      "guessing": 0.154
+    },
+    {
+      "rank": 10,
+      "found_by": "most similar",
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M011002",
+      "item_id": "M011002",
+      "assessment": "TIMSS 2003",
+      "cosine_similarity": 0.8272,
+      "pct_correct_intl_avg": 51,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.839,
+      "location": 0.418,
+      "guessing": 0.274
+    }
+  ],
+  "context": "item+references",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS 2007",
+      "grade": 4,
+      "subject": "Mathematics",
+      "content_domain": "Number",
+      "main_topic": "Whole Numbers",
+      "cognitive_domain": "Applying",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "There are 9 rows of chairs. There are 15 chairs in each row. Which of these gives the total number of chairs?",
+      "options": [
+        {
+          "label": "A",
+          "text": "15 ÷ 9"
+        },
+        {
+          "label": "B",
+          "text": "15 − 9"
+        },
+        {
+          "label": "C",
+          "text": "15 × 9"
+        },
+        {
+          "label": "D",
+          "text": "15 + 9"
+        }
+      ],
+      "correct_option": "C",
+      "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics)."
+    },
+    "reference_items": [
+      {
+        "rank": 1,
+        "cosine_similarity": 0.878,
+        "assessment": "TIMSS 2011",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Six hundred books have to be packed into boxes that hold 15 books each.\nWhich of the following could be used to find the number of boxes needed?",
+        "options": [
+          {
+            "label": "A",
+            "text": "add 15 to 600"
+          },
+          {
+            "label": "B",
+            "text": "subtract 15 from 600"
+          },
+          {
+            "label": "C",
+            "text": "multiply 600 by 15"
+          },
+          {
+            "label": "D",
+            "text": "divide 600 by 15"
+          }
+        ],
+        "correct_option": "D",
+        "pct_correct_intl_avg": 55,
+        "calibration": "Concurrent calibration of the TIMSS 2007 and 2011 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.31439,
+          "location": 0.00598,
+          "guessing": 0.1752
+        }
+      },
+      {
+        "rank": 2,
+        "cosine_similarity": 0.832,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Mark’s garden has 84 rows of cabbages. There are 57 cabbages in each row. Which of these gives the BEST way to estimate how many cabbages there are altogether?",
+        "options": [
+          {
+            "label": "A",
+            "text": "100 × 50 = 5,000"
+          },
+          {
+            "label": "B",
+            "text": "90 × 60 = 5,400"
+          },
+          {
+            "label": "C",
+            "text": "80 × 60 = 4,800"
+          },
+          {
+            "label": "D",
+            "text": "80 × 50 = 4,000"
+          }
+        ],
+        "correct_option": "C",
+        "pct_correct_intl_avg": 50,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.946,
+          "location": 0.597,
+          "guessing": 0.213
+        }
+      },
+      {
+        "rank": 3,
+        "cosine_similarity": 0.862,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "There are 9 boxes of pencils. Each box has 125 pencils. What is the total number of pencils?",
+        "options": [
+          {
+            "label": "A",
+            "text": "1,025"
+          },
+          {
+            "label": "B",
+            "text": "1,100"
+          },
+          {
+            "label": "C",
+            "text": "1,125"
+          },
+          {
+            "label": "D",
+            "text": "1,220"
+          },
+          {
+            "label": "E",
+            "text": "1,225"
+          }
+        ],
+        "correct_option": "C",
+        "pct_correct_intl_avg": 63,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.646,
+          "location": -0.184,
+          "guessing": 0.206
+        }
+      },
+      {
+        "rank": 4,
+        "cosine_similarity": 0.868,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Patterns and Relationships",
+        "main_topic": "Equations and Formulas",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "□ represents the number of magazines that Lina reads each week.\nWhich of these represents the total number of magazines that Lina reads in 6 weeks?",
+        "options": [
+          {
+            "label": "A",
+            "text": "6 + □"
+          },
+          {
+            "label": "B",
+            "text": "6 × □"
+          },
+          {
+            "label": "C",
+            "text": "□ + 6"
+          },
+          {
+            "label": "D",
+            "text": "(□ + □) × 6"
+          }
+        ],
+        "correct_option": "B",
+        "pct_correct_intl_avg": 58,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.807,
+          "location": 0.127,
+          "guessing": 0.189
+        }
+      },
+      {
+        "rank": 5,
+        "cosine_similarity": 0.869,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Maria has 6 red boxes. Each red box has 4 pencils inside. She also has 3 blue boxes. Each blue box has 2 pencils inside. How many pencils does Maria have altogether?",
+        "options": [
+          {
+            "label": "A",
+            "text": "6"
+          },
+          {
+            "label": "B",
+            "text": "15"
+          },
+          {
+            "label": "C",
+            "text": "24"
+          },
+          {
+            "label": "D",
+            "text": "30"
+          }
+        ],
+        "correct_option": "D",
+        "pct_correct_intl_avg": 57.6,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.55926,
+          "location": -0.1457,
+          "guessing": 0.12482
+        }
+      },
+      {
+        "rank": 6,
+        "cosine_similarity": 0.812,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Fractions and Proportionality",
+        "cognitive_domain": "Using Complex Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "There are 54 marbles, and they are put into 6 bags, so that the same number of marbles is in each bag. How many marbles would 2 bags contain?",
+        "options": [
+          {
+            "label": "A",
+            "text": "108 marbles"
+          },
+          {
+            "label": "B",
+            "text": "18 marbles"
+          },
+          {
+            "label": "C",
+            "text": "15 marbles"
+          },
+          {
+            "label": "D",
+            "text": "12 marbles"
+          },
+          {
+            "label": "E",
+            "text": "9 marbles"
+          }
+        ],
+        "correct_option": "B",
+        "pct_correct_intl_avg": 38,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.131,
+          "location": 0.821,
+          "guessing": 0.146
+        }
+      },
+      {
+        "rank": 7,
+        "cosine_similarity": 0.869,
+        "assessment": "TIMSS 2007",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: Four children seated around a round table]\n\nOne table can seat 4 people.\n\nHow would you find out how many tables are needed to seat 28 people?",
+        "options": [
+          {
+            "label": "A",
+            "text": "Multiply 28 by 4."
+          },
+          {
+            "label": "B",
+            "text": "Divide 28 by 4."
+          },
+          {
+            "label": "C",
+            "text": "Subtract 4 from 28."
+          },
+          {
+            "label": "D",
+            "text": "Add 4 to 28."
+          }
+        ],
+        "correct_option": "B",
+        "figure_description": "An illustration showing four children seated on chairs around a single circular table.",
+        "pct_correct_intl_avg": 57.0,
+        "calibration": "Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics).",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.80764,
+          "location": -0.22512,
+          "guessing": 0.1768
+        }
+      },
+      {
+        "rank": 8,
+        "cosine_similarity": 0.854,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "A piece of rope 204 cm long is cut into 4 equal pieces. Which of these gives the length of each piece in centimeters?",
+        "options": [
+          {
+            "label": "A",
+            "text": "204 + 4"
+          },
+          {
+            "label": "B",
+            "text": "204 × 4"
+          },
+          {
+            "label": "C",
+            "text": "204 − 4"
+          },
+          {
+            "label": "D",
+            "text": "204 ÷ 4"
+          }
+        ],
+        "correct_option": "D",
+        "pct_correct_intl_avg": 73,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.38,
+          "location": -0.475,
+          "guessing": 0.251
+        }
+      },
+      {
+        "rank": 9,
+        "cosine_similarity": 0.759,
+        "assessment": "TIMSS 1995",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Data Representation, Analysis, and Probability",
+        "cognitive_domain": "Solving Problems",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "There is only one red marble in each of these bags.\n\n[Image: Three bags of marbles]\n\nWithout looking in the bags, you are to pick a marble out of one of the bags. Which bag would give you the greatest chance of picking the red marble?",
+        "options": [
+          {
+            "label": "A",
+            "text": "The bag with 10 marbles."
+          },
+          {
+            "label": "B",
+            "text": "The bag with 100 marbles."
+          },
+          {
+            "label": "C",
+            "text": "The bag with 1,000 marbles."
+          },
+          {
+            "label": "D",
+            "text": "All bags would give the same chance."
+          }
+        ],
+        "correct_option": "A",
+        "figure_description": "Three drawstring bags of increasing size, each tied with a ribbon near the top, with faint curved outlines inside representing marbles:\n- The smallest bag is on the left, labeled \"10 Marbles\".\n- The medium-sized bag is in the middle, labeled \"100 Marbles\".\n- The largest bag is on the right, labeled \"1,000 Marbles\".",
+        "pct_correct_intl_avg": 51,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.888,
+          "location": 0.176,
+          "guessing": 0.154
+        }
+      },
+      {
+        "rank": 10,
+        "cosine_similarity": 0.827,
+        "assessment": "TIMSS 2003",
+        "grade": 4,
+        "subject": "Mathematics",
+        "content_domain": "Number",
+        "main_topic": "Whole Numbers",
+        "cognitive_domain": "Solving Routine Problems",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "In Toshi’s class there are twice as many girls as boys. There are 8 boys in the class. What is the total number of boys and girls in the class?",
+        "options": [
+          {
+            "label": "A",
+            "text": "12"
+          },
+          {
+            "label": "B",
+            "text": "16"
+          },
+          {
+            "label": "C",
+            "text": "20"
+          },
+          {
+            "label": "D",
+            "text": "24"
+          }
+        ],
+        "correct_option": "D",
+        "pct_correct_intl_avg": 51,
+        "calibration": "Concurrent calibration of the TIMSS 1995 and 2003 fourth-grade mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.839,
+          "location": 0.418,
+          "guessing": 0.274
+        }
+      }
+    ]
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics)\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics)\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent calibration of the TIMSS 2003 data, 2007 bridging data, and 2007 data (fourth-grade mathematics)\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 4.94,
+      "confidence": 0.46,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.02,
+        "2": 0.11,
+        "3": 0.05,
+        "4": 0.07,
+        "5": 0.27,
+        "6": 0.44,
+        "7": 0.02,
+        "8": 0.01
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 1.88,
+      "confidence": 0.76,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.07,
+        "1": 0.25,
+        "2": 0.48,
+        "3": 0.18,
+        "4": 0.02,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 2.37,
+      "confidence": 0.67,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.05,
+        "2": 0.64,
+        "3": 0.18,
+        "4": 0.12,
+        "5": 0.0
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 5086,
+  "output_tokens": 45,
+  "cost_usd": 0.000213612,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791918371-gmr2zm8eWlAr7BcAhUI3",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 4.94,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.02,
+          "2": 0.11,
+          "3": 0.05,
+          "4": 0.07,
+          "5": 0.27,
+          "6": 0.44,
+          "7": 0.02,
+          "8": 0.01
+        },
+        "confidence": 0.46
+      },
+      "location": {
+        "type": "score",
+        "score": 1.88,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.25,
+          "2": 0.48,
+          "3": 0.18,
+          "4": 0.02,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0
+        },
+        "confidence": 0.76
+      },
+      "guessing": {
+        "type": "score",
+        "score": 2.37,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.05,
+          "2": 0.64,
+          "3": 0.18,
+          "4": 0.12,
+          "5": 0
+        },
+        "confidence": 0.67
+      }
+    },
+    "usage": {
+      "input_tokens": 5086,
+      "output_tokens": 45,
+      "cost": 0.000213612
+    },
+    "id": "gen-dec-1791918371-gmr2zm8eWlAr7BcAhUI3",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T19:06:11+00:00",
+  "seconds": null
+}

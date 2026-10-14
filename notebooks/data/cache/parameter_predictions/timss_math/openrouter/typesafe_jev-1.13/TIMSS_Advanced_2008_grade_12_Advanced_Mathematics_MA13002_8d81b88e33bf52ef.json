@@ -1,0 +1,281 @@
+{
+  "item_id": "MA13002",
+  "assessment": "TIMSS Advanced 2008",
+  "grade": 12,
+  "subject": "Advanced Mathematics",
+  "content_domain": "Algebra",
+  "main_topic": "Representation of Functions",
+  "cognitive_domain": "Reasoning",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13002"
+  ],
+  "similar_items": [],
+  "context": "item",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS Advanced 2008",
+      "grade": 12,
+      "subject": "Advanced Mathematics",
+      "content_domain": "Algebra",
+      "main_topic": "Representation of Functions",
+      "cognitive_domain": "Reasoning",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "A function f is defined by:\n\nf(x) = −x − 1   if   −2 < x ≤ −1\nf(x) = x + 1   if   −1 < x ≤ 0\nf(x) = −x + 1   if   0 < x ≤ 1\nf(x) = x − 1   if   1 < x ≤ 2\n\nWhich is the graph of f?",
+      "options": [
+        {
+          "label": "A",
+          "text": "[Image: Graph A]"
+        },
+        {
+          "label": "B",
+          "text": "[Image: Graph B]"
+        },
+        {
+          "label": "C",
+          "text": "[Image: Graph C]"
+        },
+        {
+          "label": "D",
+          "text": "[Image: Graph D]"
+        },
+        {
+          "label": "E",
+          "text": "[Image: Graph E]"
+        }
+      ],
+      "correct_option": "A",
+      "figure_description": "Each option shows a Cartesian coordinate system with a horizontal x-axis and a vertical f(x)-axis.\n\nOption A: The x-axis has tick marks labeled −2, −1, 0, 1, 2. The f(x)-axis has a tick mark labeled 1. A continuous V-shaped wave is drawn: it starts with an open circle at (−2, 1), goes down to (−1, 0), up to (0, 1), down to (1, 0), and up to a solid dot at (2, 1).\n\nOption B: The x-axis has tick marks labeled −2, −1, 0, 1, 2. The f(x)-axis has a tick mark labeled 1. A continuous wave is drawn: it starts with an open circle at (−2, 0), goes up to (−1, 1), down to (0, 0), up to (1, 1), and down to a solid dot at (2, 0).\n\nOption C: The x-axis has tick marks labeled −2, −1, 0, 1, 2. The f(x)-axis has a tick mark labeled 1. Four parallel line segments of slope −1 are drawn: one from an open circle at (−2, 1) to a solid dot at (−1, 0); one from an open circle at (−1, 1) to a solid dot at (0, 0); one from an open circle at (0, 1) to a solid dot at (1, 0); and one from an open circle at (1, 1) to a solid dot at (2, 0).\n\nOption D: The horizontal axis is labeled x with a tick mark at 1. The vertical axis is labeled f(x) with tick marks labeled −2, −1, 0, 1, 2. A continuous zigzag path is drawn from an open circle at (1, 2) to (0, 1), then to (1, 0), then to (0, −1), and ending at a solid dot at (1, −2).\n\nOption E: The x-axis has tick marks labeled −2, −1, 0, 1, 2. The f(x)-axis has tick marks labeled −1 and 1. Four separate line segments are drawn: from an open circle at (−2, 0) down to a solid dot at (−1, −1); from an open circle at (−1, 0) up to a solid dot at (0, 1); from an open circle at (0, 0) down to a solid dot at (1, −1); and from an open circle at (1, 0) up to a solid dot at (2, 1).",
+      "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data."
+    }
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 4.09,
+      "confidence": 0.22,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.03,
+        "1": 0.06,
+        "2": 0.11,
+        "3": 0.22,
+        "4": 0.16,
+        "5": 0.17,
+        "6": 0.13,
+        "7": 0.07,
+        "8": 0.05
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 3.87,
+      "confidence": 0.38,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.08,
+        "2": 0.14,
+        "3": 0.27,
+        "4": 0.13,
+        "5": 0.16,
+        "6": 0.11,
+        "7": 0.06,
+        "8": 0.03,
+        "9": 0.01
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 3.1,
+      "confidence": 0.63,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.04,
+        "1": 0.03,
+        "2": 0.06,
+        "3": 0.5599999999999999,
+        "4": 0.3,
+        "5": 0.01
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 1803,
+  "output_tokens": 45,
+  "cost_usd": 7.5726e-05,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791914766-Ghf90OvCLzajtCGSvJNm",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 4.09,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.06,
+          "2": 0.11,
+          "3": 0.22,
+          "4": 0.16,
+          "5": 0.17,
+          "6": 0.13,
+          "7": 0.07,
+          "8": 0.05
+        },
+        "confidence": 0.22
+      },
+      "location": {
+        "type": "score",
+        "score": 3.87,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.08,
+          "2": 0.14,
+          "3": 0.27,
+          "4": 0.13,
+          "5": 0.16,
+          "6": 0.11,
+          "7": 0.06,
+          "8": 0.03,
+          "9": 0.01
+        },
+        "confidence": 0.38
+      },
+      "guessing": {
+        "type": "score",
+        "score": 3.1,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.03,
+          "2": 0.06,
+          "3": 0.5599999999999999,
+          "4": 0.3,
+          "5": 0.01
+        },
+        "confidence": 0.63
+      }
+    },
+    "usage": {
+      "input_tokens": 1803,
+      "output_tokens": 45,
+      "cost": 7.5726e-05
+    },
+    "id": "gen-dec-1791914766-Ghf90OvCLzajtCGSvJNm",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T18:06:06+00:00",
+  "seconds": null
+}

@@ -1,0 +1,860 @@
+{
+  "item_id": "L8",
+  "assessment": "TIMSS Advanced 1995",
+  "grade": 12,
+  "subject": "Advanced Mathematics",
+  "content_domain": "Geometry",
+  "main_topic": null,
+  "cognitive_domain": "Routine Procedures",
+  "item_type": "multiple_choice",
+  "max_points": 1,
+  "scaled_points": 1,
+  "irt_model": "3PL",
+  "target_calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+  "excluded_item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L8"
+  ],
+  "similar_items": [
+    {
+      "rank": 1,
+      "found_by": "most similar",
+      "item_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K7",
+      "item_id": "K7",
+      "assessment": "TIMSS Advanced 1995",
+      "cosine_similarity": 0.8259,
+      "pct_correct_intl_avg": 56,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.4906,
+      "location": 0.47927,
+      "guessing": 0.20528
+    },
+    {
+      "rank": 2,
+      "found_by": "most similar",
+      "item_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13029",
+      "item_id": "MA13029",
+      "assessment": "TIMSS Advanced 2008",
+      "cosine_similarity": 0.8017,
+      "pct_correct_intl_avg": null,
+      "irt_model": "GPCM",
+      "scaled_points": 2,
+      "slope": 0.4234,
+      "location": 0.33803,
+      "step1": -1.72692,
+      "step2": 1.72692
+    },
+    {
+      "rank": 3,
+      "found_by": "most similar",
+      "item_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13007",
+      "item_id": "MA13007",
+      "assessment": "TIMSS Advanced 2008",
+      "cosine_similarity": 0.8228,
+      "pct_correct_intl_avg": null,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.82629,
+      "location": 0.21579,
+      "guessing": 0.17859
+    },
+    {
+      "rank": 4,
+      "found_by": "most similar",
+      "item_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13003",
+      "item_id": "MA13003",
+      "assessment": "TIMSS Advanced 2008",
+      "cosine_similarity": 0.7462,
+      "pct_correct_intl_avg": null,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.44262,
+      "location": -0.29826,
+      "guessing": 0.06569
+    },
+    {
+      "rank": 5,
+      "found_by": "most similar",
+      "item_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23170",
+      "item_id": "MA23170",
+      "assessment": "TIMSS Advanced 2008",
+      "cosine_similarity": 0.7977,
+      "pct_correct_intl_avg": null,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.98081,
+      "location": 0.66134
+    },
+    {
+      "rank": 6,
+      "found_by": "most similar",
+      "item_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K12",
+      "item_id": "K12",
+      "assessment": "TIMSS Advanced 1995",
+      "cosine_similarity": 0.8118,
+      "pct_correct_intl_avg": 52,
+      "irt_model": "2PL",
+      "scaled_points": 1,
+      "slope": 0.46696,
+      "location": 0.07919
+    },
+    {
+      "rank": 7,
+      "found_by": "most similar",
+      "item_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L3",
+      "item_id": "L3",
+      "assessment": "TIMSS Advanced 1995",
+      "cosine_similarity": 0.7427,
+      "pct_correct_intl_avg": 44,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.12959,
+      "location": 0.66959,
+      "guessing": 0.13713
+    },
+    {
+      "rank": 8,
+      "found_by": "most similar",
+      "item_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L9",
+      "item_id": "L9",
+      "assessment": "TIMSS Advanced 1995",
+      "cosine_similarity": 0.8076,
+      "pct_correct_intl_avg": 56,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.67902,
+      "location": 0.47454,
+      "guessing": 0.21991
+    },
+    {
+      "rank": 9,
+      "found_by": "most similar",
+      "item_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23055",
+      "item_id": "MA23055",
+      "assessment": "TIMSS Advanced 2008",
+      "cosine_similarity": 0.7877,
+      "pct_correct_intl_avg": null,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 0.93142,
+      "location": 0.34951,
+      "guessing": 0.10013
+    },
+    {
+      "rank": 10,
+      "found_by": "most similar",
+      "item_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L6",
+      "item_id": "L6",
+      "assessment": "TIMSS Advanced 1995",
+      "cosine_similarity": 0.7944,
+      "pct_correct_intl_avg": 33,
+      "irt_model": "3PL",
+      "scaled_points": 1,
+      "slope": 1.01866,
+      "location": 0.95074,
+      "guessing": 0.07616
+    }
+  ],
+  "context": "item+references",
+  "provider": "openrouter",
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "item": {
+      "assessment": "TIMSS Advanced 1995",
+      "grade": 12,
+      "subject": "Advanced Mathematics",
+      "content_domain": "Geometry",
+      "cognitive_domain": "Routine Procedures",
+      "item_type": "multiple_choice",
+      "max_points": 1,
+      "scaled_points": 1,
+      "stem": "The rectangular coordinates of three points in a plane are Q(-3, -1), R(-2, 3), and S(1, -3). A fourth point T is chosen so that vector ST = 2 vector QR.\nThe y-coordinate of T is",
+      "options": [
+        {
+          "label": "A",
+          "text": "-11"
+        },
+        {
+          "label": "B",
+          "text": "-7"
+        },
+        {
+          "label": "C",
+          "text": "-1"
+        },
+        {
+          "label": "D",
+          "text": "1"
+        },
+        {
+          "label": "E",
+          "text": "5"
+        }
+      ],
+      "correct_option": "E",
+      "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data."
+    },
+    "reference_items": [
+      {
+        "rank": 1,
+        "cosine_similarity": 0.826,
+        "assessment": "TIMSS Advanced 1995",
+        "grade": 12,
+        "subject": "Advanced Mathematics",
+        "content_domain": "Geometry",
+        "cognitive_domain": "Routine Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "The vertices of the triangle PQR are the points P(1, 2), Q(4, 6) and R(− 4, 12). Which one of the following statements about triangle PQR is true?",
+        "options": [
+          {
+            "label": "A",
+            "text": "PQR is a right triangle with the right angle ∠P."
+          },
+          {
+            "label": "B",
+            "text": "PQR is a right triangle with the right angle ∠Q."
+          },
+          {
+            "label": "C",
+            "text": "PQR is a right triangle with the right angle ∠R."
+          },
+          {
+            "label": "D",
+            "text": "PQR is not a right triangle."
+          }
+        ],
+        "correct_option": "B",
+        "pct_correct_intl_avg": 56,
+        "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.4906,
+          "location": 0.47927,
+          "guessing": 0.20528
+        }
+      },
+      {
+        "rank": 2,
+        "cosine_similarity": 0.802,
+        "assessment": "TIMSS Advanced 2008",
+        "grade": 12,
+        "subject": "Advanced Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Straight Lines in the Cartesian Plane",
+        "cognitive_domain": "Reasoning",
+        "item_type": "constructed_response",
+        "max_points": 2,
+        "scaled_points": 2,
+        "stem": "In the quadrilateral ABCD below, diagonals AC and BD intersect at point E.\nPROVE that E is the midpoint of AC and BD. Show all your work.\n\n[Image: Quadrilateral ABCD on a coordinate plane]",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "Any completely correct proof (e.g., showing diagonals have the same midpoint; proving that ABCD is a parallelogram and hence diagonals have the same midpoint; proving that ABCD is a parallelogram and hence diagonals bisect each other)."
+            ]
+          },
+          {
+            "category": "Partial Response",
+            "descriptors": [
+              "Method that is partially completed (e.g., shows that point E (6, 3) is midpoint of only AC or BD; or correct proof with step missing or one or two reasons incorrect or missing)"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Incorrect (including crossed out, erased, stray marks, illegible, or off task)\nExample:\nStates that \"From the diagram, it is obvious that ABCD is a parallelogram, and hence its diagonals must bisect each other\" or an equivalent statement"
+            ]
+          },
+          {
+            "category": "Nonresponse",
+            "descriptors": [
+              "Blank"
+            ]
+          }
+        ],
+        "figure_description": "A Cartesian coordinate plane with a horizontal axis labeled x and a vertical axis labeled y, intersecting at origin 0. The x-axis has tick marks with labels at 2, 4, 6, 8, and 10. The y-axis has tick marks with labels at 2, 4, and 6. A quadrilateral ABCD is shown with labeled vertices: D at (2, 1), A at (4, 4), B at (10, 5), and C at (8, 2). Diagonals AC and BD are drawn as line segments connecting opposite vertices, intersecting at a point labeled E.",
+        "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+        "irt_model": "GPCM",
+        "calibrated_parameters": {
+          "slope": 0.4234,
+          "location": 0.33803,
+          "step1": -1.72692,
+          "step2": 1.72692
+        }
+      },
+      {
+        "rank": 3,
+        "cosine_similarity": 0.823,
+        "assessment": "TIMSS Advanced 2008",
+        "grade": 12,
+        "subject": "Advanced Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Straight Lines in the Cartesian Plane",
+        "cognitive_domain": "Applying",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "One side of an equilateral triangle lies along the x-axis. The sum of the slopes of the three sides is",
+        "options": [
+          {
+            "label": "A",
+            "text": "0"
+          },
+          {
+            "label": "B",
+            "text": "-1"
+          },
+          {
+            "label": "C",
+            "text": "1"
+          },
+          {
+            "label": "D",
+            "text": "2sqrt(3)"
+          },
+          {
+            "label": "E",
+            "text": "1 + 2sqrt(3)"
+          }
+        ],
+        "correct_option": "A",
+        "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.82629,
+          "location": 0.21579,
+          "guessing": 0.17859
+        }
+      },
+      {
+        "rank": 4,
+        "cosine_similarity": 0.746,
+        "assessment": "TIMSS Advanced 2008",
+        "grade": 12,
+        "subject": "Advanced Mathematics",
+        "content_domain": "Algebra",
+        "main_topic": "Equations and Inequations",
+        "cognitive_domain": "Reasoning",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "Two mathematical models are proposed to predict the return y, in dollars, from the sale of x thousand units of an article (where 0 < x < 5). Each of these models, P and Q, is based on different marketing methods.\n\nmodel P:   y = 6x − x^2\nmodel Q:   y = 2x\n\nFor what values of x does model Q predict a greater return than model P?",
+        "options": [
+          {
+            "label": "A",
+            "text": "0 < x < 4"
+          },
+          {
+            "label": "B",
+            "text": "0 < x < 5"
+          },
+          {
+            "label": "C",
+            "text": "3 < x < 5"
+          },
+          {
+            "label": "D",
+            "text": "3 < x < 4"
+          },
+          {
+            "label": "E",
+            "text": "4 < x < 5"
+          }
+        ],
+        "correct_option": "E",
+        "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.44262,
+          "location": -0.29826,
+          "guessing": 0.06569
+        }
+      },
+      {
+        "rank": 5,
+        "cosine_similarity": 0.798,
+        "assessment": "TIMSS Advanced 2008",
+        "grade": 12,
+        "subject": "Advanced Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Straight Lines in the Cartesian Plane",
+        "cognitive_domain": "Applying",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: Right triangle on a coordinate plane]\n\nA straight line l passes through the points A (1,−2) and B (3, 4).\nIs the line l parallel with PQ?\n\nGive a reason to support your answer.",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "No, with correct work showing gradients are different, and leading to conclusion that l and PQ are not parallel.",
+              "No, with correct work leading to conclusion that l and PQ are not parallel using method other than showing gradients are different. For example, shows angle between the lines is not 0°"
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "No, with no correct reason",
+              "Yes, with or without reason",
+              "Other incorrect (including crossed out, erased, stray marks, illegible, or off task)"
+            ]
+          },
+          {
+            "category": "Nonresponse",
+            "descriptors": [
+              "Blank"
+            ]
+          }
+        ],
+        "figure_description": "A Cartesian coordinate plane with horizontal axis x and vertical axis y intersecting at origin O. Tick marks are shown every unit on both axes. The x-axis is labeled at 2, 4, 6, 8, 10, 12, and the y-axis is labeled at 2, 4, 6, 8, 10, 12. A right triangle is plotted in the first quadrant with vertices at point P, point Q, and a third vertex at the right angle:\n- Point P is at coordinates (8, 1).\n- A horizontal leg extends from P(8, 1) to (12, 1), with length labeled 4 beneath it.\n- A vertical leg extends from (12, 1) upward to point Q at (12, 12), with length labeled 11 to its right.\n- The hypotenuse connects point P to point Q.",
+        "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.98081,
+          "location": 0.66134
+        }
+      },
+      {
+        "rank": 6,
+        "cosine_similarity": 0.812,
+        "assessment": "TIMSS Advanced 1995",
+        "grade": 12,
+        "subject": "Advanced Mathematics",
+        "content_domain": "Geometry",
+        "cognitive_domain": "Routine Procedures",
+        "item_type": "constructed_response",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "A translation maps A (2,−3) onto A' (−3,−5). Under the same translation, find the coordinates of B' , the image of B (1,4).",
+        "scoring_guide": [
+          {
+            "category": "Correct Response",
+            "descriptors": [
+              "(-4, 2). No work shown, or only points are shown in a diagram such that method cannot be determined.",
+              "(-4, 2). Method: A diagram that shows more than points is drawn showing the geometrical method used such as mid-point, slope, or change in x- and y-direction.",
+              "(-4, 2). Method: The coordinates of the translation vector are (-5, -2); the translation vector (-5, -2) is added to B (1,4) to obtain B' (-4, 2).\nNote: If diagram is shown and the translation vector is indicated, also use code 12.",
+              "Other correct responses with method are shown."
+            ]
+          },
+          {
+            "category": "Incorrect Response",
+            "descriptors": [
+              "Response incorrect. No work shown.",
+              "(6, 6). Method as in code 12 but uses incorrect translation vector, (5, 2).",
+              "Method as in code 12 with correct translation vectors (-5, -2) but with error in subtraction of negative numbers.",
+              "Method as in code 11 with an understandable diagram consisting of more than just points. At least one coordinate of B' is incorrect.",
+              "Other incorrect responses with method shown. (If no method/work shown, code 70.)"
+            ]
+          },
+          {
+            "category": "Nonresponse",
+            "descriptors": [
+              "Crossed-out, illegible, or impossible to interpret.",
+              "BLANK"
+            ]
+          }
+        ],
+        "pct_correct_intl_avg": 52,
+        "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+        "irt_model": "2PL",
+        "calibrated_parameters": {
+          "slope": 0.46696,
+          "location": 0.07919
+        }
+      },
+      {
+        "rank": 7,
+        "cosine_similarity": 0.743,
+        "assessment": "TIMSS Advanced 1995",
+        "grade": 12,
+        "subject": "Advanced Mathematics",
+        "content_domain": "Numbers, Equations and Functions",
+        "cognitive_domain": "Complex Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "A radio-active element decomposes according to the formula,\n\ny = y_o e^(-kt)\n\nwhere y is the mass of the element remaining after t days and y_o is the value of y for t = 0.\n\nFind the value of the constant k for an element whose half-life (i.e. time to decompose half of the material) is 4 days.",
+        "options": [
+          {
+            "label": "A",
+            "text": "1/4 log_e 2"
+          },
+          {
+            "label": "B",
+            "text": "log_e 1/2"
+          },
+          {
+            "label": "C",
+            "text": "log_2 e"
+          },
+          {
+            "label": "D",
+            "text": "(log_e 2)^(1/4)"
+          },
+          {
+            "label": "E",
+            "text": "2e^4"
+          }
+        ],
+        "correct_option": "A",
+        "pct_correct_intl_avg": 44,
+        "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.12959,
+          "location": 0.66959,
+          "guessing": 0.13713
+        }
+      },
+      {
+        "rank": 8,
+        "cosine_similarity": 0.808,
+        "assessment": "TIMSS Advanced 1995",
+        "grade": 12,
+        "subject": "Advanced Mathematics",
+        "content_domain": "Geometry",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: Rectangles P and Q]\n\nThe rectangle labeled Q CANNOT be obtained from the rectangle labeled P by means of a",
+        "options": [
+          {
+            "label": "A",
+            "text": "reflection (about an axis in the plane of the page)"
+          },
+          {
+            "label": "B",
+            "text": "rotation (in the plane of the page)"
+          },
+          {
+            "label": "C",
+            "text": "translation"
+          },
+          {
+            "label": "D",
+            "text": "translation followed by a reflection"
+          }
+        ],
+        "correct_option": "A",
+        "figure_description": "Two congruent horizontal rectangles labeled P and Q. Rectangle P is positioned above and to the left of rectangle Q. The bottom-right vertex of rectangle P coincides with the top-left vertex of rectangle Q. The sides of both rectangles are aligned horizontally and vertically.",
+        "pct_correct_intl_avg": 56,
+        "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.67902,
+          "location": 0.47454,
+          "guessing": 0.21991
+        }
+      },
+      {
+        "rank": 9,
+        "cosine_similarity": 0.788,
+        "assessment": "TIMSS Advanced 2008",
+        "grade": 12,
+        "subject": "Advanced Mathematics",
+        "content_domain": "Geometry",
+        "main_topic": "Properties of Circles",
+        "cognitive_domain": "Knowing",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "[Image: A circle on a Cartesian coordinate plane]\n\nWhat is the equation of the circle shown above?",
+        "options": [
+          {
+            "label": "A",
+            "text": "x^2 + y^2 - 6x + 4y - 9 = 0"
+          },
+          {
+            "label": "B",
+            "text": "x^2 + y^2 + 6x - 4y + 9 = 0"
+          },
+          {
+            "label": "C",
+            "text": "x^2 + y^2 + 6x - 4y - 3 = 0"
+          },
+          {
+            "label": "D",
+            "text": "x^2 + y^2 - 6x + 4y - 3 = 0"
+          }
+        ],
+        "correct_option": "D",
+        "figure_description": "A Cartesian coordinate plane with a grid of 1-unit squares. The horizontal x-axis has tick marks and numbers at -4, -2, 2, 4, and 6, with the origin labeled O. The vertical y-axis has tick marks and numbers at -6, -4, -2, 2, and 4. Both axes have arrows at both ends. A circle is drawn on the grid with its center at (3, -2) and a radius of 4 units. Its topmost point is at (3, 2), bottommost point at (3, -6), leftmost point at (-1, -2), and rightmost point at (7, -2). The circle intersects the x-axis between -1 and 0 and between 6 and 7, and intersects the y-axis between 0 and 1 and between -5 and -4.",
+        "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 0.93142,
+          "location": 0.34951,
+          "guessing": 0.10013
+        }
+      },
+      {
+        "rank": 10,
+        "cosine_similarity": 0.794,
+        "assessment": "TIMSS Advanced 1995",
+        "grade": 12,
+        "subject": "Advanced Mathematics",
+        "content_domain": "Calculus",
+        "cognitive_domain": "Routine Procedures",
+        "item_type": "multiple_choice",
+        "max_points": 1,
+        "scaled_points": 1,
+        "stem": "The velocity v of a body moving in a straight line t seconds after starting from rest is v = 4t^3 − 12t^2 meters per second.\n\nHow many seconds after starting does its acceleration become zero?",
+        "options": [
+          {
+            "label": "A",
+            "text": "1"
+          },
+          {
+            "label": "B",
+            "text": "2"
+          },
+          {
+            "label": "C",
+            "text": "3"
+          },
+          {
+            "label": "D",
+            "text": "4"
+          },
+          {
+            "label": "E",
+            "text": "6"
+          }
+        ],
+        "correct_option": "B",
+        "pct_correct_intl_avg": 33,
+        "calibration": "Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data.",
+        "irt_model": "3PL",
+        "calibrated_parameters": {
+          "slope": 1.01866,
+          "location": 0.95074,
+          "guessing": 0.07616
+        }
+      }
+    ]
+  },
+  "questions": {
+    "slope": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's slope (discrimination) parameter a? A higher a means that the item separates students of lower and higher mathematics ability more sharply. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.4",
+        "0.6",
+        "0.8",
+        "1.0",
+        "1.2",
+        "1.4",
+        "1.6",
+        "1.8",
+        "2.0 (high discrimination)"
+      ]
+    },
+    "location": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's location (difficulty) parameter b? b is on a logit scale on which the students of the calibration average about 0; a higher b means a harder item. Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "-2.0 (very easy item)",
+        "-1.0",
+        "-0.5",
+        "0.0",
+        "0.2",
+        "0.5",
+        "0.8",
+        "1.0",
+        "1.5",
+        "2.0 (very hard item)"
+      ]
+    },
+    "guessing": {
+      "type": "score",
+      "instructions": "TIMSS scaled this 1-point item with the three-parameter logistic (3PL) model, which TIMSS uses for multiple-choice items, in the calibration \"Concurrent scaling of the TIMSS Advanced 1995 and 2008 advanced mathematics data\". What is the item's guessing (lower asymptote) parameter c: the probability that a student of very low ability answers it correctly, such as by guessing among the options? Choose the value closest to it. The state also lists reference items: the calibrated TIMSS items of the same grade most similar to this one (never the item itself or its other parts), most similar first, with their percent correct and their calibrated parameters, each on the scale of its own calibration. Use them to place this item.",
+      "criteria": [
+        "0.0 (no guessing)",
+        "0.1",
+        "0.15",
+        "0.2",
+        "0.25",
+        "0.4"
+      ]
+    }
+  },
+  "answers": {
+    "slope": {
+      "type": "score",
+      "score": 1.44,
+      "confidence": 0.65,
+      "legend": {
+        "0": "0.4",
+        "1": "0.6",
+        "2": "0.8",
+        "3": "1.0",
+        "4": "1.2",
+        "5": "1.4",
+        "6": "1.6",
+        "7": "1.8",
+        "8": "2.0 (high discrimination)"
+      },
+      "probabilities": {
+        "0": 0.19,
+        "1": 0.44,
+        "2": 0.23,
+        "3": 0.09,
+        "4": 0.03,
+        "5": 0.01,
+        "6": 0.01,
+        "7": 0.0,
+        "8": 0.0
+      }
+    },
+    "location": {
+      "type": "score",
+      "score": 4.32,
+      "confidence": 0.65,
+      "legend": {
+        "0": "-2.0 (very easy item)",
+        "1": "-1.0",
+        "2": "-0.5",
+        "3": "0.0",
+        "4": "0.2",
+        "5": "0.5",
+        "6": "0.8",
+        "7": "1.0",
+        "8": "1.5",
+        "9": "2.0 (very hard item)"
+      },
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.01,
+        "2": 0.04,
+        "3": 0.17,
+        "4": 0.23,
+        "5": 0.47000000000000003,
+        "6": 0.05,
+        "7": 0.01,
+        "8": 0.01,
+        "9": 0.0
+      }
+    },
+    "guessing": {
+      "type": "score",
+      "score": 2.85,
+      "confidence": 0.87,
+      "legend": {
+        "0": "0.0 (no guessing)",
+        "1": "0.1",
+        "2": "0.15",
+        "3": "0.2",
+        "4": "0.25",
+        "5": "0.4"
+      },
+      "probabilities": {
+        "0": 0.02,
+        "1": 0.02,
+        "2": 0.07,
+        "3": 0.87,
+        "4": 0.02,
+        "5": 0.0
+      }
+    }
+  },
+  "answered_by": "typesafe/jev-1.13-20260917",
+  "input_tokens": 6145,
+  "output_tokens": 45,
+  "cost_usd": 0.00025809,
+  "cost_source": "OpenRouter response",
+  "generation_id": "gen-dec-1791918362-0lCGDDCqYYCE6ifp6Mo1",
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "slope": {
+        "type": "score",
+        "score": 1.44,
+        "legend": {
+          "0": "0.4",
+          "1": "0.6",
+          "2": "0.8",
+          "3": "1.0",
+          "4": "1.2",
+          "5": "1.4",
+          "6": "1.6",
+          "7": "1.8",
+          "8": "2.0 (high discrimination)"
+        },
+        "probabilities": {
+          "0": 0.19,
+          "1": 0.44,
+          "2": 0.23,
+          "3": 0.09,
+          "4": 0.03,
+          "5": 0.01,
+          "6": 0.01,
+          "7": 0,
+          "8": 0
+        },
+        "confidence": 0.65
+      },
+      "location": {
+        "type": "score",
+        "score": 4.32,
+        "legend": {
+          "0": "-2.0 (very easy item)",
+          "1": "-1.0",
+          "2": "-0.5",
+          "3": "0.0",
+          "4": "0.2",
+          "5": "0.5",
+          "6": "0.8",
+          "7": "1.0",
+          "8": "1.5",
+          "9": "2.0 (very hard item)"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.04,
+          "3": 0.17,
+          "4": 0.23,
+          "5": 0.47000000000000003,
+          "6": 0.05,
+          "7": 0.01,
+          "8": 0.01,
+          "9": 0
+        },
+        "confidence": 0.65
+      },
+      "guessing": {
+        "type": "score",
+        "score": 2.85,
+        "legend": {
+          "0": "0.0 (no guessing)",
+          "1": "0.1",
+          "2": "0.15",
+          "3": "0.2",
+          "4": "0.25",
+          "5": "0.4"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.02,
+          "2": 0.07,
+          "3": 0.87,
+          "4": 0.02,
+          "5": 0
+        },
+        "confidence": 0.87
+      }
+    },
+    "usage": {
+      "input_tokens": 6145,
+      "output_tokens": 45,
+      "cost": 0.00025809
+    },
+    "id": "gen-dec-1791918362-0lCGDDCqYYCE6ifp6Mo1",
+    "provider": "TypeSafe"
+  },
+  "requested_at": "2026-10-13T19:06:02+00:00",
+  "seconds": null
+}
