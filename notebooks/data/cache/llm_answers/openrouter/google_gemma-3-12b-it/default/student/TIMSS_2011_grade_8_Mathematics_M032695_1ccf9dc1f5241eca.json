@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 8/Mathematics/M032695",
+  "item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M032695"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are an eighth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Of the 400 students in a school, 50 plan to go to university, 100 to a polytechnic school, 150 to a business college, and the remainder plan to enter workforce.\n\nUse the circle below to make a pie chart showing the proportions of students planning to do each of these. Put labels on your chart.\n\n[Image: A circle with a point in the middle and 8 equally spaced points placed around the circumference of the circle.]\n\nFigure, described in words:\nA circle with a central point and 8 equally spaced dots along its circumference, corresponding to the 12:00, 1:30, 3:00, 4:30, 6:00, 7:30, 9:00, and 10:30 clock positions.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Okay, here's how I would create the pie chart based on the information given. First, I need to figure out how many students are planning to enter the workforce.\n\nTotal students: 400\nUniversity: 50\nPolytechnic: 100\nBusiness College: 150\n\nWorkforce = Total - (University + Polytechnic + Business College)\nWorkforce = 400 - (50 + 100 + 150) = 400 - 300 = 100\n\nNow I have:\nUniversity: 50 (50/400 = 12.5%)\nPolytechnic: 100 (100/400 = 25%)\nBusiness College: 150 (150/400 = 37.5%)\nWorkforce: 100 (100/400 = 25%)\n\nNow, to draw the pie chart using the circle with 8 equally spaced points:\n\n1.  **University:** Starting at the 12:00 position, I would draw a sector that takes up 12.5% of the circle. This would be a little less than 1/8 of the circle. I would label this sector 'University' and write '12.5%' next to it.\n2.  **Polytechnic:** Starting from where the University sector ends (a little past 1:30), I would draw a sector that takes up 25% of the circle. This is exactly 1/4 of the circle, so it would reach the 3:00 position. I would label this sector 'Polytechnic' and write '25%' next to it.\n3.  **Business College:** Starting from where the Polytechnic sector ends (3:00), I would draw a sector that takes up 37.5% of the circle. This is more than 1/4 but less than 1/2 of the circle, and would extend to approximately the 4:30 position. I would label this sector 'Business College' and write '37.5%' next to it.\n4.  **Workforce:** Finally, starting from where the Business College sector ends (4:30), I would draw a sector that takes up 25% of the circle. This is exactly 1/4 of the circle and would reach the 6:00 position. I would label this sector 'Workforce' and write '25%' next to it. The remaining sectors, from 6:00 to 12:00, are effectively just continuing the same sectors, so this should complete the circle.\n\nI would make sure that the sectors are clearly defined and that the labels and percentages are legible."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 334,
+  "completion_tokens": 635,
+  "reasoning_tokens": 0,
+  "cost_usd": 0.000167925,
+  "seconds": 59.757,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:16:00+00:00"
+}

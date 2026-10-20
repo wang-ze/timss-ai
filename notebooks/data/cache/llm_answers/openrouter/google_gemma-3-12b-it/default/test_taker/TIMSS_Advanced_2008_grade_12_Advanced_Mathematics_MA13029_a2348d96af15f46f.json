@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13029",
+  "item_keys": [
+    "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13029"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "In the quadrilateral ABCD below, diagonals AC and BD intersect at point E.\nPROVE that E is the midpoint of AC and BD. Show all your work.\n\n[Image: Quadrilateral ABCD on a coordinate plane]\n\nFigure, described in words:\nA Cartesian coordinate plane with a horizontal axis labeled x and a vertical axis labeled y, intersecting at origin 0. The x-axis has tick marks with labels at 2, 4, 6, 8, and 10. The y-axis has tick marks with labels at 2, 4, and 6. A quadrilateral ABCD is shown with labeled vertices: D at (2, 1), A at (4, 4), B at (10, 5), and C at (8, 2). Diagonals AC and BD are drawn as line segments connecting opposite vertices, intersecting at a point labeled E.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "The problem states that we need to prove that E is the midpoint of AC and BD. To do this, we will first find the coordinates of point E, the intersection of diagonals AC and BD. Then we will use the midpoint formula to verify if E is indeed the midpoint of AC and BD. \n\n1. **Find the equation of line AC:**\n   The slope of AC is (y2 - y1) / (x2 - x1) = (2 - 4) / (8 - 4) = -2 / 4 = -1/2.\n   Using point-slope form with point A(4, 4), the equation is: y - 4 = -1/2 (x - 4)\n   Simplifying, we get: y = -1/2x + 2 + 4 = -1/2x + 6\n\n2. **Find the equation of line BD:**\n   The slope of BD is (5 - 1) / (10 - 2) = 4 / 8 = 1/2.\n   Using point-slope form with point D(2, 1), the equation is: y - 1 = 1/2 (x - 2)\n   Simplifying, we get: y = 1/2x - 1 + 1 = 1/2x\n\n3. **Find the coordinates of E (intersection of AC and BD):**\n   Set the two equations equal to each other: -1/2x + 6 = 1/2x\n   Adding 1/2x to both sides, we get: 6 = x\n   Substitute x = 6 into either equation to find y. Let's use y = 1/2x: y = 1/2(6) = 3\n   So, the coordinates of E are (6, 3).\n\n4. **Find the midpoint of AC:**\n   Midpoint formula: ((x1 + x2) / 2, (y1 + y2) / 2)\n   Using A(4, 4) and C(8, 2): Midpoint = ((4 + 8) / 2, (4 + 2) / 2) = (12 / 2, 6 / 2) = (6, 3)\n\n5. **Find the midpoint of BD:**\n   Using B(10, 5) and D(2, 1): Midpoint = ((10 + 2) / 2, (5 + 1) / 2) = (12 / 2, 6 / 2) = (6, 3)\n\nSince the midpoint of AC is (6, 3) and the midpoint of BD is (6, 3), and both midpoints are equal to the coordinates of point E, we have proven that E is the midpoint of both AC and BD.\n\n**Conclusion:**\nE is the midpoint of AC and BD."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 334,
+  "completion_tokens": 676,
+  "reasoning_tokens": 0,
+  "cost_usd": 0.00017715,
+  "seconds": 7.767,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:07:44+00:00"
+}

@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23135",
+  "item_keys": [
+    "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23135"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "(x + 1)/(x − 2) > 1\n\nFor which values of x is the inequality shown above satisfied?\n\nAnswer: ____",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "\\(x>2\\)"
+  },
+  "llm_thinking": "**Solving an inequality**\n\nI need to solve the inequality (x+1)/(x-2) > 1, starting by subtracting 1. This gives me ((x+1)-(x-2))/(x-2) > 0, which simplifies to 3/(x-2) > 0. From here, I determine that x must be greater than 2. Now, it's important to express this solution in an exact JSON format for clarity. Let's finalize that!",
+  "finish_reason": "stop",
+  "prompt_tokens": 238,
+  "completion_tokens": 77,
+  "reasoning_tokens": 57,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335947-adaJJg0fXIVWd5UYzY66",
+  "requested_at": "2026-10-18T15:20:16+00:00"
+}

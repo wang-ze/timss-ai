@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2007/grade 4/Mathematics/M041076",
+  "item_keys": [
+    "TIMSS 2007/grade 4/Mathematics/M041076"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Joe spent 3/10 of his money on a pen and 5/10 of it on a book.\n\nWhat fraction of his money did he spend?\n\nAnswer: ____",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "\\(\\frac{8}{10}\\) of his money (which is \\(\\frac{4}{5}\\))."
+  },
+  "llm_thinking": "**Calculating fractions**\n\nI need to add fractions with the same denominator, like 3/10 + 5/10, which equals 8/10. I could also simplify this to 4/5. So, I have two acceptable forms: I can write it as either 8/10 or simplified as 4/5. Okay, and I need to ensure to write this in proper JSON format. Let’s get that structured so it's clear for the end users!",
+  "finish_reason": "stop",
+  "prompt_tokens": 228,
+  "completion_tokens": 84,
+  "reasoning_tokens": 45,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335947-adaJJg0fXIVWd5UYzY66",
+  "requested_at": "2026-10-18T15:20:16+00:00"
+}

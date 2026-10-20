@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2007/grade 4/Mathematics/M031274",
+  "item_keys": [
+    "TIMSS 2007/grade 4/Mathematics/M031274"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "On the grid below, draw the reflection of the shape in the dotted line of symmetry.\n\n[Image: Grid with a polygon and a dashed line of symmetry]\n\nFigure, described in words:\nAn 8 by 8 grid of square cells with a vertical dashed line of symmetry running along the central vertical grid line (between the 4th and 5th columns from the left).\nTo the right of the dashed line is a six-sided polygon with vertices at grid intersections (with column lines 0 to 8 from left to right, and row lines 0 to 8 from top to bottom):\n- (column 4, row 3) on the dashed line\n- (column 5, row 2)\n- (column 6, row 4)\n- (column 7, row 4)\n- (column 7, row 6)\n- (column 4, row 5) on the dashed line\n\nThe edges of the polygon connect these vertices in sequence:\n- A straight segment from (4, 3) up and right to (5, 2)\n- A segment from (5, 2) down and right to (6, 4)\n- A horizontal segment from (6, 4) to (7, 4)\n- A vertical segment from (7, 4) down to (7, 6)\n- A slanted segment from (7, 6) up and left to (4, 5)\n- A vertical segment of length 2 along the dashed line from (4, 5) up to (4, 3)",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Reflect each vertex across the vertical dashed line (between columns 4 and 5, i.e., the line x = 4). Vertices on the line stay fixed: (4,3) and (4,5). Mirror the others: (5,2) becomes (3,2); (6,4) becomes (2,4); (7,4) becomes (1,4); (7,6) becomes (1,6). Draw the reflected polygon on the left of the dashed line with vertices at (4,3), (3,2), (2,4), (1,4), (1,6), (4,5), connecting them in order: (4,3) to (3,2) (up and left), (3,2) to (2,4) (down and left), (2,4) to (1,4) (horizontal), (1,4) to (1,6) (vertical down), (1,6) to (4,5) (up and right), and the vertical segment from (4,5) up to (4,3) along the dashed line. The result is a mirror image of the original shape on the left side of the dashed line, with the same size and the same distance from the line."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 855,
+  "completion_tokens": 337,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 2.027,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:21:50+00:00"
+}

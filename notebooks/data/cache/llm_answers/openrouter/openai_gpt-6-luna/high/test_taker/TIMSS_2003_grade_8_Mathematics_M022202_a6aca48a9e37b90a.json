@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2003/grade 8/Mathematics/M022202",
+  "item_keys": [
+    "TIMSS 2003/grade 8/Mathematics/M022202"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "In the figure, the measure of ∠POR is 110°, the measure of ∠QOS is 90°, and the measure of ∠POS is 140°.\n\n[Image: Rays OP, OQ, OR, and OS]\n\nWhat is the measure of ∠QOR?\n\nAnswer: ____\n\nFigure, described in words:\nFour rays share a common vertex O. In counterclockwise order around vertex O: ray OP extends horizontally to the right; ray OQ extends upward and to the right into the first quadrant; ray OR extends steeply upward and slightly to the left; and ray OS extends upward and to the left into the second quadrant.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "60°"
+  },
+  "llm_thinking": "**Solving angles in order**\n\nI need to figure out how to parse the angles correctly. I'm looking at the rays in a counterclockwise order: P, Q, R, and S. I can set the orientations as P=0, Q=a, R=b, and S=c, noting the requirement that 0<a<b<c<180. Given that the angle POR is 110, that means b=110, assuming it's the minor angle. Then for QOS being 90, I can find c-a=90, which leads to a=50 and c=140. The angle QOR comes out to be 60. Now, I need to format this in JSON.",
+  "finish_reason": "stop",
+  "prompt_tokens": 329,
+  "completion_tokens": 109,
+  "reasoning_tokens": 94,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335947-adaJJg0fXIVWd5UYzY66",
+  "requested_at": "2026-10-18T15:20:16+00:00"
+}

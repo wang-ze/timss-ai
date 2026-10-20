@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 1999/grade 8/Mathematics/P12",
+  "item_keys": [
+    "TIMSS 1999/grade 8/Mathematics/P12"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are an eighth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: A ruler with a wavy string above it]\n\nIf the string in the diagram is pulled straight, which of these is closest to its length?\n\nFigure, described in words:\nA metric ruler marked from 0 to 11 cm, with ticks at every centimeter and half-centimeter, labeled 'cm' at the left end and with numbers 1 through 11. Above the ruler, a curved line labeled 'string' begins at the 3 cm mark, extends horizontally to approximately 5.5 cm, loops back leftward to about 4.7 cm, and then extends horizontally rightward, ending near the 7 cm mark.\n\nA. 5 cm\nB. 6 cm\nC. 7 cm\nD. 8 cm",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "D"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 314,
+  "completion_tokens": 7,
+  "reasoning_tokens": 0,
+  "cost_usd": 2.5125e-05,
+  "seconds": 0.555,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:22:44+00:00"
+}

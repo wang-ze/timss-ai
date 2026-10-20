@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2003/grade 4/Mathematics/M031327",
+  "item_keys": [
+    "TIMSS 2003/grade 4/Mathematics/M031327"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "On the grid, draw a line parallel to line L.\n\n[Image: A grid with line L]\n\nFigure, described in words:\nA grid measuring 11 squares wide by 6 squares high. A straight line segment with arrowheads at both ends is labeled L near its upper-right end. The line follows the diagonals of grid squares at a 45-degree angle (slope of 1), extending from the grid intersection located 3 units from the left and 2 units from the bottom to the intersection located 6 units from the left and 5 units from the bottom.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Draw a straight line with arrowheads at both ends, passing through grid intersections at a 45-degree angle (slope of 1, rising one unit up for every one unit to the right), the same direction as L. For example, draw it from the bottom-left corner intersection (0 units from the left, 0 units from the bottom) diagonally up and to the right to the intersection 5 units from the left and 5 units from the bottom. This line is parallel to L because both have the same slope of 1."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 595,
+  "completion_tokens": 399,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 2.432,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:23:39+00:00"
+}

@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 4/Mathematics/M031183",
+  "item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M031183"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "| Ingredients | |\n| --- | --- |\n| Eggs | 4 |\n| Flour | 8 cups |\n| Milk | 1/2 cup |\n\nThe above ingredients are used to make a recipe for 6 people. Sam wants to make this recipe for only 3 people.\n\nComplete the table below to show what Sam needs to make the recipe for 3 people. The number of eggs he needs is shown.\n\n| Ingredients | |\n| --- | --- |\n| Eggs | 2 |\n| Flour | ____ cups |\n| Milk | ____ cup |",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Sam needs half of each ingredient for 3 people (6 people halved to 3). Eggs: 2 (given). Flour: 8 ÷ 2 = 4, so write 4 in the first blank (4 cups). Milk: 1/2 ÷ 2 = 1/4, so write 1/4 in the second blank (1/4 cup). The completed table reads: Eggs 2; Flour 4 cups; Milk 1/4 cup."
+  },
+  "llm_thinking": "Halving the recipe, flour comes to 4 cups and milk to 1/4 cup.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 610,
+  "completion_tokens": 181,
+  "reasoning_tokens": 24,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335960-oItwFneLfMfZRXMM1E4b",
+  "requested_at": "2026-10-19T14:20:47+00:00"
+}

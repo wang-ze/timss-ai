@@ -1,0 +1,47 @@
+{
+  "item_key": "TIMSS 2011/grade 8/Mathematics/M032692",
+  "response": "540 degrees\n\nWork:\nThe sum of the interior angles of a polygon with n sides is given by the formula (n-2) * 180 degrees. A pentagon has 5 sides, so n = 5.\n(5 - 2) * 180 = 3 * 180 = 540 degrees",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the eighth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\n[Image: A pentagon. Going from the bottom left corner and working clockwise, the corners are labeled as A, E, D, C, and B. There is a line drawn from A to D, and also from A to C.]\n\nWhat is the sum of all the interior angles of pentagon ABCDE?\nShow your work.\n\nAnswer: ____\n\nFigure, described in words:\nA pentagon ABCDE with vertices labeled clockwise starting from the bottom left: A at the bottom left, E at the middle left, D at the top apex, C at the middle right, and B at the bottom right. Two internal line segments are drawn from vertex A: one segment connects A to D, and another connects A to C, dividing the interior of the pentagon into three triangles: triangle AED, triangle ADC, and triangle ABC.\n\n# Scoring guide of the question (2 points)\n\n- Correct Response (2 points):\n  - 540 degrees with work shown\nExamples:\n3 (triangles) × 180° = 540°\n6 (right angles) × 90° = 540°\n- Partially Correct Response (1 point):\n  - 540 degrees with no work shown\n- Incorrect Response (0 points):\n  - Incorrect (including crossed out, erased, stray marks, illegible, or off task)\n\n# Response to the question\n\n540 degrees\n\nWork:\nThe sum of the interior angles of a polygon with n sides is given by the formula (n-2) * 180 degrees. A pentagon has 5 sides, so n = 5.\n(5 - 2) * 180 = 3 * 180 = 540 degrees\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Partially Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response provides the correct answer of 540 degrees and clearly shows valid work using the polygon interior angle sum formula (5 - 2) * 180 = 3 * 180 = 540 degrees.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 677,
+  "completion_tokens": 149,
+  "reasoning_tokens": 80,
+  "cost_usd": 0.0010665,
+  "seconds": 2.263,
+  "batch_id": null,
+  "requested_at": "2026-10-19T18:36:02+00:00"
+}

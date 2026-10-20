@@ -1,0 +1,46 @@
+{
+  "unit_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13025A+MA13025B",
+  "item_keys": [
+    "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13025A",
+    "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13025B"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are a twelfth-grade student in the final year of secondary school who has taken advanced mathematics courses, taking the TIMSS Advanced mathematics test for students like you. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "These 2 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nThe function y = f(x), -3 ≤ x ≤ 3, is defined in the following graph\n\n[Image: Graph of y = f(x)]\n\nA. For what value(s) of x in the interval -3 < x < 3 is the function f NOT continuous?\n\nFigure, described in words:\nA Cartesian coordinate system with horizontal axis x and vertical axis y. The x-axis is marked with ticks and labels at -3, -2, -1, 0, 1, 2, 3. The y-axis is marked with ticks and labels at -2, -1, 1, 2, and 0 at the origin. The graph of y = f(x) consists of:\n- A line segment from a solid dot at (-3, -2) to (-1, 0).\n- A horizontal segment along the x-axis from (-1, 0) to an open circle at (0, 0).\n- A solid dot at (0, 2).\n- A line segment from (0, 2) down to (2, 0).\n- A horizontal segment along the x-axis from (2, 0) to a solid dot at (3, 0).\n\n## Question 2\n\nThe function y = f(x), -3 ≤ x ≤ 3, is defined in the following graph\n\n[Image: Graph of y = f(x)]\n\nB. For what value(s) of x in the interval -3 < x < 3 is the function f NOT differentiable?\n\nFigure, described in words:\nA Cartesian coordinate system with horizontal axis x and vertical axis y. The x-axis is marked with ticks and labels at -3, -2, -1, 0, 1, 2, 3. The y-axis is marked with ticks and labels at -2, -1, 1, 2, and 0 at the origin. The graph of y = f(x) consists of:\n- A line segment from a solid dot at (-3, -2) to (-1, 0).\n- A horizontal segment along the x-axis from (-1, 0) to an open circle at (0, 0).\n- A solid dot at (0, 2).\n- A line segment from (0, 2) down to (2, 0).\n- A horizontal segment along the x-axis from (2, 0) to a solid dot at (3, 0).\n\nAnswer each of the 2 questions.",
+  "output_schema": {
+    "properties": {
+      "answer_1": {
+        "description": "Your answer to question 1, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 1",
+        "type": "string"
+      },
+      "answer_2": {
+        "description": "Your answer to question 2, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 2",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer_1",
+      "answer_2"
+    ],
+    "title": "Answers",
+    "type": "object"
+  },
+  "output": {
+    "answer_1": "The function f is not continuous at x = 0.  A function is not continuous at a point if it has a break at that point, which means the limit from the left does not equal the limit from the right, or if the function is not defined there. Looking at the graph, there is a jump discontinuity at x=0. The function approaches 0 as x approaches 0 from the left, but the function value *at* x=0 is 2.  This confirms that the limit does not exist at x = 0.",
+    "answer_2": "The function f is not differentiable at x = -1, x = 0, and x = 2. A function is not differentiable at points where it is not continuous, and at points where the tangent line is vertical (sharp corners or cusps).  We know from the previous question that f is not continuous at x = 0. At x = -1, the graph transitions from a line to a horizontal line, indicating a sharp corner (a 'right angle'), therefore the derivative does not exist. Similarly, at x = 2, the graph transitions from a line to a horizontal line, indicating a sharp corner, so the derivative does not exist. Therefore, f is not differentiable at x = -1, x = 0, and x = 2."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 738,
+  "completion_tokens": 285,
+  "reasoning_tokens": 0,
+  "cost_usd": 0.000119475,
+  "seconds": 22.092,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:22:22+00:00"
+}

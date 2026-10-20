@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2011/grade 8/Mathematics/M042024",
+  "item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M042024"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are an eighth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: A numbered axis from 26 to 28. There are four marks in between 26 to 27, as well as in between 27 to 28. K is marked underneath the last mark between 27 and 28.]\n\nWhich number does K represent on this number line?\n\nFigure, described in words:\nA horizontal number line with arrowheads at both ends. There are evenly spaced vertical tick marks. The first labeled tick mark is labeled 26 below the line. Between 26 and 27, there are 4 evenly spaced tick marks dividing the interval into 5 equal parts. The tick mark for 27 is labeled below the line. Between 27 and 28, there are 4 evenly spaced tick marks, with the fourth tick mark labeled with the letter K below the line. The next tick mark is labeled 28 below the line. The line extends slightly past 26 to the left and past 28 to the right.\n\nA. 27.4\nB. 27.8\nC. 27.9\nD. 28.2",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "C"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 763,
+  "completion_tokens": 10,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 1.078,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:15:51+00:00"
+}

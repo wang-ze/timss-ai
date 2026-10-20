@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2007/grade 4/Mathematics/M031247",
+  "item_keys": [
+    "TIMSS 2007/grade 4/Mathematics/M031247"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "A man took his 3 children to a fair. Tickets cost twice as much for adults as for children. The father paid a total of 50 zeds for the 4 tickets.\n\nHow many zeds did each child’s ticket cost? Show your work.\n\nAnswer: ____",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Let each child’s ticket cost x zeds. The adult ticket costs 2x zeds, so 3x + 2x = 50. Thus 5x = 50, and x = 10. Each child’s ticket cost **10 zeds**."
+  },
+  "llm_thinking": "**Solving a math problem**\n\nI see the problem here! It involves finding the value of x where a child is x and an adult is 2x. So, let's break it down: 3x + 2x equals 5x, which equals 50. That means x is 10. Now I need to format the answer in a JSON string that includes the work. This will be helpful and clear for the user!",
+  "finish_reason": "stop",
+  "prompt_tokens": 249,
+  "completion_tokens": 107,
+  "reasoning_tokens": 37,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335946-trrrpOQNV9blahgGjSta",
+  "requested_at": "2026-10-18T15:11:22+00:00"
+}

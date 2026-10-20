@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2007/grade 4/Mathematics/M041056",
+  "item_keys": [
+    "TIMSS 2007/grade 4/Mathematics/M041056"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: Twelve cookies]\n\nThere are 12 cookies. Draw a circle around 1/3 of the cookies.\n\nFigure, described in words:\nTwelve oval chocolate chip cookies arranged in a rectangular grid of 3 rows and 4 columns.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "One third of 12 cookies is 4 cookies. I would draw one circle around any group of 4 cookies in the grid, for example the four cookies in the top row (the first row, from left to right)."
+  },
+  "llm_thinking": "One third of 12 is 4, so I'll circle the first row of four cookies to represent that group, then output the answer as JSON on a single line.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 515,
+  "completion_tokens": 129,
+  "reasoning_tokens": 59,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335957-QKbCVbAXn76L3I0C7O9z",
+  "requested_at": "2026-10-19T14:20:44+00:00"
+}

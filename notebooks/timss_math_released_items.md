@@ -15,7 +15,7 @@ Facts are as of 2026-10-03.
 | `data/timss_g4_math_released_items.jsonl` | The grade 4 items alone, as before the other grades were added. |
 | `data/timss_math_released_item_parameters.xlsx` | IRT parameters of every item, with their sources (sheets `item_parameters`, `sources`, `crosswalk_1995_g4`, `crosswalk_1999_g8`). |
 | `data/timss_g4_math_released_item_parameters.xlsx` | The grade 4 rows of the same workbook. |
-| `../src/timss_math/item_parameter_prediction/data/` | Copies of `timss_math_released_items.jsonl` and of the `item_parameters` sheet as `timss_math_released_item_parameters.csv`, the inputs of the `timss_math.item_parameter_prediction` package. |
+| `../src/timss_math/data/` | Copies of `timss_math_released_items.jsonl` and of the `item_parameters` sheet as `timss_math_released_item_parameters.csv`, the inputs of the `timss_math` package (with `timss_math_scale_transformation_constants.csv`). |
 
 ## The sets
 
@@ -141,6 +141,7 @@ Notes:
 
 - **Calibrations.** Parameters from different calibrations are on different scales: the 1995 and 2003 grade 4 items share the joint 1995-2003 calibration, the 1999 and 2003 grade 8 items the joint 1999-2003 calibration, the TIMSS Advanced items the 1995-2008 concurrent scaling, and the 2007 and 2011 items of each grade have their own (joint 2003-2007 and 2007-2011).
   Compare parameters across calibrations only after linking them.
+  `timss_math_scale_transformation_constants.md` gives the constants that put each calibration's θ on the TIMSS reporting scale, in `data/timss_math_scale_transformation_constants.csv`.
 - **TIMSS 1999.** The 1999 Technical Report's own exhibit, Exhibit E.3 of `T99_TR_AppenE.pdf` (joint 1995-1999 calibration), lists no items between M022070 and M022165 and so lacks 17 released items.
   Exhibit D.1 is used for all 82, and Exhibit E.3 is a check: for the 65 items in both, the IRT models agree and the slopes and locations correlate 0.96 and 0.97.
   The codebook's answer keys match the booklet's for every item.

@@ -1,0 +1,47 @@
+{
+  "item_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23198",
+  "response": "The derivative of y = x + cos x is dy/dx = 1 - sin x. The slope at a point is the value of the derivative there. At point A, x = π, so the slope is 1 - sin π = 1 - 0 = 1. At point B, x = 2π, so the slope is 1 - sin 2π = 1 - 0 = 1. Both slopes equal 1, so the slopes at A and B are the same, and Sophia is correct. Equivalently, sin x has period 2π, and since sin π = sin 2π = 0, the derivative 1 - sin x takes the same value at x = π and x = 2π.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\n[Image: Graph of y = x + cos x]\n\nSophia is studying the graph of the function y = x + cos x shown above. She says that the slope at point A is the same as the slope at point B. Explain why she is correct.\n\nFigure, described in words:\nA Cartesian coordinate plane with horizontal axis labeled x and vertical axis labeled y, intersecting at the origin labeled O. The grid lines correspond to labels on the axes. The x-axis is labeled at -π, O (0), π, 2π, and 3π. The y-axis is labeled at -4, 4, and 8. The graph of the curve y = x + cos x is shown passing through the grid from x < -π to x > 3π. Two points on the curve are marked with solid black dots and labeled: point A at x = π and point B at x = 2π.\n\n# Scoring guide of the question (1 point)\n\n- Correct Response (1 point):\n  - Explanation involving differentiating and showing the gradient is the same at x = π and x = 2π; or using the nature of the cosine function to establish that the gradient is the same at x = π and x = 2π\n  - Correct answer using calculator with adequate explanation\n- Incorrect Response (0 points):\n  - Calculator used—answer incorrect or explanation inadequate\n  - Differentiates correctly but does not give adequate explanation of why slopes are equal\n  - Other incorrect (including crossed out, erased, stray marks, illegible, or off task)\n- Nonresponse (0 points):\n  - Blank\n\n# Response to the question\n\nThe derivative of y = x + cos x is dy/dx = 1 - sin x. The slope at a point is the value of the derivative there. At point A, x = π, so the slope is 1 - sin π = 1 - 0 = 1. At point B, x = 2π, so the slope is 1 - sin 2π = 1 - 0 = 1. Both slopes equal 1, so the slopes at A and B are the same, and Sophia is correct. Equivalently, sin x has period 2π, and since sin π = sin 2π = 0, the derivative 1 - sin x takes the same value at x = π and x = 2π.\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response",
+          "Nonresponse"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response correctly finds the derivative of y = x + cos x as dy/dx = 1 - sin x, evaluates the derivative at x = π and x = 2π showing both equal 1, and concludes that the slopes are the same.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 825,
+  "completion_tokens": 172,
+  "reasoning_tokens": 101,
+  "cost_usd": 0.00126375,
+  "seconds": 3.734,
+  "batch_id": null,
+  "requested_at": "2026-10-19T18:38:13+00:00"
+}

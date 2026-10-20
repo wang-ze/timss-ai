@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 4/Mathematics/M041327",
+  "item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M041327"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Draw the line of symmetry on this shape.\n\n[Image: an elongated kite shape figure with two pointy-ends at either end.]\n\nFigure, described in words:\nA quadrilateral kite shape oriented diagonally on a blank background. It has a sharp, acute vertex pointing toward the bottom left. From this vertex, two long straight sides of equal length extend upward and to the right: one side goes steeply up and right to an upper vertex, and the other side goes gently up and right to a lower-right vertex. The top side is a short horizontal segment extending rightward from the upper vertex, and the right side is a short vertical segment extending upward from the lower-right vertex, meeting at a top-right corner.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Draw a straight line from the sharp bottom-left vertex, through the middle of the kite, to the top-right corner where the short horizontal top side and short vertical right side meet. This diagonal is the line of symmetry: it splits the kite into two congruent, mirror-image triangles, one above the line (with the steep side and the short horizontal top side) and one below it (with the gentle side and the short vertical right side)."
+  },
+  "llm_thinking": "I'm working out the kite's vertices and sides, tracing how the two equal-length sides extend from the bottom vertex to the upper and lower-right points, then noting the short horizontal top edge.\n\nThe line of symmetry runs diagonally from the bottom-left sharp vertex straight through to the top-right corner, splitting the kite into two mirror-image halves. I'll format this as a single-line JSON response.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 652,
+  "completion_tokens": 541,
+  "reasoning_tokens": 400,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335960-oItwFneLfMfZRXMM1E4b",
+  "requested_at": "2026-10-19T14:20:47+00:00"
+}

@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K17",
+  "item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K17"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The graph of the function g passes through the point (1,2). The slope of the tangent to the graph at any point (x, y) is given by g'(x) = 6x − 12. What is g(x)? Show all your work.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Since \\(g'(x)=6x-12\\), integrate to find \\(g(x)\\):\n\\[\ng(x)=\\int(6x-12)\\,dx=3x^2-12x+C.\n\\]\nThe graph passes through \\((1,2)\\), so \\(g(1)=2\\):\n\\[\n2=3(1)^2-12(1)+C=3-12+C,\n\\]\nwhich gives \\(C=11\\). Therefore,\n\\[\n\\boxed{g(x)=3x^2-12x+11}.\n\\]"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 265,
+  "completion_tokens": 151,
+  "reasoning_tokens": 0,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335939-AiV5nQMEYsBDzf4oBKJu",
+  "requested_at": "2026-10-18T15:22:29+00:00"
+}

@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2011/grade 4/Mathematics/M051091",
+  "item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M051091"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Which fraction is not equal to the others?\n\nA. 1/2\nB. 4/8\nC. 2/4\nD. 2/8",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "D"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 245,
+  "completion_tokens": 143,
+  "reasoning_tokens": 137,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792336153-6c2fLN0msuhYTHU1VF5G",
+  "requested_at": "2026-10-19T14:20:45+00:00"
+}

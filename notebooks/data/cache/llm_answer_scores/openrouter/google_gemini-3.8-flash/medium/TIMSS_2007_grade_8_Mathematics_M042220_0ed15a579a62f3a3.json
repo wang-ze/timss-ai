@@ -1,0 +1,48 @@
+{
+  "item_key": "TIMSS 2007/grade 8/Mathematics/M042220",
+  "response": "Compute the number of students in each category from the pie chart percentages (200 students total): Red Hot Peppers 25% of 200 = 50 students; Stone Cold 45% of 200 = 90 students; Dreadlocks 30% of 200 = 60 students (check: 50 + 90 + 60 = 200). On the blank bar chart, draw three bars on the horizontal axis, one under each label: the bar for Red Hot Peppers rises to 50 on the Number of Students axis, the bar for Stone Cold rises to 90 (just under the 100 gridline, at 40 units above the 50 gridline, i.e. 4 subdivisions above 50 and 4 subdivisions below 100), and the bar for Dreadlocks rises to 60 (one 10-unit subdivision above the 50 gridline). Each bar should be shaded or drawn with the same width and equal spacing between them, with the vertical axis scaled so that 0, 50, 100, 150, and 200 are the labeled gridlines.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the eighth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\nThe results of a survey of 200 students are shown in the pie chart.\n\n[Image: Pie chart showing popularity of rock bands]\n\nMake a bar chart showing the number of students in each category in the pie chart.\n\n[Image: Bar chart template]\n\nFigure, described in words:\nThe item includes two figures:\n1. A pie chart titled \"Popularity of Rock Bands\" divided into three sectors: \"Red Hot Peppers 25%\" (shaded light gray, occupies the top-right quarter from 12 o'clock to 3 o'clock), \"Stone Cold 45%\" (shaded medium gray, occupies from 3 o'clock to approximately 8:30), and \"Dreadlocks 30%\" (unshaded, occupies from approximately 8:30 to 12 o'clock). There are tick marks on the circle edge at 12 o'clock, 3 o'clock, and 6 o'clock.\n2. A blank bar chart titled \"Popularity of Rock Bands\". The vertical axis is labeled \"Number of Students\" with horizontal grid lines at 0, 50, 100, 150, and 200. Between each labeled interval of 50, there are 4 tick marks dividing each interval into five 10-unit subdivisions. The horizontal axis has three tick marks labeled \"Red Hot Peppers\", \"Stone Cold\", and \"Dreadlocks\".\n\n# Scoring guide of the question (2 points)\n\n- Correct Response (2 points):\n  - All three correct - (50, 90, 60)\n50 should be to the correct line.\n90 should be less than 100 but greater than 80.\n60 should be less than 70 but greater than 50.\n- Partial Response (1 point):\n  - Any two correct\n- Incorrect Response (0 points):\n  - Bars drawn as percentages not actual numbers\n  - Other incorrect (including crossed out, erased, stray marks, illegible, or off task)\n- Nonresponse (0 points):\n  - Blank\n\n# Response to the question\n\nCompute the number of students in each category from the pie chart percentages (200 students total): Red Hot Peppers 25% of 200 = 50 students; Stone Cold 45% of 200 = 90 students; Dreadlocks 30% of 200 = 60 students (check: 50 + 90 + 60 = 200). On the blank bar chart, draw three bars on the horizontal axis, one under each label: the bar for Red Hot Peppers rises to 50 on the Number of Students axis, the bar for Stone Cold rises to 90 (just under the 100 gridline, at 40 units above the 50 gridline, i.e. 4 subdivisions above 50 and 4 subdivisions below 100), and the bar for Dreadlocks rises to 60 (one 10-unit subdivision above the 50 gridline). Each bar should be shaded or drawn with the same width and equal spacing between them, with the vertical axis scaled so that 0, 50, 100, 150, and 200 are the labeled gridlines.\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Partial Response",
+          "Incorrect Response",
+          "Nonresponse"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response correctly calculates the number of students for each category (50 for Red Hot Peppers, 90 for Stone Cold, and 60 for Dreadlocks) and accurately describes drawing the three bars to the correct heights on the bar chart.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": "**Calculating Band Sizes**\n\nI’ve confirmed the student correctly determined the student counts for all bands: Red Hot Peppers at 50, Stone Cold at 90, and Dreadlocks at 60. They also accurately described how these figures translate into bar heights for a visual representation.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 1031,
+  "completion_tokens": 169,
+  "reasoning_tokens": 100,
+  "cost_usd": 0.001407,
+  "seconds": 5.052,
+  "batch_id": null,
+  "requested_at": "2026-10-19T18:40:01+00:00"
+}

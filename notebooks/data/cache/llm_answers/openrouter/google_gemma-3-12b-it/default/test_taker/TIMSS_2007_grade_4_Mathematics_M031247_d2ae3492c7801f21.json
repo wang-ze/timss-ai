@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2007/grade 4/Mathematics/M031247",
+  "item_keys": [
+    "TIMSS 2007/grade 4/Mathematics/M031247"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "A man took his 3 children to a fair. Tickets cost twice as much for adults as for children. The father paid a total of 50 zeds for the 4 tickets.\n\nHow many zeds did each child’s ticket cost? Show your work.\n\nAnswer: ____",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Let 'c' be the cost of a child's ticket in zeds.  Since adult tickets cost twice as much as children's tickets, an adult ticket costs 2c zeds. The father is the adult.  There are 3 children.  The total cost is 50 zeds.  So, we can write the equation:  2c + 3c = 50  Combining the terms, we get 5c = 50  Dividing both sides by 5, we get c = 10  Each child's ticket cost 10 zeds. Answer: 10"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 191,
+  "completion_tokens": 144,
+  "reasoning_tokens": 0,
+  "cost_usd": 3.115e-05,
+  "seconds": 1.949,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:06:45+00:00"
+}

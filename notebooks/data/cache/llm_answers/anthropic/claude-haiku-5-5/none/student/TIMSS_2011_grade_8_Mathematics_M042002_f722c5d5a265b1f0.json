@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 8/Mathematics/M042002",
+  "item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M042002"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are an eighth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Place the four digits 3, 5, 7, and 9 into the boxes below in the positions that would give the greatest result when the two numbers are multiplied.\n\n[Image: Two blank boxes, with one box for each digit, multiplied by another two blank boxes.]\n\nFigure, described in words:\nA vertical multiplication problem showing a two-digit number multiplied by a two-digit number. The top row consists of two blank square boxes side by side. The bottom row consists of a multiplication sign (x) to the left, followed by two blank square boxes side by side directly beneath the top boxes. A horizontal line is drawn underneath the bottom row of boxes.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "To get the greatest product of two two-digit numbers using digits 3, 5, 7, 9, place the two largest digits in the tens positions and the two smaller digits in the ones positions, with the larger tens digit paired so the sums are balanced. Put 9 and 7 in the tens places, and 5 and 3 in the ones places. Choose the tens-digit pairing so the two numbers are as close in value as possible: 97 x 53 = 5141, 95 x 73 = 6935, 93 x 75 = 6975, 97 x 35 = 3395, 95 x 37 = 3515, 93 x 57 = 5301, 75 x 93 = 6975. The greatest product is obtained with the top row digits 9 and 7 and bottom row digits 5 and 3 arranged as 75 x 93 = 6975 (also equal to 93 x 75). Final answer: top row 7 5 (i.e., 75) and bottom row 9 3 (i.e., 93), giving 75 x 93 = 6975."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 660,
+  "completion_tokens": 342,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 2.334,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:15:32+00:00"
+}

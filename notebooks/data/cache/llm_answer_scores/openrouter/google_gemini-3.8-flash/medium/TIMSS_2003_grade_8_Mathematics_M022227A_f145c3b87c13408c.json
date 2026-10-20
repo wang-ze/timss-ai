@@ -1,0 +1,46 @@
+{
+  "item_key": "TIMSS 2003/grade 8/Mathematics/M022227A",
+  "response": "245 ÷ 5 = 49. The area of one square is 49 cm^2.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the eighth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Questions\n\nThese 3 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nThe figure consists of 5 squares of equal area. The area of the whole figure is 245 cm^2.\n\n[Image: Cross shape made of 5 squares]\n\nA. Find the area of one square.\n\nAnswer: ____ cm^2\n\nFigure, described in words:\nA cross-shaped figure (or plus sign) formed by 5 squares of equal size: one square in the center and four squares adjacent to each of its four sides (top, bottom, left, and right). The outer boundary of the entire shape is drawn with solid black lines, while the four interior shared edges dividing the central square from the four outer squares are drawn with dashed lines.\n\n## Question 2\n\nThe figure consists of 5 squares of equal area. The area of the whole figure is 245 cm^2.\n\n[Image: Cross shape made of 5 squares]\n\nB. Find the length of one side of one square.\n\nAnswer: ____ cm\n\nFigure, described in words:\nA cross-shaped figure (or plus sign) formed by 5 squares of equal size: one square in the center and four squares adjacent to each of its four sides (top, bottom, left, and right). The outer boundary of the entire shape is drawn with solid black lines, while the four interior shared edges dividing the central square from the four outer squares are drawn with dashed lines.\n\n## Question 3\n\nThe figure consists of 5 squares of equal area. The area of the whole figure is 245 cm^2.\n\n[Image: Cross shape made of 5 squares]\n\nC. Find the perimeter of the whole figure in centimeters.\n\nAnswer: ____ cm\n\nFigure, described in words:\nA cross-shaped figure (or plus sign) formed by 5 squares of equal size: one square in the center and four squares adjacent to each of its four sides (top, bottom, left, and right). The outer boundary of the entire shape is drawn with solid black lines, while the four interior shared edges dividing the central square from the four outer squares are drawn with dashed lines.\n\n# Scoring guide of question 1 (1 point)\n\n- Correct Response (1 point):\n  - 49\n- Incorrect Response (0 points):\n  - 1\n  - Other incorrect (including crossed out/erased, stray marks, illegible, or off task).\n\n# Response to question 1\n\n245 ÷ 5 = 49. The area of one square is 49 cm^2.\n\nScore the response to question 1.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response correctly calculates 245 ÷ 5 = 49, giving the correct area of 49 cm^2 for one square as required by the scoring guide.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": "**Calculating Area Accuracy**\n\nI'm currently evaluating the user's response to determine the area of a square. The provided calculation, \"245 ÷ 5 = 49\", and the conclusion \"The area of one square is 49 cm^2,\" are being cross-referenced against the scoring guide to assign a precise score.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 851,
+  "completion_tokens": 154,
+  "reasoning_tokens": 98,
+  "cost_usd": 0.00121575,
+  "seconds": 3.59,
+  "batch_id": null,
+  "requested_at": "2026-10-19T18:41:53+00:00"
+}

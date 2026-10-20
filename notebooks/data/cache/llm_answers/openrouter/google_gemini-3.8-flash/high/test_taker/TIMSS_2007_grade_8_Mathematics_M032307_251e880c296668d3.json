@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2007/grade 8/Mathematics/M032307",
+  "item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M032307"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Tickets for a concert cost either 10 zeds, 15 zeds, or 30 zeds.\n\nOf the 900 tickets sold, 1/5 cost 30 zeds each and 2/3 cost 15 zeds each.\n\nWhat FRACTION of the tickets sold for 10 zeds each?\n\nAnswer: ____",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "2/15"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 284,
+  "completion_tokens": 479,
+  "reasoning_tokens": 465,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792336157-txl4lX1Do5kkuqSPK9OG",
+  "requested_at": "2026-10-19T14:20:46+00:00"
+}

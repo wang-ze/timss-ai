@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2003/grade 8/Mathematics/M022202",
+  "item_keys": [
+    "TIMSS 2003/grade 8/Mathematics/M022202"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "high",
+  "system_prompt": "You are an eighth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "In the figure, the measure of ∠POR is 110°, the measure of ∠QOS is 90°, and the measure of ∠POS is 140°.\n\n[Image: Rays OP, OQ, OR, and OS]\n\nWhat is the measure of ∠QOR?\n\nAnswer: ____\n\nFigure, described in words:\nFour rays share a common vertex O. In counterclockwise order around vertex O: ray OP extends horizontally to the right; ray OQ extends upward and to the right into the first quadrant; ray OR extends steeply upward and slightly to the left; and ray OS extends upward and to the left into the second quadrant.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "∠QOR = 110° − (140° − 90°) = 60°"
+  },
+  "llm_thinking": "**Analyzing angle arrangement**\n\nI need to solve the arrangement of angles based on the order of rays. I'll set the direction for OP at 0°, with angles OQ=q, OR=r, and OS=s, in a counter-clockwise order. I presume that q<r<s<180. Given angle POR as r=110, I determine ∠QOS to be s-q=90 and find s=140. This means q=50; r=110; and ∠QOR is r-q=60. I’ll need to format the answer in JSON.",
+  "finish_reason": "stop",
+  "prompt_tokens": 349,
+  "completion_tokens": 145,
+  "reasoning_tokens": 111,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792430073-CNIt0K0bm0Bup4ZK3RvK",
+  "requested_at": "2026-10-19T17:54:46+00:00"
+}

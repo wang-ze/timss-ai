@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 1995/grade 4/Mathematics/V1",
+  "item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/V1"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Sam said that 1/3 of a pie is less than 1/4 of the same pie.\n\nIs Sam correct? ____\n\nUse the circles below to show why this is so.\n\n[Image: Two circles]\n\nShade in 1/3 of this circle\n\nShade in 1/4 of this circle\n\nFigure, described in words:\nTwo identical, empty circles are shown side by side. Below the left circle is the text \"Shade in 1/3 of this circle\" with 1/3 written as a vertical fraction. Below the right circle is the text \"Shade in 1/4 of this circle\" with 1/4 written as a vertical fraction.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "No, Sam is not correct. In the left circle, divide the circle into 3 equal parts with two straight lines through the center and shade one of the 3 parts (1/3 of the circle). In the right circle, divide the circle into 4 equal parts with two straight lines through the center that cross each other at right angles, and shade one of the 4 parts (1/4 of the circle). When both circles are the same size, the shaded part in the left circle (1/3) is larger than the shaded part in the right circle (1/4), because when a whole is split into fewer equal parts, each part is bigger. So 1/3 of a pie is more than 1/4 of the same pie, not less."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 622,
+  "completion_tokens": 219,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 1.477,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:21:37+00:00"
+}

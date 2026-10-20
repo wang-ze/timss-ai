@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L16",
+  "item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L16"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Find all real values of x which satisfy the following equation:\n\nsqrt(x) - 2/sqrt(x) = 1\n\nShow all your work.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Let $u = \frac{1}{\text{sqrt}(x)}$. Then the given equation becomes: \n\n$\text{sqrt}(x) - \frac{2}{\text{sqrt}(x)} = 1$ \n\nMultiplying both sides by $\text{sqrt}(x)$, we get: \n\n$(\text{sqrt}(x))^2 - 2 = \text{sqrt}(x)$ \n\n$x - 2 = \text{sqrt}(x)$ \n\nLet $y = \text{sqrt}(x)$. Then $y^2 = x$, so we can rewrite the equation as: \n\n$y^2 - 2 = y$ \n\n$y^2 - y - 2 = 0$ \n\nThis is a quadratic equation in $y$. We can factor it as: \n\n$(y-2)(y+1) = 0$ \n\nSo, $y=2$ or $y=-1$. \n\nSince $y = \text{sqrt}(x)$, $y$ must be non-negative, so we discard the solution $y=-1$. Thus, $y=2$. \n\nSubstituting $y = \text{sqrt}(x)$, we get: \n\n$\text{sqrt}(x) = 2$ \n\nSquaring both sides, we get: \n\n$x = 4$ \n\nWe need to check if $x=4$ is a valid solution. \n\n$\text{sqrt}(4) - \frac{2}{\text{sqrt}(4)} = 2 - \frac{2}{2} = 2 - 1 = 1$ \n\nThus, $x=4$ is a valid solution. \n\nTherefore, the only real value of $x$ which satisfies the equation is $x=4$. \n\nFinal Answer: The final answer is $\boxed{4}$"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 180,
+  "completion_tokens": 447,
+  "reasoning_tokens": 0,
+  "cost_usd": 7.605e-05,
+  "seconds": 6.088,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:06:33+00:00"
+}

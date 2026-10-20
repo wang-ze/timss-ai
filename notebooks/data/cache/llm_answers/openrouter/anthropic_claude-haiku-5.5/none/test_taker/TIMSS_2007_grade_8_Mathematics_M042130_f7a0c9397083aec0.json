@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2007/grade 8/Mathematics/M042130",
+  "item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M042130"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Using the marked points, draw a triangle having an area TWICE that of the rectangle ABCD.\n\n[Image: Grid with rectangle ABCD and marked points]\n\nFigure, described in words:\nAn 11 by 11 square grid containing eight marked points labeled with black dots and letters:\n- Vertex A is at grid coordinate (2, 1) relative to the bottom-left corner of the grid (0, 0).\n- Vertex B is at (5, 1).\n- Vertex C is at (5, 5).\n- Vertex D is at (2, 5).\n- Vertices A, B, C, and D are connected by dashed lines to form rectangle ABCD, which is 3 units wide and 4 units high.\n- Four additional points are marked with black dots and labeled:\n  - Point W is at (8, 1).\n  - Point Z is at (2, 9).\n  - Point Y is at (5, 9).\n  - Point X is at (8, 9).",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Rectangle ABCD has area 3 x 4 = 12 square units, so the triangle must have area 24 square units. A triangle with base and height whose product is 48 has area 24. Using the marked points, draw the triangle with vertices at Z (2, 9), W (8, 1), and a third point at the top-left or bottom-left: choose base ZX from Z (2, 9) to X (8, 9), which has length 6 units, and a height of 8 units needed. Instead, use base WX? Simplest valid choice: triangle with vertices W (8, 1), X (8, 9), and Z (2, 9): base WX is vertical with length 8 (from (8,1) to (8,9)), and the horizontal distance from Z (2, 9) to the line x = 8 is 6 units, so the area is (1/2) x 8 x 6 = 24 square units, exactly twice the area of rectangle ABCD. Draw the triangle by connecting W to X with a vertical segment, X to Z with a horizontal segment along y = 9, and Z to W with a diagonal segment from (2, 9) to (8, 1)."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 731,
+  "completion_tokens": 372,
+  "reasoning_tokens": 0,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335952-nomWk8Tj0yh7J6h3dipX",
+  "requested_at": "2026-10-19T14:20:45+00:00"
+}

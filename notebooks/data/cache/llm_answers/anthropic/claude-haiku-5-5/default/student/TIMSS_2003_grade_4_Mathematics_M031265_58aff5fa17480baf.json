@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2003/grade 4/Mathematics/M031265",
+  "item_keys": [
+    "TIMSS 2003/grade 4/Mathematics/M031265"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": null,
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "A store owner decided to check how many pens, pencils, erasers, and rulers were sold on the day school opened. He made the tally chart below.\n\n[Image: Tally chart]\n\nHow many more pencils than rulers were sold?\n\nAnswer: ____\n\nFigure, described in words:\nA tally chart with 4 columns titled \"Pens\", \"Pencils\", \"Erasers\", and \"Rulers\":\n- Under \"Pens\", there are 4 groups of 5 tally marks and 2 single tally marks (total 22).\n- Under \"Pencils\", there are 5 groups of 5 tally marks and 1 single tally mark (total 26).\n- Under \"Erasers\", there are 2 groups of 5 tally marks and 2 single tally marks (total 12).\n- Under \"Rulers\", there are 4 groups of 5 tally marks and 4 single tally marks (total 24).",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "2. There were 26 pencils sold (5 groups of 5 plus 1 = 26) and 24 rulers sold (4 groups of 5 plus 4 = 24). The difference is 26 - 24 = 2."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 730,
+  "completion_tokens": 226,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 1.863,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:15:27+00:00"
+}

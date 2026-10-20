@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 1995/grade 4/Mathematics/L7",
+  "item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/L7"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "In which pair of numbers is the second number 100 more than the first number?\n\nA. 199 and 209\nB. 4,236 and 4,246\nC. 9,635 and 9,735\nD. 51,863 and 52,863",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "B"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 212,
+  "completion_tokens": 6,
+  "reasoning_tokens": 0,
+  "cost_usd": 1.15e-05,
+  "seconds": 0.361,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:07:11+00:00"
+}

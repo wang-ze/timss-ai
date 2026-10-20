@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 1999/grade 8/Mathematics/V02",
+  "item_keys": [
+    "TIMSS 1999/grade 8/Mathematics/V02"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Chris plans to order 24 issues of a magazine. He reads the following advertisements for two magazines. Ceds are the units of currency in Chris' country.\n\n[Image: Advertisements for two magazines]\n\nWhich magazine is the least expensive for 24 issues? How much less expensive? Show your work.\n\nFigure, described in words:\nTwo rectangular advertisement boxes shown side by side.\n\nThe left box is titled:\n\"Teen Life\nMagazine\"\nfollowed by the text:\n\"24 issues\nFirst four issues FREE\nThe rest\n3 ceds each.\"\n\nThe right box is titled:\n\"Teen News\nMagazine\"\nfollowed by the text:\n\"24 issues\nFirst six issues FREE\nThe rest\n3.5 ceds each.\"",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Teen Life Magazine: first 4 issues free, remaining 20 issues at 3 ceds each = 20 × 3 = 60 ceds. Teen News Magazine: first 6 issues free, remaining 18 issues at 3.5 ceds each = 18 × 3.5 = 63 ceds. Teen Life Magazine is the least expensive, costing 60 ceds, which is 63 − 60 = 3 ceds less than Teen News Magazine."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 660,
+  "completion_tokens": 163,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 1.31,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:22:41+00:00"
+}

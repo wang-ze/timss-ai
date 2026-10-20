@@ -1,0 +1,47 @@
+{
+  "item_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13025A",
+  "response": "The function is not continuous at \\(x=0\\).",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Questions\n\nThese 2 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nThe function y = f(x), -3 ≤ x ≤ 3, is defined in the following graph\n\n[Image: Graph of y = f(x)]\n\nA. For what value(s) of x in the interval -3 < x < 3 is the function f NOT continuous?\n\nFigure, described in words:\nA Cartesian coordinate system with horizontal axis x and vertical axis y. The x-axis is marked with ticks and labels at -3, -2, -1, 0, 1, 2, 3. The y-axis is marked with ticks and labels at -2, -1, 1, 2, and 0 at the origin. The graph of y = f(x) consists of:\n- A line segment from a solid dot at (-3, -2) to (-1, 0).\n- A horizontal segment along the x-axis from (-1, 0) to an open circle at (0, 0).\n- A solid dot at (0, 2).\n- A line segment from (0, 2) down to (2, 0).\n- A horizontal segment along the x-axis from (2, 0) to a solid dot at (3, 0).\n\n## Question 2\n\nThe function y = f(x), -3 ≤ x ≤ 3, is defined in the following graph\n\n[Image: Graph of y = f(x)]\n\nB. For what value(s) of x in the interval -3 < x < 3 is the function f NOT differentiable?\n\nFigure, described in words:\nA Cartesian coordinate system with horizontal axis x and vertical axis y. The x-axis is marked with ticks and labels at -3, -2, -1, 0, 1, 2, 3. The y-axis is marked with ticks and labels at -2, -1, 1, 2, and 0 at the origin. The graph of y = f(x) consists of:\n- A line segment from a solid dot at (-3, -2) to (-1, 0).\n- A horizontal segment along the x-axis from (-1, 0) to an open circle at (0, 0).\n- A solid dot at (0, 2).\n- A line segment from (0, 2) down to (2, 0).\n- A horizontal segment along the x-axis from (2, 0) to a solid dot at (3, 0).\n\n# Scoring guide of question 1 (1 point)\n\n- Correct Response (1 point):\n  - Correct answer: Only for x = 0. Accept answers such as \"in points (0, 0) and (0, 2)\" as correct.\n- Incorrect Response (0 points):\n  - Incorrect (including crossed out, erased, stray marks, illegible, or off task)\nExamples:\n1. Any of the following answers:\nFor x = -1 OR For x = 2 OR For x = -1 and x = 2\n2. For all values of x in the interval 0 ≤ x ≤ 2\nNote: Use this code for all answers \"interval with endpoints 0 and 2\" no matter whether the interval is open or closed.\n3. For no values of x, that is, the function is continuous for all x in the interval -3 < x < 3 (\"Continuous\" may be confused with \"defined.\")\n4. x in (-3, -1) ∪ (0, 2) OR x in (-1, 0) ∪ (2, 3)\n- Nonresponse (0 points):\n  - Blank\n\n# Response to question 1\n\nThe function is not continuous at \\(x=0\\).\n\nScore the response to question 1.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response",
+          "Nonresponse"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response identifies x = 0 as the only value where the function is not continuous, which matches the criteria in the scoring guide for a correct response.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 1024,
+  "completion_tokens": 160,
+  "reasoning_tokens": 110,
+  "cost_usd": 0.001368,
+  "seconds": 13.776,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:48:12+00:00"
+}

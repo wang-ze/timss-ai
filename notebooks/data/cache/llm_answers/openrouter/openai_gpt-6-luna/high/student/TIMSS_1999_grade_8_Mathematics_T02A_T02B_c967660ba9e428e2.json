@@ -1,0 +1,46 @@
+{
+  "unit_key": "TIMSS 1999/grade 8/Mathematics/T02A+T02B",
+  "item_keys": [
+    "TIMSS 1999/grade 8/Mathematics/T02A",
+    "TIMSS 1999/grade 8/Mathematics/T02B"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "high",
+  "system_prompt": "You are an eighth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "These 2 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nA book publisher sent 140 copies of a certain book to a bookstore. The publisher packed the books in two types of boxes. One type of box held 8 copies of the book, and the other type of box held 12 copies of the book. The boxes were all full, and there were equal numbers of both types of boxes.\n\na) How many boxes holding 12 books were sent to the bookstore?\n\nAnswer: ____\n\n## Question 2\n\nA book publisher sent 140 copies of a certain book to a bookstore. The publisher packed the books in two types of boxes. One type of box held 8 copies of the book, and the other type of box held 12 copies of the book. The boxes were all full, and there were equal numbers of both types of boxes.\n\nb) What fraction of the books sent to the bookstore were packed in the smaller boxes?\n\nAnswer: ____\n\nAnswer each of the 2 questions.",
+  "output_schema": {
+    "properties": {
+      "answer_1": {
+        "description": "Your answer to question 1, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 1",
+        "type": "string"
+      },
+      "answer_2": {
+        "description": "Your answer to question 2, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 2",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer_1",
+      "answer_2"
+    ],
+    "title": "Answers",
+    "type": "object"
+  },
+  "output": {
+    "answer_1": "7 boxes",
+    "answer_2": "\\(\\frac{2}{5}\\)"
+  },
+  "llm_thinking": "**Calculating box distribution**\n\nI need to figure out the output in JSON format. To start, I have a total of 20 boxes equating to a total of 140. When I solve for x, it turns out that x equals 7. Next, I count the 12-box items, which is also 7. Now, if I multiply the smaller books, 8 times 7, that gives me 56. Finally, I need to express this as a fraction: 56 over 140 simplifies to 2 over 5. I think I've got it!",
+  "finish_reason": "stop",
+  "prompt_tokens": 481,
+  "completion_tokens": 85,
+  "reasoning_tokens": 53,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792430069-8g35f4u7PLleVZ9HmGfd",
+  "requested_at": "2026-10-19T18:03:53+00:00"
+}

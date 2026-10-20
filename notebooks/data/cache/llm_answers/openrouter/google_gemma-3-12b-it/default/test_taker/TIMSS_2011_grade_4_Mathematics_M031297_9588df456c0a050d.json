@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 4/Mathematics/M031297",
+  "item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M031297"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: a shaded area overlaying a grid made up by small squares with each side of the square measured at 1 cm.]\n\nThe squares in the grid above are 1 cm by 1 cm.\nWhat is the shaded area in square centimeters?\n\nAnswer: ____ square centimeters\n\nFigure, described in words:\nA grid of 9 columns and 5 rows of 1 cm by 1 cm squares containing a shaded polygon. Outside the bottom-right corner of the grid, dimension arrows indicate that a single square is 1 cm wide and 1 cm high.\n\nDefining grid coordinates from the top-left corner (0, 0) to the bottom-right corner (9, 5):\n- The shaded polygon has vertices at (3, 1), (5, 1), (6, 2), (5, 3), (5, 4), and (3, 4).\n- The left side is a vertical line from (3, 1) down to (3, 4), spanning 3 units.\n- The bottom side runs horizontally from (3, 4) to (5, 4), spanning 2 units.\n- The right side goes vertically up from (5, 4) to (5, 3), 1 unit.\n- From (5, 3), a diagonal side goes up and to the right to grid intersection (6, 2).\n- From (6, 2), a diagonal side goes up and to the left to grid intersection (5, 1).\n- The top side runs horizontally from (5, 1) left to (3, 1), spanning 2 units.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "13"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 485,
+  "completion_tokens": 8,
+  "reasoning_tokens": 0,
+  "cost_usd": 2.545e-05,
+  "seconds": 0.518,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:06:23+00:00"
+}

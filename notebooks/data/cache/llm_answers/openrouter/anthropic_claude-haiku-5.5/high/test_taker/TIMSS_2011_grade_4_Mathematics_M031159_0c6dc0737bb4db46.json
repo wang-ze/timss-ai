@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2011/grade 4/Mathematics/M031159",
+  "item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M031159"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "A pattern rule says “Rotate the shape [Image: a circle with a dot in the middle connected by a straight line to the arc pointing up] 1/4 turn clockwise each time.”\nWhat will the pattern look like?\n\nFigure, described in words:\nIn the stem, a circle has a central dot with a line segment extending straight up to the top edge (12 o'clock position).\n\nFour response options each show a row of four circles showing different orientations of the line segment:\n- Option A: First circle points straight up (12 o'clock); second points right (3 o'clock); third points straight down (6 o'clock); fourth points left (9 o'clock).\n- Option B: First circle points straight up (12 o'clock); second points straight down (6 o'clock); third points straight up (12 o'clock); fourth points straight down (6 o'clock).\n- Option C: First circle points straight up (12 o'clock); second points left (9 o'clock); third points straight down (6 o'clock); fourth points right (3 o'clock).\n- Option D: First circle points straight up (12 o'clock); second points right (3 o'clock); third points left (9 o'clock); fourth points straight down (6 o'clock).\n\nA. [Image: First circle pointing up, second circle pointing right, third circle pointing down, fourth circle pointing left.]\nB. [Image: First circle pointing up, second circle pointing down, third circle pointing up, fourth circle pointing down.]\nC. [Image: First circle pointing up, second circle pointing left, third circle pointing down, fourth circle pointing right.]\nD. [Image: First circle pointing up, second circle pointing right, third circle pointing left, fourth circle pointing down.]",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "A"
+  },
+  "llm_thinking": "Rotating clockwise a quarter turn shifts up to right, right to down, down to left, left to up - that sequence matches option A.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 975,
+  "completion_tokens": 62,
+  "reasoning_tokens": 51,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335957-QKbCVbAXn76L3I0C7O9z",
+  "requested_at": "2026-10-19T14:20:44+00:00"
+}

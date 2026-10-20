@@ -1,0 +1,47 @@
+{
+  "item_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13025B",
+  "response": "The function is not differentiable at \\(x=-1, 0,\\) and \\(2\\). At \\(x=-1\\) and \\(x=2\\), the graph has corners; at \\(x=0\\), the function is discontinuous.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Questions\n\nThese 2 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nThe function y = f(x), -3 ≤ x ≤ 3, is defined in the following graph\n\n[Image: Graph of y = f(x)]\n\nA. For what value(s) of x in the interval -3 < x < 3 is the function f NOT continuous?\n\nFigure, described in words:\nA Cartesian coordinate system with horizontal axis x and vertical axis y. The x-axis is marked with ticks and labels at -3, -2, -1, 0, 1, 2, 3. The y-axis is marked with ticks and labels at -2, -1, 1, 2, and 0 at the origin. The graph of y = f(x) consists of:\n- A line segment from a solid dot at (-3, -2) to (-1, 0).\n- A horizontal segment along the x-axis from (-1, 0) to an open circle at (0, 0).\n- A solid dot at (0, 2).\n- A line segment from (0, 2) down to (2, 0).\n- A horizontal segment along the x-axis from (2, 0) to a solid dot at (3, 0).\n\n## Question 2\n\nThe function y = f(x), -3 ≤ x ≤ 3, is defined in the following graph\n\n[Image: Graph of y = f(x)]\n\nB. For what value(s) of x in the interval -3 < x < 3 is the function f NOT differentiable?\n\nFigure, described in words:\nA Cartesian coordinate system with horizontal axis x and vertical axis y. The x-axis is marked with ticks and labels at -3, -2, -1, 0, 1, 2, 3. The y-axis is marked with ticks and labels at -2, -1, 1, 2, and 0 at the origin. The graph of y = f(x) consists of:\n- A line segment from a solid dot at (-3, -2) to (-1, 0).\n- A horizontal segment along the x-axis from (-1, 0) to an open circle at (0, 0).\n- A solid dot at (0, 2).\n- A line segment from (0, 2) down to (2, 0).\n- A horizontal segment along the x-axis from (2, 0) to a solid dot at (3, 0).\n\n# Scoring guide of question 2 (1 point)\n\n- Correct Response (1 point):\n  - Correct answer: for x = -1 and for x = 0 and for x = 2\nNote: Accept answers that also include x = -3 and/or x = 3. Accept answers shown as points in the plane instead of values of x (e.g., language such as \"point (-1, 0)\" instead of x = -1).\n- Incorrect Response (0 points):\n  - For x = 0\n  - Any of the following answers:\nFor x = -1 OR For x = 2 OR For x = -1 and x = 2\n  - For all values of x in the interval -1 ≤ x ≤ 0 and 2 ≤ x ≤ 3 (Misconception: \"where f is flat, it has no derivative.\")\n  - Other incorrect (including crossed out, erased, stray marks, illegible, or off task)\nExamples:\n1. For NO values of x (i.e., the function is differentiable for all x in the interval -3 < x < 3)\n2. For ALL values of x in the interval -3 < x < 3 (i.e., the function is nondifferentiable for every value of x).\n3. For ALL values of x in the interval -1 ≤ x ≤ 0 or in the interval 2 ≤ x ≤ 3\n4. The question cannot be answered because we do not know the function f' or any similar expression.\n- Nonresponse (0 points):\n  - Blank\n\n# Response to question 2\n\nThe function is not differentiable at \\(x=-1, 0,\\) and \\(2\\). At \\(x=-1\\) and \\(x=2\\), the graph has corners; at \\(x=0\\), the function is discontinuous.\n\nScore the response to question 2.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response",
+          "Nonresponse"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response correctly identifies all three values of x where the function is not differentiable: x = -1, 0, and 2.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 1279,
+  "completion_tokens": 112,
+  "reasoning_tokens": 65,
+  "cost_usd": 0.00137925,
+  "seconds": 2.029,
+  "batch_id": null,
+  "requested_at": "2026-10-19T18:34:21+00:00"
+}

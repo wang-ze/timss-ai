@@ -1,0 +1,47 @@
+{
+  "item_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13026A",
+  "response": "Reflecting in the y-axis maps \\((x,y)\\) to \\((-x,y)\\). Draw and label the image with vertices \\(A'(4,-1)\\), \\(B'(1,-4)\\), and \\(C'(3,-4)\\), and join them to form the triangle.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Questions\n\nThese 2 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nA. Triangle ABC is reflected in the y-axis. On the diagram, draw and label triangle A'B'C', the image of triangle ABC under this reflection.\n\n[Image: Coordinate grid with triangle ABC]\n\nFigure, described in words:\nA Cartesian coordinate grid showing the x-axis and y-axis intersecting at the origin labeled O. The grid extends 5 units to the left, 10 units to the right, 5 units up, and 8 units down. Each grid square represents 1 unit by 1 unit. In the third quadrant, a triangle ABC is drawn with vertices at A(-4, -1), B(-1, -4), and C(-3, -4).\n\n## Question 2\n\nB. Triangle ABC is rotated through 90° anti-clockwise, centre O. On the diagram, draw and label triangle A\"B\"C\", the image of triangle ABC under this rotation.\n\n[Image: Coordinate grid with triangle ABC]\n\nFigure, described in words:\nA Cartesian coordinate grid showing the x-axis and y-axis intersecting at the origin labeled O. The grid extends 5 units to the left, 10 units to the right, 5 units up, and 8 units down. Each grid square represents 1 unit by 1 unit. In the third quadrant, a triangle ABC is drawn with vertices at A(-4, -1), B(-1, -4), and C(-3, -4).\n\n# Scoring guide of question 1 (1 point)\n\n- Correct Response (1 point):\n  - Correct answer: (x, y) -> (-x, y) 1/2 A' (4, -1) B' (1, -4) C' (3, -4)\n- Incorrect Response (0 points):\n  - A'B'C' is the image of triangle ABC under reflection in the x-axis.\nA' (-4, 1) B' (-1, 4) C' (-3, 4)\n  - Image A'B'C' has correct shape and position but is incorrectly labeled\n  - Other incorrect (including sides of a triangle not drawn or vertices not labeled, crossed out, erased, stray marks, illegible, or off task)\nExample:\nA'B'C' is the image of triangle ABC under the central symmetry with center O, the origin.\nA' (4, 1) B' (1, 4) C' (3, 4)\n- Nonresponse (0 points):\n  - Blank\n\n# Response to question 1\n\nReflecting in the y-axis maps \\((x,y)\\) to \\((-x,y)\\). Draw and label the image with vertices \\(A'(4,-1)\\), \\(B'(1,-4)\\), and \\(C'(3,-4)\\), and join them to form the triangle.\n\nScore the response to question 1.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response",
+          "Nonresponse"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response correctly identifies the reflection mapping across the y-axis, provides the correct coordinates for the reflected vertices A'(4, -1), B'(1, -4), and C'(3, -4), and describes drawing and labeling the resulting triangle.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": "**Graphing Reflection Progress**\n\nI'm currently working on visualizing the reflection of triangle ABC across the y-axis. My focus is on accurately plotting the reflected vertices A', B', and C' based on the provided original coordinates.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 954,
+  "completion_tokens": 248,
+  "reasoning_tokens": 177,
+  "cost_usd": 0.0016455,
+  "seconds": 2.816,
+  "batch_id": null,
+  "requested_at": "2026-10-19T18:35:12+00:00"
+}

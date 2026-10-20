@@ -1,0 +1,46 @@
+{
+  "unit_key": "TIMSS 2011/grade 4/Mathematics/M041115A+M041115B",
+  "item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M041115A",
+    "TIMSS 2011/grade 4/Mathematics/M041115B"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "These 2 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nBill is arranging squares in the following way:\n\n[Image: Figure 1 with one column of two squares, Figure 2 with two columns of two squares for each column, and Figure 3 with three columns of two squares for each column.]\n\nA. Draw Figure 5.\n\nFigure, described in words:\nThree figures made of identical adjacent square cells are shown in a row, each labeled underneath:\n- Figure 1: 1 column of 2 squares (a 1-by-2 grid).\n- Figure 2: 2 columns of 2 squares each (a 2-by-2 grid).\n- Figure 3: 3 columns of 2 squares each (a 3-by-2 grid).\n\n## Question 2\n\nBill is arranging squares in the following way:\n\n[Image: Figure 1 with one column of two squares, Figure 2 with two columns of two squares for each column, and Figure 3 with three columns of two squares for each column.]\n\nB. How many squares would Bill need to make Figure 16?\n\nAnswer: ____\n\nFigure, described in words:\nThree figures made of identical square tiles arranged in a grid: Figure 1 consists of 1 column of 2 squares stacked vertically, labeled \"Figure 1\". Figure 2 consists of 2 columns of 2 squares each (a 2-by-2 square), labeled \"Figure 2\". Figure 3 consists of 3 columns of 2 squares each (a 3-by-2 rectangle), labeled \"Figure 3\".\n\nAnswer each of the 2 questions.",
+  "output_schema": {
+    "properties": {
+      "answer_1": {
+        "description": "Your answer to question 1, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 1",
+        "type": "string"
+      },
+      "answer_2": {
+        "description": "Your answer to question 2, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 2",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer_1",
+      "answer_2"
+    ],
+    "title": "Answers",
+    "type": "object"
+  },
+  "output": {
+    "answer_1": "Figure 5 would have 5 columns, each column containing 2 squares stacked vertically, forming a 5-by-2 rectangle of 10 squares. Draw five vertical columns side by side, each column made of two identical squares stacked one on top of the other.",
+    "answer_2": "Figure n has n columns of 2 squares, so Figure n has 2n squares. For Figure 16: 2 x 16 = 32 squares. Answer: 32"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 1038,
+  "completion_tokens": 156,
+  "reasoning_tokens": 0,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335952-nomWk8Tj0yh7J6h3dipX",
+  "requested_at": "2026-10-19T14:20:45+00:00"
+}

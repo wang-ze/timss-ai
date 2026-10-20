@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 8/Mathematics/M032695",
+  "item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M032695"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Of the 400 students in a school, 50 plan to go to university, 100 to a polytechnic school, 150 to a business college, and the remainder plan to enter workforce.\n\nUse the circle below to make a pie chart showing the proportions of students planning to do each of these. Put labels on your chart.\n\n[Image: A circle with a point in the middle and 8 equally spaced points placed around the circumference of the circle.]\n\nFigure, described in words:\nA circle with a central point and 8 equally spaced dots along its circumference, corresponding to the 12:00, 1:30, 3:00, 4:30, 6:00, 7:30, 9:00, and 10:30 clock positions.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Okay, here's how I would create the pie chart based on the provided data and described figure:\n\n**1. Calculate the number of students entering the workforce:**\n\n*   Total students: 400\n*   University: 50\n*   Polytechnic: 100\n*   Business College: 150\n*   Workforce: 400 - 50 - 100 - 150 = 100 students\n\n**2. Calculate the percentages for each category:**\n\n*   University: (50 / 400) * 100% = 12.5%\n*   Polytechnic: (100 / 400) * 100% = 25%\n*   Business College: (150 / 400) * 100% = 37.5%\n*   Workforce: (100 / 400) * 100% = 25%\n\n**3. Divide the circle into sections based on percentages, using the provided points as guides:**\n\nSince there are 8 equally spaced points, each point represents 45 degrees (360 degrees / 8 points). I will approximate the angles based on the percentages. Note that precise angle calculations are not possible with this approach, but this is the best I can do given the constraints.\n\n*   **University (12.5%):** Start at the 12:00 position. Draw a line from the center to the 1:30 position. This represents approximately the 12.5%.\n*   **Polytechnic (25%):** Starting from the 1:30 position, draw a line to the 3:00 position. This accounts for 25%.\n*   **Business College (37.5%):** Starting from the 3:00 position, draw a line to about halfway between the 4:30 and 6:00 position. This represents approximately 37.5% (a little more than half way between those points).\n*   **Workforce (25%):** Starting from the approximate 6:00 position, draw a line to the 7:30 position. This represents 25%.\n\n**4. Label each section:**\n\n*   Write “University” next to the section starting at the 12:00 position.\n*   Write “Polytechnic” next to the section ending at the 3:00 position.\n*   Write “Business College” next to the section ending approximately halfway between 4:30 and 6:00.\n*   Write “Workforce” next to the section ending at the 7:30 position.\n\n**Summary of the Pie Chart:**\nThe pie chart will have four sections radiating from the center point, using the provided points as rough guides. Each section will be clearly labeled with the corresponding destination (University, Polytechnic, Business College, and Workforce)."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 313,
+  "completion_tokens": 695,
+  "reasoning_tokens": 0,
+  "cost_usd": 0.0001199,
+  "seconds": 10.94,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:06:21+00:00"
+}

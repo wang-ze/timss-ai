@@ -1,0 +1,47 @@
+{
+  "item_key": "TIMSS 2003/grade 8/Mathematics/M022261C",
+  "response": "Figure n has n rows and n columns of small squares, so it contains n × n small squares. Each square is divided into 2 triangles. For Figure 50, calculate 50 × 50 × 2 = 5,000 small triangles.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the eighth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Questions\n\nThese 3 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nThe three figures below are divided into small congruent triangles.\n\n[Image: Three figures divided into small triangles]\n\nA. Complete the table below. First, fill in how many small triangles make up Figure 3. Then, find the number of small triangles that would be needed for the 4th figure if the sequence of figures is extended.\n\n| Figure | Number of Small Triangles |\n| :--- | :--- |\n| 1 | 2 |\n| 2 | 8 |\n| 3 | |\n| 4 | |\n\nFigure, described in words:\nThree geometric figures composed of small congruent right triangles:\n- Figure 1: A single square with a diagonal line from the bottom-left corner to the top-right corner, dividing it into two right triangles labeled '1' (top-left) and '2' (bottom-right). Below the square is the label 'Figure 1'.\n- Figure 2: A square divided into a 2-by-2 grid of 4 smaller squares. Each smaller square has a diagonal from bottom-left to top-right, creating 8 congruent triangles numbered 1 through 8: top-left square has 1 (upper) and 2 (lower); top-right square has 3 (upper) and 4 (lower); bottom-left square has 5 (upper) and 6 (lower); bottom-right square has 7 (upper) and 8 (lower). Below is the label 'Figure 2'.\n- Figure 3: A square divided into a 3-by-3 grid of 9 smaller squares. Each smaller square has a diagonal from bottom-left to top-right, creating 18 congruent triangles. None of the triangles are numbered. Below is the label 'Figure 3'.\n\n## Question 2\n\nThe three figures below are divided into small congruent triangles.\n\n[Image: Three figures divided into small triangles]\n\nB. The sequence of figures is extended to the 7th figure. How many small triangles would be needed for Figure 7?\n\nAnswer: ____\n\nFigure, described in words:\nThree geometric figures composed of small congruent right triangles:\n- Figure 1: A single square with a diagonal line from the bottom-left corner to the top-right corner, dividing it into two right triangles labeled '1' (top-left) and '2' (bottom-right). Below the square is the label 'Figure 1'.\n- Figure 2: A square divided into a 2-by-2 grid of 4 smaller squares. Each smaller square has a diagonal from bottom-left to top-right, creating 8 congruent triangles numbered 1 through 8: top-left square has 1 (upper) and 2 (lower); top-right square has 3 (upper) and 4 (lower); bottom-left square has 5 (upper) and 6 (lower); bottom-right square has 7 (upper) and 8 (lower). Below is the label 'Figure 2'.\n- Figure 3: A square divided into a 3-by-3 grid of 9 smaller squares. Each smaller square has a diagonal from bottom-left to top-right, creating 18 congruent triangles. None of the triangles are numbered. Below is the label 'Figure 3'.\n\n## Question 3\n\nThe three figures below are divided into small congruent triangles.\n\n[Image: Three figures divided into small triangles]\n\nC. The sequence of figures is extended to the 50th figure. Explain a way to find the number of small triangles in the 50th figure that does not involve drawing it and counting the number of triangles.\n\nFigure, described in words:\nThree geometric figures composed of small congruent right triangles:\n- Figure 1: A single square with a diagonal line from the bottom-left corner to the top-right corner, dividing it into two right triangles labeled '1' (top-left) and '2' (bottom-right). Below the square is the label 'Figure 1'.\n- Figure 2: A square divided into a 2-by-2 grid of 4 smaller squares. Each smaller square has a diagonal from bottom-left to top-right, creating 8 congruent triangles numbered 1 through 8: top-left square has 1 (upper) and 2 (lower); top-right square has 3 (upper) and 4 (lower); bottom-left square has 5 (upper) and 6 (lower); bottom-right square has 7 (upper) and 8 (lower). Below is the label 'Figure 2'.\n- Figure 3: A square divided into a 3-by-3 grid of 9 smaller squares. Each smaller square has a diagonal from bottom-left to top-right, creating 18 congruent triangles. None of the triangles are numbered. Below is the label 'Figure 3'.\n\n# Scoring guide of question 3 (2 points)\n\n- Correct Response (2 points):\n  - Correct general (i.e., literal) expression, e.g., 2n2 , or equivalent expressed in words.\n  - 2 x 502 OR 2 x 50 x 50 OR 100 x 50 OR (50 + 50) x 50 OR equivalent expressed in words (disregard errors in computation).\n- Partial Response (1 point):\n  - Derives answer (5000) without showing work.\n  - Other partially correct.\n- Incorrect Response (0 points):\n  - 50 x 2 OR 100\n  - 50 x 50 OR 2,500\n  - Other incorrect (including crossed out/erased, stray marks, illegible, or off task).\n\n# Response to question 3\n\nFigure n has n rows and n columns of small squares, so it contains n × n small squares. Each square is divided into 2 triangles. For Figure 50, calculate 50 × 50 × 2 = 5,000 small triangles.\n\nScore the response to question 3.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Partial Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response provides both a correct explanation based on the geometric structure (n × n squares, each containing 2 triangles) and the correct arithmetic formulation for the 50th figure (50 × 50 × 2). This satisfies the requirements for a Correct Response.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 1630,
+  "completion_tokens": 176,
+  "reasoning_tokens": 102,
+  "cost_usd": 0.0018825,
+  "seconds": 2.904,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:42:41+00:00"
+}

@@ -1,0 +1,47 @@
+{
+  "item_key": "TIMSS 2007/grade 4/Mathematics/M031068",
+  "response": "Total walking time for Don is 25 + 10 + 5 = 40 minutes. Working backward from 3:50 p.m.: 3:50 p.m. minus 40 minutes = 3:10 p.m. So they must leave school at 3:10 p.m. Answer: 3:10 p.m.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the fourth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\nDon, Rob, and Lynn walk home from school together. It takes them 25 minutes to walk to Lynn’s house. Then it takes Don and Rob 10 minutes to get to Rob’s house. From there it takes Don 5 minutes to walk home.\n\nAt what time must they leave school so that Don arrives home at 3:50 p.m.?\n\nAnswer: ____ p.m.\n\n# Scoring guide of the question (1 point)\n\n- Correct Response (1 point):\n  - 3:10\n- Incorrect Response (0 points):\n  - 3:00\n  - Other incorrect (including crossed out/erased, stray marks, illegible, or off task)\n- Nonresponse (0 points):\n  - Blank\n\n# Response to the question\n\nTotal walking time for Don is 25 + 10 + 5 = 40 minutes. Working backward from 3:50 p.m.: 3:50 p.m. minus 40 minutes = 3:10 p.m. So they must leave school at 3:10 p.m. Answer: 3:10 p.m.\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response",
+          "Nonresponse"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response correctly identifies that the students must leave school at 3:10 p.m., showing accurate calculation and reaching the correct answer specified in the scoring guide.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": "**Calculating Departure Time**\n\nI'm focusing on the latest detail: Don needs to arrive home by 3:50 p.m. This critical endpoint is guiding my calculations for his departure from school.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 556,
+  "completion_tokens": 224,
+  "reasoning_tokens": 180,
+  "cost_usd": 0.001257,
+  "seconds": 3.664,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:51:51+00:00"
+}

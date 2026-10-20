@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 1995/grade 4/Mathematics/M1",
+  "item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/M1"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Samantha drops a stone onto each of these targets. The stone has the best chance of landing on a shaded space in which target?\n\nFigure, described in words:\nFour hexagonal targets labeled A, B, C, and D, each shaped as a regular hexagon with horizontal top and bottom edges:\n- Target A: Divided into 6 congruent equilateral triangles by three lines through the center connecting opposite vertices (a horizontal line and two diagonals). Two triangular regions are shaded: the top triangle (base on the top edge) and the bottom triangle (base on the bottom edge).\n- Target B: Divided into 6 congruent equilateral triangles in the same way as Target A. Three alternating triangular regions are shaded: the top triangle, the bottom-left triangle, and the bottom-right triangle.\n- Target C: Divided by a vertical line connecting the midpoints of the top and bottom edges, a horizontal line connecting the leftmost and rightmost vertices, and diagonals connecting opposite vertices. Three regions are shaded: a 30° sector in the top-right (between the vertical line and the diagonal to the top-right vertex), a 60° sector in the top-left (between the diagonal to the top-left vertex and the horizontal line), and a 30° sector in the bottom-right (between the vertical line and the diagonal to the bottom-right vertex).\n- Target D: Divided in the same way as Target C. Three regions are shaded: a 30° sector in the top-right (between the vertical line and the diagonal to the top-right vertex), a 60° sector in the bottom-right (between the horizontal line and the diagonal to the bottom-right vertex), and a 60° sector in the bottom-left (between the horizontal line and the diagonal to the bottom-left vertex).\n\nA. [Image: Target A]\nB. [Image: Target B]\nC. [Image: Target C]\nD. [Image: Target D]",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "B"
+  },
+  "llm_thinking": "I'm working through the shaded fractions for each figure—target A comes out to 1/3 with 2 of 6 triangles shaded, target B gives 1/2 with 3 of 6 shaded, and now I'm analyzing target C's hexagon divided by vertical, horizontal, and diagonal lines through opposite vertices to figure out its sector structure.\n\nBreaking it into 12 equal 30° sectors, I'm calculating shaded portions for C (4/12 = 1/3) and D (5/12 ≈ 0.417), then comparing all four: A at 1/3, B at 1/2, C at 1/3, D at 5/12 — B has the highest shaded fraction, so that's the answer.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 1058,
+  "completion_tokens": 699,
+  "reasoning_tokens": 688,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335958-MhJCSqWm7WbRuqTiOnF6",
+  "requested_at": "2026-10-19T14:20:45+00:00"
+}

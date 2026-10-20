@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2003/grade 4/Mathematics/M031322",
+  "item_keys": [
+    "TIMSS 2003/grade 4/Mathematics/M031322"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: Grid with horizontal line segment AB]\n\nDraw a triangle in the grid so that the line AB is the base of the triangle and the two new sides are the same length as each other.\n\nFigure, described in words:\nA square grid 10 units wide and 6 units high. A heavy horizontal line segment is drawn along the fourth horizontal grid line from the top (second from the bottom), spanning 3 grid units from the second vertical grid line from the left to the fifth vertical grid line from the left. The left endpoint of this segment is labeled 'A' directly below it, and the right endpoint is labeled 'B' directly below it.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Segment AB runs from grid point A at (2,2) to grid point B at (5,2), using the horizontal grid lines and vertical grid lines counted from the bottom-left corner. Since AB is 3 units long, the apex C should be placed directly above the midpoint of AB so both new sides are equal. The midpoint of AB is at x = 3.5, which is halfway between grid lines, so I would place the apex at C = (3.5, 5) using a point at a grid intersection where possible: choose C at (3, 5) is not symmetric, so instead I would use the midpoint column by drawing sides from A to a point and from B to the same point. Concretely: draw a triangle with vertices A (2,2), B (5,2), and C at (3.5, 5.5), but since grid points are whole numbers, I would instead place C at (4,5) isosceles-approximately or, for exact equal sides, use C at (3.5,5) found by joining the midpoint of the grid. Final drawing: connect A to C and B to C, where C is the point directly above the midpoint of AB, so the two new sides AC and BC are the same length, making triangle ABC isosceles with AB as its base."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 652,
+  "completion_tokens": 387,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 2.522,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:15:35+00:00"
+}

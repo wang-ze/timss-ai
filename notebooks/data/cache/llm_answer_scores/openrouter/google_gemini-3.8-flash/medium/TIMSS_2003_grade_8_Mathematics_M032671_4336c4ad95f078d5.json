@@ -1,0 +1,46 @@
+{
+  "item_key": "TIMSS 2003/grade 8/Mathematics/M032671",
+  "response": "There are 14 + 6 = 20 rows altogether. 20 × 20 = 400 plants.\n\nAnswer: 400",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the eighth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\nA garden has 14 rows. Each row has 20 plants. The gardener then plants 6 more rows with 20 plants in each row.\n\nHow many plants are now there altogether?\n\nAnswer: ____\n\n# Scoring guide of the question (1 point)\n\n- Correct Response (1 point):\n  - 400 or equivalent.\n- Incorrect Response (0 points):\n  - Incorrect (including crossed out/erased, stray marks, illegible, or off task).\n\n# Response to the question\n\nThere are 14 + 6 = 20 rows altogether. 20 × 20 = 400 plants.\n\nAnswer: 400\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response shows the correct calculation and arrives at the correct answer of 400 plants.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": "**Calculating Total Plants**\n\nI've analyzed the problem, focusing on combining the initial number of plants with the newly added ones. My current thought is to perform a multiplication for each set of rows and then sum the results.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 443,
+  "completion_tokens": 169,
+  "reasoning_tokens": 131,
+  "cost_usd": 0.000966,
+  "seconds": 3.795,
+  "batch_id": null,
+  "requested_at": "2026-10-19T18:35:18+00:00"
+}

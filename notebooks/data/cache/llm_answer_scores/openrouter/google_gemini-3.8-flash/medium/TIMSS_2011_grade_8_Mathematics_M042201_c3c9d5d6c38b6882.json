@@ -1,0 +1,46 @@
+{
+  "item_key": "TIMSS 2011/grade 8/Mathematics/M042201",
+  "response": "Volume of a rectangular box = length × width × height, so x × 5 × 4 = 200. Then 20x = 200, and dividing both sides by 20 gives x = 10. Answer: x = 10",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the eighth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\n[Image: A rectangular box with a length of x centimeters, height of 4 centimeters and width of 5 centimeters.]\nThe volume of the rectangular box is 200 cm^3. What is the value of x?\n\nAnswer: ____\n\nFigure, described in words:\nA perspective drawing of a rectangular box (rectangular prism). Hidden back edges are indicated by dashed lines. Dimension indicators mark the front bottom horizontal edge as 'x cm', the right vertical edge as '4 cm', and the top right slanted edge (depth) as '5 cm'.\n\n# Scoring guide of the question (1 point)\n\n- Correct Response (1 point):\n  - 10\n- Incorrect Response (0 points):\n  - Incorrect (including crossed out, erased, stray marks, illegible, or off task)\n\n# Response to the question\n\nVolume of a rectangular box = length × width × height, so x × 5 × 4 = 200. Then 20x = 200, and dividing both sides by 20 gives x = 10. Answer: x = 10\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response correctly determines the value of x as 10, showing the correct calculation based on the volume formula.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 531,
+  "completion_tokens": 174,
+  "reasoning_tokens": 132,
+  "cost_usd": 0.00105075,
+  "seconds": 2.659,
+  "batch_id": null,
+  "requested_at": "2026-10-19T18:43:03+00:00"
+}

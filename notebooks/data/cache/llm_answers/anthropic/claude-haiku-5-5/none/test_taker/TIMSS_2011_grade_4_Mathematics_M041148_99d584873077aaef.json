@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 4/Mathematics/M041148",
+  "item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M041148"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: a cube for Figure A and a square-base pyramid for Figure B.]\nHere are some statements about Figure A and Figure B. Put an X to show whether each statement is true or false.\n\n| Statement | True | False |\n| --- | --- | --- |\n| A and B both have a square face. | X | |\n| A and B both have the same number of faces. | | |\n| All the angles in A are right angles. | | |\n| B has more edges than A. | | |\n| Some of the edges in B are curved. | | |\n\nFigure, described in words:\nTwo 3-D geometric figures are shown side by side, with hidden edges represented by dashed lines. On the left, labeled 'Figure A', is a cube. On the right, labeled 'Figure B', is a square-based pyramid standing on its square base with four triangular faces meeting at a top vertex.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Statement 1 (A and B both have a square face): X in True (already marked). Statement 2 (A and B both have the same number of faces): X in False, since the cube has 6 faces and the square-base pyramid has 5 faces. Statement 3 (All the angles in A are right angles): X in True, since every face of a cube is a square and the angles where edges meet are right angles. Statement 4 (B has more edges than A): X in False, since the cube has 12 edges and the square-base pyramid has 8 edges. Statement 5 (Some of the edges in B are curved): X in False, since all edges of a square-base pyramid are straight."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 694,
+  "completion_tokens": 212,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 4.384,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:22:18+00:00"
+}

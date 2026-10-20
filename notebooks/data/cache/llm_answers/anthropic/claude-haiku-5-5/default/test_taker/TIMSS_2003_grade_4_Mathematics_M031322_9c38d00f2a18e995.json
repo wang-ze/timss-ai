@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2003/grade 4/Mathematics/M031322",
+  "item_keys": [
+    "TIMSS 2003/grade 4/Mathematics/M031322"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: Grid with horizontal line segment AB]\n\nDraw a triangle in the grid so that the line AB is the base of the triangle and the two new sides are the same length as each other.\n\nFigure, described in words:\nA square grid 10 units wide and 6 units high. A heavy horizontal line segment is drawn along the fourth horizontal grid line from the top (second from the bottom), spanning 3 grid units from the second vertical grid line from the left to the fifth vertical grid line from the left. The left endpoint of this segment is labeled 'A' directly below it, and the right endpoint is labeled 'B' directly below it.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Draw a triangle whose base is the segment AB. Place the third vertex (the apex) directly above the midpoint of AB. AB runs 3 grid units, so its midpoint lies halfway between the 3rd and 4th vertical grid lines from the left. Count 3 grid units straight up from that midpoint and mark the apex there. Then join the apex to A with one straight line and to B with another straight line. The two new sides are mirror images of each other, so they are the same length. The finished triangle is isosceles with base AB."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 628,
+  "completion_tokens": 908,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 5.069,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:22:57+00:00"
+}

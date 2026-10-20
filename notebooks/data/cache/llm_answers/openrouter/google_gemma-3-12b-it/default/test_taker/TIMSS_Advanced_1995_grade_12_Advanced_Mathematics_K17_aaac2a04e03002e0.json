@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K17",
+  "item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K17"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The graph of the function g passes through the point (1,2). The slope of the tangent to the graph at any point (x, y) is given by g'(x) = 6x − 12. What is g(x)? Show all your work.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "We are given the derivative of a function, g'(x) = 6x - 12, and a point (1, 2) that the function g(x) passes through. We need to find the function g(x). Since g'(x) is the derivative of g(x), we need to integrate g'(x) with respect to x to find g(x). \n\nSo, we have:\n\ng(x) = ∫ g'(x) dx = ∫ (6x - 12) dx\n\ng(x) = 6 ∫ x dx - 12 ∫ dx\n\ng(x) = 6 * (x^2 / 2) - 12x + C\n\ng(x) = 3x^2 - 12x + C\n\nNow, we use the given point (1, 2) to find the constant of integration, C.  We substitute x = 1 and g(x) = 2 into the equation:\n\n2 = 3(1)^2 - 12(1) + C\n\n2 = 3 - 12 + C\n\n2 = -9 + C\n\nC = 2 + 9\n\nC = 11\n\nTherefore, the function g(x) is:\n\ng(x) = 3x^2 - 12x + 11"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 204,
+  "completion_tokens": 330,
+  "reasoning_tokens": 0,
+  "cost_usd": 5.97e-05,
+  "seconds": 4.458,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:06:41+00:00"
+}

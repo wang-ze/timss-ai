@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 1995/grade 4/Mathematics/M2",
+  "item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/M2"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "high",
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "A team is selling raffle tickets. The table shows how many tickets they have sold so far.\n\n| Player's Name | Number of Tickets Sold |\n| :--- | :--- |\n| Carlos | 4 |\n| Maria | 7 |\n| Bill | 3 |\n| Ted | 7 |\n| Faye | 6 |\n| Abby | 9 |\n\nThey need to sell 60 tickets altogether. How many more tickets must they sell?\n\nAnswer:____",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "24 tickets"
+  },
+  "llm_thinking": "**Calculating the sum**\n\nI’m calculating the sum of 4, 7, 3, 7, 6, and 9, which gives me 36. After that, I’m subtracting that sum from 60, resulting in 24. So, the answer is 24! Now, I need to format that in JSON. Let’s make it neat and clear so it’s easy to read. I should make sure to structure it properly for the user, ensuring everything is included. I think I’ve got this!",
+  "finish_reason": "stop",
+  "prompt_tokens": 306,
+  "completion_tokens": 51,
+  "reasoning_tokens": 36,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792430071-WkiamaWym8JlrSqYqG4P",
+  "requested_at": "2026-10-19T17:53:44+00:00"
+}

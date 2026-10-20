@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 1999/grade 8/Mathematics/J18",
+  "item_keys": [
+    "TIMSS 1999/grade 8/Mathematics/J18"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "On the map, 1 cm represents 10 km on the land.\n\n[Image: Map showing towns and roads]\n\nOn the land, about how far apart are the towns Melville and Folley?\n\nFigure, described in words:\nA rectangular map showing three towns marked with dots: Melville near the top center, Mockem on the middle left, and Folley to the lower right. A thick curved black line representing \"Red River\" runs diagonally across the map from the lower-left to the upper-right. Thin lines represent roads: one goes vertically down through Melville and Mockem, and another connects Melville curving down and to the right, crossing the Red River and passing through Folley. In the bottom right corner of the map, an inset box contains a scale line segment marked with vertical end-ticks labeled \"1 cm = 10 km\". On the map, the straight-line distance between Melville and Folley is approximately 5 times the length of the 1 cm scale bar.\n\nA. 5 km\nB. 30 km\nC. 40 km\nD. 50 km",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "D"
+  },
+  "llm_thinking": "The map shows the straight-line distance as roughly 5 times the 1 cm scale bar, so with a scale of 10 km per cm, that's 5 × 10 = 50 km, matching answer D.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 750,
+  "completion_tokens": 151,
+  "reasoning_tokens": 140,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335960-oItwFneLfMfZRXMM1E4b",
+  "requested_at": "2026-10-19T14:20:47+00:00"
+}

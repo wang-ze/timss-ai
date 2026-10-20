@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 8/Mathematics/M042270",
+  "item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M042270"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The length of side of each of the small squares represents 1 cm. Draw an isosceles triangle with a base of 4 cm and a height of 5 cm.\n\n[Image: A square grid that has sides of 8 small squares by 8 small squares.]\n\nFigure, described in words:\nAn 8 by 8 grid of small squares with no numbers or labels.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "On the 8 by 8 grid, with each small square = 1 cm, draw a horizontal base of 4 cm (4 small squares long) along one grid line, for example from the point at column 2, row 6 to the point at column 6, row 6 (counting grid intersections from the bottom-left corner). Place the apex directly above the midpoint of the base, at 5 cm (5 small squares) above the base line, so the apex is at column 4, row 11 relative to the bottom-left corner. Then join the apex to each end of the base with straight lines. The result is an isosceles triangle whose two equal sides run from the apex down to the base endpoints, with base 4 cm and height 5 cm (the apex sits centered over the base)."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 536,
+  "completion_tokens": 241,
+  "reasoning_tokens": 0,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335950-6M8r5AF2vj28dS4S8FJ7",
+  "requested_at": "2026-10-19T14:20:44+00:00"
+}

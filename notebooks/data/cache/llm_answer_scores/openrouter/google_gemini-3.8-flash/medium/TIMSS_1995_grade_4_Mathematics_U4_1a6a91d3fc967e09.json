@@ -1,0 +1,46 @@
+{
+  "item_key": "TIMSS 1995/grade 4/Mathematics/U4",
+  "response": "Subtract 4",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the fourth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\nThese numbers are part of a pattern.\n\n50 , 46 , 42 , 38 , 34 , ...\n\nWhat do you have to do to get the next number?\n\nAnswer: ____\n\n# Scoring guide of the question (1 point)\n\n- Correct Response (1 point):\n  - “The number decreases by 4”.\n  - 30 OR 30,26,22,. . .\n  - Other correct.\n- Incorrect Response (0 points):\n  - Indicates an increase by 4.\n  - Focuses on the number 4. No indication of increase or decrease.\n  - Other incorrect, includes decreases by 4 that are wrong numbers in the pattern.\n\n# Response to the question\n\nSubtract 4\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response states 'Subtract 4', which correctly identifies the rule of the pattern to obtain the next number, equivalent to decreasing by 4.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": "**Analyzing Pattern Progression**\n\nI've been reviewing the scoring guide for pattern 50, specifically focusing on the criteria for a \"Correct Response.\" My current thinking centers on how to best articulate that the sequence's rule is to \"subtract 4.\" I'm aiming for clear and concise language that reflects the observed numerical decrease.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 461,
+  "completion_tokens": 184,
+  "reasoning_tokens": 136,
+  "cost_usd": 0.00103575,
+  "seconds": 2.312,
+  "batch_id": null,
+  "requested_at": "2026-10-19T18:36:27+00:00"
+}

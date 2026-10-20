@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2011/grade 8/Mathematics/M032721",
+  "item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M032721"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "high",
+  "system_prompt": "You are an eighth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: A graph of soft drink sales for cherry cola and lemon cola by year and number of cans in millions.]\n\nThe graph shows the sales of two types of soft drink over 4 years. If the sales trends continue for the next 10 years, determine the year in which the sales of Cherry Cola will be the same as the sales of Lemon Cola.\n\nFigure, described in words:\nA vertical bar graph titled \"Soft Drink Sales\".\nThe vertical axis is labeled \"Number of cans\\n(millions)\" with grid marks and horizontal lines at intervals of 10 from 0 to 60.\nThe horizontal axis is labeled \"Year\" with four years: 1998, 1999, 2000, 2001.\nA legend shows:\n- White box: Cherry Cola\n- Solid black box: Lemon Cola\n\nFor each year, there is a pair of adjacent bars (Cherry Cola on the left, Lemon Cola on the right):\n- 1998: Cherry Cola bar reaches 10; Lemon Cola bar reaches 40.\n- 1999: Cherry Cola bar reaches 20; Lemon Cola bar reaches 45.\n- 2000: Cherry Cola bar reaches 30; Lemon Cola bar reaches 50.\n- 2001: Cherry Cola bar reaches 40; Lemon Cola bar reaches 55.\n\nA. 2003\nB. 2004\nC. 2005\nD. 2006",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "B"
+  },
+  "llm_thinking": "**Calculating fruit trends**\n\nI want to determine the JSON answer with trends for cherry and lemon growth rates: cherry growing +10 a year and lemon +5 a year. The initial difference is 30, with an annual closure of 5. In 2001, the difference is down to 15, which means it'll take three years to equalize by 2004. I need to ensure I have only the schema set up correctly for this.",
+  "finish_reason": "stop",
+  "prompt_tokens": 493,
+  "completion_tokens": 70,
+  "reasoning_tokens": 56,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792430073-CNIt0K0bm0Bup4ZK3RvK",
+  "requested_at": "2026-10-19T17:54:46+00:00"
+}

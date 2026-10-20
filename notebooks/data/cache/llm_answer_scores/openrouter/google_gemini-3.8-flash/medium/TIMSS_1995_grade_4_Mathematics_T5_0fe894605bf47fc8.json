@@ -1,0 +1,46 @@
+{
+  "item_key": "TIMSS 1995/grade 4/Mathematics/T5",
+  "response": "Okay, here's how I would draw the unfolded shape. I would start with a rectangle to represent the whole piece of paper. Since it was folded in half, the cut-out shape will appear twice, mirrored across the fold line. \n\nI would draw two identical shapes, side-by-side, along the middle of the rectangle. The first shape will look exactly like the cut-out in the folded picture. So, starting on the left side of the rectangle, I'd draw a line that angles up and to the right. Then I'd make a little notch going inward (a short line segment going back down and to the left). Next, I'd draw a curved line that bulges outward to the right like a half-circle. Finally, I would draw a curved line back down to the left to meet the middle line of the rectangle. \n\nI would do the *exact* same shape on the right side of the middle line, so it's a mirror image of the first one. That way, when the paper is unfolded, it will look like the two shapes are connected across the fold line.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the fourth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\nCraig folded a piece of paper in half and cut out a shape.\n\n[Image: Folded paper with cut-out shape]\n\nDraw a picture to show what the cut-out shape will look like when it is opened up and flattened out.\n\nFigure, described in words:\nA vertical rectangular outline representing a piece of paper folded in half vertically. The vertical left edge is labeled with an arrow pointing to it and the word \"fold\". Along this folded edge, a cut-out profile is drawn: starting from a point on the left edge, a straight line segment angles up and right, turns back down and to the left to form a sharp inward notch, then curves outward to the right in a rounded semicircle, and finally curves back down and to the left to meet the folded edge at the bottom.\n\n# Scoring guide of the question (1 point)\n\n- Correct Response (1 point):\n  - The drawing of the cut-out shape corresponds to figure A.\n  - The drawing of the remaining piece of paper corresponds to figure B.\n  - Other correct.\n- Incorrect Response (0 points):\n  - Drawing corresponds to figure C.\n  - Drawing corresponds to figure D.\n  - Drawings correspond to figures E or F or G.\n  - Other incorrect.\n\nScoring notes: Note: See the examples above. The accuracy in drawing is not important, nor is the size of the figure.\n\n# Response to the question\n\nOkay, here's how I would draw the unfolded shape. I would start with a rectangle to represent the whole piece of paper. Since it was folded in half, the cut-out shape will appear twice, mirrored across the fold line. \n\nI would draw two identical shapes, side-by-side, along the middle of the rectangle. The first shape will look exactly like the cut-out in the folded picture. So, starting on the left side of the rectangle, I'd draw a line that angles up and to the right. Then I'd make a little notch going inward (a short line segment going back down and to the left). Next, I'd draw a curved line that bulges outward to the right like a half-circle. Finally, I would draw a curved line back down to the left to meet the middle line of the rectangle. \n\nI would do the *exact* same shape on the right side of the middle line, so it's a mirror image of the first one. That way, when the paper is unfolded, it will look like the two shapes are connected across the fold line.\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response correctly identifies that unfolding the paper creates a mirror image across the central fold line, forming a symmetric figure connected along the fold. Describing the paper with the cut-out mirrored across the center corresponds to an acceptable depiction of the unfolded shape (such as figure B in the scoring guide).",
+    "category": "Correct Response"
+  },
+  "llm_thinking": "**Analyzing Student Response**\n\nI am currently evaluating the student's drawing against the expected outcome for the paper-folding task. My focus is on how accurately the student depicted the symmetrical shape that emerges when the folded paper is opened.\n\n**Interpreting Student's Explanation**\n\nI'm scrutinizing the student's written explanation to gauge their understanding of the paper-folding cut-out. I'm checking if their description aligns with the principle of symmetry and the formation of mirrored shapes across the fold line.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 831,
+  "completion_tokens": 616,
+  "reasoning_tokens": 537,
+  "cost_usd": 0.00293325,
+  "seconds": 6.362,
+  "batch_id": null,
+  "requested_at": "2026-10-19T18:36:14+00:00"
+}

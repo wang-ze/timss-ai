@@ -1,0 +1,45 @@
+{
+  "unit_key": "TIMSS 2003/grade 8/Mathematics/M022251",
+  "item_keys": [
+    "TIMSS 2003/grade 8/Mathematics/M022251"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Graham has twice as many books as Bob. Chan has six more books than Bob. If Bob has x books, which of the following represents the total number of books the three boys have?\n\nA. 3x + 6\nB. 3x + 8\nC. 4x + 6\nD. 5x + 6\nE. 8x + 2",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "C"
+  },
+  "llm_thinking": "Letting Bob's score be x, Graham has 2x and Chan has x+6, so the total is 4x+6 — that matches answer C.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 529,
+  "completion_tokens": 62,
+  "reasoning_tokens": 51,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335960-oItwFneLfMfZRXMM1E4b",
+  "requested_at": "2026-10-19T14:20:47+00:00"
+}

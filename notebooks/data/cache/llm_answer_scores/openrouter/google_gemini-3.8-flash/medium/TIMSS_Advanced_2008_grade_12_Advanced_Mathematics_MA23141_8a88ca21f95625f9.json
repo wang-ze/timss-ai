@@ -1,0 +1,47 @@
+{
+  "item_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23141",
+  "response": "Work: The x-intercepts are x = -1 and x = 2, so f(x) = a(x + 1)(x - 2). The y-intercept (0, -4) gives f(0) = a(1)(-2) = -2a = -4, so a = 2. Then f(x) = 2(x + 1)(x - 2) = 2(x^2 - x - 2) = 2x^2 - 2x - 4. Comparing with f(x) = ax^2 + bx + c: a = 2, b = -2, c = -4. Check: f(-1) = 2 + 2 - 4 = 0, f(2) = 8 - 4 - 4 = 0, f(0) = -4. The vertex is at x = -b/(2a) = 2/4 = 1/2, with f(1/2) = 1/2 - 1 - 4 = -4.5, which lies in the fourth quadrant below (0, -4), matching the graph. Answer: a = 2, b = -2, c = -4.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\n[Image: Graph of a parabola f(x) on a Cartesian coordinate plane]\n\nThe graph of the function f is shown above. The equation of the function f is given by f(x) = ax^2 + bx + c. Find the values of a, b, and c.\n\nShow your work.\n\nFigure, described in words:\nA Cartesian coordinate system with a horizontal axis labeled x and a vertical axis labeled f(x). The origin is labeled O. The axes have evenly spaced tick marks representing 1 unit each. An upward-opening parabola is drawn on the plane. Three points on the parabola are marked with an '×' and labeled with coordinates: the x-intercepts (-1, 0) and (2, 0), and the y-intercept (0, -4). The vertex of the parabola is located in the fourth quadrant below (0, -4).\n\n# Scoring guide of the question (1 point)\n\n- Correct Response (1 point):\n  - All values correct: a = 2, b = -2, c = -4, or equivalently giving the full function\nMethod used: factorization\n  - All values correct: a = 2, b = -2, c = -4, or equivalently giving the full function\nMethod used: solving three simultaneous equations\n  - All values correct: a = 2, b = -2, c = -4, or equivalently giving the full function\nMethod used: solving three simultaneous equations by calculator\n  - All values correct: a = 2, b = -2, c = -4, or equivalently giving the full function\nMethod used: quadratic regression by calculator\n  - All values correct: a = 2, b = -2, c = -4, or equivalently giving the full function\nOther correct method used\n- Incorrect Response (0 points):\n  - Calculator used—answer incorrect or explanation inadequate (e.g., trial or error method)\n  - All values correct: a= 2, b = -2, c = -4, or equivalently giving the full function. No correct method shown.\n  - c = -4 with values of a and b either missing or incorrect.\n  - Other incorrect (including crossed out, erased, stray marks, illegible, or off task)\n- Nonresponse (0 points):\n  - Blank\n\n# Response to the question\n\nWork: The x-intercepts are x = -1 and x = 2, so f(x) = a(x + 1)(x - 2). The y-intercept (0, -4) gives f(0) = a(1)(-2) = -2a = -4, so a = 2. Then f(x) = 2(x + 1)(x - 2) = 2(x^2 - x - 2) = 2x^2 - 2x - 4. Comparing with f(x) = ax^2 + bx + c: a = 2, b = -2, c = -4. Check: f(-1) = 2 + 2 - 4 = 0, f(2) = 8 - 4 - 4 = 0, f(0) = -4. The vertex is at x = -b/(2a) = 2/4 = 1/2, with f(1/2) = 1/2 - 1 - 4 = -4.5, which lies in the fourth quadrant below (0, -4), matching the graph. Answer: a = 2, b = -2, c = -4.\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response",
+          "Nonresponse"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response correctly finds the values a = 2, b = -2, and c = -4 using the factorization method (intercept form of the quadratic function) and shows all supporting work.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 963,
+  "completion_tokens": 168,
+  "reasoning_tokens": 110,
+  "cost_usd": 0.00135225,
+  "seconds": 2.943,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:57:21+00:00"
+}

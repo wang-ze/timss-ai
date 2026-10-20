@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2007/grade 4/Mathematics/M041146",
+  "item_keys": [
+    "TIMSS 2007/grade 4/Mathematics/M041146"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Here are two sides of a rectangle. Draw the other two sides.\n\n[Image: Two sides of a rectangle drawn on a grid]\n\nFigure, described in words:\nA 10 by 10 grid of identical square units. Two line segments forming a 90° angle are drawn on the grid:\n- The corner vertex shared by both segments is at grid intersection (2, 5), counting from the bottom-left corner at (0, 0).\n- The shorter segment extends diagonally up and right across 2 squares, ending at grid intersection (4, 7).\n- The longer segment extends diagonally down and right across 4 squares, ending at grid intersection (6, 1).",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Two sides of the rectangle meet at the corner (2, 5). One side runs from (2, 5) to (4, 7), so its length in grid units is 2 across and 2 up, making it a square-sized diagonal side. The other side runs from (2, 5) to (6, 1). The opposite corners are (4, 7) and (6, 1). To complete the rectangle, I would draw the third side from (4, 7) to (8, 3), which is 4 units right and 4 units down, parallel to the segment from (2, 5) to (6, 1). Then I would draw the fourth side from (6, 1) to (8, 3), which is 2 units right and 2 units up, parallel to the segment from (2, 5) to (4, 7). Both new sides are the same length and direction as the given sides, so the figure is a rectangle with corners at (2, 5), (4, 7), (8, 3), and (6, 1)."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 663,
+  "completion_tokens": 301,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 1.977,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:15:36+00:00"
+}

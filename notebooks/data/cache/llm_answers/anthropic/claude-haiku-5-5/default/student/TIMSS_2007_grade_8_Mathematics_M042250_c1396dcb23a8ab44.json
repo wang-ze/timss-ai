@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2007/grade 8/Mathematics/M042250",
+  "item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M042250"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": null,
+  "system_prompt": "You are an eighth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: Bar graph showing the number of tickets sold]\n\nKate, Ron, Ruth, and Pete sold tickets for the school concert.\nThe graph shows the number of tickets each sold.\nTwo people together sold the same number of tickets as Kate sold.\nWho were they?\n\nAnswer: ____ and ____\n\nFigure, described in words:\nA horizontal bar graph with a horizontal axis labeled \"Number of Tickets\". The horizontal axis is marked from 0 to 60 with tick marks every 5 units and numbers at multiples of 10: 0, 10, 20, 30, 40, 50, 60. Four horizontal bars correspond to four people:\n- Kate: bar extends to 50 (shaded black)\n- Ron: bar extends to 30 (shaded light gray)\n- Ruth: bar extends to 20 (shaded medium gray)\n- Pete: bar extends to 40 (shaded dark gray)",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Ron and Pete"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 758,
+  "completion_tokens": 17,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 0.765,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:15:23+00:00"
+}

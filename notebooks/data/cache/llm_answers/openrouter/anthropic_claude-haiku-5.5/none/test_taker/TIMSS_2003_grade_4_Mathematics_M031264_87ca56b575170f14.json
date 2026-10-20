@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2003/grade 4/Mathematics/M031264",
+  "item_keys": [
+    "TIMSS 2003/grade 4/Mathematics/M031264"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "In a class of 30 students, 10 have black hair, 15 have blonde hair, and the rest have brown hair. Complete the graph below to show the number of students with brown hair.\n\n[Image: Incomplete bar graph titled \"Color of Hair\"]\n\nFigure, described in words:\nAn incomplete bar graph titled \"Color of Hair\". The vertical axis is labeled \"Number of Students\" with horizontal grid lines marked at intervals of 5 from 5 up to 25 (5, 10, 15, 20, 25). The horizontal axis is labeled \"Hair Color\" with three categories: \"Black\", \"Blonde\", and \"Brown\". A black bar is drawn above \"Black\" reaching 10, a shaded gray bar is drawn above \"Blonde\" reaching 15, and the space above \"Brown\" is left blank for the student to draw a bar.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Brown hair students = 30 - 10 - 15 = 5. Draw a bar above the \"Brown\" category on the graph reaching exactly the 5 mark on the vertical \"Number of Students\" axis (the first grid line above 0), so the brown bar is the same height as the 5 gridline and is filled in like the other bars."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 701,
+  "completion_tokens": 117,
+  "reasoning_tokens": 0,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335952-nomWk8Tj0yh7J6h3dipX",
+  "requested_at": "2026-10-19T14:20:45+00:00"
+}

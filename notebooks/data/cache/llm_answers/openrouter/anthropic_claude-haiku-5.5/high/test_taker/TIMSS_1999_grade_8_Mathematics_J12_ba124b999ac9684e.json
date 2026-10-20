@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 1999/grade 8/Mathematics/J12",
+  "item_keys": [
+    "TIMSS 1999/grade 8/Mathematics/J12"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Divide: 6/55 ÷ 3/25 =\n\nAnswer: ____",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "10/11. Work: 6/55 ÷ 3/25 = 6/55 × 25/3 = 150/165 = 10/11"
+  },
+  "llm_thinking": "Dividing 6/55 by 3/25 gives 6/55 × 25/3 = 150/165, which simplifies to 10/11. I'll format the answer as a single-line JSON output.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 452,
+  "completion_tokens": 103,
+  "reasoning_tokens": 49,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335958-MhJCSqWm7WbRuqTiOnF6",
+  "requested_at": "2026-10-19T14:20:45+00:00"
+}

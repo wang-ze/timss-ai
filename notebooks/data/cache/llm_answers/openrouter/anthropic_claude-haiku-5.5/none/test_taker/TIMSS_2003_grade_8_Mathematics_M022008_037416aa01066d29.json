@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2003/grade 8/Mathematics/M022008",
+  "item_keys": [
+    "TIMSS 2003/grade 8/Mathematics/M022008"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The numbers in the sequence 7, 11, 15, 19, 23, ... increase by four. The numbers in the sequence 1, 10, 19, 28, 37, ... increase by nine. The number 19 is in both sequences. If the two sequences are continued, what is the next number that is in BOTH the first and the second sequences?\n\nAnswer: ____",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Sequence 1: 7 + 4k, i.e., numbers congruent to 3 (mod 4). Sequence 2: 1 + 9m, i.e., numbers congruent to 1 (mod 9). Common terms satisfy x ≡ 19 (mod 36), since lcm(4,9) = 36 and 19 is in both. The next common number after 19 is 19 + 36 = 55. Check: 55 = 7 + 4·12 (yes, 7+48=55) and 55 = 1 + 9·6 (yes, 1+54=55). Answer: 55"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 538,
+  "completion_tokens": 200,
+  "reasoning_tokens": 0,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335955-kMI4NOha6WfxkHChhFXZ",
+  "requested_at": "2026-10-19T14:20:46+00:00"
+}

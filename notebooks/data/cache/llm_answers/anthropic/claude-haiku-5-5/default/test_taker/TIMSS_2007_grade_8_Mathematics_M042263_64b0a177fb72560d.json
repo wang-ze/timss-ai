@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2007/grade 8/Mathematics/M042263",
+  "item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M042263"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Joe knows that a pen costs 1 zed more than a pencil.\nHis friend bought 2 pens and 3 pencils for 17 zeds.\nHow many zeds will Joe need to buy 1 pen and 2 pencils?\n\nShow your work.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Let p be the cost of a pencil in zeds. Then a pen costs p + 1 zeds. The friend bought 2 pens and 3 pencils for 17 zeds, so 2(p + 1) + 3p = 17. Expanding gives 2p + 2 + 3p = 17, so 5p + 2 = 17, so 5p = 15, so p = 3. A pencil costs 3 zeds and a pen costs 3 + 1 = 4 zeds. Check: 2 pens + 3 pencils = 8 + 9 = 17 zeds. Cost of 1 pen and 2 pencils = 4 + 2 × 3 = 4 + 6 = 10. Joe will need 10 zeds."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 508,
+  "completion_tokens": 347,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 2.078,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:22:47+00:00"
+}

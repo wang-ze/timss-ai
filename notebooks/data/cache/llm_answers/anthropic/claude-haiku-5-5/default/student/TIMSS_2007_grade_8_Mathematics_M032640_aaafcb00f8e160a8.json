@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2007/grade 8/Mathematics/M032640",
+  "item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M032640"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": null,
+  "system_prompt": "You are an eighth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: Row of 4 squares made of matches]\n\nIn the figure, 13 matches were used to make 4 squares in a row. What is the number of squares in a row that can be made in this way using 73 matches? Show the calculations that lead to your answer.\n\nAnswer: ____\n\nFigure, described in words:\nFour squares connected in a single horizontal row, sharing common vertical sides, constructed from 13 matchsticks: 4 horizontal matchsticks along the top (heads pointing right), 4 horizontal matchsticks along the bottom (heads pointing left), and 5 vertical matchsticks dividing and enclosing the squares (heads pointing up).",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Each square added to the row needs 3 more matches (1 top, 1 bottom, 1 vertical side), and the row starts with 1 extra vertical match on the left end. So the number of matches for n squares is 3n + 1. Check with 4 squares: 3(4) + 1 = 13, which matches the figure. Set 3n + 1 = 73, so 3n = 72, and n = 24. Answer: 24 squares in a row."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 664,
+  "completion_tokens": 246,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 2.335,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:15:17+00:00"
+}

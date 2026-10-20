@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 1995/grade 4/Mathematics/S5",
+  "item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/S5"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Here is a paper clip. [Image: Paper clip]\n\nAbout how many lengths of the paper clip is the same as the length of this line?\n\n[Image: Horizontal line]\n\nAnswer: ____\n\nFigure, described in words:\nAt the top right, a drawing of a horizontal paper clip with a label beneath it showing a left arrow, the word 'Length', and a right arrow (← Length →). Below the question is a thick horizontal black line segment whose length is approximately 4.75 times the length of the paper clip.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "About 5 lengths of the paper clip (the line is about 4.75 paper clip lengths long, which rounds to 5)."
+  },
+  "llm_thinking": "This looks like the classic TIMSS paper clip measurement item, where the line is roughly 4.75 times the clip's length, so the expected answer rounds to about 5.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 588,
+  "completion_tokens": 227,
+  "reasoning_tokens": 177,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335957-QKbCVbAXn76L3I0C7O9z",
+  "requested_at": "2026-10-19T14:20:44+00:00"
+}

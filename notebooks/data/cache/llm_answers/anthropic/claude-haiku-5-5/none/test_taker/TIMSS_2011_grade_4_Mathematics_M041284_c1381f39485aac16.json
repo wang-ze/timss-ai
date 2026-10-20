@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 4/Mathematics/M041284",
+  "item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M041284"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: various shapes labeled A, B, C, D, E, and F overlaying on grid. A is a square; B is an irregular rectangle; C is a rectangle; D is cross shape; E is a trapezoid; F is a diamond shape.]\n\nSean used the table to sort these shapes.\nPut the letter of each shape in the space where it belongs.\nShape A has been done for you.\n\n| | Has 4 Sides | Does Not Have 4 Sides |\n| :--- | :--- | :--- |\n| All sides are the same length | A | |\n| All sides are NOT the same length | | |\n\nFigure, described in words:\nA square grid containing six outlined shapes labeled A through F:\n- Shape A: A square measuring 3 units by 3 units.\n- Shape B: An irregular stepped polygon with horizontal and vertical edges of varying lengths (not 4 sides, sides of different lengths).\n- Shape C: A vertical rectangle measuring 2 units wide and 5 units tall.\n- Shape D: A symmetrical 12-sided cross (plus sign) shape composed of five 2-by-2 square sections; every side is 2 units long.\n- Shape E: An isosceles trapezoid with a horizontal top base of 4 units, a horizontal bottom base of 6 units, and a height of 4 units.\n- Shape F: A square oriented as a rhombus/diamond with horizontal and vertical diagonals measuring 4 units; all 4 sides are of equal length.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Top-left cell (All sides same length, Has 4 sides): A (given). Top-right cell (All sides same length, Does not have 4 sides): D. Bottom-left cell (All sides NOT same length, Has 4 sides): B, C, E. Bottom-right cell (All sides NOT same length, Does not have 4 sides): none, so leave it empty. Note: F is a square-like rhombus with 4 equal sides, so it goes in the top-left cell with A: top-left cell contains A and F. Final placement: Top-left: A, F. Top-right: D. Bottom-left: B, C, E. Bottom-right: empty."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 914,
+  "completion_tokens": 218,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 1.642,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:21:21+00:00"
+}

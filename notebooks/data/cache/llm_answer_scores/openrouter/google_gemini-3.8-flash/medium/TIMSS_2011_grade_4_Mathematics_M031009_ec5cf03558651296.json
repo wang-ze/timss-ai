@@ -1,0 +1,46 @@
+{
+  "item_key": "TIMSS 2011/grade 4/Mathematics/M031009",
+  "response": "Half of 12 letters is 6 letters. 6 letters with 1 page each = 6 pages. 6 letters with 2 pages each = 12 pages. Total = 6 + 12 = 18 pages. Answer: 18",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the fourth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\nGeorgia wants to send letters to 12 of her friends. Half of the letters will need 1 page each and the other half will need 2 pages each. How many pages will be needed altogether?\n\nAnswer: ____\n\n# Scoring guide of the question (1 point)\n\n- Correct Response (1 point):\n  - 18\n- Incorrect Response (0 points):\n  - 24\n  - 36\n  - Other incorrect (including crossed out, erased, stray marks, illegible, or off task)\n\n# Response to the question\n\nHalf of 12 letters is 6 letters. 6 letters with 1 page each = 6 pages. 6 letters with 2 pages each = 12 pages. Total = 6 + 12 = 18 pages. Answer: 18\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response shows full, correct work calculating that half of the letters is 6, giving 6 pages for the single-page letters and 12 pages for the two-page letters, for a correct total of 18 pages.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": "**Calculating Total Pages**\n\nI'm focusing on determining the total number of pages required for Georgia's letters. This involves calculating the pages for the first half of her friends and then adding the pages for the second half to reach the final sum.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 472,
+  "completion_tokens": 251,
+  "reasoning_tokens": 183,
+  "cost_usd": 0.00129525,
+  "seconds": 3.907,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:53:06+00:00"
+}

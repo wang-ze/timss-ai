@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 8/Mathematics/M032683",
+  "item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M032683"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Simplify the expression 3x/8 + x/4 + x/2. Show your work.\n\nAnswer: ____",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Here's how to simplify the expression 3x/8 + x/4 + x/2: \n\n1. **Find a common denominator:** The least common denominator for 8, 4, and 2 is 8.\n\n2. **Rewrite the fractions with the common denominator:**\n   *  3x/8  (already has the common denominator)\n   *  x/4 = (x * 2) / (4 * 2) = 2x/8\n   *  x/2 = (x * 4) / (2 * 4) = 4x/8\n\n3. **Combine the fractions:**\n   3x/8 + 2x/8 + 4x/8 = (3x + 2x + 4x) / 8\n\n4. **Simplify the numerator:**\n   3x + 2x + 4x = 9x\n\n5. **Final simplified expression:**\n   9x/8\n\nAnswer: 9x/8"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 156,
+  "completion_tokens": 251,
+  "reasoning_tokens": 0,
+  "cost_usd": 6.8175e-05,
+  "seconds": 3.281,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:07:17+00:00"
+}

@@ -39,7 +39,7 @@ import openai
 import requests
 from fastembed import TextEmbedding
 
-from .config import api_key, data_dir, slug
+from ..config import api_key, data_dir, slug
 
 log = logging.getLogger(__name__)
 

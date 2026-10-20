@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 4/Mathematics/M031183",
+  "item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M031183"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "| Ingredients | |\n| --- | --- |\n| Eggs | 4 |\n| Flour | 8 cups |\n| Milk | 1/2 cup |\n\nThe above ingredients are used to make a recipe for 6 people. Sam wants to make this recipe for only 3 people.\n\nComplete the table below to show what Sam needs to make the recipe for 3 people. The number of eggs he needs is shown.\n\n| Ingredients | |\n| --- | --- |\n| Eggs | 2 |\n| Flour | ____ cups |\n| Milk | ____ cup |",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "}The table should be completed as follows: 4/1.  Flour: 4 cups. Milk: 1/4 cup."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 253,
+  "completion_tokens": 35,
+  "reasoning_tokens": 0,
+  "cost_usd": 1.79e-05,
+  "seconds": 1.069,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:07:13+00:00"
+}

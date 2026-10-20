@@ -1,0 +1,45 @@
+{
+  "unit_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K2",
+  "item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K2"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are a twelfth-grade student in the final year of secondary school who has taken advanced mathematics courses, taking the TIMSS Advanced mathematics test for students like you. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "In how many ways can one arrange on a bookshelf 5 thick books, 4 medium sized books and 3 thin books so that the books of the same size remain together?\n\nA. 5! 4! 3! 3! = 103 680\nB. 5! 4! 3! = 17 280\nC. (5! 4! 3!) × 3 = 51 840\nD. 5 × 4 × 3 × 3 = 180\nE. 2^12 × 3 = 12 288",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "B"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 307,
+  "completion_tokens": 12,
+  "reasoning_tokens": 0,
+  "cost_usd": 2.5725e-05,
+  "seconds": 3.41,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:23:17+00:00"
+}

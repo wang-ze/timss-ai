@@ -1,0 +1,51 @@
+{
+  "batch_id": "batch-1792266970-hqeT7ka2dspvdxC3H4je",
+  "model": "google/gemini-3.8-flash",
+  "submitted_at": "2026-10-17T19:56:09+00:00",
+  "collected_at": "2026-10-19T14:20:48+00:00",
+  "status": "completed",
+  "finalized_at": 1792345994,
+  "request_counts": {
+    "total": 7,
+    "completed": 7,
+    "failed": 0
+  },
+  "usage": {
+    "prompt_tokens": 6310,
+    "completion_tokens": 1028,
+    "total_tokens": 7338,
+    "cost": 0.00429375,
+    "is_byok": false
+  },
+  "error": null,
+  "requests": {
+    "50a2d0b40baff42d": {
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M042198A",
+      "outcome": "saved"
+    },
+    "12bd236c85a6406a": {
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M042198B",
+      "outcome": "saved"
+    },
+    "5c3a5996b578144f": {
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M042198C",
+      "outcome": "saved"
+    },
+    "7bc85b045dae62b8": {
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M031346A",
+      "outcome": "not saved: the request has changed since it was submitted"
+    },
+    "61159b50dfac0dac": {
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M031346B",
+      "outcome": "not saved: the request has changed since it was submitted"
+    },
+    "23eee0b8df2c4a0b": {
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M031379",
+      "outcome": "not saved: the request has changed since it was submitted"
+    },
+    "a05e7ae331a142d2": {
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M031380",
+      "outcome": "not saved: the request has changed since it was submitted"
+    }
+  }
+}

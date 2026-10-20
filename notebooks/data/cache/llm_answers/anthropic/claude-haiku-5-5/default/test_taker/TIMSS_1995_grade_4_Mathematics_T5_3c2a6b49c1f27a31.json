@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 1995/grade 4/Mathematics/T5",
+  "item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/T5"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Craig folded a piece of paper in half and cut out a shape.\n\n[Image: Folded paper with cut-out shape]\n\nDraw a picture to show what the cut-out shape will look like when it is opened up and flattened out.\n\nFigure, described in words:\nA vertical rectangular outline representing a piece of paper folded in half vertically. The vertical left edge is labeled with an arrow pointing to it and the word \"fold\". Along this folded edge, a cut-out profile is drawn: starting from a point on the left edge, a straight line segment angles up and right, turns back down and to the left to form a sharp inward notch, then curves outward to the right in a rounded semicircle, and finally curves back down and to the left to meet the folded edge at the bottom.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Draw a vertical dashed line down the middle of the page for the fold. The opened shape is a mirror image of the cut-out across this fold line, so draw the cut-out profile on the right side of the line and its reflection on the left side. The outline is closed and symmetric about the fold line. Starting at the top point on the fold line, draw a straight segment angling up and out to the right, then a segment coming back down and in to a sharp notch pointing toward the fold line. From the notch, draw a rounded semicircle bulging outward to the right, and curve back in to the fold line at the bottom point. Mirror all of this on the left side of the fold line. The result is a symmetric shape with a semicircular bulge on each side of the fold line, sharp inward notches, and pointed top and bottom points on the fold line."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 666,
+  "completion_tokens": 1191,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 6.799,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:21:45+00:00"
+}

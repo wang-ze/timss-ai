@@ -1,0 +1,46 @@
+{
+  "item_key": "TIMSS 2011/grade 8/Mathematics/M032681C",
+  "response": "Between 1 p.m. and 2 p.m. (The solid line is steepest in this hour, rising from 200 cars to 350 cars, an increase of 150 cars.)",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the eighth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Questions\n\nThese 3 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\n[Image: A graph of car production with time on the x-axis and total number of cars produced on the y-axis. Time starts at 8 a.m. and goes to 4 p.m. in one hour increments. Total number of cars produced goes from 0 to 400 in intervals of 50. A straight dotted line is drawn on the graph, going from the origin at 0 cars at 8 a.m., to the top right of the graph, at 4:00p.m. and 400 cars. A solid line is shown starting at the origin and going above the dotted line after 8:00a.m. and before 11:30 a.m. The solid line then goes below the dotted line from 11:30 a.m. to 1:30 p.m. It again goes above the dotted line from 1:30 p.m. to 4:00 p.m. and ends at 400 cars at 4:00 p.m. At 150 total cars produced, the solid line is at 10a.m. and the dotted line is at 11:00a.m.]\n\nThe solid line (——) on the graph shows car production by the NU Car Motor Company during a particular day.\n\nThe dotted line (-----) shows what the total number of cars produced would be if the rate of production were constant.\n\nA. By what time had a total of 150 cars been produced?\n\nAnswer: ____\n\nFigure, described in words:\nA line graph titled \"Car Production\". The horizontal axis is labeled \"Time\" with marked points for 8 am, 9 am, 10 am, 11 am, 12 noon, 1 pm, 2 pm, 3 pm, and 4 pm. The vertical axis is labeled \"Total Number of Cars Produced\" with grid marks from 0 to 400 in increments of 50. A dashed line segment runs directly from (8 am, 0) to (4 pm, 400). A solid line connects the points (8 am, 0), (9 am, 100), (10 am, 150), (1 pm, 200), (2 pm, 350), and (4 pm, 400).\n\n## Question 2\n\n[Image: A graph of car production with time on the x-axis and total number of cars produced on the y-axis. Time goes from 8 a.m. to 4 p.m. in one hour increments. Total number of cars produced goes from 0 to 400 in intervals of 50. A straight dotted line is drawn on the graph, going from the origin at 0 cars at 8 a.m., to the top right of the graph, at 4:00p.m. and 400 cars. A solid line is shown starting at the origin and going above the dotted line after 8:00a.m. and before 11:30 a.m. The solid line then goes below the dotted line from 11:30 a.m. to 1:30 p.m. It again goes above the dotted line from 1:30 p.m. to 4:00 p.m. and ends at 400 cars at 4:00 p.m.]\n\nThe solid line (——) on the graph shows car production by the NU Car Motor Company during a particular day.\n\nThe dotted line (-----) shows what the total number of cars produced would be if the rate of production were constant.\n\nB. What was the average number of cars produced per hour on this day?\n\nAnswer: ____\n\nFigure, described in words:\nA line graph titled \"Car Production\". The horizontal axis is labeled \"Time\" with marked points for 8 am, 9 am, 10 am, 11 am, 12 noon, 1 pm, 2 pm, 3 pm, and 4 pm. The vertical axis is labeled \"Total Number of Cars Produced\" with grid marks from 0 to 400 in increments of 50. A dashed line segment runs directly from (8 am, 0) to (4 pm, 400). A solid line connects the points (8 am, 0), (9 am, 100), (10 am, 150), (1 pm, 200), (2 pm, 350), and (4 pm, 400).\n\n## Question 3\n\n[Image: A graph of car production with time on the x-axis and total number of cars produced on the y-axis. Time goes from 8 a.m. to 4 p.m. in one hour increments. Total number of cars produced goes from 0 to 400 in intervals of 50. A straight dotted line is drawn on the graph, going from the origin at 0 cars at 8 a.m., to the top right of the graph, at 4:00p.m. and 400 cars. A solid line is shown starting at the origin and going above the dotted line after 8:00a.m. and before 11:30 a.m. The solid line then goes below the dotted line from 11:30 a.m. to 1:30 p.m. It again goes above the dotted line from 1:30 p.m. to 4:00 p.m. and ends at 400 cars at 4:00 p.m. The straight line is steepest between 1 p.m and 2 p.m. and shows an increase of 150 cars during this hour.]\n\nThe solid line (——) on the graph shows car production by the NU Car Motor Company during a particular day.\n\nThe dotted line (-----) shows what the total number of cars produced would be if the rate of production were constant.\n\nC. During which hour were the most cars produced?\n\nBetween ____ and ____\n\nFigure, described in words:\nA line graph titled \"Car Production\". The horizontal axis is labeled \"Time\" with marked points for 8 am, 9 am, 10 am, 11 am, 12 noon, 1 pm, 2 pm, 3 pm, and 4 pm. The vertical axis is labeled \"Total Number of Cars Produced\" with grid marks from 0 to 400 in increments of 50. A dashed line segment runs directly from (8 am, 0) to (4 pm, 400). A solid line connects the points (8 am, 0), (9 am, 100), (10 am, 150), (1 pm, 200), (2 pm, 350), and (4 pm, 400).\n\n# Scoring guide of question 3 (1 point)\n\n- Correct Response (1 point):\n  - 1 p.m. and 2 p.m.\n- Incorrect Response (0 points):\n  - Incorrect (including crossed out, erased, stray marks, illegible, or off task)\n\n# Response to question 3\n\nBetween 1 p.m. and 2 p.m. (The solid line is steepest in this hour, rising from 200 cars to 350 cars, an increase of 150 cars.)\n\nScore the response to question 3.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response correctly identifies the time interval between 1 p.m. and 2 p.m., which is the correct response specified by the scoring guide.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 1842,
+  "completion_tokens": 104,
+  "reasoning_tokens": 53,
+  "cost_usd": 0.0017715,
+  "seconds": 13.961,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:51:43+00:00"
+}

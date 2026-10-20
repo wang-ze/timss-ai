@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 1999/grade 8/Mathematics/F08",
+  "item_keys": [
+    "TIMSS 1999/grade 8/Mathematics/F08"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "minimal",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "If a fair coin is tossed, the probability that it will land heads up is 1/2. In four successive tosses, a fair coin lands heads up each time.\nWhat is likely to happen when the coin is tossed a fifth time?\n\nA. It is more likely to land tails up than heads up.\nB. It is more likely to land heads up than tails up.\nC. It is equally likely to land heads up or tails up.\nD. More information is needed to answer the question.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "C"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 315,
+  "completion_tokens": 66,
+  "reasoning_tokens": 60,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792336146-0fp9WI6rMEhacYonHVMD",
+  "requested_at": "2026-10-19T14:20:44+00:00"
+}

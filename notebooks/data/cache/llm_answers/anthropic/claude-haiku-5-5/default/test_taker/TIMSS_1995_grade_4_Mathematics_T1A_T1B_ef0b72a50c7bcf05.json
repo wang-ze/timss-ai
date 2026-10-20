@@ -1,0 +1,46 @@
+{
+  "unit_key": "TIMSS 1995/grade 4/Mathematics/T1A+T1B",
+  "item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/T1A",
+    "TIMSS 1995/grade 4/Mathematics/T1B"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "These 2 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nThe graph shows the number of cartons of milk sold each day of a week at a school.\n\n[Image: Bar graph]\n\nHow many cartons of milk did the school sell on Monday?\n\nAnswer: ____\n\nFigure, described in words:\nA vertical bar graph with the vertical axis labeled \"Number Sold\" with major grid lines and labels at 10, 20, 30, and 40. The horizontal axis is labeled \"Day\" with five days labeled: \"Mon.\", \"Tues.\", \"Wed.\", \"Thurs.\", \"Fri.\". All bars are shaded grey. The bar heights are:\n- Mon.: halfway between 20 and 30 (height 25)\n- Tues.: level with 20\n- Wed.: level with 30\n- Thurs.: halfway between 10 and 20 (height 15)\n- Fri.: halfway between 30 and 40 (height 35)\n\n## Question 2\n\nThe graph shows the number of cartons of milk sold each day of a week at a school.\n\n[Image: Bar graph]\n\nHow many cartons of milk did the school sell that week?\nShow your work.\n\nAnswer: ____\n\nFigure, described in words:\nA vertical bar graph with the vertical axis labeled \"Number Sold\" with major grid lines and labels at 10, 20, 30, and 40. The horizontal axis is labeled \"Day\" with five days labeled: \"Mon.\", \"Tues.\", \"Wed.\", \"Thurs.\", \"Fri.\". All bars are shaded grey. The bar heights are:\n- Mon.: halfway between 20 and 30 (height 25)\n- Tues.: level with 20\n- Wed.: level with 30\n- Thurs.: halfway between 10 and 20 (height 15)\n- Fri.: halfway between 30 and 40 (height 35)\n\nAnswer each of the 2 questions.",
+  "output_schema": {
+    "properties": {
+      "answer_1": {
+        "description": "Your answer to question 1, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 1",
+        "type": "string"
+      },
+      "answer_2": {
+        "description": "Your answer to question 2, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 2",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer_1",
+      "answer_2"
+    ],
+    "title": "Answers",
+    "type": "object"
+  },
+  "output": {
+    "answer_1": "25",
+    "answer_2": "Work: Mon 25 + Tues 20 + Wed 30 + Thurs 15 + Fri 35. 25 + 20 = 45; 45 + 30 = 75; 75 + 15 = 90; 90 + 35 = 125. Answer: 125 cartons of milk."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 1139,
+  "completion_tokens": 116,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 1.763,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:21:46+00:00"
+}

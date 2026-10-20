@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23141",
+  "item_keys": [
+    "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23141"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are a twelfth-grade student in the final year of secondary school who has taken advanced mathematics courses, taking the TIMSS Advanced mathematics test for students like you. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: Graph of a parabola f(x) on a Cartesian coordinate plane]\n\nThe graph of the function f is shown above. The equation of the function f is given by f(x) = ax^2 + bx + c. Find the values of a, b, and c.\n\nShow your work.\n\nFigure, described in words:\nA Cartesian coordinate system with a horizontal axis labeled x and a vertical axis labeled f(x). The origin is labeled O. The axes have evenly spaced tick marks representing 1 unit each. An upward-opening parabola is drawn on the plane. Three points on the parabola are marked with an '×' and labeled with coordinates: the x-intercepts (-1, 0) and (2, 0), and the y-intercept (0, -4). The vertex of the parabola is located in the fourth quadrant below (0, -4).",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Since we are given three points on the parabola, we can use them to create a system of three equations with three unknowns (a, b, and c). The equation of the function is f(x) = ax^2 + bx + c.  The points are (-1, 0), (2, 0), and (0, -4).  We can plug these points into the equation to generate our system of equations.\n\n1.  Using (-1, 0):  f(-1) = a(-1)^2 + b(-1) + c = 0  =>  a - b + c = 0\n2.  Using (2, 0):  f(2) = a(2)^2 + b(2) + c = 0  =>  4a + 2b + c = 0\n3.  Using (0, -4): f(0) = a(0)^2 + b(0) + c = -4 => c = -4\n\nNow we can substitute c = -4 into the first two equations:\n\n1. a - b - 4 = 0  => a - b = 4\n2. 4a + 2b - 4 = 0 => 4a + 2b = 4 => 2a + b = 2\n\nNow we have a system of two equations with two unknowns:\n\n1. a - b = 4\n2. 2a + b = 2\n\nAdding the two equations eliminates b:\n\n(a - b) + (2a + b) = 4 + 2\n3a = 6\na = 2\n\nNow substitute a = 2 into a - b = 4:\n\n2 - b = 4\nb = 2 - 4\nb = -2\n\nSo, we have a = 2, b = -2, and c = -4.  Therefore, the equation of the parabola is f(x) = 2x^2 - 2x - 4.\n\nFinal Answer: The final answer is $\boxed{a=2, b=-2, c=-4}$"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 353,
+  "completion_tokens": 501,
+  "reasoning_tokens": 0,
+  "cost_usd": 0.0001392,
+  "seconds": 40.953,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:22:23+00:00"
+}

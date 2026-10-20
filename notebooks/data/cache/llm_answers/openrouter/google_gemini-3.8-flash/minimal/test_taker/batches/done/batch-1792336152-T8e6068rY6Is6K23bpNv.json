@@ -1,0 +1,27 @@
+{
+  "batch_id": "batch-1792336152-T8e6068rY6Is6K23bpNv",
+  "model": "google/gemini-3.8-flash",
+  "submitted_at": "2026-10-18T15:09:11+00:00",
+  "collected_at": "2026-10-19T14:20:47+00:00",
+  "status": "completed",
+  "finalized_at": 1792348398,
+  "request_counts": {
+    "total": 1,
+    "completed": 1,
+    "failed": 0
+  },
+  "usage": {
+    "prompt_tokens": 1263,
+    "completion_tokens": 371,
+    "total_tokens": 1634,
+    "cost": 0.00116925,
+    "is_byok": false
+  },
+  "error": null,
+  "requests": {
+    "aad88938f072b475": {
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M031346A+M031346B+M031346C+M031379+M031380",
+      "outcome": "saved"
+    }
+  }
+}

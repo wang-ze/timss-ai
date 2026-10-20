@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 4/Mathematics/M051001",
+  "item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M051001"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "In a soccer tournament, teams get:\n\n3 points for a win\n1 point for a tie\n0 points for a loss\n\nZedland has 11 points.\n\nWhat is the smallest number of games Zedland could have played?\n\nAnswer: ____",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "4. Each game gives at most 3 points, so 3 games give at most 9 points, which is less than 11, so at least 4 games are needed. Four games can give 11 points: 3 wins + 1 tie = 9 + 1 = 10 is not enough, but 3 wins + 1 win = 4 wins gives 12 and 2 wins + 2 ties = 6 + 2 = 8 is not enough, so check 3 wins + 1 tie = 10 (not 11); 3 wins + 2 ties would need 5 games. With 4 games, the possible totals are 0, 1, 2, 3, ..., 12 from combinations of wins (3), ties (1), and losses (0): 4 wins gives 12, 3 wins + 1 loss gives 9, 3 wins + 1 tie gives 10, 2 wins + 2 ties gives 8. Eleven is not reachable with 4 games, so at least 5 games are needed. Five games: 3 wins + 2 ties = 9 + 2 = 11. Answer: 5."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 497,
+  "completion_tokens": 351,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 2.707,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:22:03+00:00"
+}

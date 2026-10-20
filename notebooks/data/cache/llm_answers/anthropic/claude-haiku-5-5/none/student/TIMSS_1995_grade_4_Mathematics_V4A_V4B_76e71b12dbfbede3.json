@@ -1,0 +1,46 @@
+{
+  "unit_key": "TIMSS 1995/grade 4/Mathematics/V4A+V4B",
+  "item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/V4A",
+    "TIMSS 1995/grade 4/Mathematics/V4B"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "These 2 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nIn a game, Mysong and Naoki are making problems. They each have four cards like these.\n\n[1] [2] [3] [4]\n\nThe winner of the game is the person who can make the problem with the largest answer.\n\nMysong placed the cards like this.\n\n[Image: Mysong's card placement]\n\nNaoki placed the cards like this.\n\n[Image: Naoki's card placement]\n\nWho won this game? ____\nHow do you know? ____\n____\n\nFigure, described in words:\nFour square cards are shown in a row labeled with the digits 1, 2, 3, and 4.\nBelow are two vertical addition problems:\nUnder the heading \"Mysong placed the cards like this.\", two rows of two square cards form a vertical addition problem: top row has cards [4] and [3]; bottom row has cards [2] and [1], with a plus sign '+' to the left of the bottom row and a horizontal addition line underneath.\nUnder the heading \"Naoki placed the cards like this.\", two rows of two square cards form a vertical addition problem: top row has cards [3] and [1]; bottom row has cards [2] and [4], with a plus sign '+' to the left of the bottom row and a horizontal addition line underneath.\n\n## Question 2\n\nIn a game, Mysong and Naoki are making problems. They each have four cards like these.\n\n[1] [2] [3] [4]\n\nThe winner of the game is the person who can make the problem with the largest answer.\n\nMysong placed the cards like this.\n\n[Image: Mysong's card placement]\n\nNaoki placed the cards like this.\n\n[Image: Naoki's card placement]\n\nWrite numbers in the squares below to show how you would place the cards to beat both Mysong and Naoki.\n\n[Image: Blank addition grid]\n\nFigure, described in words:\nFour square cards are shown in a row labeled with the digits 1, 2, 3, and 4.\nBelow are two vertical addition problems:\nUnder the heading \"Mysong placed the cards like this.\", two rows of two square cards form a vertical addition problem: top row has cards [4] and [3]; bottom row has cards [2] and [1], with a plus sign '+' to the left of the bottom row and a horizontal addition line underneath.\nUnder the heading \"Naoki placed the cards like this.\", two rows of two square cards form a vertical addition problem: top row has cards [3] and [1]; bottom row has cards [2] and [4], with a plus sign '+' to the left of the bottom row and a horizontal addition line underneath.\nAt the bottom of the item is an empty addition grid consisting of four blank squares arranged in two rows of two, with a plus sign '+' to the left of the bottom row and a horizontal addition line underneath.\n\nAnswer each of the 2 questions.",
+  "output_schema": {
+    "properties": {
+      "answer_1": {
+        "description": "Your answer to question 1, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 1",
+        "type": "string"
+      },
+      "answer_2": {
+        "description": "Your answer to question 2, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 2",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer_1",
+      "answer_2"
+    ],
+    "title": "Answers",
+    "type": "object"
+  },
+  "output": {
+    "answer_1": "Mysong won the game. Mysong's problem is 43 + 21 = 64. Naoki's problem is 31 + 24 = 55. Since 64 is larger than 55, Mysong has the largest answer, so Mysong won.",
+    "answer_2": "I would place the cards so the tens digits are 4 and 3 in the top row and 2 in the bottom row, with the largest possible answer: top row 4 and 3, bottom row 1 and 2 would be 43 + 12 = 55, which is not enough, so instead I would use top row 4 and 3, bottom row 2 and 1 is Mysong's. The best choice is top row 4 and 3 with bottom row 2 and 1 rearranged as top row 43 and bottom row 21 gives 64, so to beat both I would write the tens digits as 4 in the top-left square and 3 in the bottom-left square, and the ones digits as 2 in the top-right square and 1 in the bottom-right square, giving 42 + 31 = 73, which is larger than 64 and 55. In the grid, I would write 4 in the top-left square, 2 in the top-right square, 3 in the bottom-left square, and 1 in the bottom-right square."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 1454,
+  "completion_tokens": 402,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 2.22,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:15:01+00:00"
+}

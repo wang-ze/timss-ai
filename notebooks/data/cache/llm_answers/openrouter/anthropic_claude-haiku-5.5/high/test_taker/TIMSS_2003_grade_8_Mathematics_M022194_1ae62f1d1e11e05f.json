@@ -1,0 +1,45 @@
+{
+  "unit_key": "TIMSS 2003/grade 8/Mathematics/M022194",
+  "item_keys": [
+    "TIMSS 2003/grade 8/Mathematics/M022194"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "About 7,000 copies of a magazine are sold each week. Approximately how many magazines are sold each year?\n\nA. 8,400\nB. 35,000\nC. 84,000\nD. 350,000\nE. 3,500,000",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "D"
+  },
+  "llm_thinking": "Multiplying 7000 by 52 weeks gives roughly 364,000, which is closest to 350,000 — so the answer is D.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 504,
+  "completion_tokens": 40,
+  "reasoning_tokens": 29,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335960-oItwFneLfMfZRXMM1E4b",
+  "requested_at": "2026-10-19T14:20:47+00:00"
+}

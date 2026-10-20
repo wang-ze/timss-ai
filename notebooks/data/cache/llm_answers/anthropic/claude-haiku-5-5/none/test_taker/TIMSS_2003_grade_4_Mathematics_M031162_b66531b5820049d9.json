@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2003/grade 4/Mathematics/M031162",
+  "item_keys": [
+    "TIMSS 2003/grade 4/Mathematics/M031162"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: Number line]\n\nOn the number line above, what number goes in the box?\n\nNumber in □ = ____\n\nFigure, described in words:\nA horizontal number line ending with an arrow on the right. There are 10 evenly spaced vertical tick marks along the line. The 1st tick mark is labeled 0 below it. The 4th tick mark is labeled 3 below it. Below the 8th tick mark is an empty square box. The remaining tick marks are unlabeled.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Tick 1 is 0 and tick 4 is 3, so each interval is 1. The box is under tick 8, which is 7 intervals after tick 1: 0 + 7 = 7. Number in box = 7"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 575,
+  "completion_tokens": 78,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 1.582,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:22:02+00:00"
+}

@@ -1,0 +1,54 @@
+{
+  "unit_key": "TIMSS 2007/grade 8/Mathematics/M042301A+M042301B+M042301C",
+  "item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M042301A",
+    "TIMSS 2007/grade 8/Mathematics/M042301B",
+    "TIMSS 2007/grade 8/Mathematics/M042301C"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "These 3 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nInterior Angles\nJackson was investigating the properties of polygons. Jackson made up the table below to see if he could find a connection between sides and angles.\n\nA. Complete the table by filling in the blank spaces.\n\n| Polygon | Number of Sides | Number of Triangles | Sum of Interior Angles |\n| --- | --- | --- | --- |\n| [Image: Triangle] | 3 | 1 | 1 × 180° |\n| [Image: Quadrilateral] | ____ | ____ | ____ × 180° |\n| [Image: Pentagon] | ____ | ____ | ____ × 180° |\n| [Image: Hexagon] | ____ | ____ | ____ × 180° |\n\nFigure, described in words:\nA table with four rows of geometric polygons in the first column:\n- Row 1: A triangle (3 sides).\n- Row 2: A four-sided polygon (quadrilateral) with a dashed line segment connecting two opposite vertices, dividing the polygon into 2 triangles.\n- Row 3: A five-sided polygon (pentagon) with dashed line segments drawn from one vertex to two non-adjacent vertices, dividing the polygon into 3 triangles.\n- Row 4: A six-sided polygon (hexagon) with dashed line segments drawn from one vertex to three non-adjacent vertices, dividing the polygon into 4 triangles.\n\n## Question 2\n\nInterior Angles\nJackson was investigating the properties of polygons. Jackson made up the table below to see if he could find a connection between sides and angles.\n\nB. Put the correct number into the box.\n\nThe sum of the interior angles of a polygon with 10 sides = □ × 180°\n\n## Question 3\n\nInterior Angles\nJackson was investigating the properties of polygons. Jackson made up the table below to see if he could find a connection between sides and angles.\n\nC. Jackson could see a pattern and was able to write an expression using n that is true for any polygon. Complete what he wrote.\n\nSum of the interior angles of a polygon with n sides = ____ × 180°\n\nAnswer each of the 3 questions.",
+  "output_schema": {
+    "properties": {
+      "answer_1": {
+        "description": "Your answer to question 1, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 1",
+        "type": "string"
+      },
+      "answer_2": {
+        "description": "Your answer to question 2, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 2",
+        "type": "string"
+      },
+      "answer_3": {
+        "description": "Your answer to question 3, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 3",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer_1",
+      "answer_2",
+      "answer_3"
+    ],
+    "title": "Answers",
+    "type": "object"
+  },
+  "output": {
+    "answer_1": "For the Quadrilateral row: Number of Sides = 4, Number of Triangles = 2, Sum of Interior Angles = 2 × 180°.\nFor the Pentagon row: Number of Sides = 5, Number of Triangles = 3, Sum of Interior Angles = 3 × 180°.\nFor the Hexagon row: Number of Sides = 6, Number of Triangles = 4, Sum of Interior Angles = 4 × 180°.",
+    "answer_2": "8",
+    "answer_3": "n - 2"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 821,
+  "completion_tokens": 750,
+  "reasoning_tokens": 610,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792336156-NfGr26ydb0UQSRSp2J5J",
+  "requested_at": "2026-10-19T14:20:46+00:00"
+}

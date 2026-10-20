@@ -1,0 +1,46 @@
+{
+  "item_key": "TIMSS 2003/grade 8/Mathematics/M032693",
+  "response": "60°",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the eighth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\n[Image: Regular hexagon with extended bottom side]\n\nThe figure above is a regular hexagon. What is the value of x?\n\nAnswer: ____\n\nFigure, described in words:\nA regular hexagon with horizontal top and bottom edges. The bottom horizontal edge is extended to the right as a straight line segment. An angle arc is drawn between the bottom-right edge of the hexagon and the extended horizontal line, labeled 'x°'.\n\n# Scoring guide of the question (1 point)\n\n- Correct Response (1 point):\n  - 60 degrees\n- Incorrect Response (0 points):\n  - 120 degrees\n  - Other incorrect (including crossed out/erased, stray marks, illegible, or off task).\n\n# Response to the question\n\n60°\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response provides the correct value of 60 degrees for the exterior angle of the regular hexagon.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": "**Calculating Exterior Angle**\n\nI've identified the core task: determining the exterior angle of a regular hexagon to score the TIMSS question. My current focus is on precisely calculating this value, as 180 degrees minus the interior angle of 120 degrees yields the correct 60 degrees.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 458,
+  "completion_tokens": 157,
+  "reasoning_tokens": 118,
+  "cost_usd": 0.00093225,
+  "seconds": 8.529,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:44:57+00:00"
+}

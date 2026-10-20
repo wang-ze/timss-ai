@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2007/grade 4/Mathematics/M041152",
+  "item_keys": [
+    "TIMSS 2007/grade 4/Mathematics/M041152"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: A fence with dimensions 4 m by 3 m]\n\nPatrick is painting one side of a fence. The fence is 4 meters long and 3 meters high. What is the area that Patrick has to paint?\n\nFigure, described in words:\nA rectangular section of a wooden fence composed of 7 vertical slats. A horizontal dimension line above the fence is labeled \"4 m\". A vertical dimension line to the left of the fence is labeled \"3 m\".\n\nA. 4 square meters\nB. 7 square meters\nC. 12 square meters\nD. 14 square meters",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "C"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 614,
+  "completion_tokens": 11,
+  "reasoning_tokens": 0,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335958-MhJCSqWm7WbRuqTiOnF6",
+  "requested_at": "2026-10-19T14:20:45+00:00"
+}

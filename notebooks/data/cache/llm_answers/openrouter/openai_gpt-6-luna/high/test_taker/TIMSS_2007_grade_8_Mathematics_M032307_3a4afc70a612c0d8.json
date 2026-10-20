@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2007/grade 8/Mathematics/M032307",
+  "item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M032307"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Tickets for a concert cost either 10 zeds, 15 zeds, or 30 zeds.\n\nOf the 900 tickets sold, 1/5 cost 30 zeds each and 2/3 cost 15 zeds each.\n\nWhat FRACTION of the tickets sold for 10 zeds each?\n\nAnswer: ____",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "\\(\\frac{2}{15}\\)"
+  },
+  "llm_thinking": "**Calculating fractions' remainder**\n\nI'm trying to find the remainder of 1 - 1/5 - 2/3. To make it easier, I'll convert everything to have a common denominator, which is 15. That gives me 15/15 - 3/15 - 10/15. After computing that, I get 2/15 as the remainder. Now, I want to ensure this is structured in JSON format. It’s important to keep things organized and clear!",
+  "finish_reason": "stop",
+  "prompt_tokens": 261,
+  "completion_tokens": 66,
+  "reasoning_tokens": 43,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335944-NQqtgAeCjkxiMKglznpS",
+  "requested_at": "2026-10-18T15:11:21+00:00"
+}

@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13028",
+  "item_keys": [
+    "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13028"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "For every natural number n, 1^2 + 3^2 + ... + (2n - 1)^2 = (n(4n^2 - 1))/3\n\nTo prove this by MATHEMATICAL INDUCTION, what are the essential steps that will need to be carried out? (Do not do the actual proof.)",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Step 1 (Base case): Show the statement is true for the first natural number, n = 1. The left side is 1^2 = 1 and the right side is 1(4·1^2 − 1)/3 = 1, so the formula holds for n = 1. Step 2 (Inductive hypothesis): Assume the formula is true for some arbitrary natural number k, that is, 1^2 + 3^2 + ... + (2k − 1)^2 = k(4k^2 − 1)/3. Step 3 (Inductive step): Using this assumption, prove the formula is true for n = k + 1. The sum for n = k + 1 is the sum for n = k plus the next term (2k + 1)^2, so one must show that 1^2 + 3^2 + ... + (2k − 1)^2 + (2k + 1)^2 = (k + 1)(4(k + 1)^2 − 1)/3. Replace the first part of the left side with k(4k^2 − 1)/3 from the hypothesis, then simplify algebraically to reach the right side (k + 1)(4(k + 1)^2 − 1)/3. Step 4 (Conclusion): Since the formula holds for n = 1, and the truth for n = k implies the truth for n = k + 1, the principle of mathematical induction concludes that the formula holds for every natural number n."
+  },
+  "llm_thinking": "I need to outline the induction proof structure: verify the base case at n=1 where both sides equal 1, state the inductive hypothesis assuming the formula holds for n=k, then set up the inductive step by adding the next term (2k+1)² to both sides to show it holds for n=k+1.\n\nFinally, I'll conclude by invoking the induction principle—since the base case holds and each case implies the next, the formula holds for all natural numbers n. I'll format this as a single-line JSON string with no markdown and no literal newlines.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 551,
+  "completion_tokens": 765,
+  "reasoning_tokens": 321,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335958-MhJCSqWm7WbRuqTiOnF6",
+  "requested_at": "2026-10-19T14:20:45+00:00"
+}

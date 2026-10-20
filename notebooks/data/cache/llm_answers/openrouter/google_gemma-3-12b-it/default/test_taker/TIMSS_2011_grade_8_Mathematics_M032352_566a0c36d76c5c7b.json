@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2011/grade 8/Mathematics/M032352",
+  "item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M032352"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "| Bush height (cm) | Shadow length (cm) |\n| --- | --- |\n| 20 | 16 |\n| 40 | 32 |\n| 60 | 48 |\n| 80 | 64 |\n\nThe table above shows the shadow lengths of four bushes of different heights at 10 a.m. What is the shadow length at 10 a.m. of a bush that has a height of 50 centimeters?\n\nA. 36 cm\nB. 38 cm\nC. 40 cm\nD. 42 cm",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "C"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 266,
+  "completion_tokens": 7,
+  "reasoning_tokens": 0,
+  "cost_usd": 2.1525e-05,
+  "seconds": 0.283,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:06:33+00:00"
+}

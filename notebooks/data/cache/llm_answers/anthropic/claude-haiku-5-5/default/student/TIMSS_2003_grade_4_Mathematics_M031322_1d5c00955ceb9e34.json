@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2003/grade 4/Mathematics/M031322",
+  "item_keys": [
+    "TIMSS 2003/grade 4/Mathematics/M031322"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": null,
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: Grid with horizontal line segment AB]\n\nDraw a triangle in the grid so that the line AB is the base of the triangle and the two new sides are the same length as each other.\n\nFigure, described in words:\nA square grid 10 units wide and 6 units high. A heavy horizontal line segment is drawn along the fourth horizontal grid line from the top (second from the bottom), spanning 3 grid units from the second vertical grid line from the left to the fifth vertical grid line from the left. The left endpoint of this segment is labeled 'A' directly below it, and the right endpoint is labeled 'B' directly below it.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Draw a triangle with base AB. Mark a new point C at the middle of the grid, halfway between the 3rd and 4th vertical grid lines from the left, on the 2nd horizontal grid line from the top (3 units above AB). Then draw straight line segments from A to C and from B to C. Because C is exactly centered over AB, AC and BC are the same length (each is the square root of 11.25, about 3.35 units). The triangle is ABC, with AB as the base and the two equal sides AC and BC."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 653,
+  "completion_tokens": 790,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 7.742,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:16:14+00:00"
+}

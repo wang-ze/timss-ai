@@ -1,0 +1,45 @@
+{
+  "unit_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13002",
+  "item_keys": [
+    "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13002"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "A function f is defined by:\n\nf(x) = −x − 1   if   −2 < x ≤ −1\nf(x) = x + 1   if   −1 < x ≤ 0\nf(x) = −x + 1   if   0 < x ≤ 1\nf(x) = x − 1   if   1 < x ≤ 2\n\nWhich is the graph of f?\n\nFigure, described in words:\nEach option shows a Cartesian coordinate system with a horizontal x-axis and a vertical f(x)-axis.\n\nOption A: The x-axis has tick marks labeled −2, −1, 0, 1, 2. The f(x)-axis has a tick mark labeled 1. A continuous V-shaped wave is drawn: it starts with an open circle at (−2, 1), goes down to (−1, 0), up to (0, 1), down to (1, 0), and up to a solid dot at (2, 1).\n\nOption B: The x-axis has tick marks labeled −2, −1, 0, 1, 2. The f(x)-axis has a tick mark labeled 1. A continuous wave is drawn: it starts with an open circle at (−2, 0), goes up to (−1, 1), down to (0, 0), up to (1, 1), and down to a solid dot at (2, 0).\n\nOption C: The x-axis has tick marks labeled −2, −1, 0, 1, 2. The f(x)-axis has a tick mark labeled 1. Four parallel line segments of slope −1 are drawn: one from an open circle at (−2, 1) to a solid dot at (−1, 0); one from an open circle at (−1, 1) to a solid dot at (0, 0); one from an open circle at (0, 1) to a solid dot at (1, 0); and one from an open circle at (1, 1) to a solid dot at (2, 0).\n\nOption D: The horizontal axis is labeled x with a tick mark at 1. The vertical axis is labeled f(x) with tick marks labeled −2, −1, 0, 1, 2. A continuous zigzag path is drawn from an open circle at (1, 2) to (0, 1), then to (1, 0), then to (0, −1), and ending at a solid dot at (1, −2).\n\nOption E: The x-axis has tick marks labeled −2, −1, 0, 1, 2. The f(x)-axis has tick marks labeled −1 and 1. Four separate line segments are drawn: from an open circle at (−2, 0) down to a solid dot at (−1, −1); from an open circle at (−1, 0) up to a solid dot at (0, 1); from an open circle at (0, 0) down to a solid dot at (1, −1); and from an open circle at (1, 0) up to a solid dot at (2, 1).\n\nA. [Image: Graph A]\nB. [Image: Graph B]\nC. [Image: Graph C]\nD. [Image: Graph D]\nE. [Image: Graph E]",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "E"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 1416,
+  "completion_tokens": 10,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 2.502,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:21:09+00:00"
+}

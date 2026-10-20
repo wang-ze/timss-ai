@@ -10,7 +10,7 @@ import unittest
 from pathlib import Path
 from unittest import mock
 
-from timss_math.item_parameter_prediction import config
+from timss_math import config
 
 KEY = "TIMSS_TEST_API_KEY"
 

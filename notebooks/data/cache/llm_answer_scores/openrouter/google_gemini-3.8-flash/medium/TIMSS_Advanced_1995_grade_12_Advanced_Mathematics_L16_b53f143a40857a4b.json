@@ -1,0 +1,49 @@
+{
+  "item_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L16",
+  "response": "Domain: x > 0 (since sqrt(x) must be defined and nonzero). Multiply both sides by sqrt(x): x - 2 = sqrt(x). Let t = sqrt(x) > 0, so t^2 - t - 2 = 0, which factors as (t - 2)(t + 1) = 0. So t = 2 or t = -1. Since t = sqrt(x) >= 0, t = -1 is rejected, leaving t = 2, so sqrt(x) = 2 and x = 4. Check: sqrt(4) - 2/sqrt(4) = 2 - 1 = 1, which satisfies the equation. Answer: x = 4.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\nFind all real values of x which satisfy the following equation:\n\nsqrt(x) - 2/sqrt(x) = 1\n\nShow all your work.\n\n# Scoring guide of the question (3 points)\n\n- Correct Response (3 points):\n  - x = 4. Method:\n1. Original equation transformed to quadratic equation, x^2 - 5x + 4 = 0.\n2. Two roots, x=4 and x=1 found and checked in original equation.\n3. x=1 is rejected as a solution of the original equation; x=4 is accepted.\nNote: Since the original equation is squared, it is necessary to check both roots in the original equation.\n  - x = 4. Method:\n1. Substitution (e.g., sqrt(x) = a) used and the original equation transformed, without squaring, into the quadratic equation a^2 - a - 2 = 0.\n2. Two roots found, a = 2 and a = -1.\n3. a = -1 rejected since a = -1 ≠ sqrt(x) , sqrt(x) ≥ 0 .\n4. By substitution reversed.a = 2 implies sqrt(x) = 2, thus x = 4. Checking in original equation is not necessary.\n  - x = 4. Method:\n1. Graphs y = sqrt(x) - 2/sqrt(x) - 1 for x > 0 correctly.\n2. x-coordinate of y-intercept is found to be 4.\n3. Justifies that graph is increasing and thus x = 4 is an unique solution.\n4. x = 4 is checked in original equation.\n  - Other completely correct solutions.\n- Partial Response (2 points):\n  - Uses code 30 to find x = 4 and x = 1 and states both are roots.\n  - Uses code 31 to find a = 2 and a = -1 and then either goes no further or makes an incorrect statement such as 4 and 1 or 2 and 1 are roots of the original equation.\n  - Uses code 32 showing graph, states x = 4 is a root and x = 4 is checked in the original equation.\n  - Other solutions with correct overall method but with minor error(s).\n- Minimal Response (1 point):\n  - x = 4. No work shown or some work shown, such as checking x = 4 in original equation but no argument given for why there are no other roots.\n  - Solution as in codes 30 or 31: Original equation is transformed correctly into a quadratic equation, by any method, but quadratic equation either is not solved or incorrectly solved.\n  - Solution as in code 22 (graphical) except that except that x = 4 is NOT checked in original equation.\n  - Other minimally correct or incomplete solutions such as a simplification of the equation to x - 2 = sqrt(x) .\n- Incorrect Response (0 points):\n  - Solution as in codes 30 or 31 except original equation is transformed into an incorrect quadratic equation or to a non-quadratic equation.\n  - Other incorrect responses.\n- Nonresponse (0 points):\n  - Crossed-out, illegible, or impossible to interpret.\n  - BLANK\n\n# Response to the question\n\nDomain: x > 0 (since sqrt(x) must be defined and nonzero). Multiply both sides by sqrt(x): x - 2 = sqrt(x). Let t = sqrt(x) > 0, so t^2 - t - 2 = 0, which factors as (t - 2)(t + 1) = 0. So t = 2 or t = -1. Since t = sqrt(x) >= 0, t = -1 is rejected, leaving t = 2, so sqrt(x) = 2 and x = 4. Check: sqrt(4) - 2/sqrt(4) = 2 - 1 = 1, which satisfies the equation. Answer: x = 4.\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Partial Response",
+          "Minimal Response",
+          "Incorrect Response",
+          "Nonresponse"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response uses the substitution method (setting t = sqrt(x)), transforms the equation into the quadratic equation t^2 - t - 2 = 0, solves for t = 2 and t = -1, correctly rejects t = -1 because sqrt(x) >= 0, and finds the unique solution x = 4. This matches the criteria for a Correct Response.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 1215,
+  "completion_tokens": 238,
+  "reasoning_tokens": 140,
+  "cost_usd": 0.00180375,
+  "seconds": 10.939,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:50:41+00:00"
+}

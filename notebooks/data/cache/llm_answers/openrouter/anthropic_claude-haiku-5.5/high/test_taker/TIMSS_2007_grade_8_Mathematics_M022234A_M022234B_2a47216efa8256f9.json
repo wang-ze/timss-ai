@@ -1,0 +1,46 @@
+{
+  "unit_key": "TIMSS 2007/grade 8/Mathematics/M022234A+M022234B",
+  "item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M022234A",
+    "TIMSS 2007/grade 8/Mathematics/M022234B"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "These 2 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\n[Image: A rectangle]\n\nA. On the grid below, draw a rectangle whose length is three-fourths the length of the rectangle above, and whose width is two and one-half times the width of the rectangle above. Label the length and width of the new rectangle in centimeters on the figure. Each square on the grid is 1 cm by 1 cm.\n\n[Image: A grid of squares]\n\nFigure, described in words:\nAt the top of the page is a rectangle drawn horizontally. Inside near the bottom edge is the word \"Length\", and below the bottom edge is labeled \"8 cm\". Along the inside right edge, printed vertically, is \"Width\" and \"2 cm\". Below Part A is a dashed-line grid measuring 10 squares wide by 15 squares high.\n\n## Question 2\n\n[Image: A rectangle]\n\nB. What is the ratio of the area of the original rectangle to the area of the new one?\n\nFigure, described in words:\nA rectangle is drawn horizontally. Inside near the bottom edge is the word \"Length\", and below the bottom edge is labeled \"8 cm\". Along the inside right edge, printed vertically, is \"Width\" and \"2 cm\".\n\nAnswer each of the 2 questions.",
+  "output_schema": {
+    "properties": {
+      "answer_1": {
+        "description": "Your answer to question 1, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 1",
+        "type": "string"
+      },
+      "answer_2": {
+        "description": "Your answer to question 2, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 2",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer_1",
+      "answer_2"
+    ],
+    "title": "Answers",
+    "type": "object"
+  },
+  "output": {
+    "answer_1": "The original rectangle is 8 cm long and 2 cm wide. New length = 3/4 × 8 cm = 6 cm. New width = 2.5 × 2 cm = 5 cm. On the grid, draw a rectangle 6 squares long (horizontal) and 5 squares high (vertical), with its corners on grid lines. Label the length as 6 cm along the bottom edge and the width as 5 cm along the right edge.",
+    "answer_2": "Area of original rectangle = 8 cm × 2 cm = 16 cm². Area of new rectangle = 6 cm × 5 cm = 30 cm². Ratio of original area to new area = 16 : 30 = 8 : 15."
+  },
+  "llm_thinking": "Scaling the rectangle by 3/4 length and 2.5 width gives new dimensions 6 cm by 5 cm, fitting nicely on the grid. The original area is 16 cm², the new area is 30 cm², giving a ratio of 8:15.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 939,
+  "completion_tokens": 502,
+  "reasoning_tokens": 261,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335960-oItwFneLfMfZRXMM1E4b",
+  "requested_at": "2026-10-19T14:20:47+00:00"
+}

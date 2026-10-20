@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 4/Mathematics/M031297",
+  "item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M031297"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: a shaded area overlaying a grid made up by small squares with each side of the square measured at 1 cm.]\n\nThe squares in the grid above are 1 cm by 1 cm.\nWhat is the shaded area in square centimeters?\n\nAnswer: ____ square centimeters\n\nFigure, described in words:\nA grid of 9 columns and 5 rows of 1 cm by 1 cm squares containing a shaded polygon. Outside the bottom-right corner of the grid, dimension arrows indicate that a single square is 1 cm wide and 1 cm high.\n\nDefining grid coordinates from the top-left corner (0, 0) to the bottom-right corner (9, 5):\n- The shaded polygon has vertices at (3, 1), (5, 1), (6, 2), (5, 3), (5, 4), and (3, 4).\n- The left side is a vertical line from (3, 1) down to (3, 4), spanning 3 units.\n- The bottom side runs horizontally from (3, 4) to (5, 4), spanning 2 units.\n- The right side goes vertically up from (5, 4) to (5, 3), 1 unit.\n- From (5, 3), a diagonal side goes up and to the right to grid intersection (6, 2).\n- From (6, 2), a diagonal side goes up and to the left to grid intersection (5, 1).\n- The top side runs horizontally from (5, 1) left to (3, 1), spanning 2 units.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Compute the area of the polygon with vertices (3,1), (5,1), (6,2), (5,3), (5,4), (3,4) using the shoelace formula. Listing vertices in order: (3,1), (5,1), (6,2), (5,3), (5,4), (3,4). Sum of x_i*y_{i+1} - x_{i+1}*y_i: (3*1 - 5*1) = -2; (5*2 - 6*1) = 4; (6*3 - 5*2) = 8; (5*4 - 5*3) = 5; (5*4 - 3*4) = 8; (3*1 - 3*4) = -9. Total = -2+4+8+5+8-9 = 14. Area = |14|/2 = 7. Check by decomposition: rectangle from x=3 to 5, y=1 to 4 has area 2*3 = 6; the triangle-like point from (5,1)-(6,2)-(5,3) adds a triangle with base 2 (vertical from (5,1) to (5,3)) and height 1, area 1. Total 7.\n\nAnswer: 7 square centimeters"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 898,
+  "completion_tokens": 376,
+  "reasoning_tokens": 0,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335950-6M8r5AF2vj28dS4S8FJ7",
+  "requested_at": "2026-10-19T14:20:44+00:00"
+}

@@ -1,0 +1,45 @@
+{
+  "unit_key": "TIMSS 2003/grade 8/Mathematics/M022142",
+  "item_keys": [
+    "TIMSS 2003/grade 8/Mathematics/M022142"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "In this figure, PQ and RS are parallel.\n\n[Image: Parallel lines PQ and RS intersected by a transversal]\n\nOf the following, which pair of angles has the sum of 180°?\n\nFigure, described in words:\nTwo horizontal parallel lines with arrowheads at both ends are intersected by a transversal line that slopes upward from lower-left to upper-right. The upper horizontal line has label P at its left end and Q at its right end. The lower horizontal line has label R at its left end and S at its right end. At the intersection with line PQ, four angles are numbered: angle 1 in the upper-left, angle 2 in the upper-right, angle 3 in the lower-right, and angle 4 in the lower-left. At the intersection with line RS, four angles are numbered: angle 5 in the upper-left, angle 6 in the upper-right, angle 7 in the lower-right, and angle 8 in the lower-left.\n\nA. ∠ 5 and ∠ 7\nB. ∠ 3 and ∠ 6\nC. ∠ 1 and ∠ 5\nD. ∠ 1 and ∠ 7\nE. ∠ 2 and ∠ 8",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "B"
+  },
+  "llm_thinking": "**Inspecting angle geometry**\n\nI need to analyze the geometry of angles formed by parallel lines and a rising transversal. There are positions at the intersections: four upper (left and right) and four lower. I’m determining whether the resulting angles are acute or obtuse. After consideration, it seems that pairs of angles sum to 180 degrees, with specific findings for obtuse and acute angles. The valid option is B, where angle three (obtuse) and angle six (acute) add to 180. Thus, the answer is B.",
+  "finish_reason": "stop",
+  "prompt_tokens": 442,
+  "completion_tokens": 277,
+  "reasoning_tokens": 263,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335944-NQqtgAeCjkxiMKglznpS",
+  "requested_at": "2026-10-18T15:11:21+00:00"
+}

@@ -16,6 +16,7 @@ from pathlib import Path
 import httpx2
 import openai
 
+from timss_math.batch import BatchManifests
 from timss_math.item_parameter_prediction import (
     ItemIndex,
     LeaveOneOut,
@@ -23,8 +24,8 @@ from timss_math.item_parameter_prediction import (
     LLMSettings,
     NoPredictionError,
 )
-from timss_math.item_parameter_prediction.batch import BatchManifests
-from timss_math.item_parameter_prediction.llm import LLMClient, prediction_schema
+from timss_math.item_parameter_prediction.llm import prediction_schema
+from timss_math.llm import LLMClient
 
 SCHEMAS = [("3PL", 1), ("2PL", 1), ("GPCM", 2), ("GPCM", 3)]
 
@@ -265,7 +266,7 @@ class RequestBatchTest(unittest.TestCase):
         self.assertTrue(held.wait(5))
         started = time.monotonic()
         threading.Timer(0.3, release.set).start()
-        with self.assertLogs("timss_math.item_parameter_prediction.batch", "INFO") as logs:
+        with self.assertLogs("timss_math.batch", "INFO") as logs:
             report = self.loo.request_batch(1, wait=False, client=FakeBatches())
         holder.join()
         self.assertGreaterEqual(time.monotonic() - started, 0.25)
@@ -277,7 +278,7 @@ class ManifestLockTest(unittest.TestCase):
     def test_another_process_holds_the_lock_until_it_releases_it(self):
         holder_code = (
             "import sys\n"
-            "from timss_math.item_parameter_prediction.batch import BatchManifests\n"
+            "from timss_math.batch import BatchManifests\n"
             "with BatchManifests(sys.argv[1]).locked():\n"
             "    print('held', flush=True)\n"
             "    sys.stdin.read()\n"  # until the test closes stdin
@@ -293,7 +294,7 @@ class ManifestLockTest(unittest.TestCase):
             threading.Timer(0.3, holder.stdin.close).start()
             started = time.monotonic()
             with (
-                self.assertLogs("timss_math.item_parameter_prediction.batch", "INFO") as logs,
+                self.assertLogs("timss_math.batch", "INFO") as logs,
                 BatchManifests(Path(directory)).locked(),
             ):
                 waited = time.monotonic() - started

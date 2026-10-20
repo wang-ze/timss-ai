@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L16",
+  "item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L16"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "minimal",
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Find all real values of x which satisfy the following equation:\n\nsqrt(x) - 2/sqrt(x) = 1\n\nShow all your work.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "To find all real values of x that satisfy the equation:\n\n$$\\sqrt{x} - \\frac{2}{\\sqrt{x}} = 1$$\n\nFirst, note the domain constraint: $x > 0$ (since the expression under the square root must be non-negative and the denominator cannot be zero).\n\nLet $u = \\sqrt{x}$, where $u > 0$. Substituting $u$ into the equation gives:\n\n$$u - \\frac{2}{u} = 1$$\n\nMultiply both sides by $u$:\n\n$$u^2 - 2 = u$$\n$$u^2 - u - 2 = 0$$\n\nFactor the quadratic equation:\n\n$$(u - 2)(u + 1) = 0$$\n\nThis gives two possible values for $u$:\n$$u = 2 \\quad \\text{or} \\quad u = -1$$\n\nSince $u = \\sqrt{x} > 0$, we reject $u = -1$.\n\nNow, substitute back for $u = 2$:\n$$\\sqrt{x} = 2$$\n$$x = 2^2 = 4$$\n\nChecking $x = 4$ in the original equation:\n$$\\sqrt{4} - \\frac{2}{\\sqrt{4}} = 2 - \\frac{2}{2} = 2 - 1 = 1$$\n\nThus, the only real solution is:\n$$x = 4$$"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 254,
+  "completion_tokens": 652,
+  "reasoning_tokens": 293,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792336149-73AS8UqLMoFOJ2pc4u85",
+  "requested_at": "2026-10-19T14:20:47+00:00"
+}

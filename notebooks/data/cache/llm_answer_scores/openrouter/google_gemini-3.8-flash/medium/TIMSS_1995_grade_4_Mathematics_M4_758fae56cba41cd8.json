@@ -1,0 +1,46 @@
+{
+  "item_key": "TIMSS 1995/grade 4/Mathematics/M4",
+  "response": "First Number 3, Second Number 2",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the fourth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\nOn this grid, find the dot with the circle around it. We can describe where this dot is by saying it is at First Number 1, Second Number 3\n\n[Image: Coordinate grid]\n\nNow find the dot with the triangle around it. Describe where the dot is on the grid in the same way. Fill in the numbers we would use:\n\nFirst Number ____ Second Number ____\n\nFigure, described in words:\nA coordinate grid with a horizontal axis labeled \"First Number\" and a vertical axis labeled \"Second Number\". The horizontal axis has tick marks and dots numbered 0, 1, 2, 3, 4 with an arrow pointing right. The vertical axis has tick marks and dots numbered 1, 2, 3, 4 with an arrow pointing up, meeting at 0 at the origin. Grid lines form a square grid with dots at each grid intersection from 0 to 4 horizontally and 0 to 4 vertically. A circle is drawn around the dot at First Number 1, Second Number 3. An equilateral triangle is drawn around the dot at First Number 3, Second Number 2.\n\n# Scoring guide of the question (1 point)\n\n- Correct Response (1 point):\n  - 3 and 2, in this order.\n- Incorrect Response (0 points):\n  - 2 and 3, in this order.\n  - Other incorrect.\n\n# Response to the question\n\nFirst Number 3, Second Number 2\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response gives 3 for the First Number and 2 for the Second Number, which correctly identifies the coordinates in the specified order.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 482,
+  "completion_tokens": 122,
+  "reasoning_tokens": 76,
+  "cost_usd": 0.000819,
+  "seconds": 3.668,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:43:28+00:00"
+}

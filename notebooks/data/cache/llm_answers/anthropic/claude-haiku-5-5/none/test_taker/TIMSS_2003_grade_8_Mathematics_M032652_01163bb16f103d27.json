@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2003/grade 8/Mathematics/M032652",
+  "item_keys": [
+    "TIMSS 2003/grade 8/Mathematics/M032652"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The teachers at Parkway School plan to send 6 newsletters per year to each of the 620 families with children at the school. The newsletters each need 2 sheets of paper. The paper is sold in packs of 500 sheets.\n\nWhat is the least number of packs of paper needed to print the school newsletter for the year?\n\nAnswer: ____",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Total newsletters per year: 6 × 620 = 3720. Total sheets needed: 3720 × 2 = 7440 sheets. Each pack has 500 sheets, so 7440 ÷ 500 = 14.88, which rounds up to 15 packs. The least number of packs needed is 15."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 529,
+  "completion_tokens": 108,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 1.462,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:21:55+00:00"
+}

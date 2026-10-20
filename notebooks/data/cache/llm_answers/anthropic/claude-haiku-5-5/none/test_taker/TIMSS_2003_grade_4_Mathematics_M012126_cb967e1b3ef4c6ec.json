@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2003/grade 4/Mathematics/M012126",
+  "item_keys": [
+    "TIMSS 2003/grade 4/Mathematics/M012126"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The graph shows the heights of four girls.\n\n[Image: Bar graph showing heights of four girls]\n\nThe names are missing from the graph. Debbie is the tallest. Amy is the shortest. Dawn is taller than Sarah. How tall is Sarah?\n\nFigure, described in words:\nA vertical bar graph titled \"Names of Girls\" along the horizontal axis, and labeled \"Height (Centimeters)\" along the vertical axis.\nThe vertical axis has tick marks from 0 to 150 in increments of 25 (0, 25, 50, 75, 100, 125, 150).\nThere are four unlabeled shaded bars from left to right:\n- The first bar has a height of 100.\n- The second bar has a height of 150.\n- The third bar has a height of 125.\n- The fourth bar has a height of 75.\n\nA. 75 cm\nB. 100 cm\nC. 125 cm\nD. 150 cm",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "C"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 724,
+  "completion_tokens": 10,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 1.135,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:21:49+00:00"
+}

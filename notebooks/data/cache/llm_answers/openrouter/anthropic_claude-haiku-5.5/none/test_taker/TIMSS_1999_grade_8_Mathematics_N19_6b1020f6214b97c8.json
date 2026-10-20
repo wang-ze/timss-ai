@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 1999/grade 8/Mathematics/N19",
+  "item_keys": [
+    "TIMSS 1999/grade 8/Mathematics/N19"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Shade in 3/8 of the unit squares in the grid.\n\n[Image: Grid of unit squares]\n\nFigure, described in words:\nA rectangular grid divided into 4 rows and 6 columns of identical, unshaded unit squares, totaling 24 squares.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "3/8 of 24 squares is 9 squares. Shade any 9 of the 24 unit squares in the 4-by-6 grid, for example the first 3 squares of each of the first 3 rows (rows 1 to 3, columns 1 to 3), which gives 9 shaded squares out of 24, equal to 9/24 = 3/8."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 512,
+  "completion_tokens": 121,
+  "reasoning_tokens": 0,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335952-nomWk8Tj0yh7J6h3dipX",
+  "requested_at": "2026-10-19T14:20:45+00:00"
+}

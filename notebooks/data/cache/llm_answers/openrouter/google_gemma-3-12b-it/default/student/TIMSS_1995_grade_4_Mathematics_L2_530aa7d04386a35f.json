@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 1995/grade 4/Mathematics/L2",
+  "item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/L2"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "There is only one red marble in each of these bags.\n\n[Image: Three bags of marbles]\n\nWithout looking in the bags, you are to pick a marble out of one of the bags. Which bag would give you the greatest chance of picking the red marble?\n\nFigure, described in words:\nThree drawstring bags of increasing size, each tied with a ribbon near the top, with faint curved outlines inside representing marbles:\n- The smallest bag is on the left, labeled \"10 Marbles\".\n- The medium-sized bag is in the middle, labeled \"100 Marbles\".\n- The largest bag is on the right, labeled \"1,000 Marbles\".\n\nA. The bag with 10 marbles.\nB. The bag with 100 marbles.\nC. The bag with 1,000 marbles.\nD. All bags would give the same chance.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "A"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 344,
+  "completion_tokens": 7,
+  "reasoning_tokens": 0,
+  "cost_usd": 2.7375e-05,
+  "seconds": 4.837,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:20:03+00:00"
+}

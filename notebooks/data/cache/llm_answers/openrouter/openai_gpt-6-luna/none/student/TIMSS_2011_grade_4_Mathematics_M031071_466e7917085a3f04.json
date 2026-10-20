@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2011/grade 4/Mathematics/M031071",
+  "item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M031071"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "none",
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: a rectangle shape with a line connected to a dot on the left side pointing down.]\nWhich of the following shows the position of the shape above after a half turn or 180° rotation?\n\nFigure, described in words:\nAt the top is a figure consisting of a horizontal rectangle (wider than it is tall) with a straight line segment extending vertically downward from its lower-left corner, ending with a solid black dot.\nFour options show rotations or positions of the shape:\n- Option A shows a vertical rectangle (taller than it is wide) with a line segment extending horizontally to the left from its upper-left corner, ending with a solid dot.\n- Option B shows a horizontal rectangle with a line segment extending vertically upward from its upper-right corner, ending with a solid dot.\n- Option C shows a vertical rectangle with a line segment extending horizontally to the right from its lower-right corner, ending with a solid dot.\n- Option D shows a horizontal rectangle identical to the original figure, with a line segment extending downward from the lower-left corner, ending with a solid dot.\n\nA. [Image: a rectangle shape with a line connected to a dot pointing left.]\nB. [Image: a rectangle shape with a line connected to a dot pointing up.]\nC. [Image: a rectangle shape with a line connected to a dot pointing right.]\nD. [Image: a rectangle shape with a line connected to a dot pointing down.]",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "B"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 492,
+  "completion_tokens": 12,
+  "reasoning_tokens": 0,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792430073-svtUY6L3Exvs9O4qh25G",
+  "requested_at": "2026-10-19T18:00:46+00:00"
+}

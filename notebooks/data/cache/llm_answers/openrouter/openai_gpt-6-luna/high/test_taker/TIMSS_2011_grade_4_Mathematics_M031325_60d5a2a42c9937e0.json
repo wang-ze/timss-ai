@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 4/Mathematics/M031325",
+  "item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M031325"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "In the space below, draw an angle that is greater than 90 degrees but less than 180 degrees.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Draw two rays with a shared endpoint, one pointing to the right and the other pointing up and to the left, making an angle of about 120°."
+  },
+  "llm_thinking": "**Describing an obtuse angle**\n\nI'm focusing on how to describe an obtuse angle of 120 degrees. I want to provide this in JSON format. I should specify the two rays that form this angle and include details like the vertex and the orientation of the rays. This clarity will help ensure I accurately represent the angle. Let's get into the details to craft that JSON structure correctly!",
+  "finish_reason": "stop",
+  "prompt_tokens": 215,
+  "completion_tokens": 79,
+  "reasoning_tokens": 34,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335947-adaJJg0fXIVWd5UYzY66",
+  "requested_at": "2026-10-18T15:20:16+00:00"
+}

@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2003/grade 8/Mathematics/M032403",
+  "item_keys": [
+    "TIMSS 2003/grade 8/Mathematics/M032403"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "none",
+  "system_prompt": "You are an eighth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: Triangle ABC]\n\nThe triangle ABC has AB = AC.\n\nDraw a line to divide triangle ABC into two congruent triangles.\n\nFigure, described in words:\nAn isosceles triangle ABC is shown with vertex A at the bottom left, vertex B at the bottom right, and vertex C at the top. The base AB is horizontal. Side AC connects vertex A to vertex C, and side BC connects vertex C to vertex B. A single hatch mark (tick mark) is drawn through side AC and through side AB, indicating that AB = AC.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Draw the line segment from A to the midpoint of BC."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 326,
+  "completion_tokens": 25,
+  "reasoning_tokens": 0,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792430069-OKxlUXCiIg6xiDEHpoDm",
+  "requested_at": "2026-10-19T17:51:38+00:00"
+}

@@ -1,0 +1,47 @@
+{
+  "item_key": "TIMSS 2007/grade 8/Mathematics/M032691",
+  "response": "Draw a straight line through O that is slanted, with B on the upper-right side of O and C on the lower-left side of O. Then ∠AOB is acute and ∠AOC is obtuse.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the eighth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\nUsing line segment AO below, draw a straight line BC through O such that angle AOB is acute and angle AOC is obtuse. Label points B and C.\n\n[Image: Line segment AO]\n\nFigure, described in words:\nA vertical line segment is drawn with a point at the top labeled with the letter \"A\" above it, and a point at the bottom labeled with the letter \"O\" below it.\n\n# Scoring guide of the question (1 point)\n\n- Correct Response (1 point):\n  - Line drawn through O; acute angle and obtuse angle correct and labeled\n- Incorrect Response (0 points):\n  - Line drawn through O but not labeled\n  - Other incorrect (including crossed out/erased, stray marks, illegible, or off task)\n- Non response (0 points):\n  - Blank\n\n# Response to the question\n\nDraw a straight line through O that is slanted, with B on the upper-right side of O and C on the lower-left side of O. Then ∠AOB is acute and ∠AOC is obtuse.\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response",
+          "Non response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response specifies a line BC through O such that B is in the upper-right of O and C is in the lower-left. With segment AO extending vertically upwards from O, ray OB creates an acute angle with OA, and ray OC creates an obtuse angle with OA. Both points are correctly labeled.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": "**Visualizing the Angles**\n\nI'm focusing on the spatial arrangement now. I need to make sure I grasp the relationship between angles AOB and AOC, with A at the top and O at the bottom. The core challenge is making B and C intersect a straight line through O, while respecting the acute/obtuse angle criteria. I'm visualizing the line BC's orientation and how it impacts these angles.\n\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 396,
+  "completion_tokens": 339,
+  "reasoning_tokens": 258,
+  "cost_usd": 0.00156825,
+  "seconds": 4.269,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:44:54+00:00"
+}

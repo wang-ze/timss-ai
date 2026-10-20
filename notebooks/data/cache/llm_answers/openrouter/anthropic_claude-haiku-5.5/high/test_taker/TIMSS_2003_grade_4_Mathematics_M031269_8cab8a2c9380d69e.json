@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2003/grade 4/Mathematics/M031269",
+  "item_keys": [
+    "TIMSS 2003/grade 4/Mathematics/M031269"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "In the picture there are a number of geometric shapes, like circles, squares, rectangles, and triangles. For example, the sun looks like a circle.\n\nDraw lines to three other different objects in the picture and write what shapes they look like.\n\n[Image: A house and yard scene with geometric objects]\n\nFigure, described in words:\nA line drawing of a scene containing geometric elements:\n- In the upper right sky, a circular shape is labeled \"sun\" with a line drawn to the label \"circle\".\n- Behind the house are trees rendered with leafy texture.\n- In the center is a two-story house:\n  - The roof features two dormers, each topped with a triangular roof and containing a rectangular window divided into four square panes.\n  - A small chimney is on the roof ridge.\n  - The main facade is rectangular, featuring two rectangular windows (each divided into four panes) and a central rectangular front door.\n  - The door contains a diamond-shaped (rhombus) window and a small round doorknob.\n- In front of the door is a stone path composed of trapezoidal and triangular paving stones.\n- To the lower left of the house stands a lamppost consisting of a circular light mounted on a tall, narrow rectangular post set in grass.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Draw a line from the triangular roof of one of the dormers (the small roof on top of a dormer window) to the label \"triangle.\" Draw a line from the central front door of the house to the label \"rectangle.\" Draw a line from the diamond-shaped window in the front door to the label \"diamond (rhombus).\""
+  },
+  "llm_thinking": "I need to match three objects to their shapes: the dormer roof to a triangle, the door to a rectangle, and maybe the diamond-paned window or lamppost light to a rhombus or circle. I'll settle on three clear matches and format them as a single-line JSON answer.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 817,
+  "completion_tokens": 362,
+  "reasoning_tokens": 249,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335957-QKbCVbAXn76L3I0C7O9z",
+  "requested_at": "2026-10-19T14:20:44+00:00"
+}

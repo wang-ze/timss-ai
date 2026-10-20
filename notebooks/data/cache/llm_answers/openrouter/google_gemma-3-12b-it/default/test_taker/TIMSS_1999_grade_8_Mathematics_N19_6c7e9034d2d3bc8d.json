@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 1999/grade 8/Mathematics/N19",
+  "item_keys": [
+    "TIMSS 1999/grade 8/Mathematics/N19"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Shade in 3/8 of the unit squares in the grid.\n\n[Image: Grid of unit squares]\n\nFigure, described in words:\nA rectangular grid divided into 4 rows and 6 columns of identical, unshaded unit squares, totaling 24 squares.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "I would shade in 3 out of the 8 unit squares. Since there are 24 unit squares total, 3/8 of 24 is (3/8) * 24 = 9.  Therefore, I would shade in 9 unit squares. To do this, I would shade in three squares in the first row, three squares in the second row, and three squares in the third row, leaving the fourth row completely unshaded. I can choose any arrangement of the 9 shaded squares as long as they are distributed across the rows."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 189,
+  "completion_tokens": 123,
+  "reasoning_tokens": 0,
+  "cost_usd": 2.79e-05,
+  "seconds": 1.935,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:06:42+00:00"
+}

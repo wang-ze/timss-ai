@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2007/grade 4/Mathematics/M031172",
+  "item_keys": [
+    "TIMSS 2007/grade 4/Mathematics/M031172"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "| Street | Number of houses |\n| --- | --- |\n| Main | [Image: 5 house symbols] |\n| Center | [Image: 2 house symbols] |\n| First | [Image: 3 house symbols] |\n| Hill | |\n\nMary is making a chart to show the number of houses on some streets.\nEvery [Image: house symbol] stands for 5 houses. There are 20 houses on Hill Street.\nHow many [Image: house symbol] should Mary put in the chart beside Hill Street?\n\nFigure, described in words:\nA pictograph table with two columns: \"Street\" on the left and \"Number of houses\" on the right. Under \"Street\" are rows labeled Main, Center, First, and Hill. Beside Main are 5 small house symbols in a horizontal row. Beside Center are 2 small house symbols. Beside First are 3 small house symbols. Beside Hill the row is empty. The house symbol is a simple outline of a house with a pitched roof and a doorway.\n\nA. 4\nB. 5\nC. 15\nD. 20",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "A"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 790,
+  "completion_tokens": 10,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 1.122,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:15:30+00:00"
+}

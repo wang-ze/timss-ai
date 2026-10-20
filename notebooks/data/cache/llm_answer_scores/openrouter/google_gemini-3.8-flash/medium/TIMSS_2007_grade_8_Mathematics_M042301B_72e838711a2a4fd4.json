@@ -1,0 +1,47 @@
+{
+  "item_key": "TIMSS 2007/grade 8/Mathematics/M042301B",
+  "response": "8",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the eighth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Questions\n\nThese 3 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nInterior Angles\nJackson was investigating the properties of polygons. Jackson made up the table below to see if he could find a connection between sides and angles.\n\nA. Complete the table by filling in the blank spaces.\n\n| Polygon | Number of Sides | Number of Triangles | Sum of Interior Angles |\n| --- | --- | --- | --- |\n| [Image: Triangle] | 3 | 1 | 1 × 180° |\n| [Image: Quadrilateral] | ____ | ____ | ____ × 180° |\n| [Image: Pentagon] | ____ | ____ | ____ × 180° |\n| [Image: Hexagon] | ____ | ____ | ____ × 180° |\n\nFigure, described in words:\nA table with four rows of geometric polygons in the first column:\n- Row 1: A triangle (3 sides).\n- Row 2: A four-sided polygon (quadrilateral) with a dashed line segment connecting two opposite vertices, dividing the polygon into 2 triangles.\n- Row 3: A five-sided polygon (pentagon) with dashed line segments drawn from one vertex to two non-adjacent vertices, dividing the polygon into 3 triangles.\n- Row 4: A six-sided polygon (hexagon) with dashed line segments drawn from one vertex to three non-adjacent vertices, dividing the polygon into 4 triangles.\n\n## Question 2\n\nInterior Angles\nJackson was investigating the properties of polygons. Jackson made up the table below to see if he could find a connection between sides and angles.\n\nB. Put the correct number into the box.\n\nThe sum of the interior angles of a polygon with 10 sides = □ × 180°\n\n## Question 3\n\nInterior Angles\nJackson was investigating the properties of polygons. Jackson made up the table below to see if he could find a connection between sides and angles.\n\nC. Jackson could see a pattern and was able to write an expression using n that is true for any polygon. Complete what he wrote.\n\nSum of the interior angles of a polygon with n sides = ____ × 180°\n\n# Scoring guide of question 2 (1 point)\n\n- Correct Response (1 point):\n  - 8\n- Incorrect Response (0 points):\n  - Incorrect (including crossed out, erased, stray marks, illegible, or off task)\n- Nonresponse (0 points):\n  - Blank\n\n# Response to question 2\n\n8\n\nScore the response to question 2.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response",
+          "Nonresponse"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response provides the correct number, 8, which satisfies the scoring guide for a correct response.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 721,
+  "completion_tokens": 99,
+  "reasoning_tokens": 60,
+  "cost_usd": 0.000912,
+  "seconds": 13.189,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:43:21+00:00"
+}

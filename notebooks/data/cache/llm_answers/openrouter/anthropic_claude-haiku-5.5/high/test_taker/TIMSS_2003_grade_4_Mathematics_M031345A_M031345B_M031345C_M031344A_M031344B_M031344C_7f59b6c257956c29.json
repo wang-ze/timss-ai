@@ -1,0 +1,78 @@
+{
+  "unit_key": "TIMSS 2003/grade 4/Mathematics/M031345A+M031345B+M031345C+M031344A+M031344B+M031344C",
+  "item_keys": [
+    "TIMSS 2003/grade 4/Mathematics/M031345A",
+    "TIMSS 2003/grade 4/Mathematics/M031345B",
+    "TIMSS 2003/grade 4/Mathematics/M031345C",
+    "TIMSS 2003/grade 4/Mathematics/M031344A",
+    "TIMSS 2003/grade 4/Mathematics/M031344B",
+    "TIMSS 2003/grade 4/Mathematics/M031344C"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "These 6 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nUsing the number tiles, Joan and Herbert played a new game.\nThey placed the numbers to make the largest answer.\n\nA. Use the tiles [1], [5], and [9]. Write the numbers on the tiles in the boxes below to make the largest answer when you add.\n\n[Image: Vertical addition layout with boxes]\n\nFigure, described in words:\nA vertical addition problem setup with two rows above a horizontal line. The top row has two square boxes side by side. The bottom row has an addition sign (+) on the left and a single square box aligned under the right box of the top row.\n\n## Question 2\n\nUsing the number tiles, Joan and Herbert played a new game.\nThey placed the numbers to make the largest answer.\n\nB. Use the tiles [2], [3], and [7]. Write the numbers on the tiles in the boxes below to make the largest answer when you subtract.\n\n[Image: Vertical subtraction layout with boxes]\n\nFigure, described in words:\nA vertical subtraction problem setup with two rows above a horizontal line. The top row has two square boxes side by side. The bottom row has a minus sign (−) on the left and a single square box aligned under the right box of the top row.\n\n## Question 3\n\nUsing the number tiles, Joan and Herbert played a new game.\nThey placed the numbers to make the largest answer.\n\nC. Use the tiles [1], [4], and [5]. Write the numbers on the tiles in the boxes below to make the largest answer when you multiply.\n\n[Image: Vertical multiplication layout with boxes]\n\nFigure, described in words:\nA vertical multiplication problem setup with two rows above a horizontal line. The top row has two square boxes side by side. The bottom row has a multiplication sign (×) on the left and a single square box aligned under the right box of the top row.\n\n## Question 4\n\nGet to 20 Number Game\n\nTwo children, Joan and Herbert, are learning to play a game “Get to 20.” Here are the rules for the game.\n\nGET TO 20\nRULES\n\nPick Tiles: Each player draws three number tiles.\n\nAdd Tiles: Each player places the three tiles to make an addition problem with the sum total closest to 20.\n\nFor example, here are four ways a player who draws [1] , [4] , and [5] could place the tiles:\n\n  [5] [1]          [4] [5]          [1] [5]             [1]\n+     [4]    or  +     [1]    or  +     [4]    or     + [5]\n---------        ---------        ---------         + [4]\n       55               46               19         -----\n                                                       10\n\nThis player should choose to show the addition problem\n  15\n+  4\n----\n  19\nbecause 19 is the total closest to 20.\n\nJoan and Herbert played the game “Get to 20.”\n\nJoan picked [2] , [7] , and [9] . Herbert picked [1] , [3] , and [6] .\n\nA. What is the addition problem that Joan could make with her number tiles that gives a total closest to 20? Be sure to include the total.\n\n## Question 5\n\nGet to 20 Number Game\n\nTwo children, Joan and Herbert, are learning to play a game “Get to 20.” Here are the rules for the game.\n\nGET TO 20\nRULES\n\nPick Tiles: Each player draws three number tiles.\n\nAdd Tiles: Each player places the three tiles to make an addition problem with the sum total closest to 20.\n\nFor example, here are four ways a player who draws [1] , [4] , and [5] could place the tiles:\n\n  [5] [1]          [4] [5]          [1] [5]             [1]\n+     [4]    or  +     [1]    or  +     [4]    or     + [5]\n---------        ---------        ---------         + [4]\n       55               46               19         -----\n                                                       10\n\nThis player should choose to show the addition problem\n  15\n+  4\n----\n  19\nbecause 19 is the total closest to 20.\n\nJoan and Herbert played the game “Get to 20.”\n\nJoan picked [2] , [7] , and [9] . Herbert picked [1] , [3] , and [6] .\n\nB. What is the addition problem that Herbert could make with his number tiles that gives a total closest to 20? Be sure to include the total.\n\n## Question 6\n\nGet to 20 Number Game\n\nTwo children, Joan and Herbert, are learning to play a game “Get to 20.” Here are the rules for the game.\n\nGET TO 20\nRULES\n\nPick Tiles: Each player draws three number tiles.\n\nAdd Tiles: Each player places the three tiles to make an addition problem with the sum total closest to 20.\n\nFor example, here are four ways a player who draws [1] , [4] , and [5] could place the tiles:\n\n  [5] [1]          [4] [5]          [1] [5]             [1]\n+     [4]    or  +     [1]    or  +     [4]    or     + [5]\n---------        ---------        ---------         + [4]\n       55               46               19         -----\n                                                       10\n\nThis player should choose to show the addition problem\n  15\n+  4\n----\n  19\nbecause 19 is the total closest to 20.\n\nJoan and Herbert played the game “Get to 20.”\n\nJoan picked [2] , [7] , and [9] . Herbert picked [1] , [3] , and [6] .\n\nC. Herbert said, “If I pick [1] , [4] , and [6] , I can make 20 two different ways.”\n\nShow two ways Herbert could make 20 with [1] , [4] , and [6] .\n\nFirst way:\n\nSecond way:\n\nAnswer each of the 6 questions.",
+  "output_schema": {
+    "properties": {
+      "answer_1": {
+        "description": "Your answer to question 1, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 1",
+        "type": "string"
+      },
+      "answer_2": {
+        "description": "Your answer to question 2, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 2",
+        "type": "string"
+      },
+      "answer_3": {
+        "description": "Your answer to question 3, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 3",
+        "type": "string"
+      },
+      "answer_4": {
+        "description": "Your answer to question 4, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 4",
+        "type": "string"
+      },
+      "answer_5": {
+        "description": "Your answer to question 5, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 5",
+        "type": "string"
+      },
+      "answer_6": {
+        "description": "Your answer to question 6, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 6",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer_1",
+      "answer_2",
+      "answer_3",
+      "answer_4",
+      "answer_5",
+      "answer_6"
+    ],
+    "title": "Answers",
+    "type": "object"
+  },
+  "output": {
+    "answer_1": "Top row: 9 5; bottom row: + 1. Work: 95 + 1 = 96 (the largest possible sum).",
+    "answer_2": "Top row: 7 3; bottom row: − 2. Work: 73 − 2 = 71 (the largest possible difference).",
+    "answer_3": "Top row: 4 1; bottom row: × 5. Work: 41 × 5 = 205 (the largest possible product).",
+    "answer_4": "Joan's addition problem: 2 + 7 + 9 = 18 (written vertically with 2, 7, and 9 stacked, a line under them, and the total 18 below the line).",
+    "answer_5": "Herbert's addition problem: 13 + 6 = 19 (written vertically with 13 on top, + 6 below, a line under them, and the total 19 below the line). Also acceptable: 16 + 3 = 19.",
+    "answer_6": "First way: 14 + 6 = 20. Second way: 16 + 4 = 20."
+  },
+  "llm_thinking": "For Q1, I'm testing arrangements of tiles 1, 5, and 9 to form a two-digit plus one-digit sum, trying to maximize the total—both 95+1 and 91+5 give 96, so I need to check if another arrangement beats that.\n\nFor Q2, I'm working through tiles 2, 3, 7 in subtraction form, finding 73-2=71 gives the largest result after comparing against 72-3=69.\n\nFor Q3, I'm checking all two-digit times one-digit products from tiles 1, 4, 5, and landing on 41×5=205 as the maximum.\n\nFor Q4, I'm now considering Joan's tiles 2, 7, 9 in an addition arrangement and need to find which combination sums closest to 20.\n\nChecking all two-digit plus one-digit combos confirms none beat 36, so 2+7+9=18 is best for Joan, distance 2. For Herbert with tiles 1,3,6, testing combinations shows 13+6=19 (or 16+3=19) is closest to 20, with distance just 1.\n\nFor the final set with tiles 1,4,6, both 14+6=20 and 16+4=20 hit exactly 20, which is the best possible result. Now I need to format all answers as a single-line JSON with no newlines, describing each vertical addition layout using spaces or slashes instead.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 2677,
+  "completion_tokens": 1864,
+  "reasoning_tokens": 1531,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335960-oItwFneLfMfZRXMM1E4b",
+  "requested_at": "2026-10-19T14:20:47+00:00"
+}

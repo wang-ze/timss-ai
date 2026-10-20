@@ -1,0 +1,62 @@
+{
+  "unit_key": "TIMSS 2007/grade 8/Mathematics/M042304A+M042304B+M042304C+M042304D",
+  "item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M042304A",
+    "TIMSS 2007/grade 8/Mathematics/M042304B",
+    "TIMSS 2007/grade 8/Mathematics/M042304C",
+    "TIMSS 2007/grade 8/Mathematics/M042304D"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are an eighth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "These 4 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nTriathlon\n\nA triathlon is a race in which athletes swim, then cycle, then run set distances. The first person to complete the whole course is the winner.\n\nKathy, Barbara, and Sue competed with each other in a triathalon. The course they covered consisted of a 1 kilometer swim, followed by a 40 kilometer cycle ride, and then a 15 kilometer run.\n\nA. Barbara was the fastest swimmer and completed the 1 km distance in 25 minutes. Kathy took 10 minutes longer than Barbara, and Sue took 5 minutes longer than Kathy.\n\nUse this information to complete the table for swimming:\n\n| Swimming | Kathy | Barbara | Sue |\n| --- | --- | --- | --- |\n| Time taken (minutes) | | 25 | |\n\n## Question 2\n\nTriathlon\n\nA triathlon is a race in which athletes swim, then cycle, then run set distances. The first person to complete the whole course is the winner.\n\nKathy, Barbara, and Sue competed with each other in a triathalon. The course they covered consisted of a 1 kilometer swim, followed by a 40 kilometer cycle ride, and then a 15 kilometer run.\n\nB. Kathy was the fastest cyclist. She averaged 30 kilometers per hour for the 40 km ride. Barbara took 10 minutes more than Kathy, and Sue took 15 minutes more than Kathy.\n\nUse this information to complete the table for cycling:\n\n| Cycling | Kathy | Barbara | Sue |\n| --- | --- | --- | --- |\n| Time taken (minutes) | | | |\n\n## Question 3\n\nTriathlon\n\nA triathlon is a race in which athletes swim, then cycle, then run set distances. The first person to complete the whole course is the winner.\n\nKathy, Barbara, and Sue competed with each other in a triathalon. The course they covered consisted of a 1 kilometer swim, followed by a 40 kilometer cycle ride, and then a 15 kilometer run.\n\nC. Sue was the fastest runner. She averaged 7.5 km per hour for the 15 km run. Barbara took 10 minutes more than Sue, and Kathy took 5 minutes more than Barbara.\n\nUse this information to complete the table for running:\n\n| Running | Kathy | Barbara | Sue |\n| --- | --- | --- | --- |\n| Time taken (minutes) | | | |\n\n## Question 4\n\nTriathlon\n\nA triathlon is a race in which athletes swim, then cycle, then run set distances. The first person to complete the whole course is the winner.\n\nKathy, Barbara, and Sue competed with each other in a triathalon. The course they covered consisted of a 1 kilometer swim, followed by a 40 kilometer cycle ride, and then a 15 kilometer run.\n\nD. Complete the table to show the total time each person took to finish the triathlon.\n\n| Triathlon | Kathy | Barbara | Sue |\n| --- | --- | --- | --- |\n| Time taken (minutes) | | | |\n\nWho won the triathlon?\n\nAnswer: ____\n\nAnswer each of the 4 questions.",
+  "output_schema": {
+    "properties": {
+      "answer_1": {
+        "description": "Your answer to question 1, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 1",
+        "type": "string"
+      },
+      "answer_2": {
+        "description": "Your answer to question 2, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 2",
+        "type": "string"
+      },
+      "answer_3": {
+        "description": "Your answer to question 3, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 3",
+        "type": "string"
+      },
+      "answer_4": {
+        "description": "Your answer to question 4, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 4",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer_1",
+      "answer_2",
+      "answer_3",
+      "answer_4"
+    ],
+    "title": "Answers",
+    "type": "object"
+  },
+  "output": {
+    "answer_1": "Kathy: 35 minutes (Barbara's 25 + 10). Sue: 40 minutes (Kathy's 35 + 5). Completed table: Swimming time taken (minutes): Kathy 35, Barbara 25, Sue 40.",
+    "answer_2": "Kathy: 40 km at 30 km/h takes 80 minutes (40 / 30 = 4/3 hours = 80 minutes). Barbara: 80 + 10 = 90 minutes. Sue: 80 + 15 = 95 minutes. Completed table: Cycling time taken (minutes): Kathy 80, Barbara 90, Sue 95.",
+    "answer_3": "Sue: 15 km at 7.5 km/h takes 2 hours = 120 minutes (15 / 7.5 = 2). Barbara: 120 + 10 = 130 minutes. Kathy: 130 + 5 = 135 minutes. Completed table: Running time taken (minutes): Kathy 135, Barbara 130, Sue 120.",
+    "answer_4": "Totals: Kathy = 35 + 80 + 135 = 250 minutes. Barbara = 25 + 90 + 130 = 245 minutes. Sue = 40 + 95 + 120 = 255 minutes. Completed table: Triathlon time taken (minutes): Kathy 250, Barbara 245, Sue 255. Winner: Barbara (245 minutes)."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 1791,
+  "completion_tokens": 489,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 2.703,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:16:10+00:00"
+}

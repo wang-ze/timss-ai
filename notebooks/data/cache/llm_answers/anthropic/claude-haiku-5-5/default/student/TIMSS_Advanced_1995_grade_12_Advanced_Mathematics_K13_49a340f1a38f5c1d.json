@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K13",
+  "item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K13"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": null,
+  "system_prompt": "You are a twelfth-grade student in the final year of secondary school who has taken advanced mathematics courses, taking the TIMSS Advanced mathematics test for students like you. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The number of bacteria in a colony was growing exponentially. At 1 pm yesterday the number of bacteria was 1000 and at 3 pm yesterday it was 4000.\n\nHow many bacteria were there in the colony at 6 pm yesterday?",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Let N(t) be the number of bacteria t hours after 1 pm. Exponential growth gives N(t) = N0 * b^t. From N(0) = 1000 and N(2) = 4000: b^2 = 4000/1000 = 4, so b = 2 (the number doubles every hour). At 6 pm, t = 5, so N(5) = 1000 * 2^5 = 32000. Equivalently, from 3 pm to 6 pm is 3 hours, so 4000 * 2^3 = 32000. There were 32000 bacteria at 6 pm yesterday."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 559,
+  "completion_tokens": 309,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 1.985,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:15:18+00:00"
+}

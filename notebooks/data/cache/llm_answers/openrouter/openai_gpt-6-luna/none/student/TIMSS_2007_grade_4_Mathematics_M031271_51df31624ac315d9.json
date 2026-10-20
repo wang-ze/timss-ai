@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2007/grade 4/Mathematics/M031271",
+  "item_keys": [
+    "TIMSS 2007/grade 4/Mathematics/M031271"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "none",
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The square is cut into 7 pieces. Put an X on each of the 2 triangles that are the same size and shape.\n\n[Image: Square cut into 7 pieces]\n\nFigure, described in words:\nA square is divided into 7 geometric pieces. A diagonal line connects the bottom-left corner to the top-right corner. Below this diagonal, a line segment runs from the center of the square (the midpoint of the diagonal) to the bottom-right corner, dividing the entire lower-right half into two congruent right isosceles triangles. Above the diagonal, line segments partition the upper-left half into five pieces: a square, a parallelogram, and three triangles.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Put an X on the two matching right triangles below the diagonal: the triangle next to the bottom edge and the triangle next to the right edge."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 351,
+  "completion_tokens": 42,
+  "reasoning_tokens": 0,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792430073-svtUY6L3Exvs9O4qh25G",
+  "requested_at": "2026-10-19T18:00:46+00:00"
+}

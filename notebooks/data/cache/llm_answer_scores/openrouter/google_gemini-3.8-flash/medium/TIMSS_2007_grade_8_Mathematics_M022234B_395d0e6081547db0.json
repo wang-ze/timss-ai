@@ -1,0 +1,48 @@
+{
+  "item_key": "TIMSS 2007/grade 8/Mathematics/M022234B",
+  "response": "Area of original = 8 × 2 = 16 cm². Area of new = 6 × 5 = 30 cm². Ratio of original area to new area = 16 : 30, which simplifies to 8 : 15.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the eighth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Questions\n\nThese 2 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\n[Image: A rectangle]\n\nA. On the grid below, draw a rectangle whose length is three-fourths the length of the rectangle above, and whose width is two and one-half times the width of the rectangle above. Label the length and width of the new rectangle in centimeters on the figure. Each square on the grid is 1 cm by 1 cm.\n\n[Image: A grid of squares]\n\nFigure, described in words:\nAt the top of the page is a rectangle drawn horizontally. Inside near the bottom edge is the word \"Length\", and below the bottom edge is labeled \"8 cm\". Along the inside right edge, printed vertically, is \"Width\" and \"2 cm\". Below Part A is a dashed-line grid measuring 10 squares wide by 15 squares high.\n\n## Question 2\n\n[Image: A rectangle]\n\nB. What is the ratio of the area of the original rectangle to the area of the new one?\n\nFigure, described in words:\nA rectangle is drawn horizontally. Inside near the bottom edge is the word \"Length\", and below the bottom edge is labeled \"8 cm\". Along the inside right edge, printed vertically, is \"Width\" and \"2 cm\".\n\n# Scoring guide of question 2 (2 points)\n\n- Correct Response (2 points):\n  - 8:15, 8/15 or equivalent (e.g., 16/30).\n  - The ratio is not 8:15 but the ratio of part b is consistent with response in part a.\n- Partial Response (1 point):\n  - 15:8 or equivalent [ratio of new to original].\n  - Gives ratio of new rectangle to original rectangle. The ratio is not 15:8 but the ratio of part b is consistent.\n  - Other partially correct including correct ratio given but incorrectly reduced (e.g., 16/30 = 3/10).\n- Incorrect Response (0 points):\n  - Focuses exclusively on the ratios of lengths and/or widths between or within the rectangles.\n  - Other incorrect (including crossed out/erased, stray marks, illegible, or off task). Also includes multiplication of ratio of lengths and widths.\n- Nonresponse (0 points):\n  - Blank\n\nScoring notes: Note: There is no distinction made between responses with or without units.\n\n# Response to question 2\n\nArea of original = 8 × 2 = 16 cm². Area of new = 6 × 5 = 30 cm². Ratio of original area to new area = 16 : 30, which simplifies to 8 : 15.\n\nScore the response to question 2.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Partial Response",
+          "Incorrect Response",
+          "Nonresponse"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response calculates the area of the original rectangle (16) and the new rectangle (30), correctly states the ratio of the original area to the new area as 16:30, and simplifies it to 8:15. This matches the correct response in the scoring guide.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": "**Calculating Area Ratios**\n\nI've been focused on determining the areas of both the initial and modified rectangles. The original presented a straightforward calculation, yielding 16 cm². The revised dimensions resulted in a new area of 30 cm². My current effort is dedicated to expressing the relationship between these two values as a ratio.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 897,
+  "completion_tokens": 226,
+  "reasoning_tokens": 146,
+  "cost_usd": 0.00152025,
+  "seconds": 3.609,
+  "batch_id": null,
+  "requested_at": "2026-10-19T18:40:16+00:00"
+}

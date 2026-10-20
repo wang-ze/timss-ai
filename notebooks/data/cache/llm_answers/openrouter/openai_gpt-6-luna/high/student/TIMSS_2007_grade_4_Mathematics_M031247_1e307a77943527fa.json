@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2007/grade 4/Mathematics/M031247",
+  "item_keys": [
+    "TIMSS 2007/grade 4/Mathematics/M031247"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "high",
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "A man took his 3 children to a fair. Tickets cost twice as much for adults as for children. The father paid a total of 50 zeds for the 4 tickets.\n\nHow many zeds did each child’s ticket cost? Show your work.\n\nAnswer: ____",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Let the cost of a child’s ticket be x zeds. The adult ticket costs 2x zeds.\n\n3x + 2x = 50\n5x = 50\nx = 10\n\nEach child’s ticket cost 10 zeds."
+  },
+  "llm_thinking": "**Solving for the answer**\n\nI need to work through the math in order to figure out how to present the answer in JSON format. The formula involves three children, each with an unspecified value, and two adults, each with a different value. So, if I set 5x equal to 50, I can calculate x as 10. Now, I just need to show this solution clearly in the JSON format requested. Let's see how that turns out!",
+  "finish_reason": "stop",
+  "prompt_tokens": 269,
+  "completion_tokens": 102,
+  "reasoning_tokens": 32,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792430071-WkiamaWym8JlrSqYqG4P",
+  "requested_at": "2026-10-19T17:53:44+00:00"
+}

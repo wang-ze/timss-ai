@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L17",
+  "item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L17"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "For what real value of k will the equation below describe a circle with radius 3?\n\nx^2 + y^2 + 2x - 4y + k = 0\n\nShow all your work.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Complete the square: x^2 + 2x = (x+1)^2 - 1 and y^2 - 4y = (y-2)^2 - 4. Substituting gives (x+1)^2 - 1 + (y-2)^2 - 4 + k = 0, so (x+1)^2 + (y-2)^2 = 5 - k. For a circle of radius 3, the right side must equal 3^2 = 9, so 5 - k = 9, giving k = -4. Check: with k = -4 the equation is (x+1)^2 + (y-2)^2 = 9, a circle with center (-1, 2) and radius 3. Answer: k = -4."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 505,
+  "completion_tokens": 222,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 1.416,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:21:15+00:00"
+}

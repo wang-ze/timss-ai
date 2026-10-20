@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L16",
+  "item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L16"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Find all real values of x which satisfy the following equation:\n\nsqrt(x) - 2/sqrt(x) = 1\n\nShow all your work.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "To find all real values of x, we first determine the domain of the equation. For the square root to be defined and to avoid division by zero, we must have x > 0.\n\nGiven the equation:\nsqrt(x) - 2/sqrt(x) = 1\n\nMultiply both sides by sqrt(x):\nx - 2 = sqrt(x)\n\nRearrange into standard quadratic form in terms of sqrt(x):\nx - sqrt(x) - 2 = 0\n\nLet u = sqrt(x). Since x > 0, u must be positive (u > 0). Substituting u into the equation gives:\nu^2 - u - 2 = 0\n\nFactor the quadratic equation:\n(u - 2)(u + 1) = 0\n\nThis gives two possible values for u:\nu = 2  or  u = -1\n\nSince u = sqrt(x) cannot be negative for real values of x, we discard u = -1.\n\nTherefore:\nsqrt(x) = 2\n\nSquaring both sides:\nx = 4\n\nCheck:\nsqrt(4) - 2/sqrt(4) = 2 - 2/2 = 2 - 1 = 1 (True)\n\nThe only real solution is x = 4."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 254,
+  "completion_tokens": 915,
+  "reasoning_tokens": 599,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792336157-txl4lX1Do5kkuqSPK9OG",
+  "requested_at": "2026-10-19T14:20:46+00:00"
+}

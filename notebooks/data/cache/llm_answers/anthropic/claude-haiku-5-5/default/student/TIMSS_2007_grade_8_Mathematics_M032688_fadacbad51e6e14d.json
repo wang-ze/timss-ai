@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2007/grade 8/Mathematics/M032688",
+  "item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M032688"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": null,
+  "system_prompt": "You are an eighth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: Spinner]\n\nRoland’s spinner has three sectors of different colors, orange, purple, and green. Roland spins the pointer 1000 times. The chart below shows how many times the pointer stops on each section.\n\n| Color | Times Stopped |\n| :--- | :---: |\n| Orange | 510 |\n| Purple | 243 |\n| Green | 247 |\n\nDraw lines on the spinner above to make the three sectors the approximate size you would expect them to be. Label them orange, purple, and green.\n\nFigure, described in words:\nA circular spinner with a central circular hub and an arrow pointer angled upward and to the right. Around the circumference of the circle is an outer rim with 8 equally spaced tick marks, dividing the circle into 8 equal arcs of 45° each (at 12 o'clock, 1:30, 3 o'clock, 4:30, 6 o'clock, 7:30, 9 o'clock, and 10:30). The interior of the circle is blank.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Draw two straight lines from the center of the circle, one to the 12 o'clock tick mark and one to the 6 o'clock tick mark, which divides the circle into two halves. Label the right half (from 12 o'clock clockwise to 6 o'clock) 'Orange'. Then draw one line from the center to the 9 o'clock tick mark. Label the lower-left quarter (from 6 o'clock clockwise to 9 o'clock) 'Purple'. Label the upper-left quarter (from 9 o'clock clockwise to 12 o'clock) 'Green'. Reasoning: Orange was stopped 510 of 1000 times, about 51%, which is about half of the spinner, or 4 of the 8 equal arcs (180°). Purple was stopped 243 times, about 24%, and green 247 times, about 25%, so each is about a quarter of the spinner, or 2 of the 8 equal arcs (90°)."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 773,
+  "completion_tokens": 597,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 3.339,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:14:56+00:00"
+}

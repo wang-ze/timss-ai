@@ -34,8 +34,9 @@ import numpy as np
 import pandas as pd
 from scipy import stats
 
-from .evaluation import PredictionResults, excel_value, summarize_errors
-from .items import PARAMETER_NAMES
+from ..config import excel_value
+from ..items import PARAMETER_NAMES
+from .evaluation import PredictionResults, summarize_errors
 
 ITEM_COLUMNS = ["item_key", "assessment", "grade", "item_id", "irt_model"]
 # Long texts that the saved prediction files hold in full; the workbook names the file of each prediction instead.

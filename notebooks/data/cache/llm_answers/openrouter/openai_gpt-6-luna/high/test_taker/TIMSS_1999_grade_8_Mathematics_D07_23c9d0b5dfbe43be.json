@@ -1,0 +1,45 @@
+{
+  "unit_key": "TIMSS 1999/grade 8/Mathematics/D07",
+  "item_keys": [
+    "TIMSS 1999/grade 8/Mathematics/D07"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The line m is a line of symmetry for figure ABCDE.\n\nThe measure of angle BCD is\n\n[Image: Polygon ABCDE with line of symmetry m]\n\nFigure, described in words:\nA symmetric five-sided polygon ABCDE with a vertical dashed line of symmetry labeled m, which has arrows at both top and bottom ends. The horizontal top side connects vertex A on the left to vertex E on the right, bisected perpendicularly by line m. The left side goes down and outward from A to vertex B, then slants down and inward to vertex C at the bottom, which lies on line m. The right side is a mirror image, going from E down and outward to vertex D, then down and inward to vertex C. Inside the polygon, angle A is marked with an arc and labeled 130, angle B is marked with an arc and labeled 110, and the angle between side BC and line of symmetry m at vertex C is marked with an arc and labeled 30.\n\nA. 30°\nB. 50°\nC. 60°\nD. 70°\nE. 110°",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "C"
+  },
+  "llm_thinking": "**Calculating angle BCD**\n\nI need to interpret the information to find the angle BCD, keeping in mind that there's a vertical symmetry through point C. With the given angle of 30 degrees between line BC and the symmetry line m at C, I know that since line m is vertical, the symmetric axis bisects angle BCD. Therefore, each part of angle BCD is 30 degrees, giving me a total of 60 degrees. So, I’ll go with option C.",
+  "finish_reason": "stop",
+  "prompt_tokens": 411,
+  "completion_tokens": 75,
+  "reasoning_tokens": 61,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335947-adaJJg0fXIVWd5UYzY66",
+  "requested_at": "2026-10-18T15:20:16+00:00"
+}

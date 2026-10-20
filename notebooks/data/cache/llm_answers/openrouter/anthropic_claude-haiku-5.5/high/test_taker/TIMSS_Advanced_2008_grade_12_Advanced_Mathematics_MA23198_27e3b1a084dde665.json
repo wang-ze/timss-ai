@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23198",
+  "item_keys": [
+    "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23198"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: Graph of y = x + cos x]\n\nSophia is studying the graph of the function y = x + cos x shown above. She says that the slope at point A is the same as the slope at point B. Explain why she is correct.\n\nFigure, described in words:\nA Cartesian coordinate plane with horizontal axis labeled x and vertical axis labeled y, intersecting at the origin labeled O. The grid lines correspond to labels on the axes. The x-axis is labeled at -π, O (0), π, 2π, and 3π. The y-axis is labeled at -4, 4, and 8. The graph of the curve y = x + cos x is shown passing through the grid from x < -π to x > 3π. Two points on the curve are marked with solid black dots and labeled: point A at x = π and point B at x = 2π.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "The slope of the curve at any point is given by the derivative. For y = x + cos x, dy/dx = 1 - sin x. At point A, where x = π, sin π = 0, so the slope is 1 - 0 = 1. At point B, where x = 2π, sin 2π = 0, so the slope is 1 - 0 = 1. Both points have slope 1, so Sophia is correct that the slopes at A and B are the same. (Equivalently, the sine function has the same value, 0, at x = π and x = 2π, so the slope 1 - sin x is the same at both points.)"
+  },
+  "llm_thinking": "Taking the derivative gives 1 - sin x, which equals 1 at both x=π and x=2π since sine is zero at both points, confirming the slopes match.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 717,
+  "completion_tokens": 316,
+  "reasoning_tokens": 118,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335957-QKbCVbAXn76L3I0C7O9z",
+  "requested_at": "2026-10-19T14:20:44+00:00"
+}

@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2007/grade 4/Mathematics/M031038",
+  "item_keys": [
+    "TIMSS 2007/grade 4/Mathematics/M031038"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": null,
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: Three arrangements of 3 tiles labeled Rita, Ina, and Lana]\n\nRita, Ina, and Lana take turns arranging 3 tiles. Each arranges the tiles in a different shape as shown above. Which of the following is true about the area of the shapes?\n\nFigure, described in words:\nThree arrangements of three tiles each, labeled \"Rita\", \"Ina\", and \"Lana\":\n- Rita: Two squares are placed side by side horizontally, sharing a vertical edge. A triangle sits on top of the left square, with its base along the top edge of that square and its apex pointing upward.\n- Ina: A square sits at the top with horizontal top and bottom edges. Attached below it is a triangle sharing the square's bottom horizontal edge and pointing downward. Attached to the lower-right edge of the triangle is a second square, tilted diagonally downward and to the right.\n- Lana: Two squares are placed side by side horizontally, sharing a vertical edge. Attached to the right vertical edge of the right square is a triangle pointing to the right.\n\nA. Rita’s shape has a greater area than the others.\nB. Ina’s shape has a greater area than the others.\nC. Lana’s shape has a greater area than the others.\nD. All of the shapes have the same area.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "D"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 876,
+  "completion_tokens": 131,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 1.413,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:16:45+00:00"
+}

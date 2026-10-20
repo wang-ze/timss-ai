@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 1995/grade 4/Mathematics/S4",
+  "item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/S4"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": null,
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "A teacher marks 10 of her pupils' tests every half hour. It takes her one and one-half hours to mark all her pupils' tests. How many pupils are in her class?\n\nAnswer: ____",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "30 pupils. Work: 1 and one-half hours is 3 half-hours. In each half hour she marks 10 tests, so 3 × 10 = 30 tests. Therefore there are 30 pupils in her class."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 513,
+  "completion_tokens": 113,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 1.713,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:14:49+00:00"
+}

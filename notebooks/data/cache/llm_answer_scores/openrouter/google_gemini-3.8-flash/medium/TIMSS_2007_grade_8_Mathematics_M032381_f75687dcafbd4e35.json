@@ -1,0 +1,47 @@
+{
+  "item_key": "TIMSS 2007/grade 8/Mathematics/M032381",
+  "response": "56",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the eighth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\nThe number of children on a trip was larger than 55, but smaller than 65.\nThe children could be divided into groups of 7, but not groups of 8.\nHow many children were on the trip?\n\nAnswer: ____\n\n# Scoring guide of the question (1 point)\n\n- Correct Response (1 point):\n  - 63; 9 × 7; or 7 × 9\n- Incorrect Response (0 points):\n  - 56; 8 × 7; or 7 × 8\n  - Other incorrect (including crossed out/erased, stray marks, illegible, or off task)\n- Nonresponse (0 points):\n  - Blank\n\n# Response to the question\n\n56\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response",
+          "Nonresponse"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response gives 56, which is divisible by 8 and specifically listed under the Incorrect Response category in the scoring guide.",
+    "category": "Incorrect Response"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 461,
+  "completion_tokens": 234,
+  "reasoning_tokens": 189,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792336163-PLPJ9qAh6duftYYOclJF",
+  "requested_at": "2026-10-19T14:20:50+00:00"
+}

@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2011/grade 8/Mathematics/M042269",
+  "item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M042269"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The results of a long jump competition were reported as follows:\n\n| | Average Length |\n| --- | --- |\n| Team A | 3.6 m |\n| Team B | 4.8 m |\n\nThere were the same number of students in each team.\nWhich statement about the competition MUST be true?\n\nA. Each student in team B jumped farther than any student in team A.\nB. After every student in team A jumped, there was a student in team B who jumped farther.\nC. As a group, team B jumped farther than team A.\nD. Some students in team A jumped farther than some students in team B.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "C"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 311,
+  "completion_tokens": 43,
+  "reasoning_tokens": 29,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335947-adaJJg0fXIVWd5UYzY66",
+  "requested_at": "2026-10-18T15:20:16+00:00"
+}

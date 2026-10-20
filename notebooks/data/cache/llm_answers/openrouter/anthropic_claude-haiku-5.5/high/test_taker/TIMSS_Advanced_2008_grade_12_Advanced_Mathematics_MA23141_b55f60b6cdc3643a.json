@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23141",
+  "item_keys": [
+    "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23141"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: Graph of a parabola f(x) on a Cartesian coordinate plane]\n\nThe graph of the function f is shown above. The equation of the function f is given by f(x) = ax^2 + bx + c. Find the values of a, b, and c.\n\nShow your work.\n\nFigure, described in words:\nA Cartesian coordinate system with a horizontal axis labeled x and a vertical axis labeled f(x). The origin is labeled O. The axes have evenly spaced tick marks representing 1 unit each. An upward-opening parabola is drawn on the plane. Three points on the parabola are marked with an '×' and labeled with coordinates: the x-intercepts (-1, 0) and (2, 0), and the y-intercept (0, -4). The vertex of the parabola is located in the fourth quadrant below (0, -4).",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Since the x-intercepts are (-1, 0) and (2, 0), write f(x) = a(x + 1)(x - 2). Expanding gives f(x) = a(x^2 - x - 2). The y-intercept (0, -4) gives f(0) = -2a = -4, so a = 2. Therefore f(x) = 2(x^2 - x - 2) = 2x^2 - 2x - 4. Comparing with f(x) = ax^2 + bx + c gives a = 2, b = -2, c = -4. Check: f(-1) = 2 + 2 - 4 = 0, f(2) = 8 - 4 - 4 = 0, f(0) = -4. The vertex is at x = -b/(2a) = 1/2, with f(1/2) = -4.5, which lies in the fourth quadrant below (0, -4), consistent with the graph."
+  },
+  "llm_thinking": "Using the roots to form the parabola, I find a=2 giving f(x)=2x²-2x-4, and I verify the vertex sits at (0.5,-4.5), consistent with the fourth quadrant placement. Now I just need to output the answer as a single-line JSON with the work shown in a string.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 725,
+  "completion_tokens": 499,
+  "reasoning_tokens": 205,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335960-oItwFneLfMfZRXMM1E4b",
+  "requested_at": "2026-10-19T14:20:47+00:00"
+}

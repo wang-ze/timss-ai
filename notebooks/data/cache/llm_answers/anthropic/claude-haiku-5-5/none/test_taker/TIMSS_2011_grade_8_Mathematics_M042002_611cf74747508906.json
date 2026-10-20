@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 8/Mathematics/M042002",
+  "item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M042002"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Place the four digits 3, 5, 7, and 9 into the boxes below in the positions that would give the greatest result when the two numbers are multiplied.\n\n[Image: Two blank boxes, with one box for each digit, multiplied by another two blank boxes.]\n\nFigure, described in words:\nA vertical multiplication problem showing a two-digit number multiplied by a two-digit number. The top row consists of two blank square boxes side by side. The bottom row consists of a multiplication sign (x) to the left, followed by two blank square boxes side by side directly beneath the top boxes. A horizontal line is drawn underneath the bottom row of boxes.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Place 9 and 7 in the tens positions and 5 and 3 in the ones positions, so the top row reads 95 and the bottom row reads 73 (or equivalently top 97 and bottom 53 is not greatest; the maximum is 95 x 73 = 6935 when the larger digits go in the tens places and the next larger digits pair as 9 with 5 in one number and 7 with 3 in the other). Final placement: top row 9 5 (reads 95), bottom row 7 3 (reads 73), giving 95 x 73 = 6935. Check alternative 97 x 53 = 5141, and 93 x 75 = 6975, which is greater; so the greatest is top row 9 3 (reads 93) and bottom row 7 5 (reads 75), giving 93 x 75 = 6975."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 635,
+  "completion_tokens": 273,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 4.667,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:22:25+00:00"
+}

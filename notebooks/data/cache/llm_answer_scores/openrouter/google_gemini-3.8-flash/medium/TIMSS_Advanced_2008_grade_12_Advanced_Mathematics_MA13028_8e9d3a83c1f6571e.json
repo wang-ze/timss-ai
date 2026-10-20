@@ -1,0 +1,47 @@
+{
+  "item_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13028",
+  "response": "To prove the given statement using mathematical induction, the following steps are essential: \n\n1. **Base Case:** Verify the statement for the smallest natural number, typically n = 1. Substitute n = 1 into both sides of the equation and show that they are equal. This establishes the truth of the statement for the starting value.\n\n2. **Inductive Hypothesis:** Assume that the statement is true for an arbitrary natural number k. That is, assume that 1^2 + 3^2 + ... + (2k - 1)^2 = (k(4k^2 - 1))/3. This assumption is crucial for the inductive step.\n\n3. **Inductive Step:**  Prove that if the statement is true for n = k, then it is also true for n = k + 1.  This involves showing that 1^2 + 3^2 + ... + (2(k+1) - 1)^2 = ((k+1)(4(k+1)^2 - 1))/3.  We will start with the left-hand side of this equation (the expression for n = k+1) and use the inductive hypothesis to manipulate it algebraically until we reach the right-hand side (the expression for n = k+1). This demonstrates that if the statement holds for k, it also holds for k+1.\n\n4. **Conclusion:**  State that, by the principle of mathematical induction, the statement is true for all natural numbers n.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\nFor every natural number n, 1^2 + 3^2 + ... + (2n - 1)^2 = (n(4n^2 - 1))/3\n\nTo prove this by MATHEMATICAL INDUCTION, what are the essential steps that will need to be carried out? (Do not do the actual proof.)\n\n# Scoring guide of the question (1 point)\n\n- Correct Response (1 point):\n  - Correct description of the two steps involved in the proof (i.e., verbal or symbolic statements) equivalent to:\nStep 1: Prove that the statement is true for n = 1.\nStep 2: Prove if the statement is true for any natural number n = k, then it also is true for n = k + 1.\n- Incorrect Response (0 points):\n  - Describes Step 2 correctly but omits Step 1 or describes it incorrectly (e.g., \"prove for n = 0\", or \"we must prove it for some small number\")\n  - Gives correct proof of statement by induction with or without general statement of the induction method, or performs Step 2 correctly but omits Step 1, or describes Step 1 incorrrectly\n  - Describes Step 2: Prove that if the statement is true for any natural number n = k, where k is greater than 1, then it also is true for n = k - 1 with an appropriate Step 1.\n  - Other incorrect (including crossed out, erased, stray marks, illegible, or off task)\n- Nonresponse (0 points):\n  - Blank\n\n# Response to the question\n\nTo prove the given statement using mathematical induction, the following steps are essential: \n\n1. **Base Case:** Verify the statement for the smallest natural number, typically n = 1. Substitute n = 1 into both sides of the equation and show that they are equal. This establishes the truth of the statement for the starting value.\n\n2. **Inductive Hypothesis:** Assume that the statement is true for an arbitrary natural number k. That is, assume that 1^2 + 3^2 + ... + (2k - 1)^2 = (k(4k^2 - 1))/3. This assumption is crucial for the inductive step.\n\n3. **Inductive Step:**  Prove that if the statement is true for n = k, then it is also true for n = k + 1.  This involves showing that 1^2 + 3^2 + ... + (2(k+1) - 1)^2 = ((k+1)(4(k+1)^2 - 1))/3.  We will start with the left-hand side of this equation (the expression for n = k+1) and use the inductive hypothesis to manipulate it algebraically until we reach the right-hand side (the expression for n = k+1). This demonstrates that if the statement holds for k, it also holds for k+1.\n\n4. **Conclusion:**  State that, by the principle of mathematical induction, the statement is true for all natural numbers n.\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response",
+          "Nonresponse"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response clearly and correctly outlines both essential steps required by the scoring guide: verifying the base case for n = 1 (Step 1) and proving that if the statement holds for n = k, it must also hold for n = k + 1 (Step 2).",
+    "category": "Correct Response"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 976,
+  "completion_tokens": 151,
+  "reasoning_tokens": 74,
+  "cost_usd": 0.00129825,
+  "seconds": 3.555,
+  "batch_id": null,
+  "requested_at": "2026-10-19T18:36:24+00:00"
+}

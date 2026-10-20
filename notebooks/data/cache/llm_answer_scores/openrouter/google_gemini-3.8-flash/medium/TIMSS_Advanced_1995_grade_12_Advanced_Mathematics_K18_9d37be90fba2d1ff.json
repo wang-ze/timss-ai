@@ -1,0 +1,48 @@
+{
+  "item_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K18",
+  "response": "Proof: Since BN is an altitude, BN ⊥ AC, so ∠BNC = 90°. Since CM is an altitude, CM ⊥ AB, so ∠CMB = 90°. In triangle BMS, ∠BMS = 90° (since M lies on AB and SM lies along CM, which is perpendicular to AB) and ∠MSB = 40° (given), so by the angle sum of a triangle, ∠MBS = 180° − 90° − 40° = 50°. Since ∠SBC = 20° (given) and ∠MBC = ∠MBS + ∠SBC (because S lies inside the triangle, so ray BS lies between rays BM and BC), we get ∠ABC = ∠MBC = 50° + 20° = 70°. Now consider triangle BMC: ∠BMC = 90° (CM ⊥ AB), so ∠MCB = 180° − 90° − 70° = 20°. Since CS lies along CM, ∠SCB = ∠MCB = 20°. Thus ∠SCB = ∠SBC = 20°. Triangle SBC therefore has two equal angles at B and C, so by the converse of the isosceles triangle theorem, SB = SC. Next, we show ∠ACB = 70°: in triangle BNC, ∠BNC = 90° and ∠NBC = ∠SBC + ∠SBN; since ∠SBN is the angle in triangle SBN, we use the fact that ∠BSC = 180° − 20° − 20° = 140°, and ∠NSC is its supplement? Instead, note that ∠BSC and ∠MSB are supplementary because M, S, C are collinear: ∠BSC = 180° − ∠MSB = 180° − 40° = 140°, consistent with the above. Now in triangle BNC, ∠NBC = 90° − ∠ACB. Since ∠SCB = 20° and S lies on CM, the line CM is the altitude from C, so ∠ACM = 90° − ∠A, and in triangle AMC (right angle at M), ∠MCA = 90° − ∠A. Also, from triangle ABC, ∠A + ∠ABC + ∠ACB = 180°, with ∠ABC = 70°, so ∠A + ∠ACB = 110°. Since ∠MCB = 20° and ∠MCA = ∠ACB − ∠MCB = ∠ACB − 20°, and ∠MCA = 90° − ∠A, we have ∠ACB − 20° = 90° − ∠A, so ∠ACB + ∠A = 110°, which is consistent but gives no new information. Instead, use BN: BN is an altitude, so in right triangle BNC, ∠NBC = 90° − ∠ACB. Since ∠NBC = ∠SBC = 20° (BN passes through S, so ray BS = ray BN), we get 90° − ∠ACB = 20°, hence ∠ACB = 70°. Since ∠ABC = 70° and ∠ACB = 70°, triangle ABC has two equal angles at B and C, so by the converse of the isosceles triangle theorem, AB = AC. Therefore ΔABC is isosceles. ∎",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\nIn the ΔABC the altitudes BN and CM intersect at point S. The measure of ∠MSB is 40° and the measure of ∠SBC is 20°. Write a PROOF of the following statement:\n\n“ΔABC is isosceles.”\n\nGive geometric reasons for statements in your proof.\n\n[Image: Triangle ABC with altitudes BN and CM intersecting at S]\n\nFigure, described in words:\nA triangle ABC with vertex A at the top, vertex B at the bottom left, and vertex C at the bottom right. Segment BN is an altitude drawn from B to AC, with a right-angle symbol at N. Segment CM is an altitude drawn from C to AB, with a right-angle symbol at M. BN and CM intersect at interior point S. The angle MSB is marked with an arc and labeled 40°. The angle SBC is marked with an arc and labeled 20°.\n\n# Scoring guide of the question (2 points)\n\n- Correct Response (2 points):\n  - Correct proof. Proves that ∠B = ∠C using the following facts:\n\n• the sum of angles in any triangle is 180°.\n• if two angles of a triangle are equal, the triangle is isosceles.\nand possibly also uses:\n• vertically opposite angles are equal.\n• supplementary angles add to 180°.\nThe concept of congruence is not used.\n  - As code 20 but somewhere in the proof uses the fact that some triangles: e.g. triangles BCM and CBN, OR triangles BMS and CNS, are congruent.\n  - All other fully correct and complete proofs.\n- Partial Response (1 point):\n  - As in codes 20-21 shows ∠B and ∠C are equal giving steps in logical order, but omits one step or one reason or gives one incorrect reason.\n  - As in codes 20-21 shows ∠B and ∠C are equal, states correct geometric facts but not in a logically correct order.\n  - Other responses with minor errors.\n- Incorrect Response (0 points):\n  - Shows measures of angles correctly on figure but no geometric facts mentioned or argumentation given.\n  - Incorrect argumentation and/or includes more than one incorrect geometric fact, step, or reason.\n  - \"Proof\" is circular; makes use of statements which are equivalent to what is to be proven.\n  - Other incorrect responses.\n- Nonresponse (0 points):\n  - Crossed-out, illegible, or impossible to interpret.\n  - BLANK\n\nScoring notes: Note: To be considered correct, all responses must include mention of all geometric facts used, all calculations made, and a conclusion\n\n# Response to the question\n\nProof: Since BN is an altitude, BN ⊥ AC, so ∠BNC = 90°. Since CM is an altitude, CM ⊥ AB, so ∠CMB = 90°. In triangle BMS, ∠BMS = 90° (since M lies on AB and SM lies along CM, which is perpendicular to AB) and ∠MSB = 40° (given), so by the angle sum of a triangle, ∠MBS = 180° − 90° − 40° = 50°. Since ∠SBC = 20° (given) and ∠MBC = ∠MBS + ∠SBC (because S lies inside the triangle, so ray BS lies between rays BM and BC), we get ∠ABC = ∠MBC = 50° + 20° = 70°. Now consider triangle BMC: ∠BMC = 90° (CM ⊥ AB), so ∠MCB = 180° − 90° − 70° = 20°. Since CS lies along CM, ∠SCB = ∠MCB = 20°. Thus ∠SCB = ∠SBC = 20°. Triangle SBC therefore has two equal angles at B and C, so by the converse of the isosceles triangle theorem, SB = SC. Next, we show ∠ACB = 70°: in triangle BNC, ∠BNC = 90° and ∠NBC = ∠SBC + ∠SBN; since ∠SBN is the angle in triangle SBN, we use the fact that ∠BSC = 180° − 20° − 20° = 140°, and ∠NSC is its supplement? Instead, note that ∠BSC and ∠MSB are supplementary because M, S, C are collinear: ∠BSC = 180° − ∠MSB = 180° − 40° = 140°, consistent with the above. Now in triangle BNC, ∠NBC = 90° − ∠ACB. Since ∠SCB = 20° and S lies on CM, the line CM is the altitude from C, so ∠ACM = 90° − ∠A, and in triangle AMC (right angle at M), ∠MCA = 90° − ∠A. Also, from triangle ABC, ∠A + ∠ABC + ∠ACB = 180°, with ∠ABC = 70°, so ∠A + ∠ACB = 110°. Since ∠MCB = 20° and ∠MCA = ∠ACB − ∠MCB = ∠ACB − 20°, and ∠MCA = 90° − ∠A, we have ∠ACB − 20° = 90° − ∠A, so ∠ACB + ∠A = 110°, which is consistent but gives no new information. Instead, use BN: BN is an altitude, so in right triangle BNC, ∠NBC = 90° − ∠ACB. Since ∠NBC = ∠SBC = 20° (BN passes through S, so ray BS = ray BN), we get 90° − ∠ACB = 20°, hence ∠ACB = 70°. Since ∠ABC = 70° and ∠ACB = 70°, triangle ABC has two equal angles at B and C, so by the converse of the isosceles triangle theorem, AB = AC. Therefore ΔABC is isosceles. ∎\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Partial Response",
+          "Incorrect Response",
+          "Nonresponse"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response provides a complete, mathematically sound, and fully justified proof that triangle ABC is isosceles. It calculates that angle ABC is 70° using the angle sum in triangle BMS and angle addition, and determines that angle ACB is 70° using right triangle BNC. Stating that two angles of triangle ABC are equal leads to the correct conclusion that the triangle is isosceles.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": "**Proving Isosceles Triangles**\n\nI'm currently examining the student's approach to demonstrating that triangle ABC is isosceles. My focus is on meticulously following their logical progression, particularly their deductions based on the perpendicularity of BN to AC and CM to AB. I'm tracing each step to ensure the validity of their geometric reasoning.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 1635,
+  "completion_tokens": 431,
+  "reasoning_tokens": 334,
+  "cost_usd": 0.0028425,
+  "seconds": 3.521,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:50:26+00:00"
+}

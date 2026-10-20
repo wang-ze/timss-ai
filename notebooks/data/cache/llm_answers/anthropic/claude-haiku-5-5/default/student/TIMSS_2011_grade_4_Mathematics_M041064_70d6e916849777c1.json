@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 4/Mathematics/M041064",
+  "item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M041064"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": null,
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Shade 1/2 of the large triangle.\n\n[Image: a large triangle is divided by lines into four smaller triangles.]\n\nFigure, described in words:\nAn equilateral triangle with a horizontal base and a top vertex, divided into four smaller congruent equilateral triangles: three pointing upward (top, bottom-left, bottom-right) and one inverted in the center. None of the triangles are shaded.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Shade 2 of the 4 small triangles, which is 2/4 = 1/2 of the large triangle. For example, shade the top triangle and the bottom-left triangle (or the top triangle and the bottom-right triangle). Each small triangle is 1/4 of the large triangle, so two of them together make 1/2."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 583,
+  "completion_tokens": 113,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 1.37,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:14:32+00:00"
+}

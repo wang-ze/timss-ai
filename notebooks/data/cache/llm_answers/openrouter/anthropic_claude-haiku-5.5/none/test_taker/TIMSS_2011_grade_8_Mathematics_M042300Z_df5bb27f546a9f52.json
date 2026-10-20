@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 8/Mathematics/M042300Z",
+  "item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M042300Z"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The diagram shows a system for locating points\n\n[Image: A group of 6 concentric circles with origin “O”. Degrees from 0 to 360 are marked in 10 degree intervals where 0 and 360 are marked on a line “A” that goes across all circles. The 6 concentric circles are labeled from 1 to 6 along line “A”.]\n\nIn this system, the position of a point P is described by its distance from origin, O, and the amount of counterclockwise turn from a baseline OA to OP. Thus, the coordinates of P are (5, 340°).\n\nA. Mark the points B (3, 30°) and C (4, 120°) on the graph above.\nB. Draw the angle BOC. What is the measure of angle BOC?\n\nAngle BOC = ____°\n\nFigure, described in words:\nA circular polar coordinate grid centered at an origin O, formed by 6 concentric circles. A horizontal baseline ray extends right from O, labeled A at its end, with the 6 concentric circles labeled 1, 2, 3, 4, 5, 6 along this ray. Radial line segments extend from O every 10° around the full circle, labeled on the outer rim counterclockwise from 0° at ray OA through 10°, 20°, 30°, up to 350°. A point labeled P is plotted on the 5th circle along the 340° radial line.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "A. Mark B on the 3rd concentric circle along the 30° radial line (counterclockwise from OA), and mark C on the 4th concentric circle along the 120° radial line. B. Draw segments OB and OC to form angle BOC. Angle BOC = 90°, since 120° − 30° = 90°."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 860,
+  "completion_tokens": 111,
+  "reasoning_tokens": 0,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335952-nomWk8Tj0yh7J6h3dipX",
+  "requested_at": "2026-10-19T14:20:45+00:00"
+}

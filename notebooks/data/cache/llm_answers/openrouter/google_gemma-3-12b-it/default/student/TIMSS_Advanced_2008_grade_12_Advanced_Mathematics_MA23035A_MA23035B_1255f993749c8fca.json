@@ -1,0 +1,46 @@
+{
+  "unit_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23035A+MA23035B",
+  "item_keys": [
+    "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23035A",
+    "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23035B"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are a twelfth-grade student in the final year of secondary school who has taken advanced mathematics courses, taking the TIMSS Advanced mathematics test for students like you. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "These 2 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nf(x) = x^4 - 2x^2\n\nA. What are the values of x at the points of intersection of the graph of f(x) with the x-axis?\n\nx = ____\n\n## Question 2\n\nf(x) = x^4 - 2x^2\n\nB. What are the maximum and minimum points of the graph of f(x)?\n\nMaximum point(s): ____\n\nMinimum point(s): ____\n\nAnswer each of the 2 questions.",
+  "output_schema": {
+    "properties": {
+      "answer_1": {
+        "description": "Your answer to question 1, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 1",
+        "type": "string"
+      },
+      "answer_2": {
+        "description": "Your answer to question 2, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 2",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer_1",
+      "answer_2"
+    ],
+    "title": "Answers",
+    "type": "object"
+  },
+  "output": {
+    "answer_1": "To find the points of intersection of the graph of f(x) with the x-axis, we need to find the values of x for which f(x) = 0.\n\nf(x) = x^4 - 2x^2 = 0\nx^2(x^2 - 2) = 0\nThis equation is satisfied if x^2 = 0 or x^2 - 2 = 0.\nIf x^2 = 0, then x = 0.\nIf x^2 - 2 = 0, then x^2 = 2, so x = √2 or x = -√2.\n\nTherefore, the values of x at the points of intersection of the graph of f(x) with the x-axis are 0, √2, and -√2.",
+    "answer_2": "To find the maximum and minimum points of the graph of f(x) = x^4 - 2x^2, we first need to find the critical points by taking the derivative of f(x) and setting it equal to 0.\nf'(x) = 4x^3 - 4x\n4x^3 - 4x = 0\n4x(x^2 - 1) = 0\n4x(x - 1)(x + 1) = 0\nSo, the critical points are x = 0, x = 1, and x = -1.\n\nNow, we need to determine whether these critical points are maxima, minima, or neither. We can use the second derivative test for this.\nf''(x) = 12x^2 - 4\n\nFor x = 0: f''(0) = 12(0)^2 - 4 = -4. Since f''(0) < 0, x = 0 is a local maximum.\nThe value of the function at x = 0 is f(0) = 0^4 - 2(0)^2 = 0. So, the local maximum point is (0, 0).\n\nFor x = 1: f''(1) = 12(1)^2 - 4 = 8. Since f''(1) > 0, x = 1 is a local minimum.\nThe value of the function at x = 1 is f(1) = 1^4 - 2(1)^2 = 1 - 2 = -1. So, the local minimum point is (1, -1).\n\nFor x = -1: f''(-1) = 12(-1)^2 - 4 = 8. Since f''(-1) > 0, x = -1 is a local minimum.\nThe value of the function at x = -1 is f(-1) = (-1)^4 - 2(-1)^2 = 1 - 2 = -1. So, the local minimum point is (-1, -1).\n\nTherefore, the maximum point is (0, 0), and the minimum points are (1, -1) and (-1, -1)."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 294,
+  "completion_tokens": 700,
+  "reasoning_tokens": 0,
+  "cost_usd": 0.00017955,
+  "seconds": 55.961,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:17:41+00:00"
+}

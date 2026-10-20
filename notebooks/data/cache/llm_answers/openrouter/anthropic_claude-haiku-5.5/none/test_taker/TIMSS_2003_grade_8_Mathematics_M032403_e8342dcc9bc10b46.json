@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2003/grade 8/Mathematics/M032403",
+  "item_keys": [
+    "TIMSS 2003/grade 8/Mathematics/M032403"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: Triangle ABC]\n\nThe triangle ABC has AB = AC.\n\nDraw a line to divide triangle ABC into two congruent triangles.\n\nFigure, described in words:\nAn isosceles triangle ABC is shown with vertex A at the bottom left, vertex B at the bottom right, and vertex C at the top. The base AB is horizontal. Side AC connects vertex A to vertex C, and side BC connects vertex C to vertex B. A single hatch mark (tick mark) is drawn through side AC and through side AB, indicating that AB = AC.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Draw the altitude from vertex A to side BC, which is a straight line segment from A to the point on BC where the perpendicular meets it. This line cuts triangle ABC into two triangles that are congruent. Wait, correction: the triangle has AB = AC, so the apex is A, not C. The line that divides it into two congruent triangles is the line from vertex C perpendicular to base AB (the altitude from the apex C to the midpoint M of AB). Draw a straight line segment from vertex C straight down to the midpoint M of side AB, so that CM is perpendicular to AB. This splits triangle ABC into triangles AMC and BMC, which are congruent by the side-angle-side (or right-angle, hypotenuse-leg) criterion: AM = MB, CM is common, and angles at M are both right angles."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 611,
+  "completion_tokens": 274,
+  "reasoning_tokens": 0,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335950-6M8r5AF2vj28dS4S8FJ7",
+  "requested_at": "2026-10-19T14:20:44+00:00"
+}

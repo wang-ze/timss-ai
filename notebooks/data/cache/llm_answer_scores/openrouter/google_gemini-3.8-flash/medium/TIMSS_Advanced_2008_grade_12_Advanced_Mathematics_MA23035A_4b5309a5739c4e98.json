@@ -1,0 +1,47 @@
+{
+  "item_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23035A",
+  "response": "To find the points of intersection of the graph of f(x) with the x-axis, we need to find the values of x for which f(x) = 0.\n\nf(x) = x^4 - 2x^2 = 0\nx^2(x^2 - 2) = 0\nThis equation is satisfied if x^2 = 0 or x^2 - 2 = 0.\nIf x^2 = 0, then x = 0.\nIf x^2 - 2 = 0, then x^2 = 2, so x = √2 or x = -√2.\n\nTherefore, the values of x at the points of intersection of the graph of f(x) with the x-axis are 0, √2, and -√2.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Questions\n\nThese 2 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nf(x) = x^4 - 2x^2\n\nA. What are the values of x at the points of intersection of the graph of f(x) with the x-axis?\n\nx = ____\n\n## Question 2\n\nf(x) = x^4 - 2x^2\n\nB. What are the maximum and minimum points of the graph of f(x)?\n\nMaximum point(s): ____\n\nMinimum point(s): ____\n\n# Scoring guide of question 1 (1 point)\n\n- Correct Response (1 point):\n  - All three of -sqrt(2), 0, and sqrt(2) . Accept (-sqrt(2), 0), (0, 0), (sqrt(2), 0) . sqrt(2) may be given as 1.41, 1.42, or a value between these.\n- Incorrect Response (0 points):\n  - Any two of -sqrt(2), 0, and sqrt(2) , or (-sqrt(2), 0), (0, 0), (sqrt(2), 0) . sqrt(2) may be given as 1.41, 1.42, or a value between these.\n  - Incorrect (including crossed out, erased, stray marks, illegible, or off task)\n- Nonresponse (0 points):\n  - Blank\n\n# Response to question 1\n\nTo find the points of intersection of the graph of f(x) with the x-axis, we need to find the values of x for which f(x) = 0.\n\nf(x) = x^4 - 2x^2 = 0\nx^2(x^2 - 2) = 0\nThis equation is satisfied if x^2 = 0 or x^2 - 2 = 0.\nIf x^2 = 0, then x = 0.\nIf x^2 - 2 = 0, then x^2 = 2, so x = √2 or x = -√2.\n\nTherefore, the values of x at the points of intersection of the graph of f(x) with the x-axis are 0, √2, and -√2.\n\nScore the response to question 1.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response",
+          "Nonresponse"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response correctly identifies all three values of x where the graph intersects the x-axis: 0, √2, and -√2, showing full and correct working.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 821,
+  "completion_tokens": 147,
+  "reasoning_tokens": 93,
+  "cost_usd": 0.001167,
+  "seconds": 3.081,
+  "batch_id": null,
+  "requested_at": "2026-10-19T18:36:21+00:00"
+}

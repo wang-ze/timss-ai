@@ -1,0 +1,46 @@
+{
+  "item_key": "TIMSS 1995/grade 4/Mathematics/U3B",
+  "response": "1 kilometer takes 3 minutes, so 9 kilometers takes 9 × 3 = 27 minutes. Answer: 27 minutes.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the fourth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Questions\n\nThese 3 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nMaria and her sister Louisa leave home at the same time and ride their bicycles to school 9 kilometers away.\n\nMaria rides at a rate of 3 kilometers in 10 minutes. How long will it take her to get to school?\n\nAnswer: ____ minutes\n\n## Question 2\n\nMaria and her sister Louisa leave home at the same time and ride their bicycles to school 9 kilometers away.\n\nLouisa rides at a rate of 1 kilometer in 3 minutes. How long will it take her to get to school?\n\nAnswer: ____ minutes\n\n## Question 3\n\nMaria and her sister Louisa leave home at the same time and ride their bicycles to school 9 kilometers away.\n\nWho arrives at school first?\n\nAnswer: ____\n\n# Scoring guide of question 2 (1 point)\n\n- Correct Response (1 point):\n  - 27\n- Incorrect Response (0 points):\n  - Any other multiple of 3.\n  - Other incorrect.\n\n# Response to question 2\n\n1 kilometer takes 3 minutes, so 9 kilometers takes 9 × 3 = 27 minutes. Answer: 27 minutes.\n\nScore the response to question 2.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response clearly states the correct answer of 27 minutes, fully matching the requirements of the scoring guide.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": "**Calculating Louisa's Travel Time**\n\nI'm focused on determining Louisa's travel time. The core calculation involves using her rate to find out how many minutes it takes her to cover 9 kilometers. I'm analyzing the data to ensure accuracy.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 558,
+  "completion_tokens": 193,
+  "reasoning_tokens": 152,
+  "cost_usd": 0.00114225,
+  "seconds": 8.02,
+  "batch_id": null,
+  "requested_at": "2026-10-19T18:32:29+00:00"
+}

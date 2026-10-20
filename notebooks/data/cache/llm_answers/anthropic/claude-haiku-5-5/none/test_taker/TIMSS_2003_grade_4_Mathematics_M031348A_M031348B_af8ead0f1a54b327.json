@@ -1,0 +1,46 @@
+{
+  "unit_key": "TIMSS 2003/grade 4/Mathematics/M031348A+M031348B",
+  "item_keys": [
+    "TIMSS 2003/grade 4/Mathematics/M031348A",
+    "TIMSS 2003/grade 4/Mathematics/M031348B"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "These 2 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nA. WITHOUT using any triangle tiles, place 4 tiles so that 1/2 of a square shape is black. Then shade in the square below to show what you did with your tiles.\n\nShade in Here\n\n[Image: Square grid]\n\nFigure, described in words:\nUnder the heading \"Shade in Here\", a large square is divided into a 2 by 2 grid of 4 smaller congruent squares. Each of the 4 smaller squares has dotted diagonal lines connecting opposite corners, dividing each square into 4 congruent triangles.\n\n## Question 2\n\nB. Place 8 tiles so that 5/8 of the rectangle shape is black. Then shade in the rectangle below to show what you did with your tiles.\n\nShade in Here\n\n[Image: Rectangular grid]\n\nFigure, described in words:\nUnder the heading \"Shade in Here\", a rectangle is divided into a 2 by 4 grid of 8 smaller squares (2 rows and 4 columns). Each of the 8 squares has dotted diagonal lines connecting opposite corners, dividing each square into 4 congruent triangles.\n\nAnswer each of the 2 questions.",
+  "output_schema": {
+    "properties": {
+      "answer_1": {
+        "description": "Your answer to question 1, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 1",
+        "type": "string"
+      },
+      "answer_2": {
+        "description": "Your answer to question 2, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 2",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer_1",
+      "answer_2"
+    ],
+    "title": "Answers",
+    "type": "object"
+  },
+  "output": {
+    "answer_1": "Using 4 square tiles (no triangle tiles), place 2 of the 4 square tiles in the top row and 0 in the bottom... more precisely: place 2 square tiles so they cover the two squares of one half of the large 2 by 2 grid (the left column: top-left and bottom-left squares), which is 1/2 of the whole square shape. Shade in the square: shade the top-left and bottom-left small squares completely black (both full squares, each covering all 4 of its triangles), leaving the right column unshaded. Because the 4 tiles form 2 whole squares out of the 4 squares in the 2 by 2 grid, exactly 1/2 of the large square is black.",
+    "answer_2": "Using 8 tiles in the 2 by 4 rectangle, 5/8 of the rectangle must be black, which is 5 of the 8 squares. Place 5 square tiles to cover 5 of the 8 small squares, filling the left three squares of the top row and the left two squares of the bottom row (i.e., the first 3 columns of the top row and the first 2 columns of the bottom row), leaving the remaining 3 squares white. Shade in the rectangle: shade those 5 small squares completely black (each square with all 4 of its triangles black) and leave the other 3 squares unshaded. Thus 5 out of 8 equal parts are black, showing 5/8 of the rectangle."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 922,
+  "completion_tokens": 464,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 3.066,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:22:47+00:00"
+}

@@ -1,0 +1,47 @@
+{
+  "item_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23198",
+  "response": "The slope is given by the derivative: \\(y' = 1-\\sin x\\). At both \\(x=\\pi\\) and \\(x=2\\pi\\), \\(\\sin x=0\\), so the slope is 1 at A and at B. Thus the slopes are the same.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\n[Image: Graph of y = x + cos x]\n\nSophia is studying the graph of the function y = x + cos x shown above. She says that the slope at point A is the same as the slope at point B. Explain why she is correct.\n\nFigure, described in words:\nA Cartesian coordinate plane with horizontal axis labeled x and vertical axis labeled y, intersecting at the origin labeled O. The grid lines correspond to labels on the axes. The x-axis is labeled at -π, O (0), π, 2π, and 3π. The y-axis is labeled at -4, 4, and 8. The graph of the curve y = x + cos x is shown passing through the grid from x < -π to x > 3π. Two points on the curve are marked with solid black dots and labeled: point A at x = π and point B at x = 2π.\n\n# Scoring guide of the question (1 point)\n\n- Correct Response (1 point):\n  - Explanation involving differentiating and showing the gradient is the same at x = π and x = 2π; or using the nature of the cosine function to establish that the gradient is the same at x = π and x = 2π\n  - Correct answer using calculator with adequate explanation\n- Incorrect Response (0 points):\n  - Calculator used—answer incorrect or explanation inadequate\n  - Differentiates correctly but does not give adequate explanation of why slopes are equal\n  - Other incorrect (including crossed out, erased, stray marks, illegible, or off task)\n- Nonresponse (0 points):\n  - Blank\n\n# Response to the question\n\nThe slope is given by the derivative: \\(y' = 1-\\sin x\\). At both \\(x=\\pi\\) and \\(x=2\\pi\\), \\(\\sin x=0\\), so the slope is 1 at A and at B. Thus the slopes are the same.\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response",
+          "Nonresponse"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response correctly finds the derivative of y = x + cos x as y' = 1 - sin x and evaluates the derivative at both x = π and x = 2π to show that the slope at both points is 1, thus explaining why the slopes are equal.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": "**Analyzing Slope Equality**\n\nI've determined the derivative: y' = 1 - sin(x). Evaluating this at x = π and x = 2π will show the slopes are equal, as sin(π) and sin(2π) are both 0. I feel confident with the formal approach.\n\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 600,
+  "completion_tokens": 240,
+  "reasoning_tokens": 164,
+  "cost_usd": 0.00135,
+  "seconds": 14.131,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:46:12+00:00"
+}

@@ -1,0 +1,54 @@
+{
+  "unit_key": "TIMSS 2011/grade 8/Mathematics/M042169A+M042169B+M042169C",
+  "item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M042169A",
+    "TIMSS 2011/grade 8/Mathematics/M042169B",
+    "TIMSS 2011/grade 8/Mathematics/M042169C"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "These 3 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nThe Real Burger Company owns 5 restaurants. The numbers of staff members employed in its 5 restaurants are: 12, 18, 19, 21, and 30 people.\n\nA. What is the mean number of staff members in the 5 restaurants?\n\nAnswer: ____\n\n## Question 2\n\nThe Real Burger Company owns 5 restaurants. The numbers of staff members employed in its 5 restaurants are: 12, 18, 19, 21, and 30 people.\n\nB. What is the median number of staff members in the 5 restaurants?\n\nAnswer: ____\n\n## Question 3\n\nThe Real Burger Company owns 5 restaurants. The numbers of staff members employed in its 5 restaurants are: 12, 18, 19, 21, and 30 people.\n\nC. If the restaurant with 30 staff members increased its number of staff members to 50, how would this affect the median and the mean?\n\nAnswer each of the 3 questions.",
+  "output_schema": {
+    "properties": {
+      "answer_1": {
+        "description": "Your answer to question 1, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 1",
+        "type": "string"
+      },
+      "answer_2": {
+        "description": "Your answer to question 2, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 2",
+        "type": "string"
+      },
+      "answer_3": {
+        "description": "Your answer to question 3, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 3",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer_1",
+      "answer_2",
+      "answer_3"
+    ],
+    "title": "Answers",
+    "type": "object"
+  },
+  "output": {
+    "answer_1": "The mean is (12 + 18 + 19 + 21 + 30) ÷ 5 = 100 ÷ 5 = 20 staff members.",
+    "answer_2": "The median is 19 staff members. In order the values are 12, 18, 19, 21, 30, so the middle value is 19.",
+    "answer_3": "The median would not change. It stays at 19, because the largest value is still the largest and the middle value (19) is unaffected. The mean would increase. The new total is 12 + 18 + 19 + 21 + 50 = 120, so the new mean is 120 ÷ 5 = 24, up from 20 (an increase of 4 staff members)."
+  },
+  "llm_thinking": "Computing mean (20) and median (19) for the original set, then checking the effect of changing 30 to 50: median stays at 19 but mean rises to 24, a 4-point increase. Now I'm preparing the JSON output with these results.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 938,
+  "completion_tokens": 359,
+  "reasoning_tokens": 135,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335957-QKbCVbAXn76L3I0C7O9z",
+  "requested_at": "2026-10-19T14:20:44+00:00"
+}

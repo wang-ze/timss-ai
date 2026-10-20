@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2003/grade 4/Mathematics/M011016",
+  "item_keys": [
+    "TIMSS 2003/grade 4/Mathematics/M011016"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "In this diagram, 2 out of every 3 squares are shaded.\n\n[Image: A rectangle divided into 6 squares]\n\nWhich diagram has 3 out of every 4 squares shaded?\n\nFigure, described in words:\nThe stem includes a diagram of a rectangle divided into 2 rows of 3 equal squares (6 squares total). The 4 squares in the first two columns are shaded grey, and the 2 squares in the third column are unshaded (white).\n\nThe response options show four diagrams composed of squares:\n- Option A: A horizontal row of 3 equal squares, all 3 shaded grey.\n- Option B: A horizontal row of 4 equal squares; the first 3 squares are unshaded and the 4th square is shaded grey.\n- Option C: A vertical rectangle divided into 4 rows of 2 equal squares (8 squares total). The top 6 squares (3 rows) are shaded grey, and the bottom 2 squares (1 row) are unshaded.\n- Option D: A horizontal row of 6 equal squares; the first 3 squares are shaded grey and the last 3 squares are unshaded.\n\nA. [Image: A row of 3 squares]\nB. [Image: A row of 4 squares]\nC. [Image: An array of 8 squares]\nD. [Image: A row of 6 squares]",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "C"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 859,
+  "completion_tokens": 10,
+  "reasoning_tokens": 0,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335952-nomWk8Tj0yh7J6h3dipX",
+  "requested_at": "2026-10-19T14:20:45+00:00"
+}

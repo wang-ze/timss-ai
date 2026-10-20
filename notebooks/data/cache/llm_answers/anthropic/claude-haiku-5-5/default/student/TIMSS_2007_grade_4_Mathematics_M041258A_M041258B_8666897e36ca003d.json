@@ -1,0 +1,46 @@
+{
+  "unit_key": "TIMSS 2007/grade 4/Mathematics/M041258A+M041258B",
+  "item_keys": [
+    "TIMSS 2007/grade 4/Mathematics/M041258A",
+    "TIMSS 2007/grade 4/Mathematics/M041258B"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": null,
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "These 2 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nTwo shapes are shown below. Describe one way they are the same and one way they are different.\n\n[Image: Two triangles, labeled Shape P and Shape Q]\n\nA. Same\n\nFigure, described in words:\nTwo geometric shapes side by side: on the left is \"Shape P\", a right-angled triangle with a vertical left side, a horizontal bottom side, and a hypotenuse sloping down and to the right. On the right is \"Shape Q\", an acute isosceles triangle with a horizontal base and two equal-length sloping sides meeting at a top vertex.\n\n## Question 2\n\nTwo shapes are shown below. Describe one way they are the same and one way they are different.\n\n[Image: Two triangles, labeled Shape P and Shape Q]\n\nB. Different\n\nFigure, described in words:\nTwo geometric shapes side by side: on the left is \"Shape P\", a right-angled triangle with a vertical left side, a horizontal bottom side, and a hypotenuse sloping down and to the right. On the right is \"Shape Q\", an acute isosceles triangle with a horizontal base and two equal-length sloping sides meeting at a top vertex.\n\nAnswer each of the 2 questions.",
+  "output_schema": {
+    "properties": {
+      "answer_1": {
+        "description": "Your answer to question 1, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 1",
+        "type": "string"
+      },
+      "answer_2": {
+        "description": "Your answer to question 2, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 2",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer_1",
+      "answer_2"
+    ],
+    "title": "Answers",
+    "type": "object"
+  },
+  "output": {
+    "answer_1": "Same: Both Shape P and Shape Q are triangles, so both have 3 sides and 3 corners (vertices).",
+    "answer_2": "Different: Shape P has a right angle (a square corner), while Shape Q does not have a right angle; Shape Q has two equal sides, while Shape P's sides are all different lengths."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 956,
+  "completion_tokens": 116,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 1.215,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:16:01+00:00"
+}

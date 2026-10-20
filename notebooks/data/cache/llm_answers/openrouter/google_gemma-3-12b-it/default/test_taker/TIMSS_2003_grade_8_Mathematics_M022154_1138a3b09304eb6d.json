@@ -1,0 +1,45 @@
+{
+  "unit_key": "TIMSS 2003/grade 8/Mathematics/M022154",
+  "item_keys": [
+    "TIMSS 2003/grade 8/Mathematics/M022154"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Rectangle PQRS can be rotated (turned) onto rectangle UVST.\n\n[Image: Rectangles UVST and PQRS]\n\nWhat point is the center of rotation?\n\nFigure, described in words:\nTwo adjacent congruent rectangles forming an L-like shape. Rectangle UVST is oriented vertically, with vertices U (bottom left), V (bottom right), S (top right), and T (top left). Rectangle PQRS is oriented horizontally, extending to the right from the upper portion of rectangle UVST: vertex S is at the top left (shared with UVST), R is at the top right, Q is at the bottom right, and P is at the bottom left, lying on the vertical line segment SV between S and V. Each vertex is marked with a black dot.\n\nA. P\nB. R\nC. S\nD. T\nE. V",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "C"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 311,
+  "completion_tokens": 6,
+  "reasoning_tokens": 0,
+  "cost_usd": 1.645e-05,
+  "seconds": 0.589,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:06:47+00:00"
+}

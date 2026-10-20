@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2007/grade 8/Mathematics/M032381",
+  "item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M032381"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The number of children on a trip was larger than 55, but smaller than 65.\nThe children could be divided into groups of 7, but not groups of 8.\nHow many children were on the trip?\n\nAnswer: ____",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Multiples of 7 between 55 and 65 are 56 and 63. Of these, 56 is divisible by 8 (56 = 8 x 7), so it is excluded. 63 is not divisible by 8 (63 / 8 = 7.875), so it fits. The number of children was 63."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 487,
+  "completion_tokens": 103,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 1.33,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:22:14+00:00"
+}

@@ -34,9 +34,10 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from .evaluation import PredictionResults, correlation, excel_value
+from ..config import excel_value
+from ..items import PARAMETER_NAMES
+from .evaluation import PredictionResults, correlation
 from .factorial import SAVED_FILE_COLUMNS, paired_t_test
-from .items import PARAMETER_NAMES
 from .jev import DEFAULT_VALUE_SCALES, ValueScale
 
 BASELINE_LABELS = {"calibration_mean": "Calibration-summary mean", "reference_mean": "Reference-item mean"}

@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2007/grade 8/Mathematics/M032294",
+  "item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M032294"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: Coordinate grid with points M and N]\n\nTwo points M and N are shown in the figure above. John is looking for a point P such that MNP is an isosceles triangle. Which of these points could be point P?\n\nFigure, described in words:\nA 6-by-6 grid in the first quadrant of a Cartesian coordinate system. The horizontal x-axis has an arrow pointing to the right, labeled x, with origin O and tick marks labeled 1, 2, 3, 4, 5, 6. The vertical y-axis has an arrow pointing upwards, labeled y, with tick marks labeled 1, 2, 3, 4, 5, 6. Grid lines are drawn at each integer value from 1 to 6. Two points are plotted on the grid: point M at (1, 2), labeled M, and point N at (5, 2), labeled N.\n\nA. (3,5)\nB. (3,2)\nC. (1,5)\nD. (5,1)",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "A"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 407,
+  "completion_tokens": 12,
+  "reasoning_tokens": 0,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335937-BJtZVjg56U2sB5DFqPbI",
+  "requested_at": "2026-10-18T15:17:59+00:00"
+}

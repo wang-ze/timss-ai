@@ -1,0 +1,45 @@
+{
+  "unit_key": "TIMSS 2003/grade 8/Mathematics/M012017",
+  "item_keys": [
+    "TIMSS 2003/grade 8/Mathematics/M012017"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Matchsticks are arranged as shown in the figures.\n\n[Image: Matchstick patterns labeled Figure 1, Figure 2, and Figure 3]\n\nIf the pattern is continued, how many matchsticks would be used to make Figure 10?\n\nFigure, described in words:\nThree figures formed by matchsticks arranged horizontally in a line, each ending with a triangular point pointing to the right:\n- Figure 1: 1 square (4 matchsticks) with a triangle pointing right attached to the square's right vertical side (2 matchsticks), totaling 6 matchsticks.\n- Figure 2: A row of 2 adjacent squares sharing an interior vertical matchstick (7 matchsticks) plus a triangle pointing right attached to the right side (2 matchsticks), totaling 9 matchsticks.\n- Figure 3: A row of 3 adjacent squares sharing interior vertical matchsticks (10 matchsticks) plus a triangle pointing right attached to the right side (2 matchsticks), totaling 12 matchsticks.\n\nA. 30\nB. 33\nC. 36\nD. 39\nE. 42",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "E"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 807,
+  "completion_tokens": 10,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 2.212,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:22:38+00:00"
+}

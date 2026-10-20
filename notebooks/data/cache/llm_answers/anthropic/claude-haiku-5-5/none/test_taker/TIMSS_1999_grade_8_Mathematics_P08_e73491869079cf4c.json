@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 1999/grade 8/Mathematics/P08",
+  "item_keys": [
+    "TIMSS 1999/grade 8/Mathematics/P08"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The rectangle below is twice as long as it is wide.\n\n[Image: A rectangle]\n\nWhat is the ratio of the width of the rectangle to its perimeter?\n\nFigure, described in words:\nAn outline of an unlabelled horizontal rectangle whose length is twice its width.\n\nA. 1/2\nB. 1/3\nC. 1/4\nD. 1/6",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "B"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 543,
+  "completion_tokens": 10,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 0.611,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:21:33+00:00"
+}

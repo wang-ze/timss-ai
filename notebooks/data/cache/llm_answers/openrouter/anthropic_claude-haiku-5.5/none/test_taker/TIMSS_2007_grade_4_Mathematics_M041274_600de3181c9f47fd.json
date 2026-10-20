@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2007/grade 4/Mathematics/M041274",
+  "item_keys": [
+    "TIMSS 2007/grade 4/Mathematics/M041274"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "A spinner can land on 3 different colors. Here are the results after 100 spins.\n\n[Image: Spinner]\n\nSpinner Results\n\n| Red | 50 |\n| Blue | 30 |\n| Green | 20 |\n\nJenny starts to draw this graph to show the result. Help Jenny by writing the correct numbers in the boxes to complete the scale.\n\nBar graph\n\n[Image: Incomplete bar graph]\n\nFigure, described in words:\nThe item contains two images:\n1. At the top, a circular spinner divided into three sectors: a large dark-grey sector spanning roughly half the circle (bottom-left), a medium grey sector (top-left, spanning roughly one-quarter), and a white sector (right side). An arrow is pivoted at the center pointing toward the upper-right into the white sector.\n2. At the bottom, a vertical bar graph titled \"Bar graph\". The horizontal axis has tick marks labeled \"Red\", \"Blue\", and \"Green\" under three unfilled vertical rectangular bars: the \"Red\" bar is the tallest (5 grid units high), the \"Blue\" bar is 3 grid units high, and the \"Green\" bar is 2 grid units high. The vertical axis on the left has 6 tick marks connected to square answer boxes: the lowest tick mark at the baseline contains a box with the number \"0\" inside, and above it are 5 empty square boxes aligned with tick marks at heights 1, 2, 3, 4, and 5 (matching the tops of the bars at 2, 3, and 5).",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Scale on the vertical axis (bottom to top): 0, 10, 20, 30, 40, 50. Write 10 in the first empty box, 20 in the second, 30 in the third, 40 in the fourth, and 50 in the fifth. Then the bars are drawn to match the results: Red bar up to 50, Blue bar up to 30, Green bar up to 20."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 926,
+  "completion_tokens": 130,
+  "reasoning_tokens": 0,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335952-nomWk8Tj0yh7J6h3dipX",
+  "requested_at": "2026-10-19T14:20:45+00:00"
+}

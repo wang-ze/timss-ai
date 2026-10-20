@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13029",
+  "item_keys": [
+    "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13029"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "In the quadrilateral ABCD below, diagonals AC and BD intersect at point E.\nPROVE that E is the midpoint of AC and BD. Show all your work.\n\n[Image: Quadrilateral ABCD on a coordinate plane]\n\nFigure, described in words:\nA Cartesian coordinate plane with a horizontal axis labeled x and a vertical axis labeled y, intersecting at origin 0. The x-axis has tick marks with labels at 2, 4, 6, 8, and 10. The y-axis has tick marks with labels at 2, 4, and 6. A quadrilateral ABCD is shown with labeled vertices: D at (2, 1), A at (4, 4), B at (10, 5), and C at (8, 2). Diagonals AC and BD are drawn as line segments connecting opposite vertices, intersecting at a point labeled E.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Given the coordinates from the figure: A = (4, 4), B = (10, 5), C = (8, 2), D = (2, 1). The claim that E is the midpoint of both diagonals is only true if ABCD is a parallelogram, so we first check whether the figure's quadrilateral satisfies that condition. Midpoint of AC = ((4+8)/2, (4+2)/2) = (6, 3). Midpoint of BD = ((10+2)/2, (5+1)/2) = (6, 3). Both diagonals have the same midpoint, (6, 3), so the diagonals bisect each other at E = (6, 3). Verification: the diagonals intersect where they meet. Line AC: from (4,4) to (8,2), slope = -1/2, equation y = -x/2 + 6. Line BD: from (2,1) to (10,5), slope = 1/2, equation y = x/2 (through (2,1): y - 1 = (1/2)(x - 2), so y = x/2). Setting -x/2 + 6 = x/2 gives x = 6, y = 3. So E = (6, 3), which lies on both diagonals. Distance check: AE = distance from (4,4) to (6,3) = sqrt(4+1) = sqrt5; EC = distance from (6,3) to (8,2) = sqrt5, so AE = EC and E is the midpoint of AC. BE = distance from (10,5) to (6,3) = sqrt(16+4) = sqrt20; ED = distance from (6,3) to (2,1) = sqrt(16+4) = sqrt20, so BE = ED and E is the midpoint of BD. Therefore E is the midpoint of both AC and BD. Note: since both diagonals are bisected at the same point, ABCD is a parallelogram (opposite sides AB and DC, and AD and BC, are parallel and equal in length). This completes the proof for the given coordinates."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 739,
+  "completion_tokens": 640,
+  "reasoning_tokens": 0,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335956-XHzl2pG1TSy8kKNCgocU",
+  "requested_at": "2026-10-19T14:20:46+00:00"
+}

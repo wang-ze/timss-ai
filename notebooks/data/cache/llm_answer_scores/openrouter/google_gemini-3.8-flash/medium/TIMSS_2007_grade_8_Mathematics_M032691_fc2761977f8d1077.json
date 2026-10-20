@@ -1,0 +1,47 @@
+{
+  "item_key": "TIMSS 2007/grade 8/Mathematics/M032691",
+  "response": "Draw a straight diagonal line through O, sloping from lower left to upper right. Label the upper-right point B and the lower-left point C.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the eighth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\nUsing line segment AO below, draw a straight line BC through O such that angle AOB is acute and angle AOC is obtuse. Label points B and C.\n\n[Image: Line segment AO]\n\nFigure, described in words:\nA vertical line segment is drawn with a point at the top labeled with the letter \"A\" above it, and a point at the bottom labeled with the letter \"O\" below it.\n\n# Scoring guide of the question (1 point)\n\n- Correct Response (1 point):\n  - Line drawn through O; acute angle and obtuse angle correct and labeled\n- Incorrect Response (0 points):\n  - Line drawn through O but not labeled\n  - Other incorrect (including crossed out/erased, stray marks, illegible, or off task)\n- Non response (0 points):\n  - Blank\n\n# Response to the question\n\nDraw a straight diagonal line through O, sloping from lower left to upper right. Label the upper-right point B and the lower-left point C.\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response",
+          "Non response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "Segment AO extends vertically upward from O. Drawing a line through O that slopes from lower-left to upper-right places point B in the upper right (making angle AOB acute) and point C in the lower left (making angle AOC obtuse). Both points are appropriately labeled, meeting all criteria for a correct response.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": "**Considering the Geometry**\n\nI'm currently focused on the geometry aspect, specifically an acute and an obtuse angle meeting on a line. I'm visualizing AO as a vertical line and trying to picture the angles formed when a line BC intersects it at O. The acute angle must be between AO and the line, while the obtuse angle must be the one on the opposite side of AO and the line.\n\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 383,
+  "completion_tokens": 436,
+  "reasoning_tokens": 353,
+  "cost_usd": 0.00192225,
+  "seconds": 15.607,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:47:50+00:00"
+}

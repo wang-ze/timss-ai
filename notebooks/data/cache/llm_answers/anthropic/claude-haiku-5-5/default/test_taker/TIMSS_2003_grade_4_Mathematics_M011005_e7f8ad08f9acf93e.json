@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2003/grade 4/Mathematics/M011005",
+  "item_keys": [
+    "TIMSS 2003/grade 4/Mathematics/M011005"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Which of these figures has the largest area?\n\nFigure, described in words:\nFour shapes composed of identical square units are shown:\n- Option A: A rectangle consisting of a grid with 2 rows and 3 columns (6 square units in total).\n- Option B: A horizontal bar consisting of a single row of 6 square units (6 square units in total).\n- Option C: A rectangle consisting of a grid with 2 rows and 4 columns (8 square units in total).\n- Option D: A figure consisting of 6 square units arranged in two rows of 3 squares: a top row of 3 adjacent squares, and a bottom row of 3 adjacent squares shifted to the right so that its leftmost square is directly beneath the rightmost square of the top row (6 square units in total).\n\nA. [Image: 2 by 3 grid of squares]\nB. [Image: 1 by 6 row of squares]\nC. [Image: 2 by 4 grid of squares]\nD. [Image: 6 squares arranged in two offset rows of 3]",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "C"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 760,
+  "completion_tokens": 11,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 1.025,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:21:08+00:00"
+}

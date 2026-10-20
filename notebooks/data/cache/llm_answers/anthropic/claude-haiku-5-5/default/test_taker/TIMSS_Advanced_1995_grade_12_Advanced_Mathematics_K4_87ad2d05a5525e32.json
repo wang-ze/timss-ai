@@ -1,0 +1,45 @@
+{
+  "unit_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K4",
+  "item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K4"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The value of lim_(h->0) (sqrt(2 + h) - sqrt(2))/h is\n\nA. 0\nB. 1/(2 sqrt(2))\nC. 1/2\nD. 1/sqrt(2)\nE. ∞",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "B"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 541,
+  "completion_tokens": 11,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 1.491,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:21:21+00:00"
+}

@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 1999/grade 8/Mathematics/P16",
+  "item_keys": [
+    "TIMSS 1999/grade 8/Mathematics/P16"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "none",
+  "system_prompt": "You are an eighth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "This table shows temperatures at various times on four days.\n\n| TEMPERATURE | | | | | |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| | 6 a.m. | 9 a.m. | Noon | 3 p.m. | 6 p.m. |\n| Monday | 15° | 17° | 24° | 21° | 16° |\n| Tuesday | 20° | 16° | 15° | 10° | 9° |\n| Wednesday | 8° | 14° | 16° | 19° | 15° |\n| Thursday | 8° | 11° | 19° | 26° | 20° |\n\n[Image: Thermometer]\n\nOn which day and at what time was the temperature shown in the table the same as that shown on the thermometer?\n\nFigure, described in words:\nA vertical thermometer labeled \"Thermometer\" at the bottom. The scale on the right has labeled marks at 5°, 10°, 15°, 20°, 25°, 30°, 35°, and 40°, with individual 1-degree tick marks between them. The shaded column of liquid inside the thermometer reaches exactly 24° (one tick mark below 25°).\n\nA. Monday, Noon\nB. Tuesday, 6 a.m.\nC. Wednesday, 3 p.m.\nD. Thursday, 3 p.m.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "A"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 508,
+  "completion_tokens": 12,
+  "reasoning_tokens": 0,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792430073-svtUY6L3Exvs9O4qh25G",
+  "requested_at": "2026-10-19T18:00:46+00:00"
+}

@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 1999/grade 8/Mathematics/J13",
+  "item_keys": [
+    "TIMSS 1999/grade 8/Mathematics/J13"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The table shows the number of houses on two streets of a town, Konini Street and Rimu Street.\n\n| Street | Number of Houses |\n| :--- | :--- |\n| Konini | 30 |\n| Rimu | 21 |\n\nThe pictograph below represents the number of houses in each street.\n\n[Image: Pictograph]\n\nHow many houses does one [Image: House icon] represent?\n\nAnswer: ____\n\nFigure, described in words:\nA pictograph with two rows:\n- The first row is labeled \"Konini St.\" and contains 5 identical outline icons of a house (a rectangular body with a triangular roof).\n- The second row is labeled \"Rimu St.\" and contains 3 identical full house icons and 1 half-house icon (a house sliced vertically down the middle, showing only the right half).\n\nBelow the pictograph, a single full house icon appears within the question text.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "6"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 698,
+  "completion_tokens": 80,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 1.495,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:22:45+00:00"
+}

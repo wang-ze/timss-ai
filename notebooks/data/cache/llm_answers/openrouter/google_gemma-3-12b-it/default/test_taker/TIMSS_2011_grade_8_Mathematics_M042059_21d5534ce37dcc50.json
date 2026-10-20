@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 8/Mathematics/M042059",
+  "item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M042059"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Peter, James, and Andrew each had 20 tries at throwing balls into a basket.\n\nComplete the missing boxes below.\n\n| Name | Number of Successful Shots | Percentage of Successful Shots |\n| --- | --- | --- |\n| Peter | 10 out of 20 | 50 % |\n| James | 15 out of 20 | □ |\n| Andrew | □ out of 20 | 80% |",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Here's the completed table:\n\n| Name | Number of Successful Shots | Percentage of Successful Shots |\n| --- | --- | --- |\n| Peter | 10 out of 20 | 50 % |\n| James | 15 out of 20 | 75 % |\n| Andrew | 16 out of 20 | 80% |\n\n**Explanation:**\n\n*   **James:** To find the percentage of successful shots for James, we divide the number of successful shots (15) by the total number of tries (20) and multiply by 100: (15/20) * 100 = 75%. So, the missing box is 75%.\n*   **Andrew:** To find the number of successful shots for Andrew, we multiply the total number of tries (20) by the percentage of successful shots (80% or 0.80): 20 * 0.80 = 16.  So, the missing box is 16."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 228,
+  "completion_tokens": 242,
+  "reasoning_tokens": 0,
+  "cost_usd": 4.77e-05,
+  "seconds": 3.3,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:06:28+00:00"
+}

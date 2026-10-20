@@ -1,0 +1,45 @@
+{
+  "unit_key": "TIMSS 2003/grade 4/Mathematics/M011019",
+  "item_keys": [
+    "TIMSS 2003/grade 4/Mathematics/M011019"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "high",
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Which number would be rounded to 600 when rounded to the nearest hundred?\n\nA. 62\nB. 160\nC. 546\nD. 586\nE. 660",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "D"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 243,
+  "completion_tokens": 46,
+  "reasoning_tokens": 32,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792430069-8g35f4u7PLleVZ9HmGfd",
+  "requested_at": "2026-10-19T18:03:53+00:00"
+}

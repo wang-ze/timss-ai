@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2007/grade 4/Mathematics/M041056",
+  "item_keys": [
+    "TIMSS 2007/grade 4/Mathematics/M041056"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: Twelve cookies]\n\nThere are 12 cookies. Draw a circle around 1/3 of the cookies.\n\nFigure, described in words:\nTwelve oval chocolate chip cookies arranged in a rectangular grid of 3 rows and 4 columns.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "1/3 of 12 cookies is 4 cookies. I would draw one circle around any group of 4 cookies in the grid, for example the four cookies in the first row (row 1, columns 1 through 4), so that exactly 4 of the 12 cookies are circled."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 539,
+  "completion_tokens": 94,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 0.942,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:14:57+00:00"
+}

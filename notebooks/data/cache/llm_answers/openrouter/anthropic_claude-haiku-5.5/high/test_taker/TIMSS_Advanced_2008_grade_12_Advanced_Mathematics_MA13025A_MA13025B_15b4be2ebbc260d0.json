@@ -1,0 +1,46 @@
+{
+  "unit_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13025A+MA13025B",
+  "item_keys": [
+    "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13025A",
+    "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13025B"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "These 2 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nThe function y = f(x), -3 ≤ x ≤ 3, is defined in the following graph\n\n[Image: Graph of y = f(x)]\n\nA. For what value(s) of x in the interval -3 < x < 3 is the function f NOT continuous?\n\nFigure, described in words:\nA Cartesian coordinate system with horizontal axis x and vertical axis y. The x-axis is marked with ticks and labels at -3, -2, -1, 0, 1, 2, 3. The y-axis is marked with ticks and labels at -2, -1, 1, 2, and 0 at the origin. The graph of y = f(x) consists of:\n- A line segment from a solid dot at (-3, -2) to (-1, 0).\n- A horizontal segment along the x-axis from (-1, 0) to an open circle at (0, 0).\n- A solid dot at (0, 2).\n- A line segment from (0, 2) down to (2, 0).\n- A horizontal segment along the x-axis from (2, 0) to a solid dot at (3, 0).\n\n## Question 2\n\nThe function y = f(x), -3 ≤ x ≤ 3, is defined in the following graph\n\n[Image: Graph of y = f(x)]\n\nB. For what value(s) of x in the interval -3 < x < 3 is the function f NOT differentiable?\n\nFigure, described in words:\nA Cartesian coordinate system with horizontal axis x and vertical axis y. The x-axis is marked with ticks and labels at -3, -2, -1, 0, 1, 2, 3. The y-axis is marked with ticks and labels at -2, -1, 1, 2, and 0 at the origin. The graph of y = f(x) consists of:\n- A line segment from a solid dot at (-3, -2) to (-1, 0).\n- A horizontal segment along the x-axis from (-1, 0) to an open circle at (0, 0).\n- A solid dot at (0, 2).\n- A line segment from (0, 2) down to (2, 0).\n- A horizontal segment along the x-axis from (2, 0) to a solid dot at (3, 0).\n\nAnswer each of the 2 questions.",
+  "output_schema": {
+    "properties": {
+      "answer_1": {
+        "description": "Your answer to question 1, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 1",
+        "type": "string"
+      },
+      "answer_2": {
+        "description": "Your answer to question 2, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 2",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer_1",
+      "answer_2"
+    ],
+    "title": "Answers",
+    "type": "object"
+  },
+  "output": {
+    "answer_1": "The function is not continuous at x = 0. The graph has an open circle at (0, 0) and a solid dot at (0, 2), so there is a jump discontinuity there. At x = -1 and x = 2 the graph is connected, so f is continuous at those points. Answer: x = 0.",
+    "answer_2": "The function is not differentiable at x = -1, x = 0 and x = 2. At x = -1 the slope changes abruptly from 1 (on the segment from (-3, -2) to (-1, 0)) to 0 (on the horizontal segment), forming a corner. At x = 0 the function is discontinuous (open circle at (0, 0) and solid dot at (0, 2)), so it cannot be differentiable there. At x = 2 the slope changes abruptly from -1 (on the segment from (0, 2) to (2, 0)) to 0 (on the horizontal segment), forming a corner. Answer: x = -1, 0, 2."
+  },
+  "llm_thinking": "For question 1, I'm checking the graph for jumps within (-3,3) and finding the only discontinuity is at x=0, where there's an open circle at (0,0) jumping to a solid point at (0,2) — the pieces at x=-1 and x=2 connect smoothly. For question 2, I'm now looking for corner points where the graph isn't differentiable, starting with x=-1 where the slope appears to change abruptly.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 1280,
+  "completion_tokens": 632,
+  "reasoning_tokens": 312,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335960-oItwFneLfMfZRXMM1E4b",
+  "requested_at": "2026-10-19T14:20:47+00:00"
+}

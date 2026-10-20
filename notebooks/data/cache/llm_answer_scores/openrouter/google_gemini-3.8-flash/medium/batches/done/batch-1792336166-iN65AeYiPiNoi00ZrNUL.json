@@ -1,0 +1,27 @@
+{
+  "batch_id": "batch-1792336166-iN65AeYiPiNoi00ZrNUL",
+  "model": "google/gemini-3.8-flash",
+  "submitted_at": "2026-10-18T15:09:26+00:00",
+  "collected_at": "2026-10-19T14:20:51+00:00",
+  "status": "completed",
+  "finalized_at": 1792348570,
+  "request_counts": {
+    "total": 1,
+    "completed": 1,
+    "failed": 0
+  },
+  "usage": {
+    "prompt_tokens": 695,
+    "completion_tokens": 75,
+    "total_tokens": 770,
+    "cost": 0.00040125,
+    "is_byok": false
+  },
+  "error": null,
+  "requests": {
+    "2b17d8da7ac72536": {
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M031269",
+      "outcome": "saved"
+    }
+  }
+}

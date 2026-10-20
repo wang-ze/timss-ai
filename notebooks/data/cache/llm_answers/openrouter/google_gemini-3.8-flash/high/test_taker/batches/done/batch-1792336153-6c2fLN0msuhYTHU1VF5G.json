@@ -1,0 +1,451 @@
+{
+  "batch_id": "batch-1792336153-6c2fLN0msuhYTHU1VF5G",
+  "model": "google/gemini-3.8-flash",
+  "submitted_at": "2026-10-18T15:09:13+00:00",
+  "collected_at": "2026-10-19T14:20:45+00:00",
+  "status": "completed",
+  "finalized_at": 1792349537,
+  "request_counts": {
+    "total": 107,
+    "completed": 107,
+    "failed": 0
+  },
+  "usage": {
+    "prompt_tokens": 37811,
+    "completion_tokens": 51280,
+    "total_tokens": 89091,
+    "cost": 0.110329125,
+    "is_byok": false
+  },
+  "error": null,
+  "requests": {
+    "b766d39ce4527a82": {
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M052173",
+      "outcome": "saved"
+    },
+    "770e952215008fbb": {
+      "item_key": "TIMSS 1999/grade 8/Mathematics/L09",
+      "outcome": "saved"
+    },
+    "25699d1fa2238cbe": {
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M032261",
+      "outcome": "saved"
+    },
+    "ffde662e12ab2323": {
+      "item_key": "TIMSS 1995/grade 4/Mathematics/K2",
+      "outcome": "saved"
+    },
+    "0a2536ba9c648448": {
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M041175",
+      "outcome": "saved"
+    },
+    "1c5cbd7ccb0964fe": {
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M032540",
+      "outcome": "saved"
+    },
+    "cb89ebc9c46ebd2b": {
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M042238",
+      "outcome": "saved"
+    },
+    "b72986e5cc3c9dae": {
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M011005",
+      "outcome": "saved"
+    },
+    "9a9dea2b57e41256": {
+      "item_key": "TIMSS 1999/grade 8/Mathematics/F08",
+      "outcome": "saved"
+    },
+    "73e5dec13e67af1f": {
+      "item_key": "TIMSS 1999/grade 8/Mathematics/N12",
+      "outcome": "saved"
+    },
+    "e5bf13529c472475": {
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M022101",
+      "outcome": "saved"
+    },
+    "2032938c7341f2d6": {
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M012119",
+      "outcome": "saved"
+    },
+    "0aea1dd095d4abf7": {
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M042079",
+      "outcome": "saved"
+    },
+    "53636f61b698e931": {
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M022049",
+      "outcome": "saved"
+    },
+    "74dfe29c230c8fb5": {
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M042041",
+      "outcome": "saved"
+    },
+    "ab9dbae4d6eb6147": {
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M032160",
+      "outcome": "saved"
+    },
+    "748662f6f84cebdf": {
+      "item_key": "TIMSS 1999/grade 8/Mathematics/P09",
+      "outcome": "saved"
+    },
+    "ed4f3cfc316e8832": {
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M032647",
+      "outcome": "saved"
+    },
+    "031ece2d825772e7": {
+      "item_key": "TIMSS 1995/grade 4/Mathematics/J5",
+      "outcome": "saved"
+    },
+    "faea91f596aba33b": {
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M041052",
+      "outcome": "saved"
+    },
+    "846c776dbff76c41": {
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M031155",
+      "outcome": "saved"
+    },
+    "2cdd56a9d1932079": {
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M011017",
+      "outcome": "saved"
+    },
+    "5eb9e0a1bff27fec": {
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M011008",
+      "outcome": "saved"
+    },
+    "a0a52384d8f2cb37": {
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M031043",
+      "outcome": "saved"
+    },
+    "db910a7dee6b80ab": {
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M031006",
+      "outcome": "saved"
+    },
+    "1a9ec7786c71cb1b": {
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M022181",
+      "outcome": "saved"
+    },
+    "b6ad0beb178e1cd5": {
+      "item_key": "TIMSS 1999/grade 8/Mathematics/P13",
+      "outcome": "saved"
+    },
+    "9a2195c509ed6b18": {
+      "item_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13009",
+      "outcome": "saved"
+    },
+    "79288038173c8ff1": {
+      "item_key": "TIMSS 1999/grade 8/Mathematics/R12",
+      "outcome": "saved"
+    },
+    "2eeb96954d7ba091": {
+      "item_key": "TIMSS 1999/grade 8/Mathematics/H09",
+      "outcome": "saved"
+    },
+    "8a5954f564682245": {
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M011020",
+      "outcome": "saved"
+    },
+    "5e33210e11975ba2": {
+      "item_key": "TIMSS 1999/grade 8/Mathematics/F12",
+      "outcome": "saved"
+    },
+    "4b8387297b723cdf": {
+      "item_key": "TIMSS 1999/grade 8/Mathematics/D12",
+      "outcome": "saved"
+    },
+    "a2000d1dd04e0417": {
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M031159",
+      "outcome": "saved"
+    },
+    "0b06b5f43e102b56": {
+      "item_key": "TIMSS 1995/grade 4/Mathematics/J7",
+      "outcome": "saved"
+    },
+    "0bf682e6a0e228f8": {
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M032623",
+      "outcome": "saved"
+    },
+    "609a02db26ffc170": {
+      "item_key": "TIMSS 1999/grade 8/Mathematics/J16",
+      "outcome": "saved"
+    },
+    "45cb50e324730121": {
+      "item_key": "TIMSS 1999/grade 8/Mathematics/R07",
+      "outcome": "saved"
+    },
+    "7c2bb69e277e696f": {
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M041186",
+      "outcome": "saved"
+    },
+    "2a3e6ce812b68ba7": {
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M032728",
+      "outcome": "saved"
+    },
+    "414f2b1ebf478906": {
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M032398",
+      "outcome": "saved"
+    },
+    "e93c477fc5bfe8e3": {
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M041041",
+      "outcome": "saved"
+    },
+    "ae7bb5d704d3a9fb": {
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M012065",
+      "outcome": "saved"
+    },
+    "fd5d502dcc049cb7": {
+      "item_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L9",
+      "outcome": "saved"
+    },
+    "e6e1250c4dbebe1c": {
+      "item_key": "TIMSS 1995/grade 4/Mathematics/M9",
+      "outcome": "saved"
+    },
+    "cf8cc982beec3bcc": {
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M032228",
+      "outcome": "saved"
+    },
+    "929e4e46605447db": {
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M012023",
+      "outcome": "saved"
+    },
+    "75d4bdc86b587eec": {
+      "item_key": "TIMSS 1999/grade 8/Mathematics/R11",
+      "outcome": "saved"
+    },
+    "4f460787c846132e": {
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M031045",
+      "outcome": "saved"
+    },
+    "66211a6b3751ea5e": {
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M031088",
+      "outcome": "saved"
+    },
+    "af3f23eadb240655": {
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M041098",
+      "outcome": "saved"
+    },
+    "d4791e6c9d24ed02": {
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M041335",
+      "outcome": "saved"
+    },
+    "7e962a649ff8eed5": {
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M042254",
+      "outcome": "saved"
+    },
+    "fd21b7655ebb775a": {
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M042239",
+      "outcome": "saved"
+    },
+    "11a9c53a6b867bb2": {
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M042236",
+      "outcome": "saved"
+    },
+    "3942d9a1bc3b98f7": {
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M031351",
+      "outcome": "saved"
+    },
+    "fa66574fae69af1d": {
+      "item_key": "TIMSS 1999/grade 8/Mathematics/B07",
+      "outcome": "saved"
+    },
+    "9e0dfc60974bad59": {
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M042177",
+      "outcome": "saved"
+    },
+    "226414a3983abfa6": {
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M022127",
+      "outcome": "saved"
+    },
+    "bf7c1e5d3f193022": {
+      "item_key": "TIMSS 1995/grade 4/Mathematics/I8",
+      "outcome": "saved"
+    },
+    "2b6f8a8621cdb7be": {
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M031254",
+      "outcome": "saved"
+    },
+    "b4d7299e0ac05143": {
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M042016",
+      "outcome": "saved"
+    },
+    "b0e24f7bba0fdeed": {
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M032397",
+      "outcome": "saved"
+    },
+    "9940a33652e9a162": {
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M031097",
+      "outcome": "saved"
+    },
+    "595ca88275dfb78f": {
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M031108",
+      "outcome": "saved"
+    },
+    "105a93330ad84f3b": {
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M031187",
+      "outcome": "saved"
+    },
+    "f7c769ccf2cb86ef": {
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M012040",
+      "outcome": "saved"
+    },
+    "2bcf32b812e5a614": {
+      "item_key": "TIMSS 1995/grade 4/Mathematics/L5",
+      "outcome": "saved"
+    },
+    "6ff365718da08195": {
+      "item_key": "TIMSS 1999/grade 8/Mathematics/R13",
+      "outcome": "saved"
+    },
+    "3b6aa8a8756901f1": {
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M041265",
+      "outcome": "saved"
+    },
+    "014ccd35247062b5": {
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M051123",
+      "outcome": "saved"
+    },
+    "fe3dd4e072c49443": {
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M031029",
+      "outcome": "saved"
+    },
+    "b49493dad0bef365": {
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M022021",
+      "outcome": "saved"
+    },
+    "cde743212bac2f34": {
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M032699",
+      "outcome": "saved"
+    },
+    "fbc985b5f688fdf1": {
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M031338",
+      "outcome": "saved"
+    },
+    "d386ebef1870c0fe": {
+      "item_key": "TIMSS 1999/grade 8/Mathematics/R08",
+      "outcome": "saved"
+    },
+    "6434da924e8a1574": {
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M031173",
+      "outcome": "saved"
+    },
+    "056a356b7598fddb": {
+      "item_key": "TIMSS 1995/grade 4/Mathematics/J1",
+      "outcome": "saved"
+    },
+    "87c4a08339cc4f4e": {
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M032331",
+      "outcome": "saved"
+    },
+    "81df5136e4453cb6": {
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M032294",
+      "outcome": "saved"
+    },
+    "942b735e7d2c734f": {
+      "item_key": "TIMSS 1999/grade 8/Mathematics/P08",
+      "outcome": "saved"
+    },
+    "dedf902a99f1780a": {
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M041014",
+      "outcome": "saved"
+    },
+    "07833705099e55fe": {
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M051091",
+      "outcome": "saved"
+    },
+    "bd5ca3ce55820a60": {
+      "item_key": "TIMSS 1999/grade 8/Mathematics/T04",
+      "outcome": "saved"
+    },
+    "b2e48b11fa865d3d": {
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M032701",
+      "outcome": "saved"
+    },
+    "bbacbb65d545d9c5": {
+      "item_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23050",
+      "outcome": "saved"
+    },
+    "f7a5217ad4c534d7": {
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M032208",
+      "outcome": "saved"
+    },
+    "5e485229cadf2cfc": {
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M032273",
+      "outcome": "saved"
+    },
+    "65c969114ee0593c": {
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M042137",
+      "outcome": "saved"
+    },
+    "173fe7f028e2d0ea": {
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M032352",
+      "outcome": "saved"
+    },
+    "a667da950ecbf1c2": {
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M011023",
+      "outcome": "saved"
+    },
+    "008149ab0860fd5f": {
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M031252",
+      "outcome": "saved"
+    },
+    "e50c152d9dab0b2a": {
+      "item_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K7",
+      "outcome": "saved"
+    },
+    "31ea1ec037dc7cb0": {
+      "item_key": "TIMSS 1999/grade 8/Mathematics/D09",
+      "outcome": "saved"
+    },
+    "8d7db73c9228cac1": {
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M012030",
+      "outcome": "saved"
+    },
+    "15e9ddd22f2dab6c": {
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M031255",
+      "outcome": "saved"
+    },
+    "e8467d56644c1225": {
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M042179",
+      "outcome": "saved"
+    },
+    "e3ba35b6342bac8d": {
+      "item_key": "TIMSS 2003/grade 4/Mathematics/M011001",
+      "outcome": "saved"
+    },
+    "290076a7be76c4d9": {
+      "item_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23021",
+      "outcome": "saved"
+    },
+    "94df0facc1537a5f": {
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M032166",
+      "outcome": "saved"
+    },
+    "027f98af1ace638f": {
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M052216",
+      "outcome": "saved"
+    },
+    "d45e7b6b14b46384": {
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M031064",
+      "outcome": "saved"
+    },
+    "ea796ae0008645f6": {
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M031004",
+      "outcome": "saved"
+    },
+    "7ac3e51945b6e67c": {
+      "item_key": "TIMSS 2007/grade 4/Mathematics/M031245",
+      "outcome": "saved"
+    },
+    "155faf42fdac099a": {
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M041158",
+      "outcome": "saved"
+    },
+    "efd6951aa3f2fce5": {
+      "item_key": "TIMSS 1995/grade 4/Mathematics/I5",
+      "outcome": "saved"
+    },
+    "91b6155d95e654e3": {
+      "item_key": "TIMSS 1999/grade 8/Mathematics/N15",
+      "outcome": "saved"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "batch_id": "batch-1792336151-FERBq6R1VhmNDDCoBa94",
+  "model": "google/gemini-3.8-flash",
+  "submitted_at": "2026-10-18T15:09:10+00:00",
+  "collected_at": "2026-10-19T14:20:47+00:00",
+  "status": "completed",
+  "finalized_at": 1792348337,
+  "request_counts": {
+    "total": 4,
+    "completed": 4,
+    "failed": 0
+  },
+  "usage": {
+    "prompt_tokens": 2570,
+    "completion_tokens": 857,
+    "total_tokens": 3427,
+    "cost": 0.002570625,
+    "is_byok": false
+  },
+  "error": null,
+  "requests": {
+    "5f757a164358ef2f": {
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M051064A+M051064B",
+      "outcome": "saved"
+    },
+    "f5c4d2332c3393cd": {
+      "item_key": "TIMSS 1995/grade 4/Mathematics/T1A+T1B",
+      "outcome": "saved"
+    },
+    "2d30dfb9d6603af2": {
+      "item_key": "TIMSS 1999/grade 8/Mathematics/T02A+T02B",
+      "outcome": "saved"
+    },
+    "8adacf4aebbb3490": {
+      "item_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23035A+MA23035B",
+      "outcome": "saved"
+    }
+  }
+}

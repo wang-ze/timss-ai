@@ -1,0 +1,48 @@
+{
+  "item_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K14",
+  "response": "Unroll the cylinder into a flat rectangle. The rectangle has width equal to the circumference, 4 cm, and height equal to the rod's length, 12 cm. The string winds 4 times around the rod, so it appears as 4 straight segments on the rectangle, each crossing the full width once and covering the same vertical distance. Each turn advances the string along the rod by 12/4 = 3 cm, so each segment forms a right triangle with legs 4 cm (horizontal, the circumference) and 3 cm (vertical, the advance per turn). By the Pythagorean theorem, each segment has length sqrt(4^2 + 3^2) = sqrt(16 + 9) = sqrt(25) = 5 cm. The string consists of 4 such segments, so the total length is 4 x 5 cm = 20 cm. Answer: the length of the string is 20 cm.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\nA string is wound symmetrically around a circular rod. The string goes exactly 4 times around the rod. The circumference of the rod is 4 cm and its length is 12 cm.\n\n[Image: A cylinder with a string wound around it 4 times]\n\nFind the length of the string. Show all your work.\n\nFigure, described in words:\nA side-view illustration of a horizontal cylindrical rod. A thick, dark line representing a string begins near the top-left edge, winds around the rod symmetrically making 4 complete helical turns from left to right, and terminates near the top-right edge.\n\n# Scoring guide of the question (2 points)\n\n- Correct Response (2 points):\n  - Length of string = 20 cm. Method:\n• The surface of the rod is represented as a rectangle 4 cm by 12 cm.\n• Four parallel congruent segments are drawn in the rectangle indicating the position of the string.\n• Length of one segment is calculated using Pythagorean theorem\nsqrt(3^2 + 4^2) = 5. Total length of string = 4 x 5 cm = 20 cm.\n  - Length of string = 20 cm. Method:\n• Half of surface of rod represented as rectangle 2 cm by 12 cm.\n• Eight congruent segments drawn in the rectangle indicating position of string.\n• Length of one segment calculated using Pythagorean theorem\nsqrt(2^2 + 1.5^2) = 2.5. Total length of string = 8 x 2.5 cm = 20 cm.\n  - Length of string = 20 cm. Method used:\n• Situation represented either by rectangle 16 x 12 with string as its diagonal OR by right triangle with sides 16 and 12 and string as its hypotenuse.\nPythagorean theorem used to calculate length of string sqrt(16^2 + 12^2) = 20 cm.\n  - All other fully correct solutions.\n- Partial Response (1 point):\n  - Length of string = 20 cm. No work shown.\n  - Surface of rod represented by rectangle with correct dimensions and position of string correctly indicated, but numerical error in the calculation of the length of string.\n  - All other partially correct solutions with correct method and minor error.\n- Incorrect Response (0 points):\n  - Incorrect answer. No work shown.\n  - Length of string = 16 cm. Argument: It is the same as 4 circles.\n  - Length of string = 28 cm. Argument: \"If the string were wound 4 times around the same place, its length would be 4 x 4. But since it \"moves\" along the rod which is 12 cm long, we must add these 12 cm to the length of the string.\"\n  - Estimation methods:\nLength of 1 revolution estimated or stated but not calculated; then it is multiplied by 4.\nExamples: 1 revolution is approx. 6 cm long, length of string is 4 x 6 = 24 cm.\n1 revolution is (4 + 1.5) cm long, length of string is 4 x 5.5 = 22 cm.\nLength of string must be greater than 16 cm (it would be 16 cm if it were 4 circles) and/or\nLength of string must be less than 16 + 12 = 28 cm.\n16 cm < L < 28 cm)\n  - String is represented by a curve, e.g. parts of a circle or an ellipse.\n  - All other incorrect attempts with some work shown.\n- Nonresponse (0 points):\n  - Crossed-out, illegible, or impossible to interpret.\n  - BLANK\n\n# Response to the question\n\nUnroll the cylinder into a flat rectangle. The rectangle has width equal to the circumference, 4 cm, and height equal to the rod's length, 12 cm. The string winds 4 times around the rod, so it appears as 4 straight segments on the rectangle, each crossing the full width once and covering the same vertical distance. Each turn advances the string along the rod by 12/4 = 3 cm, so each segment forms a right triangle with legs 4 cm (horizontal, the circumference) and 3 cm (vertical, the advance per turn). By the Pythagorean theorem, each segment has length sqrt(4^2 + 3^2) = sqrt(16 + 9) = sqrt(25) = 5 cm. The string consists of 4 such segments, so the total length is 4 x 5 cm = 20 cm. Answer: the length of the string is 20 cm.\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Partial Response",
+          "Incorrect Response",
+          "Nonresponse"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response provides a fully correct solution with clear and complete work. It represents the unrolled surface of the rod as a 4 cm by 12 cm rectangle, calculates the length of one turn using the Pythagorean theorem with legs 4 cm and 3 cm (giving 5 cm), and multiplies by 4 to find the total length of 20 cm.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": "**Calculating Segment Lengths**\n\nI've unrolled the cylinder, visualizing it as a 4 cm by 12 cm rectangle. I'm breaking down the string into four segments, each representing a turn. My current focus is on calculating the length of each segment using the Pythagorean theorem, considering the 3 cm advance along the length and 4 cm along the circumference for each.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 1353,
+  "completion_tokens": 211,
+  "reasoning_tokens": 117,
+  "cost_usd": 0.001806,
+  "seconds": 4.372,
+  "batch_id": null,
+  "requested_at": "2026-10-19T18:40:19+00:00"
+}

@@ -1,0 +1,47 @@
+{
+  "item_key": "TIMSS 2007/grade 8/Mathematics/M032637B",
+  "response": "16 weeks",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the eighth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Questions\n\nThese 3 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nThe Be Fit Health Club offers two different payment plans.\nPlan A has an initial fee of 400 zeds and a weekly fee of 25 zeds.\nPlan B does not have an initial fee but has a weekly fee of 50 zeds.\n\nThe figure below compares the cost for Plan A and Plan B.\n\n[Image: Be Fit Health Club Payment Plans graph]\n\nA. Label the line that represents the cost for Plan A, and label the line that represents the cost for Plan B.\n\nFigure, described in words:\nA line graph titled \"Be Fit Health Club Payment Plans\" on a grid. The horizontal axis is labeled \"Number of Weeks\" and numbered from 0 to 26 in increments of 2 (0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26), with grid lines every 1 unit. The vertical axis is labeled \"Total Cost in Zeds\" and numbered from 200 to 1400 in increments of 200 (200, 400, 600, 800, 1000, 1200, 1400), with grid lines every 100 units starting at 0. Two lines are shown:\n- A dashed line starting at the origin (0, 0) and passing through (4, 200), (8, 400), (12, 600), (16, 800), (20, 1000), (24, 1200), and extending toward the top right, pointing to a rectangular box labeled \"Plan ____\".\n- A solid line starting at (0, 400) on the vertical axis and passing through (8, 600), (16, 800), (24, 1000), and extending toward the right, pointing to a rectangular box labeled \"Plan ____\" positioned below the first box.\n\n## Question 2\n\nThe Be Fit Health Club offers two different payment plans.\nPlan A has an initial fee of 400 zeds and a weekly fee of 25 zeds.\nPlan B does not have an initial fee but has a weekly fee of 50 zeds.\n\nThe figure below compares the cost for Plan A and Plan B.\n\n[Image: Be Fit Health Club Payment Plans graph]\n\nB. At which week would you have paid the same amount for Plan A and Plan B?\n\nFigure, described in words:\nA line graph titled \"Be Fit Health Club Payment Plans\" on a grid. The horizontal axis is labeled \"Number of Weeks\" and numbered from 0 to 26 in increments of 2 (0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26), with grid lines every 1 unit. The vertical axis is labeled \"Total Cost in Zeds\" and numbered from 200 to 1400 in increments of 200 (200, 400, 600, 800, 1000, 1200, 1400), with grid lines every 100 units starting at 0. Two lines are shown:\n- A dashed line starting at the origin (0, 0) and passing through (4, 200), (8, 400), (12, 600), (16, 800), (20, 1000), (24, 1200), and extending toward the top right, pointing to a rectangular box labeled \"Plan ____\".\n- A solid line starting at (0, 400) on the vertical axis and passing through (8, 600), (16, 800), (24, 1000), and extending toward the right, pointing to a rectangular box labeled \"Plan ____\" positioned below the first box.\n\n## Question 3\n\nThe Be Fit Health Club offers two different payment plans.\nPlan A has an initial fee of 400 zeds and a weekly fee of 25 zeds.\nPlan B does not have an initial fee but has a weekly fee of 50 zeds.\n\nThe figure below compares the cost for Plan A and Plan B.\n\n[Image: Be Fit Health Club Payment Plans graph]\n\nC. At 24 weeks, what is the difference in total cost between the two plans?\n\nFigure, described in words:\nA line graph titled \"Be Fit Health Club Payment Plans\" on a grid. The horizontal axis is labeled \"Number of Weeks\" and numbered from 0 to 26 in increments of 2 (0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26), with grid lines every 1 unit. The vertical axis is labeled \"Total Cost in Zeds\" and numbered from 200 to 1400 in increments of 200 (200, 400, 600, 800, 1000, 1200, 1400), with grid lines every 100 units starting at 0. Two lines are shown:\n- A dashed line starting at the origin (0, 0) and passing through (4, 200), (8, 400), (12, 600), (16, 800), (20, 1000), (24, 1200), and extending toward the top right, pointing to a rectangular box labeled \"Plan ____\".\n- A solid line starting at (0, 400) on the vertical axis and passing through (8, 600), (16, 800), (24, 1000), and extending toward the right, pointing to a rectangular box labeled \"Plan ____\" positioned below the first box.\n\n# Scoring guide of question 2 (1 point)\n\n- Correct Response (1 point):\n  - 16\n- Incorrect Response (0 points):\n  - Incorrect (including crossed out/erased, stray marks, illegible or off task).\n- Nonresponse (0 points):\n  - Blank\n\n# Response to question 2\n\n16 weeks\n\nScore the response to question 2.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response",
+          "Nonresponse"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response correctly identifies 16 weeks as the point where the cost of both plans is the same, matching the value required by the scoring guide.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 1795,
+  "completion_tokens": 141,
+  "reasoning_tokens": 92,
+  "cost_usd": 0.001875,
+  "seconds": 2.034,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:46:59+00:00"
+}

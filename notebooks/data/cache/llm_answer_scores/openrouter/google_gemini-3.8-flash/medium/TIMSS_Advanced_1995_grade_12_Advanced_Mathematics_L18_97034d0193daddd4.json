@@ -1,0 +1,48 @@
+{
+  "item_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L18",
+  "response": "The line joining the centres is perpendicular to and bisects the common chord, so each half of PQ is 4 cm. The centres lie on opposite sides of PQ, so their distances to the chord add to give AB.\n\nFor circle A, the distance from A to PQ is \\(\\sqrt{7^2-4^2}=\\sqrt{33}\\) cm.\n\nFor circle B, the distance from B to PQ is \\(\\sqrt{10^2-4^2}=\\sqrt{84}=2\\sqrt{21}\\) cm.\n\nTherefore, \\(AB=\\sqrt{33}+2\\sqrt{21}\\approx 14.9\\) cm.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\nTwo circles with centres A and B as shown below have radii of 7 cm and 10 cm respectively. If the length of the common chord PQ is 8 cm, what is the length of AB? Show all your work.\n\n[Image: Two intersecting circles with centers A and B]\n\nFigure, described in words:\nTwo intersecting circles are shown. The smaller circle on the left has its center labeled A, and the larger circle on the right has its center labeled B. A horizontal line segment connects center A and center B. The two circles intersect at two points labeled P (top) and Q (bottom). A vertical line segment connects P and Q, intersecting line segment AB. Line segment AP is drawn and labeled \"7 cm\", and line segment BP is drawn and labeled \"10 cm\".\n\n# Scoring guide of the question (2 points)\n\n- Correct Response (2 points):\n  - 14.9 or sqrt(84) + sqrt(33) . Method: Pythagorean theorem applied in triangles APS and BPS (S is the midpoint of PQ).\n  - 14.9. Method: Trigonometry functions (ratios) used correctly to determine lengths of sides of triangles OR size of angles of triangle that results in determining the length of AB. Note: Most frequently used trigonometric functions are sine and cosine.\n  - Other complete and correct solutions.\n- Partial Response (1 point):\n  - Method as in 20 but solution contains a (minor) error in method, or numerical or rounding error.\n  - Method as in 21 but solution contains a (minor) error in method, or numerical or rounding error.\n  - sqrt(84) + sqrt(33) . No work shown.\n  - Other partially correct solutions, with minor error.\n- Incorrect Response (0 points):\n  - Method: Pythagorean theorem applied to ΔAPB which is not a right triangle.\n  - Incorrect use of the Pythagorean theorem in a right triangle.\n  - Figure in booklet has been considered accurate and lengths of segments and/or measures of angles have been determined from the diagram.\n  - All other incorrect responses.\n- Nonresponse (0 points):\n  - Crossed-out, illegible, or impossible to interpret\n  - BLANK\n\nScoring notes: Note: 1. Since the expected precision is not indicated, every result obtained by a correct method and reasonable and correct rounding should be accepted.\n2. If student gives at some stage the correct answer but continues and later makes a numerical (not conceptual) error, ignore this error.\n\n# Response to the question\n\nThe line joining the centres is perpendicular to and bisects the common chord, so each half of PQ is 4 cm. The centres lie on opposite sides of PQ, so their distances to the chord add to give AB.\n\nFor circle A, the distance from A to PQ is \\(\\sqrt{7^2-4^2}=\\sqrt{33}\\) cm.\n\nFor circle B, the distance from B to PQ is \\(\\sqrt{10^2-4^2}=\\sqrt{84}=2\\sqrt{21}\\) cm.\n\nTherefore, \\(AB=\\sqrt{33}+2\\sqrt{21}\\approx 14.9\\) cm.\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Partial Response",
+          "Incorrect Response",
+          "Nonresponse"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response correctly identifies that the line connecting the centers bisects the chord perpendicularly, applies the Pythagorean theorem to calculate the distance from each center to the chord as sqrt(33) and sqrt(84), and sums them to obtain approximately 14.9 cm with full work shown.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": "**Analyzing Geometric Relationships**\n\nI've confirmed the student's correct application of the Pythagorean theorem. My focus has shifted to calculating the distance from point A to the chord PQ, which I've found to be $\\sqrt{33}$ cm, using the radius and half the chord length.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 1013,
+  "completion_tokens": 222,
+  "reasoning_tokens": 144,
+  "cost_usd": 0.00159225,
+  "seconds": 3.32,
+  "batch_id": null,
+  "requested_at": "2026-10-19T18:35:40+00:00"
+}

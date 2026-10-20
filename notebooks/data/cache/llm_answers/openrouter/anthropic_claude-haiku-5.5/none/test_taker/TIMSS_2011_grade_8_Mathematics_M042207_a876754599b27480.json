@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 8/Mathematics/M042207",
+  "item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M042207"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "480 students were asked to name their favorite sport. The results are shown in this table.\n\n| Sport | Number of Students |\n| :--- | :--- |\n| Hockey | 60 |\n| Football | 180 |\n| Tennis | 120 |\n| Basketball | 120 |\n\nUse the information in the table to complete and label this pie chart.\n\n[Image: A circle with a point in the middle, and 8 equally spaced points on the circumference of the circle. The circle is labeled “Popularity of Sports.”]\n\nFigure, described in words:\nA circle labeled \"Popularity of Sports\" at the top. The circle contains a dot at its center and 8 equally spaced dots along its circumference, located at 12 o'clock, 1:30, 3 o'clock, 4:30, 6 o'clock, 7:30, 9 o'clock, and 10:30.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Compute each sport's share of 480 and its central angle: Hockey 60/480 = 1/8 = 12.5%, angle 45°; Football 180/480 = 3/8 = 37.5%, angle 135°; Tennis 120/480 = 1/4 = 25%, angle 90°; Basketball 120/480 = 1/4 = 25%, angle 90°. Check: 45 + 135 + 90 + 90 = 360°. Draw sector lines from the center to the circumference points as follows: Start at 12 o'clock and draw the first sector of 45° (Hockey) ending at 1:30 (the 45° point), label that sector 'Hockey 12.5%' (60 students). Next, from 1:30 sweep 135° clockwise to 6 o'clock (the 180° point, 4.5 hours of the circle, i.e. the points at 1:30, 3, 4:30, 6 span 135°) and label that sector 'Football 37.5%' (180 students). Next, from 6 o'clock sweep 90° clockwise to 9 o'clock and label that sector 'Tennis 25%' (120 students). Finally, from 9 o'clock sweep the remaining 90° clockwise back to 12 o'clock and label that sector 'Basketball 25%' (120 students). Each sector is bounded by two radii from the center to the marked circumference points, and the four labels are written inside or next to their sectors."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 700,
+  "completion_tokens": 477,
+  "reasoning_tokens": 0,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335952-nomWk8Tj0yh7J6h3dipX",
+  "requested_at": "2026-10-19T14:20:45+00:00"
+}

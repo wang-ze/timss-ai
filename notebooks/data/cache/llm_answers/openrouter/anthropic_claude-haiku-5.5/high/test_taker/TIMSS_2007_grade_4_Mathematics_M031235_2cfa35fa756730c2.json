@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2007/grade 4/Mathematics/M031235",
+  "item_keys": [
+    "TIMSS 2007/grade 4/Mathematics/M031235"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "A group of 8 children have 74 sweets altogether. How many more sweets are needed for the children to be able to share them equally?\n\nAnswer: ____",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "6. Since 74 ÷ 8 = 9 remainder 2, the children would need 8 − 2 = 6 more sweets to make 80 (8 × 10), so each child gets 10 sweets."
+  },
+  "llm_thinking": "74 divided by 8 leaves a remainder of 2, so I need 6 more to reach the next multiple of 8, which is 80. So the answer is 6.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 472,
+  "completion_tokens": 119,
+  "reasoning_tokens": 43,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335960-oItwFneLfMfZRXMM1E4b",
+  "requested_at": "2026-10-19T14:20:47+00:00"
+}

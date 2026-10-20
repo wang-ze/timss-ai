@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2011/grade 4/Mathematics/M041175",
+  "item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M041175"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "This chart shows the types of cookies sold by the local bakery.\n\n[Image: Pie chart titled Cookies Sold, shaded and divided into various sizes; sugar about one-fourth, chocolate chip more than one-fourth, oatmeal more than one-half, and vanilla about one-eighth.]\n\nWhich type of cookie did the bakery sell the most of?\n\nFigure, described in words:\nA pie chart titled \"Cookies Sold\" is divided into four unequal sectors:\n- \"sugar\": light-gray shading, occupying the top-right quadrant from the 12 o'clock position to the 3 o'clock position (a right angle, exactly one-quarter of the circle).\n- \"chocolate chip\": medium-gray shading, occupying the sector from the 3 o'clock position to approximately the 5 o'clock position.\n- \"oatmeal\": white (unshaded), occupying the largest sector from approximately the 5 o'clock position counter-clockwise around the bottom and left to approximately the 10:30 position.\n- \"vanilla\": white (unshaded), occupying the sector from approximately the 10:30 position to the 12 o'clock position.\nVisually, oatmeal is the largest sector, sugar is the second largest, chocolate chip is third, and vanilla is the smallest.\n\nA. oatmeal\nB. vanilla\nC. chocolate chip\nD. sugar",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "A"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 425,
+  "completion_tokens": 6,
+  "reasoning_tokens": 0,
+  "cost_usd": 2.215e-05,
+  "seconds": 0.884,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:06:04+00:00"
+}

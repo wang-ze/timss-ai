@@ -1,0 +1,47 @@
+{
+  "item_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L13",
+  "response": "> Let $\theta$ be the angle between vector $\textbf{a}$ and vector $\textbf{b}$. We are given that $|\textbf{a} + \textbf{b}| = |\textbf{a} - \textbf{b}|$. We can square both sides of the equation to get rid of the absolute values: $|\textbf{a} + \textbf{b}|^2 = |\textbf{a} - \textbf{b}|^2$.  Expanding the squares using the fact that $|\textbf{v}|^2 = \textbf{v} \bullet \textbf{v}$, we have: \\$(\textbf{a} + \textbf{b}) \bullet (\textbf{a} + \textbf{b}) = (\textbf{a} - \textbf{b}) \bullet (\textbf{a} - \textbf{b})$. \\This simplifies to:  \\$\textbf{a} \bullet \textbf{a} + 2\textbf{a} \bullet \textbf{b} + \textbf{b} \bullet \textbf{b} = \textbf{a} \bullet \textbf{a} - 2\textbf{a} \bullet \textbf{b} + \textbf{b} \bullet \textbf{b}$. \\Subtracting $\textbf{a} \bullet \textbf{a}$ and $\textbf{b} \bullet \textbf{b}$ from both sides, we get: \\$2\textbf{a} \bullet \textbf{b} = -2\textbf{a} \bullet \textbf{b}$. \\Adding $2\textbf{a} \bullet \textbf{b}$ to both sides gives: \\$4\textbf{a} \bullet \textbf{b} = 0$. \\Dividing both sides by 4, we get: \\$\textbf{a} \bullet \textbf{b} = 0$. \\We know that $\textbf{a} \bullet \textbf{b} = |\textbf{a}| |\textbf{b}| \text{cos}(\theta)$.  Thus,  \\$|\textbf{a}| |\textbf{b}| \text{cos}(\theta) = 0$.  Since $|\textbf{a}| \neq 0$ and $|\textbf{b}| \neq 0$, we must have $\text{cos}(\theta) = 0$.  Therefore, $\theta = 90^\text{o}$.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\nTwo vectors vector a and vector b (vector a, vector b ≠ vector 0) are related by: |vector a + vector b| = |vector a - vector b|.\n\nWhat is the measure of the angle between vector a and vector b?\n\n# Scoring guide of the question (1 point)\n\n- Correct Response (1 point):\n  - 90° OR ± π/2 OR \"Given vectors are perpendicular.\" No work shown.\n  - 90° OR ± π/2 OR \"Given vectors are perpendicular.\" And results derived correctly from equality given and from definition of |a|, that is, |a+b| = |a-b| => |a+b|^2 =\n|a-b|^2 => (a+b) (a+b) => (a-b) (a-b) => a^2+ 2ab + b^2 = a^2 - 2ab+b^2 => 2ab = -2ab => 4ab = 0 => vectors a,b are perpendicular.\nNote: If error(s) in derivation, code 19.\n  - 90° OR ± π/2 OR \"Given vectors are perpendicular.\" Situation is represented correctly geometrically, that is, vectors a+b and a-b represented as diagonals of a parallelogram. Conclusion stated that the given equality holds only if vectors a,b are perpendicular to each other. Note: If error(s) in method, code 19.\n  - 90° OR ± π/2 OR \"Given vectors are perpendicular.\" Only presents a drawing; no explanation in words.\n  - 90° OR ±π/2 OR \"Given vectors are perpendicular.\" Some work shown. Method may be complete and correct, or incomplete and correct, or incorrect.\n- Incorrect Response (0 points):\n  - 0° or 180° with or without work shown.\n  - Method as in code 11, but no statement of measurement.\n  - Method as in code 12, but no statement of measurement.\n  - Unsuccessful atttempts to use the formula: ab cos α = | a | · | b | .\n  - All other incorrect responses.\n- Nonresponse (0 points):\n  - Crossed-out, illegible, or impossible to interpret.\n  - BLANK\n\n# Response to the question\n\n> Let $\theta$ be the angle between vector $\textbf{a}$ and vector $\textbf{b}$. We are given that $|\textbf{a} + \textbf{b}| = |\textbf{a} - \textbf{b}|$. We can square both sides of the equation to get rid of the absolute values: $|\textbf{a} + \textbf{b}|^2 = |\textbf{a} - \textbf{b}|^2$.  Expanding the squares using the fact that $|\textbf{v}|^2 = \textbf{v} \bullet \textbf{v}$, we have: \\$(\textbf{a} + \textbf{b}) \bullet (\textbf{a} + \textbf{b}) = (\textbf{a} - \textbf{b}) \bullet (\textbf{a} - \textbf{b})$. \\This simplifies to:  \\$\textbf{a} \bullet \textbf{a} + 2\textbf{a} \bullet \textbf{b} + \textbf{b} \bullet \textbf{b} = \textbf{a} \bullet \textbf{a} - 2\textbf{a} \bullet \textbf{b} + \textbf{b} \bullet \textbf{b}$. \\Subtracting $\textbf{a} \bullet \textbf{a}$ and $\textbf{b} \bullet \textbf{b}$ from both sides, we get: \\$2\textbf{a} \bullet \textbf{b} = -2\textbf{a} \bullet \textbf{b}$. \\Adding $2\textbf{a} \bullet \textbf{b}$ to both sides gives: \\$4\textbf{a} \bullet \textbf{b} = 0$. \\Dividing both sides by 4, we get: \\$\textbf{a} \bullet \textbf{b} = 0$. \\We know that $\textbf{a} \bullet \textbf{b} = |\textbf{a}| |\textbf{b}| \text{cos}(\theta)$.  Thus,  \\$|\textbf{a}| |\textbf{b}| \text{cos}(\theta) = 0$.  Since $|\textbf{a}| \neq 0$ and $|\textbf{b}| \neq 0$, we must have $\text{cos}(\theta) = 0$.  Therefore, $\theta = 90^\text{o}$.\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response",
+          "Nonresponse"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response correctly squares both sides of the given vector equation, expands the dot products, establishes that the dot product of the two vectors is zero, and concludes that the angle between them is 90°.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 1478,
+  "completion_tokens": 195,
+  "reasoning_tokens": 134,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792336163-PLPJ9qAh6duftYYOclJF",
+  "requested_at": "2026-10-19T14:20:50+00:00"
+}

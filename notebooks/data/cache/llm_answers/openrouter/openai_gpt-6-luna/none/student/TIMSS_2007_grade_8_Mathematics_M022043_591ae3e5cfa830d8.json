@@ -1,0 +1,45 @@
+{
+  "unit_key": "TIMSS 2007/grade 8/Mathematics/M022043",
+  "item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M022043"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "none",
+  "system_prompt": "You are an eighth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: Rectangle divided into 12 squares with some squares shaded]\n\nWhich circle has approximately the same fraction of its area shaded as the rectangle above?\n\nFigure, described in words:\nAt the top, a rectangle is divided into a grid of 3 rows and 4 columns, forming 12 equal-sized squares. The bottom row has all 4 squares shaded gray. The middle row has the leftmost square shaded gray and the other 3 squares unshaded (white). The top row has all 4 squares unshaded. In total, 5 of the 12 squares are shaded.\n\nEach option shows a circle with a center point and radial lines dividing it into sectors, with one sector shaded gray:\n- Option A: The circle is divided by a vertical radius pointing up (12 o'clock) and another radius pointing down and slightly left (about 6:30). The larger sector on the right side is shaded gray (covering slightly more than half of the circle).\n- Option B: The circle is divided by a vertical diameter passing through the center from 12 o'clock to 6 o'clock. The right half of the circle is shaded gray (exactly 1/2 of the circle).\n- Option C: The circle is divided by a vertical radius pointing up (12 o'clock) and a horizontal radius pointing left (9 o'clock). The sector extending clockwise from 12 o'clock to 9 o'clock is shaded gray (3/4 of the circle).\n- Option D: The circle is divided by a vertical radius pointing up (12 o'clock) and another radius pointing down and to the right (about 4:30 to 5 o'clock). The sector between them on the right side is shaded gray (covering somewhat less than half of the circle, approximately 5/12 of the area).\n- Option E: The circle is divided by a vertical radius pointing up (12 o'clock) and another radius pointing up and slightly left (about 11 o'clock). The major sector extending clockwise from 12 o'clock to 11 o'clock is shaded gray (covering almost the entire circle, about 11/12 of the area).\n\nA. [Image: Circle with shaded sector]\nB. [Image: Circle with shaded sector]\nC. [Image: Circle with shaded sector]\nD. [Image: Circle with shaded sector]\nE. [Image: Circle with shaded sector]",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "D"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 695,
+  "completion_tokens": 12,
+  "reasoning_tokens": 0,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792430073-svtUY6L3Exvs9O4qh25G",
+  "requested_at": "2026-10-19T18:00:46+00:00"
+}

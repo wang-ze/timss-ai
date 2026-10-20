@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2007/grade 4/Mathematics/M031068",
+  "item_keys": [
+    "TIMSS 2007/grade 4/Mathematics/M031068"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Don, Rob, and Lynn walk home from school together. It takes them 25 minutes to walk to Lynn’s house. Then it takes Don and Rob 10 minutes to get to Rob’s house. From there it takes Don 5 minutes to walk home.\n\nAt what time must they leave school so that Don arrives home at 3:50 p.m.?\n\nAnswer: ____ p.m.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "3:10 p.m. (The total walking time is 25 + 10 + 5 = 40 minutes, and 3:50 p.m. minus 40 minutes is 3:10 p.m.)"
+  },
+  "llm_thinking": "Adding up the segments gives 40 minutes total, so working backward from a 3:50 pm arrival, I need to leave by 3:10 pm.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 552,
+  "completion_tokens": 128,
+  "reasoning_tokens": 55,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335958-MhJCSqWm7WbRuqTiOnF6",
+  "requested_at": "2026-10-19T14:20:45+00:00"
+}

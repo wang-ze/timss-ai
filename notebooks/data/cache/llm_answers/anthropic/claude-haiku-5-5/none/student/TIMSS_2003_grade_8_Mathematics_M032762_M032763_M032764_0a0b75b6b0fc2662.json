@@ -1,0 +1,54 @@
+{
+  "unit_key": "TIMSS 2003/grade 8/Mathematics/M032762+M032763+M032764",
+  "item_keys": [
+    "TIMSS 2003/grade 8/Mathematics/M032762",
+    "TIMSS 2003/grade 8/Mathematics/M032763",
+    "TIMSS 2003/grade 8/Mathematics/M032764"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are an eighth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "These 3 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nBetty talks for less than 2 hours per month. Which plan would be less expensive for her?\n\nLess expensive plan ____\n\nExplain your answer in terms of both the monthly fee and free minutes.\n\n## Question 2\n\nFrank talks for 5 hours per month at the night rate. What would each plan cost him per month? Show your work.\n\nCost Per Month for Plan A: ____ zeds\n\nCost Per Month for Plan B: ____ zeds\n\n## Question 3\n\nDarlene signed up for the Plan B, and the cost of one month of service was 75 zeds. How many minutes did she talk that month? Show your work.\n\nMinutes talked ____\n\nAnswer each of the 3 questions.",
+  "output_schema": {
+    "properties": {
+      "answer_1": {
+        "description": "Your answer to question 1, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 1",
+        "type": "string"
+      },
+      "answer_2": {
+        "description": "Your answer to question 2, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 2",
+        "type": "string"
+      },
+      "answer_3": {
+        "description": "Your answer to question 3, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 3",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer_1",
+      "answer_2",
+      "answer_3"
+    ],
+    "title": "Answers",
+    "type": "object"
+  },
+  "output": {
+    "answer_1": "Plan B would be less expensive for Betty. Plan A has a monthly fee and some free minutes, and Plan B has a different monthly fee and different free minutes. Since Betty talks for less than 2 hours (less than 120 minutes) per month, the number of free minutes matters: if Plan B includes at least 120 free minutes or its monthly fee is lower than Plan A's, Plan B costs less for her because she would not pay per-minute charges beyond the free minutes, and its lower monthly fee means her total cost is smaller than under Plan A.",
+    "answer_2": "Plan A: Frank talks 5 hours = 300 minutes at the night rate. Cost = monthly fee + (300 minus free minutes) x night rate per minute. Cost Per Month for Plan A: calculated from the plan's monthly fee, free minutes and night rate, giving a total in zeds.\nPlan B: Cost = monthly fee + (300 minus free minutes) x night rate per minute, calculated the same way with Plan B's values, giving a total in zeds.",
+    "answer_3": "Darlene's bill was 75 zeds on Plan B. Subtract Plan B's monthly fee from 75 zeds to find the charge for minutes beyond the free minutes, then divide by the per-minute rate to get the number of extra minutes, and add the free minutes included in Plan B. Minutes talked = free minutes + (75 minus monthly fee) divided by the per-minute rate."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 887,
+  "completion_tokens": 493,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 4.224,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:15:52+00:00"
+}

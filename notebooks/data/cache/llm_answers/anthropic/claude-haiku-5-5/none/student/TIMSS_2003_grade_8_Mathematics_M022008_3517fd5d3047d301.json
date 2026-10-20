@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2003/grade 8/Mathematics/M022008",
+  "item_keys": [
+    "TIMSS 2003/grade 8/Mathematics/M022008"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are an eighth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The numbers in the sequence 7, 11, 15, 19, 23, ... increase by four. The numbers in the sequence 1, 10, 19, 28, 37, ... increase by nine. The number 19 is in both sequences. If the two sequences are continued, what is the next number that is in BOTH the first and the second sequences?\n\nAnswer: ____",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Sequence 1: 7 + 4n, so numbers are 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, ... Sequence 2: 1 + 9m, so numbers are 1, 10, 19, 28, 37, 46, ... Both sequences contain numbers congruent to 19 mod 36 (the least common multiple of 4 and 9 is 36, and 19 is common to both). Continuing from 19, the next common number is 19 + 36 = 55. Check: 55 = 7 + 4(12) = 55 is in the first sequence, and 55 = 1 + 9(6) = 55 is in the second sequence. Answer: 55"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 563,
+  "completion_tokens": 235,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 1.862,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:15:32+00:00"
+}

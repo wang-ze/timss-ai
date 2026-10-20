@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2003/grade 4/Mathematics/M031264",
+  "item_keys": [
+    "TIMSS 2003/grade 4/Mathematics/M031264"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "In a class of 30 students, 10 have black hair, 15 have blonde hair, and the rest have brown hair. Complete the graph below to show the number of students with brown hair.\n\n[Image: Incomplete bar graph titled \"Color of Hair\"]\n\nFigure, described in words:\nAn incomplete bar graph titled \"Color of Hair\". The vertical axis is labeled \"Number of Students\" with horizontal grid lines marked at intervals of 5 from 5 up to 25 (5, 10, 15, 20, 25). The horizontal axis is labeled \"Hair Color\" with three categories: \"Black\", \"Blonde\", and \"Brown\". A black bar is drawn above \"Black\" reaching 10, a shaded gray bar is drawn above \"Blonde\" reaching 15, and the space above \"Brown\" is left blank for the student to draw a bar.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "First, I need to find out how many students have brown hair. I know there are 30 students total, 10 have black hair, and 15 have blonde hair. So I need to subtract the number of black-haired students and the number of blonde-haired students from the total number of students. That's 30 - 10 - 15 = 5.  So, 5 students have brown hair. \n\nNow, I need to draw a bar above 'Brown' on the graph that reaches the number 5 on the vertical axis. I would draw a bar above 'Brown' that goes up to the line marked '5' on the vertical axis."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 347,
+  "completion_tokens": 154,
+  "reasoning_tokens": 0,
+  "cost_usd": 6.0675e-05,
+  "seconds": 15.165,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:19:26+00:00"
+}

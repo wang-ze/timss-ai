@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2007/grade 4/Mathematics/M031247",
+  "item_keys": [
+    "TIMSS 2007/grade 4/Mathematics/M031247"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "A man took his 3 children to a fair. Tickets cost twice as much for adults as for children. The father paid a total of 50 zeds for the 4 tickets.\n\nHow many zeds did each child’s ticket cost? Show your work.\n\nAnswer: ____",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Each child's ticket cost 10 zeds. Work: The father's adult ticket costs twice a child's ticket, so if a child's ticket costs c zeds, the adult ticket costs 2c zeds. The 4 tickets are 1 adult ticket and 3 child tickets, so 2c + 3c = 5c = 50. Therefore c = 50 ÷ 5 = 10 zeds. Check: adult ticket 20 zeds + 3 child tickets of 10 zeds (30 zeds) = 50 zeds."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 507,
+  "completion_tokens": 356,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 2.453,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:22:07+00:00"
+}

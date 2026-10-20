@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2003/grade 8/Mathematics/M032403",
+  "item_keys": [
+    "TIMSS 2003/grade 8/Mathematics/M032403"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: Triangle ABC]\n\nThe triangle ABC has AB = AC.\n\nDraw a line to divide triangle ABC into two congruent triangles.\n\nFigure, described in words:\nAn isosceles triangle ABC is shown with vertex A at the bottom left, vertex B at the bottom right, and vertex C at the top. The base AB is horizontal. Side AC connects vertex A to vertex C, and side BC connects vertex C to vertex B. A single hatch mark (tick mark) is drawn through side AC and through side AB, indicating that AB = AC.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Draw a straight line segment from vertex A to the midpoint of side BC. Call the midpoint M (it is the point where the perpendicular from A meets BC, so AM is perpendicular to BC). This line divides triangle ABC into triangles ABM and ACM. They are congruent by SSS: AB = AC (given), BM = MC (M is the midpoint of BC), and AM is common to both triangles."
+  },
+  "llm_thinking": "I'm picturing the triangle layout: A at bottom left, B at bottom right, C at top, with tick marks on AB and AC showing those two sides are equal, making A the apex vertex of the isosceles triangle despite the orientation in the figure.\n\nDrawing a segment from A to M, the midpoint of BC, splits the triangle into ABM and ACM, which are congruent by SSS since AB=AC, BM=MC, and AM is shared—that gives a clean construction and justification to present as the answer.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 612,
+  "completion_tokens": 547,
+  "reasoning_tokens": 405,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335957-QKbCVbAXn76L3I0C7O9z",
+  "requested_at": "2026-10-19T14:20:44+00:00"
+}

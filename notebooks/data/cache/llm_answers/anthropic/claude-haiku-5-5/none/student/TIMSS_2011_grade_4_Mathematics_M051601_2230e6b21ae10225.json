@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 4/Mathematics/M051601",
+  "item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M051601"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Cooney has to form figures 1 to 4 with matches.\n\nFigures 1, 2, and 3 are shown below.\n\nHe needs four matches to form figure 1, seven matches to form figure 2, and ten matches to form figure 3.\n\nHe uses the same rule each time to make the next figure in the pattern.\n\n[Image: that figure 1 forms a square with four matches, figure 2 forms two squares side by side with seven matches, and figure 3 forms three squares side by side with ten matches.]\n\nHow many matches will he need to form figure 4?\n\nAnswer: ____\n\nFigure, described in words:\nThree figures made of matches arranged in a horizontal row, labeled below with numbers 1, 2, and 3:\n- Figure 1: 4 matches arranged to form a single square (one match on each of the four sides).\n- Figure 2: 7 matches arranged to form a row of two attached squares side by side, sharing one vertical match in the middle (2 top, 2 bottom, and 3 vertical matches).\n- Figure 3: 10 matches arranged to form a row of three attached squares side by side, each adjacent pair sharing a vertical match (3 top, 3 bottom, and 4 vertical matches).",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "13"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 840,
+  "completion_tokens": 10,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 1.4,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:14:55+00:00"
+}

@@ -19,6 +19,7 @@ import httpx2
 import numpy as np
 from typesafe_sdk import Score, ScoreAnswer, TypeSafeError
 
+from timss_math.batch import BatchManifests
 from timss_math.item_parameter_prediction import (
     DEFAULT_VALUE_SCALES,
     ItemIndex,
@@ -27,7 +28,6 @@ from timss_math.item_parameter_prediction import (
     LeaveOneOut,
     ValueScale,
 )
-from timss_math.item_parameter_prediction.batch import BatchManifests
 from timss_math.item_parameter_prediction.evaluation import parse_args
 from timss_math.item_parameter_prediction.jev import (
     MAX_SCORE_LEVELS,
@@ -328,6 +328,13 @@ class CommandLineTest(unittest.TestCase):
         self.assertIsNone(args.reasoning_effort)
         self.assertEqual(args.llm_provider, "ollama")
         self.assertTrue(math.isfinite(args.max_tokens))
+
+    def test_llm_settings_are_checked(self):
+        # Anthropic's OpenAI-compatible API cannot set the default reasoning effort, medium.
+        self.assertIn("cannot set the reasoning effort 'medium'", self.parse_fails(["--llm-provider", "anthropic"]))
+        self.assertIn("Only Ollama takes True or False", self.parse_fails(["--reasoning-effort", "true"]))
+        args = parse_args(["--llm-provider", "anthropic", "--llm-model", "claude-haiku-5-5", "--reasoning-effort", "none"])
+        self.assertEqual((args.llm_provider, args.reasoning_effort), ("anthropic", "none"))
 
 
 if __name__ == "__main__":

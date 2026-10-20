@@ -1,0 +1,46 @@
+{
+  "item_key": "TIMSS 2011/grade 4/Mathematics/M031380",
+  "response": "(5) Brad would get 1 sports card. Since 1 animal card is worth 2 cartoon cards, and 2 animal cards are worth 3 sports cards. First, we need to find out the relationship between cartoon cards and sports cards. We know 1 animal card = 2 cartoon cards. We also know 2 animal cards = 3 sports cards. So, if we substitute the first equation into the second, we get 2 * (1 animal card) = 3 sports cards. So, 2 cartoon cards = 3 sports cards. If Brad has 8 cartoon cards, he has 8 / 2 = 4 sets of cartoon cards. So he would get 4 * 3/2 = 12/2 = 6 sports cards.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the fourth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Questions\n\nThese 5 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nThe town fair had a booth where people could trade cards.\n\n[Image: one animal card, an equal sign, and two cartoon cards.]\n\n1 animal card is worth 2 cartoon cards.\n\n[Image: two animal cards an equal sign, and three sports cards.]\n\n2 animal cards are worth 3 sports cards.\n\nSome children went to the booth to trade cards.\n\nTrading Animal Cards\n\nA. Becky had 5 animal cards to trade for cartoon cards. How many cartoon cards would she get?\n\nAnswer: ____ cartoon cards\n\nFigure, described in words:\nTwo trade equivalence illustrations are shown:\n1. The top illustration shows 1 card depicting a bear on the left, an equals sign in the middle, and 2 identical cards depicting an oval cartoon face on the right.\n2. The bottom illustration shows 2 identical cards depicting a bear on the left, an equals sign in the middle, and 3 identical cards depicting a soccer player kicking a ball on the right.\n\n## Question 2\n\nThe town fair had a booth where people could trade cards.\n\n[Image: one animal card, an equal sign, and two cartoon cards.]\n\n1 animal card is worth 2 cartoon cards.\n\n[Image: two animal cards, an equal sign, and three sports cards.]\n\n2 animal cards are worth 3 sports cards.\n\nSome children went to the booth to trade cards.\n\nTrading Animal Cards\n\nB. Jim had 8 animal cards to trade for sports cards. How many sports cards would he get?\n\nAnswer: ____ sports cards\n\nFigure, described in words:\nTwo trade equations are illustrated with rectangular cards:\n1. Top equation: 1 card depicting a bear is on the left, an equals sign (=) is in the middle, and 2 identical cards depicting an oval cartoon face are on the right.\n2. Bottom equation: 2 identical cards depicting a bear are on the left, an equals sign (=) is in the middle, and 3 identical cards depicting a sports player kicking a ball are on the right.\n\n## Question 3\n\nThe town fair had a booth where people could trade cards.\n\n[Image: one animal card, an equal sign, and two cartoon cards]\n\n1 animal card is worth 2 cartoon cards.\n\n[Image: two animal cards, an equal sign, and three sports cards]\n\n2 animal cards are worth 3 sports cards.\n\nSome children went to the booth to trade cards.\n\nTrading Animal Cards\n\nC. Katrina had 6 animal cards. She wanted to trade them for as many cards as possible.\n\nHow many cartoon cards would she get? ____\n\nHow many sports cards would she get? ____\n\nShould she trade for cartoon cards or trade for sport cards?\n\nAnswer: ____\n\nFigure, described in words:\nTwo pictorial trading equations are displayed:\n1. A single card showing a drawing of a standing bear, an equals sign (=), and two identical cards each showing an oval cartoon face with large eyes. The text below states: \"1 animal card is worth 2 cartoon cards.\"\n2. Two identical cards showing a drawing of a standing bear, an equals sign (=), and three identical cards each showing a soccer player kicking a soccer ball. The text below states: \"2 animal cards are worth 3 sports cards.\"\n\n## Question 4\n\nTrading Cards (Continued)\n\nTrading Sports Cards\n\nSteve had 15 sports cards to trade for animal cards. How many animal cards would he get?\n\nAnswer: ____ animal cards\n\n## Question 5\n\nTrading Cartoon Cards\n\nBrad had 8 cartoon cards to trade for sports cards. How many sports cards would he get?\n\nAnswer: ____ sports cards\n\n# Scoring guide of question 5 (1 point)\n\n- Correct Response (1 point):\n  - 6\n- Incorrect Response (0 points):\n  - 4\n  - 12\n  - 24\n  - Other incorrect (including crossed out, erased, stray marks, illegible, or off task)\n\n# Response to question 5\n\n(5) Brad would get 1 sports card. Since 1 animal card is worth 2 cartoon cards, and 2 animal cards are worth 3 sports cards. First, we need to find out the relationship between cartoon cards and sports cards. We know 1 animal card = 2 cartoon cards. We also know 2 animal cards = 3 sports cards. So, if we substitute the first equation into the second, we get 2 * (1 animal card) = 3 sports cards. So, 2 cartoon cards = 3 sports cards. If Brad has 8 cartoon cards, he has 8 / 2 = 4 sets of cartoon cards. So he would get 4 * 3/2 = 12/2 = 6 sports cards.\n\nScore the response to question 5.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "Although the response begins with a contradictory statement ('Brad would get 1 sports card'), the complete mathematical work concludes with the correct answer of 6 sports cards.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 1326,
+  "completion_tokens": 484,
+  "reasoning_tokens": 433,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792336162-sVsXRPoM129nuAcuUbPh",
+  "requested_at": "2026-10-19T14:20:50+00:00"
+}

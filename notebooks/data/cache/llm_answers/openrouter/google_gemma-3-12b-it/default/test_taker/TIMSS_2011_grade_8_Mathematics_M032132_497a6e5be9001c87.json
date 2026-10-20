@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2011/grade 8/Mathematics/M032132",
+  "item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M032132"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "A machine has 100 candies and dispenses a candy when a lever is turned. The machine has the same number of blue, pink, yellow, and green candies all mixed together. Megan turned the lever and obtained a pink candy. Peter turned the lever next.\n\nHow likely is it that Peter will get a pink candy?\n\nA. It is certain that his candy will be pink.\nB. It is more likely than it was for Megan.\nC. It is exactly as likely as it was for Megan.\nD. It is less likely than it was for Megan.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "C"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 252,
+  "completion_tokens": 7,
+  "reasoning_tokens": 0,
+  "cost_usd": 2.0475e-05,
+  "seconds": 0.332,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:07:37+00:00"
+}

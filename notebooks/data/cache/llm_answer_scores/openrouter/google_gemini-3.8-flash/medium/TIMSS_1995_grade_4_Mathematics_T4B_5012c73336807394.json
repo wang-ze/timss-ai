@@ -1,0 +1,46 @@
+{
+  "item_key": "TIMSS 1995/grade 4/Mathematics/T4B",
+  "response": "No. There are 10 girls and 20 boys. 10 + 20 = 30. Amanda said half the students are girls, and half of 30 is 15. But there are only 10 girls. So Amanda is wrong. I can draw a picture too:  I'll draw 10 circles to represent the girls. Then I’ll draw 20 squares to represent the boys.  Counting all the shapes, there are 30.  Then I'll circle 15 of the shapes to show that Amanda thought there should be 15 girls, but there aren't that many.  It shows that she's wrong because the circle of shapes doesn't match the number of girls in the class.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the fourth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Questions\n\nThese 2 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nThere are 10 girls and 20 boys in Juanita's class. Juanita said that there is one girl for every two boys. Her friend Amanda said that means 1/2 of all the students in the class are girls.\n\nHow many students are there in Juanita's class?\nAnswer: ____\n\nIs Juanita right? Answer: ____\nUse words or pictures to explain why.\n\n## Question 2\n\nThere are 10 girls and 20 boys in Juanita's class. Juanita said that there is one girl for every two boys. Her friend Amanda said that means 1/2 of all the students in the class are girls.\n\nHow many students are there in Juanita's class?\nAnswer: ____\n\nIs Amanda right? Answer: ____\nUse words and pictures to explain why.\n\n# Scoring guide of question 2 (1 point)\n\n- Correct Response (1 point):\n  - NO. The response expresses verbally, symbolically or pictorially that 10 is not half of 30.\n  - Other correct. (Includes satisfactory explanations when neither a \"yes\" or \"no\" answer is given).\n- Incorrect Response (0 points):\n  - YES. An explanation is given but is not satisfactory.\n  - YES. No explanation is given.\n  - NO. An explanation is given but is not satisfactory.\n  - NO. No explanation is given.\n  - Other incorrect.\n\n# Response to question 2\n\nNo. There are 10 girls and 20 boys. 10 + 20 = 30. Amanda said half the students are girls, and half of 30 is 15. But there are only 10 girls. So Amanda is wrong. I can draw a picture too:  I'll draw 10 circles to represent the girls. Then I’ll draw 20 squares to represent the boys.  Counting all the shapes, there are 30.  Then I'll circle 15 of the shapes to show that Amanda thought there should be 15 girls, but there aren't that many.  It shows that she's wrong because the circle of shapes doesn't match the number of girls in the class.\n\nScore the response to question 2.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response correctly identifies that Amanda is not right ('No') and clearly explains that half of the 30 total students is 15, not 10 (which is the actual number of girls). It also describes a supporting picture.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 799,
+  "completion_tokens": 157,
+  "reasoning_tokens": 89,
+  "cost_usd": 0.001188,
+  "seconds": 4.195,
+  "batch_id": null,
+  "requested_at": "2026-10-19T18:36:33+00:00"
+}

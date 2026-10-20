@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K18",
+  "item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K18"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "In the ΔABC the altitudes BN and CM intersect at point S. The measure of ∠MSB is 40° and the measure of ∠SBC is 20°. Write a PROOF of the following statement:\n\n“ΔABC is isosceles.”\n\nGive geometric reasons for statements in your proof.\n\n[Image: Triangle ABC with altitudes BN and CM intersecting at S]\n\nFigure, described in words:\nA triangle ABC with vertex A at the top, vertex B at the bottom left, and vertex C at the bottom right. Segment BN is an altitude drawn from B to AC, with a right-angle symbol at N. Segment CM is an altitude drawn from C to AB, with a right-angle symbol at M. BN and CM intersect at interior point S. The angle MSB is marked with an arc and labeled 40°. The angle SBC is marked with an arc and labeled 20°.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "PROOF. Given: BN ⊥ AC (altitude from B, foot N), CM ⊥ AB (altitude from C, foot M), BN and CM meet at S, ∠MSB = 40°, ∠SBC = 20°. Show AB = AC.\n\nStatement 1: ∠CMB = 90° and ∠BNC = 90°. Reason: CM and BN are altitudes, so they are perpendicular to the sides AB and AC respectively.\n\nStatement 2: ∠SMB = 90°. Reason: S lies on segment CM, so ray MS is ray MC, and ∠SMB = ∠CMB = 90°.\n\nStatement 3: ∠MBS = 50°. Reason: In triangle SMB, the angle sum is 180°, so ∠MBS = 180° − ∠MSB − ∠SMB = 180° − 40° − 90° = 50°.\n\nStatement 4: Ray BS = ray BN and ray BM = ray BA. Reason: S lies on segment BN, and M lies on side AB. Therefore ∠ABN = ∠MBS = 50°. (The altitudes meet at the interior point S, so the triangle is acute and the feet M and N lie on the sides.)\n\nStatement 5: ∠NBC = ∠SBC = 20°. Reason: Given, and ray BS = ray BN.\n\nStatement 6: ∠ABC = 70°. Reason: Ray BN lies inside angle ABC, so ∠ABC = ∠ABN + ∠NBC = 50° + 20° = 70°.\n\nStatement 7: ∠BCN = 70°. Reason: In triangle BNC, ∠BNC = 90° and ∠NBC = 20°, so the angle sum gives ∠BCN = 180° − 90° − 20° = 70°.\n\nStatement 8: ∠ACB = 70°. Reason: N lies on side AC, so ray CN = ray CA, and therefore ∠ACB = ∠NCB = 70°.\n\nStatement 9: ∠ABC = ∠ACB = 70°. Reason: From statements 6 and 8.\n\nStatement 10: AB = AC, so ΔABC is isosceles. Reason: A triangle with two equal angles is isosceles (the sides opposite the equal angles are equal, by the converse of the isosceles triangle theorem). Here the sides opposite ∠ACB and ∠ABC are AB and AC. ∎"
+  },
+  "llm_thinking": "I'm setting up the configuration: BN perpendicular to AC at N, CM perpendicular to AB at M, with S as the orthocenter where these altitudes meet. I need to figure out what angle MSB represents geometrically—it's the angle at S formed between the ray toward M and the ray toward B.\n\nWorking through the right triangle at M, since triangle SMB is right-angled there, angle MBS comes out to 50°, which means angle ABN is also 50° since S lies along BN. Adding the given angle SBC of 20° gives angle ABC = 70°. Then analyzing triangle BNC (right-angled at N) and triangle BMC (right-angled at M), I'm working out that angle BCM = 20°, and I'm trying to pin down angle ACB using the relationship between these sub-angles.\n\nChecking the numbers: angle ACB turns out to be 70° as well, matching angle ABC, which means triangle ABC is isosceles with AB = AC. I verify this is consistent by computing angle ACM = 50° and angle A = 40° in the right triangle at M, confirming the angle sum of 180° works out, and double-checking that angle MSB = 40° matches what was given. Now I need to make sure the proof carefully justifies where the altitude feet land relative to the triangle's sides.\n\nI lay out the proof systematically: first establishing the right angles at N and M from the altitude definitions, then noting S lies on both cevians so the angles at M and N in the smaller triangles equal the full right angles. From triangle SMB's angle sum I get angle MBS = 50°, then use the fact that rays BS and BM coincide with BN and BA respectively (since S and M lie on those segments) to build up angle ABC = 70° by adding the 20° piece. Applying the angle sum in right triangle BNC gives angle BCN = 70°, and I'm working through how this angle relates to angle ACB using the position of N on AC.\n\nSince N lies on segment CA, ray CN coincides with ray CA, so angle ACB equals 70° as well. With both base angles of triangle ABC equal at 70°, I conclude by the converse of the isosceles triangle theorem that AB = AC — the triangle is isosceles, with angle A equal to 40°. Now I just need to format the final answer as a single-line response without line breaks, being careful with quote characters and symbols.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 748,
+  "completion_tokens": 2678,
+  "reasoning_tokens": 1825,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335957-QKbCVbAXn76L3I0C7O9z",
+  "requested_at": "2026-10-19T14:20:44+00:00"
+}

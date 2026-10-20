@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2003/grade 4/Mathematics/M031327",
+  "item_keys": [
+    "TIMSS 2003/grade 4/Mathematics/M031327"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "On the grid, draw a line parallel to line L.\n\n[Image: A grid with line L]\n\nFigure, described in words:\nA grid measuring 11 squares wide by 6 squares high. A straight line segment with arrowheads at both ends is labeled L near its upper-right end. The line follows the diagonals of grid squares at a 45-degree angle (slope of 1), extending from the grid intersection located 3 units from the left and 2 units from the bottom to the intersection located 6 units from the left and 5 units from the bottom.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Draw a line from the bottom-left grid intersection to the intersection 6 squares to the right and 6 squares up. This line has the same slope as line L."
+  },
+  "llm_thinking": "**Describing a parallel line on a grid**\n\nI need to describe a line parallel on an 11x6 grid and provide an exact drawing. Specifically, the line should have a slope of 1, starting from point (3,2) to (6,5). I can also specify a line segment from (0,0) to (6,6), which fits within the grid's height. It's a 45-degree slope, and I should consider adding arrowheads. I must output this in a clear JSON format as well.",
+  "finish_reason": "stop",
+  "prompt_tokens": 311,
+  "completion_tokens": 249,
+  "reasoning_tokens": 202,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335949-X58qq9KWicsA7LXLKx9U",
+  "requested_at": "2026-10-18T15:09:01+00:00"
+}

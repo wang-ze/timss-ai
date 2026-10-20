@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2007/grade 4/Mathematics/M031334",
+  "item_keys": [
+    "TIMSS 2007/grade 4/Mathematics/M031334"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": null,
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "2, 5, 11, 23, ...\n\nStarting the pattern at 2, which of these rules would give each of the terms in the number pattern above?\n\nA. Add 1 to the previous term and then multiply by 2.\nB. Multiply the previous term by 3 and then subtract 1.\nC. Multiply the previous term by 2 and then add 1.\nD. Subtract 1 from the previous term and then multiply by 3.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "C"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 588,
+  "completion_tokens": 64,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 1.227,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:16:17+00:00"
+}

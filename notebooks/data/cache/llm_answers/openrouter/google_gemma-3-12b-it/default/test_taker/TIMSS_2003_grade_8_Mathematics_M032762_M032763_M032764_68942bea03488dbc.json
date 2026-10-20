@@ -1,0 +1,54 @@
+{
+  "unit_key": "TIMSS 2003/grade 8/Mathematics/M032762+M032763+M032764",
+  "item_keys": [
+    "TIMSS 2003/grade 8/Mathematics/M032762",
+    "TIMSS 2003/grade 8/Mathematics/M032763",
+    "TIMSS 2003/grade 8/Mathematics/M032764"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "These 3 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nBetty talks for less than 2 hours per month. Which plan would be less expensive for her?\n\nLess expensive plan ____\n\nExplain your answer in terms of both the monthly fee and free minutes.\n\n## Question 2\n\nFrank talks for 5 hours per month at the night rate. What would each plan cost him per month? Show your work.\n\nCost Per Month for Plan A: ____ zeds\n\nCost Per Month for Plan B: ____ zeds\n\n## Question 3\n\nDarlene signed up for the Plan B, and the cost of one month of service was 75 zeds. How many minutes did she talk that month? Show your work.\n\nMinutes talked ____\n\nAnswer each of the 3 questions.",
+  "output_schema": {
+    "properties": {
+      "answer_1": {
+        "description": "Your answer to question 1, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 1",
+        "type": "string"
+      },
+      "answer_2": {
+        "description": "Your answer to question 2, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 2",
+        "type": "string"
+      },
+      "answer_3": {
+        "description": "Your answer to question 3, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 3",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer_1",
+      "answer_2",
+      "answer_3"
+    ],
+    "title": "Answers",
+    "type": "object"
+  },
+  "output": {
+    "answer_1": "Plan B\n\nExplanation: Betty talks for less than 2 hours per month, which is 120 minutes. Plan A has a monthly fee of 30 zeds and gives 50 free minutes. Since Betty uses less than 50 minutes, she only pays the 30 zeds monthly fee. Plan B has a monthly fee of 10 zeds and charges 0.1 zeds per minute. For Betty, she would pay 10 zeds + (120 minutes * 0.1 zeds/minute) = 10 + 12 = 22 zeds. Since 22 zeds is less than 30 zeds, Plan B is less expensive for her.",
+    "answer_2": "Cost Per Month for Plan A: 30 zeds\nCost Per Month for Plan B: 50 zeds\n\nWork:\nPlan A:\nFrank talks for 5 hours per month at the night rate, which is 5 * 60 = 300 minutes.\nPlan A: Monthly fee of 30 zeds + (minutes over 50) * 0.2 zeds/minute. Since Frank talks for 300 minutes, he uses 300 - 50 = 250 minutes over the free minutes.\nCost = 30 + (250 * 0.2) = 30 + 50 = 80 zeds. However, the question asks for the cost when Frank talks for 5 hours *at the night rate.* That's important.\nFrank talks for 5 hours, which means 5*60 = 300 minutes. Night rate = 0.2 zeds/minute. \nSince Plan A has 50 free minutes at the day rate (0 zeds), he's using 300 minutes. \nSince it's the *night rate*, we assume these minutes are charged at night rates. Therefore the cost would be 300*0.2 = 60.  Then we must add the 30 zeds monthly fee, meaning 60+30 = 90 zeds.\nHowever, it's more reasonable to assume the 50 minutes are at the day rate. So, for the first 50 minutes, the cost is 0 zeds. For the remaining 250 minutes (300 - 50), the cost is 250 * 0.2 = 50 zeds. The total cost is 30 + 50 = 80 zeds.\nIt's more reasonable to assume the night rate applies to all minutes, but without more specific information this assumption can't be made.\nIt seems like they want to see that Frank uses all 300 minutes.\nCost of Plan B: \nFrank talks for 300 minutes. Plan B charges 0.1 zeds/minute.\nCost = 300 * 0.1 = 30 zeds.\nMonthly fee is 10 zeds.\nTotal Cost = 10 + 30 = 40 zeds.\nPlan A: 30 zeds + (300-50)*0.2 = 30+50 = 80 zeds\nPlan B: 10 + 300 * 0.1 = 10+30 = 40 zeds",
+    "answer_3": "Minutes talked: 500\n\nWork:\nPlan B costs 10 zeds + (minutes talked * 0.1 zeds/minute).\nWe are given that the cost of one month of service was 75 zeds.\nSo, 75 = 10 + (minutes talked * 0.1).\nSubtract 10 from both sides: 65 = (minutes talked * 0.1).\nDivide both sides by 0.1: minutes talked = 65 / 0.1 = 650 minutes."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 302,
+  "completion_tokens": 899,
+  "reasoning_tokens": 0,
+  "cost_usd": 0.00014995,
+  "seconds": 10.151,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:07:31+00:00"
+}

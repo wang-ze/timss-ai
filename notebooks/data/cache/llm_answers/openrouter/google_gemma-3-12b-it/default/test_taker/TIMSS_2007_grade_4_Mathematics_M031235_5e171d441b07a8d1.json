@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2007/grade 4/Mathematics/M031235",
+  "item_keys": [
+    "TIMSS 2007/grade 4/Mathematics/M031235"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "A group of 8 children have 74 sweets altogether. How many more sweets are needed for the children to be able to share them equally?\n\nAnswer: ____",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "To share the sweets equally, each child needs to have the same number of sweets. First, I need to figure out how many sweets each child would have if they were shared equally. I can do this by dividing the total number of sweets (74) by the number of children (8). 74 divided by 8 is 9 with a remainder of 2. This means each child could have 9 sweets, and there would be 2 left over. To share the sweets equally, all the children need to have the same number. That means the 2 leftover sweets need to be distributed. So, I need to add 2 more sweets to the total so that 76 sweets can be divided equally among the 8 children. 76 divided by 8 is 9 with no remainder. Therefore, 2 more sweets are needed. \n\nAnswer: 2"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 165,
+  "completion_tokens": 190,
+  "reasoning_tokens": 0,
+  "cost_usd": 3.675e-05,
+  "seconds": 3.354,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:07:18+00:00"
+}

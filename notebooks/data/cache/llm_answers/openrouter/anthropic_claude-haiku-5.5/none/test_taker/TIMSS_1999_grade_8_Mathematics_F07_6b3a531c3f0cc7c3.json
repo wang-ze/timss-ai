@@ -1,0 +1,43 @@
+{
+  "unit_key": "TIMSS 1999/grade 8/Mathematics/F07",
+  "item_keys": [
+    "TIMSS 1999/grade 8/Mathematics/F07"
+  ],
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "A runner ran 3000 m in exactly 8 minutes. What was his average speed in meters per second?\n\nA. 3.75\nB. 6.25\nC. 16.0\nD. 37.5\nE. 62.5",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "B"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 500,
+  "completion_tokens": 10,
+  "reasoning_tokens": 0,
+  "cost_usd": 5.5e-05,
+  "seconds": 1.612,
+  "requested_at": "2026-10-17T16:58:45+00:00"
+}

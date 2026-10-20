@@ -1,0 +1,46 @@
+{
+  "unit_key": "TIMSS 2007/grade 8/Mathematics/M022234A+M022234B",
+  "item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M022234A",
+    "TIMSS 2007/grade 8/Mathematics/M022234B"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "high",
+  "system_prompt": "You are an eighth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "These 2 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\n[Image: A rectangle]\n\nA. On the grid below, draw a rectangle whose length is three-fourths the length of the rectangle above, and whose width is two and one-half times the width of the rectangle above. Label the length and width of the new rectangle in centimeters on the figure. Each square on the grid is 1 cm by 1 cm.\n\n[Image: A grid of squares]\n\nFigure, described in words:\nAt the top of the page is a rectangle drawn horizontally. Inside near the bottom edge is the word \"Length\", and below the bottom edge is labeled \"8 cm\". Along the inside right edge, printed vertically, is \"Width\" and \"2 cm\". Below Part A is a dashed-line grid measuring 10 squares wide by 15 squares high.\n\n## Question 2\n\n[Image: A rectangle]\n\nB. What is the ratio of the area of the original rectangle to the area of the new one?\n\nFigure, described in words:\nA rectangle is drawn horizontally. Inside near the bottom edge is the word \"Length\", and below the bottom edge is labeled \"8 cm\". Along the inside right edge, printed vertically, is \"Width\" and \"2 cm\".\n\nAnswer each of the 2 questions.",
+  "output_schema": {
+    "properties": {
+      "answer_1": {
+        "description": "Your answer to question 1, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 1",
+        "type": "string"
+      },
+      "answer_2": {
+        "description": "Your answer to question 2, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 2",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer_1",
+      "answer_2"
+    ],
+    "title": "Answers",
+    "type": "object"
+  },
+  "output": {
+    "answer_1": "Draw a rectangle 6 squares long and 5 squares wide. Label its length 6 cm and its width 5 cm.",
+    "answer_2": "Original area: 8 × 2 = 16 cm². New area: 6 × 5 = 30 cm². The ratio of the original area to the new area is 16:30 = 8:15."
+  },
+  "llm_thinking": "**Creating JSON for rectangles**\n\nI'm focused on generating JSON answers for rectangles. For Q1, I've got an original rectangle with dimensions 8 cm length and 2 cm width. The new dimensions are 6 cm in length and 5 cm in width. The grid covers 10 squares wide by 15 squares high, so I’ll draw the rectangle horizontally, covering six squares across and five squares vertically, then label it. For Q2, I’ll mention the areas: original is 16, new is 30, with a ratio of 8:15. I’ll ensure the JSON is valid.",
+  "finish_reason": "stop",
+  "prompt_tokens": 540,
+  "completion_tokens": 214,
+  "reasoning_tokens": 120,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792430073-CNIt0K0bm0Bup4ZK3RvK",
+  "requested_at": "2026-10-19T17:54:46+00:00"
+}

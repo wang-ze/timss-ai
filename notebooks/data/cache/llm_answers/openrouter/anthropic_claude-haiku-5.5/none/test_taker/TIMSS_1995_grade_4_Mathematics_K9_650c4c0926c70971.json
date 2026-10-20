@@ -1,0 +1,45 @@
+{
+  "unit_key": "TIMSS 1995/grade 4/Mathematics/K9",
+  "item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/K9"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "There are 54 marbles, and they are put into 6 bags, so that the same number of marbles is in each bag. How many marbles would 2 bags contain?\n\nA. 108 marbles\nB. 18 marbles\nC. 15 marbles\nD. 12 marbles\nE. 9 marbles",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "E"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 526,
+  "completion_tokens": 10,
+  "reasoning_tokens": 0,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335950-6M8r5AF2vj28dS4S8FJ7",
+  "requested_at": "2026-10-19T14:20:44+00:00"
+}

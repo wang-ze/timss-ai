@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 8/Mathematics/M042207",
+  "item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M042207"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "480 students were asked to name their favorite sport. The results are shown in this table.\n\n| Sport | Number of Students |\n| :--- | :--- |\n| Hockey | 60 |\n| Football | 180 |\n| Tennis | 120 |\n| Basketball | 120 |\n\nUse the information in the table to complete and label this pie chart.\n\n[Image: A circle with a point in the middle, and 8 equally spaced points on the circumference of the circle. The circle is labeled “Popularity of Sports.”]\n\nFigure, described in words:\nA circle labeled \"Popularity of Sports\" at the top. The circle contains a dot at its center and 8 equally spaced dots along its circumference, located at 12 o'clock, 1:30, 3 o'clock, 4:30, 6 o'clock, 7:30, 9 o'clock, and 10:30.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "}Okay, here's how I would complete and label the pie chart based on the provided data and description:  **1. Calculate the fractions for each sport:**   *   **Hockey:** 60 students / 480 total students = 0.125 or 12.5% *   **Football:** 180 students / 480 total students = 0.375 or 37.5% *   **Tennis:** 120 students / 480 total students = 0.25 or 25% *   **Basketball:** 120 students / 480 total students = 0.25 or 25%  **2. Determine the angle for each slice:**  Since a circle has 360 degrees, I'll calculate the angle each sport's slice will represent.  *   **Hockey:** 12.5% of 360 degrees = (12.5/100) * 360 = 45 degrees *   **Football:** 37.5% of 360 degrees = (37.5/100) * 360 = 135 degrees *   **Tennis:** 25% of 360 degrees = (25/100) *  360 = 90 degrees *   **Basketball:** 25% of 360 degrees = (25/100) * 360 = 90 degrees  **3. Draw the slices on the pie chart:** I'll start drawing the slices from the top (12 o'clock) and go clockwise. *   **Hockey:** I would draw a slice starting at the 12 o'clock mark and extending 45 degrees clockwise. I would shade this slice lightly and label it "
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 346,
+  "completion_tokens": 411,
+  "reasoning_tokens": 0,
+  "cost_usd": 7.895e-05,
+  "seconds": 6.402,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:07:06+00:00"
+}

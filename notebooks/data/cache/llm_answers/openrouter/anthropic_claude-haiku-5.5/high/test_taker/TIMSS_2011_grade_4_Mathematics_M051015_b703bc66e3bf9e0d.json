@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 4/Mathematics/M051015",
+  "item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M051015"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Jay has to draw a shape.\n- It must have 5 sides.\n- It must have one line of symmetry.\nJay has started to draw the shape.\nComplete Jay’s shape.\n\n[Image: an incomplete shape with three sides forming a rectangle on a grid.]\n\nFigure, described in words:\nA 10 by 10 square grid. A three-sided incomplete shape is drawn with thick black lines along the grid lines: a horizontal bottom segment 6 units long (leaving 2 units of margin on the left and 2 units on the right along the bottom edge of the grid), and two vertical segments each 4 units tall rising upward from the two ends of the bottom segment (leaving 6 units of grid space above them). The top of the shape is open.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Complete the shape by adding two slanted sides that meet at a peak, so the figure becomes a house-like pentagon. Draw a line from the top-left corner of the shape (the top of the left vertical side) diagonally up and to the right, 3 units right and 3 units up, to a peak point directly above the middle of the bottom side (the peak is 3 units to the right of the top-left corner, and the middle of the 6-unit bottom side is 3 units from each end). Then draw a second line from that peak diagonally down and to the right, 3 units right and 3 units down, to the top of the right vertical side. The shape then has 5 sides: the bottom, the right vertical side, the right slanted side, the left slanted side, and the left vertical side. It has one line of symmetry, a vertical line through the peak and the middle of the bottom side."
+  },
+  "llm_thinking": "I'm working out a pentagon with vertical symmetry — starting from a rectangle's bottom and two sides, then adding a peaked roof shape with an apex to close it into a five-sided symmetric figure.\n\nI'll place the apex at the midpoint horizontally, three units above the top of the vertical sides, with each slanted roofline running diagonally three units right and three units up across the grid.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 668,
+  "completion_tokens": 1074,
+  "reasoning_tokens": 797,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335957-QKbCVbAXn76L3I0C7O9z",
+  "requested_at": "2026-10-19T14:20:44+00:00"
+}

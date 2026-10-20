@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L18",
+  "item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L18"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Two circles with centres A and B as shown below have radii of 7 cm and 10 cm respectively. If the length of the common chord PQ is 8 cm, what is the length of AB? Show all your work.\n\n[Image: Two intersecting circles with centers A and B]\n\nFigure, described in words:\nTwo intersecting circles are shown. The smaller circle on the left has its center labeled A, and the larger circle on the right has its center labeled B. A horizontal line segment connects center A and center B. The two circles intersect at two points labeled P (top) and Q (bottom). A vertical line segment connects P and Q, intersecting line segment AB. Line segment AP is drawn and labeled \"7 cm\", and line segment BP is drawn and labeled \"10 cm\".",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Let M be the midpoint of the common chord PQ, where M is also the point where PQ meets AB. Since the line of centres AB is the perpendicular bisector of the common chord, PM = MQ = 4 cm and PM is perpendicular to AB.\n\nIn right triangle APM (right angle at M):\nAM^2 = AP^2 - PM^2 = 7^2 - 4^2 = 49 - 16 = 33, so AM = sqrt(33) cm.\n\nIn right triangle BPM (right angle at M):\nBM^2 = BP^2 - PM^2 = 10^2 - 4^2 = 100 - 16 = 84, so BM = sqrt(84) = 2*sqrt(21) cm.\n\nSince M lies between A and B, AB = AM + BM = sqrt(33) + sqrt(84) cm.\n\nNumerically: sqrt(33) ≈ 5.745 and sqrt(84) ≈ 9.165, so AB ≈ 14.91 cm.\n\nAnswer: AB = √33 + √84 ≈ 14.9 cm."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 699,
+  "completion_tokens": 384,
+  "reasoning_tokens": 0,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335955-kMI4NOha6WfxkHChhFXZ",
+  "requested_at": "2026-10-19T14:20:46+00:00"
+}

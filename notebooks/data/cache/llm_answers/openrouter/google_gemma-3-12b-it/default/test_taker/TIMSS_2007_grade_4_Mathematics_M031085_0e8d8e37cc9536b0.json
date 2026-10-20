@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2007/grade 4/Mathematics/M031085",
+  "item_keys": [
+    "TIMSS 2007/grade 4/Mathematics/M031085"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: A triangle on top of a rectangle]\n\nThe figure above is made from a rectangle and a triangle with three equal sides.\nWhat is the length, in centimeters, of side AB ?\n\nFigure, described in words:\nA composite figure composed of a rectangle at the bottom and a triangle on top sharing the rectangle's top edge as its base. The rectangle's bottom horizontal side is labeled \"8 cm\", and its right vertical side is labeled \"3 cm\". The triangle's top vertex is labeled A, and its bottom-right vertex (which is also the top-right corner of the rectangle) is labeled B.\n\nA. 8\nB. 9\nC. 10\nD. 11",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "B"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 285,
+  "completion_tokens": 12,
+  "reasoning_tokens": 0,
+  "cost_usd": 1.605e-05,
+  "seconds": 0.522,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:07:01+00:00"
+}

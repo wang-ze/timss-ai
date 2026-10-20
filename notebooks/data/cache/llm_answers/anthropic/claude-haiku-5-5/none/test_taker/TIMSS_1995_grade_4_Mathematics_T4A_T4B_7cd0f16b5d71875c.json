@@ -1,0 +1,46 @@
+{
+  "unit_key": "TIMSS 1995/grade 4/Mathematics/T4A+T4B",
+  "item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/T4A",
+    "TIMSS 1995/grade 4/Mathematics/T4B"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "These 2 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nThere are 10 girls and 20 boys in Juanita's class. Juanita said that there is one girl for every two boys. Her friend Amanda said that means 1/2 of all the students in the class are girls.\n\nHow many students are there in Juanita's class?\nAnswer: ____\n\nIs Juanita right? Answer: ____\nUse words or pictures to explain why.\n\n## Question 2\n\nThere are 10 girls and 20 boys in Juanita's class. Juanita said that there is one girl for every two boys. Her friend Amanda said that means 1/2 of all the students in the class are girls.\n\nHow many students are there in Juanita's class?\nAnswer: ____\n\nIs Amanda right? Answer: ____\nUse words and pictures to explain why.\n\nAnswer each of the 2 questions.",
+  "output_schema": {
+    "properties": {
+      "answer_1": {
+        "description": "Your answer to question 1, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 1",
+        "type": "string"
+      },
+      "answer_2": {
+        "description": "Your answer to question 2, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 2",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer_1",
+      "answer_2"
+    ],
+    "title": "Answers",
+    "type": "object"
+  },
+  "output": {
+    "answer_1": "Number of students: 10 girls + 20 boys = 30 students. Is Juanita right? Yes. For every 2 boys there is 1 girl: the 20 boys form 10 groups of 2, and each group has 1 girl, which matches the 10 girls. Picture: draw 10 groups, each with 2 boys (B B) and 1 girl (G), giving 10 girls and 20 boys. Juanita is correct because the ratio of girls to boys is 1 to 2. Amanda's claim is not correct, since 1/2 of the students would be 15 girls, but there are only 10 girls, which is 1/3 of the class.",
+    "answer_2": "Number of students: 10 girls + 20 boys = 30 students. Is Amanda right? No. Half of the 30 students would be 15 girls, but there are only 10 girls. Picture: draw 30 squares, shade 10 of them for the girls and leave 20 unshaded for the boys. Only 10 of the 30 students are girls, which is 10/30 = 1/3, not 1/2. Amanda confused the ratio of girls to boys (1 to 2) with the fraction of girls in the whole class (1 out of 3)."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 798,
+  "completion_tokens": 400,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 4.23,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:21:59+00:00"
+}

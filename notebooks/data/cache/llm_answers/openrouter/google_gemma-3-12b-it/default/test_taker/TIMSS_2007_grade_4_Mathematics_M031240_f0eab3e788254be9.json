@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2007/grade 4/Mathematics/M031240",
+  "item_keys": [
+    "TIMSS 2007/grade 4/Mathematics/M031240"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "There were 5 children at the park. Some were wearing hats and some were not.\n\n| Girls | Boys |\n| --- | --- |\n| Maria was wearing a hat | Peter was wearing a hat |\n| Megan was not wearing a hat | Chan was not wearing a hat |\n| Mandy was not wearing a hat | |\n\nComplete the table to show the number of boys and girls that were wearing hats and were not wearing hats.\n\n| | Hat | No hat |\n| --- | --- | --- |\n| Boys | | |\n| Girls | | |",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Okay, let's figure this out! Here's the completed table:\n\n| | Hat | No hat |\n|---|---|---|\n| Boys | 2 | 1 |\n| Girls | 1 | 2 |\n\n**Explanation:**\n\n*   **Boys:** We know Peter was wearing a hat, and Chan was not wearing a hat. That means there are 2 boys wearing hats and 1 boy not wearing a hat.\n*   **Girls:** We know Maria was wearing a hat, and Megan and Mandy were not wearing hats. That means there is 1 girl wearing a hat and 2 girls not wearing hats."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 251,
+  "completion_tokens": 152,
+  "reasoning_tokens": 0,
+  "cost_usd": 3.535e-05,
+  "seconds": 2.341,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:07:31+00:00"
+}

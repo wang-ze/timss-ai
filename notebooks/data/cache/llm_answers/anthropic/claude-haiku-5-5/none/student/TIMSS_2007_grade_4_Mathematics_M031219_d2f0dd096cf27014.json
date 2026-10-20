@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2007/grade 4/Mathematics/M031219",
+  "item_keys": [
+    "TIMSS 2007/grade 4/Mathematics/M031219"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Jill had a rectangular piece of paper.\n\n[Image: A rectangle divided horizontally into two equal halves by a dotted line]\n\nShe cut her paper along the dotted line and made an L shape like this.\n\n[Image: An L-shaped figure made of two rectangular strips]\n\nWhich of these statements is true?\n\nFigure, described in words:\nThe first figure shows a horizontal rectangle with a dashed horizontal line dividing it into two equal top and bottom halves.\n\nThe second figure shows an L shape made from the two halves: one vertical rectangular strip on the left and one horizontal rectangular strip at the bottom right, joined along part of their edges at a right angle.\n\nA. The area of the L shape is greater than the area of the rectangle.\nB. The area of the L shape is equal to the area of the rectangle.\nC. The area of the L shape is less than the area of the rectangle.\nD. You cannot work out which area is greater without measuring.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "B"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 753,
+  "completion_tokens": 10,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 0.663,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:15:44+00:00"
+}

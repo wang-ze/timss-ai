@@ -1,0 +1,46 @@
+{
+  "item_key": "TIMSS 2003/grade 4/Mathematics/M031162",
+  "response": "Tick marks: 1st=0, 4th=3, so the spacing is 1 per 1 tick (0 at tick 1, 1 at tick 2, 2 at tick 3, 3 at tick 4). Each step between ticks is 1. The 8th tick is 4 steps after the 4th tick, so it is 3 + 4 = 7. The number in the box is 7.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the fourth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\n[Image: Number line]\n\nOn the number line above, what number goes in the box?\n\nNumber in □ = ____\n\nFigure, described in words:\nA horizontal number line ending with an arrow on the right. There are 10 evenly spaced vertical tick marks along the line. The 1st tick mark is labeled 0 below it. The 4th tick mark is labeled 3 below it. Below the 8th tick mark is an empty square box. The remaining tick marks are unlabeled.\n\n# Scoring guide of the question (1 point)\n\n- Correct Response (1 point):\n  - 7\n- Incorrect Response (0 points):\n  - Other incorrect (including crossed out/erased, stray marks, illegible, or off task)\n\n# Response to the question\n\nTick marks: 1st=0, 4th=3, so the spacing is 1 per 1 tick (0 at tick 1, 1 at tick 2, 2 at tick 3, 3 at tick 4). Each step between ticks is 1. The 8th tick is 4 steps after the 4th tick, so it is 3 + 4 = 7. The number in the box is 7.\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response clearly identifies that the number in the box is 7, which matches the correct response requirement.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 561,
+  "completion_tokens": 100,
+  "reasoning_tokens": 60,
+  "cost_usd": 0.00079575,
+  "seconds": 2.52,
+  "batch_id": null,
+  "requested_at": "2026-10-19T18:39:17+00:00"
+}

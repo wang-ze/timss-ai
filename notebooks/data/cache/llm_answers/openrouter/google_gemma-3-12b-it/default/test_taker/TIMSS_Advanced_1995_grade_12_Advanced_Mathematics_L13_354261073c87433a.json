@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L13",
+  "item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L13"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Two vectors vector a and vector b (vector a, vector b ≠ vector 0) are related by: |vector a + vector b| = |vector a - vector b|.\n\nWhat is the measure of the angle between vector a and vector b?",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "> Let $\theta$ be the angle between vector $\textbf{a}$ and vector $\textbf{b}$. We are given that $|\textbf{a} + \textbf{b}| = |\textbf{a} - \textbf{b}|$. We can square both sides of the equation to get rid of the absolute values: $|\textbf{a} + \textbf{b}|^2 = |\textbf{a} - \textbf{b}|^2$.  Expanding the squares using the fact that $|\textbf{v}|^2 = \textbf{v} \bullet \textbf{v}$, we have: \\$(\textbf{a} + \textbf{b}) \bullet (\textbf{a} + \textbf{b}) = (\textbf{a} - \textbf{b}) \bullet (\textbf{a} - \textbf{b})$. \\This simplifies to:  \\$\textbf{a} \bullet \textbf{a} + 2\textbf{a} \bullet \textbf{b} + \textbf{b} \bullet \textbf{b} = \textbf{a} \bullet \textbf{a} - 2\textbf{a} \bullet \textbf{b} + \textbf{b} \bullet \textbf{b}$. \\Subtracting $\textbf{a} \bullet \textbf{a}$ and $\textbf{b} \bullet \textbf{b}$ from both sides, we get: \\$2\textbf{a} \bullet \textbf{b} = -2\textbf{a} \bullet \textbf{b}$. \\Adding $2\textbf{a} \bullet \textbf{b}$ to both sides gives: \\$4\textbf{a} \bullet \textbf{b} = 0$. \\Dividing both sides by 4, we get: \\$\textbf{a} \bullet \textbf{b} = 0$. \\We know that $\textbf{a} \bullet \textbf{b} = |\textbf{a}| |\textbf{b}| \text{cos}(\theta)$.  Thus,  \\$|\textbf{a}| |\textbf{b}| \text{cos}(\theta) = 0$.  Since $|\textbf{a}| \neq 0$ and $|\textbf{b}| \neq 0$, we must have $\text{cos}(\theta) = 0$.  Therefore, $\theta = 90^\text{o}$."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 198,
+  "completion_tokens": 511,
+  "reasoning_tokens": 0,
+  "cost_usd": 8.655e-05,
+  "seconds": 8.081,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:06:39+00:00"
+}

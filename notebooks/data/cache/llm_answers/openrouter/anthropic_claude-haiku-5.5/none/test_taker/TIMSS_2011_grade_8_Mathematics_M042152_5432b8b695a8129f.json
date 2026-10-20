@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2011/grade 8/Mathematics/M042152",
+  "item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M042152"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: An x-y coordinate system with the origin labeled “O.” A shaded triangle is in the first quadrant, with the base lying on the positive y axis.]\nWhich of these shows the result of a half-turn clockwise around point O?\n\nFigure, described in words:\nStem: A Cartesian coordinate system with dashed axes and arrows at each end; the origin is marked with a point labeled O. A shaded right-like scalene triangle is located in the first quadrant with its vertical base lying on the positive y-axis and its third vertex pointing to the right.\nOption A: The coordinate plane with the triangle's base along the positive x-axis and the third vertex pointing downward into the fourth quadrant.\nOption B: The coordinate plane with the triangle's base along the negative y-axis and the third vertex pointing to the right into the fourth quadrant.\nOption C: The coordinate plane with the triangle's base along the negative x-axis and the third vertex pointing upward into the second quadrant.\nOption D: The coordinate plane with the triangle's base along the negative y-axis and the third vertex pointing to the left into the third quadrant.\n\nA. [Image: The same x-y coordinate system but with the shaded triangle on the positive x-axis and the shaded triangle in the fourth quadrant.]\nB. [Image: The same x-y coordinate system, but with the base of the shaded triangle on the negative y-axis and the shaded triangle in the fourth quadrant.]\nC. [Image: The same x-y coordinate system, but with the base of the shaded triangle on the negative x-axis and the shaded triangle in the second quadrant.]\nD. [Image: The same x-y coordinate system, but with the base of the shaded triangle on the negative y-axis and the shaded triangle in the third quadrant.]",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "D"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 1018,
+  "completion_tokens": 10,
+  "reasoning_tokens": 0,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335955-kMI4NOha6WfxkHChhFXZ",
+  "requested_at": "2026-10-19T14:20:46+00:00"
+}

@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 1999/grade 8/Mathematics/V01",
+  "item_keys": [
+    "TIMSS 1999/grade 8/Mathematics/V01"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The height of a boy was reported as 140 cm. The height had been rounded to the nearest 10 cm. What are two possibilities for the boy’s actual height?\n\nAnswer: ____ cm and ____ cm",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "136 cm and 142 cm (any two heights from 135 cm up to but not including 145 cm, such as 135 cm and 144 cm, would also be correct)"
+  },
+  "llm_thinking": "Rounding to the nearest 10 cm gives 140, meaning the actual height falls in [135, 145). So any pair of values in that range works, like 136 cm and 142 cm, as two possible actual heights.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 493,
+  "completion_tokens": 189,
+  "reasoning_tokens": 127,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335958-MhJCSqWm7WbRuqTiOnF6",
+  "requested_at": "2026-10-19T14:20:45+00:00"
+}

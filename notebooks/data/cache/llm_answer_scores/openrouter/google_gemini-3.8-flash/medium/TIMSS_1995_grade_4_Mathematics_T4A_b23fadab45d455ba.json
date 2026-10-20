@@ -1,0 +1,46 @@
+{
+  "item_key": "TIMSS 1995/grade 4/Mathematics/T4A",
+  "response": "Answer: 30 students. Answer to whether Juanita is right: Yes. Explanation: The class has 10 girls and 20 boys, so the ratio of girls to boys is 10 to 20, which is the same as 1 girl to 2 boys. Picture: Draw a row of groups, each with 1 girl (circle) and 2 boys (squares). Ten such groups make 10 girls and 20 boys, so every girl has two boys for her in the drawing.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the fourth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Questions\n\nThese 2 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nThere are 10 girls and 20 boys in Juanita's class. Juanita said that there is one girl for every two boys. Her friend Amanda said that means 1/2 of all the students in the class are girls.\n\nHow many students are there in Juanita's class?\nAnswer: ____\n\nIs Juanita right? Answer: ____\nUse words or pictures to explain why.\n\n## Question 2\n\nThere are 10 girls and 20 boys in Juanita's class. Juanita said that there is one girl for every two boys. Her friend Amanda said that means 1/2 of all the students in the class are girls.\n\nHow many students are there in Juanita's class?\nAnswer: ____\n\nIs Amanda right? Answer: ____\nUse words and pictures to explain why.\n\n# Scoring guide of question 1 (1 point)\n\n- Correct Response (1 point):\n  - YES. The response expresses verbally, symbolically or pictorially that 20 is twice as much as 10, or that 10 is half of 20.\n  - Other correct. (Includes satisfactory explanations when neither a \"yes\" or \"no\" answer is given).\n- Incorrect Response (0 points):\n  - NO. An explanation is given but is not satisfactory.\n  - NO. No explanation is given.\n  - YES. An explanation is given but is not satisfactory.\n  - YES. No explanation is given.\n  - Other incorrect.\n\n# Response to question 1\n\nAnswer: 30 students. Answer to whether Juanita is right: Yes. Explanation: The class has 10 girls and 20 boys, so the ratio of girls to boys is 10 to 20, which is the same as 1 girl to 2 boys. Picture: Draw a row of groups, each with 1 girl (circle) and 2 boys (squares). Ten such groups make 10 girls and 20 boys, so every girl has two boys for her in the drawing.\n\nScore the response to question 1.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response correctly identifies the total number of students as 30, answers 'Yes', and provides both a verbal and pictorial explanation showing that 10 girls and 20 boys correspond to groups of 1 girl for every 2 boys (ten groups of 1 girl and 2 boys). This satisfactorily explains that 20 is twice as much as 10.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": "**Analyzing Class Ratios**\n\nI've determined the class composition: 30 students total, with 10 girls and 20 boys. Juanita is correct. The ratio of girls to boys simplifies to 1:2. The explanation centers on correctly deriving this simplified ratio. I'm focusing on clearly articulating the reduction of the initial ratio.\n\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 634,
+  "completion_tokens": 340,
+  "reasoning_tokens": 244,
+  "cost_usd": 0.0017505,
+  "seconds": 14.572,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:55:33+00:00"
+}

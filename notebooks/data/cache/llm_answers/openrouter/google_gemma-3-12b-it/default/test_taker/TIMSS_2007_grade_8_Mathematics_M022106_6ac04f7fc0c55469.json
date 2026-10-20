@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2007/grade 8/Mathematics/M022106",
+  "item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M022106"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "There are 36 passengers on a bus. The ratio of children to adults on the bus is 5 to 4. How many children are on the bus?\n\nAnswer: ____",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Let 'c' be the number of children and 'a' be the number of adults on the bus. We are given that the total number of passengers is 36, so we have the equation:  c + a = 36. We are also given that the ratio of children to adults is 5 to 4, which means c/a = 5/4.  We can solve this system of equations. From the ratio equation, we can express 'c' in terms of 'a': c = (5/4)a.  Now, substitute this into the first equation: (5/4)a + a = 36.  Combine the terms with 'a': (9/4)a = 36.  To solve for 'a', multiply both sides by 4/9: a = 36 * (4/9) = 4 * 4 = 16.  Now that we know the number of adults is 16, we can find the number of children: c = 36 - a = 36 - 16 = 20.  Therefore, there are 20 children on the bus.  Alternatively, we can use the ratio to find the number of children: The total ratio parts are 5 + 4 = 9. Each part represents 36/9 = 4 passengers. The children represent 5 parts, so there are 5 * 4 = 20 children. "
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 169,
+  "completion_tokens": 323,
+  "reasoning_tokens": 0,
+  "cost_usd": 5.69e-05,
+  "seconds": 4.616,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:06:15+00:00"
+}

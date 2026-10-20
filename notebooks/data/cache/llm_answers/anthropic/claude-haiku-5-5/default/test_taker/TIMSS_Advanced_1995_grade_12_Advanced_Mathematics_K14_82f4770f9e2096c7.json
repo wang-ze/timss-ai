@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K14",
+  "item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K14"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "A string is wound symmetrically around a circular rod. The string goes exactly 4 times around the rod. The circumference of the rod is 4 cm and its length is 12 cm.\n\n[Image: A cylinder with a string wound around it 4 times]\n\nFind the length of the string. Show all your work.\n\nFigure, described in words:\nA side-view illustration of a horizontal cylindrical rod. A thick, dark line representing a string begins near the top-left edge, winds around the rod symmetrically making 4 complete helical turns from left to right, and terminates near the top-right edge.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Work: Unroll the rod into a flat rectangle. Its width is the circumference, 4 cm, and its height is the rod's length, 12 cm. The string makes 4 equal turns along the 12 cm length, so each turn rises 12 ÷ 4 = 3 cm while going 4 cm around. Each turn is therefore the diagonal of a 4 cm by 3 cm rectangle, with length √(4² + 3²) = √(16 + 9) = √25 = 5 cm. The total length of string is 4 turns × 5 cm = 20 cm. Answer: the string is 20 cm long."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 638,
+  "completion_tokens": 393,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 2.433,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:23:32+00:00"
+}

@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2003/grade 4/Mathematics/M031333",
+  "item_keys": [
+    "TIMSS 2003/grade 4/Mathematics/M031333"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: Temperature for Week graph]\n\nThe graph above shows the daily high and low temperatures for a week.\n\nOn which day is the difference between the high and low temperatures the greatest?\n\nFigure, described in words:\nA plot titled \"Temperature for Week\". The vertical axis is labeled \"Temperature\" with grid lines marked at 20°, 25°, 30°, 35°, 40°, and 45°. The horizontal axis is labeled \"Day\" with vertical grid lines marked at Sun., Mon., Tues., Wed., Thu., Fri., and Sat.\nA legend on the right shows a filled black circle labeled \"High Temp.\" and an open circle labeled \"Low Temp.\"\nThe points plotted for each day are:\n- Sun.: High Temp. at 39°, Low Temp. at 25°\n- Mon.: High Temp. at 42°, Low Temp. at 24°\n- Tues.: High Temp. at ~34°, Low Temp. at ~28°\n- Wed.: High Temp. at 30°, Low Temp. at 20°\n- Thu.: High Temp. at 26°, Low Temp. at ~23°\n- Fri.: High Temp. at ~36°, Low Temp. at 25°\n- Sat.: High Temp. at 45°, Low Temp. at 30°\n\nA. Monday\nB. Thursday\nC. Friday\nD. Saturday",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "A"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 460,
+  "completion_tokens": 12,
+  "reasoning_tokens": 0,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335939-AiV5nQMEYsBDzf4oBKJu",
+  "requested_at": "2026-10-18T15:22:29+00:00"
+}

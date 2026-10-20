@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2011/grade 4/Mathematics/M031093",
+  "item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M031093"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "In which of the following figures is the dotted line a line of symmetry?\n\nFigure, described in words:\nFour geometric shapes, each intersected by a dotted line:\n- Option A shows a square with a tilted dotted line that enters through the top side near the top-left corner and exits through the bottom side near the bottom-right corner, dividing the square into two non-congruent trapezoids.\n- Option B shows a horizontal rectangle with a dotted line running along the diagonal from the bottom-left corner to the top-right corner.\n- Option C shows a regular pentagon with one vertex at the top and a horizontal base at the bottom. A slightly slanted, nearly horizontal dotted line cuts through the left and right sides below the center, dividing it into an upper portion and a lower trapezoid.\n- Option D shows a regular hexagon with horizontal top and bottom edges. A vertical dotted line passes through the exact center, bisecting the top and bottom edges into two identical mirror-image halves.\n\nA. [Image: a dotted line dividing a square into two opposite trapezoids.]\nB. [Image: a dotted line dividing a rectangle into two opposite right angle triangles.]\nC. [Image: a dotted line dividing a pentagon into a trapezoid and an irregular pentagon.]\nD. [Image: a dotted line dividing a hexagon in the middle.]",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "D"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 874,
+  "completion_tokens": 10,
+  "reasoning_tokens": 0,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335952-nomWk8Tj0yh7J6h3dipX",
+  "requested_at": "2026-10-19T14:20:45+00:00"
+}

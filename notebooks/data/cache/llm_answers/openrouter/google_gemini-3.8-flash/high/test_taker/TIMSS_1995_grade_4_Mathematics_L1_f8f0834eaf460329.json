@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 1995/grade 4/Mathematics/L1",
+  "item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/L1"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The graph shows 500 cedar trees and 150 hemlock trees.\n\n[Image: Pictograph of trees]\n\nHow many trees does each [Image: Tree] represent?\n\nAnswer: ____\n\nFigure, described in words:\nA pictograph table with two rows and two columns:\n- Top row: labeled \"Cedar\" on the left; on the right are 5 identical full evergreen tree symbols in a horizontal line.\n- Bottom row: labeled \"Hemlock\" on the left; on the right is 1 full evergreen tree symbol followed by half of an evergreen tree symbol (vertically cut, showing only the left half).\nBelow the table, the question includes an inline image of a single full evergreen tree symbol between the words \"each\" and \"represent?\".",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "100"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 368,
+  "completion_tokens": 260,
+  "reasoning_tokens": 247,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792336157-txl4lX1Do5kkuqSPK9OG",
+  "requested_at": "2026-10-19T14:20:46+00:00"
+}

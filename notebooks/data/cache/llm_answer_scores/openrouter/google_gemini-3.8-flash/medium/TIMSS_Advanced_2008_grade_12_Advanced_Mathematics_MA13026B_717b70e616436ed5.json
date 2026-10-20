@@ -1,0 +1,47 @@
+{
+  "item_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13026B",
+  "response": "Rotate each vertex 90° anti-clockwise about O: a point (x, y) maps to (-y, x). A(-4, -1) maps to A''(1, -4); B(-1, -4) maps to B''(4, -1); C(-3, -4) maps to C''(4, -3). On the diagram, draw triangle A''B''C'' with vertices A'' at (1, -4), B'' at (4, -1) and C'' at (4, -3), join them with straight lines, and label the vertices A'', B'' and C''. The image lies in the fourth quadrant.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Questions\n\nThese 2 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nA. Triangle ABC is reflected in the y-axis. On the diagram, draw and label triangle A'B'C', the image of triangle ABC under this reflection.\n\n[Image: Coordinate grid with triangle ABC]\n\nFigure, described in words:\nA Cartesian coordinate grid showing the x-axis and y-axis intersecting at the origin labeled O. The grid extends 5 units to the left, 10 units to the right, 5 units up, and 8 units down. Each grid square represents 1 unit by 1 unit. In the third quadrant, a triangle ABC is drawn with vertices at A(-4, -1), B(-1, -4), and C(-3, -4).\n\n## Question 2\n\nB. Triangle ABC is rotated through 90° anti-clockwise, centre O. On the diagram, draw and label triangle A\"B\"C\", the image of triangle ABC under this rotation.\n\n[Image: Coordinate grid with triangle ABC]\n\nFigure, described in words:\nA Cartesian coordinate grid showing the x-axis and y-axis intersecting at the origin labeled O. The grid extends 5 units to the left, 10 units to the right, 5 units up, and 8 units down. Each grid square represents 1 unit by 1 unit. In the third quadrant, a triangle ABC is drawn with vertices at A(-4, -1), B(-1, -4), and C(-3, -4).\n\n# Scoring guide of question 2 (1 point)\n\n- Correct Response (1 point):\n  - Correct answer: (x, y) -> (-y, x) A\" (1, -4) B\" (4, -1) C\" (4, -3)\n- Incorrect Response (0 points):\n  - A\"B\"C\" is the correct image of triangle A'B'C' (NOT ABC ), as shown in response to Part A, under the rotation 90° counterclockwise with center O.\n  - A\"B\"C\" is the image of triangle ABC under a clockwise 90° rotation with center O.\nA\" (-1, 4) B\" (-4, 1) C\" (-4, 3)\n  - Image A\"B\"C\" has correct shape and position but is incorrectly labeled\n  - Other incorrect (including sides of a triangle not drawn or vertices not labeled, crossed out, erased, stray marks, illegible, or off task)\nExamples:\n1. A\"B\"C\" is the image of triangle ABC under reflection in the x-axis.\nA\" (-4, 1) B\" (-1, 4) C\" (-3, 4)\n2. A\"B\"C\" is the image of triangle ABC under the central symmetry with center O; OR, equivalently, under the rotation of 180° around O.\nA\" (4, 1) B\" (1, 4) C\" (3, 4)\n- Nonresponse (0 points):\n  - Blank\n\n# Response to question 2\n\nRotate each vertex 90° anti-clockwise about O: a point (x, y) maps to (-y, x). A(-4, -1) maps to A''(1, -4); B(-1, -4) maps to B''(4, -1); C(-3, -4) maps to C''(4, -3). On the diagram, draw triangle A''B''C'' with vertices A'' at (1, -4), B'' at (4, -1) and C'' at (4, -3), join them with straight lines, and label the vertices A'', B'' and C''. The image lies in the fourth quadrant.\n\nScore the response to question 2.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response",
+          "Nonresponse"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response correctly identifies the rotation rule (x, y) -> (-y, x) and determines the correct coordinates for all three vertices: A''(1, -4), B''(4, -1), and C''(4, -3). It also fully describes drawing and labeling the resulting triangle A''B''C''.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": "**Analyzing Rotation Outcomes**\n\nI'm working on scoring the response to a rotation problem. The student needs to rotate triangle ABC 90 degrees counter-clockwise around the origin and label the resulting triangle. I've begun to map the coordinates: A(-4, -1) should transform to A''(1, -4). I'll continue mapping the remaining points to accurately assess the student's solution.\n\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 1014,
+  "completion_tokens": 255,
+  "reasoning_tokens": 169,
+  "cost_usd": 0.00171675,
+  "seconds": 14.387,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:51:56+00:00"
+}

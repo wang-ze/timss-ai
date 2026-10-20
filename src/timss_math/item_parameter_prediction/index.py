@@ -30,6 +30,7 @@ import numpy as np
 import pandas as pd
 from qdrant_client import QdrantClient, models
 
+from ..items import PARAMETER_NAMES, ItemBank, TimssItem
 from .embeddings import (
     Embedder,
     EmbeddingSettings,
@@ -37,7 +38,6 @@ from .embeddings import (
     load_item_embeddings,
     text_sha256,
 )
-from .items import PARAMETER_NAMES, ItemBank, TimssItem
 
 log = logging.getLogger(__name__)
 

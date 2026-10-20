@@ -1,0 +1,45 @@
+{
+  "unit_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L1",
+  "item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L1"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "What are all values of x for which the inequality 5x + 5/3 ≤ −2x − 2/3 is true?\n\nA. x ≤ −7/9\nB. x ≤ −1/3\nC. x ≥ 0\nD. x ≥ 7/3\nE. x ≥ 9/3",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "B"
+  },
+  "llm_thinking": "**Formulating an answer schema**\n\nI need to find the answer schema for the inequality \\(5x + \\frac{5}{3} \\leq -2x - \\frac{2}{3}\\). My steps are: first, rearranging the terms leads to \\(7x \\leq -\\frac{7}{3}\\), which simplifies to \\(x \\leq -\\frac{1}{3}\\). Now, I'll represent this solution as a JSON object to formalize the response. This step is important to ensure the answer is structured and clear!",
+  "finish_reason": "stop",
+  "prompt_tokens": 272,
+  "completion_tokens": 60,
+  "reasoning_tokens": 46,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335944-NQqtgAeCjkxiMKglznpS",
+  "requested_at": "2026-10-18T15:11:21+00:00"
+}

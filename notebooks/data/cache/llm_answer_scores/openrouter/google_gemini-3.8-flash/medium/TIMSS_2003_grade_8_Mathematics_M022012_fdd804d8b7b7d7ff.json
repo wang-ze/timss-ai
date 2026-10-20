@@ -1,0 +1,46 @@
+{
+  "item_key": "TIMSS 2003/grade 8/Mathematics/M022012",
+  "response": "Any fraction less than 4/9, for example 3/9 (or 1/3), since 3/9 = 0.333... is less than 4/9 = 0.444...",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the eighth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\nWrite a fraction that is less than 4/9.\n\nAnswer: ____\n\n# Scoring guide of the question (1 point)\n\n- Correct Response (1 point):\n  - A fraction with numerator smaller than 4 and denominator equal to 9, includes 3/9 = 1/3 OR 1/3.\n  - A fraction with numerator equal to 4 and denominator greater than 9, includes 4/10 = 2/5 OR 2/5.\n  - 3/8\n  - Other correct fraction\n- Incorrect Response (0 points):\n  - 5/9\n  - 2/3\n  - Any fraction equivalent to 4/9.\n  - Other incorrect (including crossed out/erased, stray marks, illegible, or off task).\n\n# Response to the question\n\nAny fraction less than 4/9, for example 3/9 (or 1/3), since 3/9 = 0.333... is less than 4/9 = 0.444...\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response provides the fraction 3/9 (or 1/3), which is less than 4/9 and is explicitly listed as an acceptable correct response in the scoring guide.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": "**Analyzing the Math Problem**\n\nI'm evaluating the student's answer now. They've provided a specific fraction (3/9, or its simplified form, 1/3) that is demonstrably less than 4/9. The answer also provides reasoning, making an explicit comparison of the decimal representations of the two fractions. Based on the scoring guide, this clearly constitutes a correct response.\n\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 402,
+  "completion_tokens": 212,
+  "reasoning_tokens": 155,
+  "cost_usd": 0.0010965,
+  "seconds": 13.468,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:51:27+00:00"
+}

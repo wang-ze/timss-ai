@@ -1,0 +1,46 @@
+{
+  "item_key": "TIMSS 2011/grade 8/Mathematics/M052362",
+  "response": "45° (Since CX is perpendicular to AB, X is the midpoint of AB, so AX = XB = CX. Triangle CXB is then a right isosceles triangle with legs CX and XB, so tan B = CX/XB = 1 and angle B = 45°.)",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the eighth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\n[Image: An isosceles triangle. The left angle is labeled \"A\", the top angle is labeled \"C\", and the right angle is labeled \"B\". AC and CB are equal in length. AB is the base. A line is drawn from \"C\" to a point \"X\" on the base of the triangle. The line forms a right angle with the base.]\n\nIn this triangle:\n\nAC = BC\n\nAB is twice as long as CX.\n\nWhat is the size of angle B?\n\nAnswer: ____ °\n\nFigure, described in words:\nAn isosceles triangle ABC with horizontal base AB and apex vertex C above it. Side AC and side BC appear equal in length. A vertical line segment CX is drawn from vertex C perpendicular to the base AB at point X, indicated by a square right-angle mark on the right side of segment CX at point X.\n\n# Scoring guide of the question (1 point)\n\n- Correct Response (1 point):\n  - 45\n- Incorrect Response (0 points):\n  - Incorrect (including crossed out, erased, stray marks, illegible, or off task)\n\n# Response to the question\n\n45° (Since CX is perpendicular to AB, X is the midpoint of AB, so AX = XB = CX. Triangle CXB is then a right isosceles triangle with legs CX and XB, so tan B = CX/XB = 1 and angle B = 45°.)\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response provides the correct angle measure of 45°, along with correct supporting mathematical reasoning.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 597,
+  "completion_tokens": 141,
+  "reasoning_tokens": 103,
+  "cost_usd": 0.0009765,
+  "seconds": 2.086,
+  "batch_id": null,
+  "requested_at": "2026-10-19T18:42:21+00:00"
+}

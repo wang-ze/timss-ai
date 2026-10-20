@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 1999/grade 8/Mathematics/T01",
+  "item_keys": [
+    "TIMSS 1999/grade 8/Mathematics/T01"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are an eighth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "A club has 86 members, and there are 14 more girls than boys. How many boys and how many girls are members of the club?\n\nShow your work.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Let 'b' represent the number of boys and 'g' represent the number of girls in the club. We are given that the total number of members is 86, so we can write the equation:  b + g = 86.  We are also given that there are 14 more girls than boys, so we can write the equation: g = b + 14.  Now we can substitute the second equation into the first equation:  b + (b + 14) = 86.  Combine like terms: 2b + 14 = 86.  Subtract 14 from both sides: 2b = 72.  Divide both sides by 2: b = 36.  So there are 36 boys in the club. Now we can find the number of girls using the equation g = b + 14: g = 36 + 14 = 50.  So there are 50 girls in the club.  To check our answer, we can make sure the total number of members is 86: 36 + 50 = 86.  The number of boys is 36 and the number of girls is 50. \n\nAnswer: There are 36 boys and 50 girls."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 189,
+  "completion_tokens": 291,
+  "reasoning_tokens": 0,
+  "cost_usd": 7.965e-05,
+  "seconds": 29.871,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:23:23+00:00"
+}

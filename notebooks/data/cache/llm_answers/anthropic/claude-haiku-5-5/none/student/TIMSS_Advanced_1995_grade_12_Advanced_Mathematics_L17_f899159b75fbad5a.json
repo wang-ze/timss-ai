@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L17",
+  "item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L17"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are a twelfth-grade student in the final year of secondary school who has taken advanced mathematics courses, taking the TIMSS Advanced mathematics test for students like you. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "For what real value of k will the equation below describe a circle with radius 3?\n\nx^2 + y^2 + 2x - 4y + k = 0\n\nShow all your work.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Complete the square. Group terms: (x^2 + 2x) + (y^2 - 4y) = -k. Add (2/2)^2 = 1 to the x-group and (-4/2)^2 = 4 to the y-group, adding 1 + 4 = 5 to the right side: (x^2 + 2x + 1) + (y^2 - 4y + 4) = -k + 5, so (x + 1)^2 + (y - 2)^2 = 5 - k. The standard form of a circle with radius r is (x - h)^2 + (y - j)^2 = r^2. For radius 3, r^2 = 9, so 5 - k = 9, giving k = -4. Check: with k = -4, the equation is (x + 1)^2 + (y - 2)^2 = 9, a circle with center (-1, 2) and radius 3. Answer: k = -4."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 528,
+  "completion_tokens": 291,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 1.663,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:14:37+00:00"
+}

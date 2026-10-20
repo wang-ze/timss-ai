@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K14",
+  "item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K14"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "A string is wound symmetrically around a circular rod. The string goes exactly 4 times around the rod. The circumference of the rod is 4 cm and its length is 12 cm.\n\n[Image: A cylinder with a string wound around it 4 times]\n\nFind the length of the string. Show all your work.\n\nFigure, described in words:\nA side-view illustration of a horizontal cylindrical rod. A thick, dark line representing a string begins near the top-left edge, winds around the rod symmetrically making 4 complete helical turns from left to right, and terminates near the top-right edge.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Unroll the cylinder into a flat rectangle. Its width is the circumference, 4 cm, and its height is the length of the rod, 12 cm. The string becomes a set of straight diagonal segments across this rectangle, one segment for each turn around the rod. Since the string goes around 4 times, it is made of 4 equal segments. Each segment spans the full circumference horizontally, 4 cm, and rises vertically by 12 cm ÷ 4 = 3 cm. By the Pythagorean theorem, the length of one segment is √(4² + 3²) = √(16 + 9) = √25 = 5 cm. The total length of the string is 4 × 5 cm = 20 cm."
+  },
+  "llm_thinking": "Unrolling the cylinder into a rectangle with width equal to the circumference (4 cm) and height 12 cm, the string making 4 wraps becomes 4 diagonal segments, each spanning 4 cm horizontally and 3 cm vertically (12/4). Each diagonal is 5 cm by the Pythagorean theorem, so the total string length is 20 cm.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 638,
+  "completion_tokens": 405,
+  "reasoning_tokens": 168,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335961-VWbz6F0PkdlHoUJEbmRp",
+  "requested_at": "2026-10-19T14:20:48+00:00"
+}

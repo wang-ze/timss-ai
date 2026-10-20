@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K18",
+  "item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K18"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "In the ΔABC the altitudes BN and CM intersect at point S. The measure of ∠MSB is 40° and the measure of ∠SBC is 20°. Write a PROOF of the following statement:\n\n“ΔABC is isosceles.”\n\nGive geometric reasons for statements in your proof.\n\n[Image: Triangle ABC with altitudes BN and CM intersecting at S]\n\nFigure, described in words:\nA triangle ABC with vertex A at the top, vertex B at the bottom left, and vertex C at the bottom right. Segment BN is an altitude drawn from B to AC, with a right-angle symbol at N. Segment CM is an altitude drawn from C to AB, with a right-angle symbol at M. BN and CM intersect at interior point S. The angle MSB is marked with an arc and labeled 40°. The angle SBC is marked with an arc and labeled 20°.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Proof:\n\n1. In right triangle $\\Delta SMB$:\n   - $\\angle SMB = 90^\\circ$ (since $CM$ is an altitude to $AB$, so $CM \\perp AB$).\n   - $\\angle MSB = 40^\\circ$ (given).\n   - Since the sum of the angles in a triangle is $180^\\circ$:\n     $$\\angle SBM = 180^\\circ - 90^\\circ - 40^\\circ = 50^\\circ$$\n\n2. Find $\\angle ABC$:\n   - By angle addition, $\\angle ABC = \\angle SBM + \\angle SBC$.\n   - Given $\\angle SBC = 20^\\circ$:\n     $$\\angle ABC = 50^\\circ + 20^\\circ = 70^\\circ$$\n\n3. In right triangle $\\Delta BNC$:\n   - $\\angle BNC = 90^\\circ$ (since $BN$ is an altitude to $AC$, so $BN \\perp AC$).\n   - $\\angle NBC = \\angle SBC = 20^\\circ$ (given).\n   - Since the sum of the angles in a triangle is $180^\\circ$:\n     $$\\angle ACB = 180^\\circ - 90^\\circ - 20^\\circ = 70^\\circ$$\n\n4. Conclusion:\n   - Since $\\angle ABC = \\angle ACB = 70^\\circ$, $\\Delta ABC$ has two congruent angles.\n   - By the converse of the Isosceles Triangle Theorem (if two angles of a triangle are equal, the sides opposite them are equal), side $AB = AC$.\n   - Therefore, $\\Delta ABC$ is isosceles."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 410,
+  "completion_tokens": 1854,
+  "reasoning_tokens": 1420,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792336157-txl4lX1Do5kkuqSPK9OG",
+  "requested_at": "2026-10-19T14:20:46+00:00"
+}

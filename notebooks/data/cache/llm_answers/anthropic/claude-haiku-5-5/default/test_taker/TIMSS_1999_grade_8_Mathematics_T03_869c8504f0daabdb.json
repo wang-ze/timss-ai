@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 1999/grade 8/Mathematics/T03",
+  "item_keys": [
+    "TIMSS 1999/grade 8/Mathematics/T03"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The figure shows a shaded rectangle inside a parallelogram.\n\n[Image: A shaded rectangle inside a parallelogram]\n\nWhat is the area of the shaded rectangle?\n\nAnswer: ____\n\nFigure, described in words:\nA parallelogram with horizontal top and bottom sides and slanted left and right sides. Inside the parallelogram is a shaded rectangle sharing parts of the top and bottom edges of the parallelogram. A dimension line at the bottom shows that the distance from the bottom-left vertex of the parallelogram to the bottom-right corner of the shaded rectangle is 8 cm. A dimension line along the top shows that the segment of the parallelogram's top edge extending to the right of the shaded rectangle has a length of 3 cm. A vertical dimension line on the right indicates that the height of the parallelogram (and of the rectangle) is 4 cm.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Area = 20 cm². Reasoning: the rectangle's right side is at 8 cm from the bottom-left vertex. The top edge segment to the right of the rectangle is 3 cm, so the top edge runs from x = 3 to x = 11, giving a top length of 8 cm. The rectangle's left side lies on the vertical through the top-left vertex, at x = 3. So the rectangle's width is 8 − 3 = 5 cm and its height is 4 cm, giving 5 × 4 = 20 cm²."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 717,
+  "completion_tokens": 3454,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 15.199,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:22:27+00:00"
+}

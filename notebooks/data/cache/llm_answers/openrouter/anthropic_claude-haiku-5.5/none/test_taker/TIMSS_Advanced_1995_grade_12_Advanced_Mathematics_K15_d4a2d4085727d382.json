@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K15",
+  "item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K15"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Determine all complex numbers z that satisfy the equation\n\nz + 2 z̄ = 3 + i\n\nwhere z̄ denotes the conjugate of z .",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Let z = a + bi, so z̄ = a − bi. Then z + 2z̄ = (a + bi) + 2(a − bi) = 3a − bi. Setting this equal to 3 + i gives 3a = 3 and −b = 1, so a = 1 and b = −1. Therefore z = 1 − i. Check: z + 2z̄ = (1 − i) + 2(1 + i) = 3 + i. ✓ The only solution is z = 1 − i."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 504,
+  "completion_tokens": 165,
+  "reasoning_tokens": 0,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335950-6M8r5AF2vj28dS4S8FJ7",
+  "requested_at": "2026-10-19T14:20:44+00:00"
+}

@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2011/grade 4/Mathematics/M041158",
+  "item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M041158"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: a stack of square boxes in the corner of a room.]\n\nAnn stacks these boxes in the corner of the room. All the boxes are the same size.\nHow many boxes does she use?\n\nFigure, described in words:\nAn isometric drawing shows a stack of identical cube-shaped boxes resting in the corner of a room. Three line segments represent the room's edges meeting at the corner behind the stack: a vertical line extends straight up from the top-back corner of the stack, a line extends down and to the left from the bottom-left of the stack along the floor, and a line extends to the right from the bottom-right of the stack along the floor.\n\nThe stack rests on the floor against both walls. The base layer is completely filled, measuring 3 cubes deep along the left wall and 4 cubes wide along the back wall (a 3 by 4 grid of cubes).\n\nA second layer of cubes is stacked on top against the corner in a stepped pattern:\n- Along the back wall (row 1, closest to the back wall), the first 3 columns from the left are 2 cubes high, and the 4th column is 1 cube high.\n- In the middle row (row 2), the first 2 columns from the left are 2 cubes high, and the remaining 2 columns are 1 cube high.\n- In the front row (row 3), the first column on the left is 2 cubes high, and the remaining 3 columns are 1 cube high.\n\nA. 25\nB. 19\nC. 18\nD. 13",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "A"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 893,
+  "completion_tokens": 10,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 0.793,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:21:40+00:00"
+}

@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K18",
+  "item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K18"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": null,
+  "system_prompt": "You are a twelfth-grade student in the final year of secondary school who has taken advanced mathematics courses, taking the TIMSS Advanced mathematics test for students like you. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "In the ΔABC the altitudes BN and CM intersect at point S. The measure of ∠MSB is 40° and the measure of ∠SBC is 20°. Write a PROOF of the following statement:\n\n“ΔABC is isosceles.”\n\nGive geometric reasons for statements in your proof.\n\n[Image: Triangle ABC with altitudes BN and CM intersecting at S]\n\nFigure, described in words:\nA triangle ABC with vertex A at the top, vertex B at the bottom left, and vertex C at the bottom right. Segment BN is an altitude drawn from B to AC, with a right-angle symbol at N. Segment CM is an altitude drawn from C to AB, with a right-angle symbol at M. BN and CM intersect at interior point S. The angle MSB is marked with an arc and labeled 40°. The angle SBC is marked with an arc and labeled 20°.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Proof. Step 1: BN is an altitude, so BN ⊥ AC, and CM is an altitude, so CM ⊥ AB. Hence ∠BNC = 90° and ∠CMB = 90° (definition of altitude). Step 2: S lies on segment CM and on segment BN, so ray SM is opposite ray SC, and ray SB is opposite ray SN. Therefore ∠MSB and ∠CSN are vertical angles, so ∠CSN = ∠MSB = 40° (vertical angles are congruent). Step 3: Since M, S, C are collinear with S between M and C, ∠MSB and ∠BSC form a linear pair, so ∠BSC = 180° − 40° = 140° (linear pair / supplementary angles). Step 4: In ΔSBC, the angle sum is 180°, so ∠SCB = 180° − ∠BSC − ∠SBC = 180° − 140° − 20° = 20° (triangle angle sum). Step 5: Since S lies on segment CM, ray CS = ray CM, so ∠MCB = ∠SCB = 20°. Step 6: In right triangle CMB (∠CMB = 90°), ∠MBC = 90° − ∠MCB = 90° − 20° = 70° (acute angles of a right triangle are complementary). Step 7: Since M lies on segment AB, ray BM = ray BA, so ∠ABC = ∠MBC = 70°. Step 8: Since S lies on segment BN, ray BS = ray BN, so ∠NBC = ∠SBC = 20° (same angle). Step 9: In right triangle BNC (∠BNC = 90°), ∠NCB = 90° − ∠NBC = 90° − 20° = 70° (complementary acute angles of a right triangle). Step 10: Since N lies on segment AC, ray CN = ray CA, so ∠ACB = ∠NCB = 70°. Step 11: Thus ∠ABC = 70° = ∠ACB. Step 12: In ΔABC, two angles are congruent, so the sides opposite them are congruent (converse of the isosceles triangle theorem): AC = AB. Therefore ΔABC is isosceles. ∎"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 771,
+  "completion_tokens": 1480,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 7.078,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:14:56+00:00"
+}

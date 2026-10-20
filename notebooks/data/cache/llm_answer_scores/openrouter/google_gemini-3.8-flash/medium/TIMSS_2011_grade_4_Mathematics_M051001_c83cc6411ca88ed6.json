@@ -1,0 +1,46 @@
+{
+  "item_key": "TIMSS 2011/grade 4/Mathematics/M051001",
+  "response": "5. Each win gives 3 points and each tie gives 1 point. With 4 games, the possible totals are 12 (4 wins), 10 (3 wins and 1 tie), and lower values, so 11 points cannot be reached in 4 games. With 5 games, 3 wins and 2 ties give 3×3 + 2×1 = 11 points, so 5 games works.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the fourth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\nIn a soccer tournament, teams get:\n\n3 points for a win\n1 point for a tie\n0 points for a loss\n\nZedland has 11 points.\n\nWhat is the smallest number of games Zedland could have played?\n\nAnswer: ____\n\n# Scoring guide of the question (1 point)\n\n- Correct Response (1 point):\n  - 5 OR 3 wins and 2 ties\n- Incorrect Response (0 points):\n  - Incorrect (including crossed out, erased, stray marks, illegible, or off task)\n\n# Response to the question\n\n5. Each win gives 3 points and each tie gives 1 point. With 4 games, the possible totals are 12 (4 wins), 10 (3 wins and 1 tie), and lower values, so 11 points cannot be reached in 4 games. With 5 games, 3 wins and 2 ties give 3×3 + 2×1 = 11 points, so 5 games works.\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response correctly identifies the smallest number of games as 5, which matches the scoring guide criteria for a Correct Response.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 510,
+  "completion_tokens": 117,
+  "reasoning_tokens": 81,
+  "cost_usd": 0.00082125,
+  "seconds": 3.094,
+  "batch_id": null,
+  "requested_at": "2026-10-19T18:41:48+00:00"
+}

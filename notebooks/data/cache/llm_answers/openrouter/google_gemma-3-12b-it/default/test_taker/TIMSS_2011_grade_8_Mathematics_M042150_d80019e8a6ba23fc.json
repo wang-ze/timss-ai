@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2011/grade 8/Mathematics/M042150",
+  "item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M042150"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Which shape has a line of symmetry?\n\nFigure, described in words:\nFour geometric shapes labeled A through D:\nA: A trapezoid with horizontal top and bottom parallel sides; the bottom is longer than the top, and the right slanted side is longer and less steep than the left side.\nB: An isosceles triangle with a vertical base on the left and a vertex pointing to the right; the top and bottom sides are marked with equal tick marks.\nC: A parallelogram with horizontal top and bottom sides each marked with a single tick mark, and slanted left and right sides each marked with a double tick mark.\nD: A scalene right-angled triangle with a vertical left side and a horizontal bottom side, with a right-angle square symbol marked at the lower-left corner.\n\nA. [Image: A trapezoid with two parallel horizontal lines. The right side of the trapezoid is longer than the left hand side.]\nB. [Image: An isosceles triangle with the base forming a vertical line.]\nC. [Image: A parallelogram where top and bottom sides are equal in length and the left and right sides are also equal in length.]\nD. [Image: A right triangle with the 90 degree angle in the bottom left.]",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "B"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 393,
+  "completion_tokens": 6,
+  "reasoning_tokens": 0,
+  "cost_usd": 2.055e-05,
+  "seconds": 0.477,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:07:16+00:00"
+}

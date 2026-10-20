@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 1995/grade 4/Mathematics/S3",
+  "item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/S3"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Julie put a box on a shelf that is 96.4 centimeters long. The box is 33.2 centimeters long. What is the longest box she could put on the rest of the shelf?\nShow all your work.\n\nAnswer: ____",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "}Okay, let's solve this problem step by step.  First, we need to find out how much space is left on the shelf after Julie puts the first box on it.  To do that, we need to subtract the length of the first box from the total length of the shelf.  So, we will do 96.4 - 33.2.  Let's write it out like this:  96.4 - 33.2 = 63.2.  This means there are 63.2 centimeters left on the shelf.  Therefore, the longest box Julie could put on the rest of the shelf is 63.2 centimeters.  Answer: 63.2"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 184,
+  "completion_tokens": 159,
+  "reasoning_tokens": 0,
+  "cost_usd": 3.305e-05,
+  "seconds": 2.74,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:07:32+00:00"
+}

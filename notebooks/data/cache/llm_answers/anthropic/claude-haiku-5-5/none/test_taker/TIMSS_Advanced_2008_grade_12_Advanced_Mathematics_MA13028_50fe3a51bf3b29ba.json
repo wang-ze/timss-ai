@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13028",
+  "item_keys": [
+    "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13028"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "For every natural number n, 1^2 + 3^2 + ... + (2n - 1)^2 = (n(4n^2 - 1))/3\n\nTo prove this by MATHEMATICAL INDUCTION, what are the essential steps that will need to be carried out? (Do not do the actual proof.)",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Step 1 (Basis step): Verify the statement for the smallest natural number, n = 1. Check that the left side, 1^2 = 1, equals the right side, (1(4(1)^2 - 1))/3 = (1 x 3)/3 = 1. Step 2 (Inductive hypothesis): Assume the statement is true for some arbitrary natural number k, i.e., 1^2 + 3^2 + ... + (2k - 1)^2 = (k(4k^2 - 1))/3. Step 3 (Inductive step): Prove the statement is true for n = k + 1, i.e., show that 1^2 + 3^2 + ... + (2k - 1)^2 + (2k + 1)^2 = ((k+1)(4(k+1)^2 - 1))/3. This is done by adding the next term (2k + 1)^2 to both sides of the inductive hypothesis, then algebraically simplifying the resulting expression so that it equals ((k+1)(4(k+1)^2 - 1))/3. Step 4 (Conclusion): Since the statement holds for n = 1 (basis) and the truth for n = k implies the truth for n = k + 1 (inductive step), by the principle of mathematical induction the statement is true for every natural number n."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 550,
+  "completion_tokens": 424,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 2.243,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:21:45+00:00"
+}

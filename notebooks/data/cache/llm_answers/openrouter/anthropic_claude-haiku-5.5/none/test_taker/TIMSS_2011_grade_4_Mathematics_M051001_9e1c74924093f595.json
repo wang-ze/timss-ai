@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 4/Mathematics/M051001",
+  "item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M051001"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "In a soccer tournament, teams get:\n\n3 points for a win\n1 point for a tie\n0 points for a loss\n\nZedland has 11 points.\n\nWhat is the smallest number of games Zedland could have played?\n\nAnswer: ____",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Zedland needs 11 points. With 3 points per win, 3 wins give 9 points, and 11 - 9 = 2 points remain, which can be 2 ties. That is 3 wins and 2 ties, so 5 games. Check: 3 wins x 3 = 9 points, plus 2 ties x 1 = 2 points, total 11 points. Using 4 wins would give 12 points, which is more than 11, and with 3 wins the remaining points must come from ties, needing 2 ties. Fewer than 5 games is not possible: 3 games give at most 9 points, and 4 games with 3 wins and 1 tie give only 10 points, while 4 wins give 12 points, which is not 11. So the smallest number of games is 5. Answer: 5"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 497,
+  "completion_tokens": 258,
+  "reasoning_tokens": 0,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335952-nomWk8Tj0yh7J6h3dipX",
+  "requested_at": "2026-10-19T14:20:45+00:00"
+}

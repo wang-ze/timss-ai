@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 8/Mathematics/M042270",
+  "item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M042270"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The length of side of each of the small squares represents 1 cm. Draw an isosceles triangle with a base of 4 cm and a height of 5 cm.\n\n[Image: A square grid that has sides of 8 small squares by 8 small squares.]\n\nFigure, described in words:\nAn 8 by 8 grid of small squares with no numbers or labels.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Using the grid lines as coordinates (0 to 8 from left to right, and 0 to 8 from bottom to top), draw a horizontal base from the point (2, 1) to the point (6, 1), which is 4 small squares long (4 cm). Find the midpoint of the base at (4, 1). Draw the apex at (4, 6), directly above the midpoint and 5 small squares up (5 cm high). Join the apex to each end of the base with straight lines, (2, 1) to (4, 6) and (6, 1) to (4, 6). The result is a triangle with a 4 cm base, a 5 cm height, and two equal sides of about 5.39 cm each, so it is isosceles."
+  },
+  "llm_thinking": "I'm working out the grid placement for an isosceles triangle with base 4 and height 5: base spanning (2,0) to (6,0) on an 8x8 grid, with the apex positioned at (4,5) directly above the midpoint.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 537,
+  "completion_tokens": 503,
+  "reasoning_tokens": 268,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335957-QKbCVbAXn76L3I0C7O9z",
+  "requested_at": "2026-10-19T14:20:44+00:00"
+}

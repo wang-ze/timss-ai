@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K7",
+  "item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K7"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The vertices of the triangle PQR are the points P(1, 2), Q(4, 6) and R(− 4, 12). Which one of the following statements about triangle PQR is true?\n\nA. PQR is a right triangle with the right angle ∠P.\nB. PQR is a right triangle with the right angle ∠Q.\nC. PQR is a right triangle with the right angle ∠R.\nD. PQR is not a right triangle.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "A"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 252,
+  "completion_tokens": 12,
+  "reasoning_tokens": 0,
+  "cost_usd": 1.44e-05,
+  "seconds": 0.808,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:06:34+00:00"
+}

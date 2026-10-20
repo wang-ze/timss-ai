@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23135",
+  "item_keys": [
+    "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23135"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "high",
+  "system_prompt": "You are a twelfth-grade student in the final year of secondary school who has taken advanced mathematics courses, taking the TIMSS Advanced mathematics test for students like you. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "(x + 1)/(x − 2) > 1\n\nFor which values of x is the inequality shown above satisfied?\n\nAnswer: ____",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "x>2"
+  },
+  "llm_thinking": "**Solving the inequality**\n\nI’m working on solving the inequality \\( \\frac{x+1}{x-2} > 1 \\). First, I’ll subtract 1, which leads to \\( \\frac{(x+1) - (x-2)}{x-2} = \\frac{3}{x-2} > 0 \\). This suggests that the denominator must be positive, meaning \\( x > 2 \\). So, the solution to this inequality is \\( x > 2 \\). Now, I’ll make a note to format this in JSON as needed.",
+  "finish_reason": "stop",
+  "prompt_tokens": 257,
+  "completion_tokens": 77,
+  "reasoning_tokens": 61,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792430073-CNIt0K0bm0Bup4ZK3RvK",
+  "requested_at": "2026-10-19T17:54:46+00:00"
+}

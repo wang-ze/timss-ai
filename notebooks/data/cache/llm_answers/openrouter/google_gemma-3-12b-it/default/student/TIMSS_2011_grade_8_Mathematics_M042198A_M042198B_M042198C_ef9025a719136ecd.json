@@ -1,0 +1,54 @@
+{
+  "unit_key": "TIMSS 2011/grade 8/Mathematics/M042198A+M042198B+M042198C",
+  "item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M042198A",
+    "TIMSS 2011/grade 8/Mathematics/M042198B",
+    "TIMSS 2011/grade 8/Mathematics/M042198C"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are an eighth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "These 3 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\n1/2, 2/3, 3/4, 4/5, 5/6\n\nA. What is the next term in this pattern?\n\nAnswer: ____\n\n## Question 2\n\n1/2, 2/3, 3/4, 4/5, 5/6\n\nB. What would term number 100 be?\n\nAnswer: ____\n\n## Question 3\n\n1/2, 2/3, 3/4, 4/5, 5/6\n\nC. What would term number n be?\n\nAnswer: ____\n\nAnswer each of the 3 questions.",
+  "output_schema": {
+    "properties": {
+      "answer_1": {
+        "description": "Your answer to question 1, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 1",
+        "type": "string"
+      },
+      "answer_2": {
+        "description": "Your answer to question 2, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 2",
+        "type": "string"
+      },
+      "answer_3": {
+        "description": "Your answer to question 3, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 3",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer_1",
+      "answer_2",
+      "answer_3"
+    ],
+    "title": "Answers",
+    "type": "object"
+  },
+  "output": {
+    "answer_1": "6/7",
+    "answer_2": "99/100",
+    "answer_3": "n/(n+1)"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 310,
+  "completion_tokens": 42,
+  "reasoning_tokens": 0,
+  "cost_usd": 3.27e-05,
+  "seconds": 2.391,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:21:24+00:00"
+}

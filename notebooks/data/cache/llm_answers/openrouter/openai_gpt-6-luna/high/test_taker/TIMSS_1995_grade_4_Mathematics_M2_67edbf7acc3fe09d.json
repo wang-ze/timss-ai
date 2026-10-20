@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 1995/grade 4/Mathematics/M2",
+  "item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/M2"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "A team is selling raffle tickets. The table shows how many tickets they have sold so far.\n\n| Player's Name | Number of Tickets Sold |\n| :--- | :--- |\n| Carlos | 4 |\n| Maria | 7 |\n| Bill | 3 |\n| Ted | 7 |\n| Faye | 6 |\n| Abby | 9 |\n\nThey need to sell 60 tickets altogether. How many more tickets must they sell?\n\nAnswer:____",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "24 tickets"
+  },
+  "llm_thinking": "**Calculating the sums**\n\nAlright, I’m trying to add these numbers together: 4 + 7 + 3 + 7 + 6 + 9 gives me a total of 36. Now I see I have 24 remaining to work with. It seems I'm approaching this with a specific goal in mind, possibly to format it all in JSON later. Let’s make sure I keep working with these numbers until I figure everything out!",
+  "finish_reason": "stop",
+  "prompt_tokens": 286,
+  "completion_tokens": 43,
+  "reasoning_tokens": 28,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335946-trrrpOQNV9blahgGjSta",
+  "requested_at": "2026-10-18T15:11:22+00:00"
+}

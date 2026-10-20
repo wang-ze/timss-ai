@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2011/grade 4/Mathematics/M051007",
+  "item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M051007"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Mary left Apton and rode at the same speed for 2 hours.\n\nShe reached this sign.\n\n[Image: a girl on a bike facing right side stopping in front of a sign. The sign is written with “Brandon, 45 km” with a right arrow and “Apton, 30 km” with a left arrow.]\n\nMary continues to ride at the same speed to Brandon.\n\nHow many hours will it take her to ride from the sign to Brandon?\n\nFigure, described in words:\nA silhouette of a girl on a bicycle facing right, stopped beside a rectangular road sign mounted on a post. The top section of the sign displays the text \"Brandon, 45 km\" followed by a right-pointing arrow (►). The bottom section displays a left-pointing arrow (◄) followed by the text \"Apton, 30 km\".\n\nA. 1 1/2 hours\nB. 2 hours\nC. 3 hours\nD. 3 1/2 hours",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "A"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 366,
+  "completion_tokens": 7,
+  "reasoning_tokens": 0,
+  "cost_usd": 2.9025e-05,
+  "seconds": 2.392,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:18:13+00:00"
+}

@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 1999/grade 8/Mathematics/L11",
+  "item_keys": [
+    "TIMSS 1999/grade 8/Mathematics/L11"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are an eighth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The graph below shows the humidity in a room as recorded on a certain morning.\n\n[Image: Graph of Humidity in Room]\n\nOn the morning shown in the graph, how many times between 6 a.m. and 12 noon was the humidity exactly 20 percent?\n\nFigure, described in words:\nA line graph titled \"Humidity in Room\". The vertical axis is labeled \"Percent Humidity\" with horizontal grid lines and markings at 10, 20, 30, 40, and 50. The horizontal axis is labeled \"Time (a.m.) in hours\" with vertical grid lines and markings at 6, 7, 8, 9, 10, 11, and 12 noon. A continuous curve starts at (6, 5), rises through (7, 20) to a peak at (8, 40), then decreases passing through (9, 30) and (10, 20) to a minimum of about 14 between 10 and 11, then rises passing 20 between 11 and 12, reaching 25 at 12 noon. The curve intersects the horizontal line for 20 percent humidity at three points: at 7 a.m., at 10 a.m., and between 11 a.m. and 12 noon.\n\nA. One\nB. Two\nC. Three\nD. Four",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "C"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 468,
+  "completion_tokens": 7,
+  "reasoning_tokens": 0,
+  "cost_usd": 3.6675e-05,
+  "seconds": 0.573,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:20:09+00:00"
+}

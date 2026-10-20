@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23208",
+  "item_keys": [
+    "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23208"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "A spherical balloon is blown up. Which graph shows the volume V as a function of the diameter d?\n\nFigure, described in words:\nEach option shows a Cartesian coordinate system with a vertical axis labeled V, a horizontal axis labeled d, and origin labeled O.\n- Option A: In the first quadrant, a smooth curve starts at the origin O and increases with increasing slope (concave upward).\n- Option B: In the first quadrant, a smooth curve starts at the origin O and increases with decreasing slope (concave downward).\n- Option C: A smooth curve passing through the origin O from the third quadrant to the first quadrant, concave downward for d < 0 and concave upward for d > 0, resembling the graph of y = x^3.\n- Option D: In the first quadrant, a straight line with a constant positive slope starts at the origin O.\n\nA. [Image: Graph A]\nB. [Image: Graph B]\nC. [Image: Graph C]\nD. [Image: Graph D]",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "A"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 780,
+  "completion_tokens": 10,
+  "reasoning_tokens": 0,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335955-kMI4NOha6WfxkHChhFXZ",
+  "requested_at": "2026-10-19T14:20:46+00:00"
+}

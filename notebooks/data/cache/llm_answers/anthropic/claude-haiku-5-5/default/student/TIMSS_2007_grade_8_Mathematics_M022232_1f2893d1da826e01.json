@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2007/grade 8/Mathematics/M022232",
+  "item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M022232"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": null,
+  "system_prompt": "You are an eighth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Katy made a table to keep track of how long it took water in a beaker to cool from 95°C to 70°C. She measured the time it took the water to cool in 5°C intervals.\n\n| Interval Readings | Amount of Cooling Time |\n| :--- | :--- |\n| 95°C – 90°C | 2 minutes 10 seconds |\n| 90°C – 85°C | 3 minutes 19 seconds |\n| 85°C – 80°C | 4 minutes 48 seconds |\n| 80°C – 75°C | 6 minutes 55 seconds |\n| 75°C – 70°C | 9 minutes 43 seconds |\n\nEstimate to the nearest minute the total time taken for the temperature of the water in the beaker to cool from 95°C to 70°C, and explain how your estimate was made.\n\nEstimate: ____\n\nExplain:",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Estimate: 27 minutes. Explain: I rounded each interval's time to the nearest minute and then added the rounded values. 2 min 10 s rounds to 2 min; 3 min 19 s rounds to 3 min; 4 min 48 s rounds to 5 min; 6 min 55 s rounds to 7 min; 9 min 43 s rounds to 10 min. Adding these gives 2 + 3 + 5 + 7 + 10 = 27 minutes. As a check, adding the exact times gives 2 min 10 s + 3 min 19 s + 4 min 48 s + 6 min 55 s + 9 min 43 s = 26 min 55 s, which is about 27 minutes to the nearest minute."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 730,
+  "completion_tokens": 454,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 3.257,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:16:24+00:00"
+}

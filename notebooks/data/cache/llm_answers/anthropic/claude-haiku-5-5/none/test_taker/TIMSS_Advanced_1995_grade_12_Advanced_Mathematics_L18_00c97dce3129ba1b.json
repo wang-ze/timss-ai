@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L18",
+  "item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L18"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Two circles with centres A and B as shown below have radii of 7 cm and 10 cm respectively. If the length of the common chord PQ is 8 cm, what is the length of AB? Show all your work.\n\n[Image: Two intersecting circles with centers A and B]\n\nFigure, described in words:\nTwo intersecting circles are shown. The smaller circle on the left has its center labeled A, and the larger circle on the right has its center labeled B. A horizontal line segment connects center A and center B. The two circles intersect at two points labeled P (top) and Q (bottom). A vertical line segment connects P and Q, intersecting line segment AB. Line segment AP is drawn and labeled \"7 cm\", and line segment BP is drawn and labeled \"10 cm\".",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Set up the figure: A is the centre of the circle of radius AP = 7 cm, B is the centre of the circle of radius BP = 10 cm. The common chord PQ is perpendicular to the line of centres AB and is bisected by it at the midpoint M, so PM = MQ = 4 cm. Triangles APM and BPM are right-angled at M. Let AM = x. Then by Pythagoras in triangle APM: AM^2 + PM^2 = AP^2, so x^2 + 4^2 = 7^2, giving x^2 = 49 - 16 = 33, so x = sqrt(33) cm. Let BM = y. In triangle BPM: y^2 + 4^2 = 10^2, so y^2 = 100 - 16 = 84, so y = sqrt(84) = 2*sqrt(21) cm. Since M lies between A and B (the centres are on opposite sides of the common chord), AB = AM + MB = sqrt(33) + sqrt(84) = sqrt(33) + 2*sqrt(21) cm, which is approximately 5.745 + 9.165 = 14.91 cm. Therefore the length of AB is sqrt(33) + sqrt(84) cm, approximately 14.9 cm."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 699,
+  "completion_tokens": 421,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 2.242,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:22:45+00:00"
+}

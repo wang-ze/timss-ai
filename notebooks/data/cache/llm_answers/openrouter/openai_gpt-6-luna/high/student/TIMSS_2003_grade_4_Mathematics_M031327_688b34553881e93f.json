@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2003/grade 4/Mathematics/M031327",
+  "item_keys": [
+    "TIMSS 2003/grade 4/Mathematics/M031327"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "high",
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "On the grid, draw a line parallel to line L.\n\n[Image: A grid with line L]\n\nFigure, described in words:\nA grid measuring 11 squares wide by 6 squares high. A straight line segment with arrowheads at both ends is labeled L near its upper-right end. The line follows the diagonals of grid squares at a 45-degree angle (slope of 1), extending from the grid intersection located 3 units from the left and 2 units from the bottom to the intersection located 6 units from the left and 5 units from the bottom.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Draw a line segment from the grid intersection 0 squares from the left and 1 square from the bottom to the intersection 3 squares from the left and 4 squares from the bottom. It has the same slope as line L, so it is parallel."
+  },
+  "llm_thinking": "**Explaining parallel lines**\n\nI need to describe how to draw parallel lines on a grid. It’s essential to ensure that line L has a slope of 1 and runs rising to the right, for example, from (0,0) to (2,2). This shows the concept of parallel segments. I should select a different line, like from (0,1) to (3,4), which also has the same slope within an 11x6 grid. Finally, I’ll format my answer in JSON.",
+  "finish_reason": "stop",
+  "prompt_tokens": 331,
+  "completion_tokens": 182,
+  "reasoning_tokens": 115,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792430074-okNuJEwkyyxQ0JugOQBP",
+  "requested_at": "2026-10-19T17:34:15+00:00"
+}

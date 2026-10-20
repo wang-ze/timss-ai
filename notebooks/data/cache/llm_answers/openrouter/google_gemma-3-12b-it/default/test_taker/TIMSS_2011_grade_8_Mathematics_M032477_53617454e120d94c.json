@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2011/grade 8/Mathematics/M032477",
+  "item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M032477"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The taxi company has a basic charge of 25 zeds and a charge of 0.2 zeds for each kilometer the taxi is driven. Which of these represents the cost in zeds to hire a taxi for a trip of n kilometers?\n\nA. 25 + 0.2n\nB. 25 × 0.2n\nC. 0.2 × (25 + n)\nD. 0.2 × 25 + n",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "A"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 233,
+  "completion_tokens": 12,
+  "reasoning_tokens": 0,
+  "cost_usd": 1.345e-05,
+  "seconds": 0.373,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:06:53+00:00"
+}

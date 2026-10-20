@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 1995/grade 4/Mathematics/S4",
+  "item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/S4"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "A teacher marks 10 of her pupils' tests every half hour. It takes her one and one-half hours to mark all her pupils' tests. How many pupils are in her class?\n\nAnswer: ____",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "30 pupils"
+  },
+  "llm_thinking": "**Calculating periods for computation**\n\nI need to compute 10 for each half hour. So, with 1.5 hours, there are 3 half-hour periods. Each period will contribute 10, which leads me to a total of 30. \n\nNow, to provide the answer in JSON format, I’ll make sure it’s structured correctly as that’s what's needed. Overall, it seems straightforward — just some simple multiplication!",
+  "finish_reason": "stop",
+  "prompt_tokens": 234,
+  "completion_tokens": 47,
+  "reasoning_tokens": 32,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335944-NQqtgAeCjkxiMKglznpS",
+  "requested_at": "2026-10-18T15:11:21+00:00"
+}

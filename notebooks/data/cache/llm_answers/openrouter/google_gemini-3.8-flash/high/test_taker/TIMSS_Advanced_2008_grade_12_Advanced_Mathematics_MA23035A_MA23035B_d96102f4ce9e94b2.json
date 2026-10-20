@@ -1,0 +1,46 @@
+{
+  "unit_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23035A+MA23035B",
+  "item_keys": [
+    "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23035A",
+    "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23035B"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "These 2 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nf(x) = x^4 - 2x^2\n\nA. What are the values of x at the points of intersection of the graph of f(x) with the x-axis?\n\nx = ____\n\n## Question 2\n\nf(x) = x^4 - 2x^2\n\nB. What are the maximum and minimum points of the graph of f(x)?\n\nMaximum point(s): ____\n\nMinimum point(s): ____\n\nAnswer each of the 2 questions.",
+  "output_schema": {
+    "properties": {
+      "answer_1": {
+        "description": "Your answer to question 1, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 1",
+        "type": "string"
+      },
+      "answer_2": {
+        "description": "Your answer to question 2, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 2",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer_1",
+      "answer_2"
+    ],
+    "title": "Answers",
+    "type": "object"
+  },
+  "output": {
+    "answer_1": "To find the points of intersection with the x-axis, set f(x) = 0:\nx^4 - 2x^2 = 0\nx^2(x^2 - 2) = 0\nx^2 = 0 or x^2 - 2 = 0\nx = 0, x = -\\sqrt{2}, x = \\sqrt{2}\n\nx = -\\sqrt{2}, 0, \\sqrt{2}",
+    "answer_2": "To find the stationary points, take the first derivative and set it to 0:\nf'(x) = 4x^3 - 4x = 4x(x^2 - 1) = 4x(x - 1)(x + 1) = 0\nThis gives critical values at x = -1, x = 0, and x = 1.\n\nUsing the second derivative test:\nf''(x) = 12x^2 - 4\n- For x = 0: f''(0) = -4 < 0, so there is a relative maximum at x = 0.\n  f(0) = 0^4 - 2(0)^2 = 0\n  Maximum point: (0, 0)\n\n- For x = -1: f''(-1) = 12(-1)^2 - 4 = 8 > 0, so there is a relative (and absolute) minimum at x = -1.\n  f(-1) = (-1)^4 - 2(-1)^2 = 1 - 2 = -1\n  Minimum point: (-1, -1)\n\n- For x = 1: f''(1) = 12(1)^2 - 4 = 8 > 0, so there is a relative (and absolute) minimum at x = 1.\n  f(1) = 1^4 - 2(1)^2 = 1 - 2 = -1\n  Minimum point: (1, -1)\n\nMaximum point(s): (0, 0)\nMinimum point(s): (-1, -1) and (1, -1)"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 417,
+  "completion_tokens": 1176,
+  "reasoning_tokens": 673,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792336158-rXCEaC3Oj1MHoGb9wgnd",
+  "requested_at": "2026-10-19T14:20:47+00:00"
+}

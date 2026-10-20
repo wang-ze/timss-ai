@@ -1,0 +1,45 @@
+{
+  "unit_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L8",
+  "item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L8"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The rectangular coordinates of three points in a plane are Q(-3, -1), R(-2, 3), and S(1, -3). A fourth point T is chosen so that vector ST = 2 vector QR.\nThe y-coordinate of T is\n\nA. -11\nB. -7\nC. -1\nD. 1\nE. 5",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "D"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 563,
+  "completion_tokens": 12,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 3.813,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:21:58+00:00"
+}

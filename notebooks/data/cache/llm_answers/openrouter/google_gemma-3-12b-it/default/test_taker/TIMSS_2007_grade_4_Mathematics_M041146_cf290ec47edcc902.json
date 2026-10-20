@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2007/grade 4/Mathematics/M041146",
+  "item_keys": [
+    "TIMSS 2007/grade 4/Mathematics/M041146"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Here are two sides of a rectangle. Draw the other two sides.\n\n[Image: Two sides of a rectangle drawn on a grid]\n\nFigure, described in words:\nA 10 by 10 grid of identical square units. Two line segments forming a 90° angle are drawn on the grid:\n- The corner vertex shared by both segments is at grid intersection (2, 5), counting from the bottom-left corner at (0, 0).\n- The shorter segment extends diagonally up and right across 2 squares, ending at grid intersection (4, 7).\n- The longer segment extends diagonally down and right across 4 squares, ending at grid intersection (6, 1).",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "To complete the rectangle, I would draw a line segment parallel to the first segment (the one that goes up and right) starting at grid intersection (6, 1) and extending diagonally up and right across 2 squares, ending at grid intersection (8, 3).  Then I would draw a line segment parallel to the second segment (the one that goes down and right) starting at grid intersection (8, 3) and extending diagonally down and right across 4 squares, ending at grid intersection (12, 7). Finally, I would draw a line segment connecting grid intersection (2, 5) to grid intersection (12, 7) and grid intersection (4, 7) to grid intersection (6, 1) to close the shape."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 280,
+  "completion_tokens": 166,
+  "reasoning_tokens": 0,
+  "cost_usd": 3.89e-05,
+  "seconds": 2.36,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:07:11+00:00"
+}

@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2003/grade 4/Mathematics/M011001",
+  "item_keys": [
+    "TIMSS 2003/grade 4/Mathematics/M011001"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "In which figure are one-half of the dots black?\n\nFigure, described in words:\nFour square boxes labeled A, B, C, and D, each containing black (filled) and white (open) circles:\n- Option A: Contains 4 circles in a 2 by 2 arrangement. Top row: 1 black circle, 1 white circle. Bottom row: 2 white circles.\n- Option B: Contains 6 circles in 2 rows of 3. Top row: white, black, white. Bottom row: black, black, white.\n- Option C: Contains 3 circles. Top row: white on the left, black on the right. Bottom row: black on the left.\n- Option D: Contains 5 circles arranged in an X pattern like the five dots on a die. Top-left is black, top-right is white, center is white, bottom-left is white, and bottom-right is black.\n\nA. [Image: Square with 4 dots]\nB. [Image: Square with 6 dots]\nC. [Image: Square with 3 dots]\nD. [Image: Square with 5 dots]",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "B"
+  },
+  "llm_thinking": "Checking each option's ratio of black to total circles: A gives 1/4, C gives 2/3, D gives 2/5 — none equal half. B has 6 circles with 3 black (top middle, bottom left, bottom middle), exactly half. The answer is B.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 761,
+  "completion_tokens": 123,
+  "reasoning_tokens": 112,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335957-QKbCVbAXn76L3I0C7O9z",
+  "requested_at": "2026-10-19T14:20:44+00:00"
+}

@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K16",
+  "item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K16"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The ride with the cable car from station A to station B at the top of Mt. Glacier takes 16 minutes. The average speed of the cable car is 2 meters per second and it moves in a straight line forming a 25° angle with the horizontal.\n\n[Image: Cable car route up Mt. Glacier]\n\nFind the height of Mt. Glacier (measured from the level of station A) to the nearest meter. Show all your work.\n\nFigure, described in words:\nA line drawing showing a profile view of a mountain (shaded gray) resting on a horizontal ground line. Station A is marked as a point on the ground line to the left of the mountain. A straight line labeled \"Cable\" extends up and to the right from station A to station B at the top of the mountain, forming an angle labeled 25° with the horizontal ground line. A dot on the line between A and B is labeled \"Cable\". The mountain slope begins to rise to the right of station A, curving upward to summit station B, which is at the left edge of a small flat top, followed by a straight downward slope to the right.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "The cable car travels for 16 minutes, or \\(16\\times 60=960\\) seconds. Its distance along the cable is\n\\[\n2\\text{ m/s}\\times 960\\text{ s}=1920\\text{ m}.\n\\]\nThe vertical height is the opposite side of a right triangle with cable length 1920 m and angle \\(25^\\circ\\):\n\\[\nh=1920\\sin 25^\\circ\\approx 811.3\\text{ m}.\n\\]\nTo the nearest meter, Mt. Glacier is \\(\\boxed{811\\text{ m}}\\) above station A."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 443,
+  "completion_tokens": 156,
+  "reasoning_tokens": 0,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335942-UEqtyLejpOgjjPSkXvNW",
+  "requested_at": "2026-10-18T15:18:01+00:00"
+}

@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2007/grade 4/Mathematics/M041336",
+  "item_keys": [
+    "TIMSS 2007/grade 4/Mathematics/M041336"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Class A and B each have 40 students.\n\n[Image: Pie chart for Class A and bar graph for Class B]\n\nThere are more girls in Class A than in Class B. How many more?\n\nFigure, described in words:\nTwo graphs representing student populations in Class A and Class B:\n- On the left, a pie chart titled \"Class A\" showing a circle divided into two sectors. An unshaded sector representing one quarter of the circle (from 9 o'clock to 12 o'clock) is labeled \"Boys\". The remaining three-quarters of the circle is shaded grey and labeled \"Girls\".\n- On the right, a bar graph titled \"Class B\" with a vertical axis labeled with values from 0 to 24 in increments of 4 (0, 4, 8, 12, 16, 20, 24) with horizontal grid lines. The horizontal axis has two categories: \"Boys\", with a light-grey bar of height 24, and \"Girls\", with a dark bar of height 16.\n\nA. 14\nB. 16\nC. 24\nD. 30",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "A"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 758,
+  "completion_tokens": 10,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 0.73,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:22:59+00:00"
+}

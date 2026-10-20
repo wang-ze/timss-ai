@@ -1,0 +1,54 @@
+{
+  "unit_key": "TIMSS 2007/grade 8/Mathematics/M032637A+M032637B+M032637C",
+  "item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M032637A",
+    "TIMSS 2007/grade 8/Mathematics/M032637B",
+    "TIMSS 2007/grade 8/Mathematics/M032637C"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "These 3 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nThe Be Fit Health Club offers two different payment plans.\nPlan A has an initial fee of 400 zeds and a weekly fee of 25 zeds.\nPlan B does not have an initial fee but has a weekly fee of 50 zeds.\n\nThe figure below compares the cost for Plan A and Plan B.\n\n[Image: Be Fit Health Club Payment Plans graph]\n\nA. Label the line that represents the cost for Plan A, and label the line that represents the cost for Plan B.\n\nFigure, described in words:\nA line graph titled \"Be Fit Health Club Payment Plans\" on a grid. The horizontal axis is labeled \"Number of Weeks\" and numbered from 0 to 26 in increments of 2 (0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26), with grid lines every 1 unit. The vertical axis is labeled \"Total Cost in Zeds\" and numbered from 200 to 1400 in increments of 200 (200, 400, 600, 800, 1000, 1200, 1400), with grid lines every 100 units starting at 0. Two lines are shown:\n- A dashed line starting at the origin (0, 0) and passing through (4, 200), (8, 400), (12, 600), (16, 800), (20, 1000), (24, 1200), and extending toward the top right, pointing to a rectangular box labeled \"Plan ____\".\n- A solid line starting at (0, 400) on the vertical axis and passing through (8, 600), (16, 800), (24, 1000), and extending toward the right, pointing to a rectangular box labeled \"Plan ____\" positioned below the first box.\n\n## Question 2\n\nThe Be Fit Health Club offers two different payment plans.\nPlan A has an initial fee of 400 zeds and a weekly fee of 25 zeds.\nPlan B does not have an initial fee but has a weekly fee of 50 zeds.\n\nThe figure below compares the cost for Plan A and Plan B.\n\n[Image: Be Fit Health Club Payment Plans graph]\n\nB. At which week would you have paid the same amount for Plan A and Plan B?\n\nFigure, described in words:\nA line graph titled \"Be Fit Health Club Payment Plans\" on a grid. The horizontal axis is labeled \"Number of Weeks\" and numbered from 0 to 26 in increments of 2 (0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26), with grid lines every 1 unit. The vertical axis is labeled \"Total Cost in Zeds\" and numbered from 200 to 1400 in increments of 200 (200, 400, 600, 800, 1000, 1200, 1400), with grid lines every 100 units starting at 0. Two lines are shown:\n- A dashed line starting at the origin (0, 0) and passing through (4, 200), (8, 400), (12, 600), (16, 800), (20, 1000), (24, 1200), and extending toward the top right, pointing to a rectangular box labeled \"Plan ____\".\n- A solid line starting at (0, 400) on the vertical axis and passing through (8, 600), (16, 800), (24, 1000), and extending toward the right, pointing to a rectangular box labeled \"Plan ____\" positioned below the first box.\n\n## Question 3\n\nThe Be Fit Health Club offers two different payment plans.\nPlan A has an initial fee of 400 zeds and a weekly fee of 25 zeds.\nPlan B does not have an initial fee but has a weekly fee of 50 zeds.\n\nThe figure below compares the cost for Plan A and Plan B.\n\n[Image: Be Fit Health Club Payment Plans graph]\n\nC. At 24 weeks, what is the difference in total cost between the two plans?\n\nFigure, described in words:\nA line graph titled \"Be Fit Health Club Payment Plans\" on a grid. The horizontal axis is labeled \"Number of Weeks\" and numbered from 0 to 26 in increments of 2 (0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26), with grid lines every 1 unit. The vertical axis is labeled \"Total Cost in Zeds\" and numbered from 200 to 1400 in increments of 200 (200, 400, 600, 800, 1000, 1200, 1400), with grid lines every 100 units starting at 0. Two lines are shown:\n- A dashed line starting at the origin (0, 0) and passing through (4, 200), (8, 400), (12, 600), (16, 800), (20, 1000), (24, 1200), and extending toward the top right, pointing to a rectangular box labeled \"Plan ____\".\n- A solid line starting at (0, 400) on the vertical axis and passing through (8, 600), (16, 800), (24, 1000), and extending toward the right, pointing to a rectangular box labeled \"Plan ____\" positioned below the first box.\n\nAnswer each of the 3 questions.",
+  "output_schema": {
+    "properties": {
+      "answer_1": {
+        "description": "Your answer to question 1, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 1",
+        "type": "string"
+      },
+      "answer_2": {
+        "description": "Your answer to question 2, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 2",
+        "type": "string"
+      },
+      "answer_3": {
+        "description": "Your answer to question 3, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 3",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer_1",
+      "answer_2",
+      "answer_3"
+    ],
+    "title": "Answers",
+    "type": "object"
+  },
+  "output": {
+    "answer_1": "Label the dashed line that starts at the origin (0, 0) and goes through (4, 200), (8, 400), and so on as Plan B, since its cost is 50 × weeks. Label the solid line that starts at (0, 400) and goes through (8, 600), (16, 800), and so on as Plan A, since its cost is 400 + 25 × weeks. Write \"Plan B\" in the upper box that points to the dashed line and \"Plan A\" in the lower box that points to the solid line.",
+    "answer_2": "Week 16. Plan A cost = 400 + 25w and Plan B cost = 50w. Setting them equal: 400 + 25w = 50w, so 400 = 25w, giving w = 16. At 16 weeks each plan costs 800 zeds, which is where the two lines cross.",
+    "answer_3": "200 zeds. At 24 weeks, Plan A costs 400 + 25(24) = 400 + 600 = 1000 zeds, and Plan B costs 50(24) = 1200 zeds. The difference is 1200 − 1000 = 200 zeds, with Plan B costing more."
+  },
+  "llm_thinking": "The dashed line starting at origin represents Plan B (50w), and the solid line starting at 400 represents Plan A (400+25w) — so I'll label the top box as Plan B and the lower one as Plan A. For equal costs, setting 400+25w=50w gives w=16, matching the graph's intersection point at (16, 800).\n\nAt 24 weeks, Plan A costs 1000 while Plan B costs 1200, so Plan B is higher by 200 zeds. I'll format the final answer as a single-line JSON with strings showing the work for each part.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 2306,
+  "completion_tokens": 680,
+  "reasoning_tokens": 300,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335958-MhJCSqWm7WbRuqTiOnF6",
+  "requested_at": "2026-10-19T14:20:45+00:00"
+}

@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 4/Mathematics/M031009",
+  "item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M031009"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Georgia wants to send letters to 12 of her friends. Half of the letters will need 1 page each and the other half will need 2 pages each. How many pages will be needed altogether?\n\nAnswer: ____",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "18 pages. Half of 12 is 6, so 6 letters need 1 page each, which is 6 pages. The other 6 letters need 2 pages each, which is 12 pages. Altogether: 6 + 12 = 18 pages."
+  },
+  "llm_thinking": "With 12 letters, half of them (6) need just 1 page each, totaling 6 pages, while the other 6 need 2 pages each, totaling 12 pages—so 18 pages overall. Now I'll format the answer as JSON on a single line.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 490,
+  "completion_tokens": 144,
+  "reasoning_tokens": 57,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335960-oItwFneLfMfZRXMM1E4b",
+  "requested_at": "2026-10-19T14:20:47+00:00"
+}

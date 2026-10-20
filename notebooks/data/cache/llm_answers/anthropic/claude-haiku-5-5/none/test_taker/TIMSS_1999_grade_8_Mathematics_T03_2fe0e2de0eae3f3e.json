@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 1999/grade 8/Mathematics/T03",
+  "item_keys": [
+    "TIMSS 1999/grade 8/Mathematics/T03"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The figure shows a shaded rectangle inside a parallelogram.\n\n[Image: A shaded rectangle inside a parallelogram]\n\nWhat is the area of the shaded rectangle?\n\nAnswer: ____\n\nFigure, described in words:\nA parallelogram with horizontal top and bottom sides and slanted left and right sides. Inside the parallelogram is a shaded rectangle sharing parts of the top and bottom edges of the parallelogram. A dimension line at the bottom shows that the distance from the bottom-left vertex of the parallelogram to the bottom-right corner of the shaded rectangle is 8 cm. A dimension line along the top shows that the segment of the parallelogram's top edge extending to the right of the shaded rectangle has a length of 3 cm. A vertical dimension line on the right indicates that the height of the parallelogram (and of the rectangle) is 4 cm.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "The rectangle's height equals the parallelogram's height, 4 cm. The bottom edge of the parallelogram is 8 cm from the bottom-left vertex to the rectangle's bottom-right corner, and the top edge segment to the right of the rectangle is 3 cm. Since the rectangle's top and bottom edges share the parallelogram's top and bottom edges, the parallelogram's base length is 8 + 3 = 11 cm measured along the same horizontal, but the rectangle's width equals the top-edge span from the rectangle's top-left corner to the rectangle's top-right corner. The parallelogram's top edge has the same length as its bottom edge (11 cm), and the top edge is the rectangle's width plus the 3 cm segment, so the rectangle's width is 11 - 3 = 8 cm. Area of the rectangle = width x height = 8 cm x 4 cm = 32 square cm. Answer: 32 cm^2"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 716,
+  "completion_tokens": 322,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 2.423,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:21:55+00:00"
+}

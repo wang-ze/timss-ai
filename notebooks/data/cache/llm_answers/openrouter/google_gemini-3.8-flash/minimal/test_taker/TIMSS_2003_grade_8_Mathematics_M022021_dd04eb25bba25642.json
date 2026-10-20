@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2003/grade 8/Mathematics/M022021",
+  "item_keys": [
+    "TIMSS 2003/grade 8/Mathematics/M022021"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "minimal",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "A rectangular shaped swimming pool has a paved walkway around it as shown.\n\n[Image: Diagram of a pool and walkway]\n\nWhat is the area of the paved walkway?\n\nFigure, described in words:\nA diagram shows an outer shaded rectangle labeled \"Walkway\" surrounding an unshaded inner rectangle labeled \"Pool\". The dimensions of the outer rectangle are labeled with double-headed arrows: a length of 70 m along the top and a width of 23 m along the right side. The dimensions of the inner rectangle are also labeled with double-headed arrows: a length of 50 m along its top edge and a width of 18 m along its right edge.\n\nA. 100 m^2\nB. 161 m^2\nC. 710 m^2\nD. 1,610 m^2",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "C"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 391,
+  "completion_tokens": 100,
+  "reasoning_tokens": 94,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792336146-0fp9WI6rMEhacYonHVMD",
+  "requested_at": "2026-10-19T14:20:44+00:00"
+}

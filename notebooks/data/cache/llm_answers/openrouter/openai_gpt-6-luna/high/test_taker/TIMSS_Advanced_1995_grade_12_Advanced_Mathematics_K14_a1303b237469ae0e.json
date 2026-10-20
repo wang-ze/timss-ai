@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K14",
+  "item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K14"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "A string is wound symmetrically around a circular rod. The string goes exactly 4 times around the rod. The circumference of the rod is 4 cm and its length is 12 cm.\n\n[Image: A cylinder with a string wound around it 4 times]\n\nFind the length of the string. Show all your work.\n\nFigure, described in words:\nA side-view illustration of a horizontal cylindrical rod. A thick, dark line representing a string begins near the top-left edge, winds around the rod symmetrically making 4 complete helical turns from left to right, and terminates near the top-right edge.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Unwrap the curved surface of the rod into a rectangle. The string makes 4 turns, so its total distance around the rod is 4 × 4 = 16 cm, while its distance along the rod is 12 cm. The string becomes the diagonal of a rectangle with sides 12 cm and 16 cm. Thus, its length is √(12² + 16²) = √400 = 20 cm."
+  },
+  "llm_thinking": "**Evaluating cylinder unwrapping**\n\nI need to solve how to unwrap a cylinder. The width and length are 12, while the height circumference is given as 4. Since there are four turns symmetrically, the axial advance per turn would be 12 divided by 4, which is 3. I have to interpret what \"goes exactly 4 times around\" means, considering how the string winds symmetrically. The total length of the unwrapped helix will be 20, and I should show all my work in JSON format.",
+  "finish_reason": "stop",
+  "prompt_tokens": 335,
+  "completion_tokens": 255,
+  "reasoning_tokens": 152,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335949-X58qq9KWicsA7LXLKx9U",
+  "requested_at": "2026-10-18T15:09:01+00:00"
+}

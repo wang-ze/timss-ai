@@ -1,0 +1,45 @@
+{
+  "unit_key": "TIMSS 1995/grade 4/Mathematics/I6",
+  "item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/I6"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Which of these is made with straight sides only?\n\nFigure, described in words:\nFive shapes labeled A through E in a row: A is a quarter-circle consisting of a vertical line segment and a horizontal line segment meeting at a right angle, joined by an arc; B is a circle; C is a rectangle whose four corners are rounded curves; D is a five-sided polygon with a horizontal bottom edge, two vertical side edges, and two sloped top edges that meet at a point; E is a starburst shape with pointed projections radiating around a circular center.\n\nA. [Image: A quarter circle with two perpendicular straight sides and one curved side]\nB. [Image: A circle]\nC. [Image: A rectangle with rounded corners]\nD. [Image: A house-shaped pentagon with five straight sides]\nE. [Image: A circular shape with jagged, star-like points along its perimeter]",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "D"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 325,
+  "completion_tokens": 11,
+  "reasoning_tokens": 0,
+  "cost_usd": 1.79e-05,
+  "seconds": 0.343,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:07:16+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "item_key": "TIMSS 1995/grade 4/Mathematics/T4A",
+  "response": "There are 30 students. Juanita is right: for every 1 girl, there are 2 boys. The 10 girls match with 20 boys, so the ratio of girls to boys is 1 to 2.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the fourth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Questions\n\nThese 2 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nThere are 10 girls and 20 boys in Juanita's class. Juanita said that there is one girl for every two boys. Her friend Amanda said that means 1/2 of all the students in the class are girls.\n\nHow many students are there in Juanita's class?\nAnswer: ____\n\nIs Juanita right? Answer: ____\nUse words or pictures to explain why.\n\n## Question 2\n\nThere are 10 girls and 20 boys in Juanita's class. Juanita said that there is one girl for every two boys. Her friend Amanda said that means 1/2 of all the students in the class are girls.\n\nHow many students are there in Juanita's class?\nAnswer: ____\n\nIs Amanda right? Answer: ____\nUse words and pictures to explain why.\n\n# Scoring guide of question 1 (1 point)\n\n- Correct Response (1 point):\n  - YES. The response expresses verbally, symbolically or pictorially that 20 is twice as much as 10, or that 10 is half of 20.\n  - Other correct. (Includes satisfactory explanations when neither a \"yes\" or \"no\" answer is given).\n- Incorrect Response (0 points):\n  - NO. An explanation is given but is not satisfactory.\n  - NO. No explanation is given.\n  - YES. An explanation is given but is not satisfactory.\n  - YES. No explanation is given.\n  - Other incorrect.\n\n# Response to question 1\n\nThere are 30 students. Juanita is right: for every 1 girl, there are 2 boys. The 10 girls match with 20 boys, so the ratio of girls to boys is 1 to 2.\n\nScore the response to question 1.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response correctly identifies that Juanita is right and provides a satisfactory explanation by showing that 10 girls matching with 20 boys corresponds to a 1 to 2 ratio.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": "**Confirming The Conclusion**\n\nI've confirmed the initial claim: Juanita is indeed correct. To elaborate, there are 30 students in total, and the stated ratio of 1 girl to 2 boys perfectly accounts for that number. I'm now certain of this answer.\n\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 574,
+  "completion_tokens": 360,
+  "reasoning_tokens": 304,
+  "cost_usd": 0.0017805,
+  "seconds": 14.584,
+  "batch_id": null,
+  "requested_at": "2026-10-19T18:33:35+00:00"
+}

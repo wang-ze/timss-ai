@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2007/grade 8/Mathematics/M042148",
+  "item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M042148"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": null,
+  "system_prompt": "You are an eighth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: Coordinate grid with points P, Q, R, and S]\n\nWhich of the following represents the point (3, −2) on the graph?\n\nFigure, described in words:\nA Cartesian coordinate plane with horizontal axis x and vertical axis y intersecting at origin O. Each axis has three tick marks in each direction from the origin representing unit increments of 1, 2, 3 and -1, -2, -3. Four points are plotted:\n- Point P is at coordinates (3, 2).\n- Point Q is at coordinates (3, -2).\n- Point R is at coordinates (-3, -2).\n- Point S is at coordinates (-3, 2).\n\nA. P\nB. Q\nC. R\nD. S",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "B"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 683,
+  "completion_tokens": 11,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 0.668,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:15:52+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "item_key": "TIMSS 2011/grade 4/Mathematics/M041064",
+  "response": "Shade 2 of the 4 small triangles, which is 2/4 = 1/2 of the large triangle. For example, shade the top triangle and the bottom-left triangle (or the top triangle and the bottom-right triangle). Each small triangle is 1/4 of the large triangle, so two of them together make 1/2.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the fourth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\nShade 1/2 of the large triangle.\n\n[Image: a large triangle is divided by lines into four smaller triangles.]\n\nFigure, described in words:\nAn equilateral triangle with a horizontal base and a top vertex, divided into four smaller congruent equilateral triangles: three pointing upward (top, bottom-left, bottom-right) and one inverted in the center. None of the triangles are shaded.\n\n# Scoring guide of the question (1 point)\n\n- Correct Response (1 point):\n  - Any 2 small triangles shaded\n  - Half of the triangle shaded in some other way\n- Incorrect Response (0 points):\n  - 1 triangle shaded\n  - Other incorrect (including crossed out, erased, stray marks, illegible, or off task)\n\n# Response to the question\n\nShade 2 of the 4 small triangles, which is 2/4 = 1/2 of the large triangle. For example, shade the top triangle and the bottom-left triangle (or the top triangle and the bottom-right triangle). Each small triangle is 1/4 of the large triangle, so two of them together make 1/2.\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response clearly specifies to shade 2 of the 4 small triangles (for example, the top triangle and the bottom-left triangle). This satisfies the requirement of shading any 2 small triangles to represent 1/2 of the large triangle.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": "**Shading half the triangle**\n\nI'm considering how to score a TIMSS Grade 4 math item. The task is to shade half of a large triangle divided into four smaller congruent triangles. I'm focusing on interpreting the scoring guide to ensure accurate assessment of student responses.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 538,
+  "completion_tokens": 271,
+  "reasoning_tokens": 202,
+  "cost_usd": 0.00141975,
+  "seconds": 3.808,
+  "batch_id": null,
+  "requested_at": "2026-10-19T18:40:34+00:00"
+}

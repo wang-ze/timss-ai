@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 8/Mathematics/M042201",
+  "item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M042201"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are an eighth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: A rectangular box with a length of x centimeters, height of 4 centimeters and width of 5 centimeters.]\nThe volume of the rectangular box is 200 cm^3. What is the value of x?\n\nAnswer: ____\n\nFigure, described in words:\nA perspective drawing of a rectangular box (rectangular prism). Hidden back edges are indicated by dashed lines. Dimension indicators mark the front bottom horizontal edge as 'x cm', the right vertical edge as '4 cm', and the top right slanted edge (depth) as '5 cm'.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "10"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 268,
+  "completion_tokens": 8,
+  "reasoning_tokens": 0,
+  "cost_usd": 2.19e-05,
+  "seconds": 0.736,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:23:43+00:00"
+}

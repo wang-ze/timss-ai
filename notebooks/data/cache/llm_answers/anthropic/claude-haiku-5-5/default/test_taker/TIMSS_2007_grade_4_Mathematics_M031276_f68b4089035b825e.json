@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2007/grade 4/Mathematics/M031276",
+  "item_keys": [
+    "TIMSS 2007/grade 4/Mathematics/M031276"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: A scale with a pointer]\n\nOn the scale above, what number does the pointer indicate?\n\nFigure, described in words:\nA scale shaped as a circular sector with a curved arc at the top and straight sides meeting at a bottom vertex. Along the curved arc, there are evenly spaced tick marks:\n- An unlabeled tick mark near the left end\n- A tick mark labeled 300\n- An unlabeled tick mark\n- A tick mark to which a pointer arrow (originating from the bottom vertex) points\n- Two unlabeled tick marks\n- A tick mark labeled 400\n- An unlabeled tick mark near the right end\n\nA. 302\nB. 310\nC. 320\nD. 340",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "D"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 658,
+  "completion_tokens": 190,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 1.352,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:23:25+00:00"
+}

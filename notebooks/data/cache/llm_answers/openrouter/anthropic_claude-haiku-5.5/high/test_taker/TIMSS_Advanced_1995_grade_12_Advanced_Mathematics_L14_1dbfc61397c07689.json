@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L14",
+  "item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L14"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "One thousand people selected at random were questioned about smoking and drinking. The results of this survey are summarized in the table below. Calculate the probability that a randomly selected respondent drinks and smokes.\n\n| | Smokers | Non-smokers |\n| :--- | :---: | :---: |\n| Drinkers | 320 | 530 |\n| Non-drinkers | 20 | 130 |",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "The table gives 320 respondents who both drink and smoke (drinkers who are smokers). The total number surveyed is 1000. So P(drinks and smokes) = 320/1000 = 0.32."
+  },
+  "llm_thinking": "Out of 1000 total, 320 are both drinkers and smokers, giving a probability of 0.32. I'll format the answer as a single-line JSON response.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 579,
+  "completion_tokens": 125,
+  "reasoning_tokens": 51,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335957-QKbCVbAXn76L3I0C7O9z",
+  "requested_at": "2026-10-19T14:20:44+00:00"
+}

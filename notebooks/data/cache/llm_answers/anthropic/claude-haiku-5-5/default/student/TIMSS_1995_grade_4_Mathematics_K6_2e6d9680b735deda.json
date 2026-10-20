@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 1995/grade 4/Mathematics/K6",
+  "item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/K6"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": null,
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Here is the beginning of a pattern of tiles.\n\n[Image: Pattern of tiles]\n\nIf the pattern continues, how many tiles will be in Figure 6?\n\nFigure, described in words:\nThree rectangular grid figures made of square tiles, arranged horizontally:\n- Figure 1: a grid of 1 row and 3 columns, containing 3 tiles.\n- Figure 2: a grid of 2 rows and 3 columns, containing 6 tiles.\n- Figure 3: a grid of 3 rows and 3 columns, containing 9 tiles.\n\nA. 12\nB. 15\nC. 18\nD. 21",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "C"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 660,
+  "completion_tokens": 44,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 0.991,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:16:27+00:00"
+}

@@ -1,0 +1,48 @@
+{
+  "item_key": "TIMSS 2007/grade 8/Mathematics/M042303B",
+  "response": "All students in the group liked mathematics more than they liked history. False\n\nNearly half of the students gave both subjects the same rating. True\n\nTwo students neither liked nor disliked either subject. False",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the eighth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Questions\n\nThese 2 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nPopularity of Subjects\n\nA group of 10 students wanted to find out whether mathematics or history was more popular for their group. They rated each subject using the following scale.\n\n[Image: Rating scale from 1 to 5]\n\nThe table shows the results:\n\nStudents’ Ratings\n\n| Student | Mathematics Rating | History Rating |\n| --- | --- | --- |\n| Alan | 1 | 2 |\n| Lisa | 4 | 4 |\n| Ann | 5 | 4 |\n| John | 2 | 2 |\n| Connor | 4 | 2 |\n| Georgia | 3 | 3 |\n| Bret | 2 | 1 |\n| Courtney | 1 | 1 |\n| Ian | 5 | 3 |\n| Jackson | 3 | 2 |\n| Totals | 30 | 24 |\n\nA. Calculate the mean (average) rating for each subject.\n\nMean rating for mathematics = ____\n\nMean rating for history = ____\n\nAccording to the ratings, which is the more popular subject for this group of students?\n\nMore popular subject: ____\n\nFigure, described in words:\nA horizontal rating scale shown as a line with 5 equally spaced circular points labeled 1 through 5 above the line. Under each number is a description:\n- 1: \"Dislike a lot\"\n- 2: \"Dislike\"\n- 3: \"Neither dislike nor like\"\n- 4: \"Like\"\n- 5: \"Like a lot\"\n\n## Question 2\n\nPopularity of Subjects\n\nA group of 10 students wanted to find out whether mathematics or history was more popular for their group. They rated each subject using the following scale.\n\n[Image: Rating scale from 1 to 5]\n\nThe table shows the results:\n\nStudents’ Ratings\n\n| Student | Mathematics Rating | History Rating |\n| --- | --- | --- |\n| Alan | 1 | 2 |\n| Lisa | 4 | 4 |\n| Ann | 5 | 4 |\n| John | 2 | 2 |\n| Connor | 4 | 2 |\n| Georgia | 3 | 3 |\n| Bret | 2 | 1 |\n| Courtney | 1 | 1 |\n| Ian | 5 | 3 |\n| Jackson | 3 | 2 |\n| Totals | 30 | 24 |\n\nB. The students’ ratings are shown on the graph below. For example, Alan’s name is by his ratings (mathematics 1, history 2).\n\n[Image: Scatter plot showing students' ratings]\n\nWrite True or False in the space after each of these statements:\n\nAll students in the group liked mathematics more than they liked history. ____\n\nNearly half of the students gave both subjects the same rating. ____\n\nTwo students neither liked nor disliked either subject. ____\n\nFigure, described in words:\nThe item includes two figures:\n1. A horizontal rating scale line with 5 marked points labeled 1 through 5, with descriptions below:\n- 1: \"Dislike a lot\"\n- 2: \"Dislike\"\n- 3: \"Neither dislike nor like\"\n- 4: \"Like\"\n- 5: \"Like a lot\"\n\n2. A scatter plot on a 5 by 5 grid:\n- Horizontal axis is labeled \"Mathematics Rating\" with integer markings from 0 to 5.\n- Vertical axis is labeled \"History Rating\" with integer markings from 1 to 5 (origin at 0).\n- Plotted points (black dots) with student names next to them:\n  - Courtney at (1, 1)\n  - Bret at (2, 1)\n  - Alan at (1, 2)\n  - John at (2, 2)\n  - Jackson at (3, 2)\n  - Connor at (4, 2)\n  - Georgia at (3, 3)\n  - Ian at (5, 3)\n  - Lisa at (4, 4)\n  - Ann at (5, 4)\n\n# Scoring guide of question 2 (2 points)\n\n- Correct Response (2 points):\n  - False\nTrue\nFalse\n- Partial Response (1 point):\n  - Two of the responses correct.\n- Incorrect Response (0 points):\n  - Incorrect (including crossed out, erased, stray marks, illegible, or off task)\n- Nonresponse (0 points):\n  - Blank\n\n# Response to question 2\n\nAll students in the group liked mathematics more than they liked history. False\n\nNearly half of the students gave both subjects the same rating. True\n\nTwo students neither liked nor disliked either subject. False\n\nScore the response to question 2.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Partial Response",
+          "Incorrect Response",
+          "Nonresponse"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response correctly identifies all three statements in the specified order: False, True, False.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 1228,
+  "completion_tokens": 80,
+  "reasoning_tokens": 43,
+  "cost_usd": 0.001221,
+  "seconds": 3.219,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:46:50+00:00"
+}

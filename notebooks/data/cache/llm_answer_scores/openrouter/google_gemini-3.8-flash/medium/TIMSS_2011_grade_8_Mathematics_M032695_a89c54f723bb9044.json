@@ -1,0 +1,47 @@
+{
+  "item_key": "TIMSS 2011/grade 8/Mathematics/M032695",
+  "response": "The remaining students entering the workforce are 400 − (50 + 100 + 150) = 100. The sector angles are: university 45°, polytechnic school 90°, business college 135°, and workforce 90°. Starting at 12:00 and going clockwise, label the sector from 12:00 to 1:30 “University,” from 1:30 to 4:30 “Polytechnic school,” from 4:30 to 9:00 “Business college,” and from 9:00 to 12:00 “Workforce.”",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the eighth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\nOf the 400 students in a school, 50 plan to go to university, 100 to a polytechnic school, 150 to a business college, and the remainder plan to enter workforce.\n\nUse the circle below to make a pie chart showing the proportions of students planning to do each of these. Put labels on your chart.\n\n[Image: A circle with a point in the middle and 8 equally spaced points placed around the circumference of the circle.]\n\nFigure, described in words:\nA circle with a central point and 8 equally spaced dots along its circumference, corresponding to the 12:00, 1:30, 3:00, 4:30, 6:00, 7:30, 9:00, and 10:30 clock positions.\n\n# Scoring guide of the question (2 points)\n\n- Correct Response (2 points):\n  - Pie chart correctly divided and labeled\n(1 section – university; 2 sections – polytechnic; 2 sections – workforce; 3 sections – business college)\n- Partially Correct Response (1 point):\n  - Four sections with at least two, but not all, of correct size and correctly labeled\n  - Four sections of correct size but no labels, or labels 50, 100, 150, 100\n- Incorrect Response (0 points):\n  - Four sections with one or none of correct size\n  - Other incorrect (including crossed out, erased, stray marks, illegible, or off task)\n\n# Response to the question\n\nThe remaining students entering the workforce are 400 − (50 + 100 + 150) = 100. The sector angles are: university 45°, polytechnic school 90°, business college 135°, and workforce 90°. Starting at 12:00 and going clockwise, label the sector from 12:00 to 1:30 “University,” from 1:30 to 4:30 “Polytechnic school,” from 4:30 to 9:00 “Business college,” and from 9:00 to 12:00 “Workforce.”\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Partially Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response correctly determines the size of each category in sections/angles (University = 1 section/45°, Polytechnic = 2 sections/90°, Business college = 3 sections/135°, and Workforce = 2 sections/90°). The described divisions based on clock positions correctly allocate these section sizes (1, 2, 3, and 2 sections, respectively) and all four are accurately labeled.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": "**Calculating Proportions**\n\nI've been working on breaking down the workforce distribution. My calculations show how many sections each institution will contribute based on the total workforce, assigning degrees and section counts accordingly for university, polytechnic, and business college.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 795,
+  "completion_tokens": 577,
+  "reasoning_tokens": 469,
+  "cost_usd": 0.00276,
+  "seconds": 5.309,
+  "batch_id": null,
+  "requested_at": "2026-10-19T18:34:47+00:00"
+}

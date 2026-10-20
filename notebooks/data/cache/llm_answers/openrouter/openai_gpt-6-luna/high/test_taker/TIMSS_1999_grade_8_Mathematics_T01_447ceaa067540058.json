@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 1999/grade 8/Mathematics/T01",
+  "item_keys": [
+    "TIMSS 1999/grade 8/Mathematics/T01"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "A club has 86 members, and there are 14 more girls than boys. How many boys and how many girls are members of the club?\n\nShow your work.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Let the number of boys be b. Then the number of girls is b + 14.\n\nb + (b + 14) = 86\n2b = 72\nb = 36\n\nThere are 36 boys and 36 + 14 = 50 girls."
+  },
+  "llm_thinking": "**Solving the equation**\n\nI need to present an answer in JSON format based on the equation for boys and girls. So, I'm given that the boys plus girls plus 14 equals 86. I can set up the equation as 2b + 14 = 86. If I solve for b, I find that b equals 36, which means there are 50 girls. It's key that I show my work to clarify the solution! I'll organize this properly in the required format.",
+  "finish_reason": "stop",
+  "prompt_tokens": 227,
+  "completion_tokens": 113,
+  "reasoning_tokens": 39,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335947-adaJJg0fXIVWd5UYzY66",
+  "requested_at": "2026-10-18T15:20:16+00:00"
+}

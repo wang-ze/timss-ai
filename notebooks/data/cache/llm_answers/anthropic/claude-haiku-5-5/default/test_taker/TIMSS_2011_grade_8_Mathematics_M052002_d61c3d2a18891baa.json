@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 8/Mathematics/M052002",
+  "item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M052002"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "A piece of wood was 40 cm long.\n\nIt was cut into 3 pieces.\n\nThe lengths in cm are\n\n2x − 5\n\nx + 7\n\nx + 6\n\nA. What is the length of the longest piece?\n\nAnswer: ____ cm\n\nB. Show your work. If you use a calculator, you still must describe all the steps you used to obtain your answer.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "A. Answer: 15 cm\n\nB. Work:\nStep 1: The three pieces add up to the original length of 40 cm, so (2x − 5) + (x + 7) + (x + 6) = 40.\nStep 2: Combine like terms: 2x + x + x = 4x and −5 + 7 + 6 = 8, so 4x + 8 = 40.\nStep 3: Subtract 8 from both sides: 4x = 32.\nStep 4: Divide both sides by 4: x = 8.\nStep 5: Substitute x = 8 into each length:\n2x − 5 = 2(8) − 5 = 11 cm\nx + 7 = 8 + 7 = 15 cm\nx + 6 = 8 + 6 = 14 cm\nCheck: 11 + 15 + 14 = 40 cm, which matches the original length.\nStep 6: The largest of 11, 15 and 14 is 15, so the longest piece is 15 cm."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 537,
+  "completion_tokens": 439,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 2.262,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:23:36+00:00"
+}

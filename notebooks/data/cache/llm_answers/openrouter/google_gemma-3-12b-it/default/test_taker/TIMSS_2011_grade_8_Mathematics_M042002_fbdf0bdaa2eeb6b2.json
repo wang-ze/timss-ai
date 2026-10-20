@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 8/Mathematics/M042002",
+  "item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M042002"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Place the four digits 3, 5, 7, and 9 into the boxes below in the positions that would give the greatest result when the two numbers are multiplied.\n\n[Image: Two blank boxes, with one box for each digit, multiplied by another two blank boxes.]\n\nFigure, described in words:\nA vertical multiplication problem showing a two-digit number multiplied by a two-digit number. The top row consists of two blank square boxes side by side. The bottom row consists of a multiplication sign (x) to the left, followed by two blank square boxes side by side directly beneath the top boxes. A horizontal line is drawn underneath the bottom row of boxes.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "To maximize the product of the two two-digit numbers, I should place the largest digits in the tens places. Thus, I would place 9 and 7 in the top boxes and 5 and 3 in the bottom boxes. This would give the problem 97 x 53.\n\nTo show my work:\n97\n x 53\n-----\n291 (97 x 3)\n4850 (97 x 50)\n-----\n5141\n"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 270,
+  "completion_tokens": 122,
+  "reasoning_tokens": 0,
+  "cost_usd": 4.77e-05,
+  "seconds": 1.899,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:07:06+00:00"
+}

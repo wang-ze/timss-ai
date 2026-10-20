@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 8/Mathematics/M042270",
+  "item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M042270"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": null,
+  "system_prompt": "You are an eighth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The length of side of each of the small squares represents 1 cm. Draw an isosceles triangle with a base of 4 cm and a height of 5 cm.\n\n[Image: A square grid that has sides of 8 small squares by 8 small squares.]\n\nFigure, described in words:\nAn 8 by 8 grid of small squares with no numbers or labels.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Use the grid lines as coordinates, with the bottom-left corner at (0,0). Draw a horizontal base along the bottom grid line (y = 0) from (2,0) to (6,0), which is 4 small squares or 4 cm long. The midpoint of the base is x = 4. Mark the apex at (4,5), which is directly above the midpoint and 5 small squares or 5 cm up from the base, so the height is 5 cm. Join the apex (4,5) to each end of the base with straight lines, one from (2,0) to (4,5) and one from (6,0) to (4,5). The result is a triangle with vertices (2,0), (6,0) and (4,5). Its two sides from the apex are equal, each √(2²+5²) = √29 cm, so it is isosceles, with base 4 cm and height 5 cm."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 562,
+  "completion_tokens": 494,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 4.331,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:14:37+00:00"
+}

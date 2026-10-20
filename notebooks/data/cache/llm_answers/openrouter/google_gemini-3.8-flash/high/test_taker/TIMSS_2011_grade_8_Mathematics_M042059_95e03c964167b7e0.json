@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 8/Mathematics/M042059",
+  "item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M042059"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Peter, James, and Andrew each had 20 tries at throwing balls into a basket.\n\nComplete the missing boxes below.\n\n| Name | Number of Successful Shots | Percentage of Successful Shots |\n| --- | --- | --- |\n| Peter | 10 out of 20 | 50 % |\n| James | 15 out of 20 | □ |\n| Andrew | □ out of 20 | 80% |",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "The missing boxes should be filled as follows:\n\n* **James's Percentage of Successful Shots:** 75% (since $\\frac{15}{20} = \\frac{75}{100} = 75\\%$)\n* **Andrew's Number of Successful Shots:** 16 (since $80\\% \\text{ of } 20 = 0.80 \\times 20 = 16$)"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 302,
+  "completion_tokens": 428,
+  "reasoning_tokens": 317,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792336157-txl4lX1Do5kkuqSPK9OG",
+  "requested_at": "2026-10-19T14:20:46+00:00"
+}

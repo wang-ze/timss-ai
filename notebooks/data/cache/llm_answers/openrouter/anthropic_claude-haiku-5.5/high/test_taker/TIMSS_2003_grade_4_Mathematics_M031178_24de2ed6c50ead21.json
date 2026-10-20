@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2003/grade 4/Mathematics/M031178",
+  "item_keys": [
+    "TIMSS 2003/grade 4/Mathematics/M031178"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "George practiced soccer six days a week.\n\nFor 3 of the days he practiced for 45 minutes each day.\n\nFor 3 of the days he practiced for 20 minutes each day.\n\nIn hours and minutes, what is the total amount of time George practiced on these six days?\n\nA. 2 hours 20 minutes\nB. 2 hours 55 minutes\nC. 3 hours 5 minutes\nD. 3 hours 15 minutes",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "D"
+  },
+  "llm_thinking": "Three sets of 45 minutes gives 135 minutes, plus three rests of 20 minutes gives 60 minutes, totaling 195 minutes — 3 hours 15 minutes, matching answer D.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 566,
+  "completion_tokens": 58,
+  "reasoning_tokens": 47,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335960-oItwFneLfMfZRXMM1E4b",
+  "requested_at": "2026-10-19T14:20:47+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "item_key": "TIMSS 2003/grade 4/Mathematics/M031327",
+  "response": "Line L runs diagonally up and to the right with slope 1, rising 1 unit for every 1 unit to the right. To draw a parallel line, I would draw a second straight line with arrowheads at both ends that also rises one square up for each square to the right, at the same 45-degree angle. For example, I would start at the grid intersection 0 units from the left and 0 units from the bottom and draw a line through (0,0), (1,1), (2,2), (3,3), (4,4), (5,5), extending it so it does not cross line L, i.e., a line parallel to L placed to the lower-right of L, such as the line passing through the intersections (4,1) and (8,5) or simply the line through (5,1) and (9,5). The new line stays evenly spaced from line L and never meets it.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the fourth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\nOn the grid, draw a line parallel to line L.\n\n[Image: A grid with line L]\n\nFigure, described in words:\nA grid measuring 11 squares wide by 6 squares high. A straight line segment with arrowheads at both ends is labeled L near its upper-right end. The line follows the diagonals of grid squares at a 45-degree angle (slope of 1), extending from the grid intersection located 3 units from the left and 2 units from the bottom to the intersection located 6 units from the left and 5 units from the bottom.\n\n# Scoring guide of the question (1 point)\n\n- Correct Response (1 point):\n  - Line (or lines) parallel to L\n- Incorrect Response (0 points):\n  - Line perpendicular to L shown\n  - Other incorrect (including crossed out/erased, stray marks, illegible, or off task)\n\n# Response to the question\n\nLine L runs diagonally up and to the right with slope 1, rising 1 unit for every 1 unit to the right. To draw a parallel line, I would draw a second straight line with arrowheads at both ends that also rises one square up for each square to the right, at the same 45-degree angle. For example, I would start at the grid intersection 0 units from the left and 0 units from the bottom and draw a line through (0,0), (1,1), (2,2), (3,3), (4,4), (5,5), extending it so it does not cross line L, i.e., a line parallel to L placed to the lower-right of L, such as the line passing through the intersections (4,1) and (8,5) or simply the line through (5,1) and (9,5). The new line stays evenly spaced from line L and never meets it.\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response accurately describes drawing a straight line with the same slope and direction as line L (slope of 1, at a 45-degree angle), which makes it parallel to line L without intersecting it. This fulfills the requirement for a correct response.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": "**Drawing Parallel Lines**\n\nI'm focused on scoring this TIMSS Grade 4 math item. The core task is assessing how well the student understood and drew a line parallel to a given diagonal line, ensuring they grasped the concept of equal slopes.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 698,
+  "completion_tokens": 209,
+  "reasoning_tokens": 138,
+  "cost_usd": 0.00130725,
+  "seconds": 3.435,
+  "batch_id": null,
+  "requested_at": "2026-10-19T18:40:22+00:00"
+}

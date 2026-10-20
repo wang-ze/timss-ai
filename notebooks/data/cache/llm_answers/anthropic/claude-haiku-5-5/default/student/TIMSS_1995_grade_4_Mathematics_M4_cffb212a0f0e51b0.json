@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 1995/grade 4/Mathematics/M4",
+  "item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/M4"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": null,
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "On this grid, find the dot with the circle around it. We can describe where this dot is by saying it is at First Number 1, Second Number 3\n\n[Image: Coordinate grid]\n\nNow find the dot with the triangle around it. Describe where the dot is on the grid in the same way. Fill in the numbers we would use:\n\nFirst Number ____ Second Number ____\n\nFigure, described in words:\nA coordinate grid with a horizontal axis labeled \"First Number\" and a vertical axis labeled \"Second Number\". The horizontal axis has tick marks and dots numbered 0, 1, 2, 3, 4 with an arrow pointing right. The vertical axis has tick marks and dots numbered 1, 2, 3, 4 with an arrow pointing up, meeting at 0 at the origin. Grid lines form a square grid with dots at each grid intersection from 0 to 4 horizontally and 0 to 4 vertically. A circle is drawn around the dot at First Number 1, Second Number 3. An equilateral triangle is drawn around the dot at First Number 3, Second Number 2.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "First Number 3, Second Number 2"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 806,
+  "completion_tokens": 22,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 0.595,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:15:15+00:00"
+}

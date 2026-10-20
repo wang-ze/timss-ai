@@ -1,0 +1,54 @@
+{
+  "unit_key": "TIMSS 2007/grade 4/Mathematics/M031350A+M031350B+M031350C",
+  "item_keys": [
+    "TIMSS 2007/grade 4/Mathematics/M031350A",
+    "TIMSS 2007/grade 4/Mathematics/M031350B",
+    "TIMSS 2007/grade 4/Mathematics/M031350C"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "These 3 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nFor this item, you have been given a cardboard ruler. If you do not have the cardboard ruler raise your hand. Use the map below and your ruler to answer this set of questions.\n\nMarytown is a new town. The people of Marytown are planning their new town. They decided to put the town hall halfway between the lake and the forest, as shown on the map below. They made their measurements from the X's.\n\nMarytown\n\n[Image: Map of Marytown]\n\nAdd a park, a library, and a school to the map of Marytown using the following information.\n\nA. The park should be 200 meters from the lake so people can go fishing and swimming. On the map, mark with an X where you would put the park and write park below the X.\n\nFigure, described in words:\nA map of Marytown enclosed in an irregular rectangular border.\nNear the top right inside the border, text states: \"Scale: 1 cm represents 100 meters\".\nIn the upper-left quadrant is a forest represented by a cluster of pine trees, with an \"X\" mark below it labeled \"Forest\".\nNear the center of the map is an \"X\" mark labeled \"Town Hall\" below it.\nIn the lower-right quadrant is an outlined body of water with wavy horizontal lines inside, with an \"X\" mark directly above it labeled \"Lake\".\n\n## Question 2\n\nFor this item, you have been given a cardboard ruler. If you do not have the cardboard ruler raise your hand. Use the map below and your ruler to answer this set of questions.\n\nMarytown is a new town. The people of Marytown are planning their new town. They decided to put the town hall halfway between the lake and the forest, as shown on the map below. They made their measurements from the X's.\n\nMarytown\n\n[Image: Map of Marytown]\n\nAdd a park, a library, and a school to the map of Marytown using the following information.\n\nB. The library should be at least 300 meters but no more than 400 meters from the town hall. On the map, mark with an X where you would put the library and write library below the X.\n\nFigure, described in words:\nA map of Marytown enclosed in an irregular rectangular border.\nNear the top right inside the border, text states: \"Scale: 1 cm represents 100 meters\".\nIn the upper-left quadrant is a forest represented by a cluster of pine trees, with an \"X\" mark below it labeled \"Forest\".\nNear the center of the map is an \"X\" mark labeled \"Town Hall\" below it.\nIn the lower-right quadrant is an outlined body of water with wavy horizontal lines inside, with an \"X\" mark directly above it labeled \"Lake\".\n\n## Question 3\n\nFor this item, you have been given a cardboard ruler. If you do not have the cardboard ruler raise your hand. Use the map below and your ruler to answer this set of questions.\n\nMarytown is a new town. The people of Marytown are planning their new town. They decided to put the town hall halfway between the lake and the forest, as shown on the map below. They made their measurements from the X's.\n\nMarytown\n\n[Image: Map of Marytown]\n\nAdd a park, a library, and a school to the map of Marytown using the following information.\n\nC. The school should be halfway between the park and the library. On the map, mark with an X where you would put the school and write school below the X.\n\nFigure, described in words:\nA map of Marytown enclosed in an irregular rectangular border.\nNear the top right inside the border, text states: \"Scale: 1 cm represents 100 meters\".\nIn the upper-left quadrant is a forest represented by a cluster of pine trees, with an \"X\" mark below it labeled \"Forest\".\nNear the center of the map is an \"X\" mark labeled \"Town Hall\" below it.\nIn the lower-right quadrant is an outlined body of water with wavy horizontal lines inside, with an \"X\" mark directly above it labeled \"Lake\".\n\nAnswer each of the 3 questions.",
+  "output_schema": {
+    "properties": {
+      "answer_1": {
+        "description": "Your answer to question 1, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 1",
+        "type": "string"
+      },
+      "answer_2": {
+        "description": "Your answer to question 2, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 2",
+        "type": "string"
+      },
+      "answer_3": {
+        "description": "Your answer to question 3, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 3",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer_1",
+      "answer_2",
+      "answer_3"
+    ],
+    "title": "Answers",
+    "type": "object"
+  },
+  "output": {
+    "answer_1": "Okay, I will add the park to the map. The park needs to be 200 meters from the lake. Since 1 cm represents 100 meters, 200 meters is equal to 2 cm. I will measure 2 cm upwards from the 'X' marking the lake. Then, I will place a new 'X' at that spot and write the word 'park' below the 'X'.",
+    "answer_2": "Now, I will add the library to the map. The library needs to be at least 300 meters but no more than 400 meters from the town hall. That means it needs to be between 3 cm and 4 cm away from the Town Hall, using the scale (300/100 = 3 cm and 400/100 = 4 cm). I will measure 3.5 cm (halfway between 3 cm and 4 cm) from the 'X' marking the town hall. I will place a new 'X' at that spot and write the word 'library' below the 'X'.",
+    "answer_3": "Finally, I will add the school to the map. The school needs to be halfway between the park and the library. I will measure the distance between the 'X' marking the park and the 'X' marking the library. Then I will find the midpoint between those two 'X's. I will place a new 'X' at that midpoint and write the word 'school' below the 'X'."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 1055,
+  "completion_tokens": 333,
+  "reasoning_tokens": 0,
+  "cost_usd": 0.0001027,
+  "seconds": 4.414,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:07:09+00:00"
+}

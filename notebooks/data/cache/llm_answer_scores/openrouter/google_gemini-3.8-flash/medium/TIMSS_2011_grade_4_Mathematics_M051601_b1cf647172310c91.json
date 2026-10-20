@@ -1,0 +1,46 @@
+{
+  "item_key": "TIMSS 2011/grade 4/Mathematics/M051601",
+  "response": "13 matches. Each new square adds 3 matches, so figure 4 needs 10 + 3 = 13.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the fourth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\nCooney has to form figures 1 to 4 with matches.\n\nFigures 1, 2, and 3 are shown below.\n\nHe needs four matches to form figure 1, seven matches to form figure 2, and ten matches to form figure 3.\n\nHe uses the same rule each time to make the next figure in the pattern.\n\n[Image: that figure 1 forms a square with four matches, figure 2 forms two squares side by side with seven matches, and figure 3 forms three squares side by side with ten matches.]\n\nHow many matches will he need to form figure 4?\n\nAnswer: ____\n\nFigure, described in words:\nThree figures made of matches arranged in a horizontal row, labeled below with numbers 1, 2, and 3:\n- Figure 1: 4 matches arranged to form a single square (one match on each of the four sides).\n- Figure 2: 7 matches arranged to form a row of two attached squares side by side, sharing one vertical match in the middle (2 top, 2 bottom, and 3 vertical matches).\n- Figure 3: 10 matches arranged to form a row of three attached squares side by side, each adjacent pair sharing a vertical match (3 top, 3 bottom, and 4 vertical matches).\n\n# Scoring guide of the question (1 point)\n\n- Correct Response (1 point):\n  - 13\n- Incorrect Response (0 points):\n  - [Image: four squares side by side formed with 13 matches.]\n  - Other incorrect (including crossed out, erased, stray marks, illegible, or off task)\n\n# Response to the question\n\n13 matches. Each new square adds 3 matches, so figure 4 needs 10 + 3 = 13.\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response gives the correct number of matches needed (13), along with a clear and accurate explanation.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 681,
+  "completion_tokens": 137,
+  "reasoning_tokens": 97,
+  "cost_usd": 0.0010245,
+  "seconds": 3.93,
+  "batch_id": null,
+  "requested_at": "2026-10-19T18:34:58+00:00"
+}

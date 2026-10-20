@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 4/Mathematics/M051001",
+  "item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M051001"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "In a soccer tournament, teams get:\n\n3 points for a win\n1 point for a tie\n0 points for a loss\n\nZedland has 11 points.\n\nWhat is the smallest number of games Zedland could have played?\n\nAnswer: ____",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Okay, I need to figure out how Zedland got 11 points with the fewest games. Let's think! 3 points for a win, 1 point for a tie, and 0 for a loss. 11 is bigger than 10, so they couldn't have just tied. 11 divided by 3 is 3 with a remainder of 2. So, they could have won 3 games (3 x 3 = 9 points). Then they need 2 more points, and they can get those by tying 2 games (2 x 1 = 2 points).  That's 3 wins + 2 ties = 5 games total. Let's see if there's a way to do it with fewer games. If they won 2 games, that's 6 points. Then they need 5 more. They could tie 5 times, which is 7 games. Or they could win 1 more, which is 9 points, and then tie twice for 11 points which is 6 games. We already figured out that 3 wins and 2 ties takes 5 games. So 5 games is the smallest number. 3 wins (9 points) + 2 ties (2 points) = 11 points.  So the answer is 5."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 205,
+  "completion_tokens": 289,
+  "reasoning_tokens": 0,
+  "cost_usd": 8.04e-05,
+  "seconds": 22.272,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:18:52+00:00"
+}

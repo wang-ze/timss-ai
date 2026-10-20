@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2011/grade 4/Mathematics/M051117",
+  "item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M051117"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The graph shows the number of students at each grade in the Pine School.\n\n[Image: Bar graph titled Pine School shows 6 columns labeled 1, 2, 3, 4, 5, and 6. X-axis is labeled Grade. Y-axis is labeled Number of Students with values from 0 to 35 and increments at every 5 units.\n• Grade 1: value of 20.\n• Grade 2: value of 25.\n• Grade 3: value of 20.\n• Grade 4: value of 25.\n• Grade 5: value of 30.\n• Grade 6: value of 25.]\n\nIn the Pine School there is room in each grade for 30 students. How many more students could be in the school?\n\nFigure, described in words:\nA vertical bar graph titled \"Pine School\". The vertical axis is labeled \"Number of Students\" and is marked with grid lines from 0 to 35 in increments of 5 (0, 5, 10, 15, 20, 25, 30, 35). The horizontal axis is labeled \"Grade\" and has tick marks labeled 1, 2, 3, 4, 5, 6. The shaded gray bars have the following heights:\n- Grade 1: height 20\n- Grade 2: height 25\n- Grade 3: height 20\n- Grade 4: height 25\n- Grade 5: height 30\n- Grade 6: height 25\n\nA. 20\nB. 25\nC. 30\nD. 35",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "D"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 882,
+  "completion_tokens": 69,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 1.319,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:23:33+00:00"
+}

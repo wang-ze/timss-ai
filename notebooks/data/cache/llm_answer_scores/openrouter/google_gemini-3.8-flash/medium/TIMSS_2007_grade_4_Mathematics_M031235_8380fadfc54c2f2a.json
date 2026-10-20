@@ -1,0 +1,47 @@
+{
+  "item_key": "TIMSS 2007/grade 4/Mathematics/M031235",
+  "response": "74 divided by 8 is 9 remainder 2, so each child gets 9 sweets with 2 left over. To share equally, 8 - 2 = 6 more sweets are needed (74 + 6 = 80, and 80 ÷ 8 = 10 sweets each). Answer: 6",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the fourth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\nA group of 8 children have 74 sweets altogether. How many more sweets are needed for the children to be able to share them equally?\n\nAnswer: ____\n\n# Scoring guide of the question (1 point)\n\n- Correct Response (1 point):\n  - 6 or any number other than 6 that added to 74 gives a multiple of 8 (e.g., 14, 22)\n- Incorrect Response (0 points):\n  - 9.25, 9 1/4, or 9 with 2 remainder\n  - 2 (remainder) or 9\n  - Other incorrect (including crossed out/erased, stray marks, illegible, or off task)\n- Nonresponse (0 points):\n  - Blank\n\n# Response to the question\n\n74 divided by 8 is 9 remainder 2, so each child gets 9 sweets with 2 left over. To share equally, 8 - 2 = 6 more sweets are needed (74 + 6 = 80, and 80 ÷ 8 = 10 sweets each). Answer: 6\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response",
+          "Nonresponse"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response concludes with the correct answer of 6, supported by accurate mathematical work showing that 6 more sweets are needed to reach 80, which divides equally among 8 children.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": "**Calculating Sweet Distribution**\n\nI'm currently working through the problem of how many more sweets are needed for equal sharing. My current focus is on determining the exact number of sweets required to eliminate any remainder after division.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 544,
+  "completion_tokens": 228,
+  "reasoning_tokens": 171,
+  "cost_usd": 0.001263,
+  "seconds": 4.32,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:52:51+00:00"
+}

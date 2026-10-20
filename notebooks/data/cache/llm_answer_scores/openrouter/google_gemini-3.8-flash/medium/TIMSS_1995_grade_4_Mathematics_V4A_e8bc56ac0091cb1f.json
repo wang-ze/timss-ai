@@ -1,0 +1,47 @@
+{
+  "item_key": "TIMSS 1995/grade 4/Mathematics/V4A",
+  "response": "Naoki won this game.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the fourth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Questions\n\nThese 2 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nIn a game, Mysong and Naoki are making problems. They each have four cards like these.\n\n[1] [2] [3] [4]\n\nThe winner of the game is the person who can make the problem with the largest answer.\n\nMysong placed the cards like this.\n\n[Image: Mysong's card placement]\n\nNaoki placed the cards like this.\n\n[Image: Naoki's card placement]\n\nWho won this game? ____\nHow do you know? ____\n____\n\nFigure, described in words:\nFour square cards are shown in a row labeled with the digits 1, 2, 3, and 4.\nBelow are two vertical addition problems:\nUnder the heading \"Mysong placed the cards like this.\", two rows of two square cards form a vertical addition problem: top row has cards [4] and [3]; bottom row has cards [2] and [1], with a plus sign '+' to the left of the bottom row and a horizontal addition line underneath.\nUnder the heading \"Naoki placed the cards like this.\", two rows of two square cards form a vertical addition problem: top row has cards [3] and [1]; bottom row has cards [2] and [4], with a plus sign '+' to the left of the bottom row and a horizontal addition line underneath.\n\n## Question 2\n\nIn a game, Mysong and Naoki are making problems. They each have four cards like these.\n\n[1] [2] [3] [4]\n\nThe winner of the game is the person who can make the problem with the largest answer.\n\nMysong placed the cards like this.\n\n[Image: Mysong's card placement]\n\nNaoki placed the cards like this.\n\n[Image: Naoki's card placement]\n\nWrite numbers in the squares below to show how you would place the cards to beat both Mysong and Naoki.\n\n[Image: Blank addition grid]\n\nFigure, described in words:\nFour square cards are shown in a row labeled with the digits 1, 2, 3, and 4.\nBelow are two vertical addition problems:\nUnder the heading \"Mysong placed the cards like this.\", two rows of two square cards form a vertical addition problem: top row has cards [4] and [3]; bottom row has cards [2] and [1], with a plus sign '+' to the left of the bottom row and a horizontal addition line underneath.\nUnder the heading \"Naoki placed the cards like this.\", two rows of two square cards form a vertical addition problem: top row has cards [3] and [1]; bottom row has cards [2] and [4], with a plus sign '+' to the left of the bottom row and a horizontal addition line underneath.\nAt the bottom of the item is an empty addition grid consisting of four blank squares arranged in two rows of two, with a plus sign '+' to the left of the bottom row and a horizontal addition line underneath.\n\n# Scoring guide of question 1 (2 points)\n\n- Correct Response (2 points):\n  - Mysong. 64 and 55 are shown (or 9, which is the difference between 64 and 55) with a correct verbal explanation.\n- Partially Correct (1 point):\n  - Mysong. 64 and 55 are shown (or 43 − 31 > 24 − 21) with an unsatisfactory explanation.\n  - Mysong. 64 and 55 are shown (or 43 − 31 > 24 − 21) without any further explanation.\n  - Mysong. The response given is a verbal explanation. Either 64 or 55 is shown but not both.\n  - Mysong. The response gives no verbal or numeric explanation.\n  - Other responses containing Mysong. For example, “because Mysong had the largest answer.”\n- Incorrect Response (0 points):\n  - Neither Mysong nor Naoki win.\n  - Naoki. There may or may not be an explanation.\n  - Other incorrect, including “both won.”\n\n# Response to question 1\n\nNaoki won this game.\n\nScore the response to question 1.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Partially Correct",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response incorrectly identifies Naoki as the winner, which belongs to the Incorrect Response category according to the scoring guide.",
+    "category": "Incorrect Response"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 1217,
+  "completion_tokens": 176,
+  "reasoning_tokens": 134,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792336166-JzA8PI6YqN5psdoBWiYE",
+  "requested_at": "2026-10-19T14:20:52+00:00"
+}

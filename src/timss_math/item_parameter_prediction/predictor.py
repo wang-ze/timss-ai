@@ -21,31 +21,25 @@ back from it.
 from __future__ import annotations
 
 import abc
-import asyncio
-import contextlib
 import functools
-import threading
-from collections.abc import Coroutine, Iterable
+from collections.abc import Iterable
 from contextlib import AbstractAsyncContextManager
 from pathlib import Path
 from typing import Any, ClassVar
 
-from .config import data_dir as resolve_data_dir
-from .config import slug
+from ..config import data_dir as resolve_data_dir
+from ..config import slug
+from ..items import (  # noqa: F401 (plural, here before it was shared)
+    ItemBank,
+    TimssItem,
+    model_parameters,
+    plural,
+)
+from ..running import UnusableOutputError, run_sync
 from .index import ITEM_PARAMETERS_PAYLOAD, ItemIndex, SearchMethod
-from .items import ItemBank, TimssItem, model_parameters
 
 PREDICTIONS_DIR = Path("cache") / "parameter_predictions" / "timss_math"
 """Where predictions are saved in the data directory, one subdirectory per provider and model."""
-
-
-class UnusableOutputError(RuntimeError):
-    """The predictor returned no usable prediction, such as output cut off at max_tokens or probabilities that do not
-    fit the rubric; a rerun may succeed."""
-
-
-def plural(count: int, noun: str) -> str:
-    return f"{count} {noun}{'' if count == 1 else 's'}"
 
 
 def reference_summary(entry: dict) -> dict:
@@ -64,38 +58,6 @@ def reference_summary(entry: dict) -> dict:
         "scaled_points": parameters["scaled_points"],
         **{name: parameters[name] for name in model_parameters(parameters["irt_model"], parameters["scaled_points"])},
     }
-
-
-def run_sync(coroutine: Coroutine):
-    """Run a coroutine to the end from synchronous code, and return its result.
-
-    Without a running event loop (a script or the command line) it runs in a new one. Inside a running loop (a
-    notebook) it runs in a new loop in a thread, and an interrupt cancels it there before it is raised here.
-    """
-    try:
-        asyncio.get_running_loop()
-    except RuntimeError:
-        return asyncio.run(coroutine)
-    loop = asyncio.new_event_loop()
-    task = loop.create_task(coroutine)
-
-    def run():
-        with contextlib.suppress(BaseException):  # task.result() raises it in the calling thread
-            loop.run_until_complete(task)
-        loop.run_until_complete(loop.shutdown_asyncgens())
-        loop.run_until_complete(loop.shutdown_default_executor())
-        loop.close()
-
-    thread = threading.Thread(target=run, name="run_sync")
-    thread.start()
-    try:
-        thread.join()
-    except KeyboardInterrupt:
-        with contextlib.suppress(RuntimeError):  # the loop has closed: the task is done
-            loop.call_soon_threadsafe(task.cancel)
-        thread.join()
-        raise
-    return task.result()
 
 
 class Predictor(abc.ABC):

@@ -1,0 +1,46 @@
+{
+  "unit_key": "TIMSS 2003/grade 8/Mathematics/M032649A+M032649B",
+  "item_keys": [
+    "TIMSS 2003/grade 8/Mathematics/M032649A",
+    "TIMSS 2003/grade 8/Mathematics/M032649B"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "These 2 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nIn a car rally two checkpoints are 160 km apart. Drivers must travel from one checkpoint to the other in exactly 2.5 hours to earn maximum points.\n\nA. What must the average speed be to travel the 160 km in this time?\n\nAnswer: ____\n\n## Question 2\n\nIn a car rally two checkpoints are 160 km apart. Drivers must travel from one checkpoint to the other in exactly 2.5 hours to earn maximum points.\n\nB. A driver took 1 hour to travel through a 40 km hilly section at the beginning of the course.\n\nWhat must the average speed, in kilometers per hour, be for the remaining 120 km if the total time between checkpoints is to be 2.5 hours?\n\nAnswer: ____\n\nAnswer each of the 2 questions.",
+  "output_schema": {
+    "properties": {
+      "answer_1": {
+        "description": "Your answer to question 1, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 1",
+        "type": "string"
+      },
+      "answer_2": {
+        "description": "Your answer to question 2, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 2",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer_1",
+      "answer_2"
+    ],
+    "title": "Answers",
+    "type": "object"
+  },
+  "output": {
+    "answer_1": "Average speed = distance ÷ time = 160 km ÷ 2.5 h = 64 km/h. Work: 160 ÷ 2.5 = 64. Answer: 64 km/h.",
+    "answer_2": "Remaining time = 2.5 h − 1 h = 1.5 h. Remaining distance = 160 km − 40 km = 120 km. Required average speed = 120 km ÷ 1.5 h = 80 km/h. Answer: 80 km/h."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 798,
+  "completion_tokens": 169,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 1.476,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:22:30+00:00"
+}

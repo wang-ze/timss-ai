@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2007/grade 4/Mathematics/M031240",
+  "item_keys": [
+    "TIMSS 2007/grade 4/Mathematics/M031240"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "There were 5 children at the park. Some were wearing hats and some were not.\n\n| Girls | Boys |\n| --- | --- |\n| Maria was wearing a hat | Peter was wearing a hat |\n| Megan was not wearing a hat | Chan was not wearing a hat |\n| Mandy was not wearing a hat | |\n\nComplete the table to show the number of boys and girls that were wearing hats and were not wearing hats.\n\n| | Hat | No hat |\n| --- | --- | --- |\n| Boys | | |\n| Girls | | |",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Boys: Hat = 1 (Peter), No hat = 1 (Chan). Girls: Hat = 1 (Maria), No hat = 2 (Megan and Mandy). Completed table: Boys row: 1 | 1; Girls row: 1 | 2."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 603,
+  "completion_tokens": 195,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 1.392,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:23:27+00:00"
+}

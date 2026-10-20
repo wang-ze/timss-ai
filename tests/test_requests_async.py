@@ -12,7 +12,9 @@ from pathlib import Path
 
 import httpx2
 import openai
+from openai.lib._parsing._completions import type_to_response_format_param
 
+from timss_math.batch import BatchManifests
 from timss_math.item_parameter_prediction import (
     ItemIndex,
     LeaveOneOut,
@@ -20,18 +22,13 @@ from timss_math.item_parameter_prediction import (
     LLMSettings,
     NoPredictionError,
 )
-from timss_math.item_parameter_prediction.batch import BatchManifests
-from timss_math.item_parameter_prediction.evaluation import run_sync
-from timss_math.item_parameter_prediction.llm import (
-    Completion,
-    ContextWindowError,
-    LLMClient,
-    messages_of,
-    prediction_schema,
-)
+from timss_math.item_parameter_prediction.llm import prediction_schema
+from timss_math.llm import Completion, ContextWindowError, LLMClient, messages_of
+from timss_math.running import run_sync
 
 SCHEMAS = [("3PL", 1), ("2PL", 1), ("GPCM", 2), ("GPCM", 3)]
 OLLAMA = LLMSettings(provider="ollama", model="llama3.2", reasoning_effort=None, max_tokens=4096)
+ANTHROPIC = LLMSettings(provider="anthropic", model="claude-haiku-5-5", reasoning_effort="none", api_key="test")
 
 
 def valid_output(schema) -> dict:
@@ -71,17 +68,20 @@ class AsyncSessionTest(unittest.TestCase):
             LLMSettings(api_key="test"),
             LLMSettings(reasoning_effort=None, api_key="test"),
             LLMSettings(provider="gemini", model="gemini-3.8-flash", api_key="test"),
+            ANTHROPIC,
+            LLMSettings(provider="anthropic", model="claude-haiku-5-5", reasoning_effort=None, api_key="test"),
         ):
             for irt_model, points in SCHEMAS:
                 self.check_same_body(settings, prediction_schema(irt_model, points))
 
-    def check_same_body(self, settings: LLMSettings, schema):
+    def check_same_body(self, settings: LLMSettings, schema, response: dict | None = None) -> tuple[list, Completion]:
+        """The requests that the sync client and the async session send, which must be equal, and the completion."""
         sent = {"sync": [], "async": []}
 
         def handler(mode):
             def respond(request: httpx2.Request) -> httpx2.Response:
                 sent[mode].append((request.url.path, json.loads(request.content)))
-                return httpx2.Response(200, json=chat_response(schema))
+                return httpx2.Response(200, json=response or chat_response(schema))
 
             return respond
 
@@ -101,6 +101,30 @@ class AsyncSessionTest(unittest.TestCase):
         async_completion = asyncio.run(complete_async())
         self.assertEqual(sent["async"], sent["sync"])
         self.assertEqual(async_completion, sync_completion)
+        return sent["sync"], sync_completion
+
+    def test_anthropic(self):
+        """Claude through the OpenAI SDK: Anthropic's thinking setting in place of reasoning_effort, and a response
+        without cost or reasoning tokens."""
+        schema = prediction_schema("3PL", 1)
+        usage = {"prompt_tokens": 100, "completion_tokens": 50, "total_tokens": 150}
+        response = chat_response(schema) | {"model": "claude-haiku-5-5", "usage": usage}
+        [(path, body)], completion = self.check_same_body(ANTHROPIC, schema, response)
+        self.assertEqual(LLMClient(ANTHROPIC).base_url, "https://api.anthropic.com/v1")
+        self.assertEqual(path, "/v1/chat/completions")
+        self.assertEqual(body["thinking"], {"type": "disabled"})
+        self.assertEqual(body["max_tokens"], ANTHROPIC.max_tokens)
+        self.assertEqual(body["response_format"], type_to_response_format_param(schema))
+        self.assertNotIn("reasoning_effort", body)
+        self.assertEqual((completion.cost_usd, completion.reasoning_tokens, completion.completion_tokens), (None, None, 50))
+        default_thinking = LLMSettings(provider="anthropic", model="claude-haiku-5-5", reasoning_effort=None, api_key="test")
+        [(_, body)], _ = self.check_same_body(default_thinking, schema, response)
+        self.assertNotIn("thinking", body)
+
+    def test_anthropic_takes_no_effort_level(self):
+        for effort in ("medium", "high", True):
+            with self.assertRaises(ValueError):
+                LLMSettings(provider="anthropic", model="claude-haiku-5-5", reasoning_effort=effort)
 
     def complete_ollama(self, status_code: int, body: dict | str):
         schema = prediction_schema("2PL", 1)

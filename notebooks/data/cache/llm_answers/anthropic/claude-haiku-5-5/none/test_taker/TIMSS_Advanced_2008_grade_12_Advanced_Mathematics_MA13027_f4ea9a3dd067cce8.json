@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13027",
+  "item_keys": [
+    "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13027"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "A regular polygon of n sides is inscribed in a circle of radius 1.\n\nWhat is the value of the limit of the perimeter of the polygon as the number of sides n increases to infinity?",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "As n increases, the inscribed regular n-gon's perimeter approaches the circumference of the circle. The perimeter is P_n = 2n·sin(π/n). As n→∞, π/n→0 and sin(π/n)/(π/n)→1, so P_n = 2π·(sin(π/n)/(π/n)) → 2π. The limit of the perimeter is 2π (approximately 6.283), which is the circumference of the circle of radius 1."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 512,
+  "completion_tokens": 158,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 1.631,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:21:13+00:00"
+}

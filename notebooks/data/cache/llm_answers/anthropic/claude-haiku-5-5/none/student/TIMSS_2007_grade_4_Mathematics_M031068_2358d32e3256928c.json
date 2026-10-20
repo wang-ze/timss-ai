@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2007/grade 4/Mathematics/M031068",
+  "item_keys": [
+    "TIMSS 2007/grade 4/Mathematics/M031068"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Don, Rob, and Lynn walk home from school together. It takes them 25 minutes to walk to Lynn’s house. Then it takes Don and Rob 10 minutes to get to Rob’s house. From there it takes Don 5 minutes to walk home.\n\nAt what time must they leave school so that Don arrives home at 3:50 p.m.?\n\nAnswer: ____ p.m.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Total walking time from school to Don's home is 25 + 10 + 5 = 40 minutes. Working backward from 3:50 p.m.: 3:50 minus 40 minutes is 3:10 p.m. So they must leave school at 3:10 p.m."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 576,
+  "completion_tokens": 94,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 1.055,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:15:17+00:00"
+}

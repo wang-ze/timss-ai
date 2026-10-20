@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2007/grade 8/Mathematics/M032688",
+  "item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M032688"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "none",
+  "system_prompt": "You are an eighth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: Spinner]\n\nRoland’s spinner has three sectors of different colors, orange, purple, and green. Roland spins the pointer 1000 times. The chart below shows how many times the pointer stops on each section.\n\n| Color | Times Stopped |\n| :--- | :---: |\n| Orange | 510 |\n| Purple | 243 |\n| Green | 247 |\n\nDraw lines on the spinner above to make the three sectors the approximate size you would expect them to be. Label them orange, purple, and green.\n\nFigure, described in words:\nA circular spinner with a central circular hub and an arrow pointer angled upward and to the right. Around the circumference of the circle is an outer rim with 8 equally spaced tick marks, dividing the circle into 8 equal arcs of 45° each (at 12 o'clock, 1:30, 3 o'clock, 4:30, 6 o'clock, 7:30, 9 o'clock, and 10:30). The interior of the circle is blank.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Draw two straight lines from the center to the rim to make sectors of approximately 184°, 87°, and 89°. Label the largest sector orange (about 184°), and the other two sectors purple and green (about 87° and 89°, respectively). The proportions are based on 510/1000, 243/1000, and 247/1000."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 429,
+  "completion_tokens": 92,
+  "reasoning_tokens": 0,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792430069-OKxlUXCiIg6xiDEHpoDm",
+  "requested_at": "2026-10-19T17:51:38+00:00"
+}

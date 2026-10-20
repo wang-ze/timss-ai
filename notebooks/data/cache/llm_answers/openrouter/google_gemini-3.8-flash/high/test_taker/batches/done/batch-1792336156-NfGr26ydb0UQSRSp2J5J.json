@@ -1,0 +1,47 @@
+{
+  "batch_id": "batch-1792336156-NfGr26ydb0UQSRSp2J5J",
+  "model": "google/gemini-3.8-flash",
+  "submitted_at": "2026-10-18T15:09:16+00:00",
+  "collected_at": "2026-10-19T14:20:46+00:00",
+  "status": "completed",
+  "finalized_at": 1792348828,
+  "request_counts": {
+    "total": 6,
+    "completed": 6,
+    "failed": 0
+  },
+  "usage": {
+    "prompt_tokens": 5804,
+    "completion_tokens": 20072,
+    "total_tokens": 25876,
+    "cost": 0.0398115,
+    "is_byok": false
+  },
+  "error": null,
+  "requests": {
+    "cea3f1e89ed961f0": {
+      "item_key": "TIMSS 2011/grade 8/Mathematics/M042169A+M042169B+M042169C",
+      "outcome": "saved"
+    },
+    "a3a9b354cb42e26c": {
+      "item_key": "TIMSS 1995/grade 4/Mathematics/U3A+U3B+U3C",
+      "outcome": "saved"
+    },
+    "9176af3d87209767": {
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M032744+M032745+M032743",
+      "outcome": "LengthFinishReasonError: Could not parse response content as the length limit was reached - CompletionUsage(completion_tokens=16368, prompt_tokens=1418, total_tokens=17786, completion_tokens_details=CompletionTokensDetails(accepted_prediction_tokens=None, audio_tokens=0, reasoning_tokens=15728, rejected_prediction_tokens=None, text_tokens=None, image_tokens=0), prompt_tokens_details=PromptTokensDetails(audio_tokens=0, cache_write_tokens=0, cached_tokens=0, image_tokens=None, text_tokens=None, video_tokens=0))"
+    },
+    "65b30ba6ce08c69c": {
+      "item_key": "TIMSS 2003/grade 8/Mathematics/M022261A+M022261B+M022261C",
+      "outcome": "saved"
+    },
+    "a5bd1602d7b905fa": {
+      "item_key": "TIMSS 1999/grade 8/Mathematics/V04A+V04B+V04C",
+      "outcome": "saved"
+    },
+    "d8856d57dfd090dc": {
+      "item_key": "TIMSS 2007/grade 8/Mathematics/M042301A+M042301B+M042301C",
+      "outcome": "saved"
+    }
+  }
+}

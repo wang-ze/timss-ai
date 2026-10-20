@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2011/grade 8/Mathematics/M032424",
+  "item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M032424"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are an eighth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Jo has three metal blocks. The weight of each block is the same.\nWhen she weighed one block against 8 grams, this is what happened.\n\n[Image: The block is lighter than the weight of 8 grams on the scale.]\n\nWhen she weighed all three blocks against 20 grams, this is what happened.\n\n[Image: The three blocks are heavier than the weight of 20 grams on the scale.]\n\nWhich of the following could be the weight of one metal block?\n\nFigure, described in words:\nTwo balance scale diagrams:\n- Top balance scale: The beam is tilted down to the right. On the higher left pan rests one gray rectangular metal block. On the lower right pan rest four weights: one large weight labeled \"5g\" and three small weights stacked beside it, each labeled \"1g\" (total 8 grams).\n- Bottom balance scale: The beam is tilted down to the left. On the lower left pan rests a stack of three identical gray rectangular metal blocks. On the higher right pan rest two large weights, each labeled \"10g\" (total 20 grams).\n\nA. 5 g\nB. 6 g\nC. 7 g\nD. 8 g",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "C"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 815,
+  "completion_tokens": 10,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 0.727,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:15:42+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "item_key": "TIMSS 2003/grade 4/Mathematics/M031272A",
+  "response": "I would draw a line from one corner of the rectangle to the opposite corner. This makes a diagonal line that cuts across the rectangle. It would create two triangles.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the fourth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Questions\n\nThese 3 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nA. Draw 1 straight line on this rectangle to divide it into 2 triangles.\n\n[Image: Rectangle]\n\nFigure, described in words:\nAn outline of an empty rectangle, wider than it is tall, with horizontal top and bottom sides and vertical left and right sides.\n\n## Question 2\n\nB. Draw 1 straight line on this rectangle to divide it into 2 rectangles.\n\n[Image: Rectangle]\n\nFigure, described in words:\nAn outline of an empty rectangle, wider than it is tall, with horizontal top and bottom sides and vertical left and right sides.\n\n## Question 3\n\nC. Draw 2 straight lines on this rectangle to divide it into 1 rectangle and 2 triangles.\n\n[Image: Rectangle]\n\nFigure, described in words:\nAn outline of an empty rectangle, wider than it is tall, with horizontal top and bottom sides and vertical left and right sides.\n\n# Scoring guide of question 1 (1 point)\n\n- Correct Response (1 point):\n  - One diagonal drawn\n- Incorrect Response (0 points):\n  - One horizontal or vertical line drawn\n  - Other incorrect (including crossed out/erased, stray marks, illegible or off task)\n\n# Response to question 1\n\nI would draw a line from one corner of the rectangle to the opposite corner. This makes a diagonal line that cuts across the rectangle. It would create two triangles.\n\nScore the response to question 1.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The student describes drawing a diagonal line from one corner of the rectangle to the opposite corner, dividing the rectangle into two triangles. This satisfies the requirement for a correct response.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": "**Analyzing Rectangle Division**\n\nI'm reviewing the scoring rubric for dividing a rectangle into two triangles. It's clear that only a diagonal line constitutes a correct response, while horizontal or vertical lines are considered incorrect. My focus is on ensuring this distinction is consistently applied.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 613,
+  "completion_tokens": 173,
+  "reasoning_tokens": 120,
+  "cost_usd": 0.0011085,
+  "seconds": 2.561,
+  "batch_id": null,
+  "requested_at": "2026-10-19T18:37:28+00:00"
+}

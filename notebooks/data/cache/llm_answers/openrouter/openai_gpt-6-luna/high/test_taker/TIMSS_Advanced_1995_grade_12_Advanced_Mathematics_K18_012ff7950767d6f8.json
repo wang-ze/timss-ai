@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K18",
+  "item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K18"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "In the ΔABC the altitudes BN and CM intersect at point S. The measure of ∠MSB is 40° and the measure of ∠SBC is 20°. Write a PROOF of the following statement:\n\n“ΔABC is isosceles.”\n\nGive geometric reasons for statements in your proof.\n\n[Image: Triangle ABC with altitudes BN and CM intersecting at S]\n\nFigure, described in words:\nA triangle ABC with vertex A at the top, vertex B at the bottom left, and vertex C at the bottom right. Segment BN is an altitude drawn from B to AC, with a right-angle symbol at N. Segment CM is an altitude drawn from C to AB, with a right-angle symbol at M. BN and CM intersect at interior point S. The angle MSB is marked with an arc and labeled 40°. The angle SBC is marked with an arc and labeled 20°.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Since CM ⟂ AB and M lies on AB, ∠BMS = 90°. In ΔBMS,\n\n∠SBM = 180° − 90° − 40° = 50°.\n\nBecause BM lies along BA, ∠ABS = 50°. Therefore,\n\n∠ABC = ∠ABS + ∠SBC = 50° + 20° = 70°.\n\nAlso, BS ⟂ AC, so the angle between BC and AC is complementary to ∠SBC. Thus,\n\n∠ACB = 90° − 20° = 70°.\n\nHence ∠ABC = ∠ACB. Equal angles in a triangle stand opposite equal sides, so AC = AB. Therefore, ΔABC is isosceles."
+  },
+  "llm_thinking": "**Considering triangle relationships**\n\nIn triangle BMS, I note that ∠BMS is 90 degrees, making BM line AB and MS line CM perpendicular. From this, ∠SBM measures 50 degrees. Thus, I find that ∠ABC equals the sum of angle SBM and angle SBC, which is 70 degrees. Now, I need to determine ∠BCA to confirm relationships, especially with CN perpendicular to AC. Angles at B and C seem equal, which suggests an isosceles triangle. I'll ensure that the geometric calculations are accurate.",
+  "finish_reason": "stop",
+  "prompt_tokens": 395,
+  "completion_tokens": 1224,
+  "reasoning_tokens": 1034,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335944-NQqtgAeCjkxiMKglznpS",
+  "requested_at": "2026-10-18T15:11:21+00:00"
+}

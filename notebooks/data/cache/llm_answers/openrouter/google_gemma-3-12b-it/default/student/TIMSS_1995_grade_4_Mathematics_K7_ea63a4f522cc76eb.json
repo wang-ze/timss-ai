@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 1995/grade 4/Mathematics/K7",
+  "item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/K7"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "A thin wire 20 centimeters long is formed into a rectangle. If the width of this rectangle is 4 centimeters, what is its length?\n\nA. 5 centimeters\nB. 6 centimeters\nC. 12 centimeters\nD. 16 centimeters",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "C"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 208,
+  "completion_tokens": 7,
+  "reasoning_tokens": 0,
+  "cost_usd": 1.7175e-05,
+  "seconds": 1.606,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:18:39+00:00"
+}

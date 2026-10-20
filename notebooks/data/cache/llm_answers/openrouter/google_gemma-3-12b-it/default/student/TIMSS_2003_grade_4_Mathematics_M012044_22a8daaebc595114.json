@@ -1,0 +1,45 @@
+{
+  "unit_key": "TIMSS 2003/grade 4/Mathematics/M012044",
+  "item_keys": [
+    "TIMSS 2003/grade 4/Mathematics/M012044"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Which shows 2/3 of the square shaded?\n\nFigure, described in words:\nFive identical squares, labeled A through E, each partitioned and shaded differently:\n- Option A: The square is divided horizontally into 5 equal strips. The top 2 strips are shaded grey and the bottom 3 strips are unshaded (white).\n- Option B: The square is divided by a diagonal from the bottom-left corner to the top-right corner, and a line segment from the center to the bottom-right corner. The entire upper-left triangular half is shaded grey, the right triangular section is shaded grey, and the bottom triangular section is unshaded.\n- Option C: The square is divided by two vertical lines into three strips: a narrow shaded strip on the left, a wide unshaded strip in the middle, and a narrow shaded strip on the right.\n- Option D: An unshaded triangle has its base along the entire bottom edge of the square and its apex at the midpoint of the top edge. The two right triangles flanking it on the left and right are shaded grey.\n- Option E: The square is divided by two vertical lines into 3 equal-width vertical strips. The left strip and the right strip are shaded grey, and the middle strip is unshaded.\n\nA. [Image: Square divided horizontally into 5 strips]\nB. [Image: Square divided into three triangles]\nC. [Image: Square divided vertically into 3 unequal strips]\nD. [Image: Square with an unshaded triangle]\nE. [Image: Square divided vertically into 3 equal strips]",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "E"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 488,
+  "completion_tokens": 7,
+  "reasoning_tokens": 0,
+  "cost_usd": 3.8175e-05,
+  "seconds": 0.55,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:14:35+00:00"
+}

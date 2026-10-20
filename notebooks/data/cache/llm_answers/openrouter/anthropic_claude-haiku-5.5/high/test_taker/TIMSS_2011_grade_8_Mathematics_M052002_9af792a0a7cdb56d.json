@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 8/Mathematics/M052002",
+  "item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M052002"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "A piece of wood was 40 cm long.\n\nIt was cut into 3 pieces.\n\nThe lengths in cm are\n\n2x − 5\n\nx + 7\n\nx + 6\n\nA. What is the length of the longest piece?\n\nAnswer: ____ cm\n\nB. Show your work. If you use a calculator, you still must describe all the steps you used to obtain your answer.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Part A: 15 cm. Part B: The three pieces add up to the original 40 cm, so (2x − 5) + (x + 7) + (x + 6) = 40. Combining like terms gives 4x + 8 = 40. Subtracting 8 from both sides gives 4x = 32, so x = 8. Substituting x = 8 into each length: 2x − 5 = 2(8) − 5 = 11 cm; x + 7 = 8 + 7 = 15 cm; x + 6 = 8 + 6 = 14 cm. Check: 11 + 15 + 14 = 40 cm. The longest piece is 15 cm, so the answer is 15 cm."
+  },
+  "llm_thinking": "Adding up the three pieces gives 4x+8=40, so x=8, making the pieces 11, 15, and 14 cm — the longest piece is 15 cm. I'll format the final answer as a single-line JSON response showing this work.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 537,
+  "completion_tokens": 347,
+  "reasoning_tokens": 115,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335961-VWbz6F0PkdlHoUJEbmRp",
+  "requested_at": "2026-10-19T14:20:48+00:00"
+}

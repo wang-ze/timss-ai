@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 8/Mathematics/M042270",
+  "item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M042270"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are an eighth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The length of side of each of the small squares represents 1 cm. Draw an isosceles triangle with a base of 4 cm and a height of 5 cm.\n\n[Image: A square grid that has sides of 8 small squares by 8 small squares.]\n\nFigure, described in words:\nAn 8 by 8 grid of small squares with no numbers or labels.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Okay, here's how I would draw the isosceles triangle on the grid: \n\n1.  **Base:** I'd start by marking the base. I'd draw a horizontal line segment along the bottom of the grid, using 4 small squares. So, I would start at one corner of the bottom row, move four squares to the right, and connect those two points with a straight line. \n2.  **Height:** Next, I'll find the midpoint of the base. Since the base is 4 cm, the midpoint is 2 cm from either end. I'd mark that midpoint. Then, I would draw a vertical line segment upwards from the midpoint of the base. This line will be 5 cm long, going up the grid. I'll count 5 small squares up from the midpoint.\n3.  **Connect the Vertices:** Finally, I'll draw a line from each end of the base to the top vertex (the end of the height line). This will complete the isosceles triangle. Because it's isosceles, the two lines connecting the base to the top vertex will be the same length."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 232,
+  "completion_tokens": 249,
+  "reasoning_tokens": 0,
+  "cost_usd": 7.3425e-05,
+  "seconds": 19.328,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:14:57+00:00"
+}

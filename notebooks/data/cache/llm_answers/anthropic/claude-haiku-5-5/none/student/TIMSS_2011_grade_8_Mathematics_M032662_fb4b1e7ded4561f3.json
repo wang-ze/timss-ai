@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2011/grade 8/Mathematics/M032662",
+  "item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M032662"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are an eighth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: A numbered axis, from 0 to 2. Two dots are shown, “P” and “Q”. “P” lies roughly halfway between 0 and 1 and “Q” lies roughly three fourths between 0 and 1.]\n\nP and Q represent two fractions on the number line above.\n\nP × Q = N.\n\nWhich of these shows the location of N on the number line?\n\nFigure, described in words:\nThe figure above the text shows a horizontal number line with an arrow at the right end. There are tick marks labeled 0, 1, and 2, with equal spacing between 0 and 1 and between 1 and 2. Between 0 and 1, two points are marked with black dots: point P is labeled below the line at approximately 0.5 (halfway between 0 and 1), and point Q is labeled below the line at approximately 0.75 (three-fourths of the distance from 0 to 1).\n\nEach of the four response options shows the same number line with points P and Q in their original positions, along with a third point labeled N above the line:\n- Option A: Point N is marked halfway between 1 and 2, at approximately 1.5.\n- Option B: Point N is marked between Q and 1, at approximately 0.85.\n- Option C: Point N is marked between P and Q, at approximately 0.625.\n- Option D: Point N is marked between 0 and P, at approximately 0.25.\n\nA. [Image: A numbered axis from 0 to 2 where “P” lies roughly halfway between 0 and 1, “Q” lays roughly three fourths between 0 and 1, and “N” lies halfway between 1 and 2.]\nB. [Image: A numbered axis from 0 to 2 where “P” lies roughly halfway between 0 and 1, “Q” lies roughly three fourths between 0 and 1, and “N” lies after Q but before 1.]\nC. [Image: A numbered axis from 0 to 2 where “P” lies roughly halfway between 0 and 1, “Q” lies roughly three fourths between 0 and 1, and “N” lies in between P and Q.]\nD. [Image: A numbered axis from 0 to 2 where “P” lies roughly halfway between 0 and 1, “Q” lies roughly three fourths between 0 and 1, and “N” lies in between 0 and P.]",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "D"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 1199,
+  "completion_tokens": 10,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 0.94,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:15:12+00:00"
+}

@@ -38,7 +38,6 @@ import hashlib
 import json
 import logging
 import re
-import sys
 import time
 from collections.abc import Callable, Iterable
 from dataclasses import dataclass, field
@@ -46,26 +45,31 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
-from openpyxl.cell.cell import ILLEGAL_CHARACTERS_RE
 from scipy import stats
 
-from .batch import TERMINAL_STATUSES, BatchAPIError, BatchManifests, OpenRouterBatches
-from .config import data_dir as resolve_data_dir
-from .config import write_json
+from ..batch import TERMINAL_STATUSES, BatchAPIError, BatchManifests, OpenRouterBatches
+from ..command_line import configure_output, optional_int
+from ..config import (  # noqa: F401 (importable from here as before they were shared)
+    EXCEL_CELL_LIMIT,
+    excel_value,
+    write_json,
+)
+from ..config import data_dir as resolve_data_dir
+from ..items import PARAMETER_NAMES, ItemBank, plural, predicted_parameters
+from ..llm import BASE_URLS as LLM_PROVIDERS
+from ..llm import LLMSettings, parse_reasoning_effort
+from ..running import run_sync
 from .embeddings import DEFAULT_MODELS as DEFAULT_EMBEDDING_MODELS
 from .embeddings import EMBEDDING_PROVIDERS, EmbeddingSettings
 from .index import SEARCH_METHODS, IndexSettings, ItemIndex
-from .items import PARAMETER_NAMES, ItemBank, predicted_parameters
 from .jev import BASE_URLS as JEV_PROVIDERS
 from .jev import CONTEXTS, ESTIMATORS, JevPredictor, JevSettings
-from .llm import BASE_URLS as LLM_PROVIDERS
-from .llm import LLMPredictor, LLMSettings
-from .predictor import Predictor, plural, run_sync
+from .llm import LLMPredictor
+from .predictor import Predictor
 
 log = logging.getLogger(__name__)
 
 RUNS_DIR = "parameter_prediction_runs"
-EXCEL_CELL_LIMIT = 32_767
 SAVED_FILE = re.compile(r"(.+)_[0-9a-f]{16}\.json")  # <item file stem>_<identity hash>.json
 
 
@@ -591,17 +595,6 @@ def flatten(settings: dict, prefix: str = "") -> dict:
     return flat
 
 
-def excel_value(value):
-    """A value Excel accepts: no control characters, and at most EXCEL_CELL_LIMIT characters."""
-    if not isinstance(value, str):
-        return value
-    value = ILLEGAL_CHARACTERS_RE.sub("", value)
-    if len(value) <= EXCEL_CELL_LIMIT:
-        return value
-    note = " [cut at the Excel cell limit; the saved prediction has the full text]"
-    return value[: EXCEL_CELL_LIMIT - len(note)] + note
-
-
 @dataclass
 class PredictionResults:
     """The leave-one-out predictions of a run and their errors."""
@@ -653,14 +646,6 @@ class PredictionResults:
         return cls(predictions, errors, settings)
 
 
-def _optional_int(value: str) -> int | None:
-    return None if value.lower() in ("full", "none", "all") else int(value)
-
-
-def _reasoning_effort(value: str) -> str | bool | None:
-    return {"omit": None, "true": True, "false": False}.get(value.lower(), value)
-
-
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     embedding_defaults, index_defaults, llm_defaults, jev_defaults = (
         EmbeddingSettings(),
@@ -693,7 +678,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     embedding.add_argument("--embedding-model", help=f"default: {default_models}; other providers need a model")
     embedding.add_argument(
         "--embedding-dimension",
-        type=_optional_int,
+        type=optional_int,
         default=argparse.SUPPRESS,
         help=f"vector size, or 'full' for the model's own (default: full for fastembed, which cannot shorten vectors, "
         f"else {embedding_defaults.dimension})",
@@ -744,10 +729,10 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     llm.add_argument("--llm-model", default=argparse.SUPPRESS, help=f"default: {llm_defaults.model}")
     llm.add_argument(
         "--reasoning-effort",
-        type=_reasoning_effort,
+        type=parse_reasoning_effort,
         default=argparse.SUPPRESS,
-        help=f"such as low, medium, or high; 'omit' sends none; Ollama also takes true or false (default: "
-        f"{llm_defaults.reasoning_effort})",
+        help=f"such as low, medium, or high; 'omit' sends none; Ollama also takes true or false, and Anthropic only "
+        f"omit or none (default: {llm_defaults.reasoning_effort})",
     )
     llm.add_argument("--max-tokens", type=int, default=argparse.SUPPRESS, help=f"default: {llm_defaults.max_tokens}")
     llm.add_argument("--llm-base-url", default=argparse.SUPPRESS, help="API URL of the LLM provider")
@@ -799,7 +784,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     run = parser.add_argument_group("run")
     run.add_argument(
         "--max-requests",
-        type=_optional_int,
+        type=optional_int,
         default=0,
         help="requests to send at most, or 'all' (default: 0, which only evaluates saved predictions)",
     )
@@ -833,6 +818,11 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     for name, default in (llm_options | jev_options).items():
         if name not in args:
             setattr(args, name, default)
+    if args.predictor == "llm":
+        try:
+            llm_settings(args)
+        except ValueError as error:
+            parser.error(str(error))
     if args.batch and (args.predictor != "llm" or args.llm_provider != "openrouter"):
         parser.error("--batch sends LLM requests through OpenRouter only")
     if args.no_wait and not args.batch:
@@ -846,19 +836,23 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     return args
 
 
+def llm_settings(args: argparse.Namespace) -> LLMSettings:
+    """The LLM settings of the parsed command line; ValueError if the provider cannot take them."""
+    return LLMSettings(
+        provider=args.llm_provider,
+        model=args.llm_model,
+        reasoning_effort=args.reasoning_effort,
+        max_tokens=args.max_tokens,
+        base_url=args.llm_base_url,
+        ollama_num_ctx=args.ollama_num_ctx,
+    )
+
+
 def make_predictor(args: argparse.Namespace, index: ItemIndex) -> Predictor:
     """The predictor of the parsed command line."""
     retrieval = {"search_method": args.search_method, "n_similar": args.n_similar, "n_same_model": args.n_same_model}
     if args.predictor == "llm":
-        llm = LLMSettings(
-            provider=args.llm_provider,
-            model=args.llm_model,
-            reasoning_effort=args.reasoning_effort,
-            max_tokens=args.max_tokens,
-            base_url=args.llm_base_url,
-            ollama_num_ctx=args.ollama_num_ctx,
-        )
-        return LLMPredictor(index, llm, **retrieval)
+        return LLMPredictor(index, llm_settings(args), **retrieval)
     jev = JevSettings(provider=args.jev_provider, model=args.jev_model, base_url=args.jev_base_url)
     scales = None if args.jev_scales is None else json.loads(args.jev_scales.read_text(encoding="utf-8"))
     return JevPredictor(
@@ -873,10 +867,7 @@ def make_predictor(args: argparse.Namespace, index: ItemIndex) -> Predictor:
 
 def main(argv: list[str] | None = None) -> None:
     args = parse_args(argv)
-    sys.stdout.reconfigure(line_buffering=True)  # keeps printed lines in order with the log lines on stderr
-    logging.basicConfig(level=logging.INFO, format="%(message)s")
-    for name in ("httpx", "httpx2"):  # one line per request otherwise; openai sends through httpx2
-        logging.getLogger(name).setLevel(logging.WARNING)
+    configure_output()
     embedding = EmbeddingSettings(
         provider=args.embedding_provider,
         model=args.embedding_model,

@@ -1,0 +1,46 @@
+{
+  "item_key": "TIMSS 2011/grade 4/Mathematics/M031079C",
+  "response": "C. The number of circles in Figure n is 2n - 1, so Figure 10 has 2(10) - 1 = 19 circles. Answer: 19",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the fourth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Questions\n\nThese 2 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\n[Image: four figures with various numbers of circles connected are shown.]\n\nA sequence of four figures is shown above.\n\nA. Complete the table below for Figure 4.\n\n| Figure | Number of Circles |\n| :---: | :---: |\n| 1 | 1 |\n| 2 | 3 |\n| 3 | 5 |\n| 4 | |\n\nB. If there were a Figure 5, how many circles would it have?\n\nAnswer: ____\n\nFigure, described in words:\nA horizontal sequence of four figures composed of identical circles:\n- Figure 1 consists of 1 circle, labeled \"Figure 1\" below.\n- Figure 2 consists of 3 circles forming an inverted V-shape, with 1 circle at the top touching 1 circle to the lower left and 1 circle to the lower right, labeled \"Figure 2\" below.\n- Figure 3 consists of 5 circles forming an inverted V-shape, with 1 circle at the apex, a branch of 2 circles extending downward and to the left, and a branch of 2 circles extending downward and to the right, labeled \"Figure 3\" below.\n- Figure 4 consists of 7 circles forming an inverted V-shape, with 1 circle at the apex, a branch of 3 circles extending downward and to the left, and a branch of 3 circles extending downward and to the right, labeled \"Figure 4\" below.\n\n## Question 2\n\n[Image: four figures with various numbers of circles connected.]\n\nA sequence of four figures is shown above.\n\nC. If the figures were continued, how many circles would there be in Figure 10? (Do not draw the figures.)\n\nAnswer: ____\n\nFigure, described in words:\nFour figures labeled 'Figure 1', 'Figure 2', 'Figure 3', and 'Figure 4' are displayed from left to right:\n- Figure 1 consists of a single circle.\n- Figure 2 consists of 3 circles forming an arch or inverted V-shape: 1 circle at the top, with 1 circle touching its lower left and 1 circle touching its lower right.\n- Figure 3 consists of 5 circles forming an arch: 1 circle at the apex, with 2 circles extending down to the left and 2 circles extending down to the right.\n- Figure 4 consists of 7 circles forming an arch: 1 circle at the apex, with 3 circles extending down to the left and 3 circles extending down to the right.\n\n# Scoring guide of question 2 (1 point)\n\n- Correct Response (1 point):\n  - 19\n- Incorrect Response (0 points):\n  - Incorrect (including crossed out, erased, stray marks, illegible, or off task)\n\n# Response to question 2\n\nC. The number of circles in Figure n is 2n - 1, so Figure 10 has 2(10) - 1 = 19 circles. Answer: 19\n\nScore the response to question 2.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response provides the correct number of circles (19) for Figure 10, which matches the criteria for a Correct Response.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 969,
+  "completion_tokens": 67,
+  "reasoning_tokens": 22,
+  "cost_usd": 0.000978,
+  "seconds": 2.12,
+  "batch_id": null,
+  "requested_at": "2026-10-19T18:38:55+00:00"
+}

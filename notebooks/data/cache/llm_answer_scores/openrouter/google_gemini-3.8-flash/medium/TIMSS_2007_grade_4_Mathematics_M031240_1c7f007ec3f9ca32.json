@@ -1,0 +1,47 @@
+{
+  "item_key": "TIMSS 2007/grade 4/Mathematics/M031240",
+  "response": "Boys: Hat = 1, No hat = 1. Girls: Hat = 1, No hat = 2. Work: Boys are Peter (wearing a hat) and Chan (not wearing a hat), so 1 boy wore a hat and 1 boy did not. Girls are Maria (wearing a hat), Megan (not wearing a hat), and Mandy (not wearing a hat), so 1 girl wore a hat and 2 girls did not. Completed table: Boys row: 1 in Hat, 1 in No hat. Girls row: 1 in Hat, 2 in No hat.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the fourth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\nThere were 5 children at the park. Some were wearing hats and some were not.\n\n| Girls | Boys |\n| --- | --- |\n| Maria was wearing a hat | Peter was wearing a hat |\n| Megan was not wearing a hat | Chan was not wearing a hat |\n| Mandy was not wearing a hat | |\n\nComplete the table to show the number of boys and girls that were wearing hats and were not wearing hats.\n\n| | Hat | No hat |\n| --- | --- | --- |\n| Boys | | |\n| Girls | | |\n\n# Scoring guide of the question (1 point)\n\n- Correct Response (1 point):\n  - Boys: 1 hat, 1 no hat } or equivalent tallies\nGirls: 1 hat, 2 no hat }\n- Incorrect Response (0 points):\n  - Names of boys and girls correctly placed in table\n  - Other Incorrect (including crossed out/erased, stray marks, illegible, or off task)\n- Nonresponse (0 points):\n  - Blank\n\n# Response to the question\n\nBoys: Hat = 1, No hat = 1. Girls: Hat = 1, No hat = 2. Work: Boys are Peter (wearing a hat) and Chan (not wearing a hat), so 1 boy wore a hat and 1 boy did not. Girls are Maria (wearing a hat), Megan (not wearing a hat), and Mandy (not wearing a hat), so 1 girl wore a hat and 2 girls did not. Completed table: Boys row: 1 in Hat, 1 in No hat. Girls row: 1 in Hat, 2 in No hat.\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response",
+          "Nonresponse"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response correctly identifies the numbers for each cell in the table: 1 boy with a hat, 1 boy with no hat, 1 girl with a hat, and 2 girls with no hat.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 528,
+  "completion_tokens": 210,
+  "reasoning_tokens": 149,
+  "cost_usd": 0.0011835,
+  "seconds": 13.952,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:53:30+00:00"
+}

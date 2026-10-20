@@ -1,0 +1,46 @@
+{
+  "item_key": "TIMSS 2003/grade 8/Mathematics/M032743",
+  "response": "}",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the eighth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Questions\n\nThese 3 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nIf the pattern on the grid below was continued, what letter would identify the orientation of the tile in the cell labeled X?\n\n[Image: A 7-by-7 grid with a repeating tile pattern on the left and a cell labeled X]\n\nAnswer: ____\n\nFigure, described in words:\nA square grid of 7 rows and 7 columns. The left portion (columns 1 through 3) contains a repeating pattern of black house-shaped pentagons (a square base with a triangular roof pointing upward) on a white background:\n- Column 2 contains full upward-pointing black house shapes centered horizontally.\n- Column 3 contains upward-pointing black house shapes vertically staggered relative to those in column 2.\n- Column 1 (along the left edge) and the right half of column 3 contain partial black house shapes where the pattern appears cut off.\nColumns 4 through 7 are completely white, except that the cell in row 4, column 5 (counting from the top-left) contains a bold letter 'X'.\n\n## Question 2\n\n[Image: Four square tiles labeled A, B, C, and D]\n\nContinue to identify the tiles as shown above. On the grid below, write the letters A, B, C, or D to make a symmetrical pattern where PQ and RS would be lines of symmetry. Arrange the tiles to make a pattern.\n\n[Image: A 4 by 4 grid with axes PQ and RS]\n\nFigure, described in words:\nAt the top, four square tiles labeled A, B, C, and D are shown in a row. Each tile is divided conceptually into four smaller quadrants:\n- Tile A: A shaded black triangle in the upper-left corner (formed by the diagonal connecting the midpoint of the top edge and the midpoint of the left edge) and a solid black square in the lower-right quadrant.\n- Tile B: A shaded black triangle in the upper-right corner and a solid black square in the lower-left quadrant.\n- Tile C: A solid black square in the upper-left quadrant and a shaded black triangle in the lower-right corner.\n- Tile D: A solid black square in the upper-right quadrant and a shaded black triangle in the lower-left corner.\n\nBelow is a 4-by-4 square grid of 16 unit squares, divided into four 2-by-2 quadrants by a vertical line PQ and a horizontal line RS. P is at the top of the vertical line, Q is at the bottom; R is at the left of the horizontal line, S is at the right. Four squares are already labeled:\n- Row 1 (top), column 1 (left): 'D'\n- Row 2, column 4 (right): 'C'\n- Row 3, column 2: 'B'\n- Row 4 (bottom), column 3: 'A'\nThe remaining 12 squares are blank.\n\n## Question 3\n\nThere are several ways of arranging the tiles so that they form patterns. The grid below has been shaded to show how tiles can be placed on some of the squares. The pattern can be continued so that AB and CD are lines of symmetry.\n\n[Image: A 4 by 4 grid with symmetry axes AB and CD]\n\nShade in all the remaining squares on the grid so that the resulting pattern is symmetrical about line AB, and also is symmetrical about line CD.\n\nFigure, described in words:\nA 4-by-4 square grid of 16 unit squares, divided into four 2-by-2 quadrants by a vertical line AB (with A at the top, B at the bottom) and a horizontal line CD (with C at the left, D at the right).\nTwo quadrants are shaded with tile patterns:\n- Top-right 2-by-2 quadrant (rows 1-2, columns 3-4):\n  - Row 1, column 3: small black square in the top-left corner.\n  - Row 1, column 4: small black square in the top-right corner.\n  - Row 2, column 3: small black square in the bottom-left corner.\n  - Row 2, column 4: small black square in the bottom-right corner.\n  - In the center of this 2-by-2 quadrant (where the four squares meet), a large black diamond (rotated square) is formed across the inner corners of all four squares.\n- Bottom-left 2-by-2 quadrant (rows 3-4, columns 1-2):\n  - Shaded with the exact same pattern: four small black corner squares at the outer corners of the 2-by-2 quadrant, and a large black diamond centered where the four squares meet.\nThe top-left 2-by-2 quadrant and bottom-right 2-by-2 quadrant are entirely blank (unshaded).\n\n# Scoring guide of question 3 (1 point)\n\n- Correct Response (1 point):\n  - Both quadrants correctly shaded (pattern shaded or demarcated in some way making symmetrical pattern about both axes, AB and CD).\n- Incorrect Response (0 points):\n  - One of the two quadrants correctly shaded.\n  - Incorrect (including crossed out/erased, stray marks, illegible, or off task).\n\n# Response to question 3\n\n}\n\nScore the response to question 3.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response consists solely of a closing brace '}', which is a stray character and does not provide any description or indication of shading for the remaining squares.",
+    "category": "Incorrect Response"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 1464,
+  "completion_tokens": 87,
+  "reasoning_tokens": 38,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792336162-sVsXRPoM129nuAcuUbPh",
+  "requested_at": "2026-10-19T14:20:50+00:00"
+}

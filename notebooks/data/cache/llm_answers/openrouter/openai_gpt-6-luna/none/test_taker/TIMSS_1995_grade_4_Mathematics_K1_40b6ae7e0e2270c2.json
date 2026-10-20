@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 1995/grade 4/Mathematics/K1",
+  "item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/K1"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Here is a figure.\n\n[Image: Overlapping circle, square, and triangle]\n\nWhich number is in the square and the circle but is NOT in the triangle?\n\nFigure, described in words:\nA figure showing three overlapping geometric shapes: a circle, a square, and a tall isosceles triangle pointing upward. Five numbered regions are indicated: 1 is inside the circle only; 2 is inside both the circle and the square, but outside the triangle; 3 is in the region where the circle, square, and triangle all overlap; 4 is inside both the triangle and the square, but outside the circle; and 5 is inside the square only.\n\nA. 2\nB. 3\nC. 4\nD. 5",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "A"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 337,
+  "completion_tokens": 12,
+  "reasoning_tokens": 0,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335941-eBip0UQrB1d6eHavtyMo",
+  "requested_at": "2026-10-18T15:18:00+00:00"
+}

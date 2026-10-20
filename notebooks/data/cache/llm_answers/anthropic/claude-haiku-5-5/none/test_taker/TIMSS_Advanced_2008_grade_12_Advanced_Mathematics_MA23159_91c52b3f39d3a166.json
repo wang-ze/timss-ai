@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23159",
+  "item_keys": [
+    "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23159"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Find f'(x), when f(x) = (3x + 2)/(x - 1).\n\nShow your work.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Using the quotient rule with u = 3x + 2 and v = x - 1: u' = 3 and v' = 1. Then f'(x) = (u'v - uv')/v^2 = [3(x - 1) - (3x + 2)(1)]/(x - 1)^2 = (3x - 3 - 3x - 2)/(x - 1)^2 = -5/(x - 1)^2. Therefore f'(x) = -5/(x - 1)^2, for x ≠ 1."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 486,
+  "completion_tokens": 169,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 1.211,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:22:33+00:00"
+}

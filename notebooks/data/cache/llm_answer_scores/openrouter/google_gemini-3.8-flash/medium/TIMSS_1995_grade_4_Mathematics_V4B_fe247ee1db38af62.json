@@ -1,0 +1,46 @@
+{
+  "item_key": "TIMSS 1995/grade 4/Mathematics/V4B",
+  "response": "Write 4 and 2 in the top row, and 3 and 1 in the bottom row: 42 + 31 = 73. This is larger than both 64 and 55.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the fourth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Questions\n\nThese 2 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nIn a game, Mysong and Naoki are making problems. They each have four cards like these.\n\n[1] [2] [3] [4]\n\nThe winner of the game is the person who can make the problem with the largest answer.\n\nMysong placed the cards like this.\n\n[Image: Mysong's card placement]\n\nNaoki placed the cards like this.\n\n[Image: Naoki's card placement]\n\nWho won this game? ____\nHow do you know? ____\n____\n\nFigure, described in words:\nFour square cards are shown in a row labeled with the digits 1, 2, 3, and 4.\nBelow are two vertical addition problems:\nUnder the heading \"Mysong placed the cards like this.\", two rows of two square cards form a vertical addition problem: top row has cards [4] and [3]; bottom row has cards [2] and [1], with a plus sign '+' to the left of the bottom row and a horizontal addition line underneath.\nUnder the heading \"Naoki placed the cards like this.\", two rows of two square cards form a vertical addition problem: top row has cards [3] and [1]; bottom row has cards [2] and [4], with a plus sign '+' to the left of the bottom row and a horizontal addition line underneath.\n\n## Question 2\n\nIn a game, Mysong and Naoki are making problems. They each have four cards like these.\n\n[1] [2] [3] [4]\n\nThe winner of the game is the person who can make the problem with the largest answer.\n\nMysong placed the cards like this.\n\n[Image: Mysong's card placement]\n\nNaoki placed the cards like this.\n\n[Image: Naoki's card placement]\n\nWrite numbers in the squares below to show how you would place the cards to beat both Mysong and Naoki.\n\n[Image: Blank addition grid]\n\nFigure, described in words:\nFour square cards are shown in a row labeled with the digits 1, 2, 3, and 4.\nBelow are two vertical addition problems:\nUnder the heading \"Mysong placed the cards like this.\", two rows of two square cards form a vertical addition problem: top row has cards [4] and [3]; bottom row has cards [2] and [1], with a plus sign '+' to the left of the bottom row and a horizontal addition line underneath.\nUnder the heading \"Naoki placed the cards like this.\", two rows of two square cards form a vertical addition problem: top row has cards [3] and [1]; bottom row has cards [2] and [4], with a plus sign '+' to the left of the bottom row and a horizontal addition line underneath.\nAt the bottom of the item is an empty addition grid consisting of four blank squares arranged in two rows of two, with a plus sign '+' to the left of the bottom row and a horizontal addition line underneath.\n\n# Scoring guide of question 2 (1 point)\n\n- Correct Response (1 point):\n  - One of the following: 42+31; 41+32; 31+42; or 32+41\n- Incorrect Response (0 points):\n  - Combinations of the numbers 1, 2, 3 and 4. Every number is used only once.\n  - Combinations of the numbers 1, 2, 3 and 4. One or more numbers are used more than once.\n  - Combinations containing one or more numbers other than 1, 2, 3 and 4\n  - Other incorrect\n\n# Response to question 2\n\nWrite 4 and 2 in the top row, and 3 and 1 in the bottom row: 42 + 31 = 73. This is larger than both 64 and 55.\n\nScore the response to question 2.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response specifies placing 4 and 2 in the top row and 3 and 1 in the bottom row to make the addition problem 42 + 31, which is explicitly listed as a correct response in the scoring guide.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": "**Analyzing Numerical Strategies**\n\nI've been examining the student's method, specifically their arrangement of the digits to maximize the sum. I'm focusing on why their approach yields a larger number than the other combinations. The student's response provides insight on how to reach that conclusion. I am currently considering the importance of the place value of each digit.\n\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 1026,
+  "completion_tokens": 188,
+  "reasoning_tokens": 120,
+  "cost_usd": 0.0014745,
+  "seconds": 14.321,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:43:34+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "item_key": "TIMSS 2011/grade 8/Mathematics/M042228",
+  "response": "22",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the eighth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\n[Image: 4 rows of numbers. The sequence of the first row is 2, 4, 6, 8. The second row is 6, 10, 14. The third row is 16, x. The fourth row is 40.]\n\nWhat is the value of x in this pattern?\n\nAnswer: ____\n\nFigure, described in words:\nA grid of square blocks arranged in four horizontal rows:\n- Row 1: Four shaded squares containing the numbers 2, 4, 6, and 8, separated by gaps equal to the width of one square.\n- Row 2: Five contiguous squares. From left to right: a shaded square with 6 (positioned below the gap between 2 and 4), an unshaded blank square (directly below 4), a shaded square with 10 (below the gap between 4 and 6), an unshaded blank square (directly below 6), and a shaded square with 14 (below the gap between 6 and 8).\n- Row 3: Three contiguous squares. From left to right: a shaded square with 16 (directly below the first unshaded square of row 2), an unshaded blank square (directly below 10), and a shaded square with x (directly below the second unshaded square of row 2).\n- Row 4: A single shaded square containing 40, located directly below the unshaded square of row 3.\n\n# Scoring guide of the question (1 point)\n\n- Correct Response (1 point):\n  - 24\n- Incorrect Response (0 points):\n  - 22\n  - Other incorrect (including crossed out, erased, stray marks, illegible, or off task)\n\n# Response to the question\n\n22\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response provides an answer of 22, which is explicitly classified under Incorrect Response in the scoring guide. The correct value of x is 24.",
+    "category": "Incorrect Response"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 681,
+  "completion_tokens": 119,
+  "reasoning_tokens": 77,
+  "cost_usd": 0.000957,
+  "seconds": 2.564,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:49:08+00:00"
+}

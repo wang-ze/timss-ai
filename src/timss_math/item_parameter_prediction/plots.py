@@ -51,24 +51,26 @@ from matplotlib.lines import Line2D
 from matplotlib.patches import Patch
 from scipy import stats
 
-from .items import PARAMETER_NAMES
+from ..items import (
+    GRADE_NAMES,
+    GRADE_SHORT_NAMES,
+    PARAMETER_NAMES,
+)
+from ..plot_style import (  # noqa: F401 (every style name, importable from here as before it was shared)
+    AXIS,
+    GRADE_STYLES,
+    GRID,
+    INK,
+    INK_MUTED,
+    INK_SECONDARY,
+    SERIES,
+    STYLE,
+    SURFACE,
+)
 
 if TYPE_CHECKING:
     from .comparison import RunComparison
 
-# Chart surface, ink, and the categorical series colors in their fixed order (each validated for color-vision
-# deficiencies against the surface).
-SURFACE = "#fcfcfb"
-INK = "#0b0b0b"
-INK_SECONDARY = "#52514e"
-INK_MUTED = "#898781"
-GRID = "#e1e0d9"
-AXIS = "#c3c2b7"
-SERIES = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4", "#008300", "#4a3aa7", "#e34948"]
-# Grades keep one color and marker in every graph; the marker is a second channel besides the color.
-GRADE_STYLES = {4: (SERIES[0], "o"), 8: (SERIES[1], "s"), 12: (SERIES[2], "^")}
-GRADE_NAMES = {4: "Grade 4", 8: "Grade 8", 12: "TIMSS Advanced (grade 12)"}
-GRADE_SHORT_NAMES = {4: "Grade 4", 8: "Grade 8", 12: "Advanced"}
 PARAMETER_TITLES = {
     "slope": "Slope (a)",
     "location": "Location (b)",
@@ -81,36 +83,6 @@ BASELINES = {
     "predicted": ("Prediction", SERIES[0]),
     "calibration_mean": ("Calibration-summary mean", SERIES[1]),
     "reference_mean": ("Reference-item mean", SERIES[2]),
-}
-STYLE = {
-    "figure.facecolor": SURFACE,
-    "axes.facecolor": SURFACE,
-    "savefig.facecolor": SURFACE,
-    # Family names rather than "sans-serif", which matplotlib would resolve when it draws, outside this style; glyphs
-    # that Arial lacks, such as subscripts, fall back to DejaVu Sans.
-    "font.family": ["Arial", "DejaVu Sans"],
-    "font.size": 9,
-    "text.color": INK,
-    "axes.labelcolor": INK_SECONDARY,
-    "axes.titlesize": 10,
-    "axes.titleweight": "bold",
-    "axes.titlelocation": "left",
-    "axes.titlecolor": INK,
-    "axes.edgecolor": AXIS,
-    "axes.linewidth": 0.8,
-    "axes.spines.top": False,
-    "axes.spines.right": False,
-    "axes.grid": True,
-    "axes.axisbelow": True,
-    "grid.color": GRID,
-    "grid.linewidth": 0.8,
-    "grid.linestyle": "-",
-    "xtick.color": INK_MUTED,
-    "ytick.color": INK_MUTED,
-    "xtick.labelcolor": INK_SECONDARY,
-    "ytick.labelcolor": INK_SECONDARY,
-    "legend.frameon": False,
-    "legend.fontsize": 9,
 }
 
 

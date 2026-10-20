@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2007/grade 8/Mathematics/M032691",
+  "item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M032691"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Using line segment AO below, draw a straight line BC through O such that angle AOB is acute and angle AOC is obtuse. Label points B and C.\n\n[Image: Line segment AO]\n\nFigure, described in words:\nA vertical line segment is drawn with a point at the top labeled with the letter \"A\" above it, and a point at the bottom labeled with the letter \"O\" below it.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Draw a straight line through point O that is not vertical, tilted about 45 degrees, so it goes up and to the right of O and down and to the left of O. Extend it past O in both directions. Label the upper-right end of the line B and the lower-left end of the line C. Angle AOB is then about 45 degrees (acute), since it is formed by segment OA pointing straight up and ray OB pointing up-right. Angle AOC is about 135 degrees (obtuse), since ray OC points down-left and the two angles AOB and AOC add to 180 degrees."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 547,
+  "completion_tokens": 545,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 3.79,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:23:04+00:00"
+}

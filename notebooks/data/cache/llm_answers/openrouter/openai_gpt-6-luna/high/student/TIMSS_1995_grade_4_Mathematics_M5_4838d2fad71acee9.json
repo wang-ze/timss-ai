@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 1995/grade 4/Mathematics/M5",
+  "item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/M5"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "high",
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: A rectangle divided into vertical strips]\n\nWhich number represents the shaded part of the figure?\n\nFigure, described in words:\nA large horizontal rectangle divided into 10 equal vertical strips side-by-side. The leftmost 2 strips are shaded grey, and the remaining 8 strips on the right are unshaded (white).\n\nA. 2.8\nB. 0.5\nC. 0.2\nD. 0.02",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "C"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 296,
+  "completion_tokens": 34,
+  "reasoning_tokens": 20,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792430074-okNuJEwkyyxQ0JugOQBP",
+  "requested_at": "2026-10-19T17:34:15+00:00"
+}

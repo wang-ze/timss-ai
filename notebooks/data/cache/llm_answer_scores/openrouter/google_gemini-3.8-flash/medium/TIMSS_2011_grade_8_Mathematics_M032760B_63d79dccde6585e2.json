@@ -1,0 +1,46 @@
+{
+  "item_key": "TIMSS 2011/grade 8/Mathematics/M032760B",
+  "response": "Black tiles = (n − 2)² = 49, so n − 2 = 7 and n = 9. Red tiles = 4 × (9 − 1) = 32 red tiles. Check: 81 total − 49 black = 32 red.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the eighth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Questions\n\nThese 5 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nPat has red tiles and black tiles. Pat uses the tiles to make square shapes.\n\nThe 3 × 3 shape has 1 black tile and 8 red tiles.\n[Image: A black tile in the middle, surrounded by the 8 red tiles, to make a square shape.]\n\nThe 4 × 4 shape has 4 black tiles and 12 red tiles.\n[Image: Four black tiles forming a square in the center, with 12 red tiles lining the sides, to create a larger square shape.]\n\nThe table below shows the number of tiles for the first three shapes Pat made. Pat continued making shapes using this pattern. Complete the table for the 6 × 6 and 7 × 7 shapes.\n\n| Shape | Number of Black Tiles | Number of Red Tiles | Total Number of Tiles |\n| :---: | :---: | :---: | :---: |\n| 3 × 3 | 1 | 8 | 9 |\n| 4 × 4 | 4 | 12 | 16 |\n| 5 × 5 | 9 | 16 | 25 |\n| 6 × 6 | 16 | | |\n| 7 × 7 | 25 | | |\n\nFigure, described in words:\nTwo square shapes made of smaller square tiles and an explanatory key:\n- A 3 × 3 shape composed of 9 tiles: 1 black center tile labeled 'B' surrounded by 8 gray tiles labeled 'R'.\n- A 4 × 4 shape composed of 16 tiles: 4 black center tiles arranged in a 2 × 2 square, each labeled 'B', surrounded by 12 gray tiles labeled 'R'.\n- A key below the 3 × 3 shape shows a black square labeled 'B' = Black tile, and a gray square labeled 'R' = Red tile.\n\n## Question 2\n\nRed and Black Tiles (Continued)\n\nUse the patterns in the previous table to answer the following questions.\n\nA. Pat made a shape with a total of 64 tiles. How many were black and how many were red?\n\nAnswer: ____ black tiles ____ red tiles\n\n## Question 3\n\nRed and Black Tiles (Continued)\n\nUse the patterns in the previous table to answer the following questions.\n\nB. Pat made a shape that used 49 black tiles.\nHow many red tiles did Pat use in that shape?\n\nAnswer: ____ red tiles\n\n## Question 4\n\nRed and Black Tiles (Continued)\n\nUse the patterns in the previous table to answer the following questions.\n\nC. Next, Pat made a shape using 44 of the red tiles. How many black tiles would Pat need to complete the black part of the shape?\n\nAnswer: ____ black tiles\n\n## Question 5\n\nPat wanted to add a line to the table showing how to find the number of tiles needed to make a square of any size. Use the patterns in the table on the opposite page to help you complete the line for shape n × n in the table below.\n\n| Shape | Number of Black Tiles | Number of Red Tiles | Total Number of Tiles |\n| :--- | :--- | :--- | :--- |\n| n × n | (n − 2)^2 | | |\n\n# Scoring guide of question 3 (1 point)\n\n- Correct Response (1 point):\n  - 32\n- Incorrect Response (0 points):\n  - Incorrect (including crossed out, erased, stray marks, illegible, or off task)\n\n# Response to question 3\n\nBlack tiles = (n − 2)² = 49, so n − 2 = 7 and n = 9. Red tiles = 4 × (9 − 1) = 32 red tiles. Check: 81 total − 49 black = 32 red.\n\nScore the response to question 3.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response correctly identifies that 32 red tiles are used, providing thorough and accurate supporting work.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": "**Calculating Red Tiles**\n\nI am focused on determining the exact number of red tiles used in Pat's shape for Question 3 of the TIMSS test booklet. My current analysis aims to reach the correct answer of 32 red tiles, aligning with the provided scoring guide.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 1153,
+  "completion_tokens": 211,
+  "reasoning_tokens": 172,
+  "cost_usd": 0.001656,
+  "seconds": 3.098,
+  "batch_id": null,
+  "requested_at": "2026-10-19T18:39:47+00:00"
+}

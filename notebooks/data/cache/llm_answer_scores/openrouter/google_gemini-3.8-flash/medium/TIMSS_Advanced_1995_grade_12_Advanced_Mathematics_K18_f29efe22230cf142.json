@@ -1,0 +1,48 @@
+{
+  "item_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K18",
+  "response": "Proof. Assume, as the figure shows, that the altitude feet M (on AB) and N (on AC) lie on the sides, and that S lies inside the triangle on segments CM and BN. Statements and reasons:\n1. ∠MSB = 40° — given.\n2. Points M, S, C are collinear with S between M and C, so ∠MSB and ∠BSC form a linear pair — definition of linear pair. Therefore ∠BSC = 180° − 40° = 140°.\n3. In ΔSBC, ∠SBC = 20° — given. The angle sum of a triangle is 180°, so ∠SCB = 180° − 140° − 20° = 20°.\n4. S lies on segment CM, so ray CS = ray CM and ∠BCM = ∠SCB = 20° — same angle.\n5. CM ⊥ AB, so ∠BMC = 90° — definition of altitude. In right triangle BMC, ∠MBC = 90° − ∠BCM = 90° − 20° = 70° — angle sum of a triangle.\n6. M lies on side AB, so ray BM = ray BA and ∠ABC = ∠MBC = 70°.\n7. S lies on segment BN, so ray BS = ray BN and ∠NBC = ∠SBC = 20° — same angle.\n8. BN ⊥ AC, so ∠BNC = 90° — definition of altitude. In right triangle BNC, ∠NCB = 90° − ∠NBC = 90° − 20° = 70° — angle sum of a triangle.\n9. N lies on side AC, so ray CN = ray CA and ∠ACB = ∠NCB = 70°.\n10. ∠ABC = ∠ACB = 70° — from steps 6 and 9, transitivity of equality.\n11. In ΔABC, sides opposite equal angles are equal — converse of the isosceles triangle theorem. Since ∠ABC = ∠ACB, side AC = side AB.\n12. Therefore ΔABC is isosceles (with AB = AC), which is what we were to prove. ∎",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\nIn the ΔABC the altitudes BN and CM intersect at point S. The measure of ∠MSB is 40° and the measure of ∠SBC is 20°. Write a PROOF of the following statement:\n\n“ΔABC is isosceles.”\n\nGive geometric reasons for statements in your proof.\n\n[Image: Triangle ABC with altitudes BN and CM intersecting at S]\n\nFigure, described in words:\nA triangle ABC with vertex A at the top, vertex B at the bottom left, and vertex C at the bottom right. Segment BN is an altitude drawn from B to AC, with a right-angle symbol at N. Segment CM is an altitude drawn from C to AB, with a right-angle symbol at M. BN and CM intersect at interior point S. The angle MSB is marked with an arc and labeled 40°. The angle SBC is marked with an arc and labeled 20°.\n\n# Scoring guide of the question (2 points)\n\n- Correct Response (2 points):\n  - Correct proof. Proves that ∠B = ∠C using the following facts:\n\n• the sum of angles in any triangle is 180°.\n• if two angles of a triangle are equal, the triangle is isosceles.\nand possibly also uses:\n• vertically opposite angles are equal.\n• supplementary angles add to 180°.\nThe concept of congruence is not used.\n  - As code 20 but somewhere in the proof uses the fact that some triangles: e.g. triangles BCM and CBN, OR triangles BMS and CNS, are congruent.\n  - All other fully correct and complete proofs.\n- Partial Response (1 point):\n  - As in codes 20-21 shows ∠B and ∠C are equal giving steps in logical order, but omits one step or one reason or gives one incorrect reason.\n  - As in codes 20-21 shows ∠B and ∠C are equal, states correct geometric facts but not in a logically correct order.\n  - Other responses with minor errors.\n- Incorrect Response (0 points):\n  - Shows measures of angles correctly on figure but no geometric facts mentioned or argumentation given.\n  - Incorrect argumentation and/or includes more than one incorrect geometric fact, step, or reason.\n  - \"Proof\" is circular; makes use of statements which are equivalent to what is to be proven.\n  - Other incorrect responses.\n- Nonresponse (0 points):\n  - Crossed-out, illegible, or impossible to interpret.\n  - BLANK\n\nScoring notes: Note: To be considered correct, all responses must include mention of all geometric facts used, all calculations made, and a conclusion\n\n# Response to the question\n\nProof. Assume, as the figure shows, that the altitude feet M (on AB) and N (on AC) lie on the sides, and that S lies inside the triangle on segments CM and BN. Statements and reasons:\n1. ∠MSB = 40° — given.\n2. Points M, S, C are collinear with S between M and C, so ∠MSB and ∠BSC form a linear pair — definition of linear pair. Therefore ∠BSC = 180° − 40° = 140°.\n3. In ΔSBC, ∠SBC = 20° — given. The angle sum of a triangle is 180°, so ∠SCB = 180° − 140° − 20° = 20°.\n4. S lies on segment CM, so ray CS = ray CM and ∠BCM = ∠SCB = 20° — same angle.\n5. CM ⊥ AB, so ∠BMC = 90° — definition of altitude. In right triangle BMC, ∠MBC = 90° − ∠BCM = 90° − 20° = 70° — angle sum of a triangle.\n6. M lies on side AB, so ray BM = ray BA and ∠ABC = ∠MBC = 70°.\n7. S lies on segment BN, so ray BS = ray BN and ∠NBC = ∠SBC = 20° — same angle.\n8. BN ⊥ AC, so ∠BNC = 90° — definition of altitude. In right triangle BNC, ∠NCB = 90° − ∠NBC = 90° − 20° = 70° — angle sum of a triangle.\n9. N lies on side AC, so ray CN = ray CA and ∠ACB = ∠NCB = 70°.\n10. ∠ABC = ∠ACB = 70° — from steps 6 and 9, transitivity of equality.\n11. In ΔABC, sides opposite equal angles are equal — converse of the isosceles triangle theorem. Since ∠ABC = ∠ACB, side AC = side AB.\n12. Therefore ΔABC is isosceles (with AB = AC), which is what we were to prove. ∎\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Partial Response",
+          "Incorrect Response",
+          "Nonresponse"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response presents a complete, rigorous, and logically sound proof that angle ABC = angle ACB = 70°, and concludes that triangle ABC is isosceles. All steps, calculations, and geometric reasons are explicitly and correctly stated.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 1393,
+  "completion_tokens": 140,
+  "reasoning_tokens": 75,
+  "cost_usd": 0.00156975,
+  "seconds": 3.749,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:54:18+00:00"
+}

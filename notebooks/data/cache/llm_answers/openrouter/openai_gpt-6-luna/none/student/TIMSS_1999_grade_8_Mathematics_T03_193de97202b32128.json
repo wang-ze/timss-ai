@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 1999/grade 8/Mathematics/T03",
+  "item_keys": [
+    "TIMSS 1999/grade 8/Mathematics/T03"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "none",
+  "system_prompt": "You are an eighth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The figure shows a shaded rectangle inside a parallelogram.\n\n[Image: A shaded rectangle inside a parallelogram]\n\nWhat is the area of the shaded rectangle?\n\nAnswer: ____\n\nFigure, described in words:\nA parallelogram with horizontal top and bottom sides and slanted left and right sides. Inside the parallelogram is a shaded rectangle sharing parts of the top and bottom edges of the parallelogram. A dimension line at the bottom shows that the distance from the bottom-left vertex of the parallelogram to the bottom-right corner of the shaded rectangle is 8 cm. A dimension line along the top shows that the segment of the parallelogram's top edge extending to the right of the shaded rectangle has a length of 3 cm. A vertical dimension line on the right indicates that the height of the parallelogram (and of the rectangle) is 4 cm.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "The rectangle’s width is the parallelogram’s bottom length minus the 8 cm left section and 3 cm right section. The parallelogram’s bottom length is not given, so the rectangle’s area cannot be determined from the information provided."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 392,
+  "completion_tokens": 61,
+  "reasoning_tokens": 0,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792430071-gMFqYONSELNjfIh0PCtJ",
+  "requested_at": "2026-10-19T17:56:42+00:00"
+}

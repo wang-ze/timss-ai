@@ -1,0 +1,47 @@
+{
+  "item_key": "TIMSS 2011/grade 8/Mathematics/M042207",
+  "response": "Compute each sport's share of 480 students and its angle: Hockey 60/480 = 1/8 = 12.5%, angle 45°; Football 180/480 = 3/8 = 37.5%, angle 135°; Tennis 120/480 = 1/4 = 25%, angle 90°; Basketball 120/480 = 1/4 = 25%, angle 90°. Check: 45 + 135 + 90 + 90 = 360°. To complete the pie chart, draw straight lines from the center dot to the circumference points as follows: starting at 12 o'clock, draw the first sector line from the center to the 12 o'clock point, then the line to the 1:30 point (45° sector) and label it Hockey (60 students, 1/8 of the circle). Next, from the 1:30 point to the 6 o'clock point (135° sector, spanning the 1:30, 3, 4:30 points), label that sector Football (180 students, 3/8 of the circle). Next, from the 6 o'clock point to the 9 o'clock point (90° sector, spanning 6, 7:30 points), label that sector Tennis (120 students, 1/4 of the circle). Finally, from the 9 o'clock point back to the 12 o'clock point (90° sector, spanning 9, 10:30 points), label that sector Basketball (120 students, 1/4 of the circle). Each sector is labeled with the sport name written inside it near the center, along with its count and fraction of the total.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the eighth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\n480 students were asked to name their favorite sport. The results are shown in this table.\n\n| Sport | Number of Students |\n| :--- | :--- |\n| Hockey | 60 |\n| Football | 180 |\n| Tennis | 120 |\n| Basketball | 120 |\n\nUse the information in the table to complete and label this pie chart.\n\n[Image: A circle with a point in the middle, and 8 equally spaced points on the circumference of the circle. The circle is labeled “Popularity of Sports.”]\n\nFigure, described in words:\nA circle labeled \"Popularity of Sports\" at the top. The circle contains a dot at its center and 8 equally spaced dots along its circumference, located at 12 o'clock, 1:30, 3 o'clock, 4:30, 6 o'clock, 7:30, 9 o'clock, and 10:30.\n\n# Scoring guide of the question (2 points)\n\n- Correct Response (2 points):\n  - Hockey1/8, Football 3/8, Tennis, Basketball both 1/4 , and labels all correct\n- Partially Correct Response (1 point):\n  - All sectors correct size but labeling incomplete or missing\n- Incorrect Response (0 points):\n  - Incorrect (including crossed out, erased, stray marks, illegible, or off task)\n\n# Response to the question\n\nCompute each sport's share of 480 students and its angle: Hockey 60/480 = 1/8 = 12.5%, angle 45°; Football 180/480 = 3/8 = 37.5%, angle 135°; Tennis 120/480 = 1/4 = 25%, angle 90°; Basketball 120/480 = 1/4 = 25%, angle 90°. Check: 45 + 135 + 90 + 90 = 360°. To complete the pie chart, draw straight lines from the center dot to the circumference points as follows: starting at 12 o'clock, draw the first sector line from the center to the 12 o'clock point, then the line to the 1:30 point (45° sector) and label it Hockey (60 students, 1/8 of the circle). Next, from the 1:30 point to the 6 o'clock point (135° sector, spanning the 1:30, 3, 4:30 points), label that sector Football (180 students, 3/8 of the circle). Next, from the 6 o'clock point to the 9 o'clock point (90° sector, spanning 6, 7:30 points), label that sector Tennis (120 students, 1/4 of the circle). Finally, from the 9 o'clock point back to the 12 o'clock point (90° sector, spanning 9, 10:30 points), label that sector Basketball (120 students, 1/4 of the circle). Each sector is labeled with the sport name written inside it near the center, along with its count and fraction of the total.\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Partially Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response correctly determines the correct fraction and angle for each sport (Hockey 1/8, Football 3/8, Tennis 1/4, Basketball 1/4). It accurately describes drawing the lines connecting the center to the marks on the circumference to create sectors of the correct sizes, and correctly labels each sector with the appropriate sport name.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": "**Calculating Sector Divisions**\n\nI've successfully determined the fractional and angular measures for each sport's sector within the circle. The breakdown for hockey, football, tennis, and basketball is now established, and I've also confirmed the accuracy of my approach for dividing the circle into these specific segments based on the provided points.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 1035,
+  "completion_tokens": 299,
+  "reasoning_tokens": 209,
+  "cost_usd": 0.0018975,
+  "seconds": 2.161,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:52:09+00:00"
+}

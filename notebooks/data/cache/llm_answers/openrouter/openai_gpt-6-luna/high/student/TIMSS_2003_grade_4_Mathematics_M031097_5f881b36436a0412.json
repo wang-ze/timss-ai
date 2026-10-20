@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2003/grade 4/Mathematics/M031097",
+  "item_keys": [
+    "TIMSS 2003/grade 4/Mathematics/M031097"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "high",
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The distance from one town to another is 180 km. If Betty has to drive the distance in 3 hours, what must her average speed be in kilometers per hour?\n\nA. 180 × 3\nB. 180 + 3\nC. 180 ÷ 3\nD. 180 − 3",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "C"
+  },
+  "llm_thinking": "**Calculating speed**\n\nI need to provide an answer in JSON format. To find the speed, I can compute the distance over time, which in this case is 180 divided by 3. That comes out to 60, so I can say the speed is 60. I'll make sure to include that expression clearly as \"C\" for reference in the JSON output. Keeping it concise is important for clarity!",
+  "finish_reason": "stop",
+  "prompt_tokens": 269,
+  "completion_tokens": 37,
+  "reasoning_tokens": 23,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792430069-8g35f4u7PLleVZ9HmGfd",
+  "requested_at": "2026-10-19T18:03:53+00:00"
+}

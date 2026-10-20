@@ -1,0 +1,46 @@
+{
+  "item_key": "TIMSS 2011/grade 8/Mathematics/M032734",
+  "response": "Draw the square with both of its diagonals. Each diagonal runs from one corner of the square to the opposite corner, and the two diagonals cross at the centre of the square. When the flaps are folded up, the four triangles meet at a single apex directly above the centre, forming a square pyramid. Viewed from directly above, the slanted edges of the pyramid project onto the square's diagonals, so the view shows the outer square with an X drawn from corner to corner through the centre.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the eighth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\n[Image: A square, with a triangle attached to each side. Each triangle shares a side with the square, shown with a dotted line.]\nThe shape shown above is cut out of cardboard. The triangle flaps are then folded up along the dotted lines until they touch the edges of the flaps next to them.\n\nComplete the diagram below to show what the shape would look like when viewed from directly above.\n\n[Image: A square.]\n\nFigure, described in words:\nTop diagram: A flat net composed of a central square with dashed sides, each side joined to the base of an identical isosceles triangle pointing outward.\nBottom diagram: A square drawn with solid lines, representing the outer border of the shape viewed directly from above, awaiting completion.\n\n# Scoring guide of the question (1 point)\n\n- Correct Response (1 point):\n  - Correct figure (square with diagonals meeting in center)\n- Incorrect Response (0 points):\n  - Incorrect (including crossed out, erased, stray marks, illegible, or off task)\n\n# Response to the question\n\nDraw the square with both of its diagonals. Each diagonal runs from one corner of the square to the opposite corner, and the two diagonals cross at the centre of the square. When the flaps are folded up, the four triangles meet at a single apex directly above the centre, forming a square pyramid. Viewed from directly above, the slanted edges of the pyramid project onto the square's diagonals, so the view shows the outer square with an X drawn from corner to corner through the centre.\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response accurately describes completing the diagram by drawing both diagonals of the square intersecting at the center, which correctly matches the required figure.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": "**Visualizing the Square**\n\nI'm focused on how the student depicted the geometric figure. They described a square with diagonals forming an 'X' in the center, which aligns perfectly with the scoring guide's requirement.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 614,
+  "completion_tokens": 113,
+  "reasoning_tokens": 68,
+  "cost_usd": 0.00088425,
+  "seconds": 2.546,
+  "batch_id": null,
+  "requested_at": "2026-10-19T18:41:39+00:00"
+}

@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 1995/grade 4/Mathematics/U1",
+  "item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/U1"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The triangle represents one tile in the shape of a triangle.\n\n[Image: An equilateral triangle labeled \"tile\"]\n\nHow many tiles will it take to cover the figure below?\n\n[Image: A polygon drawn on an isometric dot grid]\n\nNumber of tiles: ____\n\nUse the figure above to show how you worked out your answer.\n\nFigure, described in words:\nAt the top is an equilateral triangle with dots at each of its three vertices, labeled \"tile\" to the right of its right edge.\n\nBelow is an irregular polygon drawn on an isometric (triangular) dot grid, with dots marking vertices along its boundary and in its interior:\n- Top edge: a horizontal segment 3 units long, with 4 dots evenly spaced (including endpoints).\n- Left boundary: from the top-left dot, a line goes down and right by 1 unit to an indented vertex dot; from there, a line goes down and left by 1 unit to the bottom-left corner dot.\n- Bottom edge: a horizontal segment 4 units long, with 5 dots evenly spaced (including endpoints).\n- Right boundary: from the top-right dot, a line goes down and right by 1 unit to a vertex dot at the middle horizontal level; from that dot, a horizontal line extends right by 1 unit to another vertex dot; from that dot, a line goes down and left by 1 unit to the bottom-right corner dot.\n- Interior: 2 dots are spaced along the middle horizontal level between the left indented vertex and the right boundary.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Count the small equilateral triangles inside the polygon. The polygon is a trapezoid-like shape on the isometric grid made of full unit triangles: the top row (between the top edge of length 3 and the next row) contains 5 upward-pointing and 4 downward-pointing triangles... Working it out: the figure is made of 12 unit triangles, so it takes 12 tiles to cover it. Check: the top band between the top edge (length 3) and the middle level contains 5 upward and 4 downward triangles that fit inside the boundary, and the lower band between the middle level and the bottom edge (length 4) contains 3 upward and 4 downward triangles... Each unit triangle is one tile, so the total is 12.\n\nNumber of tiles: 12"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 920,
+  "completion_tokens": 256,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 1.786,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:22:37+00:00"
+}

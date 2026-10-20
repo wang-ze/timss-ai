@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 8/Mathematics/M052061",
+  "item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M052061"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Kim is packing eggs into boxes.\n\nEach box holds 6 eggs.\n\nShe has 94 eggs.\n\nWhat is the smallest number of boxes she needs to pack all the eggs?\n\nAnswer: ____ boxes",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "To find the smallest number of boxes Kim needs, I need to divide the total number of eggs (94) by the number of eggs each box holds (6). 94 divided by 6 is 15 with a remainder of 4.  Since there are 4 eggs left over, Kim needs an extra box for those eggs. Therefore, she needs 15 + 1 = 16 boxes. \n\nAnswer: 16 boxes"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 175,
+  "completion_tokens": 111,
+  "reasoning_tokens": 0,
+  "cost_usd": 2.54e-05,
+  "seconds": 1.505,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:07:16+00:00"
+}

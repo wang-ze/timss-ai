@@ -1,0 +1,45 @@
+{
+  "unit_key": "TIMSS 2003/grade 8/Mathematics/M012039",
+  "item_keys": [
+    "TIMSS 2003/grade 8/Mathematics/M012039"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "In the figure, PQ and RS are intersecting straight lines.\n\n[Image: Intersecting lines PQ and RS]\n\nWhat is the value of x + y ?\n\nFigure, described in words:\nTwo straight lines intersect. Line PQ slopes downward from upper-left (point P) to lower-right (point Q). Line RS slopes upward from lower-left (point R) to upper-right (point S). At the intersection, an angle arc indicates the obtuse top angle between ray P and ray S, labeled 150°. An arc indicates the acute angle on the left between ray P and ray R, labeled x°. An arc indicates the acute angle on the right between ray S and ray Q, labeled y°.\n\nA. 15\nB. 30\nC. 60\nD. 180\nE. 300",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "C"
+  },
+  "llm_thinking": "I'm working out the angles formed by two intersecting lines, with the top angle given as 150° and vertical angles equal, trying to figure out how x and y relate at the other positions around the intersection point.\n\nSince PQ is a straight line, angle SOQ must be 180° minus 150°, giving y = 30°. Likewise, since ROS is straight, x = 30° too, so x + y = 60°, pointing to answer C.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 682,
+  "completion_tokens": 339,
+  "reasoning_tokens": 328,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335961-VWbz6F0PkdlHoUJEbmRp",
+  "requested_at": "2026-10-19T14:20:48+00:00"
+}

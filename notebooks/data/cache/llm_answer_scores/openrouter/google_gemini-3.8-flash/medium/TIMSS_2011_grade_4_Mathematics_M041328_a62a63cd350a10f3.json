@@ -1,0 +1,46 @@
+{
+  "item_key": "TIMSS 2011/grade 4/Mathematics/M041328",
+  "response": "Reflect each vertex across line m (the vertical line x = 3 on the grid, 3 units from the left edge). Using the grid coordinates measured from the left edge and bottom edge: the right-angle vertex at (2, 2) is 1 unit left of m, so its reflection is 1 unit right of m at (4, 2). The vertex at (1, 2), 2 units left of m, reflects to (5, 2), 2 units right of m. The top vertex at (2, 5), 1 unit left of m, reflects to (4, 5), 1 unit right of m. Draw the reflected triangle by connecting these three new points: a vertical leg from (4, 2) up to (4, 5) that is 3 units long on the grid line 1 unit right of m, and a horizontal base from (4, 2) to (5, 2) that is 1 unit long. The reflected triangle is a mirror image of the original, with the right angle at (4, 2) and the same size and shape as the original triangle, lying on the right side of line m.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the fourth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\n[Image: a grid divided into two halves by line labeled m. A triangle is drawn on the left side.]\nDraw the reflection of the triangle. Line m is the mirror line.\n\nFigure, described in words:\nA square grid 6 units wide and 6 units tall. A vertical dashed line labeled \"m\" at the bottom divides the grid vertically down the center (3 units from the left edge and 3 units from the right edge). On the left side of line m, a right triangle is drawn along the grid lines with vertices at:\n- 2 units from the left edge and 2 units above the bottom edge (the right-angled vertex, located 1 unit to the left of line m)\n- 1 unit from the left edge and 2 units above the bottom edge (located 2 units to the left of line m)\n- 2 units from the left edge and 5 units above the bottom edge (1 unit below the top edge, located 1 unit to the left of line m).\nThe vertical leg of the triangle is 3 units long and lies along the grid line 1 unit to the left of line m; the horizontal base is 1 unit long and lies 2 units above the bottom edge.\n\n# Scoring guide of the question (1 point)\n\n- Correct Response (1 point):\n  - Correct figure drawn (each vertex should be within 2 mm of the correct position)\n[Image: a grid divided into two halves by a line labeled m. On the left, a right triangle is drawn with the hypotenuse to the left, and the right angle to the bottom right. On the right, the same triangle is drawn, but with the hypotenuse on the right and the right angle on to bottom left.]\n- Incorrect Response (0 points):\n  - Incorrect (including crossed out, erased, stray marks, illegible, or off task)\n\n# Response to the question\n\nReflect each vertex across line m (the vertical line x = 3 on the grid, 3 units from the left edge). Using the grid coordinates measured from the left edge and bottom edge: the right-angle vertex at (2, 2) is 1 unit left of m, so its reflection is 1 unit right of m at (4, 2). The vertex at (1, 2), 2 units left of m, reflects to (5, 2), 2 units right of m. The top vertex at (2, 5), 1 unit left of m, reflects to (4, 5), 1 unit right of m. Draw the reflected triangle by connecting these three new points: a vertical leg from (4, 2) up to (4, 5) that is 3 units long on the grid line 1 unit right of m, and a horizontal base from (4, 2) to (5, 2) that is 1 unit long. The reflected triangle is a mirror image of the original, with the right angle at (4, 2) and the same size and shape as the original triangle, lying on the right side of line m.\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response accurately identifies the reflection of each vertex across line m and describes drawing the correctly oriented and positioned reflected triangle on the right side of the mirror line.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": "**Clarifying Reflection Points**\n\nI'm confirming the reflection of the triangle's vertices. The right-angled vertex, originally positioned one unit left and two units above the bottom edge relative to mirror line $m$, will now be located one unit right of $m$. This ensures accurate representation of the transformation.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 954,
+  "completion_tokens": 206,
+  "reasoning_tokens": 156,
+  "cost_usd": 0.001488,
+  "seconds": 3.229,
+  "batch_id": null,
+  "requested_at": "2026-10-19T18:43:00+00:00"
+}

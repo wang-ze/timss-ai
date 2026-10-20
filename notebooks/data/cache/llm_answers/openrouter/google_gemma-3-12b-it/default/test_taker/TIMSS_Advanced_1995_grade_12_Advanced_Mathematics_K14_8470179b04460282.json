@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K14",
+  "item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K14"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "A string is wound symmetrically around a circular rod. The string goes exactly 4 times around the rod. The circumference of the rod is 4 cm and its length is 12 cm.\n\n[Image: A cylinder with a string wound around it 4 times]\n\nFind the length of the string. Show all your work.\n\nFigure, described in words:\nA side-view illustration of a horizontal cylindrical rod. A thick, dark line representing a string begins near the top-left edge, winds around the rod symmetrically making 4 complete helical turns from left to right, and terminates near the top-right edge.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Let $C$ be the circumference of the circular rod, and let $L$ be the length of the rod. We are given that $C = 4$ cm and $L = 12$ cm. The string goes around the rod exactly 4 times. We can imagine unrolling the cylinder to form a rectangle with width $4C = 4(4) = 16$ cm and height $L = 12$ cm. The string can be represented as the hypotenuse of a right triangle with base $4C = 16$ cm and height $L = 12$ cm. Let $S$ be the length of the string. By the Pythagorean theorem, we have: \\ $S^2 = (4C)^2 + L^2 = (16)^2 + (12)^2 = 256 + 144 = 400$. Therefore, $S = \frac{1}{2}\times \text{perimeter of rectangle} = \frac{1}{2} \times \text{the length of the rectangle}$ $S = \frac{\text{length of the rectangle}}{\text{the number of times the string goes around}}$ So the length of the string is $\text{Diagonal of the rectangle}$. Then $S = \text{Diagonal} = \text{Hypotenuse} = \text{length of string}$. \\ $S = \text{Length of string} = \text{Diagonal of right triangle} = \text{Hypotenuse} = \text{Diagonal} = \text{hypotenuse} = \text{diagonal}$ \\ Let's consider the right triangle with base $4C = 16$ cm and height $L = 12$ cm. The length of the string $S$ is the hypotenuse of this right triangle. Using the Pythagorean theorem: $S^2 = (4C)^2 + L^2 = 16^2 + 12^2 = 256 + 144 = 400$. Therefore, $S = \text{hypotenuse} = \text{length of string} = \text{square root of 400} = \text{square root of 400} = 20$. \\ Thus, the length of the string is 20 cm. \\ The string goes around the rod 4 times. If the string went around the rod once, it would form a helix. The length of one turn of the helix can be found using the Pythagorean theorem. The circumference of the rod is 4 cm, so the distance traveled around the rod in one turn is 4 cm. The length of the rod is 12 cm, so the vertical distance covered in one turn is $\frac{12}{4} = 3$ cm. Therefore, the length of one turn of the helix is $\text{length of one turn} = \text{vertical distance} = \text{base} = \text{4 cm}$. Then the length of one turn of the string is $\text{h} = \text{hypotenuse} = \text{Square root of (base^2 + height^2)} = \text{Square root of (4^2 + 3^2)} = \text{Square root of (16 + 9)} = \text{square root of (25)} = \text{5 cm}$. Then $S = \text{length of string} = \text{number of turns times the length of one turn}$. So $S = \text{4 * 5 = 20} \text{cm}$."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 274,
+  "completion_tokens": 782,
+  "reasoning_tokens": 0,
+  "cost_usd": 0.0001965,
+  "seconds": 9.091,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:07:41+00:00"
+}

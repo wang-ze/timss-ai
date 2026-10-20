@@ -1,0 +1,46 @@
+{
+  "unit_key": "TIMSS 2011/grade 4/Mathematics/M041160A+M041160B",
+  "item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M041160A",
+    "TIMSS 2011/grade 4/Mathematics/M041160B"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "These 2 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nThis is a map of Lucy’s town. The market is at the position C2.\n\n[Image: a map with x-axis labeled A through I from left to right and the y-axis labeled 1 through 8 from down to up.]\n\nA. What is the position of the shop?\n\nThe shop is at ____\n\nFigure, described in words:\nA grid measuring 9 columns wide by 8 rows high. The columns are labeled below the grid from left to right with uppercase letters A, B, C, D, E, F, G, H, and I. The rows are labeled to the left of the grid from bottom to top with numbers 1, 2, 3, 4, 5, 6, 7, and 8. Three cells contain text: the cell at column C, row 2 contains \"market\"; the cell at column F, row 6 contains \"school\"; and the cell at column H, row 3 contains \"shop\". All other cells are empty.\n\n## Question 2\n\nThis is a map of Lucy’s town. The market is at the position C2.\n\n[Image: a map with x-axis labeled A through I from left to right and the y-axis labeled 1 through 8 from down to up.]\n\nB. Lucy’s house is at D5. Put an X on the map to show where Lucy’s house is.\n\nFigure, described in words:\nA grid of 9 columns and 8 rows of square cells. The columns are labeled along the bottom from left to right with uppercase letters A through I, and the rows are labeled along the left side from bottom to top with numbers 1 through 8. Inside three of the cells are labels centered within the squares: cell C2 contains the word \"market\", cell F6 contains the word \"school\", and cell H3 contains the word \"shop\". All other cells in the grid are blank.\n\nAnswer each of the 2 questions.",
+  "output_schema": {
+    "properties": {
+      "answer_1": {
+        "description": "Your answer to question 1, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 1",
+        "type": "string"
+      },
+      "answer_2": {
+        "description": "Your answer to question 2, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 2",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer_1",
+      "answer_2"
+    ],
+    "title": "Answers",
+    "type": "object"
+  },
+  "output": {
+    "answer_1": "The shop is at H3",
+    "answer_2": "I would put an 'X' in the cell at column D, row 5 on the map."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 594,
+  "completion_tokens": 42,
+  "reasoning_tokens": 0,
+  "cost_usd": 5.4e-05,
+  "seconds": 2.44,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:18:51+00:00"
+}

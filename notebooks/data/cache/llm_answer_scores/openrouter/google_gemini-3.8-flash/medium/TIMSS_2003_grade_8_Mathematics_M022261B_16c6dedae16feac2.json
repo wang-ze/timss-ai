@@ -1,0 +1,46 @@
+{
+  "item_key": "TIMSS 2003/grade 8/Mathematics/M022261B",
+  "response": "98",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the eighth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Questions\n\nThese 3 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nThe three figures below are divided into small congruent triangles.\n\n[Image: Three figures divided into small triangles]\n\nA. Complete the table below. First, fill in how many small triangles make up Figure 3. Then, find the number of small triangles that would be needed for the 4th figure if the sequence of figures is extended.\n\n| Figure | Number of Small Triangles |\n| :--- | :--- |\n| 1 | 2 |\n| 2 | 8 |\n| 3 | |\n| 4 | |\n\nFigure, described in words:\nThree geometric figures composed of small congruent right triangles:\n- Figure 1: A single square with a diagonal line from the bottom-left corner to the top-right corner, dividing it into two right triangles labeled '1' (top-left) and '2' (bottom-right). Below the square is the label 'Figure 1'.\n- Figure 2: A square divided into a 2-by-2 grid of 4 smaller squares. Each smaller square has a diagonal from bottom-left to top-right, creating 8 congruent triangles numbered 1 through 8: top-left square has 1 (upper) and 2 (lower); top-right square has 3 (upper) and 4 (lower); bottom-left square has 5 (upper) and 6 (lower); bottom-right square has 7 (upper) and 8 (lower). Below is the label 'Figure 2'.\n- Figure 3: A square divided into a 3-by-3 grid of 9 smaller squares. Each smaller square has a diagonal from bottom-left to top-right, creating 18 congruent triangles. None of the triangles are numbered. Below is the label 'Figure 3'.\n\n## Question 2\n\nThe three figures below are divided into small congruent triangles.\n\n[Image: Three figures divided into small triangles]\n\nB. The sequence of figures is extended to the 7th figure. How many small triangles would be needed for Figure 7?\n\nAnswer: ____\n\nFigure, described in words:\nThree geometric figures composed of small congruent right triangles:\n- Figure 1: A single square with a diagonal line from the bottom-left corner to the top-right corner, dividing it into two right triangles labeled '1' (top-left) and '2' (bottom-right). Below the square is the label 'Figure 1'.\n- Figure 2: A square divided into a 2-by-2 grid of 4 smaller squares. Each smaller square has a diagonal from bottom-left to top-right, creating 8 congruent triangles numbered 1 through 8: top-left square has 1 (upper) and 2 (lower); top-right square has 3 (upper) and 4 (lower); bottom-left square has 5 (upper) and 6 (lower); bottom-right square has 7 (upper) and 8 (lower). Below is the label 'Figure 2'.\n- Figure 3: A square divided into a 3-by-3 grid of 9 smaller squares. Each smaller square has a diagonal from bottom-left to top-right, creating 18 congruent triangles. None of the triangles are numbered. Below is the label 'Figure 3'.\n\n## Question 3\n\nThe three figures below are divided into small congruent triangles.\n\n[Image: Three figures divided into small triangles]\n\nC. The sequence of figures is extended to the 50th figure. Explain a way to find the number of small triangles in the 50th figure that does not involve drawing it and counting the number of triangles.\n\nFigure, described in words:\nThree geometric figures composed of small congruent right triangles:\n- Figure 1: A single square with a diagonal line from the bottom-left corner to the top-right corner, dividing it into two right triangles labeled '1' (top-left) and '2' (bottom-right). Below the square is the label 'Figure 1'.\n- Figure 2: A square divided into a 2-by-2 grid of 4 smaller squares. Each smaller square has a diagonal from bottom-left to top-right, creating 8 congruent triangles numbered 1 through 8: top-left square has 1 (upper) and 2 (lower); top-right square has 3 (upper) and 4 (lower); bottom-left square has 5 (upper) and 6 (lower); bottom-right square has 7 (upper) and 8 (lower). Below is the label 'Figure 2'.\n- Figure 3: A square divided into a 3-by-3 grid of 9 smaller squares. Each smaller square has a diagonal from bottom-left to top-right, creating 18 congruent triangles. None of the triangles are numbered. Below is the label 'Figure 3'.\n\n# Scoring guide of question 2 (1 point)\n\n- Correct Response (1 point):\n  - 98\n- Incorrect Response (0 points):\n  - 49 [Multiplies 7 x 7]\n  - 58 [Series is 2, 8, 18, 28, 38...7th term is 58]\n  - Other incorrect (including crossed out/erased, stray marks, illegible, or off task).\n\n# Response to question 2\n\n98\n\nScore the response to question 2.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response correctly identifies 98 as the number of small triangles in Figure 7, which matches the scoring guide for a correct response.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 1357,
+  "completion_tokens": 128,
+  "reasoning_tokens": 81,
+  "cost_usd": 0.00149775,
+  "seconds": 14.306,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:42:53+00:00"
+}

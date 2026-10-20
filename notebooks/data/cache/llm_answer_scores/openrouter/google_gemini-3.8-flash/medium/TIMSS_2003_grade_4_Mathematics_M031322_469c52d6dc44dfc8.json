@@ -1,0 +1,46 @@
+{
+  "item_key": "TIMSS 2003/grade 4/Mathematics/M031322",
+  "response": "Draw a triangle whose base is the segment AB. Place the third vertex (the apex) directly above the midpoint of AB. AB runs 3 grid units, so its midpoint lies halfway between the 3rd and 4th vertical grid lines from the left. Count 3 grid units straight up from that midpoint and mark the apex there. Then join the apex to A with one straight line and to B with another straight line. The two new sides are mirror images of each other, so they are the same length. The finished triangle is isosceles with base AB.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the fourth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\n[Image: Grid with horizontal line segment AB]\n\nDraw a triangle in the grid so that the line AB is the base of the triangle and the two new sides are the same length as each other.\n\nFigure, described in words:\nA square grid 10 units wide and 6 units high. A heavy horizontal line segment is drawn along the fourth horizontal grid line from the top (second from the bottom), spanning 3 grid units from the second vertical grid line from the left to the fifth vertical grid line from the left. The left endpoint of this segment is labeled 'A' directly below it, and the right endpoint is labeled 'B' directly below it.\n\n# Scoring guide of the question (1 point)\n\n- Correct Response (1 point):\n  - Triangle with two new sides equal (i.e. meeting on or within 2mm of the gridline that is the perpendicular bisector of AB)\n- Incorrect Response (0 points):\n  - Triangle with two new sides unequal\n  - Other incorrect (including crossed out/erased, stray marks, illegible, or off task)\n\n# Response to the question\n\nDraw a triangle whose base is the segment AB. Place the third vertex (the apex) directly above the midpoint of AB. AB runs 3 grid units, so its midpoint lies halfway between the 3rd and 4th vertical grid lines from the left. Count 3 grid units straight up from that midpoint and mark the apex there. Then join the apex to A with one straight line and to B with another straight line. The two new sides are mirror images of each other, so they are the same length. The finished triangle is isosceles with base AB.\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response accurately describes constructing an isosceles triangle on base AB by placing the third vertex on the perpendicular bisector of AB (directly above the midpoint) and connecting it to points A and B. This ensures the two new sides are equal in length.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": "**Visualizing Triangle Geometry**\n\nI'm currently visualizing the construction of an isosceles triangle. The base segment, AB, is defined on the x-axis from 2 to 5, with its midpoint at 3.5. The third vertex is positioned directly above this midpoint, 3 units up, ensuring symmetry.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 647,
+  "completion_tokens": 189,
+  "reasoning_tokens": 120,
+  "cost_usd": 0.001194,
+  "seconds": 3.676,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:56:37+00:00"
+}

@@ -1,0 +1,47 @@
+{
+  "item_key": "TIMSS 2007/grade 4/Mathematics/M041258B",
+  "response": "Different: Shape P has a right angle, which means one of its angles is 90 degrees. Shape Q does not have a right angle; all its angles are less than 90 degrees.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the fourth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Questions\n\nThese 2 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nTwo shapes are shown below. Describe one way they are the same and one way they are different.\n\n[Image: Two triangles, labeled Shape P and Shape Q]\n\nA. Same\n\nFigure, described in words:\nTwo geometric shapes side by side: on the left is \"Shape P\", a right-angled triangle with a vertical left side, a horizontal bottom side, and a hypotenuse sloping down and to the right. On the right is \"Shape Q\", an acute isosceles triangle with a horizontal base and two equal-length sloping sides meeting at a top vertex.\n\n## Question 2\n\nTwo shapes are shown below. Describe one way they are the same and one way they are different.\n\n[Image: Two triangles, labeled Shape P and Shape Q]\n\nB. Different\n\nFigure, described in words:\nTwo geometric shapes side by side: on the left is \"Shape P\", a right-angled triangle with a vertical left side, a horizontal bottom side, and a hypotenuse sloping down and to the right. On the right is \"Shape Q\", an acute isosceles triangle with a horizontal base and two equal-length sloping sides meeting at a top vertex.\n\n# Scoring guide of question 2 (1 point)\n\n- Correct Response (1 point):\n  - One has a right angle, one does not.\n  - One has 2 sides/ angles the same size/is isoceles/has a line of symmetry (the other does not)\n  - One is bigger/longer/wider/has a larger area than the other or equivalent statement about size.\n- Incorrect Response (0 points):\n  - They are different shapes/ they are not the same shape.\n  - Other incorrect (including crossed out, erased, stray marks, illegible, or off task)\n- Nonresponse (0 points):\n  - Blank\n\n# Response to question 2\n\nDifferent: Shape P has a right angle, which means one of its angles is 90 degrees. Shape Q does not have a right angle; all its angles are less than 90 degrees.\n\nScore the response to question 2.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response",
+          "Nonresponse"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response correctly identifies that Shape P has a right angle while Shape Q does not, which directly matches one of the criteria for a correct response.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": "**Analyzing Shape Properties**\n\nI'm currently processing the provided textual data. My focus is on extracting and categorizing specific details regarding geometric shapes, specifically their angular attributes. The current update highlights a clear distinction between Shape P and Shape Q based on the presence or absence of a right angle. This observation aligns with the scoring guide's criteria.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 758,
+  "completion_tokens": 139,
+  "reasoning_tokens": 91,
+  "cost_usd": 0.00108975,
+  "seconds": 3.186,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:48:19+00:00"
+}

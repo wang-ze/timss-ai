@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2003/grade 8/Mathematics/M032652",
+  "item_keys": [
+    "TIMSS 2003/grade 8/Mathematics/M032652"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The teachers at Parkway School plan to send 6 newsletters per year to each of the 620 families with children at the school. The newsletters each need 2 sheets of paper. The paper is sold in packs of 500 sheets.\n\nWhat is the least number of packs of paper needed to print the school newsletter for the year?\n\nAnswer: ____",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Let's break this problem down step by step:First, find the total number of newsletters sent: 6 newsletters/year * 620 families = 3720 newslettersNext, find the total number of sheets of paper needed: 3720 newsletters * 2 sheets/newsletter = 7440 sheetsNow, find the number of packs of paper needed: 7440 sheets / 500 sheets/pack = 14.88 packsSince you can't buy parts of packs, you need to round up to the nearest whole number.Therefore, the least number of packs of paper needed is 15."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 206,
+  "completion_tokens": 145,
+  "reasoning_tokens": 0,
+  "cost_usd": 3.205e-05,
+  "seconds": 2.894,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:06:50+00:00"
+}

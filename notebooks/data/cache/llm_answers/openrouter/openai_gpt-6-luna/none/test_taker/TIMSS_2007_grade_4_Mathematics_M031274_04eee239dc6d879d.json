@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2007/grade 4/Mathematics/M031274",
+  "item_keys": [
+    "TIMSS 2007/grade 4/Mathematics/M031274"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "On the grid below, draw the reflection of the shape in the dotted line of symmetry.\n\n[Image: Grid with a polygon and a dashed line of symmetry]\n\nFigure, described in words:\nAn 8 by 8 grid of square cells with a vertical dashed line of symmetry running along the central vertical grid line (between the 4th and 5th columns from the left).\nTo the right of the dashed line is a six-sided polygon with vertices at grid intersections (with column lines 0 to 8 from left to right, and row lines 0 to 8 from top to bottom):\n- (column 4, row 3) on the dashed line\n- (column 5, row 2)\n- (column 6, row 4)\n- (column 7, row 4)\n- (column 7, row 6)\n- (column 4, row 5) on the dashed line\n\nThe edges of the polygon connect these vertices in sequence:\n- A straight segment from (4, 3) up and right to (5, 2)\n- A segment from (5, 2) down and right to (6, 4)\n- A horizontal segment from (6, 4) to (7, 4)\n- A vertical segment from (7, 4) down to (7, 6)\n- A slanted segment from (7, 6) up and left to (4, 5)\n- A vertical segment of length 2 along the dashed line from (4, 5) up to (4, 3)",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Draw the reflected polygon on the left of the dotted line by reflecting each vertex across the line. Join the points in order: (4, 3), (3, 2), (2, 4), (1, 4), (1, 6), (4, 5), and back to (4, 3)."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 522,
+  "completion_tokens": 83,
+  "reasoning_tokens": 0,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335939-AiV5nQMEYsBDzf4oBKJu",
+  "requested_at": "2026-10-18T15:22:29+00:00"
+}

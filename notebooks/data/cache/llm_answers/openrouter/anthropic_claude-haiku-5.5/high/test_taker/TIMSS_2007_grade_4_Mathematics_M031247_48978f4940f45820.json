@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2007/grade 4/Mathematics/M031247",
+  "item_keys": [
+    "TIMSS 2007/grade 4/Mathematics/M031247"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "A man took his 3 children to a fair. Tickets cost twice as much for adults as for children. The father paid a total of 50 zeds for the 4 tickets.\n\nHow many zeds did each child’s ticket cost? Show your work.\n\nAnswer: ____",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Let each child's ticket cost c zeds. The adult ticket costs twice as much, so it costs 2c zeds. The 4 tickets are 1 adult ticket and 3 child tickets, so the total is 2c + 3c = 5c. Since the total is 50 zeds, 5c = 50, so c = 10. Each child's ticket cost 10 zeds. Check: the adult ticket is 20 zeds, and 20 + 3 × 10 = 50 zeds."
+  },
+  "llm_thinking": "Four tickets total means 1 adult plus 3 children, with the adult ticket costing double a child's. So 2c + 3c = 50, giving 5c = 50 and c = 10 zeds per child ticket.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 507,
+  "completion_tokens": 330,
+  "reasoning_tokens": 163,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335958-MhJCSqWm7WbRuqTiOnF6",
+  "requested_at": "2026-10-19T14:20:45+00:00"
+}

@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2003/grade 8/Mathematics/M032689",
+  "item_keys": [
+    "TIMSS 2003/grade 8/Mathematics/M032689"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "none",
+  "system_prompt": "You are an eighth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: Geometric construction with intersecting arcs]\n\nIn the figure above, an arc of a circle with center P has been drawn to cut the line at Q. Then an arc with the same radius and center Q was drawn to cut the first arc at R. What would be the size of angle PRQ?\n\nFigure, described in words:\nA horizontal straight line has two marked points, P to the left and Q to the right. An arc of a circle centered at point P begins at point Q on the line and curves up and to the left. A second, shorter arc centered at point Q intersects the first arc at a marked point labeled R, which lies above the line segment PQ.\n\nA. 30°\nB. 45°\nC. 60°\nD. 75°",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "C"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 363,
+  "completion_tokens": 12,
+  "reasoning_tokens": 0,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792430075-8ux1kVFQKas7RzUwDRFE",
+  "requested_at": "2026-10-19T17:19:48+00:00"
+}

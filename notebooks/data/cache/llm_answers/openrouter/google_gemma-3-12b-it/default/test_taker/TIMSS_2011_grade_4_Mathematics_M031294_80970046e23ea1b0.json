@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2011/grade 4/Mathematics/M031294",
+  "item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M031294"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: a scale in grams weighing three apples]\n\nHow much do the apples weigh in grams?\n\nFigure, described in words:\nA dial scale with three apples resting on the weighing platform at the top. The circular dial is labeled \"grams\" in the center. The scale is marked with numbers clockwise starting from 0 at the top, then 50, 100, 150, 200 (at the bottom), 250, 300, and 350. Between every two numbered intervals of 50 grams, there are tick marks dividing the interval into 5 equal subdivisions of 10 grams each. A pointer extends from the center and points directly to the second tick mark clockwise past 200.\n\nA. 200\nB. 202\nC. 210\nD. 220",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "C"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 321,
+  "completion_tokens": 7,
+  "reasoning_tokens": 0,
+  "cost_usd": 2.565e-05,
+  "seconds": 0.492,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:07:36+00:00"
+}

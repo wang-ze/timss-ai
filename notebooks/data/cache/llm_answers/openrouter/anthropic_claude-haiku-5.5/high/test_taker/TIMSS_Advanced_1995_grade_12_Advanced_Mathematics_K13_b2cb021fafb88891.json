@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K13",
+  "item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K13"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The number of bacteria in a colony was growing exponentially. At 1 pm yesterday the number of bacteria was 1000 and at 3 pm yesterday it was 4000.\n\nHow many bacteria were there in the colony at 6 pm yesterday?",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "32000. Work: From 1 pm to 3 pm is 2 hours, and the number grew from 1000 to 4000, a factor of 4. So the colony doubles every hour (2^2 = 4). From 3 pm to 6 pm is 3 hours, so the number is multiplied by 2^3 = 8. At 6 pm there were 4000 × 8 = 32000 bacteria."
+  },
+  "llm_thinking": "The growth doubles each hour, so from 3pm to 6pm (3 hours) gives a factor of 8, meaning 4000 times 8 equals 32,000.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 536,
+  "completion_tokens": 235,
+  "reasoning_tokens": 97,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335958-MhJCSqWm7WbRuqTiOnF6",
+  "requested_at": "2026-10-19T14:20:45+00:00"
+}

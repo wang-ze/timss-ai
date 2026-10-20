@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 1999/grade 8/Mathematics/B11",
+  "item_keys": [
+    "TIMSS 1999/grade 8/Mathematics/B11"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: Net of a cube]\n\nWhich of these cubes could be made by folding the figure above?\n\nFigure, described in words:\nThe stem shows a net of a cube consisting of six square faces arranged in a cross. A vertical column of four squares has, from top to bottom: a square containing a solid black circle, a square containing an unfilled circle, a square containing a solid black triangle pointing upward, and a blank square. Flanking the second square (with the unfilled circle) are two additional blank squares, one to the left and one to the right.\n\nThe options show perspective views of a cube displaying three faces (top, front-left, and front-right):\n- A: Top face has a solid black circle, front-left face has an upward-pointing black triangle, and front-right face has an unfilled circle.\n- B: Top face has an unfilled circle, front-left face has an upward-pointing black triangle, and front-right face has a solid black circle.\n- C: Top face has an unfilled circle, front-left face has a solid black circle, and front-right face is blank.\n- D: Top face has an unfilled circle, front-left face is blank, and front-right face is blank.\n\nA. [Image: Cube with black circle on top face, black triangle on left face, white circle on right face]\nB. [Image: Cube with white circle on top face, black triangle on left face, black circle on right face]\nC. [Image: Cube with white circle on top face, black circle on left face, blank right face]\nD. [Image: Cube with white circle on top face, blank left face, blank right face]",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "C"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 911,
+  "completion_tokens": 2417,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 12.012,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:23:42+00:00"
+}

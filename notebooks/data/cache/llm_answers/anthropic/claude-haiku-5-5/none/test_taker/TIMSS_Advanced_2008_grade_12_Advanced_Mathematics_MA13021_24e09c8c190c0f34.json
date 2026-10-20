@@ -1,0 +1,45 @@
+{
+  "unit_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13021",
+  "item_keys": [
+    "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13021"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "As line AB rotates about line AC in space, keeping an angle of 30°, what figure is traced out by the line AB?\n\n[Image: Line AB intersecting line AC]\n\nFigure, described in words:\nTwo straight lines intersect at point A. One line is horizontal with arrows at both ends, containing point A and labeled C below its right end. The other line passes through A, slanting upward to the right and downward to the left, with arrows at both ends; point B is marked on the upper-right ray. An angle arc between ray AB and ray AC is labeled 30°.\n\nA. a cone\nB. a cylinder\nC. a spiral\nD. a circle\nE. a sphere",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "A"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 671,
+  "completion_tokens": 10,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 1.035,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:22:36+00:00"
+}

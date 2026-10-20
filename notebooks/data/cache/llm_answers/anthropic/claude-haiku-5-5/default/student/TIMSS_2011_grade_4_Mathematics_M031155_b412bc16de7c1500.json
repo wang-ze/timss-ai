@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2011/grade 4/Mathematics/M031155",
+  "item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M031155"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": null,
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: Bar graph with titled Teacher’s Pens and 3 columns labeled blue, red, and black on the y-axis. X-axis labeled Number of Pens with values from 0 to 20 and increments at every 4 units. Y-axis is labeled Color of Pens.]\n\nThe graph shows the number of blue, red, and black pens the teacher has in his desk. How many more red pens are there than black pens?\n\nFigure, described in words:\nA horizontal bar graph titled \"Teacher's Pens\". The vertical axis is labeled \"Color of Pens\" and lists three colors: \"blue\", \"red\", and \"black\". The horizontal axis is labeled \"Number of Pens\" with grid lines spaced at increments of 2, and numbers marked at 4, 8, 12, 16, and 20. The horizontal shaded bar for \"blue\" extends to 10 (the vertical line between 8 and 12). The bar for \"red\" extends to 16. The bar for \"black\" extends to 8.\n\nA. 2 more\nB. 4 more\nC. 6 more\nD. 8 more",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "D"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 801,
+  "completion_tokens": 11,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 0.563,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:14:37+00:00"
+}

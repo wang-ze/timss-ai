@@ -1,0 +1,45 @@
+{
+  "unit_key": "TIMSS 2003/grade 8/Mathematics/M012015",
+  "item_keys": [
+    "TIMSS 2003/grade 8/Mathematics/M012015"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "ABCD is a trapezoid.\n\n[Image: Trapezoid ABCD]\n\nAnother trapezoid, GHIJ (not shown), is congruent (the same size and shape) to ABCD. Angles G and J each measure 70°. Which of these could be true?\n\nFigure, described in words:\nAn isosceles trapezoid ABCD with horizontal base AD along the bottom and shorter horizontal side BC along the top. Vertex A is at the bottom left, B is at the top left, C is at the top right, and D is at the bottom right. The interior angle at vertex A is labeled 70°, and the interior angle at vertex D is labeled 70°.\n\nA. GH = AB\nB. Angle H is a right angle.\nC. All sides of GHIJ are the same length.\nD. The perimeter of GHIJ is 3 times the perimeter of ABCD.\nE. The area of GHIJ is less than the area of ABCD.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "A"
+  },
+  "llm_thinking": "ABCD is an isosceles trapezoid where the 70° angles sit at A and D, which share side AD. Since GHIJ is congruent to ABCD with 70° angles at G and J, and G-J form a side in that quadrilateral, this matches the adjacency pattern of A and D — so GJ corresponds to AD.\n\nChecking each option: GH could equal AB under the mapping G→A, H→B, which works since both are legs — so A is true. A right angle at H is impossible since ABCD's angles are only 70° and 110°, ruling out B. Equal sides is false since the trapezoid's bases differ, perimeter being triple is false since the shapes are simply congruent, and area can't be smaller since congruent shapes have equal area. So the answer is A.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 735,
+  "completion_tokens": 462,
+  "reasoning_tokens": 451,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335960-oItwFneLfMfZRXMM1E4b",
+  "requested_at": "2026-10-19T14:20:47+00:00"
+}

@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 4/Mathematics/M041284",
+  "item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M041284"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: various shapes labeled A, B, C, D, E, and F overlaying on grid. A is a square; B is an irregular rectangle; C is a rectangle; D is cross shape; E is a trapezoid; F is a diamond shape.]\n\nSean used the table to sort these shapes.\nPut the letter of each shape in the space where it belongs.\nShape A has been done for you.\n\n| | Has 4 Sides | Does Not Have 4 Sides |\n| :--- | :--- | :--- |\n| All sides are the same length | A | |\n| All sides are NOT the same length | | |\n\nFigure, described in words:\nA square grid containing six outlined shapes labeled A through F:\n- Shape A: A square measuring 3 units by 3 units.\n- Shape B: An irregular stepped polygon with horizontal and vertical edges of varying lengths (not 4 sides, sides of different lengths).\n- Shape C: A vertical rectangle measuring 2 units wide and 5 units tall.\n- Shape D: A symmetrical 12-sided cross (plus sign) shape composed of five 2-by-2 square sections; every side is 2 units long.\n- Shape E: An isosceles trapezoid with a horizontal top base of 4 units, a horizontal bottom base of 6 units, and a height of 4 units.\n- Shape F: A square oriented as a rhombus/diamond with horizontal and vertical diagonals measuring 4 units; all 4 sides are of equal length.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": ">> **All sides are the same length:** A, F\n>> **All sides are NOT the same length:** B, C, D, E"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 460,
+  "completion_tokens": 36,
+  "reasoning_tokens": 0,
+  "cost_usd": 2.84e-05,
+  "seconds": 1.004,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:06:14+00:00"
+}

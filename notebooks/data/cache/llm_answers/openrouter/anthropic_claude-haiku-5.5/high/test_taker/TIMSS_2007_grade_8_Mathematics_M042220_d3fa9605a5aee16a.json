@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2007/grade 8/Mathematics/M042220",
+  "item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M042220"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The results of a survey of 200 students are shown in the pie chart.\n\n[Image: Pie chart showing popularity of rock bands]\n\nMake a bar chart showing the number of students in each category in the pie chart.\n\n[Image: Bar chart template]\n\nFigure, described in words:\nThe item includes two figures:\n1. A pie chart titled \"Popularity of Rock Bands\" divided into three sectors: \"Red Hot Peppers 25%\" (shaded light gray, occupies the top-right quarter from 12 o'clock to 3 o'clock), \"Stone Cold 45%\" (shaded medium gray, occupies from 3 o'clock to approximately 8:30), and \"Dreadlocks 30%\" (unshaded, occupies from approximately 8:30 to 12 o'clock). There are tick marks on the circle edge at 12 o'clock, 3 o'clock, and 6 o'clock.\n2. A blank bar chart titled \"Popularity of Rock Bands\". The vertical axis is labeled \"Number of Students\" with horizontal grid lines at 0, 50, 100, 150, and 200. Between each labeled interval of 50, there are 4 tick marks dividing each interval into five 10-unit subdivisions. The horizontal axis has three tick marks labeled \"Red Hot Peppers\", \"Stone Cold\", and \"Dreadlocks\".",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Number of students in each category (200 students in total): Red Hot Peppers is 25% of 200 = 50 students; Stone Cold is 45% of 200 = 90 students; Dreadlocks is 30% of 200 = 60 students. Check: 50 + 90 + 60 = 200. On the bar chart, draw a bar above the Red Hot Peppers tick mark up to the 50 gridline (height 50). Draw a bar above the Stone Cold tick mark up to 90, which is 40 units above the 50 gridline, or 4 subdivisions of 10 past the 50 line... more precisely, 90 is 4 of the 10-unit subdivisions above the 50 line, ending at the second subdivision mark between 50 and 100. Draw a bar above the Dreadlocks tick mark up to 60, which is one 10-unit subdivision above the 50 gridline. Shade or fill each bar fully, with the bars equal in width and separated by gaps. Label the vertical axis 'Number of Students' as shown and keep the horizontal axis labels Red Hot Peppers, Stone Cold, and Dreadlocks."
+  },
+  "llm_thinking": "With 200 students total, I calculate 25% gives 50 for Red Hot Peppers, 45% gives 90 for Stone Cold, and 30% gives 60 for Dreadlocks, so I'm building the bar chart with those three heights and writing up the explanation alongside it.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 873,
+  "completion_tokens": 515,
+  "reasoning_tokens": 131,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335960-oItwFneLfMfZRXMM1E4b",
+  "requested_at": "2026-10-19T14:20:47+00:00"
+}

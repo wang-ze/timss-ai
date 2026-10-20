@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 8/Mathematics/M052362",
+  "item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M052362"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are an eighth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: An isosceles triangle. The left angle is labeled \"A\", the top angle is labeled \"C\", and the right angle is labeled \"B\". AC and CB are equal in length. AB is the base. A line is drawn from \"C\" to a point \"X\" on the base of the triangle. The line forms a right angle with the base.]\n\nIn this triangle:\n\nAC = BC\n\nAB is twice as long as CX.\n\nWhat is the size of angle B?\n\nAnswer: ____ °\n\nFigure, described in words:\nAn isosceles triangle ABC with horizontal base AB and apex vertex C above it. Side AC and side BC appear equal in length. A vertical line segment CX is drawn from vertex C perpendicular to the base AB at point X, indicated by a square right-angle mark on the right side of segment CX at point X.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Since AC = BC, triangle ABC is isosceles with base AB, so angles A and B are equal. The altitude CX is perpendicular to AB, and AB is twice CX, so AB = 2·CX. In right triangle CXB, the leg CX is opposite angle B and the hypotenuse-adjacent leg XB = AB/2 = CX. Thus CX = XB, so triangle CXB is an isosceles right triangle with a right angle at X, making angle B = 45°. Check: angle XCB = 45°, so angle C of the big triangle is 90°, and the base angles A and B are each (180° − 90°)/2 = 45°. Answer: 45°"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 707,
+  "completion_tokens": 230,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 2.139,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:15:36+00:00"
+}

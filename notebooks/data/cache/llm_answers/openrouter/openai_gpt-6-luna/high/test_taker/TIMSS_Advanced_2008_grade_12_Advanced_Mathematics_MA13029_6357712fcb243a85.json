@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13029",
+  "item_keys": [
+    "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA13029"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "In the quadrilateral ABCD below, diagonals AC and BD intersect at point E.\nPROVE that E is the midpoint of AC and BD. Show all your work.\n\n[Image: Quadrilateral ABCD on a coordinate plane]\n\nFigure, described in words:\nA Cartesian coordinate plane with a horizontal axis labeled x and a vertical axis labeled y, intersecting at origin 0. The x-axis has tick marks with labels at 2, 4, 6, 8, and 10. The y-axis has tick marks with labels at 2, 4, and 6. A quadrilateral ABCD is shown with labeled vertices: D at (2, 1), A at (4, 4), B at (10, 5), and C at (8, 2). Diagonals AC and BD are drawn as line segments connecting opposite vertices, intersecting at a point labeled E.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Using the midpoint formula, the midpoint of diagonal AC is\n\\[\n\\left(\\frac{4+8}{2},\\frac{4+2}{2}\\right)=(6,3).\n\\]\nThe midpoint of diagonal BD is\n\\[\n\\left(\\frac{10+2}{2},\\frac{5+1}{2}\\right)=(6,3).\n\\]\nThus both diagonals have the same midpoint, the point \\((6,3)\\). Since E is where AC and BD intersect, E is this common midpoint. Therefore E is the midpoint of both AC and BD."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 397,
+  "completion_tokens": 307,
+  "reasoning_tokens": 157,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335949-X58qq9KWicsA7LXLKx9U",
+  "requested_at": "2026-10-18T15:09:01+00:00"
+}

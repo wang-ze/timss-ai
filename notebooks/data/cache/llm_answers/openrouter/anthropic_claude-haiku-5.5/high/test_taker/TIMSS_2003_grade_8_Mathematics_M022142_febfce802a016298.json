@@ -1,0 +1,45 @@
+{
+  "unit_key": "TIMSS 2003/grade 8/Mathematics/M022142",
+  "item_keys": [
+    "TIMSS 2003/grade 8/Mathematics/M022142"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "In this figure, PQ and RS are parallel.\n\n[Image: Parallel lines PQ and RS intersected by a transversal]\n\nOf the following, which pair of angles has the sum of 180°?\n\nFigure, described in words:\nTwo horizontal parallel lines with arrowheads at both ends are intersected by a transversal line that slopes upward from lower-left to upper-right. The upper horizontal line has label P at its left end and Q at its right end. The lower horizontal line has label R at its left end and S at its right end. At the intersection with line PQ, four angles are numbered: angle 1 in the upper-left, angle 2 in the upper-right, angle 3 in the lower-right, and angle 4 in the lower-left. At the intersection with line RS, four angles are numbered: angle 5 in the upper-left, angle 6 in the upper-right, angle 7 in the lower-right, and angle 8 in the lower-left.\n\nA. ∠ 5 and ∠ 7\nB. ∠ 3 and ∠ 6\nC. ∠ 1 and ∠ 5\nD. ∠ 1 and ∠ 7\nE. ∠ 2 and ∠ 8",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "B"
+  },
+  "llm_thinking": "I'm setting up two parallel lines with a transversal crossing both, labeling the eight angles formed at each intersection so I can identify which pairs qualify as same-side interior angles, since those sum to 180 degrees.\n\nLooking at the right side of the transversal, angle 3 (top intersection) and angle 6 (bottom intersection) both lie between the parallel lines, making them consecutive interior angles — so option B, with their sum equal to 180, is correct.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 819,
+  "completion_tokens": 362,
+  "reasoning_tokens": 351,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335957-QKbCVbAXn76L3I0C7O9z",
+  "requested_at": "2026-10-19T14:20:44+00:00"
+}

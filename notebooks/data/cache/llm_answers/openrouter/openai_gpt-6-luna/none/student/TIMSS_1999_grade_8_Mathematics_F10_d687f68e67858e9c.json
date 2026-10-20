@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 1999/grade 8/Mathematics/F10",
+  "item_keys": [
+    "TIMSS 1999/grade 8/Mathematics/F10"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "none",
+  "system_prompt": "You are an eighth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: Ruler]\n\nUsing a centimeter ruler like this one, you can measure accurately to the nearest\n\nFigure, described in words:\nA centimeter ruler labeled \"cm\" at the left, with major tick marks numbered from 1 to 11. Between each pair of consecutive whole-centimeter marks (and between 0 and 1), there is exactly one intermediate, unnumbered tick mark of medium length indicating each half-centimeter. There are no smaller millimeter subdivision marks.\n\nA. millimeter\nB. half-millimeter\nC. centimeter\nD. half-centimeter",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "D"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 321,
+  "completion_tokens": 12,
+  "reasoning_tokens": 0,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792430073-svtUY6L3Exvs9O4qh25G",
+  "requested_at": "2026-10-19T18:00:46+00:00"
+}

@@ -1,0 +1,47 @@
+{
+  "item_key": "TIMSS 2007/grade 4/Mathematics/M031301",
+  "response": "5 kilograms. Work: 62 kg (Al holding his cat) minus 57 kg (Al alone) = 5 kg. The cat weighed 5 kilograms.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the fourth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\nAl wanted to find how much his cat weighed. He weighed himself and noted that the scale read 57 kg. He then stepped on the scale holding his cat and found that it read 62 kg.\n\nWhat was the weight of the cat in kilograms?\n\nAnswer: ____ kilograms\n\n# Scoring guide of the question (1 point)\n\n- Correct Response (1 point):\n  - 5\n- Incorrect Response (0 points):\n  - 15\n  - Other incorrect (including crossed out/erased, stray marks, illegible, or off task)\n- Nonresponse (0 points):\n  - Blank\n\n# Response to the question\n\n5 kilograms. Work: 62 kg (Al holding his cat) minus 57 kg (Al alone) = 5 kg. The cat weighed 5 kilograms.\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response",
+          "Nonresponse"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response provides the correct answer of 5 kilograms, supported by the calculation 62 - 57 = 5.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 474,
+  "completion_tokens": 98,
+  "reasoning_tokens": 53,
+  "cost_usd": 0.000723,
+  "seconds": 2.956,
+  "batch_id": null,
+  "requested_at": "2026-10-19T18:41:42+00:00"
+}

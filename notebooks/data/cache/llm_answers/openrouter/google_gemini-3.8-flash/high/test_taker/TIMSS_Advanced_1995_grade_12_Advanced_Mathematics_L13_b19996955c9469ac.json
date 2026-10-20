@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L13",
+  "item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L13"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Two vectors vector a and vector b (vector a, vector b ≠ vector 0) are related by: |vector a + vector b| = |vector a - vector b|.\n\nWhat is the measure of the angle between vector a and vector b?",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "The measure of the angle between vector a and vector b is 90° (or π/2 radians).\n\nShow of work:\nSquaring both sides of the given equation:\n|a + b|² = |a - b|²\n\nUsing the dot product property |v|² = v · v:\n(a + b) · (a + b) = (a - b) · (a - b)\n|a|² + 2(a · b) + |b|² = |a|² - 2(a · b) + |b|²\n\nSubtracting |a|² + |b|² from both sides gives:\n2(a · b) = -2(a · b)\n4(a · b) = 0\na · b = 0\n\nSince a ≠ 0 and b ≠ 0, this means:\n|a||b| cos(θ) = 0\ncos(θ) = 0\n\nTherefore, the angle θ between the vectors is 90°."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 272,
+  "completion_tokens": 850,
+  "reasoning_tokens": 598,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792336157-txl4lX1Do5kkuqSPK9OG",
+  "requested_at": "2026-10-19T14:20:46+00:00"
+}

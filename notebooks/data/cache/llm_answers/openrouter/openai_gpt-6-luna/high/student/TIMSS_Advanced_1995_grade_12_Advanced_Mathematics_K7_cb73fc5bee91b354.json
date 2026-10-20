@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K7",
+  "item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K7"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "high",
+  "system_prompt": "You are a twelfth-grade student in the final year of secondary school who has taken advanced mathematics courses, taking the TIMSS Advanced mathematics test for students like you. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The vertices of the triangle PQR are the points P(1, 2), Q(4, 6) and R(− 4, 12). Which one of the following statements about triangle PQR is true?\n\nA. PQR is a right triangle with the right angle ∠P.\nB. PQR is a right triangle with the right angle ∠Q.\nC. PQR is a right triangle with the right angle ∠R.\nD. PQR is not a right triangle.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "B"
+  },
+  "llm_thinking": "**Calculating vectors**\n\nI need to provide an answer in JSON format. For the calculations, at point P, the vector from Q to P is (3, 4), and from R to P, it's (-5, 10). The dot product here is calculated as -15 + 40, which equals 25. But wait, if I look at Q, the vector P-Q is (-3, -4) and R-Q is (-8, 6), resulting in a dot product of 24 - 24, which equals 0. So, that means point Q is right, and the answer is B.",
+  "finish_reason": "stop",
+  "prompt_tokens": 322,
+  "completion_tokens": 79,
+  "reasoning_tokens": 65,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792430069-8g35f4u7PLleVZ9HmGfd",
+  "requested_at": "2026-10-19T18:03:53+00:00"
+}

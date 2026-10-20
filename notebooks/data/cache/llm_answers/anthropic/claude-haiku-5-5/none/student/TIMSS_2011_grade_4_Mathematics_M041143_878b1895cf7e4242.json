@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 4/Mathematics/M041143",
+  "item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M041143"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Write the names of shapes A, B, and C in the spaces provided.\n\n[Image: a school bus is shown with three arrows pointing to three different shapes]\n\nA. ____\n\nB. ____\n\nC. ____\n\nFigure, described in words:\nA side-view illustration of a bus facing left. Along the side of the bus is a horizontal row of identical vertically oriented rectangular windows, two circular wheels, and a solid black right-pointing triangle on the side of the bus body. Three arrows point from the answer blank areas to three features of the bus:\n- An arrow originating above blank A points up and to the right to the black triangle.\n- An arrow originating above blank B points straight up to one of the rectangular windows.\n- An arrow originating above blank C points up and to the left to the circular rear wheel.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "A. triangle; B. rectangle; C. circle"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 701,
+  "completion_tokens": 26,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 1.17,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:14:53+00:00"
+}

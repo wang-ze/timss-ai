@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K13",
+  "item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K13"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The number of bacteria in a colony was growing exponentially. At 1 pm yesterday the number of bacteria was 1000 and at 3 pm yesterday it was 4000.\n\nHow many bacteria were there in the colony at 6 pm yesterday?",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "The population quadrupled in 2 hours, so it doubled each hour. From 1 pm to 6 pm is 5 hours, giving \\(1000\\times 2^5=32{,}000\\) bacteria."
+  },
+  "llm_thinking": "**Calculating exponential growth**\n\nI need to determine the exponential growth here. It seems I'm doubling from 1 to 3, using a factor of 4 over a rate of 2 hours. So after 5 hours, I think the equation would be 1000 times 2 raised to the 5th power, which equals 32,000. Now, I'll prepare to output this in JSON format. I want to make sure everything's clear and concise for the user!",
+  "finish_reason": "stop",
+  "prompt_tokens": 259,
+  "completion_tokens": 114,
+  "reasoning_tokens": 52,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335946-trrrpOQNV9blahgGjSta",
+  "requested_at": "2026-10-18T15:11:22+00:00"
+}

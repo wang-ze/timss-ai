@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23021",
+  "item_keys": [
+    "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23021"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "minimal",
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: Semicircular room with 10 flat windows]\n\nThe figure shows a semicircular room seen from above. An architect is placing 10 flat windows in the room as shown. If the radius of the circle is r, which of the following equations would allow the architect to determine the width of each window?\n\nFigure, described in words:\nA top-down view of a semicircle with a horizontal straight baseline representing the diameter. Along the curved outer boundary, 10 consecutive, equal-length straight line segments (chords) are connected end-to-end to form an inscribed regular half-polygon representing 10 flat windows. A dashed line segment labeled r extends from the center of the baseline to the vertex between the second and third segments from the left.\n\nA. w = r sin 9°\nB. w = 2r sin 9°\nC. w = r cos 18°\nD. w = 2r sin 18°",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "B"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 432,
+  "completion_tokens": 237,
+  "reasoning_tokens": 231,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792336146-0fp9WI6rMEhacYonHVMD",
+  "requested_at": "2026-10-19T14:20:44+00:00"
+}

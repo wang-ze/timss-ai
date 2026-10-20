@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 8/Mathematics/M042207",
+  "item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M042207"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "480 students were asked to name their favorite sport. The results are shown in this table.\n\n| Sport | Number of Students |\n| :--- | :--- |\n| Hockey | 60 |\n| Football | 180 |\n| Tennis | 120 |\n| Basketball | 120 |\n\nUse the information in the table to complete and label this pie chart.\n\n[Image: A circle with a point in the middle, and 8 equally spaced points on the circumference of the circle. The circle is labeled “Popularity of Sports.”]\n\nFigure, described in words:\nA circle labeled \"Popularity of Sports\" at the top. The circle contains a dot at its center and 8 equally spaced dots along its circumference, located at 12 o'clock, 1:30, 3 o'clock, 4:30, 6 o'clock, 7:30, 9 o'clock, and 10:30.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Draw a line segment from the center to each of the 8 points on the circumference, dividing the circle into 8 equal 45° sectors, then label each sector. Each sector is 45° (480 students = 360°, so 1 student = 0.75°, and 1 sector of 45° = 60 students). Starting at 12 o'clock and going clockwise: (1) Hockey, from 12 o'clock to 1:30, one sector of 45° (60 students, 12.5%). (2) Football, from 1:30 to 6 o'clock, three sectors of 135° in total (180 students, 37.5%). (3) Tennis, from 6 o'clock to 9 o'clock, two sectors of 90° in total (120 students, 25%). (4) Basketball, from 9 o'clock to 12 o'clock, two sectors of 90° in total (120 students, 25%). Label each sector with its sport name, and optionally its number of students (Hockey 60, Football 180, Tennis 120, Basketball 120) and its angle (45°, 135°, 90°, 90°). Check: 60 + 180 + 120 + 120 = 480, and 45 + 135 + 90 + 90 = 360."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 701,
+  "completion_tokens": 710,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 3.705,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:22:42+00:00"
+}

@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 1995/grade 4/Mathematics/S2",
+  "item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/S2"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "high",
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Here is a number sentence.\n\n2,000 + □ + 30 + 9 = 2,739\n\nWhat number goes where the □ is to make this sentence true?\n\nAnswer: ____",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "700"
+  },
+  "llm_thinking": "**Calculating JSON Response**\n\nI need to prepare an answer in JSON format. First, I’ll compute the math: 2739 minus 2039 equals 700. It’s straightforward, but I want to be sure I get it right. It’s important to format the output correctly. So, once I have the correct calculation, I’ll put it all together in a JSON structure to provide the user with the information they need. Let's make sure it’s clear and accurate!",
+  "finish_reason": "stop",
+  "prompt_tokens": 252,
+  "completion_tokens": 35,
+  "reasoning_tokens": 21,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792430071-WkiamaWym8JlrSqYqG4P",
+  "requested_at": "2026-10-19T17:53:44+00:00"
+}

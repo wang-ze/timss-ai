@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K15",
+  "item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K15"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Determine all complex numbers z that satisfy the equation\n\nz + 2 z̄ = 3 + i\n\nwhere z̄ denotes the conjugate of z .",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Let $z = a + bi$, where $a$ and $b$ are real numbers. Then the conjugate is $\\bar{z} = a - bi$.\n\nSubstitute $z$ and $\\bar{z}$ into the equation:\n$(a + bi) + 2(a - bi) = 3 + i$\n$a + bi + 2a - 2bi = 3 + i$\n$3a - bi = 3 + i$\n\nEquating the real and imaginary parts:\nReal parts: $3a = 3 \\implies a = 1$\nImaginary parts: $-b = 1 \\implies b = -1$\n\nTherefore, the only complex number that satisfies the equation is:\n$z = 1 - i$"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 251,
+  "completion_tokens": 670,
+  "reasoning_tokens": 488,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792336157-txl4lX1Do5kkuqSPK9OG",
+  "requested_at": "2026-10-19T14:20:46+00:00"
+}

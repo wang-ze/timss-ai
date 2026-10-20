@@ -1,0 +1,47 @@
+{
+  "item_key": "TIMSS 2011/grade 8/Mathematics/M032695",
+  "response": "Workforce: 400 − (50 + 100 + 150) = 100 students.\n\nThe circle represents 360°, so each student represents 360° ÷ 400 = 0.9°.\n\nDraw and label the sectors as follows, measured clockwise from the 12:00 point:\n- University: 50 × 0.9° = 45°\n- Polytechnic school: 100 × 0.9° = 90°\n- Business college: 150 × 0.9° = 135°\n- Workforce: 100 × 0.9° = 90°\n\nDraw radii to divide the circle into these four sectors in that order, and write each label inside its sector.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the eighth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\nOf the 400 students in a school, 50 plan to go to university, 100 to a polytechnic school, 150 to a business college, and the remainder plan to enter workforce.\n\nUse the circle below to make a pie chart showing the proportions of students planning to do each of these. Put labels on your chart.\n\n[Image: A circle with a point in the middle and 8 equally spaced points placed around the circumference of the circle.]\n\nFigure, described in words:\nA circle with a central point and 8 equally spaced dots along its circumference, corresponding to the 12:00, 1:30, 3:00, 4:30, 6:00, 7:30, 9:00, and 10:30 clock positions.\n\n# Scoring guide of the question (2 points)\n\n- Correct Response (2 points):\n  - Pie chart correctly divided and labeled\n(1 section – university; 2 sections – polytechnic; 2 sections – workforce; 3 sections – business college)\n- Partially Correct Response (1 point):\n  - Four sections with at least two, but not all, of correct size and correctly labeled\n  - Four sections of correct size but no labels, or labels 50, 100, 150, 100\n- Incorrect Response (0 points):\n  - Four sections with one or none of correct size\n  - Other incorrect (including crossed out, erased, stray marks, illegible, or off task)\n\n# Response to the question\n\nWorkforce: 400 − (50 + 100 + 150) = 100 students.\n\nThe circle represents 360°, so each student represents 360° ÷ 400 = 0.9°.\n\nDraw and label the sectors as follows, measured clockwise from the 12:00 point:\n- University: 50 × 0.9° = 45°\n- Polytechnic school: 100 × 0.9° = 90°\n- Business college: 150 × 0.9° = 135°\n- Workforce: 100 × 0.9° = 90°\n\nDraw radii to divide the circle into these four sectors in that order, and write each label inside its sector.\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Partially Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response accurately determines the number of students in the workforce (100) and calculates the corresponding angles for all four categories (University: 45°, Polytechnic: 90°, Business college: 135°, Workforce: 90°). Since each of the 8 dots on the circle represents a 45° section, this corresponds exactly to 1, 2, 3, and 2 sections, respectively. The response clearly describes dividing the circle into these sectors and labeling each sector appropriately, meeting all criteria for a full credit response.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": "**Calculating Sector Angles**\n\nI've refined the angle calculations, confirming the university sector at 45 degrees (one of eight equal divisions of the circle). The polytechnic is at 90 degrees, and I'm still processing the business college's angle in relation to the whole.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 829,
+  "completion_tokens": 301,
+  "reasoning_tokens": 166,
+  "cost_usd": 0.0017505,
+  "seconds": 3.667,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:42:39+00:00"
+}

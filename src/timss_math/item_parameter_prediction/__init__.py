@@ -4,19 +4,22 @@ The modules of ``predict_item_parameters.ipynb``, with its settings as defaults 
 second predictor, Jev. ``predict_item_parameters_FastEmbed.ipynb`` uses them with FastEmbed embeddings and an Ollama
 LLM, and ``predict_item_parameters_compare_jev.ipynb`` compares Jev with two LLMs.
 
-- ``items``: the released items, their chunks and calibrated parameters (``ItemBank``), and ``TimssItem``.
+They build on the modules that the package shares: ``timss_math.items`` (the released items, their chunks and
+calibrated parameters, ``ItemBank``, and ``TimssItem``), ``llm`` (``LLMSettings`` and the LLM client of OpenRouter,
+OpenAI, the Gemini API, the Claude API, or Ollama), ``batch`` (OpenRouter batches, ``OpenRouterBatches``), and
+``config``. Their old names here, such as ``timss_math.item_parameter_prediction.items``, still work.
+
 - ``embeddings``: embedding models of the Gemini API, OpenAI, OpenRouter, Ollama, or FastEmbed (``EmbeddingSettings``),
   and the cache of item embeddings.
 - ``index``: the Qdrant collection, searched by keyword, semantic, or hybrid search (``ItemIndex``, ``IndexSettings``).
 - ``predictor``: what every predictor shares (``Predictor``): the reference items, found by a search method, and the
   methods a leave-one-out run uses.
-- ``llm``: the prompts and the LLM of OpenRouter, OpenAI, the Gemini API, or Ollama (``LLMPredictor``,
-  ``LLMSettings``).
+- ``llm``: the prompts of the LLM predictor (``LLMPredictor``).
 - ``jev``: Jev's state and value-scale questions, and the point predictions from its probabilities (``JevPredictor``,
   ``JevSettings``, ``ValueScale``).
 - ``evaluation``: leave-one-out predictions of the calibrated items and their errors (``LeaveOneOut``,
-  ``PredictionResults``), and the ``timss-predict-loo`` command.
-- ``batch``: OpenRouter batches for the leave-one-out LLM predictions, at about half the price (``OpenRouterBatches``).
+  ``PredictionResults``), single or as OpenRouter batches at about half the price, and the ``timss-predict-loo``
+  command.
 - ``factorial``: leave-one-out runs under every combination of levels of a few settings, such as the embedding model
   and the LLM, compared on the same items with main effects and interactions (``FactorialResults``), as in
   ``predict_item_parameters_compare.ipynb``.
@@ -38,13 +41,8 @@ Example::
     jev.parameters(jev.predict(TimssItem(...)))
 """
 
-from .batch import OpenRouterBatches
-from .comparison import RunComparison
-from .embeddings import Embedder, EmbeddingSettings
-from .evaluation import LeaveOneOut, PredictionResults, error_summary
-from .factorial import FactorialResults
-from .index import IndexSettings, ItemIndex, results_table, similar_items_table
-from .items import (
+from ..batch import OpenRouterBatches
+from ..items import (
     PARAMETER_NAMES,
     ItemBank,
     TimssItem,
@@ -53,6 +51,13 @@ from .items import (
     model_parameters,
     predicted_parameters,
 )
+from ..llm import LLMSettings, NoPredictionError
+from ..running import UnusableOutputError
+from .comparison import RunComparison
+from .embeddings import Embedder, EmbeddingSettings
+from .evaluation import LeaveOneOut, PredictionResults, error_summary
+from .factorial import FactorialResults
+from .index import IndexSettings, ItemIndex, results_table, similar_items_table
 from .jev import (
     DEFAULT_VALUE_SCALES,
     JevAnswerError,
@@ -60,8 +65,8 @@ from .jev import (
     JevSettings,
     ValueScale,
 )
-from .llm import LLMPredictor, LLMSettings, NoPredictionError
-from .predictor import Predictor, UnusableOutputError
+from .llm import LLMPredictor
+from .predictor import Predictor
 
 __all__ = [
     "DEFAULT_VALUE_SCALES",

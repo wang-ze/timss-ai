@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2003/grade 4/Mathematics/M011004",
+  "item_keys": [
+    "TIMSS 2003/grade 4/Mathematics/M011004"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Each small square ( □ ) is equal to 1. There are 10 small squares in each strip. There are 100 small squares in each large square.\n\n[Image: Base-ten blocks showing units, hundreds, and tens]\n\nWhat number is shown?\n\nFigure, described in words:\nOn the left are 8 individual small squares arranged in two columns of 4. In the middle are 3 large 10 × 10 squares representing hundreds, overlapping diagonally from front-left to back-right. On the right are 5 vertical strips, each made up of 10 small squares stacked vertically.\n\nA. 16\nB. 358\nC. 538\nD. 835",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "C"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 312,
+  "completion_tokens": 7,
+  "reasoning_tokens": 0,
+  "cost_usd": 2.4975e-05,
+  "seconds": 1.664,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:19:10+00:00"
+}

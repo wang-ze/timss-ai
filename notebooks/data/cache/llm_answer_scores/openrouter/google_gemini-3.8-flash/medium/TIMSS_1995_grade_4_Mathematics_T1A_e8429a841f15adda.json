@@ -1,0 +1,46 @@
+{
+  "item_key": "TIMSS 1995/grade 4/Mathematics/T1A",
+  "response": "25 cartons of milk",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the fourth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Questions\n\nThese 2 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nThe graph shows the number of cartons of milk sold each day of a week at a school.\n\n[Image: Bar graph]\n\nHow many cartons of milk did the school sell on Monday?\n\nAnswer: ____\n\nFigure, described in words:\nA vertical bar graph with the vertical axis labeled \"Number Sold\" with major grid lines and labels at 10, 20, 30, and 40. The horizontal axis is labeled \"Day\" with five days labeled: \"Mon.\", \"Tues.\", \"Wed.\", \"Thurs.\", \"Fri.\". All bars are shaded grey. The bar heights are:\n- Mon.: halfway between 20 and 30 (height 25)\n- Tues.: level with 20\n- Wed.: level with 30\n- Thurs.: halfway between 10 and 20 (height 15)\n- Fri.: halfway between 30 and 40 (height 35)\n\n## Question 2\n\nThe graph shows the number of cartons of milk sold each day of a week at a school.\n\n[Image: Bar graph]\n\nHow many cartons of milk did the school sell that week?\nShow your work.\n\nAnswer: ____\n\nFigure, described in words:\nA vertical bar graph with the vertical axis labeled \"Number Sold\" with major grid lines and labels at 10, 20, 30, and 40. The horizontal axis is labeled \"Day\" with five days labeled: \"Mon.\", \"Tues.\", \"Wed.\", \"Thurs.\", \"Fri.\". All bars are shaded grey. The bar heights are:\n- Mon.: halfway between 20 and 30 (height 25)\n- Tues.: level with 20\n- Wed.: level with 30\n- Thurs.: halfway between 10 and 20 (height 15)\n- Fri.: halfway between 30 and 40 (height 35)\n\n# Scoring guide of question 1 (1 point)\n\n- Correct Response (1 point):\n  - 25\n- Incorrect Response (0 points):\n  - 5\n  - Other incorrect.\n\n# Response to question 1\n\n25 cartons of milk\n\nScore the response to question 1.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response correctly identifies the number of cartons sold on Monday as 25.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 794,
+  "completion_tokens": 121,
+  "reasoning_tokens": 86,
+  "cost_usd": 0.00104925,
+  "seconds": 2.67,
+  "batch_id": null,
+  "requested_at": "2026-10-19T18:41:09+00:00"
+}

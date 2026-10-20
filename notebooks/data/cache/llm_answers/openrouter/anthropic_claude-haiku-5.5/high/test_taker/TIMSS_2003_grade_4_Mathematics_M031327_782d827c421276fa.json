@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2003/grade 4/Mathematics/M031327",
+  "item_keys": [
+    "TIMSS 2003/grade 4/Mathematics/M031327"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "On the grid, draw a line parallel to line L.\n\n[Image: A grid with line L]\n\nFigure, described in words:\nA grid measuring 11 squares wide by 6 squares high. A straight line segment with arrowheads at both ends is labeled L near its upper-right end. The line follows the diagonals of grid squares at a 45-degree angle (slope of 1), extending from the grid intersection located 3 units from the left and 2 units from the bottom to the intersection located 6 units from the left and 5 units from the bottom.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Draw a straight line with a slope of 1, going up and to the right along the diagonals of the grid squares, parallel to L. Start at the grid intersection 5 units from the left and 0 units from the bottom, and draw the line diagonally up and to the right to the intersection 10 units from the left and 5 units from the bottom. The line passes through the points (6,1), (7,2), (8,3) and (9,4) along the way and does not touch line L, which has the same slope."
+  },
+  "llm_thinking": "I need a line with slope 1 that doesn't overlap L, which runs from (3,2) to (6,5). I'm considering something like (0,1) to (4,5), which keeps the same slope while staying clear of L's points.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 595,
+  "completion_tokens": 451,
+  "reasoning_tokens": 292,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335961-VWbz6F0PkdlHoUJEbmRp",
+  "requested_at": "2026-10-19T14:20:48+00:00"
+}

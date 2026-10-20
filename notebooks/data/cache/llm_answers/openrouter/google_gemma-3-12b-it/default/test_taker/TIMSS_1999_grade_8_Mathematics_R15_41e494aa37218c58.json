@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 1999/grade 8/Mathematics/R15",
+  "item_keys": [
+    "TIMSS 1999/grade 8/Mathematics/R15"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "John sold 60 magazines and Mark sold 80 magazines. The magazines were all sold for the same price. The total amount of money received for the magazines was $700. How much money did Mark receive?\n\nAnswer: ____",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Let 'p' be the price of one magazine. John sold 60 magazines, so he received 60p dollars. Mark sold 80 magazines, so he received 80p dollars. The total amount of money received for all the magazines was $700, so 60p + 80p = 700. Combining like terms, we get 140p = 700. To find the price of one magazine, we divide both sides of the equation by 140: p = 700/140 = 5. So, each magazine costs $5. Mark sold 80 magazines at $5 each, so he received 80 * 5 = 400 dollars. Answer: $400"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 181,
+  "completion_tokens": 178,
+  "reasoning_tokens": 0,
+  "cost_usd": 5.3625e-05,
+  "seconds": 2.31,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:07:29+00:00"
+}

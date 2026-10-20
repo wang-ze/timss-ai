@@ -1,0 +1,47 @@
+{
+  "item_key": "TIMSS 2011/grade 8/Mathematics/M042207",
+  "response": "The whole circle represents 480 students, so each of the 8 equal sections represents 60 students. Label the sections as follows:\n\n- Hockey: 60 students — 1 section\n- Football: 180 students — 3 sections\n- Tennis: 120 students — 2 sections\n- Basketball: 120 students — 2 sections\n\nStarting at the 12 o’clock point and moving clockwise, draw boundaries so the sections cover 1, 3, 2, and 2 equal sections, respectively, and label them Hockey, Football, Tennis, and Basketball.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the eighth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\n480 students were asked to name their favorite sport. The results are shown in this table.\n\n| Sport | Number of Students |\n| :--- | :--- |\n| Hockey | 60 |\n| Football | 180 |\n| Tennis | 120 |\n| Basketball | 120 |\n\nUse the information in the table to complete and label this pie chart.\n\n[Image: A circle with a point in the middle, and 8 equally spaced points on the circumference of the circle. The circle is labeled “Popularity of Sports.”]\n\nFigure, described in words:\nA circle labeled \"Popularity of Sports\" at the top. The circle contains a dot at its center and 8 equally spaced dots along its circumference, located at 12 o'clock, 1:30, 3 o'clock, 4:30, 6 o'clock, 7:30, 9 o'clock, and 10:30.\n\n# Scoring guide of the question (2 points)\n\n- Correct Response (2 points):\n  - Hockey1/8, Football 3/8, Tennis, Basketball both 1/4 , and labels all correct\n- Partially Correct Response (1 point):\n  - All sectors correct size but labeling incomplete or missing\n- Incorrect Response (0 points):\n  - Incorrect (including crossed out, erased, stray marks, illegible, or off task)\n\n# Response to the question\n\nThe whole circle represents 480 students, so each of the 8 equal sections represents 60 students. Label the sections as follows:\n\n- Hockey: 60 students — 1 section\n- Football: 180 students — 3 sections\n- Tennis: 120 students — 2 sections\n- Basketball: 120 students — 2 sections\n\nStarting at the 12 o’clock point and moving clockwise, draw boundaries so the sections cover 1, 3, 2, and 2 equal sections, respectively, and label them Hockey, Football, Tennis, and Basketball.\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Partially Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response correctly identifies that each of the 8 sections represents 60 students, allocating 1/8 to Hockey, 3/8 to Football, 2/8 (1/4) to Tennis, and 2/8 (1/4) to Basketball. It clearly describes how to draw and label all four sectors on the pie chart.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": "**Defining Sector Divisions**\n\nI've mapped out the sector allocations: Hockey gets one-eighth, Football three-eighths, Tennis a quarter, and Basketball another quarter. I'm now visualizing the clockwise progression from twelve o'clock, ready to inscribe the sport labels.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 750,
+  "completion_tokens": 216,
+  "reasoning_tokens": 124,
+  "cost_usd": 0.0013725,
+  "seconds": 3.311,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:44:17+00:00"
+}

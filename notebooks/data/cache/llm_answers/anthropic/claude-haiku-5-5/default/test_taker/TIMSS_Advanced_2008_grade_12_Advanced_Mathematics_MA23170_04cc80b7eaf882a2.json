@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23170",
+  "item_keys": [
+    "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23170"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: Right triangle on a coordinate plane]\n\nA straight line l passes through the points A (1,−2) and B (3, 4).\nIs the line l parallel with PQ?\n\nGive a reason to support your answer.\n\nFigure, described in words:\nA Cartesian coordinate plane with horizontal axis x and vertical axis y intersecting at origin O. Tick marks are shown every unit on both axes. The x-axis is labeled at 2, 4, 6, 8, 10, 12, and the y-axis is labeled at 2, 4, 6, 8, 10, 12. A right triangle is plotted in the first quadrant with vertices at point P, point Q, and a third vertex at the right angle:\n- Point P is at coordinates (8, 1).\n- A horizontal leg extends from P(8, 1) to (12, 1), with length labeled 4 beneath it.\n- A vertical leg extends from (12, 1) upward to point Q at (12, 12), with length labeled 11 to its right.\n- The hypotenuse connects point P to point Q.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "No. The slope of line l through A(1, −2) and B(3, 4) is (4 − (−2)) / (3 − 1) = 6/2 = 3. The slope of PQ, with P(8, 1) and Q(12, 12), is (12 − 1) / (12 − 8) = 11/4 = 2.75. Since 3 ≠ 11/4, the two lines have different slopes, so l is not parallel to PQ."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 799,
+  "completion_tokens": 306,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 4.033,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:21:47+00:00"
+}

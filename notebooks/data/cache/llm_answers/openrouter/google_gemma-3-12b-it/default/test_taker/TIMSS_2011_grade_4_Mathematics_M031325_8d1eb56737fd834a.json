@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 4/Mathematics/M031325",
+  "item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M031325"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "In the space below, draw an angle that is greater than 90 degrees but less than 180 degrees.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "I would draw a line. Then, I would choose a point on the line. From that point, I would draw two lines going outwards, but not in the same direction. The space between the two lines should look bigger than a door, but smaller than a straight line. This would create an angle that is greater than 90 degrees (wider than a door) but less than 180 degrees (not a straight line)."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 156,
+  "completion_tokens": 95,
+  "reasoning_tokens": 0,
+  "cost_usd": 2.205e-05,
+  "seconds": 1.294,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:07:30+00:00"
+}

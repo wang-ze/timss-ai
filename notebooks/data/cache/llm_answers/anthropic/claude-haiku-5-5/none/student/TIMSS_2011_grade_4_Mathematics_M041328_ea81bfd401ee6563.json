@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 4/Mathematics/M041328",
+  "item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M041328"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: a grid divided into two halves by line labeled m. A triangle is drawn on the left side.]\nDraw the reflection of the triangle. Line m is the mirror line.\n\nFigure, described in words:\nA square grid 6 units wide and 6 units tall. A vertical dashed line labeled \"m\" at the bottom divides the grid vertically down the center (3 units from the left edge and 3 units from the right edge). On the left side of line m, a right triangle is drawn along the grid lines with vertices at:\n- 2 units from the left edge and 2 units above the bottom edge (the right-angled vertex, located 1 unit to the left of line m)\n- 1 unit from the left edge and 2 units above the bottom edge (located 2 units to the left of line m)\n- 2 units from the left edge and 5 units above the bottom edge (1 unit below the top edge, located 1 unit to the left of line m).\nThe vertical leg of the triangle is 3 units long and lies along the grid line 1 unit to the left of line m; the horizontal base is 1 unit long and lies 2 units above the bottom edge.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Reflect each vertex of the triangle across the vertical mirror line m, so each point moves the same distance to the right of m as it was to the left. The right-angled vertex 1 unit left of m (2 units above the bottom) reflects to 1 unit right of m, 2 units above the bottom. The vertex 2 units left of m (2 units above the bottom) reflects to 2 units right of m, 2 units above the bottom. The top vertex 1 unit left of m (5 units above the bottom) reflects to 1 unit right of m, 5 units above the bottom. Then join these three new points to draw a right triangle on the right side of line m: a vertical leg 3 units long lying along the grid line 1 unit right of m (from 2 to 5 units above the bottom), and a horizontal base 1 unit long from 1 unit right of m to 2 units right of m at 2 units above the bottom, forming the mirror image of the original triangle."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 811,
+  "completion_tokens": 311,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 2.67,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:16:12+00:00"
+}

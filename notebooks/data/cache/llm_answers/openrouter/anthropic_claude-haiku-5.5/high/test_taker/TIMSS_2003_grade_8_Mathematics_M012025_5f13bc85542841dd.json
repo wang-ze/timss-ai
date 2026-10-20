@@ -1,0 +1,45 @@
+{
+  "unit_key": "TIMSS 2003/grade 8/Mathematics/M012025",
+  "item_keys": [
+    "TIMSS 2003/grade 8/Mathematics/M012025"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The graph represents the distance and time of a hike taken by Joshua and Liam.\n\n[Image: Line graph of distance versus time]\n\nIf they both started from the same place and walked in the same direction, at what time did they meet?\n\nFigure, described in words:\nA line graph with a vertical axis labeled \"Distance (kilometers)\" marked from 0 to 5.5 in increments of 0.5 (labeled 0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5). The horizontal axis is labeled \"Time\" with tick marks every 30 minutes from 8:00 to 12:30 (labeled 8:00, 8:30, 9:00, 9:30, 10:00, 10:30, 11:00, 11:30, 12:00, 12:30). Two line segments are shown:\n- One labeled \"Joshua\" begins at (8:00, 0) and ends with a solid dot at (12:00, 4.5).\n- One labeled \"Liam\" begins at (9:00, 0) and ends with a solid dot at (11:00, 4.5).\nThe two lines intersect at time 10:00 and distance approximately 2.25 kilometers.\n\nA. 8:00\nB. 8:30\nC. 9:00\nD. 10:00\nE. 11:00",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "D"
+  },
+  "llm_thinking": "They meet when their positions coincide at the intersection point, which happens at 10:00 — so the answer is D.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 872,
+  "completion_tokens": 88,
+  "reasoning_tokens": 77,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335957-QKbCVbAXn76L3I0C7O9z",
+  "requested_at": "2026-10-19T14:20:44+00:00"
+}

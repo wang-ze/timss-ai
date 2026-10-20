@@ -1,0 +1,54 @@
+{
+  "unit_key": "TIMSS 1995/grade 4/Mathematics/U3A+U3B+U3C",
+  "item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/U3A",
+    "TIMSS 1995/grade 4/Mathematics/U3B",
+    "TIMSS 1995/grade 4/Mathematics/U3C"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "These 3 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nMaria and her sister Louisa leave home at the same time and ride their bicycles to school 9 kilometers away.\n\nMaria rides at a rate of 3 kilometers in 10 minutes. How long will it take her to get to school?\n\nAnswer: ____ minutes\n\n## Question 2\n\nMaria and her sister Louisa leave home at the same time and ride their bicycles to school 9 kilometers away.\n\nLouisa rides at a rate of 1 kilometer in 3 minutes. How long will it take her to get to school?\n\nAnswer: ____ minutes\n\n## Question 3\n\nMaria and her sister Louisa leave home at the same time and ride their bicycles to school 9 kilometers away.\n\nWho arrives at school first?\n\nAnswer: ____\n\nAnswer each of the 3 questions.",
+  "output_schema": {
+    "properties": {
+      "answer_1": {
+        "description": "Your answer to question 1, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 1",
+        "type": "string"
+      },
+      "answer_2": {
+        "description": "Your answer to question 2, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 2",
+        "type": "string"
+      },
+      "answer_3": {
+        "description": "Your answer to question 3, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 3",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer_1",
+      "answer_2",
+      "answer_3"
+    ],
+    "title": "Answers",
+    "type": "object"
+  },
+  "output": {
+    "answer_1": "30",
+    "answer_2": "27",
+    "answer_3": "Louisa"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 521,
+  "completion_tokens": 305,
+  "reasoning_tokens": 283,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792336156-NfGr26ydb0UQSRSp2J5J",
+  "requested_at": "2026-10-19T14:20:46+00:00"
+}

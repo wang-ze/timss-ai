@@ -1,0 +1,70 @@
+{
+  "unit_key": "TIMSS 2011/grade 4/Mathematics/M031346A+M031346B+M031346C+M031379+M031380",
+  "item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M031346A",
+    "TIMSS 2011/grade 4/Mathematics/M031346B",
+    "TIMSS 2011/grade 4/Mathematics/M031346C",
+    "TIMSS 2011/grade 4/Mathematics/M031379",
+    "TIMSS 2011/grade 4/Mathematics/M031380"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": null,
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "These 5 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nThe town fair had a booth where people could trade cards.\n\n[Image: one animal card, an equal sign, and two cartoon cards.]\n\n1 animal card is worth 2 cartoon cards.\n\n[Image: two animal cards an equal sign, and three sports cards.]\n\n2 animal cards are worth 3 sports cards.\n\nSome children went to the booth to trade cards.\n\nTrading Animal Cards\n\nA. Becky had 5 animal cards to trade for cartoon cards. How many cartoon cards would she get?\n\nAnswer: ____ cartoon cards\n\nFigure, described in words:\nTwo trade equivalence illustrations are shown:\n1. The top illustration shows 1 card depicting a bear on the left, an equals sign in the middle, and 2 identical cards depicting an oval cartoon face on the right.\n2. The bottom illustration shows 2 identical cards depicting a bear on the left, an equals sign in the middle, and 3 identical cards depicting a soccer player kicking a ball on the right.\n\n## Question 2\n\nThe town fair had a booth where people could trade cards.\n\n[Image: one animal card, an equal sign, and two cartoon cards.]\n\n1 animal card is worth 2 cartoon cards.\n\n[Image: two animal cards, an equal sign, and three sports cards.]\n\n2 animal cards are worth 3 sports cards.\n\nSome children went to the booth to trade cards.\n\nTrading Animal Cards\n\nB. Jim had 8 animal cards to trade for sports cards. How many sports cards would he get?\n\nAnswer: ____ sports cards\n\nFigure, described in words:\nTwo trade equations are illustrated with rectangular cards:\n1. Top equation: 1 card depicting a bear is on the left, an equals sign (=) is in the middle, and 2 identical cards depicting an oval cartoon face are on the right.\n2. Bottom equation: 2 identical cards depicting a bear are on the left, an equals sign (=) is in the middle, and 3 identical cards depicting a sports player kicking a ball are on the right.\n\n## Question 3\n\nThe town fair had a booth where people could trade cards.\n\n[Image: one animal card, an equal sign, and two cartoon cards]\n\n1 animal card is worth 2 cartoon cards.\n\n[Image: two animal cards, an equal sign, and three sports cards]\n\n2 animal cards are worth 3 sports cards.\n\nSome children went to the booth to trade cards.\n\nTrading Animal Cards\n\nC. Katrina had 6 animal cards. She wanted to trade them for as many cards as possible.\n\nHow many cartoon cards would she get? ____\n\nHow many sports cards would she get? ____\n\nShould she trade for cartoon cards or trade for sport cards?\n\nAnswer: ____\n\nFigure, described in words:\nTwo pictorial trading equations are displayed:\n1. A single card showing a drawing of a standing bear, an equals sign (=), and two identical cards each showing an oval cartoon face with large eyes. The text below states: \"1 animal card is worth 2 cartoon cards.\"\n2. Two identical cards showing a drawing of a standing bear, an equals sign (=), and three identical cards each showing a soccer player kicking a soccer ball. The text below states: \"2 animal cards are worth 3 sports cards.\"\n\n## Question 4\n\nTrading Cards (Continued)\n\nTrading Sports Cards\n\nSteve had 15 sports cards to trade for animal cards. How many animal cards would he get?\n\nAnswer: ____ animal cards\n\n## Question 5\n\nTrading Cartoon Cards\n\nBrad had 8 cartoon cards to trade for sports cards. How many sports cards would he get?\n\nAnswer: ____ sports cards\n\nAnswer each of the 5 questions.",
+  "output_schema": {
+    "properties": {
+      "answer_1": {
+        "description": "Your answer to question 1, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 1",
+        "type": "string"
+      },
+      "answer_2": {
+        "description": "Your answer to question 2, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 2",
+        "type": "string"
+      },
+      "answer_3": {
+        "description": "Your answer to question 3, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 3",
+        "type": "string"
+      },
+      "answer_4": {
+        "description": "Your answer to question 4, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 4",
+        "type": "string"
+      },
+      "answer_5": {
+        "description": "Your answer to question 5, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 5",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer_1",
+      "answer_2",
+      "answer_3",
+      "answer_4",
+      "answer_5"
+    ],
+    "title": "Answers",
+    "type": "object"
+  },
+  "output": {
+    "answer_1": "10 cartoon cards. Work: 1 animal card = 2 cartoon cards, so 5 animal cards = 5 x 2 = 10 cartoon cards.",
+    "answer_2": "12 sports cards. Work: 2 animal cards = 3 sports cards, so 8 animal cards = four groups of 2, and 4 x 3 = 12 sports cards.",
+    "answer_3": "Cartoon cards: 12. Sports cards: 9. Work: 6 animal cards x 2 = 12 cartoon cards, and 6 animal cards = three groups of 2, so 3 x 3 = 9 sports cards. Answer: She should trade for cartoon cards, because 12 is more than 9.",
+    "answer_4": "10 animal cards. Work: 3 sports cards = 2 animal cards, so 15 sports cards = five groups of 3, and 5 x 2 = 10 animal cards.",
+    "answer_5": "6 sports cards. Work: 2 cartoon cards = 1 animal card, so 8 cartoon cards = 4 animal cards. 2 animal cards = 3 sports cards, so 4 animal cards = 2 groups of 2, and 2 x 3 = 6 sports cards."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 2059,
+  "completion_tokens": 861,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 3.706,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:15:12+00:00"
+}

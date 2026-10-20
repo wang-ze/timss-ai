@@ -1,0 +1,47 @@
+{
+  "item_key": "TIMSS 2003/grade 4/Mathematics/M031348B",
+  "response": "Using 8 tiles in the 2 by 4 rectangle, 5/8 of the rectangle must be black, which is 5 of the 8 squares. Place 5 square tiles to cover 5 of the 8 small squares, filling the left three squares of the top row and the left two squares of the bottom row (i.e., the first 3 columns of the top row and the first 2 columns of the bottom row), leaving the remaining 3 squares white. Shade in the rectangle: shade those 5 small squares completely black (each square with all 4 of its triangles black) and leave the other 3 squares unshaded. Thus 5 out of 8 equal parts are black, showing 5/8 of the rectangle.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the fourth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Questions\n\nThese 2 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nA. WITHOUT using any triangle tiles, place 4 tiles so that 1/2 of a square shape is black. Then shade in the square below to show what you did with your tiles.\n\nShade in Here\n\n[Image: Square grid]\n\nFigure, described in words:\nUnder the heading \"Shade in Here\", a large square is divided into a 2 by 2 grid of 4 smaller congruent squares. Each of the 4 smaller squares has dotted diagonal lines connecting opposite corners, dividing each square into 4 congruent triangles.\n\n## Question 2\n\nB. Place 8 tiles so that 5/8 of the rectangle shape is black. Then shade in the rectangle below to show what you did with your tiles.\n\nShade in Here\n\n[Image: Rectangular grid]\n\nFigure, described in words:\nUnder the heading \"Shade in Here\", a rectangle is divided into a 2 by 4 grid of 8 smaller squares (2 rows and 4 columns). Each of the 8 squares has dotted diagonal lines connecting opposite corners, dividing each square into 4 congruent triangles.\n\n# Scoring guide of question 2 (2 points)\n\n- Correct Response (2 points):\n  - Any figure using 3 black, 1 white, and 4 triangle tiles:\n[Image: 2 by 4 grid with 3 full squares and 4 triangular sections shaded black]\n- Partially Correct Response (1 point):\n  - 5/8 of the figure shaded without using correct tiles\n- Incorrect Response (0 points):\n  - 1/2 of the figure shaded\n  - Other incorrect (including crossed out/erased, stray marks, illegible, or off task)\n\n# Response to question 2\n\nUsing 8 tiles in the 2 by 4 rectangle, 5/8 of the rectangle must be black, which is 5 of the 8 squares. Place 5 square tiles to cover 5 of the 8 small squares, filling the left three squares of the top row and the left two squares of the bottom row (i.e., the first 3 columns of the top row and the first 2 columns of the bottom row), leaving the remaining 3 squares white. Shade in the rectangle: shade those 5 small squares completely black (each square with all 4 of its triangles black) and leave the other 3 squares unshaded. Thus 5 out of 8 equal parts are black, showing 5/8 of the rectangle.\n\nScore the response to question 2.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Partially Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response shows 5 out of the 8 small squares completely shaded black, which successfully shades 5/8 of the rectangle shape. However, it uses 5 black square tiles and 3 white square tiles instead of the required combination of 3 black, 1 white, and 4 triangle tiles. According to the scoring guide, shading 5/8 of the figure without using the correct tiles receives partial credit.",
+    "category": "Partially Correct Response"
+  },
+  "llm_thinking": "**Analyzing Student Response**\n\nI'm currently evaluating the student's submission for Question 2. They've shaded 5 squares black and 3 white. My next step is to cross-reference this with the established scoring rubric for that question.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 848,
+  "completion_tokens": 329,
+  "reasoning_tokens": 223,
+  "cost_usd": 0.00186975,
+  "seconds": 4.326,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:53:13+00:00"
+}

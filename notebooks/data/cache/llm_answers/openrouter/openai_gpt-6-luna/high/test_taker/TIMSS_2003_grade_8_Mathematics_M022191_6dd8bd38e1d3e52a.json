@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2003/grade 8/Mathematics/M022191",
+  "item_keys": [
+    "TIMSS 2003/grade 8/Mathematics/M022191"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Two-thirds of the people present at the beginning of a meeting are men. Nobody leaves but 10 more men and 10 more women arrive at the meeting. Which of the following statements is true?\n\nA. There would then be more men than women at the meeting.\nB. There would then be the same number of men as there are women at the meeting.\nC. There would then be more women than men at the meeting.\nD. From the information given, you cannot tell whether there would be more women or men.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "A"
+  },
+  "llm_thinking": "**Analyzing distribution problem**\n\nI need to solve a problem concerning the distribution between men and women. Initially, I have a total number of individuals: 2n/3 are men and n/3 are women, which gives me a positive difference of n/3. If I add 10 to both groups equally, it will maintain the overall difference while resulting in more men. My main focus is to present the solution in JSON format only.",
+  "finish_reason": "stop",
+  "prompt_tokens": 288,
+  "completion_tokens": 59,
+  "reasoning_tokens": 45,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335947-adaJJg0fXIVWd5UYzY66",
+  "requested_at": "2026-10-18T15:20:16+00:00"
+}

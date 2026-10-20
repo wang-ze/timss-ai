@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2003/grade 4/Mathematics/M011017",
+  "item_keys": [
+    "TIMSS 2003/grade 4/Mathematics/M011017"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Here is a calendar for December.\n\nDECEMBER\n\n| S | M | T | W | T | F | S |\n| --- | --- | --- | --- | --- | --- | --- |\n| | | | 1 | 2 | 3 | 4 |\n| 5 | 6 | 7 | 8 | 9 | 10 | 11 |\n| 12 | 13 | 14 | 15 | 16 | 17 | 18 |\n| 19 | 20 | 21 | 22 | 23 | 24 | 25 |\n| 26 | 27 | 28 | 29 | 30 | 31 | |\n\nMary’s birthday is on Thursday, December 2. She is going on a trip exactly 3 weeks later. On what date will she go on the trip?\n\nA. December 16th\nB. December 21st\nC. December 23rd\nD. December 30th",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "C"
+  },
+  "llm_thinking": "December 2 falls on a Thursday, so counting 21 days ahead lands on December 23 — that's answer C.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 700,
+  "completion_tokens": 46,
+  "reasoning_tokens": 35,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335957-QKbCVbAXn76L3I0C7O9z",
+  "requested_at": "2026-10-19T14:20:44+00:00"
+}

@@ -1,0 +1,47 @@
+{
+  "item_key": "TIMSS 2007/grade 4/Mathematics/M031350C",
+  "response": "Last one, the school! It needs to be halfway between the park and the library. First, I need to find the distance between the park and the library. I’ll measure the distance between the park’s 'X' and the library's 'X'. Let's say it's 6 cm. Half of 6 cm is 3 cm. So, I’ll measure 3 cm from the park’s 'X', in the direction of the library. Then, I’ll put a new 'X' there and write 'school' right underneath it.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the fourth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Questions\n\nThese 3 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nFor this item, you have been given a cardboard ruler. If you do not have the cardboard ruler raise your hand. Use the map below and your ruler to answer this set of questions.\n\nMarytown is a new town. The people of Marytown are planning their new town. They decided to put the town hall halfway between the lake and the forest, as shown on the map below. They made their measurements from the X's.\n\nMarytown\n\n[Image: Map of Marytown]\n\nAdd a park, a library, and a school to the map of Marytown using the following information.\n\nA. The park should be 200 meters from the lake so people can go fishing and swimming. On the map, mark with an X where you would put the park and write park below the X.\n\nFigure, described in words:\nA map of Marytown enclosed in an irregular rectangular border.\nNear the top right inside the border, text states: \"Scale: 1 cm represents 100 meters\".\nIn the upper-left quadrant is a forest represented by a cluster of pine trees, with an \"X\" mark below it labeled \"Forest\".\nNear the center of the map is an \"X\" mark labeled \"Town Hall\" below it.\nIn the lower-right quadrant is an outlined body of water with wavy horizontal lines inside, with an \"X\" mark directly above it labeled \"Lake\".\n\n## Question 2\n\nFor this item, you have been given a cardboard ruler. If you do not have the cardboard ruler raise your hand. Use the map below and your ruler to answer this set of questions.\n\nMarytown is a new town. The people of Marytown are planning their new town. They decided to put the town hall halfway between the lake and the forest, as shown on the map below. They made their measurements from the X's.\n\nMarytown\n\n[Image: Map of Marytown]\n\nAdd a park, a library, and a school to the map of Marytown using the following information.\n\nB. The library should be at least 300 meters but no more than 400 meters from the town hall. On the map, mark with an X where you would put the library and write library below the X.\n\nFigure, described in words:\nA map of Marytown enclosed in an irregular rectangular border.\nNear the top right inside the border, text states: \"Scale: 1 cm represents 100 meters\".\nIn the upper-left quadrant is a forest represented by a cluster of pine trees, with an \"X\" mark below it labeled \"Forest\".\nNear the center of the map is an \"X\" mark labeled \"Town Hall\" below it.\nIn the lower-right quadrant is an outlined body of water with wavy horizontal lines inside, with an \"X\" mark directly above it labeled \"Lake\".\n\n## Question 3\n\nFor this item, you have been given a cardboard ruler. If you do not have the cardboard ruler raise your hand. Use the map below and your ruler to answer this set of questions.\n\nMarytown is a new town. The people of Marytown are planning their new town. They decided to put the town hall halfway between the lake and the forest, as shown on the map below. They made their measurements from the X's.\n\nMarytown\n\n[Image: Map of Marytown]\n\nAdd a park, a library, and a school to the map of Marytown using the following information.\n\nC. The school should be halfway between the park and the library. On the map, mark with an X where you would put the school and write school below the X.\n\nFigure, described in words:\nA map of Marytown enclosed in an irregular rectangular border.\nNear the top right inside the border, text states: \"Scale: 1 cm represents 100 meters\".\nIn the upper-left quadrant is a forest represented by a cluster of pine trees, with an \"X\" mark below it labeled \"Forest\".\nNear the center of the map is an \"X\" mark labeled \"Town Hall\" below it.\nIn the lower-right quadrant is an outlined body of water with wavy horizontal lines inside, with an \"X\" mark directly above it labeled \"Lake\".\n\n# Scoring guide of question 3 (1 point)\n\n- Correct Response (1 point):\n  - School equidistant from park and library, X to X, measures to differ no more than 4mm\n- Incorrect Response (0 points):\n  - School is not equidistant (+/- 2 mm) from park and library\n  - Other incorrect (including crossed out/erased, stray marks, illegible, or off task)\n- Nonresponse (0 points):\n  - Blank\n\nScoring notes: Note: Park, library, and school need not to be in a straight line.\n\n# Response to question 3\n\nLast one, the school! It needs to be halfway between the park and the library. First, I need to find the distance between the park and the library. I’ll measure the distance between the park’s 'X' and the library's 'X'. Let's say it's 6 cm. Half of 6 cm is 3 cm. So, I’ll measure 3 cm from the park’s 'X', in the direction of the library. Then, I’ll put a new 'X' there and write 'school' right underneath it.\n\nScore the response to question 3.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response",
+          "Nonresponse"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response clearly explains the correct procedure to locate the school halfway between the park and the library: measuring the distance between their marks, finding half of that distance, placing an 'X' at that midpoint along the line between them, and labeling it 'school'. This satisfies the requirement for the school to be equidistant from the park and library.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": "**Calculating School Location**\n\nI'm currently determining the optimal location for the school. My approach involves calculating the midpoint between the park and the library, using the 'X' coordinates to find the distance between them. I've found a distance of 6 cm, thus the midpoint is 3 cm. I'm moving toward finding a way to implement this process.\n\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 1341,
+  "completion_tokens": 255,
+  "reasoning_tokens": 168,
+  "cost_usd": 0.001962,
+  "seconds": 14.678,
+  "batch_id": null,
+  "requested_at": "2026-10-19T18:37:20+00:00"
+}

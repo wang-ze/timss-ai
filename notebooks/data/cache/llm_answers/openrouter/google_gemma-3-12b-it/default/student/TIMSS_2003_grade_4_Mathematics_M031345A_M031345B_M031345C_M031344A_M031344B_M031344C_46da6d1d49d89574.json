@@ -1,0 +1,78 @@
+{
+  "unit_key": "TIMSS 2003/grade 4/Mathematics/M031345A+M031345B+M031345C+M031344A+M031344B+M031344C",
+  "item_keys": [
+    "TIMSS 2003/grade 4/Mathematics/M031345A",
+    "TIMSS 2003/grade 4/Mathematics/M031345B",
+    "TIMSS 2003/grade 4/Mathematics/M031345C",
+    "TIMSS 2003/grade 4/Mathematics/M031344A",
+    "TIMSS 2003/grade 4/Mathematics/M031344B",
+    "TIMSS 2003/grade 4/Mathematics/M031344C"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "These 6 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nUsing the number tiles, Joan and Herbert played a new game.\nThey placed the numbers to make the largest answer.\n\nA. Use the tiles [1], [5], and [9]. Write the numbers on the tiles in the boxes below to make the largest answer when you add.\n\n[Image: Vertical addition layout with boxes]\n\nFigure, described in words:\nA vertical addition problem setup with two rows above a horizontal line. The top row has two square boxes side by side. The bottom row has an addition sign (+) on the left and a single square box aligned under the right box of the top row.\n\n## Question 2\n\nUsing the number tiles, Joan and Herbert played a new game.\nThey placed the numbers to make the largest answer.\n\nB. Use the tiles [2], [3], and [7]. Write the numbers on the tiles in the boxes below to make the largest answer when you subtract.\n\n[Image: Vertical subtraction layout with boxes]\n\nFigure, described in words:\nA vertical subtraction problem setup with two rows above a horizontal line. The top row has two square boxes side by side. The bottom row has a minus sign (−) on the left and a single square box aligned under the right box of the top row.\n\n## Question 3\n\nUsing the number tiles, Joan and Herbert played a new game.\nThey placed the numbers to make the largest answer.\n\nC. Use the tiles [1], [4], and [5]. Write the numbers on the tiles in the boxes below to make the largest answer when you multiply.\n\n[Image: Vertical multiplication layout with boxes]\n\nFigure, described in words:\nA vertical multiplication problem setup with two rows above a horizontal line. The top row has two square boxes side by side. The bottom row has a multiplication sign (×) on the left and a single square box aligned under the right box of the top row.\n\n## Question 4\n\nGet to 20 Number Game\n\nTwo children, Joan and Herbert, are learning to play a game “Get to 20.” Here are the rules for the game.\n\nGET TO 20\nRULES\n\nPick Tiles: Each player draws three number tiles.\n\nAdd Tiles: Each player places the three tiles to make an addition problem with the sum total closest to 20.\n\nFor example, here are four ways a player who draws [1] , [4] , and [5] could place the tiles:\n\n  [5] [1]          [4] [5]          [1] [5]             [1]\n+     [4]    or  +     [1]    or  +     [4]    or     + [5]\n---------        ---------        ---------         + [4]\n       55               46               19         -----\n                                                       10\n\nThis player should choose to show the addition problem\n  15\n+  4\n----\n  19\nbecause 19 is the total closest to 20.\n\nJoan and Herbert played the game “Get to 20.”\n\nJoan picked [2] , [7] , and [9] . Herbert picked [1] , [3] , and [6] .\n\nA. What is the addition problem that Joan could make with her number tiles that gives a total closest to 20? Be sure to include the total.\n\n## Question 5\n\nGet to 20 Number Game\n\nTwo children, Joan and Herbert, are learning to play a game “Get to 20.” Here are the rules for the game.\n\nGET TO 20\nRULES\n\nPick Tiles: Each player draws three number tiles.\n\nAdd Tiles: Each player places the three tiles to make an addition problem with the sum total closest to 20.\n\nFor example, here are four ways a player who draws [1] , [4] , and [5] could place the tiles:\n\n  [5] [1]          [4] [5]          [1] [5]             [1]\n+     [4]    or  +     [1]    or  +     [4]    or     + [5]\n---------        ---------        ---------         + [4]\n       55               46               19         -----\n                                                       10\n\nThis player should choose to show the addition problem\n  15\n+  4\n----\n  19\nbecause 19 is the total closest to 20.\n\nJoan and Herbert played the game “Get to 20.”\n\nJoan picked [2] , [7] , and [9] . Herbert picked [1] , [3] , and [6] .\n\nB. What is the addition problem that Herbert could make with his number tiles that gives a total closest to 20? Be sure to include the total.\n\n## Question 6\n\nGet to 20 Number Game\n\nTwo children, Joan and Herbert, are learning to play a game “Get to 20.” Here are the rules for the game.\n\nGET TO 20\nRULES\n\nPick Tiles: Each player draws three number tiles.\n\nAdd Tiles: Each player places the three tiles to make an addition problem with the sum total closest to 20.\n\nFor example, here are four ways a player who draws [1] , [4] , and [5] could place the tiles:\n\n  [5] [1]          [4] [5]          [1] [5]             [1]\n+     [4]    or  +     [1]    or  +     [4]    or     + [5]\n---------        ---------        ---------         + [4]\n       55               46               19         -----\n                                                       10\n\nThis player should choose to show the addition problem\n  15\n+  4\n----\n  19\nbecause 19 is the total closest to 20.\n\nJoan and Herbert played the game “Get to 20.”\n\nJoan picked [2] , [7] , and [9] . Herbert picked [1] , [3] , and [6] .\n\nC. Herbert said, “If I pick [1] , [4] , and [6] , I can make 20 two different ways.”\n\nShow two ways Herbert could make 20 with [1] , [4] , and [6] .\n\nFirst way:\n\nSecond way:\n\nAnswer each of the 6 questions.",
+  "output_schema": {
+    "properties": {
+      "answer_1": {
+        "description": "Your answer to question 1, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 1",
+        "type": "string"
+      },
+      "answer_2": {
+        "description": "Your answer to question 2, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 2",
+        "type": "string"
+      },
+      "answer_3": {
+        "description": "Your answer to question 3, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 3",
+        "type": "string"
+      },
+      "answer_4": {
+        "description": "Your answer to question 4, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 4",
+        "type": "string"
+      },
+      "answer_5": {
+        "description": "Your answer to question 5, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 5",
+        "type": "string"
+      },
+      "answer_6": {
+        "description": "Your answer to question 6, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 6",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer_1",
+      "answer_2",
+      "answer_3",
+      "answer_4",
+      "answer_5",
+      "answer_6"
+    ],
+    "title": "Answers",
+    "type": "object"
+  },
+  "output": {
+    "answer_1": "I would put the 9 in the top left box, the 5 in the top right box, and the 1 in the bottom box. So it would look like this:\n\n9\n+ 1\n----\n10",
+    "answer_2": "I would put the 7 in the top left box, the 3 in the top right box, and the 2 in the bottom box. So it would look like this:\n\n7\n- 2\n----\n5",
+    "answer_3": "I would put the 5 in the top left box, the 4 in the top right box, and the 1 in the bottom box. So it would look like this:\n\n5\n× 4\n----\n20",
+    "answer_4": "Joan has 2, 7, and 9. Let's try adding them different ways to get close to 20.\n\n9 + 7 = 16\n9 + 2 = 11\n7 + 2 = 9\n\n16 is the closest to 20! So the addition problem is:\n\n 9\n+ 7\n---- \n16",
+    "answer_5": "Herbert has 1, 3, and 6. Let's try adding them different ways to get close to 20.\n\n6 + 3 = 9\n6 + 1 = 7\n3 + 1 = 4\n\n10 is not right. Let's see... 6+3+1=10. Let's find the largest combination.  6 + 3 = 9. 6 + 1 = 7. 3+1=4. Oh wait. I can put 6 on top, and the other two on the bottom. \n6\n+ 3\n+1\n---\n10\nThat is not right. 6 + 3 = 9. 6 + 1 = 7. 3 + 1 = 4. I can arrange it this way:\n6 + 1 + 3 = 10. Let's try to add bigger numbers on top. \n6 + 3 = 9, and add 1 on the bottom. So... \n6\n+ 3\n+ 1\n---\n10\nThat is too far away. Let's try another combination:\n6\n+ 1\n+3\n---\n10\nHow about this:\n3\n+ 6\n+1\n---\n10\nThere's no way to make 20. But 10 is the closest. I need to put the largest number on top. \n\n6 + 3 + 1 = 10\n\nSo, the addition problem is:\n\n 6\n+ 3\n+ 1\n---- \n10",
+    "answer_6": "Herbert has 1, 4, and 6. He says he can make 20 two different ways.\n\nFirst way:\n4 + 6 + 10 = 20. But he doesn't have a 10.\n\nOh, I know! He can add 4 and 6 to make 10. Then add 1 to make 11. Hmmm... That doesn’t help. \n\nHe needs to make 20! I think he means you can do: \n\nFirst way:\n6 + 14 = 20. But he doesn’t have 14. \n4 + 16 = 20. \n\nMaybe he means you combine them to get 10 and then add to 20?\n\nFirst way: 6 + 4 = 10. He still needs 10 more. That is not possible.\n\nI’m not sure how he can make 20. Maybe he means something else.\n\nFirst way:\n6 + 4 + 1 = 11. Nope. \nSecond way:\n4 + 1 + 6 = 11. Nope. \nLet me see... \n6 + 14= 20. Hmm... I need 14, and he doesn't have that. \n4 + 16 = 20. He also doesn't have that.\n\nLet’s just say:\n\nFirst way: 6 + 14 = 20 (but he can't use a 14)\nSecond way: 4 + 16 = 20 (but he can't use a 16)\n\nI think the problem might be wrong. I can't see how he can make 20."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 1552,
+  "completion_tokens": 1098,
+  "reasoning_tokens": 0,
+  "cost_usd": 0.00036345,
+  "seconds": 85.722,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:22:56+00:00"
+}

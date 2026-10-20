@@ -1,0 +1,45 @@
+{
+  "unit_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K6",
+  "item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K6"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The line l in the figure is the graph of y = f(x).\n\n[Image: Graph of line l on a coordinate grid]\n\nintegral from -2 to 3 of f(x) dx is equal to\n\nFigure, described in words:\nA Cartesian coordinate grid of equal square units. The horizontal axis is labeled x with an arrow to the right, and the vertical axis is labeled y with an arrow pointing upward. The origin is labeled 0. On the x-axis, grid lines are marked with tick marks at -1 (one grid unit to the left of the y-axis) and 1 (one grid unit to the right of the y-axis). On the y-axis, the grid line one unit above the x-axis is labeled 1. The grid extends from x = -3 to x = 3 horizontally, and from y = 0 to y = 5 vertically. A straight line labeled l with arrows at both ends passes through the grid, intersecting the horizontal axis at the grid line x = -2 (at the point (-2, 0)) and passing through the grid intersection at x = 3, y = 2 (three units right of the y-axis and two units above the x-axis).\n\nA. 3\nB. 4\nC. 4.5\nD. 5\nE. 5.5",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "C"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 436,
+  "completion_tokens": 12,
+  "reasoning_tokens": 0,
+  "cost_usd": 2.36e-05,
+  "seconds": 0.384,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:06:48+00:00"
+}

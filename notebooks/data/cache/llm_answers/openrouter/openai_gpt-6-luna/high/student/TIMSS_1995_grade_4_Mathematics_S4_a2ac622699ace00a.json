@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 1995/grade 4/Mathematics/S4",
+  "item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/S4"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "high",
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "A teacher marks 10 of her pupils' tests every half hour. It takes her one and one-half hours to mark all her pupils' tests. How many pupils are in her class?\n\nAnswer: ____",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "30 pupils"
+  },
+  "llm_thinking": "**Calculating session totals**\n\nI need to figure out how many times 10 can be achieved in a timeframe of 1.5 hours. Since there are 3 half-hours in 1.5 hours, I can calculate the total as 10 times 3. It seems straightforward enough. I just want to ensure I'm presenting this in a clear format, perhaps using JSON to represent the exact calculation accurately. Let's make sure the output is precise!",
+  "finish_reason": "stop",
+  "prompt_tokens": 254,
+  "completion_tokens": 46,
+  "reasoning_tokens": 31,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792430069-8g35f4u7PLleVZ9HmGfd",
+  "requested_at": "2026-10-19T18:03:53+00:00"
+}

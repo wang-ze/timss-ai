@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 4/Mathematics/M051015",
+  "item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M051015"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Jay has to draw a shape.\n- It must have 5 sides.\n- It must have one line of symmetry.\nJay has started to draw the shape.\nComplete Jay’s shape.\n\n[Image: an incomplete shape with three sides forming a rectangle on a grid.]\n\nFigure, described in words:\nA 10 by 10 square grid. A three-sided incomplete shape is drawn with thick black lines along the grid lines: a horizontal bottom segment 6 units long (leaving 2 units of margin on the left and 2 units on the right along the bottom edge of the grid), and two vertical segments each 4 units tall rising upward from the two ends of the bottom segment (leaving 6 units of grid space above them). The top of the shape is open.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "To complete Jay's shape, I would draw a line connecting the top ends of the two vertical lines. This line would be slanted downwards from left to right, forming a pentagon. The line should start 2 units above the left vertical line and end 2 units above the right vertical line. This will make a shape with 5 sides and one line of symmetry (a vertical line down the middle of the shape)."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 297,
+  "completion_tokens": 92,
+  "reasoning_tokens": 0,
+  "cost_usd": 2.865e-05,
+  "seconds": 1.533,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:06:08+00:00"
+}

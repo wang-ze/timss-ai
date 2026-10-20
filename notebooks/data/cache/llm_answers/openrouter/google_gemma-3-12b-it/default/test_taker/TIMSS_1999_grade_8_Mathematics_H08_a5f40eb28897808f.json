@@ -1,0 +1,45 @@
+{
+  "unit_key": "TIMSS 1999/grade 8/Mathematics/H08",
+  "item_keys": [
+    "TIMSS 1999/grade 8/Mathematics/H08"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Which shows 2/3 of the square shaded?\n\nFigure, described in words:\nFive squares, labeled A through E, are shown in a row:\n- Square A is divided horizontally into 6 equal strips. The top 2 strips are shaded gray, and the bottom 4 strips are unshaded white.\n- Square B has line segments extending from the bottom-left corner to the center, from the bottom-right corner to the center, and from the center to the top-right corner. The triangle formed at the bottom is white, and the remaining area of the square is shaded gray.\n- Square C is divided vertically into three regions by two vertical lines: two narrow gray strips on the left and right edges, each approximately one-sixth the width of the square, and a wider unshaded white region in the middle.\n- Square D contains an unshaded white isosceles triangle whose base is the bottom edge of the square and whose apex touches the midpoint of the top edge. The two right-triangular regions to the left and right of this triangle are shaded gray.\n- Square E is divided vertically into 3 strips of equal width. The leftmost and rightmost strips are shaded gray, and the middle strip is unshaded white.\n\nA. [Image: Square divided horizontally into six equal strips with the top two strips shaded]\nB. [Image: Square with an unshaded triangle at the bottom and shaded regions above]\nC. [Image: Square divided vertically into three strips with the two narrow outer strips shaded]\nD. [Image: Square with an unshaded triangle spanning from the bottom edge to the top center and two shaded triangles on the sides]\nE. [Image: Square divided vertically into three equal strips with the two outer strips shaded]",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "A"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 498,
+  "completion_tokens": 6,
+  "reasoning_tokens": 0,
+  "cost_usd": 2.58e-05,
+  "seconds": 0.414,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:07:37+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "item_key": "TIMSS 2003/grade 8/Mathematics/M032403",
+  "response": "Draw a line from vertex A to the midpoint of side BC, dividing the triangle into two congruent triangles.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the eighth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\n[Image: Triangle ABC]\n\nThe triangle ABC has AB = AC.\n\nDraw a line to divide triangle ABC into two congruent triangles.\n\nFigure, described in words:\nAn isosceles triangle ABC is shown with vertex A at the bottom left, vertex B at the bottom right, and vertex C at the top. The base AB is horizontal. Side AC connects vertex A to vertex C, and side BC connects vertex C to vertex B. A single hatch mark (tick mark) is drawn through side AC and through side AB, indicating that AB = AC.\n\n# Scoring guide of the question (1 point)\n\n- Correct Response (1 point):\n  - Line drawn from A to (approximate) midpoint of BC.\n- Incorrect Response (0 points):\n  - Line drawn from C or B.\n  - Other incorrect (including crossed out/erased, stray marks, illegible or off task).\n\n# Response to the question\n\nDraw a line from vertex A to the midpoint of side BC, dividing the triangle into two congruent triangles.\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response correctly specifies drawing a line from vertex A to the midpoint of side BC, which matches the requirement in the scoring guide for dividing the isosceles triangle into two congruent triangles.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": "**Developing Scoring Logic**\n\nI am refining the scoring criteria to accurately assess student responses for the TIMSS Grade 8 math question. My focus is on defining precise parameters for a \"Correct Response,\" specifically identifying the line drawn from A to the midpoint of BC. This will help distinguish valid solutions from those that are not.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 512,
+  "completion_tokens": 191,
+  "reasoning_tokens": 136,
+  "cost_usd": 0.00110025,
+  "seconds": 4.143,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:42:57+00:00"
+}

@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 4/Mathematics/M031325",
+  "item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M031325"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "In the space below, draw an angle that is greater than 90 degrees but less than 180 degrees.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Draw a point as the vertex of the angle. From the vertex, draw one straight ray going horizontally to the right. From the same vertex, draw a second ray going up and to the left so that the opening between the two rays is wider than a right angle (a square corner) but narrower than a straight line, about 135 degrees. Draw a small arc inside the opening at the vertex to mark the angle, and label the angle as obtuse, for example 135 degrees."
+  },
+  "llm_thinking": "I need to construct a single-line JSON answer describing how to draw an obtuse angle—two rays sharing a vertex, one horizontal and one angled upward-left at roughly 135 degrees, with the vertex labeled and an arc marking the angle between them.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 457,
+  "completion_tokens": 258,
+  "reasoning_tokens": 107,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335960-oItwFneLfMfZRXMM1E4b",
+  "requested_at": "2026-10-19T14:20:47+00:00"
+}

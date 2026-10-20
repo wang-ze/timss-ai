@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2011/grade 8/Mathematics/M042270",
+  "item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M042270"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "minimal",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The length of side of each of the small squares represents 1 cm. Draw an isosceles triangle with a base of 4 cm and a height of 5 cm.\n\n[Image: A square grid that has sides of 8 small squares by 8 small squares.]\n\nFigure, described in words:\nAn 8 by 8 grid of small squares with no numbers or labels.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "To draw the isosceles triangle on the 8 by 8 grid:\n1. Choose a horizontal grid line near the bottom (for example, the bottom line of the grid). Draw a horizontal line segment that is 4 squares long (4 cm) to serve as the base of the triangle (for instance, spanning from the 2nd vertical line to the 6th vertical line).\n2. Find the midpoint of this base, which is 2 squares from either end.\n3. From this midpoint, count 5 squares straight up (5 cm) along the grid line to mark the top vertex.\n4. Draw straight line segments connecting this top vertex to each of the two endpoints of the 4 cm base.\n\nThis forms an isosceles triangle with a base of 4 cm and a height of 5 cm."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 285,
+  "completion_tokens": 366,
+  "reasoning_tokens": 183,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792336149-73AS8UqLMoFOJ2pc4u85",
+  "requested_at": "2026-10-19T14:20:47+00:00"
+}

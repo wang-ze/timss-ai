@@ -1,0 +1,46 @@
+{
+  "item_key": "TIMSS 2003/grade 4/Mathematics/M031327",
+  "response": "Draw a straight line with arrowheads at both ends that also rises one square up for every one square across (a 45-degree slope, like L). For example, start at the grid intersection 0 squares from the left and 0 squares from the bottom... more precisely, start at the intersection 1 unit from the left and 0 units from the bottom and extend it diagonally up and to the right through (2,1), (3,2), (4,3), (5,4), (6,5), ending at the top edge of the grid (about 7 units from the left and 6 units from the bottom would be on the grid edge at (6,6)? ). Specifically: draw the line through the intersections (1,0), (2,1), (3,2), (4,3), (5,4), (6,5), so it is parallel to L and passes below and to the right of L, with the same slope of 1 (each step goes 1 square right and 1 square up).",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the fourth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\nOn the grid, draw a line parallel to line L.\n\n[Image: A grid with line L]\n\nFigure, described in words:\nA grid measuring 11 squares wide by 6 squares high. A straight line segment with arrowheads at both ends is labeled L near its upper-right end. The line follows the diagonals of grid squares at a 45-degree angle (slope of 1), extending from the grid intersection located 3 units from the left and 2 units from the bottom to the intersection located 6 units from the left and 5 units from the bottom.\n\n# Scoring guide of the question (1 point)\n\n- Correct Response (1 point):\n  - Line (or lines) parallel to L\n- Incorrect Response (0 points):\n  - Line perpendicular to L shown\n  - Other incorrect (including crossed out/erased, stray marks, illegible, or off task)\n\n# Response to the question\n\nDraw a straight line with arrowheads at both ends that also rises one square up for every one square across (a 45-degree slope, like L). For example, start at the grid intersection 0 squares from the left and 0 squares from the bottom... more precisely, start at the intersection 1 unit from the left and 0 units from the bottom and extend it diagonally up and to the right through (2,1), (3,2), (4,3), (5,4), (6,5), ending at the top edge of the grid (about 7 units from the left and 6 units from the bottom would be on the grid edge at (6,6)? ). Specifically: draw the line through the intersections (1,0), (2,1), (3,2), (4,3), (5,4), (6,5), so it is parallel to L and passes below and to the right of L, with the same slope of 1 (each step goes 1 square right and 1 square up).\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response clearly describes drawing a straight line with the same slope as line L (a 45-degree angle, rising one square up for each square to the right), which is parallel to line L.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 715,
+  "completion_tokens": 143,
+  "reasoning_tokens": 82,
+  "cost_usd": 0.0010725,
+  "seconds": 2.205,
+  "batch_id": null,
+  "requested_at": "2026-10-19T18:43:00+00:00"
+}

@@ -13,302 +13,55 @@
 requests can run at once in one event loop (``LeaveOneOut.request``). ``request_body`` and ``parse_response`` split
 ``request`` for batches (``batch``). All three send the same request body and check the output the same way.
 
-LLM providers:
-
-- ``"openrouter"`` (the default, with ``google/gemini-3.8-flash``): reasoning effort goes in OpenRouter's ``reasoning``
-  object, and the response reports the cost.
-- ``"openai"``: the OpenAI API, or any OpenAI-compatible server through ``base_url``.
-- ``"gemini"``: the Gemini API's OpenAI-compatible endpoint, with models such as ``gemini-3.8-flash``.
-- ``"ollama"``: a local Ollama server through its native chat API, which takes the JSON schema as ``format``, the
-  reasoning effort as ``think`` (a level such as "medium", or True or False for models without levels; None for
-  models that cannot think), and the context window as ``num_ctx``.
+The LLM client and its providers are in ``timss_math.llm``; its names are importable from here too.
 """
 
 from __future__ import annotations
 
 import contextlib
 import functools
-import json
 import time
-from collections.abc import AsyncIterator, Iterable
-from dataclasses import asdict, dataclass, field
+from collections.abc import Iterable
 from datetime import UTC, datetime
 from pathlib import Path
-from typing import Literal
 
 import httpx2
-import openai
-import requests
-from openai.lib._parsing._completions import (
-    parse_chat_completion,
-    type_to_response_format_param,
-)
-from openai.types.chat import ChatCompletion, ParsedChatCompletion
-from pydantic import BaseModel, Field, ValidationError, create_model
+from pydantic import BaseModel, Field, create_model
 
-from .config import api_key, slug
-from .config import data_dir as resolve_data_dir
-from .index import ITEM_PARAMETERS_PAYLOAD, ItemIndex, SearchMethod
-from .items import (
+from ..config import data_dir as resolve_data_dir
+from ..config import slug
+from ..items import (
     PARAMETER_LABELS,
     PARAMETER_NAMES,
     ItemBank,
     TimssItem,
     model_parameters,
+    plural,
     predicted_parameters,
 )
-from .predictor import PREDICTIONS_DIR, Predictor, UnusableOutputError, plural
+from ..llm import (  # noqa: F401 (the client's names, importable from here as before they were shared)
+    ANTHROPIC_REASONING_EFFORTS,
+    API_KEY_VARIABLES,
+    BASE_URLS,
+    UNUSABLE_ERRORS,
+    AsyncLLMSession,
+    Completion,
+    ContextWindowError,
+    LLMClient,
+    LLMProvider,
+    LLMSettings,
+    NoPredictionError,
+    completion_of,
+    messages_of,
+)
+from .index import ITEM_PARAMETERS_PAYLOAD, ItemIndex, SearchMethod
+from .predictor import PREDICTIONS_DIR, Predictor
 
-LLMProvider = Literal["openrouter", "openai", "gemini", "ollama"]
-
-BASE_URLS = {
-    "openrouter": "https://openrouter.ai/api/v1",
-    "openai": "https://api.openai.com/v1",
-    "gemini": "https://generativelanguage.googleapis.com/v1beta/openai/",
-    "ollama": "http://localhost:11434",
-}
-API_KEY_VARIABLES = {"openrouter": "OPENROUTER_API_KEY", "openai": "OPENAI_API_KEY", "gemini": "GEMINI_API_KEY"}
 STUDENTS = {
     4: "fourth-grade students",
     8: "eighth-grade students",
     12: "students in their final year of secondary school who have taken advanced mathematics courses (TIMSS Advanced)",
 }
-
-
-@dataclass(frozen=True)
-class LLMSettings:
-    """Which LLM predicts the parameters, and how it is called."""
-
-    provider: LLMProvider = "openrouter"
-    model: str = "google/gemini-3.8-flash"
-    reasoning_effort: str | bool | None = "medium"
-    """Reasoning effort, such as "low", "medium", or "high"; None sends none. Ollama also takes True or False."""
-    max_tokens: int = 16384
-    """Output cap, reasoning included."""
-    base_url: str | None = None
-    """The provider's API URL; None uses its public one (Ollama: http://localhost:11434)."""
-    api_key: str | None = field(default=None, repr=False)
-    """None reads the provider's variable (OPENROUTER_API_KEY, OPENAI_API_KEY, GEMINI_API_KEY) from the environment
-    or the project .env. Ollama needs none."""
-    timeout: float = 600
-    max_retries: int = 2
-    """Retries of a failed request by the OpenAI client (not used for Ollama)."""
-    ollama_num_ctx: int = 32768
-    """Ollama context window in tokens, which must hold the prompts (about 6,000 tokens) and the output."""
-
-    def __post_init__(self):
-        if self.provider not in BASE_URLS:
-            raise ValueError(f"Unknown LLM provider {self.provider!r}; use one of {sorted(BASE_URLS)}")
-        if isinstance(self.reasoning_effort, bool) and self.provider != "ollama":
-            raise ValueError("Only Ollama takes True or False as the reasoning effort")
-
-    def describe(self) -> dict:
-        return {name: value for name, value in asdict(self).items() if name != "api_key"}
-
-
-class NoPredictionError(UnusableOutputError):
-    """The LLM returned no usable prediction, such as output cut off at max_tokens; a rerun may succeed."""
-
-
-class ContextWindowError(RuntimeError):
-    """The prompts and output do not fit the Ollama context window; raise ollama_num_ctx."""
-
-
-@dataclass
-class Completion:
-    parsed: BaseModel
-    thinking: str | None
-    finish_reason: str | None
-    prompt_tokens: int | None
-    completion_tokens: int | None
-    reasoning_tokens: int | None
-    cost_usd: float | None
-
-
-class LLMClient:
-    """Sends a system and a user prompt to the LLM of an LLMSettings and parses its output with a pydantic schema."""
-
-    def __init__(self, settings: LLMSettings = LLMSettings()):
-        self.settings = settings
-        self.base_url = (settings.base_url or BASE_URLS[settings.provider]).rstrip("/")
-
-    @functools.cached_property
-    def _client(self) -> openai.OpenAI:
-        """Made when the first request is sent, so that preparing prompts and reading saved predictions need no API
-        key."""
-        return openai.OpenAI(**self._openai_options())
-
-    def _openai_options(self) -> dict:
-        settings = self.settings
-        return {
-            "base_url": self.base_url,
-            "api_key": api_key(API_KEY_VARIABLES[settings.provider], settings.api_key),
-            "max_retries": settings.max_retries,
-            "timeout": settings.timeout,
-        }
-
-    @contextlib.asynccontextmanager
-    async def session(self, http_client: httpx2.AsyncClient | None = None) -> AsyncIterator[AsyncLLMSession]:
-        """An ``AsyncLLMSession`` for the requests of one event loop, closed at the end.
-
-        A session is opened for each run instead of once per client, because an async connection pool belongs to the
-        event loop that opened it. ``http_client`` replaces the HTTP client, such as one with a mock transport in tests.
-        """
-        if self.settings.provider == "ollama":
-            async with http_client or httpx2.AsyncClient(timeout=self.settings.timeout) as http:
-                yield AsyncLLMSession(self, http=http)
-        else:
-            async with openai.AsyncOpenAI(**self._openai_options(), http_client=http_client) as client:
-                yield AsyncLLMSession(self, openai_client=client)
-
-    def complete(self, system_prompt: str, user_prompt: str, schema: type[BaseModel]) -> Completion:
-        """The LLM's output parsed with ``schema``.
-
-        Output that does not fit the schema raises pydantic's ValidationError, output cut off at max_tokens raises
-        openai.LengthFinishReasonError (or NoPredictionError from Ollama), and no output at all raises
-        NoPredictionError. API errors propagate.
-        """
-        messages = messages_of(system_prompt, user_prompt)
-        if self.settings.provider == "ollama":
-            return self._ollama(messages, schema)
-        options, extra_body = self._options()
-        completion = self._client.chat.completions.parse(
-            model=self.settings.model, messages=messages, response_format=schema, **options, extra_body=extra_body
-        )
-        return completion_of(completion)
-
-    def _options(self) -> tuple[dict, dict]:
-        """The output cap and reasoning effort of an OpenAI-compatible request: the SDK's own parameters, and the
-        provider's extra body fields."""
-        settings = self.settings
-        if settings.provider == "ollama":
-            raise ValueError("Ollama is not called through the OpenAI-compatible chat completions API")
-        effort = settings.reasoning_effort
-        extra_body = {}
-        if settings.provider == "openrouter":
-            options = {"max_tokens": settings.max_tokens}
-            extra_body = ({"reasoning": {"effort": effort}} if effort is not None else {}) | {"usage": {"include": True}}
-        elif settings.provider == "openai":
-            options = {"max_completion_tokens": settings.max_tokens}
-        else:
-            options = {"max_tokens": settings.max_tokens}
-        if settings.provider != "openrouter" and effort is not None:
-            options["reasoning_effort"] = effort
-        return options, extra_body
-
-    def chat_body(self, system_prompt: str, user_prompt: str, schema: type[BaseModel]) -> dict:
-        """The JSON body that ``complete`` sends to an OpenAI-compatible provider, for a batch request."""
-        options, extra_body = self._options()
-        return {
-            "messages": messages_of(system_prompt, user_prompt),
-            "model": self.settings.model,
-            **options,
-            "response_format": type_to_response_format_param(schema),
-            **extra_body,
-        }
-
-    @staticmethod
-    def parse_chat_response(body: dict, schema: type[BaseModel]) -> Completion:
-        """A chat-completions response body, such as a batch result, parsed and checked as ``complete`` does."""
-        completion = parse_chat_completion(
-            response_format=schema, input_tools=openai.omit, chat_completion=ChatCompletion.construct(**body)
-        )
-        return completion_of(completion)
-
-    def _ollama(self, messages: list[dict], schema: type[BaseModel]) -> Completion:
-        response = requests.post(
-            f"{self.base_url}/api/chat", json=self._ollama_body(messages, schema), timeout=self.settings.timeout
-        )
-        return self._ollama_completion(response.status_code, response.text, schema)
-
-    def _ollama_body(self, messages: list[dict], schema: type[BaseModel]) -> dict:
-        settings = self.settings
-        body = {
-            "model": settings.model,
-            "messages": messages,
-            "stream": False,
-            "format": schema.model_json_schema(),
-            "options": {"num_ctx": settings.ollama_num_ctx, "num_predict": settings.max_tokens},
-        }
-        if settings.reasoning_effort is not None:
-            body["think"] = settings.reasoning_effort
-        return body
-
-    def _ollama_completion(self, status_code: int, text: str, schema: type[BaseModel]) -> Completion:
-        """The output of an Ollama chat response, checked for errors, a full context window, and missing output."""
-        settings = self.settings
-        if not 200 <= status_code < 300:
-            hint = "; set reasoning_effort=None" if "does not support thinking" in text else ""
-            raise RuntimeError(f"Ollama {settings.model} returned HTTP {status_code}: {text}{hint}")
-        result = json.loads(text)
-        prompt_tokens, completion_tokens = result.get("prompt_eval_count"), result.get("eval_count")
-        # Ollama cuts a prompt that does not fit the context window instead of failing.
-        if prompt_tokens is not None and prompt_tokens + (completion_tokens or 0) >= settings.ollama_num_ctx:
-            raise ContextWindowError(
-                f"{prompt_tokens} prompt and {completion_tokens} output tokens fill the context window of "
-                f"{settings.ollama_num_ctx}; raise ollama_num_ctx"
-            )
-        if result.get("done_reason") == "length":
-            raise NoPredictionError(f"Output cut off at max_tokens ({settings.max_tokens})")
-        content = result["message"].get("content")
-        if not content:
-            raise NoPredictionError(f"No prediction (done_reason={result.get('done_reason')})")
-        return Completion(
-            parsed=schema.model_validate_json(content),
-            thinking=result["message"].get("thinking"),
-            finish_reason=result.get("done_reason"),
-            prompt_tokens=prompt_tokens,
-            completion_tokens=completion_tokens,
-            reasoning_tokens=None,
-            cost_usd=None,
-        )
-
-
-class AsyncLLMSession:
-    """``LLMClient.complete`` as a coroutine, on the HTTP client of one event loop (``LLMClient.session``)."""
-
-    def __init__(
-        self, llm: LLMClient, openai_client: openai.AsyncOpenAI | None = None, http: httpx2.AsyncClient | None = None
-    ):
-        self.llm = llm
-        self.openai_client = openai_client
-        self.http = http
-
-    async def complete(self, system_prompt: str, user_prompt: str, schema: type[BaseModel]) -> Completion:
-        """The LLM's output parsed with ``schema``; raises as ``LLMClient.complete`` does."""
-        llm = self.llm
-        messages = messages_of(system_prompt, user_prompt)
-        if llm.settings.provider == "ollama":
-            response = await self.http.post(f"{llm.base_url}/api/chat", json=llm._ollama_body(messages, schema))
-            return llm._ollama_completion(response.status_code, response.text, schema)
-        options, extra_body = llm._options()
-        completion = await self.openai_client.chat.completions.parse(
-            model=llm.settings.model, messages=messages, response_format=schema, **options, extra_body=extra_body
-        )
-        return completion_of(completion)
-
-
-def messages_of(system_prompt: str, user_prompt: str) -> list[dict]:
-    return [{"role": "system", "content": system_prompt}, {"role": "user", "content": user_prompt}]
-
-
-def completion_of(completion: ParsedChatCompletion) -> Completion:
-    """The parsed output, reasoning, and usage of an OpenAI-compatible response; NoPredictionError if none parsed."""
-    choice = completion.choices[0]
-    if choice.message.parsed is None:
-        raise NoPredictionError(f"No prediction (finish_reason={choice.finish_reason}): {choice.message.refusal}")
-    usage = completion.usage
-    details = usage.completion_tokens_details if usage else None
-    return Completion(
-        parsed=choice.message.parsed,
-        # The reasoning summary that OpenRouter returns for a reasoning model, if any.
-        thinking=getattr(choice.message, "reasoning", None),
-        finish_reason=choice.finish_reason,
-        prompt_tokens=usage.prompt_tokens if usage else None,
-        completion_tokens=usage.completion_tokens if usage else None,
-        reasoning_tokens=details.reasoning_tokens if details else None,
-        cost_usd=getattr(usage, "cost", None),
-    )
 
 
 def system_prompt(item: TimssItem) -> str:
@@ -481,13 +234,7 @@ class LLMPredictor(Predictor):
     """Predicts the IRT parameters of TimssItems with an LLM, using similar calibrated items of an ItemIndex."""
 
     kind = "llm"
-    # Output that the LLM may get right on a rerun: output that does not fit the schema, is cut off, or is missing.
-    UNUSABLE_ERRORS = (
-        ValidationError,
-        openai.LengthFinishReasonError,
-        openai.ContentFilterFinishReasonError,
-        UnusableOutputError,
-    )
+    UNUSABLE_ERRORS = UNUSABLE_ERRORS
 
     def __init__(
         self,

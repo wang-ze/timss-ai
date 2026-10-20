@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2007/grade 8/Mathematics/M042018",
+  "item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M042018"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are an eighth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Place either + or − into each box so that this expression has the largest possible total.\n\n−5 □ −6 □ 3 □ −9",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "To get the largest total, make the expression start with the leading number negative and the terms as positive as possible. The expression is −5 □ −6 □ 3 □ −9. Each operation box has a sign that applies to the number after it. Choose signs so that −6 becomes +6 (use + before −6 is not possible directly since the sign before −6 combines with the minus sign of −6: −5 + (−6) = −11, or −5 − (−6) = −5 + 6 = 1). So put − before −6 to get +6. Then for 3, put + so it stays +3. Then for −9, put − so it becomes +9. Expression: −5 − −6 + 3 − −9 = −5 + 6 + 3 + 9 = 13. Answer: −5 − −6 + 3 − −9 = 13, with − in the first box, + in the second box, and − in the third box."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 490,
+  "completion_tokens": 285,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 2.032,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:15:53+00:00"
+}

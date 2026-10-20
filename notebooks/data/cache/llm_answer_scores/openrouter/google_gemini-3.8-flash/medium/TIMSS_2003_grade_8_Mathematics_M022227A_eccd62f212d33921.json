@@ -1,0 +1,46 @@
+{
+  "item_key": "TIMSS 2003/grade 8/Mathematics/M022227A",
+  "response": "Area of one square = 245 ÷ 5 = 49 cm^2.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the eighth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Questions\n\nThese 3 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nThe figure consists of 5 squares of equal area. The area of the whole figure is 245 cm^2.\n\n[Image: Cross shape made of 5 squares]\n\nA. Find the area of one square.\n\nAnswer: ____ cm^2\n\nFigure, described in words:\nA cross-shaped figure (or plus sign) formed by 5 squares of equal size: one square in the center and four squares adjacent to each of its four sides (top, bottom, left, and right). The outer boundary of the entire shape is drawn with solid black lines, while the four interior shared edges dividing the central square from the four outer squares are drawn with dashed lines.\n\n## Question 2\n\nThe figure consists of 5 squares of equal area. The area of the whole figure is 245 cm^2.\n\n[Image: Cross shape made of 5 squares]\n\nB. Find the length of one side of one square.\n\nAnswer: ____ cm\n\nFigure, described in words:\nA cross-shaped figure (or plus sign) formed by 5 squares of equal size: one square in the center and four squares adjacent to each of its four sides (top, bottom, left, and right). The outer boundary of the entire shape is drawn with solid black lines, while the four interior shared edges dividing the central square from the four outer squares are drawn with dashed lines.\n\n## Question 3\n\nThe figure consists of 5 squares of equal area. The area of the whole figure is 245 cm^2.\n\n[Image: Cross shape made of 5 squares]\n\nC. Find the perimeter of the whole figure in centimeters.\n\nAnswer: ____ cm\n\nFigure, described in words:\nA cross-shaped figure (or plus sign) formed by 5 squares of equal size: one square in the center and four squares adjacent to each of its four sides (top, bottom, left, and right). The outer boundary of the entire shape is drawn with solid black lines, while the four interior shared edges dividing the central square from the four outer squares are drawn with dashed lines.\n\n# Scoring guide of question 1 (1 point)\n\n- Correct Response (1 point):\n  - 49\n- Incorrect Response (0 points):\n  - 1\n  - Other incorrect (including crossed out/erased, stray marks, illegible, or off task).\n\n# Response to question 1\n\nArea of one square = 245 ÷ 5 = 49 cm^2.\n\nScore the response to question 1.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response correctly calculates the area of one square as 49 cm^2, which matches the required answer in the scoring guide.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 723,
+  "completion_tokens": 127,
+  "reasoning_tokens": 81,
+  "cost_usd": 0.0010185,
+  "seconds": 13.339,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:52:04+00:00"
+}

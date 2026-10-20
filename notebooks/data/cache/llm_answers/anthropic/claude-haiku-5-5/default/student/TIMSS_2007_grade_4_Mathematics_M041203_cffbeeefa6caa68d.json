@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2007/grade 4/Mathematics/M041203",
+  "item_keys": [
+    "TIMSS 2007/grade 4/Mathematics/M041203"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": null,
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "This graph shows the points obtained by 4 drivers in the car racing championship. Montoya is in first place. Alonso is in third place. Draw a bar which shows how many points Alonso has scored.\n\n[Image: Bar graph]\n\nFigure, described in words:\nA horizontal bar graph with a grid. The vertical axis lists four driver names from top to bottom: \"Raikkonen\", \"Schumacher\", \"Alonso\", and \"Montoya\". The horizontal axis is labeled \"Points Scored\" below tick marks numbered 82, 83, 84, 85, 86, 87, 88, 89, 90, 91 at increments of 1, with vertical grid lines extending up from each number. Grey horizontal bars are drawn for:\n- Raikkonen: extending from 82 to 87\n- Schumacher: extending from 82 to 85\n- Alonso: no bar is drawn (blank row)\n- Montoya: extending from 82 to 90",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Draw a grey horizontal bar in the Alonso row starting at 82 and ending at 86 on the Points Scored axis. Alonso must have 86 points: Montoya is first with 90, Raikkonen is second with 87, so Alonso (third) must have more than Schumacher's 85 but fewer than Raikkonen's 87, which leaves 86."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 759,
+  "completion_tokens": 324,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 2.049,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:15:29+00:00"
+}

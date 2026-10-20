@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2003/grade 4/Mathematics/M012065",
+  "item_keys": [
+    "TIMSS 2003/grade 4/Mathematics/M012065"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are a fourth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "One centimeter on the map represents 8 kilometers on the land.\n\n[Image: Map showing towns and a river]\n\nAbout how far apart are Oxford and Smithville on the land?\n\nFigure, described in words:\nA map enclosed in a rectangular border showing three towns indicated by black circular dots: Hatboro, Oxford, and Smithville. A thick curved line labeled 'Indian River' runs diagonally from the bottom-left edge up toward the top-right edge. Roads (thin lines) connect the towns across the map. Oxford is located in the upper-middle area, Hatboro is to the west, and Smithville is to the southeast. In the lower-right corner is a scale box displaying a line segment with vertical end ticks, labeled '1 cm = 8 km' below it.\n\nA. 4 km\nB. 16 km\nC. 35 km\nD. 50 km",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "C"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 733,
+  "completion_tokens": 10,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 1.166,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:14:40+00:00"
+}

@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23050",
+  "item_keys": [
+    "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23050"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "none",
+  "system_prompt": "You are a twelfth-grade student in the final year of secondary school who has taken advanced mathematics courses, taking the TIMSS Advanced mathematics test for students like you. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: Graph of f(x) on a coordinate plane with shaded regions A, B, and C]\n\nFor the areas between the graph of f(x) and the x-axis shown above, area A = 4.8 units, area B = 0.8 units, and area C = 2 units.\n\nWhat is the value of the definite integral integral from -2 to 4 of f(x) dx?\n\nFigure, described in words:\nA coordinate grid with horizontal x-axis and vertical f(x)-axis intersecting at origin O. Both axes have grid lines every 1 unit, with markings every 2 units: on the x-axis from -4 to 4, and on the f(x)-axis from -4 to 4. A curve representing the function f is plotted on the grid:\n- It passes through (-4, -2), rises to cross the x-axis at (-2, 0), reaches a local maximum at (0, 2), and goes down to cross the x-axis at (2, 0).\n- It dips below the x-axis to a local minimum near (2.5, -1), then crosses the x-axis back up at (3, 0).\n- It rises sharply to a peak at (3.5, 3), and comes down to cross the x-axis at (4, 0), continuing downward below the x-axis.\nThree regions bounded by the curve and the x-axis are shaded:\n- Region A is vertically shaded, lying above the x-axis between x = -2 and x = 2.\n- Region B is diagonally shaded, lying below the x-axis between x = 2 and x = 3.\n- Region C is horizontally shaded, lying above the x-axis between x = 3 and x = 4.\n\nA. 5.6\nB. 6.0\nC. 6.8\nD. 7.6",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "A"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 613,
+  "completion_tokens": 12,
+  "reasoning_tokens": 0,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792430069-OKxlUXCiIg6xiDEHpoDm",
+  "requested_at": "2026-10-19T17:51:38+00:00"
+}

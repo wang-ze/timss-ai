@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2007/grade 8/Mathematics/M022232",
+  "item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M022232"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Katy made a table to keep track of how long it took water in a beaker to cool from 95°C to 70°C. She measured the time it took the water to cool in 5°C intervals.\n\n| Interval Readings | Amount of Cooling Time |\n| :--- | :--- |\n| 95°C – 90°C | 2 minutes 10 seconds |\n| 90°C – 85°C | 3 minutes 19 seconds |\n| 85°C – 80°C | 4 minutes 48 seconds |\n| 80°C – 75°C | 6 minutes 55 seconds |\n| 75°C – 70°C | 9 minutes 43 seconds |\n\nEstimate to the nearest minute the total time taken for the temperature of the water in the beaker to cool from 95°C to 70°C, and explain how your estimate was made.\n\nEstimate: ____\n\nExplain:",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Estimate: 27 minutes. Explain: Round each interval time to the nearest minute, then add. 2 min 10 s rounds to 2 minutes (10 s is less than 30 s). 3 min 19 s rounds to 3 minutes (19 s is less than 30 s). 4 min 48 s rounds to 5 minutes (48 s is at least 30 s). 6 min 55 s rounds to 7 minutes (55 s is at least 30 s). 9 min 43 s rounds to 10 minutes (43 s is at least 30 s). Total of rounded times: 2 + 3 + 5 + 7 + 10 = 27 minutes."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 704,
+  "completion_tokens": 226,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 1.766,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:22:36+00:00"
+}

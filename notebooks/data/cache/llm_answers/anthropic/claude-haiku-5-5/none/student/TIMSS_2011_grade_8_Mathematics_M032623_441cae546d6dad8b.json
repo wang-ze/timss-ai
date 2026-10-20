@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2011/grade 8/Mathematics/M032623",
+  "item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M032623"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are an eighth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: A shaded rectangle that is 6 cm by 16 cm. Part of the rectangle is unshaded. The unshaded part of the rectangle forms a right triangle on the left that is 6 centimeters by 8 centimeters.]\n\nIn the figure above, what is the area of the shaded region in cm^2?\n\nFigure, described in words:\nA rectangle with a height of 6 cm and a total length of 16 cm along the top, both labeled with dimension arrows. An unshaded right triangle occupies the bottom-left portion of the rectangle; its vertical leg is the left side of the rectangle (6 cm) and its horizontal leg along the bottom has a length of 8 cm labeled with a dimension arrow. The remainder of the rectangle is shaded solid black.\n\nA. 24\nB. 44\nC. 48\nD. 72",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "B"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 727,
+  "completion_tokens": 10,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 0.659,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:14:37+00:00"
+}

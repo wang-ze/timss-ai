@@ -1,0 +1,46 @@
+{
+  "item_key": "TIMSS 1995/grade 4/Mathematics/U4",
+  "response": "Subtract 4 from the number before it. Each number is 4 less than the one before it: 50 - 4 = 46, 46 - 4 = 42, 42 - 4 = 38, 38 - 4 = 34. So the next number is 34 - 4 = 30.",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the fourth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Question\n\nThese numbers are part of a pattern.\n\n50 , 46 , 42 , 38 , 34 , ...\n\nWhat do you have to do to get the next number?\n\nAnswer: ____\n\n# Scoring guide of the question (1 point)\n\n- Correct Response (1 point):\n  - “The number decreases by 4”.\n  - 30 OR 30,26,22,. . .\n  - Other correct.\n- Incorrect Response (0 points):\n  - Indicates an increase by 4.\n  - Focuses on the number 4. No indication of increase or decrease.\n  - Other incorrect, includes decreases by 4 that are wrong numbers in the pattern.\n\n# Response to the question\n\nSubtract 4 from the number before it. Each number is 4 less than the one before it: 50 - 4 = 46, 46 - 4 = 42, 42 - 4 = 38, 38 - 4 = 34. So the next number is 34 - 4 = 30.\n\nScore the response to the question.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response clearly states to subtract 4 from the previous number and also correctly calculates the next number as 30, which meets the criteria for a correct response.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": "**Identifying the Pattern**\n\nI've analyzed the provided numerical sequence, 50, 46, 42, 38, 34. My current focus is on understanding the core operation that generates the subsequent term. I've identified a consistent decrement.\n\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 539,
+  "completion_tokens": 281,
+  "reasoning_tokens": 229,
+  "cost_usd": 0.001458,
+  "seconds": 5.398,
+  "batch_id": null,
+  "requested_at": "2026-10-19T18:39:01+00:00"
+}

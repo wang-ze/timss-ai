@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L16",
+  "item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/L16"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "high",
+  "system_prompt": "You are a twelfth-grade student in the final year of secondary school who has taken advanced mathematics courses, taking the TIMSS Advanced mathematics test for students like you. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Find all real values of x which satisfy the following equation:\n\nsqrt(x) - 2/sqrt(x) = 1\n\nShow all your work.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Since \\(\\sqrt{x}\\) is in the denominator, we need \\(x>0\\). Let \\(t=\\sqrt{x}\\), so \\(t>0\\). Then\n\\[\nt-\\frac{2}{t}=1.\n\\]\nMultiplying by \\(t\\) gives\n\\[\nt^2-t-2=0=(t-2)(t+1).\n\\]\nThus \\(t=2\\) or \\(t=-1\\), but \\(t>0\\), so \\(t=2\\). Therefore \\(\\sqrt{x}=2\\), and \\(\\boxed{x=4}\\)."
+  },
+  "llm_thinking": "**Solving the equation**\n\nI need to provide an answer in JSON format for the expression with a condition of x > 0. First, I define t as the square root of x, which must be greater than zero. Then I manipulate the equation t - 2/t = 1 and multiply through by t to arrive at t² - t - 2 = 0. I factor this to get (t - 2)(t + 1) = 0, resulting in t = 2, leading to x = 4. I should double-check everything and note any potential ambiguities in the expression, such as sqrt(x) - 2/sqrt(x).",
+  "finish_reason": "stop",
+  "prompt_tokens": 259,
+  "completion_tokens": 243,
+  "reasoning_tokens": 84,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792430069-8g35f4u7PLleVZ9HmGfd",
+  "requested_at": "2026-10-19T18:03:53+00:00"
+}

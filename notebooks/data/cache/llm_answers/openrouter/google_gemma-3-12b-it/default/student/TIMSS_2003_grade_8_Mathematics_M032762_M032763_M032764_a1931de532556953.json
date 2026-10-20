@@ -1,0 +1,54 @@
+{
+  "unit_key": "TIMSS 2003/grade 8/Mathematics/M032762+M032763+M032764",
+  "item_keys": [
+    "TIMSS 2003/grade 8/Mathematics/M032762",
+    "TIMSS 2003/grade 8/Mathematics/M032763",
+    "TIMSS 2003/grade 8/Mathematics/M032764"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are an eighth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "These 3 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nBetty talks for less than 2 hours per month. Which plan would be less expensive for her?\n\nLess expensive plan ____\n\nExplain your answer in terms of both the monthly fee and free minutes.\n\n## Question 2\n\nFrank talks for 5 hours per month at the night rate. What would each plan cost him per month? Show your work.\n\nCost Per Month for Plan A: ____ zeds\n\nCost Per Month for Plan B: ____ zeds\n\n## Question 3\n\nDarlene signed up for the Plan B, and the cost of one month of service was 75 zeds. How many minutes did she talk that month? Show your work.\n\nMinutes talked ____\n\nAnswer each of the 3 questions.",
+  "output_schema": {
+    "properties": {
+      "answer_1": {
+        "description": "Your answer to question 1, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 1",
+        "type": "string"
+      },
+      "answer_2": {
+        "description": "Your answer to question 2, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 2",
+        "type": "string"
+      },
+      "answer_3": {
+        "description": "Your answer to question 3, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 3",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer_1",
+      "answer_2",
+      "answer_3"
+    ],
+    "title": "Answers",
+    "type": "object"
+  },
+  "output": {
+    "answer_1": "Less expensive plan **Plan B**\n\nExplanation: Betty talks for less than 2 hours a month. Plan A has a monthly fee of 20 zeds, and Plan B has a monthly fee of 10 zeds, so Plan B is already cheaper just because of the monthly fee. Both plans give 60 free minutes. Since Betty talks for less than 2 hours (which is 120 minutes), she will use less than 60 minutes on both plans. This means she won't need to pay for any extra minutes on either plan. Therefore, Plan B is less expensive because its monthly fee is less than Plan A's.",
+    "answer_2": "Cost Per Month for Plan A: **20** zeds\nCost Per Month for Plan B: **35** zeds\n\nWork for Plan A:\nFrank talks for 5 hours a month, which is 5 * 60 = 300 minutes. He uses the night rate, so the rate is 0.1 zeds per minute. The cost for the minutes is 300 * 0.1 = 30 zeds.  The monthly fee is 20 zeds. Therefore, the total cost is 30 + 20 = 50 zeds.\n\nWork for Plan B:\nFrank talks for 5 hours a month, which is 5 * 60 = 300 minutes. He uses the night rate, so the rate is 0.1 zeds per minute.  He gets 60 free minutes, so he pays for 300 - 60 = 240 minutes.  The cost for the minutes is 240 * 0.1 = 24 zeds.  The monthly fee is 10 zeds. Therefore, the total cost is 24 + 10 = 34 zeds.",
+    "answer_3": "Minutes talked: **150**\n\nWork:\nDarlene's bill was 75 zeds for Plan B.  The monthly fee for Plan B is 10 zeds.  So, the cost for the minutes she talked is 75 - 10 = 65 zeds. She pays the night rate of 0.1 zeds per minute. To find the number of minutes she talked, we divide the cost of the minutes by the rate: 65 / 0.1 = 650 minutes. She gets 60 free minutes, so she actually talked 650 - 60 = 590 minutes. It appears there's a mistake in my calculations, let's try again\n\nThe cost for minutes is 75 - 10 = 65 zeds.\nSince the night rate is 0.1 zeds per minute, we can calculate the minutes by dividing 65 by 0.1. Thus, 65 / 0.1 = 650 minutes. But she gets 60 free minutes, so she talked 650 - 60 = 590 minutes. Something's wrong with the prompt or this is a trick question.\n\nLet's recheck the prompt. Darlene signed up for Plan B, and her cost was 75 zeds. The monthly fee for Plan B is 10 zeds, so the minutes cost is 75 - 10 = 65 zeds. The rate is 0.1 zeds per minute, so number of minutes = 65 / 0.1 = 650 minutes. Plan B provides 60 free minutes, so the minutes used are 650 - 60 = 590. Since we know the answer must be a whole number, 590 seems correct. If the question is asking for the number of minutes she talked *after* the free minutes are applied, then the answer is 590. However, since the answers given are likely to be whole numbers, it is possible that there is an error in the question stem. Let's proceed with the assumption that the question is asking for the total minutes talked including the free minutes.\n\nIf Darlene paid 75 zeds, her cost for minutes after the 10 zed fee is 65 zeds. At a rate of 0.1 zeds per minute, Darlene talked 65/0.1 = 650 minutes. After subtracting the 60 free minutes, Darlene talked 650-60 = 590 minutes.\n\nLet’s double check the work. 10 + 60(0.1) + x(0.1) = 75, where x represents minutes after the 60 free minutes. 10 + 6 + 0.1x = 75, 16 + 0.1x = 75, 0.1x = 59, x = 590\n\nSo we will use 590 as the answer."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 323,
+  "completion_tokens": 1115,
+  "reasoning_tokens": 0,
+  "cost_usd": 0.0002751,
+  "seconds": 85.967,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:23:18+00:00"
+}

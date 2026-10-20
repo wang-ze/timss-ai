@@ -1,0 +1,45 @@
+{
+  "unit_key": "TIMSS 2007/grade 8/Mathematics/M022105",
+  "item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M022105"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "anthropic/claude-haiku-5.5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "A half-turn about point P in the plane is applied to the shaded figure.\n\n[Image: Shaded figure on dashed axes]\n\nWhich of the following shows the results of the half-turn?\n\nFigure, described in words:\nIn the stem diagram, a horizontal dashed line and a vertical dashed line intersect perpendicularly at point P, which is marked with a black dot and labeled P below the horizontal line. A shaded right triangle lies above the horizontal dashed line. Its bottom horizontal base lies along the horizontal dashed line, extending both to the left and to the right of point P, with the segment to the left of P being longer than the segment to the right of P. The right edge of the triangle is vertical, extending upward from the horizontal line. The hypotenuse connects the top-right vertex to the leftmost vertex on the horizontal dashed line. The vertical dashed line passes through the shaded triangle.\n\nOption A shows a shaded right triangle above the horizontal line, with its base on the horizontal line extending to both sides of P (longer to the right of P), its vertical side on the left extending upward, and hypotenuse sloping down to the right.\nOption B shows a shaded right triangle below the horizontal line, with its base on the horizontal line extending to both sides of P (longer to the left of P), its vertical side on the right extending downward, and hypotenuse sloping up to the left.\nOption C shows a shaded right triangle above the horizontal line, with its base on the horizontal line, vertical side on the right extending upward, and hypotenuse sloping down to the left.\nOption D shows a shaded right triangle below the horizontal line, with its base on the horizontal line extending to both sides of P (longer to the right of P), its vertical side on the left extending downward, and hypotenuse sloping up to the right.\nOption E shows a shaded right triangle below the horizontal line, with its base on the horizontal line located entirely to the left of point P, touching point P at its rightmost acute vertex, with its vertical side on the left extending downward.\n\nA. [Image: Shaded right triangle above the horizontal line with vertical side on the left]\nB. [Image: Shaded right triangle below the horizontal line with vertical side on the right]\nC. [Image: Shaded right triangle above the horizontal line with vertical side on the right]\nD. [Image: Shaded right triangle below the horizontal line with vertical side on the left]\nE. [Image: Shaded right triangle below the horizontal line with rightmost vertex at point P]",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "D"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 1244,
+  "completion_tokens": 10,
+  "reasoning_tokens": 0,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335955-kMI4NOha6WfxkHChhFXZ",
+  "requested_at": "2026-10-19T14:20:46+00:00"
+}

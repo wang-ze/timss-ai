@@ -1,0 +1,47 @@
+{
+  "item_key": "TIMSS Advanced 2008/grade 12/Advanced Mathematics/MA23035B",
+  "response": "To find the maximum and minimum points of the graph of f(x) = x^4 - 2x^2, we need to find the critical points by taking the derivative and setting it equal to zero. f'(x) = 4x^3 - 4x.  Setting f'(x) = 0 gives: 4x^3 - 4x = 0.  We can factor out 4x: 4x(x^2 - 1) = 0. This gives us x = 0, x = 1, and x = -1.  Now we need to determine whether these points are maxima, minima, or neither.  We can use the second derivative test. f''(x) = 12x^2 - 4.  When x = 0, f''(0) = 12(0)^2 - 4 = -4. Since f''(0) < 0, we have a local maximum at x = 0.  The value of f(x) at x = 0 is f(0) = (0)^4 - 2(0)^2 = 0.  So the maximum point is (0, 0).  When x = 1, f''(1) = 12(1)^2 - 4 = 8. Since f''(1) > 0, we have a local minimum at x = 1.  The value of f(x) at x = 1 is f(1) = (1)^4 - 2(1)^2 = 1 - 2 = -1.  So the minimum point is (1, -1).  When x = -1, f''(-1) = 12(-1)^2 - 4 = 8. Since f''(-1) > 0, we have a local minimum at x = -1.  The value of f(x) at x = -1 is f(-1) = (-1)^4 - 2(-1)^2 = 1 - 2 = -1.  So the minimum point is (-1, -1).  Therefore, the maximum point is (0, 0), and the minimum points are (1, -1) and (-1, -1).",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS Advanced mathematics test for students in the twelfth grade, the final year of secondary school, who have taken advanced mathematics courses. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Questions\n\nThese 2 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nf(x) = x^4 - 2x^2\n\nA. What are the values of x at the points of intersection of the graph of f(x) with the x-axis?\n\nx = ____\n\n## Question 2\n\nf(x) = x^4 - 2x^2\n\nB. What are the maximum and minimum points of the graph of f(x)?\n\nMaximum point(s): ____\n\nMinimum point(s): ____\n\n# Scoring guide of question 2 (1 point)\n\n- Correct Response (1 point):\n  - Maximum (0, 0) , Minimum (-1, -1) and (1, -1)\n- Incorrect Response (0 points):\n  - Any two of the above correctly identified as maximum or minimum\n  - x values only given (i.e., maximum 1, minimum -1 and 1)\n  - Incorrect (including crossed out, erased, stray marks, illegible, or off task)\n- Nonresponse (0 points):\n  - Blank\n\n# Response to question 2\n\nTo find the maximum and minimum points of the graph of f(x) = x^4 - 2x^2, we need to find the critical points by taking the derivative and setting it equal to zero. f'(x) = 4x^3 - 4x.  Setting f'(x) = 0 gives: 4x^3 - 4x = 0.  We can factor out 4x: 4x(x^2 - 1) = 0. This gives us x = 0, x = 1, and x = -1.  Now we need to determine whether these points are maxima, minima, or neither.  We can use the second derivative test. f''(x) = 12x^2 - 4.  When x = 0, f''(0) = 12(0)^2 - 4 = -4. Since f''(0) < 0, we have a local maximum at x = 0.  The value of f(x) at x = 0 is f(0) = (0)^4 - 2(0)^2 = 0.  So the maximum point is (0, 0).  When x = 1, f''(1) = 12(1)^2 - 4 = 8. Since f''(1) > 0, we have a local minimum at x = 1.  The value of f(x) at x = 1 is f(1) = (1)^4 - 2(1)^2 = 1 - 2 = -1.  So the minimum point is (1, -1).  When x = -1, f''(-1) = 12(-1)^2 - 4 = 8. Since f''(-1) > 0, we have a local minimum at x = -1.  The value of f(x) at x = -1 is f(-1) = (-1)^4 - 2(-1)^2 = 1 - 2 = -1.  So the minimum point is (-1, -1).  Therefore, the maximum point is (0, 0), and the minimum points are (1, -1) and (-1, -1).\n\nScore the response to question 2.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response",
+          "Nonresponse"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response correctly determines all the extreme points of the function, identifying the maximum point as (0, 0) and the minimum points as (1, -1) and (-1, -1).",
+    "category": "Correct Response"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 1053,
+  "completion_tokens": 305,
+  "reasoning_tokens": 244,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792336163-PLPJ9qAh6duftYYOclJF",
+  "requested_at": "2026-10-19T14:20:50+00:00"
+}

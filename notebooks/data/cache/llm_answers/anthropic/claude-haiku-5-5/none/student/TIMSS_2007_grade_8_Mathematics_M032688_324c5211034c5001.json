@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2007/grade 8/Mathematics/M032688",
+  "item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M032688"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are an eighth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: Spinner]\n\nRoland’s spinner has three sectors of different colors, orange, purple, and green. Roland spins the pointer 1000 times. The chart below shows how many times the pointer stops on each section.\n\n| Color | Times Stopped |\n| :--- | :---: |\n| Orange | 510 |\n| Purple | 243 |\n| Green | 247 |\n\nDraw lines on the spinner above to make the three sectors the approximate size you would expect them to be. Label them orange, purple, and green.\n\nFigure, described in words:\nA circular spinner with a central circular hub and an arrow pointer angled upward and to the right. Around the circumference of the circle is an outer rim with 8 equally spaced tick marks, dividing the circle into 8 equal arcs of 45° each (at 12 o'clock, 1:30, 3 o'clock, 4:30, 6 o'clock, 7:30, 9 o'clock, and 10:30). The interior of the circle is blank.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Orange was stopped 510 out of 1000 times, about 51%, so its sector should take up a little more than half the circle, about 184°. Purple (243) and green (247) are each about 24–25%, so each should be about 88–89°. Draw two radial lines from the center of the spinner: first, starting at the 12 o'clock tick mark, draw a line from the center of the circle to the 12 o'clock point on the rim, then continue around the rim clockwise to the 6 o'clock tick mark (180°) and beyond to about 7:30 (about 184°) and draw a line from the center to the 7:30 tick mark, creating the orange sector covering the right side and bottom, about half the circle; label this large sector 'Orange'. Then, within the remaining left/upper portion from the 7:30 line to the 12 o'clock line, draw one more radial line from the center to about the 10:30 tick mark (about 300°... adjusted so the purple and green sectors are about equal), splitting the remaining area into two sectors of about 88° each: the purple sector between the 7:30 line and a line near 9 o'clock, and the green sector between that line and the 12 o'clock line. Label the sector between the 7:30 and 9 o'clock region 'Purple' and the sector between the 9 o'clock region and 12 o'clock 'Green'. The three sectors are therefore approximately orange about 184°, purple about 88°, and green about 88°."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 772,
+  "completion_tokens": 475,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 2.988,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:14:47+00:00"
+}

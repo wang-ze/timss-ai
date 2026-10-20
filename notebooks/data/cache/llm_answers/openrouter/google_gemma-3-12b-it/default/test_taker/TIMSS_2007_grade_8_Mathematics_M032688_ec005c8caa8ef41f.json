@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2007/grade 8/Mathematics/M032688",
+  "item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M032688"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: Spinner]\n\nRoland’s spinner has three sectors of different colors, orange, purple, and green. Roland spins the pointer 1000 times. The chart below shows how many times the pointer stops on each section.\n\n| Color | Times Stopped |\n| :--- | :---: |\n| Orange | 510 |\n| Purple | 243 |\n| Green | 247 |\n\nDraw lines on the spinner above to make the three sectors the approximate size you would expect them to be. Label them orange, purple, and green.\n\nFigure, described in words:\nA circular spinner with a central circular hub and an arrow pointer angled upward and to the right. Around the circumference of the circle is an outer rim with 8 equally spaced tick marks, dividing the circle into 8 equal arcs of 45° each (at 12 o'clock, 1:30, 3 o'clock, 4:30, 6 o'clock, 7:30, 9 o'clock, and 10:30). The interior of the circle is blank.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": ": Based on the data, orange was stopped on 510 times, purple on 243 times, and green on 247 times. To proportionally represent these values on the spinner, the orange sector should be the largest, followed by green, and then purple. I would draw the following:\n\n1.  **Orange Sector:** I would draw a line starting just after the 12 o'clock mark and extending to just before the 4:30 mark, encompassing approximately 45 degrees. I would then draw another line from just after the 7:30 mark to just before the 10:30 mark. This creates a large orange sector covering roughly 135 degrees.\n2.  **Green Sector:** I would draw a line from just after the 10:30 mark to just before the 1:30 mark. This creates a green sector covering roughly 45 degrees.\n3.  **Purple Sector:** The remaining space would be the purple sector. This would be from just after the 1:30 mark to just before the 7:30 mark, covering roughly 45 degrees.\n\nI would label each sector clearly with the color name (Orange, Purple, and Green) inside the corresponding colored region."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 375,
+  "completion_tokens": 279,
+  "reasoning_tokens": 0,
+  "cost_usd": 6.06e-05,
+  "seconds": 4.525,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:06:25+00:00"
+}

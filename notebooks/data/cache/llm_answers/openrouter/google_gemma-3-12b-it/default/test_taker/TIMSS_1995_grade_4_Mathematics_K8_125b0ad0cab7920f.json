@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 1995/grade 4/Mathematics/K8",
+  "item_keys": [
+    "TIMSS 1995/grade 4/Mathematics/K8"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "Which rectangle is NOT divided into 4 equal parts?\n\nFigure, described in words:\nFour rectangular figures labeled A, B, C, and D, each partitioned into 4 regions:\n- Option A: Divided into 4 equal quadrants by a vertical line and a horizontal line through the center.\n- Option B: Divided into two squares by a central vertical line, with each square bisected by a diagonal from bottom-left to top-right, creating 4 identical right-angled triangles.\n- Option C: Divided into 4 equal horizontal bands by three evenly spaced horizontal lines.\n- Option D: Divided into 4 unequal regions by three parallel diagonal lines sloping up and to the right, creating two corner triangles and two trapezoids of unequal sizes.\n\nA. [Image: Rectangle divided into 4 equal smaller rectangles]\nB. [Image: Rectangle divided into 4 equal triangles]\nC. [Image: Rectangle divided into 4 equal horizontal strips]\nD. [Image: Rectangle divided by three parallel diagonal lines]",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "D"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 346,
+  "completion_tokens": 11,
+  "reasoning_tokens": 0,
+  "cost_usd": 2.8425e-05,
+  "seconds": 0.411,
+  "batch_id": null,
+  "requested_at": "2026-10-18T15:06:36+00:00"
+}

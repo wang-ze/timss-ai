@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 1999/grade 8/Mathematics/D12",
+  "item_keys": [
+    "TIMSS 1999/grade 8/Mathematics/D12"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are an eighth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: Number line from 0 to 3 with a point P marked]\n\nWhat is the best estimate of the number corresponding to P?\n\nFigure, described in words:\nA horizontal number line with an arrow pointing right. Four evenly spaced vertical tick marks are labeled below with the numbers 0, 1, 2, and 3. On the line between 1 and 2, slightly to the right of 1 (at approximately one-fifth of the distance from 1 to 2), there is a solid black point labeled \"P\" directly above it.\n\nA. 1.1\nB. 1.2\nC. 1.4\nD. 1.5",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "B"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 646,
+  "completion_tokens": 10,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 0.597,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:14:37+00:00"
+}

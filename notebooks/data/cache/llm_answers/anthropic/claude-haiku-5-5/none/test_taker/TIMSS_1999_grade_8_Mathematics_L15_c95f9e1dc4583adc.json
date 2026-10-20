@@ -1,0 +1,45 @@
+{
+  "unit_key": "TIMSS 1999/grade 8/Mathematics/L15",
+  "item_keys": [
+    "TIMSS 1999/grade 8/Mathematics/L15"
+  ],
+  "role": "test_taker",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "The table shows some values of x and y, where x is proportional to y.\n\n| x | 4 | 8 | Q |\n| --- | --- | --- | --- |\n| y | 9 | P | 45 |\n\nWhat are the values of P and Q?\n\nA. P = 40 and Q = 13\nB. P = 18 and Q = 17\nC. P = 20 and Q = 18\nD. P = 40 and Q = 18\nE. P = 18 and Q = 20",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "E"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 576,
+  "completion_tokens": 10,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 0.847,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:22:43+00:00"
+}

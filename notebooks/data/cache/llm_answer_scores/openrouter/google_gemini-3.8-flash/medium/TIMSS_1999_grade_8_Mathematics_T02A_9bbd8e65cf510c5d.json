@@ -1,0 +1,46 @@
+{
+  "item_key": "TIMSS 1999/grade 8/Mathematics/T02A",
+  "response": "7 boxes",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemini-3.8-flash",
+  "reasoning_effort": "medium",
+  "system_prompt": "You are an experienced scorer of the TIMSS mathematics test for students in the eighth grade. You score the responses to its constructed-response questions with each question's scoring guide, as TIMSS trains its scorers to do.\n\nThe figures of the test booklet are described in words, and test takers cannot draw, so they describe in words what they would draw, mark, shade, or write on a figure, graph, or table; score such a description as you would score the drawing it describes. Score only what the response says: when the scoring guide asks for work or an explanation, give no credit for work or reasoning that the response does not show. First explain briefly how the response compares with the scoring guide, then choose the category of the guide that the response belongs to.",
+  "user_prompt": "# Questions\n\nThese 2 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nA book publisher sent 140 copies of a certain book to a bookstore. The publisher packed the books in two types of boxes. One type of box held 8 copies of the book, and the other type of box held 12 copies of the book. The boxes were all full, and there were equal numbers of both types of boxes.\n\na) How many boxes holding 12 books were sent to the bookstore?\n\nAnswer: ____\n\n## Question 2\n\nA book publisher sent 140 copies of a certain book to a bookstore. The publisher packed the books in two types of boxes. One type of box held 8 copies of the book, and the other type of box held 12 copies of the book. The boxes were all full, and there were equal numbers of both types of boxes.\n\nb) What fraction of the books sent to the bookstore were packed in the smaller boxes?\n\nAnswer: ____\n\n# Scoring guide of question 1 (1 point)\n\n- Correct Response (1 point):\n  - 7\n- Incorrect Response (0 points):\n  - Incorrect (including crossed out/erased, stray marks, illegible, or off task)\n\n# Response to question 1\n\n7 boxes\n\nScore the response to question 1.",
+  "output_schema": {
+    "properties": {
+      "reasoning": {
+        "description": "How the response compares with the scoring guide, in a few sentences.",
+        "title": "Reasoning",
+        "type": "string"
+      },
+      "category": {
+        "description": "The category of the scoring guide that the response belongs to.",
+        "enum": [
+          "Correct Response",
+          "Incorrect Response"
+        ],
+        "title": "Category",
+        "type": "string"
+      }
+    },
+    "required": [
+      "reasoning",
+      "category"
+    ],
+    "title": "Score",
+    "type": "object"
+  },
+  "output": {
+    "reasoning": "The response provides the correct answer of 7 boxes, which matches the scoring guide for a correct response.",
+    "category": "Correct Response"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 452,
+  "completion_tokens": 118,
+  "reasoning_tokens": 78,
+  "cost_usd": 0.0007815,
+  "seconds": 3.056,
+  "batch_id": null,
+  "requested_at": "2026-10-19T14:43:08+00:00"
+}

@@ -1,0 +1,31 @@
+{
+  "batch_id": "batch-1792266323-nUXO5bK4UZijIBGmTwrw",
+  "model": "openai/gpt-6-luna",
+  "submitted_at": "2026-10-17T19:45:22+00:00",
+  "collected_at": "2026-10-17T19:54:05+00:00",
+  "status": "completed",
+  "finalized_at": 1792266826,
+  "request_counts": {
+    "total": 2,
+    "completed": 2,
+    "failed": 0
+  },
+  "usage": {
+    "prompt_tokens": 1444,
+    "completion_tokens": 202,
+    "total_tokens": 1646,
+    "cost": 0.0001227,
+    "is_byok": false
+  },
+  "error": null,
+  "requests": {
+    "ac86d79bd4d5587e": {
+      "item_key": "TIMSS 1999/grade 8/Mathematics/F07",
+      "outcome": "saved"
+    },
+    "6d46bc3cb3f7990e": {
+      "item_key": "TIMSS 2011/grade 4/Mathematics/M031346A+M031346B+M031346C+M031379+M031380",
+      "outcome": "saved"
+    }
+  }
+}

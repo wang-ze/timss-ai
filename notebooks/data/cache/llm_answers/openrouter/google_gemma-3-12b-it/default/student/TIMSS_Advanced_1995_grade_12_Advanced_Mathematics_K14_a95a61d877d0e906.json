@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K14",
+  "item_keys": [
+    "TIMSS Advanced 1995/grade 12/Advanced Mathematics/K14"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "google/gemma-3-12b-it",
+  "reasoning_effort": null,
+  "system_prompt": "You are a twelfth-grade student in the final year of secondary school who has taken advanced mathematics courses, taking the TIMSS Advanced mathematics test for students like you. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "A string is wound symmetrically around a circular rod. The string goes exactly 4 times around the rod. The circumference of the rod is 4 cm and its length is 12 cm.\n\n[Image: A cylinder with a string wound around it 4 times]\n\nFind the length of the string. Show all your work.\n\nFigure, described in words:\nA side-view illustration of a horizontal cylindrical rod. A thick, dark line representing a string begins near the top-left edge, winds around the rod symmetrically making 4 complete helical turns from left to right, and terminates near the top-right edge.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Let $C$ be the circumference of the rod, and let $L$ be its length. We are given that $C = 4$ cm and $L = 12$ cm. The string goes around the rod 4 times. We can imagine unwrapping the cylinder. The string forms a helix on the cylinder. When the cylinder is unwrapped, it becomes a rectangle with width equal to the circumference $C = 4$ cm and height equal to the length $L = 12$ cm. Since the string goes around the rod 4 times, the horizontal distance covered by the string when unwrapped is $4C = 4(4) = 16$ cm. The vertical distance covered by the string is the length of the cylinder, $L = 12$ cm. The length of the string can be found using the Pythagorean theorem. Let $S$ be the length of the string. Then $S^2 = (4C)^2 + L^2$, so $S^2 = (16)^2 + (12)^2 = 256 + 144 = 400$. Therefore, $S = \rootsqrt{400} = 20$ cm. Alternatively, consider the problem as a helix. The number of revolutions is 4. The circumference is 4 cm, so the distance around the cylinder for each revolution is 4 cm. The length of the cylinder is 12 cm. Let $h$ be the height of one revolution. Since there are 4 revolutions, $4h = 12$, so $h = 3$ cm. The distance around one revolution is 4 cm, and the height of one revolution is 3 cm. The length of one revolution is $\rootsqrt{4^2 + 3^2} = \rootsqrt{16 + 9} = \rootsqrt{25} = 5$ cm. Since there are 4 revolutions, the total length of the string is $4 \times 5 = 20$ cm. \nFinal Answer: The final answer is $\boxed{20}$"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 294,
+  "completion_tokens": 458,
+  "reasoning_tokens": 0,
+  "cost_usd": 0.0001251,
+  "seconds": 27.041,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:23:41+00:00"
+}

@@ -1,7 +1,7 @@
 [project]
 name = "timss-math"
-version = "0.2.0"
-description = "Item-level datasets of the released TIMSS mathematics items, and predictions of their IRT parameters by LLMs and Jev"
+version = "0.3.0"
+description = "Released TIMSS mathematics items with their IRT parameters, and two uses of them: predicting the IRT parameters of new items with LLMs or Jev, and LLMs taking the items as a test (a benchmark, or synthetic students), scored on the IRT and TIMSS scales"
 readme = "README.md"
 authors = [
     { name = "Ze Wang", email = "zewang@gmail.com" }
@@ -36,6 +36,7 @@ dependencies = [
 [project.scripts]
 timss-predict-loo = "timss_math.item_parameter_prediction.evaluation:main"
 timss-plot-errors = "timss_math.item_parameter_prediction.plots:main"
+timss-llm-test = "timss_math.llm_test_taking.cli:main"
 
 [build-system]
 requires = ["uv_build>=0.12.19,<0.13.0"]
@@ -52,5 +53,5 @@ extend-immutable-calls = [
     "timss_math.item_parameter_prediction.embeddings.EmbeddingSettings",
     "timss_math.item_parameter_prediction.index.IndexSettings",
     "timss_math.item_parameter_prediction.jev.JevSettings",
-    "timss_math.item_parameter_prediction.llm.LLMSettings",
+    "timss_math.llm.LLMSettings",
 ]

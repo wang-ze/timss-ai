@@ -1,0 +1,38 @@
+{
+  "unit_key": "TIMSS 2007/grade 8/Mathematics/M032414",
+  "item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M032414"
+  ],
+  "role": "student",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "high",
+  "system_prompt": "You are an eighth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: Diagram of angles on a straight line]\n\nIn the figure above, points A, O, and B lie on a line. OM bisects angle BOC and ON bisects angle AOC. What is the value of x?\n\nAnswer: ____\n\nFigure, described in words:\nA geometric diagram showing a straight horizontal line with points A, O, and B labeled from left to right, where O is between A and B. Three rays emanate upwards from point O into the upper half-plane: ray ON (pointing up and to the left), ray OC (pointing almost straight up, slightly to the right), and ray OM (pointing up and to the right). The angle between ray OM and ray OB is indicated with an arc labeled 40°. The angle between ray ON and ray OC is indicated with an arc labeled x°.",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "Your answer to the question, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "Since OM bisects ∠BOC, ∠MOC = 40°. Because A, O, and B lie on a straight line, ∠AOC = 180° − 80° = 100°. ON bisects ∠AOC, so x = 100° ÷ 2 = 50°."
+  },
+  "llm_thinking": "**Calculating angles and arcs**\n\nI need to solve this geometry problem step by step. First, I’ll parse the information about the angles and bisectors. With OM bisecting angle BOC, I know that the angles MOC and MOB are both 40°. This makes angle BOC equal to 80°. Since AOC is supplementary, that means it equals 100°. With ON bisecting AOC, both AON and NOC will be 50°. Finally, I’ll find the arc length between ON and OC, which is also 50. I’ll need to present this clearly.",
+  "finish_reason": "stop",
+  "prompt_tokens": 386,
+  "completion_tokens": 176,
+  "reasoning_tokens": 92,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792430069-8g35f4u7PLleVZ9HmGfd",
+  "requested_at": "2026-10-19T18:03:53+00:00"
+}

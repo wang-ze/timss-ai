@@ -1,0 +1,78 @@
+{
+  "unit_key": "TIMSS 2007/grade 8/Mathematics/M032754+M032755+M032753A+M032753B+M032753C+M032756",
+  "item_keys": [
+    "TIMSS 2007/grade 8/Mathematics/M032754",
+    "TIMSS 2007/grade 8/Mathematics/M032755",
+    "TIMSS 2007/grade 8/Mathematics/M032753A",
+    "TIMSS 2007/grade 8/Mathematics/M032753B",
+    "TIMSS 2007/grade 8/Mathematics/M032753C",
+    "TIMSS 2007/grade 8/Mathematics/M032756"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "high",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the eighth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "These 6 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nMike and Katy are planning a day trip for their class.\n\nThey plan to go from their school in Ourtown to one of the towns of Acton, Burley, Camford, or Darley.\n\n[Image: Map of Ourtown and surrounding towns]\n\nFigure, described in words:\nA map enclosed in a wavy rectangular border, labeled \"Map drawn to scale\" in the bottom-left corner. Five locations are marked with solid black dots and labels:\n- \"Ourtown\" is located in the lower-middle portion of the map.\n- \"Acton\" is northwest of Ourtown, connected to Ourtown by a straight path line.\n- \"Burley\" is directly north of Acton, connected to Acton by a vertical straight path line.\n- \"Camford\" is northeast of Ourtown, connected to Ourtown by a straight path line.\n- \"Darley\" is southeast of Ourtown, connected to Ourtown by a straight path line.\nThere are three clusters of small stylized pine tree symbols: one cluster between the path to Acton and the path to Camford, one cluster west of Ourtown, and one cluster southeast of Ourtown between the paths to Camford and Darley.\n\n## Question 2\n\nThe total cost of the journey for all the students must be 500 zeds or less.\nThere are 30 students in the class.\n\nHere are the costs for visiting each town:\n\n| Visiting Acton or Camford | Visiting Burley or Darley |\n| --- | --- |\n| Student Rate | Student Rate |\n| Round-trip ticket: 25 zeds | Round-trip ticket: 20 zeds |\n| 1/3 off for groups of 25 or more students | 10% off for groups of 15 or more students |\n\nWhich towns can they afford to visit? Show your work.\n\n## Question 3\n\nThe teacher also said that three scheduling conditions must be met for the trip. They are as follows:\n\n1. We must leave Ourtown at 9 a.m. or later;\n\n2. We must be back at Ourtown by 5 p.m.;\n\n3. We must stay at the town we visit for at least 3 hours.\n\nMike and Katy used the bus timetables to find out if they could meet the teacher's conditions. They started putting the information in the table below but they did not complete it.\n\nA. Use the information in the bus timetables on the opposite page to complete the table below for Acton.\n\n| | Best Bus Times | Best Bus Times | Best Bus Times | Best Bus Times | Best Bus Times | Teacher's Conditions | Teacher's Conditions | Teacher's Conditions |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Trip to... | Leave Ourtown at... | Arrive destination at... | Depart for return to Ourtown... | Arrive back in Ourtown at... | Time in town visited | Leave 9 am or later | Stay at least 3 hours | Back by 5 pm |\n| Acton | 9:00 am | 11:15 am | | | | | | |\n| Burley | 9:15 am | 12:20 pm | 2:30 pm | 5:35 pm | 2 hr 10 min | Yes | No | No |\n| Camford | 9:25 am | | | | | | | |\n| Darley | 9:10 am | 11:15 am | 2:40 pm | 4:45 pm | 3 hr 25 min | Yes | Yes | Yes |\n\nActon Bus Timetables\n\nBus Timetable\nFrom Ourtown to Acton\n\n| Depart: Ourtown | Arrive: Acton |\n| :--- | :--- |\n| 8:00 am | 10:15 am |\n| 9:00 am | 11:15 am |\n| 10:00 am | 12:15 pm |\n| 11:00 am | 1:15 pm |\n| 12:00 pm | 2:15 pm |\n| 1:00 pm | 3:15 pm |\n| 2:00 pm | 4:15 pm |\n| 3:00 pm | 5:15 pm |\n| 4:00 pm | 6:15 pm |\n\nBus Timetable\nFrom Acton to Ourtown\n\n| Depart: Acton | Arrive: Ourtown |\n| :--- | :--- |\n| 8:30 am | 10:45 am |\n| 9:30 am | 11:45 am |\n| 10:30 am | 12:45 pm |\n| 11:30 am | 1:45 pm |\n| 12:30 pm | 2:45 pm |\n| 1:30 pm | 3:45 pm |\n| 2:30 pm | 4:45 pm |\n| 3:30 pm | 5:45 pm |\n| 4:30 pm | 6:45 pm |\n\nCamford Bus Timetables\n\nBus Timetable\nFrom Ourtown to Camford\n\n| Depart: Ourtown | Arrive: Camford |\n| :--- | :--- |\n| 8:25 am | 10:40 am |\n| 9:25 am | 11:40 am |\n| 10:25 am | 12:40 pm |\n| 11:25 am | 1:40 pm |\n| 12:25 pm | 2:40 pm |\n| 1:25 pm | 3:40 pm |\n| 2:25 pm | 4:40 pm |\n| 3:25 pm | 5:40 pm |\n| 4:25 pm | 6:40 pm |\n\nBus Timetable\nFrom Camford to Ourtown\n\n| Depart: Camford | Arrive: Ourtown |\n| :--- | :--- |\n| 8:35 am | 10:50 am |\n| 9:35 am | 11:50 am |\n| 10:35 am | 12:50 pm |\n| 11:35 am | 1:50 pm |\n| 12:35 pm | 2:50 pm |\n| 1:35 pm | 3:50 pm |\n| 2:35 pm | 4:50 pm |\n| 3:35 pm | 5:50 pm |\n| 4:35 pm | 6:50 pm |\n\n## Question 4\n\nThe teacher also said that three scheduling conditions must be met for the trip. They are as follows:\n\n1. We must leave Ourtown at 9 a.m. or later;\n\n2. We must be back at Ourtown by 5 p.m.;\n\n3. We must stay at the town we visit for at least 3 hours.\n\nMike and Katy used the bus timetables to find out if they could meet the teacher's conditions. They started putting the information in the table below but they did not complete it.\n\nB. Use the information in the bus timetables on the opposite page to complete the table below for Camford.\n\n| | Best Bus Times | Best Bus Times | Best Bus Times | Best Bus Times | Best Bus Times | Teacher's Conditions | Teacher's Conditions | Teacher's Conditions |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Trip to... | Leave Ourtown at... | Arrive destination at... | Depart for return to Ourtown... | Arrive back in Ourtown at... | Time in town visited | Leave 9 am or later | Stay at least 3 hours | Back by 5 pm |\n| Acton | 9:00 am | 11:15 am | | | | | | |\n| Burley | 9:15 am | 12:20 pm | 2:30 pm | 5:35 pm | 2 hr 10 min | Yes | No | No |\n| Camford | 9:25 am | | | | | | | |\n| Darley | 9:10 am | 11:15 am | 2:40 pm | 4:45 pm | 3 hr 25 min | Yes | Yes | Yes |\n\nActon Bus Timetables\n\nBus Timetable\nFrom Ourtown to Acton\n\n| Depart: Ourtown | Arrive: Acton |\n| :--- | :--- |\n| 8:00 am | 10:15 am |\n| 9:00 am | 11:15 am |\n| 10:00 am | 12:15 pm |\n| 11:00 am | 1:15 pm |\n| 12:00 pm | 2:15 pm |\n| 1:00 pm | 3:15 pm |\n| 2:00 pm | 4:15 pm |\n| 3:00 pm | 5:15 pm |\n| 4:00 pm | 6:15 pm |\n\nBus Timetable\nFrom Acton to Ourtown\n\n| Depart: Acton | Arrive: Ourtown |\n| :--- | :--- |\n| 8:30 am | 10:45 am |\n| 9:30 am | 11:45 am |\n| 10:30 am | 12:45 pm |\n| 11:30 am | 1:45 pm |\n| 12:30 pm | 2:45 pm |\n| 1:30 pm | 3:45 pm |\n| 2:30 pm | 4:45 pm |\n| 3:30 pm | 5:45 pm |\n| 4:30 pm | 6:45 pm |\n\nCamford Bus Timetables\n\nBus Timetable\nFrom Ourtown to Camford\n\n| Depart: Ourtown | Arrive: Camford |\n| :--- | :--- |\n| 8:25 am | 10:40 am |\n| 9:25 am | 11:40 am |\n| 10:25 am | 12:40 pm |\n| 11:25 am | 1:40 pm |\n| 12:25 pm | 2:40 pm |\n| 1:25 pm | 3:40 pm |\n| 2:25 pm | 4:40 pm |\n| 3:25 pm | 5:40 pm |\n| 4:25 pm | 6:40 pm |\n\nBus Timetable\nFrom Camford to Ourtown\n\n| Depart: Camford | Arrive: Ourtown |\n| :--- | :--- |\n| 8:35 am | 10:50 am |\n| 9:35 am | 11:50 am |\n| 10:35 am | 12:50 pm |\n| 11:35 am | 1:50 pm |\n| 12:35 pm | 2:50 pm |\n| 1:35 pm | 3:50 pm |\n| 2:35 pm | 4:50 pm |\n| 3:35 pm | 5:50 pm |\n| 4:35 pm | 6:50 pm |\n\n## Question 5\n\nThe teacher also said that three scheduling conditions must be met for the trip. They are as follows:\n\n1. We must leave Ourtown at 9 a.m. or later;\n\n2. We must be back at Ourtown by 5 p.m.;\n\n3. We must stay at the town we visit for at least 3 hours.\n\nMike and Katy used the bus timetables to find out if they could meet the teacher's conditions. They started putting the information in the table below but they did not complete it.\n\n| | Best Bus Times | Best Bus Times | Best Bus Times | Best Bus Times | Best Bus Times | Teacher's Conditions | Teacher's Conditions | Teacher's Conditions |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Trip to... | Leave Ourtown at... | Arrive destination at... | Depart for return to Ourtown... | Arrive back in Ourtown at... | Time in town visited | Leave 9 am or later | Stay at least 3 hours | Back by 5 pm |\n| Acton | 9:00 am | 11:15 am | | | | | | |\n| Burley | 9:15 am | 12:20 pm | 2:30 pm | 5:35 pm | 2 hr 10 min | Yes | No | No |\n| Camford | 9:25 am | | | | | | | |\n| Darley | 9:10 am | 11:15 am | 2:40 pm | 4:45 pm | 3 hr 25 min | Yes | Yes | Yes |\n\nActon Bus Timetables\n\nBus Timetable\nFrom Ourtown to Acton\n\n| Depart: Ourtown | Arrive: Acton |\n| :--- | :--- |\n| 8:00 am | 10:15 am |\n| 9:00 am | 11:15 am |\n| 10:00 am | 12:15 pm |\n| 11:00 am | 1:15 pm |\n| 12:00 pm | 2:15 pm |\n| 1:00 pm | 3:15 pm |\n| 2:00 pm | 4:15 pm |\n| 3:00 pm | 5:15 pm |\n| 4:00 pm | 6:15 pm |\n\nBus Timetable\nFrom Acton to Ourtown\n\n| Depart: Acton | Arrive: Ourtown |\n| :--- | :--- |\n| 8:30 am | 10:45 am |\n| 9:30 am | 11:45 am |\n| 10:30 am | 12:45 pm |\n| 11:30 am | 1:45 pm |\n| 12:30 pm | 2:45 pm |\n| 1:30 pm | 3:45 pm |\n| 2:30 pm | 4:45 pm |\n| 3:30 pm | 5:45 pm |\n| 4:30 pm | 6:45 pm |\n\nCamford Bus Timetables\n\nBus Timetable\nFrom Ourtown to Camford\n\n| Depart: Ourtown | Arrive: Camford |\n| :--- | :--- |\n| 8:25 am | 10:40 am |\n| 9:25 am | 11:40 am |\n| 10:25 am | 12:40 pm |\n| 11:25 am | 1:40 pm |\n| 12:25 pm | 2:40 pm |\n| 1:25 pm | 3:40 pm |\n| 2:25 pm | 4:40 pm |\n| 3:25 pm | 5:40 pm |\n| 4:25 pm | 6:40 pm |\n\nBus Timetable\nFrom Camford to Ourtown\n\n| Depart: Camford | Arrive: Ourtown |\n| :--- | :--- |\n| 8:35 am | 10:50 am |\n| 9:35 am | 11:50 am |\n| 10:35 am | 12:50 pm |\n| 11:35 am | 1:50 pm |\n| 12:35 pm | 2:50 pm |\n| 1:35 pm | 3:50 pm |\n| 2:35 pm | 4:50 pm |\n| 3:35 pm | 5:50 pm |\n| 4:35 pm | 6:50 pm |\n\nC. Which towns meet the teacher's three scheduling conditions?\n\nAnswer: ____\n\n## Question 6\n\nTaking into account the total distance to be traveled, the teacher's scheduling conditions, and the cost for the trip, which town can the class visit?\n\nAnswer: ____\n\nAnswer each of the 6 questions.",
+  "output_schema": {
+    "properties": {
+      "answer_1": {
+        "description": "Your answer to question 1, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 1",
+        "type": "string"
+      },
+      "answer_2": {
+        "description": "Your answer to question 2, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 2",
+        "type": "string"
+      },
+      "answer_3": {
+        "description": "Your answer to question 3, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 3",
+        "type": "string"
+      },
+      "answer_4": {
+        "description": "Your answer to question 4, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 4",
+        "type": "string"
+      },
+      "answer_5": {
+        "description": "Your answer to question 5, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 5",
+        "type": "string"
+      },
+      "answer_6": {
+        "description": "Your answer to question 6, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 6",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer_1",
+      "answer_2",
+      "answer_3",
+      "answer_4",
+      "answer_5",
+      "answer_6"
+    ],
+    "title": "Answers",
+    "type": "object"
+  },
+  "output": {
+    "answer_1": "No question is stated for Question 1, so the map description does not specify what I should find.",
+    "answer_2": "Acton or Camford: 30 × 25 × 2/3 = 500 zeds. Burley or Darley: 30 × 20 × 0.90 = 540 zeds. They can afford to visit Acton or Camford.",
+    "answer_3": "Acton: leave Ourtown at 9:00 am; arrive at 11:15 am; depart Acton at 2:30 pm; arrive back at 4:45 pm; time in town = 3 hr 15 min. Conditions: leave 9 am or later — Yes; stay at least 3 hours — Yes; back by 5 pm — Yes.",
+    "answer_4": "Camford: leave Ourtown at 9:25 am; arrive at 11:40 am; depart Camford at 2:35 pm; arrive back at 4:50 pm; time in town = 2 hr 55 min. Conditions: leave 9 am or later — Yes; stay at least 3 hours — No; back by 5 pm — Yes.",
+    "answer_5": "Acton and Darley.",
+    "answer_6": "Acton. It is affordable and meets all three scheduling conditions; Darley meets the scheduling conditions but costs 540 zeds, over the 500-zed limit."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 3823,
+  "completion_tokens": 1590,
+  "reasoning_tokens": 1263,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335946-trrrpOQNV9blahgGjSta",
+  "requested_at": "2026-10-18T15:11:22+00:00"
+}

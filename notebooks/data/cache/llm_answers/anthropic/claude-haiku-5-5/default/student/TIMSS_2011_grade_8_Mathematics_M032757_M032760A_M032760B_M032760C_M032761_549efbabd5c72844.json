@@ -1,0 +1,70 @@
+{
+  "unit_key": "TIMSS 2011/grade 8/Mathematics/M032757+M032760A+M032760B+M032760C+M032761",
+  "item_keys": [
+    "TIMSS 2011/grade 8/Mathematics/M032757",
+    "TIMSS 2011/grade 8/Mathematics/M032760A",
+    "TIMSS 2011/grade 8/Mathematics/M032760B",
+    "TIMSS 2011/grade 8/Mathematics/M032760C",
+    "TIMSS 2011/grade 8/Mathematics/M032761"
+  ],
+  "role": "student",
+  "llm_provider": "anthropic",
+  "llm_model": "claude-haiku-5-5",
+  "reasoning_effort": null,
+  "system_prompt": "You are an eighth-grade student taking the TIMSS mathematics test for students in your grade. Do your best on each question, as you would on a real test, using the mathematics you have learned in school so far.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "These 5 questions belong together and follow one another in the test booklet.\n\n## Question 1\n\nPat has red tiles and black tiles. Pat uses the tiles to make square shapes.\n\nThe 3 × 3 shape has 1 black tile and 8 red tiles.\n[Image: A black tile in the middle, surrounded by the 8 red tiles, to make a square shape.]\n\nThe 4 × 4 shape has 4 black tiles and 12 red tiles.\n[Image: Four black tiles forming a square in the center, with 12 red tiles lining the sides, to create a larger square shape.]\n\nThe table below shows the number of tiles for the first three shapes Pat made. Pat continued making shapes using this pattern. Complete the table for the 6 × 6 and 7 × 7 shapes.\n\n| Shape | Number of Black Tiles | Number of Red Tiles | Total Number of Tiles |\n| :---: | :---: | :---: | :---: |\n| 3 × 3 | 1 | 8 | 9 |\n| 4 × 4 | 4 | 12 | 16 |\n| 5 × 5 | 9 | 16 | 25 |\n| 6 × 6 | 16 | | |\n| 7 × 7 | 25 | | |\n\nFigure, described in words:\nTwo square shapes made of smaller square tiles and an explanatory key:\n- A 3 × 3 shape composed of 9 tiles: 1 black center tile labeled 'B' surrounded by 8 gray tiles labeled 'R'.\n- A 4 × 4 shape composed of 16 tiles: 4 black center tiles arranged in a 2 × 2 square, each labeled 'B', surrounded by 12 gray tiles labeled 'R'.\n- A key below the 3 × 3 shape shows a black square labeled 'B' = Black tile, and a gray square labeled 'R' = Red tile.\n\n## Question 2\n\nRed and Black Tiles (Continued)\n\nUse the patterns in the previous table to answer the following questions.\n\nA. Pat made a shape with a total of 64 tiles. How many were black and how many were red?\n\nAnswer: ____ black tiles ____ red tiles\n\n## Question 3\n\nRed and Black Tiles (Continued)\n\nUse the patterns in the previous table to answer the following questions.\n\nB. Pat made a shape that used 49 black tiles.\nHow many red tiles did Pat use in that shape?\n\nAnswer: ____ red tiles\n\n## Question 4\n\nRed and Black Tiles (Continued)\n\nUse the patterns in the previous table to answer the following questions.\n\nC. Next, Pat made a shape using 44 of the red tiles. How many black tiles would Pat need to complete the black part of the shape?\n\nAnswer: ____ black tiles\n\n## Question 5\n\nPat wanted to add a line to the table showing how to find the number of tiles needed to make a square of any size. Use the patterns in the table on the opposite page to help you complete the line for shape n × n in the table below.\n\n| Shape | Number of Black Tiles | Number of Red Tiles | Total Number of Tiles |\n| :--- | :--- | :--- | :--- |\n| n × n | (n − 2)^2 | | |\n\nAnswer each of the 5 questions.",
+  "output_schema": {
+    "properties": {
+      "answer_1": {
+        "description": "Your answer to question 1, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 1",
+        "type": "string"
+      },
+      "answer_2": {
+        "description": "Your answer to question 2, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 2",
+        "type": "string"
+      },
+      "answer_3": {
+        "description": "Your answer to question 3, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 3",
+        "type": "string"
+      },
+      "answer_4": {
+        "description": "Your answer to question 4, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 4",
+        "type": "string"
+      },
+      "answer_5": {
+        "description": "Your answer to question 5, as you would write it in the test booklet, with any work, explanation, or description of a drawing that the question asks for.",
+        "title": "Answer 5",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer_1",
+      "answer_2",
+      "answer_3",
+      "answer_4",
+      "answer_5"
+    ],
+    "title": "Answers",
+    "type": "object"
+  },
+  "output": {
+    "answer_1": "6 × 6 shape: Number of Black Tiles = 16, Number of Red Tiles = 20, Total Number of Tiles = 36. 7 × 7 shape: Number of Black Tiles = 25, Number of Red Tiles = 24, Total Number of Tiles = 49. Work: black tiles are the square of (n − 2), so 4 × 4 = 16 and 5 × 5 = 25. Red tiles increase by 4 each time (8, 12, 16, 20, 24), and 36 − 16 = 20, 49 − 25 = 24.",
+    "answer_2": "36 black tiles, 28 red tiles. Work: 64 = 8 × 8, so n = 8. Black = (8 − 2)² = 36. Red = 64 − 36 = 28 (also 4 × (8 − 1) = 28).",
+    "answer_3": "32 red tiles. Work: 49 = (9 − 2)² = 7², so n = 9. Total tiles = 9 × 9 = 81. Red = 81 − 49 = 32 (also 4 × (9 − 1) = 32).",
+    "answer_4": "100 black tiles. Work: red tiles = 4 × (n − 1) = 44, so n − 1 = 11 and n = 12. Black tiles needed = (12 − 2)² = 100.",
+    "answer_5": "Number of Red Tiles: 4(n − 1). Total Number of Tiles: (n − 2)² + 4(n − 1) = n² − 4n + 4 + 4n − 4 = n²."
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 1880,
+  "completion_tokens": 964,
+  "reasoning_tokens": null,
+  "cost_usd": null,
+  "seconds": 4.725,
+  "batch_id": null,
+  "requested_at": "2026-10-19T17:16:13+00:00"
+}

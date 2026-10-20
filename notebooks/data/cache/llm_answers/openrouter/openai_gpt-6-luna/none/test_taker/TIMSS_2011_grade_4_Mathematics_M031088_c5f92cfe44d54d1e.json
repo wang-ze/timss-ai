@@ -1,0 +1,44 @@
+{
+  "unit_key": "TIMSS 2011/grade 4/Mathematics/M031088",
+  "item_keys": [
+    "TIMSS 2011/grade 4/Mathematics/M031088"
+  ],
+  "role": "test_taker",
+  "llm_provider": "openrouter",
+  "llm_model": "openai/gpt-6-luna",
+  "reasoning_effort": "none",
+  "system_prompt": "You are taking the TIMSS mathematics test for students in the fourth grade. Answer each question as well as you can.\n\nThe pictures, figures, and graphs of the test booklet are described in words, and its tables are written out. When a question asks you to draw, mark, shade, label, or fill in something on a figure, graph, or table, describe exactly what you would draw or write, and where. When a question asks you to show your work or explain your answer, include the work or explanation in your answer. For a multiple-choice question, choose one option.",
+  "user_prompt": "[Image: a large square divided into smaller squares with the x-axis labeled A through H from left to right and the y-axis labeled 1 through 8 from down to up.]\n\nJamie is playing a board game. His counter is on square D5. Which of these moves would put his counter on square G7?\n\nFigure, described in words:\nAn 8 by 8 grid of square spaces. The columns are labeled along the bottom from left to right with the letters A, B, C, D, E, F, G, and H. The rows are labeled along the left side from bottom to top with the numbers 1, 2, 3, 4, 5, 6, 7, and 8. A solid black circle representing a counter is located in the square at column D, row 5.\n\nA. 2 squares to the right and 3 squares up\nB. 2 squares to the left and 3 squares up\nC. 3 squares to the right and 2 squares up\nD. 3 squares to the left and 2 squares up",
+  "output_schema": {
+    "properties": {
+      "answer": {
+        "description": "The letter of the option you choose for the question.",
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "title": "Answer",
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "title": "Answer",
+    "type": "object"
+  },
+  "output": {
+    "answer": "C"
+  },
+  "llm_thinking": null,
+  "finish_reason": "stop",
+  "prompt_tokens": 410,
+  "completion_tokens": 12,
+  "reasoning_tokens": 0,
+  "cost_usd": null,
+  "seconds": null,
+  "batch_id": "batch-1792335937-BJtZVjg56U2sB5DFqPbI",
+  "requested_at": "2026-10-18T15:17:59+00:00"
+}
